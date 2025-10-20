@@ -7,7 +7,7 @@ import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
 
-export default function BuildingSecurityPage() {
+export default function K9SecurityPage() {
     const [activeService, setActiveService] = useState(null);
     const [activeFaq, setActiveFaq] = useState(null);
     const [activeFeature, setActiveFeature] = useState(null);
