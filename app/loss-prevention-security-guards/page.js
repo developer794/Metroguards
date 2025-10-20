@@ -129,8 +129,8 @@ export default function BuildingSecurityPage() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONCIERGE SECURITY GUARDS"
-                mainTitle="CONCIERGE SECURITY GUARDS IN MELBOURNE"
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOSS PREVENTION SECURITY GUARDS"
+                mainTitle="LOSS PREVENTION SECURITY GUARDS IN MELBOURNE"
                 
             >
                 <div>
@@ -164,8 +164,8 @@ export default function BuildingSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            CONCIERGE SECURITY GUARDS IN   <br />
-                                            <span style={{color: '#fdc51a'}}>MELBOURNE</span>
+                                            Because Control Deserves <br />
+                                            <span style={{color: '#fdc51a'}}>Its Own Craft</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,8 +176,8 @@ export default function BuildingSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            A building has a pulse, the sound of footsteps, the quiet exchange of greetings, the soft rhythm of daily life. In that flow, a concierge stands not just as security, but as presence. A still point that steadies everything around it. They are the first to arrive, the last to leave, and the calm in every moment between. Their posture speaks assurance, their tone speaks care, and their awareness speaks trust.
-                                            <br /><br />At Metro Guards, our concierge security guards protect what can’t be locked away: comfort, confidence, and dignity. They create an atmosphere where people feel safe to exhale.
+                                           Every product on a shelf represents hours, hands, and heart. What leaves your store should be what was meant to leave. That’s the promise Metro Guards protects, not through fear or visibility,
+                                            but through a discipline that sees what spreadsheets never will. Loss doesn’t start when something is stolen. It starts when no one’s watching. We make sure someone always is.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -394,7 +394,7 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                The Modern Concierge – Where Hospitality Holds the Line
+                                                Protection That Pays for Itself
                                             </h2>
                                             
                                             <p style={{ 
@@ -403,8 +403,9 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.8",
                                                
                                             }}>
-                                                There’s a difference between standing at a door and belonging to the space you protect. Our concierge officers belong. They blend seamlessly into the rhythm of your environment, greeting guests with warmth, guiding couriers with ease, and defusing tension before it ever takes shape. Every action is measured. Every word, deliberate. They bring composure to moments that could easily become chaos. Their strength is quiet, but deeply felt. Their professionalism doesn’t need to announce itself; it’s sensed, like the calm before sunrise.
-                                                </p>
+                                               In retail, the smallest cracks cost the most. A skipped refund check. A trusted employee’s quiet shortcut.
+                                               <br /><br />A blind spot between cameras. Our loss prevention security guards seal those cracks before they ever reach your ledger. They blend observation, intuition, and verified reporting into one rhythm of control. Because protection isn’t an expense, it’s what keeps your business breathing.
+                                               </p>
                                             
                                             
                                         </div>
@@ -441,11 +442,11 @@ export default function BuildingSecurityPage() {
                                             />
                                         </div>
                                         
-                                        {/* Proof and Trust Section - Comprehensive Content */}
+                                        {/* The Loss Section - Paragraph Style */}
                                         <div className="human-element-section section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
                                             borderRadius: '20px',
-                                            padding: '40px',
+                                            padding: '35px',
                                             border: '1px solid rgba(253, 197, 26, 0.15)',
                                             position: 'relative',
                                             boxShadow: '0 10px 30px rgba(0,0,0,0.08)'
@@ -463,26 +464,23 @@ export default function BuildingSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                
-                                               
-                                                {/* Second Section - The Trusted Presence */}
-                                                <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Trusted Presence of <span style={{color: '#fdc51a'}}>Melbourne's Finest Spaces</span>
+                                                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                                The Loss No <span style={{color: '#fdc51a'}}>Spreadsheet Can Measure</span>
                                                 </h2>
                                                 <p className="lead mb-3" style={{
                                                     color: '#6c757d',
-                                                    fontSize: '1.1rem',
+                                                    fontSize: '1.15rem',
                                                     lineHeight: '1.8'
                                                 }}>
-                                                    For over 15 years, Metro Guards has been the quiet constant within Melbourne's most refined spaces, from five-star hotels to luxury residences and executive towers. Our concierge officers don't just work in these environments; they belong to them. Their presence reflects your brand's grace, their calm carries its reputation.
+                                                    Loss eats morale long before it touches revenue. It tells your honest staff, "no one's watching." It tells opportunists, "no one cares." That's when culture starts to corrode.
                                                 </p>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
-                                                    fontSize: '1.05rem',
+                                                    fontSize: '1.1rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    Every action is guided by care, a warm greeting, a composed response, a steady awareness that keeps people at ease and spaces in harmony. They stand not as guards, but as guardians of experience, protecting not only what you own, but how your guests feel. At Metro Guards, concierge security is an act of service, empathy, and pride, the kind that turns professionalism into peace of mind and presence into trust.
+                                                    Metro Guards stops that corrosion before it begins. Our presence restores confidence, for staff, customers, and management alike. We rebuild the invisible layer of trust that keeps everything else intact.
                                                 </p>
                                             </div>
                                         </div>
@@ -494,14 +492,14 @@ export default function BuildingSecurityPage() {
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
                                                 <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
-                                                    CONCIERGE EXCELLENCE
+                                                    PRECISION PROTECTION
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            The Emotion of <span style={{color: '#fdc51a'}}>Arrival</span>
+                                            Guards Who Don't Watch – They <span style={{color: '#fdc51a'}}>Read the Room</span>
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            When someone enters your lobby, they don't remember the floor polish or the lighting first; they remember how they were received. That first impression sets the tone for everything else.
+                                            Our loss prevention officers don't chase problems; they predict them. They read patterns, not just people — posture, proximity, hesitation, and intent. It's security powered by instinct and precision.
                                             </p>
                                         </div>
                                         
@@ -509,34 +507,40 @@ export default function BuildingSecurityPage() {
                                         <div className="services-accordion">
                                             {[
                                                 {
-                                                    icon: "fas fa-hands-helping",
-                                                    title: "Presence That Reassures",
+                                                    icon: "fas fa-brain",
+                                                    title: "Pattern Recognition",
                                                     
-                                                    details: "A calm voice that steadies the anxious, a soft smile that welcomes the weary."
+                                                    details: "Detecting shifts in behaviour before they become theft."
                                                 },
                                                 {
-                                                    icon: "fas fa-sync-alt",
-                                                    title: "Effortless Coordination",
+                                                    icon: "fas fa-user-secret",
+                                                    title: "Covert Intelligence",
                                                     
-                                                    details: "Every guest guided smoothly, and every delivery handled without delay."
+                                                    details: "Plainclothes professionals blending into your retail floor."
                                                 },
                                                 {
-                                                    icon: "fas fa-eye",
-                                                    title: "Quiet Awareness",
+                                                    icon: "fas fa-smile",
+                                                    title: "Customer-First Security",
                                                    
-                                                    details: "Subtle observation, constant readiness, protection that feels invisible yet absolute."
+                                                    details: "Warmth first, watchfulness second, both essential."
                                                 },
                                                 {
-                                                    icon: "fas fa-shield-alt",
-                                                    title: "Grace in Crisis",
+                                                    icon: "fas fa-medkit",
+                                                    title: "Emergency-Ready",
                                                     
-                                                    details: "When pressure builds, they stay grounded, turning confusion into calm leadership."
+                                                    details: "Trained in first aid, fire response, and crisis control."
                                                 },
                                                 {
                                                     icon: "fas fa-clipboard-check",
-                                                    title: "Verified Precision",
+                                                    title: "Active Reporting",
                                                     
-                                                    details: "Digital reporting and supervisor reviews ensure every detail stands accountable."
+                                                    details: "Every action logged live; nothing slips between shifts."
+                                                },
+                                                {
+                                                    icon: "fas fa-door-open",
+                                                    title: "Common-Area Control",
+                                                    
+                                                    details: "Entrances, changerooms, registers, storerooms, quietly secured."
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
@@ -617,14 +621,15 @@ export default function BuildingSecurityPage() {
                                                 </div>
                                             ))}
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/*===== Proof Section =====*/}
-                    <div className="proof-section section-padding" style={{
+                    {/*===== Real Cost Section =====*/}
+                    <div className="real-cost-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -647,10 +652,10 @@ export default function BuildingSecurityPage() {
                         <div style={{
                             position: 'absolute',
                             top: '15%',
-                            right: '10%',
+                            right: '8%',
                             width: '120px',
                             height: '120px',
-                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.12), transparent)',
+                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
                             borderRadius: '50%',
                             zIndex: 1
                         }}></div>
@@ -660,199 +665,87 @@ export default function BuildingSecurityPage() {
                             left: '5%',
                             width: '150px',
                             height: '150px',
-                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.06), transparent)',
+                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), transparent)',
                             borderRadius: '50%',
                             zIndex: 1
                         }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                            {/* Section Header */}
+                            {/* First Content Block - The Real Cost */}
                             <div className="row mb-5">
-                                <div className="col-lg-10 mx-auto text-center">
-                                    <div style={{
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        gap: '15px',
-                                        marginBottom: '30px'
-                                    }}>
-                                        <div style={{
-                                            width: '50px',
-                                            height: '3px',
-                                            background: 'linear-gradient(90deg, #fdc51a, #ffdb5c)',
-                                            borderRadius: '2px'
-                                        }}></div>
-                                        <span className="badge px-4 py-2" style={{
-                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                            color: '#1e2247',
-                                            fontWeight: 700,
-                                            fontSize: '0.85rem',
-                                            borderRadius: '30px',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '2px',
-                                            boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
-                                        }}>
-                                            <i className="fas fa-check-circle me-2"></i>
-                                            Verified Systems
-                                        </span>
-                                        <div style={{
-                                            width: '50px',
-                                            height: '3px',
-                                            background: 'linear-gradient(90deg, #ffdb5c, #fdc51a)',
-                                            borderRadius: '2px'
-                                        }}></div>
-                                    </div>
-
-                                    <h2 style={{
-                                        color: '#1e2247',
-                                        fontSize: '3rem',
-                                        fontWeight: '800',
-                                        marginBottom: '25px',
-                                        lineHeight: '1.2'
-                                    }}>
-                                        Proof That Lives Up to <span style={{color: '#fdc51a'}}>the Promise</span>
-                                    </h2>
-
-                                    <p style={{
-                                        color: '#6c757d',
-                                        fontSize: '1.2rem',
-                                        lineHeight: '1.8',
-                                        maxWidth: '800px',
-                                        margin: '0 auto'
-                                    }}>
-                                        Care is a feeling. Trust is proof. We build both. <strong style={{color: '#1e2247'}}>Every officer's shift, movement, and report is recorded with precision</strong>, not to monitor, but to uphold the trust our clients place in us.
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Features Grid */}
-                            <div className="row g-4 mb-5">
-                                {[
-                                    { icon: 'fa-map-marked-alt', title: 'Live GPS Verification', desc: 'Every presence verified in real time.', color: 'yellow' },
-                                    { icon: 'fa-user-check', title: 'Unannounced Supervisions', desc: 'Every standard protected from complacency.', color: 'blue' },
-                                    { icon: 'fa-camera', title: 'Photo-Backed Reports', desc: 'Documentation that keeps your confidence grounded in facts.', color: 'yellow' },
-                                    { icon: 'fa-chart-bar', title: 'Transparent Client Dashboards', desc: 'Real-time access to everything that happens on-site.', color: 'blue' },
-                                    { icon: 'fa-certificate', title: 'Certified Integrity', desc: 'ISO Certified, ASIAL Member, CM3 Prequalified.', color: 'yellow' }
-                                ].map((item, idx) => (
-                                    <div key={idx} className="col-lg-4 col-md-6">
-                                    <div style={{
-                                        background: '#ffffff',
-                                        borderRadius: '20px',
-                                            padding: '35px 30px',
-                                        height: '100%',
-                                            border: item.color === 'yellow' ? '2px solid rgba(253, 197, 26, 0.2)' : '2px solid rgba(30, 34, 71, 0.2)',
-                                        transition: 'all 0.3s ease',
-                                        position: 'relative',
-                                        overflow: 'hidden'
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                            e.currentTarget.style.boxShadow = item.color === 'yellow' ? '0 20px 40px rgba(253, 197, 26, 0.2)' : '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                            e.currentTarget.style.borderColor = item.color === 'yellow' ? '#fdc51a' : '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                            e.currentTarget.style.borderColor = item.color === 'yellow' ? 'rgba(253, 197, 26, 0.2)' : 'rgba(30, 34, 71, 0.2)';
-                                    }}>
-                                        {/* Corner Accent */}
-                                        <div style={{
-                                            position: 'absolute',
-                                            top: 0,
-                                            right: 0,
-                                                width: '80px',
-                                                height: '80px',
-                                                background: item.color === 'yellow' ? 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)' : 'linear-gradient(135deg, rgba(30, 34, 71, 0.08), transparent)',
-                                            borderBottomLeftRadius: '100%'
-                                        }}></div>
-
-                                        <div style={{
-                                                width: '65px',
-                                                height: '65px',
-                                            borderRadius: '15px',
-                                                background: item.color === 'yellow' ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)' : 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                                marginBottom: '20px',
-                                                boxShadow: item.color === 'yellow' ? '0 10px 25px rgba(253, 197, 26, 0.3)' : '0 10px 25px rgba(30, 34, 71, 0.3)'
-                                        }}>
-                                                <i className={`fas ${item.icon}`} style={{
-                                                    color: item.color === 'yellow' ? '#1e2247' : '#fdc51a',
-                                                    fontSize: '28px'
-                                                }}></i>
-                                        </div>
-
-                                        <h3 style={{
-                                            color: '#1e2247',
-                                                fontSize: '1.4rem',
-                                            fontWeight: '700',
-                                                marginBottom: '15px',
-                                                lineHeight: '1.3'
-                                        }}>
-                                                {item.title}
-                                        </h3>
-
-                                        <p style={{
-                                            color: '#6c757d',
-                                                fontSize: '1.05rem',
-                                            lineHeight: '1.7',
-                                            margin: 0
-                                        }}>
-                                                {item.desc}
-                                        </p>
-                                    </div>
-                                </div>
-                                ))}
-                                        </div>
-
-                            {/* Closing Statement */}
-                            <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                                    <div style={{
-                                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                                        borderRadius: '20px',
-                                        padding: '40px',
-                                        textAlign: 'center',
+                                    <div style={{ 
+                                        background: '#ffffff',
+                                        borderRadius: '25px',
+                                        padding: '50px 45px',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        boxShadow: '0 15px 40px rgba(0,0,0,0.08)',
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}>
-                                        {/* Background Pattern */}
+                                        {/* Top Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
                                             top: 0,
                                             left: 0,
-                                            right: 0,
-                                            bottom: 0,
-                                            backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(253, 197, 26, 0.08) 0%, transparent 70%)',
-                                            borderRadius: '20px'
+                                            width: '150px',
+                                            height: '150px',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.15), transparent)',
+                                            borderBottomRightRadius: '100%'
                                         }}></div>
 
                                         <div style={{ position: 'relative', zIndex: 2 }}>
-                                            <i className="fas fa-quote-left" style={{
-                                                color: 'rgba(253, 197, 26, 0.3)',
-                                                fontSize: '2.5rem',
-                                                marginBottom: '20px',
-                                                display: 'block'
-                                            }}></i>
-                                        <p style={{
-                                                color: '#ffffff',
-                                                fontSize: '1.4rem',
-                                            lineHeight: '1.8',
-                                            margin: 0,
-                                                fontWeight: '600',
-                                                fontStyle: 'italic'
-                                        }}>
-                                                Our promises don't rest on words; <span style={{color: '#fdc51a'}}>they stand on records</span>.
-                                        </p>
+                                            {/* Badge */}
+                                            <div style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                gap: '10px',
+                                                marginBottom: '25px'
+                                            }}>
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                                    color: '#1e2247',
+                                                    fontWeight: 700,
+                                                    fontSize: '0.85rem',
+                                                    borderRadius: '30px',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '2px',
+                                                    boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
+                                                }}>
+                                                    <i className="fas fa-exclamation-triangle me-2"></i>
+                                                    Critical Insight
+                                                </span>
+                                            </div>
+
+                                            <h2 style={{
+                                                color: '#1e2247',
+                                                fontSize: '2.8rem',
+                                                fontWeight: '800',
+                                                marginBottom: '25px',
+                                                lineHeight: '1.2'
+                                            }}>
+                                                The Real Cost of <span style={{color: '#fdc51a'}}>Looking Away</span>
+                                            </h2>
+
+                                                        <p style={{
+                                                            color: '#6c757d',
+                                                fontSize: '1.2rem',
+                                                lineHeight: '1.9',
+                                                            margin: 0
+                                                        }}>
+                                                A $20 theft ignored today becomes a $200 habit tomorrow. A quiet internal scheme turns into a cultural rot. And one viral clip of chaos? That's not just theft, that's brand erosion. Money can be replaced. Trust cannot. <strong style={{color: '#1e2247'}}>Metro Guards doesn't just prevent loss, we preserve the reputation behind the glass.</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                            
                         </div>
                     </div>
 
-                    {/*===== Heart Behind Uniform Section =====*/}
-                    <div className="heart-uniform-section section-padding" style={{
+                    {/*===== Accountability Section =====*/}
+                    <div className="accountability-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -866,8 +759,7 @@ export default function BuildingSecurityPage() {
                             bottom: 0,
                             backgroundImage: `
                                 radial-gradient(circle at 20% 30%, rgba(253, 197, 26, 0.1) 0%, transparent 50%),
-                                radial-gradient(circle at 80% 70%, rgba(253, 197, 26, 0.08) 0%, transparent 50%),
-                                radial-gradient(circle at 50% 50%, rgba(253, 197, 26, 0.05) 0%, transparent 70%)
+                                radial-gradient(circle at 80% 70%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)
                             `,
                             zIndex: 1
                         }}></div>
@@ -876,135 +768,614 @@ export default function BuildingSecurityPage() {
                         <div style={{
                             position: 'absolute',
                             top: '10%',
-                            right: '8%',
-                            width: '140px',
-                            height: '140px',
-                            background: 'rgba(253, 197, 26, 0.12)',
+                            right: '5%',
+                            width: '150px',
+                            height: '150px',
+                            background: 'rgba(253, 197, 26, 0.1)',
                             borderRadius: '50%',
                             zIndex: 1
                         }}></div>
                         <div style={{
                             position: 'absolute',
                             bottom: '15%',
-                            left: '5%',
-                            width: '180px',
-                            height: '180px',
+                            left: '8%',
+                            width: '100px',
+                            height: '100px',
                             background: 'rgba(253, 197, 26, 0.08)',
                             borderRadius: '50%',
                             zIndex: 1
                         }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10">
-                                        <div style={{
-                                        background: 'rgba(255, 255, 255, 0.97)',
-                                        borderRadius: '30px',
-                                        padding: '60px 50px',
-                                        border: '2px solid rgba(253, 197, 26, 0.3)',
-                                        boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+                            {/* Section Header */}
+                            <div className="row mb-5">
+                                <div className="col-lg-10 mx-auto text-center">
+                                    <span className="badge px-4 py-2 mb-4" style={{ 
+                                        background: "rgba(253, 197, 26, 0.2)", 
+                                        color: "#fdc51a", 
+                                        fontWeight: 700,
+                                        fontSize: "0.85rem",
+                                        borderRadius: "30px",
+                                        textTransform: "uppercase",
+                                        letterSpacing: "2px",
+                                        border: "2px solid rgba(253, 197, 26, 0.3)"
+                                    }}>
+                                        <i className="fas fa-check-circle me-2"></i>
+                                        Verified Systems
+                                    </span>
+                                    
+                                    <h2 style={{
+                                        color: '#ffffff',
+                                        fontSize: '3rem',
+                                        fontWeight: '800',
+                                        marginBottom: '25px',
+                                        lineHeight: '1.2'
+                                    }}>
+                                        Proof That Doesn't Need <span style={{color: '#fdc51a'}}>a Meeting</span>
+                                    </h2>
+                                    
+                                    <p style={{
+                                        color: 'rgba(255, 255, 255, 0.9)',
+                                        fontSize: '1.2rem',
+                                        lineHeight: '1.8',
+                                        maxWidth: '850px',
+                                        margin: '0 auto'
+                                    }}>
+                                        Trust is earned through proof. Our systems record, timestamp, and verify every patrol, ensuring complete accountability.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Features Grid */}
+                            <div className="row g-4 mb-5">
+                                {/* Feature 1 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        transition: 'all 0.3s ease',
                                         position: 'relative',
                                         overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
                                     }}>
                                         {/* Corner Accent */}
-                                            <div style={{
+                                        <div style={{
                                             position: 'absolute',
                                             top: 0,
                                             right: 0,
-                                            width: '200px',
-                                            height: '200px',
-                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.15), transparent)',
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
                                             borderBottomLeftRadius: '100%'
                                         }}></div>
 
-                                        {/* Bottom Left Accent */}
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                        }}>
+                                            <i className="fas fa-clock" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Punctuality
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Zero tolerance for missed starts or early finishes.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Feature 2 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(30, 34, 71, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                        e.currentTarget.style.borderColor = '#1e2247';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                    }}>
+                                        {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
-                                            bottom: 0,
-                                            left: 0,
-                                            width: '150px',
-                                            height: '150px',
-                                            background: 'linear-gradient(135deg, transparent, rgba(30, 34, 71, 0.08))',
-                                            borderTopRightRadius: '100%'
+                                            top: 0,
+                                            right: 0,
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1), transparent)',
+                                            borderBottomLeftRadius: '100%'
                                         }}></div>
 
-                                        <div style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
+                                        }}>
+                                            <i className="fas fa-map-marker-alt" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            GPS-Verified Patrols
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Movements recorded and reviewable.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Feature 3 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                    }}>
+                                        {/* Corner Accent */}
+                                        <div style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            right: 0,
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
+                                            borderBottomLeftRadius: '100%'
+                                        }}></div>
+
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                        }}>
+                                            <i className="fas fa-camera" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Photo-Backed Reports
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Visual evidence with every log.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Feature 4 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(30, 34, 71, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                        e.currentTarget.style.borderColor = '#1e2247';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                    }}>
+                                        {/* Corner Accent */}
+                                        <div style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            right: 0,
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1), transparent)',
+                                            borderBottomLeftRadius: '100%'
+                                        }}></div>
+
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
+                                        }}>
+                                            <i className="fas fa-user-check" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Supervisor Drop-Ins
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Random field audits to maintain peak performance.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Feature 5 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                    }}>
+                                        {/* Corner Accent */}
+                                        <div style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            right: 0,
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
+                                            borderBottomLeftRadius: '100%'
+                                        }}></div>
+
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                        }}>
+                                            <i className="fas fa-certificate" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            ISO Certified
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Quality, OH&S, and Environmental Compliance.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Feature 6 */}
+                                <div className="col-lg-4">
+                                    <div style={{
+                                        background: 'rgba(255, 255, 255, 0.95)',
+                                        borderRadius: '20px',
+                                        padding: '35px',
+                                        height: '100%',
+                                        border: '2px solid rgba(30, 34, 71, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                        e.currentTarget.style.borderColor = '#1e2247';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                    }}>
+                                        {/* Corner Accent */}
+                                        <div style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            right: 0,
+                                            width: '80px',
+                                            height: '80px',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1), transparent)',
+                                            borderBottomLeftRadius: '100%'
+                                        }}></div>
+
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: '20px',
+                                            boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
+                                        }}>
+                                            <i className="fas fa-award" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                        </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.5rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            ASIAL & CM3 Approved
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Compliance you can show your board or insurer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Closing Statement */}
+                            <div className="row">
+                                <div className="col-lg-10 mx-auto">
+                                    <div style={{
+                                        background: 'rgba(253, 197, 26, 0.1)',
+                                        borderRadius: '20px',
+                                        padding: '40px',
+                                        border: '2px solid rgba(253, 197, 26, 0.3)',
+                                        textAlign: 'center'
+                                    }}>
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.95)',
+                                            fontSize: '1.2rem',
+                                            lineHeight: '1.8',
+                                            margin: 0,
+                                            fontWeight: '500'
+                                        }}>
+                                            That's <strong style={{color: '#fdc51a'}}>accountability redesigned</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*===== Real Cost Section =====*/}
+                    <div className="real-cost-section section-padding" style={{
+                        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        {/* Background Pattern */}
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            backgroundImage: `
+                                radial-gradient(circle at 20% 30%, rgba(253, 197, 26, 0.06) 0%, transparent 50%),
+                                radial-gradient(circle at 80% 70%, rgba(30, 34, 71, 0.04) 0%, transparent 50%)
+                            `,
+                            zIndex: 1
+                        }}></div>
+
+                        {/* Decorative Elements */}
+                        <div style={{
+                            position: 'absolute',
+                            top: '15%',
+                            right: '8%',
+                            width: '120px',
+                            height: '120px',
+                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
+                            borderRadius: '50%',
+                            zIndex: 1
+                        }}></div>
+                        <div style={{
+                            position: 'absolute',
+                            bottom: '20%',
+                            left: '5%',
+                            width: '150px',
+                            height: '150px',
+                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), transparent)',
+                            borderRadius: '50%',
+                            zIndex: 1
+                        }}></div>
+
+                        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+                            
+
+                            {/* Second Content Block - Why Trust Metro Guards */}
+                            <div className="row">
+                                <div className="col-lg-10 mx-auto">
+                                            <div style={{
+                                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                        borderRadius: '25px',
+                                        padding: '50px 45px',
+                                        border: '2px solid rgba(30, 34, 71, 0.3)',
+                                        boxShadow: '0 15px 40px rgba(0,0,0,0.1)',
+                                                position: 'relative',
+                                                overflow: 'hidden'
+                                    }}>
+                                        {/* Background Pattern */}
+                                                <div style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            right: 0,
+                                            bottom: 0,
+                                            backgroundImage: 'radial-gradient(circle at 70% 30%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)',
+                                            borderRadius: '25px'
+                                        }}></div>
+
+                                        {/* Bottom Corner Accent */}
+                                                    <div style={{
+                                            position: 'absolute',
+                                            bottom: 0,
+                                            right: 0,
+                                            width: '180px',
+                                            height: '180px',
+                                            background: 'linear-gradient(135deg, transparent, rgba(253, 197, 26, 0.12))',
+                                            borderTopLeftRadius: '100%'
+                                        }}></div>
+
+                                        <div style={{ position: 'relative', zIndex: 2 }}>
                                             {/* Badge */}
                                             <div style={{
                                                 display: 'inline-flex',
-                                                alignItems: 'center',
-                                                gap: '12px',
-                                                marginBottom: '30px'
+                                                    alignItems: 'center',
+                                                gap: '10px',
+                                                marginBottom: '25px'
                                             }}>
                                                 <span className="badge px-4 py-2" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                    color: '#1e2247',
+                                                    background: 'rgba(253, 197, 26, 0.2)',
+                                                    color: '#fdc51a',
                                                     fontWeight: 700,
-                                                    fontSize: '0.9rem',
+                                                    fontSize: '0.85rem',
                                                     borderRadius: '30px',
-                                                textTransform: 'uppercase',
+                                                    textTransform: 'uppercase',
                                                     letterSpacing: '2px',
-                                                    boxShadow: '0 8px 25px rgba(253, 197, 26, 0.35)'
-                                            }}>
-                                                    <i className="fas fa-heart me-2"></i>
-                                                    What Sets Us Apart
-                                            </span>
-                                        </div>
+                                                    border: '2px solid rgba(253, 197, 26, 0.4)'
+                                                }}>
+                                                    <i className="fas fa-award me-2"></i>
+                                                    15+ Years Experience
+                                                </span>
+                                                    </div>
 
-                                            {/* Main Heading */}
-                                        <h2 style={{
-                                                color: '#1e2247',
-                                                fontSize: '3.2rem',
-                                            fontWeight: '800',
-                                            marginBottom: '35px',
+                                            <h2 style={{
+                                                color: '#ffffff',
+                                                fontSize: '2.8rem',
+                                                fontWeight: '800',
+                                                marginBottom: '25px',
                                                 lineHeight: '1.2'
-                                        }}>
-                                                The Heart Behind <span style={{color: '#fdc51a'}}>the Uniform</span>
-                                        </h2>
+                                            }}>
+                                                Why Melbourne's Smart Retailers <span style={{color: '#fdc51a'}}>Trust Metro Guards</span>
+                                            </h2>
 
-                                    {/* Main Content */}
-                                                <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.3rem',
+                                                        <p style={{
+                                                color: 'rgba(255, 255, 255, 0.95)',
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.9',
-                                                margin: '0 auto',
-                                                maxWidth: '900px',
-                                                textAlign: 'center'
-                                            }}>
-                                                Our concierge officers don't see faces as foot traffic; they see people. They remember names, notice moods, and respond with quiet empathy. A guest in a hurry receives calm assurance. A resident with a concern is heard, not dismissed. A tense moment dissolves because someone cared enough to stay steady. <strong style={{color: '#1e2247'}}>That's what defines Metro Guards: protection shaped by heart.</strong>
-                                            </p>
-
-                                            {/* Decorative Icon Divider */}
-                                            <div style={{
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                gap: '20px',
-                                                marginTop: '40px'
-                                            }}>
-                                            <div style={{
-                                                    width: '80px',
-                                                    height: '2px',
-                                                    background: 'linear-gradient(90deg, transparent, #fdc51a)'
-                                                    }}></div>
-                                                    <div style={{
-                                                    width: '50px',
-                                                    height: '50px',
-                                                    borderRadius: '50%',
-                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
-                                                    }}>
-                                                    <i className="fas fa-user-friends" style={{color: '#1e2247', fontSize: '22px'}}></i>
-                                                        </div>
-                                                    <div style={{
-                                                    width: '80px',
-                                                    height: '2px',
-                                                    background: 'linear-gradient(90deg, #fdc51a, transparent)'
-                                                    }}></div>
-                                            </div>
+                                                            margin: 0
+                                                        }}>
+                                                With 15+ years of experience across Melbourne's retail sector, Metro Guards has become the quiet strength behind countless boutiques and shopping centres. Our loss prevention specialists combine precision, discretion, and genuine care for your brand. <strong style={{color: '#fdc51a'}}>Backed by round-the-clock coverage, local supervision, and award-winning service, we don't just place guards, we place people who protect what matters most.</strong>
+                                                        </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1095,8 +1466,8 @@ export default function BuildingSecurityPage() {
                                                     letterSpacing: "1px",
                                                     boxShadow: "0 6px 20px rgba(30, 34, 71, 0.25)"
                                                 }}>
-                                                    <i className="fas fa-hands-helping me-2"></i>
-                                                    Excellence in Service
+                                                    <i className="fas fa-shield-alt me-2"></i>
+                                                    Secure Your Brand
                                                 </span>
                                                 <div style={{
                                                     width: "60px",
@@ -1114,7 +1485,7 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Steadiness You Can Feel, <span style={{color: '#fdc51a'}}>Even in Silence</span>
+                                                Every Product Has a Story – <span style={{color: '#fdc51a'}}>We Guard How It Ends</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1122,21 +1493,10 @@ export default function BuildingSecurityPage() {
                                                 fontSize: '1.3rem',
                                                 lineHeight: '1.8',
                                                 marginBottom: '30px',
-                                                maxWidth: '850px',
+                                                maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Every great building has a spirit, and our concierge guards protect it without ever overshadowing it. They blend into the background, yet somehow hold the entire atmosphere together. When they stand at your desk, <strong style={{color: '#1e2247'}}>guests feel serenity before they even understand why</strong>.
-                                            </p>
-                                            
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '850px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                It's not about presence. It's about peace, the kind that speaks without words. Because at the heart of Metro Guard officers is a simple belief: <strong style={{color: '#fdc51a'}}>Safety should never feel like control; it should feel like care</strong>.
+                                                Every item represents a decision, an effort, a belief that it will reach the right hands. We make sure it does. <strong style={{color: '#1e2247'}}>Metro Guards doesn't just secure stock, we secure the story your brand tells every day.</strong>
                                             </p>
                                         </div>
 
@@ -1171,7 +1531,7 @@ export default function BuildingSecurityPage() {
                                                         e.target.style.color = '#ffffff';
                                                     }}>
                                                         <i className="fas fa-file-alt"></i>
-                                                        Get Your Free Quote
+                                                        Get Your Free Quote Now
                                                     </a>
                                                 </div>
                                                 <div className="col-auto">
@@ -1242,7 +1602,7 @@ export default function BuildingSecurityPage() {
                                                     textAlign: 'center'
                                                 }}>
                                                     <i className="fas fa-shield-alt me-2" style={{color: '#fdc51a'}}></i>
-                                                    Metro Guards – <span style={{color: '#ffffff'}}>Protecting education, securing futures, safeguarding Australia's tomorrow.</span>
+                                                    Metro Guards – <span style={{color: '#ffffff'}}>Protecting those who heal, so they can focus on what matters most.</span>
                                                 </p>
                                             </div>
                                         </div>
