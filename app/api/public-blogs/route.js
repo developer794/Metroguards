@@ -21,9 +21,13 @@ export async function GET(req) {
 
     const where = { published: true };
 
-    // Check if database is available before querying
+    // Check if database is available before querying with timeout
     try {
-      await prisma.$connect();
+      const connectPromise = prisma.$connect();
+      const timeoutPromise = new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('Connection timeout')), 5000)
+      );
+      await Promise.race([connectPromise, timeoutPromise]);
     } catch (dbError) {
       console.warn("Database connection failed, returning empty results:", dbError.message);
       return NextResponse.json({ 
@@ -36,8 +40,8 @@ export async function GET(req) {
       });
     }
 
-    // Use a transaction to ensure consistency and avoid prepared statement conflicts
-    const [items, total] = await prisma.$transaction([
+    // Use a transaction with timeout to avoid hanging
+    const queryPromise = prisma.$transaction([
       prisma.post.findMany({
         where,
         orderBy: { createdAt: "asc" },
@@ -54,6 +58,12 @@ export async function GET(req) {
       }),
       prisma.post.count({ where })
     ]);
+    
+    const timeoutPromise = new Promise((_, reject) => 
+      setTimeout(() => reject(new Error('Query timeout')), 8000)
+    );
+    
+    const [items, total] = await Promise.race([queryPromise, timeoutPromise]);
 
     const hasMore = skip + items.length < total;
 

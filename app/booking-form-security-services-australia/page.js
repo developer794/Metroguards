@@ -6,6 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Accreditation from "@/components/accrediation10";
 import Subscribe from "@/components/homepages/home1/Subscribe";
 
+// Form pages should use dynamic rendering
+export const dynamic = 'force-dynamic';
 
 // Enhanced MultiSelectDropdown component (same as in Get Quotation page)
 const MultiSelectDropdown = ({ options, selectedValues, onChange, placeholder, name }) => {

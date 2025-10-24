@@ -9,9 +9,22 @@ export default function Blog4() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('/api/public-blogs?limit=4&page=1');
-        const data = await response.json();
-        setBlogs(data.items || []);
+        // Add 10 second timeout to prevent hanging during build
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000);
+        
+        const response = await fetch('/api/public-blogs?limit=4&page=1', {
+          signal: controller.signal
+        });
+        
+        clearTimeout(timeoutId);
+        
+        if (response.ok) {
+          const data = await response.json();
+          setBlogs(data.items || []);
+        } else {
+          setBlogs([]);
+        }
       } catch (error) {
         console.error('Error fetching blogs:', error);
         setBlogs([]);

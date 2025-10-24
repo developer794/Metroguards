@@ -2,6 +2,9 @@
 import { cookies } from "next/headers";
 import { jwtVerify } from "jose";
 
+// Dashboard requires authentication, use dynamic rendering
+export const dynamic = 'force-dynamic';
+
 async function getUser() {
   const token = cookies().get("auth")?.value;
   if (!token) return null;

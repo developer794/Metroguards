@@ -2,6 +2,9 @@
 
 import Layout from "@/components/layout/Layout";
 import { useParams } from "next/navigation";
+
+// Dynamic blog pages, use dynamic rendering
+export const dynamic = 'force-dynamic';
 import { useEffect, useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
 
