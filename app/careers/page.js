@@ -7,8 +7,7 @@ import MultiSelectDropdown from "./multiSelect";
 import Accreditation from "@/components/accrediation10"
 import Subscribe from "@/components/homepages/home1/Subscribe"
 
-// Form pages should use dynamic rendering
-export const dynamic = 'force-dynamic';
+
 
 export default function CareersPage() {
     const [loading, setLoading] = useState(false);

@@ -1,8 +1,5 @@
 import ContactPage from "./ContactPage";
 
-// Use dynamic rendering for contact page
-export const dynamic = 'force-dynamic';
-
 export const metadata = {
   title: "Contact | Security Guard Services ",
   description:

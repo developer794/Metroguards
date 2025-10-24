@@ -13,26 +13,13 @@ function absoluteUrl(path) {
 }
 
 export default async function Page() {
-  let items = [];
-  let hasMore = false;
+  const url = absoluteUrl(`/api/public-blogs?limit=${PAGE_SIZE}&page=1`);
 
-  try {
-    const url = absoluteUrl(`/api/public-blogs?limit=${PAGE_SIZE}&page=1`);
-    const res = await fetch(url, { 
-      cache: "no-store",
-      signal: AbortSignal.timeout(10000) // 10 second timeout
-    });
-    
-    if (res.ok) {
-      const data = await res.json();
-      items = data.items ?? [];
-      hasMore = data.hasMore ?? false;
-    }
-  } catch (error) {
-    console.error('Failed to fetch blogs:', error);
-    // Continue with empty data instead of crashing
-  }
+  const res = await fetch(url, { cache: "no-store" });
+  const data = await res.json();
 
+  const items = data.items ?? [];
+  const hasMore = data.hasMore ?? false;
   return (
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SECURITY BLOG"
     mainTitle="Our Security Blog"

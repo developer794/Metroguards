@@ -2,9 +2,6 @@
 import Layout from "@/components/layout/Layout"
 import { Store, ShoppingCart, Warehouse, Gem, Building2, Hospital } from 'lucide-react';
 
-// Use dynamic rendering for homepage to avoid build-time issues
-export const dynamic = 'force-dynamic';
-
 import About from "@/components/homepages/home1/About"
 import About2 from "@/components/homepages/home1/About2"
 import Blog from "@/components/homepages/home1/Blog"

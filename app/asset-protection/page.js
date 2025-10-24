@@ -1,4 +1,4 @@
-import ClientPage from "./ClientPage";
+import AssetSecurityPage from "./ClientPage";
 
 export const metadata = {
   title: "Asset Protection Security in Melbourne | Metro Guards",
@@ -26,5 +26,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ClientPage />;
+  return <AssetSecurityPage />;
 }

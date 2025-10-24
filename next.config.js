@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Increase timeout for static page generation (default is 60 seconds)
-    staticPageGenerationTimeout: 180,
-    
     webpack: (config, { isServer }) => {
       // Prevent optional native deps from breaking the build
       config.resolve.fallback = {
