@@ -280,7 +280,7 @@ img {
 .theme-mega-menu {
   width: auto !important; /* Fit content */
   min-width: 700px; /* Adjust based on how wide 3 columns need to be */
-  max-width: 900px;
+  max-width: 1100px;
   display: flex;
   padding: 20px;
   gap: 40px;

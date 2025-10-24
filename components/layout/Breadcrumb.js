@@ -2,7 +2,7 @@ export default function Breadcrumb({
     breadcrumbTitle, 
     mainTitle, 
     subtitle, 
-    backgroundImage = "/assets/img/about/values.jpg" 
+    backgroundImage 
 }) {
     return (
         <>
@@ -18,7 +18,7 @@ export default function Breadcrumb({
                     position: "relative",
                     paddingTop: "100px",
                     paddingBottom: "80px",
-                    minHeight: "280px",
+                    minHeight: "550px",
                     display: "flex",
                     alignItems: "center"
                 }}
@@ -64,7 +64,7 @@ export default function Breadcrumb({
                 <div className="container" style={{ position: "relative", zIndex: 2 }}>
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="breadcrumb-content text-center">
+                            <div className="breadcrumb-content">
                                 {/* Breadcrumb Badge */}
                                 <div 
                                     style={{
@@ -91,10 +91,15 @@ export default function Breadcrumb({
                                         fontSize: "clamp(2rem, 4vw, 3rem)",
                                         fontWeight: "600",
                                         color: "#ffffff",
-                                        lineHeight: "1.2",
+                                        lineHeight: "1.3",
                                         marginBottom: "15px",
                                         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-                                        textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)"
+                                        textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
+                                        maxWidth: "800px",
+                                        textAlign: "left",
+                                        textWrap: "balance",
+                                        wordWrap: "break-word",
+                                        hyphens: "auto"
                                     }}
                                     dangerouslySetInnerHTML={{
                                         __html: mainTitle || "Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Values</span> Define Our Excellence"
@@ -110,7 +115,6 @@ export default function Breadcrumb({
                                             lineHeight: "1.5",
                                             marginBottom: "25px",
                                             maxWidth: "500px",
-                                            margin: "0 auto 25px auto",
                                             fontWeight: "300"
                                         }}
                                     >
@@ -121,10 +125,9 @@ export default function Breadcrumb({
                                 {/* Decorative Line */}
                                 <div 
                                     style={{
-                                        width: "80px",
+                                        width: "300px",
                                         height: "4px",
                                         background: "linear-gradient(90deg, #fdc51a, #f39c12)",
-                                        margin: "0 auto",
                                         borderRadius: "2px",
                                         boxShadow: "0 2px 10px rgba(253, 197, 26, 0.4)"
                                     }}
@@ -169,9 +172,9 @@ export default function Breadcrumb({
 
                 @media (max-width: 768px) {
                     .breadcrumb-section {
-                        padding-top: 80px !important;
+                        padding-top: 140px !important;
                         padding-bottom: 60px !important;
-                        min-height: 240px !important;
+                        min-height: 300px !important;
                         background-attachment: scroll !important;
                     }
                 }

@@ -6,10 +6,9 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
 
     const [isActive, setIsActive] = useState({status: false, key: ""});
     const [openSections, setOpenSections] = useState({
-        hire: false,
-        corporate: false,
-        loss: false,
-        event: false,
+        static: false,
+        crowd: false,
+        mobile: false,
         k9: false,
     });
 
@@ -196,10 +195,10 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
     className="services-submenu"
     style={{ display: isActive.key == 3 ? "block" : "none", paddingTop: '10px', paddingLeft: '5px' }}
   >
-    {/* Security Guard For Hire */}
+    {/* Static Guards */}
 <div className="service-category" style={{ marginBottom: '15px' }}>
   <div
-    onClick={() => toggleSection("hire")}
+    onClick={() => toggleSection("static")}
     style={{
       display: 'flex',
       justifyContent: 'space-between',
@@ -210,12 +209,12 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   >
     {/* Text */}
     <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
-      Security Guard For Hire
+      Static Guards
     </span>
 
     {/* Icon (child-specific) */}
     <span
-      className={openSections.hire ? "child-submenu-button submenu-opened" : "child-submenu-button"}
+      className={openSections.static ? "child-submenu-button submenu-opened" : "child-submenu-button"}
       style={{
         color: '#666',
         fontSize: '14px',
@@ -223,7 +222,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
         textAlign: 'center',
       }}
     >
-      <i className={`fa-solid ${openSections.hire ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
+      <i className={`fa-solid ${openSections.static ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
     </span>
   </div>
 
@@ -231,87 +230,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   <ul
     className="sub-menu"
     style={{
-      display: openSections.hire ? "block" : "none",
-      listStyle: 'none',
-      padding: '8px 0 0 40px',
-      margin: 0,
-    }}
-  >
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/adhoc-security-services" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Adhoc Security Services
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/asset-protection" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Asset Protection
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/private-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Private Security Guards
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/staff-escort-security" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Staff Escort Security
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/mobile-patrol-security" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Mobile Patrol Security
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/rapid-alarm-response-security" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Rapid Alarm Response Security
-      </Link>
-    </li>
-    <li style={{ marginBottom: '6px' }}>
-      <Link href="/hire-unarmed-security-guard" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Hire Unarmed Security Guard
-      </Link>
-    </li>
-  </ul>
-</div>
-
-
-    {/* Corporate Security Guards */}
-<div className="service-category" style={{ marginBottom: '15px' }}>
-  <div
-    onClick={() => toggleSection("corporate")}
-    style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '8px 10px 8px 25px',
-      cursor: 'pointer',
-    }}
-  >
-    {/* Text */}
-    <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
-      Corporate Security Guards
-    </span>
-
-    {/* Icon (child-specific, separate from Services) */}
-    <span
-      className={openSections.corporate ? "child-submenu-button submenu-opened" : "child-submenu-button"}
-      style={{
-        color: '#666',
-        fontSize: '14px',
-        minWidth: '30px',
-        textAlign: 'center',
-      }}
-    >
-      <i className={`fa-solid ${openSections.corporate ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-    </span>
-  </div>
-
-  {/* Submenu */}
-  <ul
-    className="sub-menu"
-    style={{
-      display: openSections.corporate ? "block" : "none",
+      display: openSections.static ? "block" : "none",
       listStyle: 'none',
       padding: '8px 0 0 40px',
       margin: 0,
@@ -319,37 +238,92 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   >
     <li style={{ marginBottom: '6px' }}>
       <Link href="/building-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Building Security Guard
+        Building Security Guards
       </Link>
     </li>
     <li style={{ marginBottom: '6px' }}>
-      <Link href="/construction-site-security-guard" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Construction Site Security Guard
+      <Link href="/construction-site-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Construction Security Guards
       </Link>
     </li>
     <li style={{ marginBottom: '6px' }}>
-      <Link href="/warehouse-security-system" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Warehouse Security System
+      <Link href="/shopping-centre-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Shopping Centre Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/hospital-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Hospital Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/gate-house-security-guard" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Gatehouse Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/educational-institute-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Educational Institution Security
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/corporate-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Corporate Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/retail-security-guard" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Retail Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/loss-prevention-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Loss Prevention Security Guards
       </Link>
     </li>
     <li style={{ marginBottom: '6px' }}>
       <Link href="/concierge-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Concierge Guards
+        Concierge Security Guards
       </Link>
     </li>
     <li style={{ marginBottom: '6px' }}>
-      <Link href="/gatehouse-security-guard" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
-        Gatehouse Security Guard
+      <Link href="/lock-up-security-services" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Lock-Up and Open-Up Security
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/warehouse-security-system" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Industrial Warehouse Security
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/static-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Static Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/uniform-and-convert-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Uniform and Covert Security
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/adhoc-security-services" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Adhoc Security Services
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/asset-protection" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Asset Protection Security
       </Link>
     </li>
   </ul>
 </div>
 
 
-   {/* Loss Prevention Security */}
+    {/* Crowd Control */}
 <div className="service-category" style={{ marginBottom: '15px' }}>
   <div
-    onClick={() => toggleSection("loss")}
+    onClick={() => toggleSection("crowd")}
     style={{
       display: 'flex',
       justifyContent: 'space-between',
@@ -360,12 +334,72 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   >
     {/* Text */}
     <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
-      Loss Prevention Security
+      Crowd Control
+    </span>
+
+    {/* Icon (child-specific, separate from Services) */}
+    <span
+      className={openSections.crowd ? "child-submenu-button submenu-opened" : "child-submenu-button"}
+      style={{
+        color: '#666',
+        fontSize: '14px',
+        minWidth: '30px',
+        textAlign: 'center',
+      }}
+    >
+      <i className={`fa-solid ${openSections.crowd ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
+    </span>
+  </div>
+
+  {/* Submenu */}
+  <ul
+    className="sub-menu"
+    style={{
+      display: openSections.crowd ? "block" : "none",
+      listStyle: 'none',
+      padding: '8px 0 0 40px',
+      margin: 0,
+    }}
+  >
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/party-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Party Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/event-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Event Security Guards
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link href="/corporate-event-security-guards" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}>
+        Corporate Event Security
+      </Link>
+    </li>
+  </ul>
+</div>
+
+
+   {/* Mobile Patrols */}
+<div className="service-category" style={{ marginBottom: '15px' }}>
+  <div
+    onClick={() => toggleSection("mobile")}
+    style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '8px 10px 8px 25px',
+      cursor: 'pointer',
+    }}
+  >
+    {/* Text */}
+    <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
+      Mobile Patrols
     </span>
 
     {/* Icon (child-specific) */}
     <span
-      className={openSections.loss ? "child-submenu-button submenu-opened" : "child-submenu-button"}
+      className={openSections.mobile ? "child-submenu-button submenu-opened" : "child-submenu-button"}
       style={{
         color: '#666',
         fontSize: '14px',
@@ -373,7 +407,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
         textAlign: 'center',
       }}
     >
-      <i className={`fa-solid ${openSections.loss ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
+      <i className={`fa-solid ${openSections.mobile ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
     </span>
   </div>
 
@@ -381,7 +415,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   <ul
     className="sub-menu"
     style={{
-      display: openSections.loss ? "block" : "none",
+      display: openSections.mobile ? "block" : "none",
       listStyle: 'none',
       padding: '8px 0 0 40px',
       margin: 0,
@@ -389,65 +423,47 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   >
     <li style={{ marginBottom: '6px' }}>
       <Link
-        href="/retail-security-guard"
+        href="/lock-up-security-services"
         onClick={handleMobileMenu}
         style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
       >
-        Retail Security Guard
+        Lock-Up Security
       </Link>
     </li>
-  </ul>
-</div>
-
-
-    {/* Event Security */}
-<div className="service-category" style={{ marginBottom: '15px' }}>
-  <div
-    onClick={() => toggleSection("event")}
-    style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '8px 10px 8px 25px',
-      cursor: 'pointer',
-    }}
-  >
-    {/* Text */}
-    <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
-      Event Security
-    </span>
-
-    {/* Icon (child-specific, not parent) */}
-    <span
-      className={openSections.event ? "child-submenu-button submenu-opened" : "child-submenu-button"}
-      style={{
-        color: '#666',
-        fontSize: '14px',
-        minWidth: '30px',
-        textAlign: 'center',
-      }}
-    >
-      <i className={`fa-solid ${openSections.event ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-    </span>
-  </div>
-
-  {/* Submenu */}
-  <ul
-    className="sub-menu"
-    style={{
-      display: openSections.event ? "block" : "none",
-      listStyle: 'none',
-      padding: '8px 0 0 40px',
-      margin: 0,
-    }}
-  >
     <li style={{ marginBottom: '6px' }}>
       <Link
-        href="/event-security-guards"
+        href="/security-escort-services"
         onClick={handleMobileMenu}
         style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
       >
-        Event Security Guards
+        Security Escort
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link
+        href="/alarm-response-security-guards"
+        onClick={handleMobileMenu}
+        style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
+      >
+        Alarm Response
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link
+        href="/mobile-patrol-security"
+        onClick={handleMobileMenu}
+        style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
+      >
+        Mobile Patrols
+      </Link>
+    </li>
+    <li style={{ marginBottom: '6px' }}>
+      <Link
+        href="/construction-patrol-security-guards"
+        onClick={handleMobileMenu}
+        style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
+      >
+        Construction Patrol
       </Link>
     </li>
   </ul>
@@ -455,7 +471,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
 
 
     
-{/* Canine (K9) Security */}
+{/* K9 Security */}
 <div className="service-category" style={{ marginBottom: '15px' }}>
   <div
     onClick={() => toggleSection("k9")}
@@ -469,7 +485,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
   >
     {/* Text */}
     <span style={{ color: '#333', fontSize: '15px', fontWeight: '500' }}>
-      Canine (K9) Security
+      K9 Security
     </span>
 
     {/* Icon (separate from Services) */}
@@ -502,7 +518,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
         onClick={handleMobileMenu}
         style={{ color: '#666', textDecoration: 'none', fontSize: '13px' }}
       >
-        Canine (K9) Security Services
+        K9 Security With Handler
       </Link>
     </li>
   </ul>

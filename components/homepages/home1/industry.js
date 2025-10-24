@@ -109,7 +109,7 @@ export default function Home() {
                             >
                                 {industry.icon}
                                 
-                                {/* Rotating ring around icon */}
+                                {/* Rotating ring around icon 
                                 <div 
                                     className="position-absolute"
                                     style={{
@@ -124,7 +124,7 @@ export default function Home() {
                                         animation: 'rotate 3s linear infinite',
                                         zIndex: '1'
                                     }}
-                                ></div>
+                                ></div>*/}
                             </div>
                             
                             {/* Content */}

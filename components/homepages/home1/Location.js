@@ -32,46 +32,7 @@ export default function Location() {
         "City of Hobsons Bay", "Bonbeach", "Bulleen", "Clarinda", "Ashwood"
       ]
     },
-    {
-      id: "sydney-areas",
-      name: "Sydney Coverage Areas", 
-      description: "Professional security services throughout Sydney's key areas including CBD, Eastern Suburbs, and Inner West. Available for regular mobile security services and specialized event protection.",
-      areas: [
-        "Sydney CBD", "Ultimo", "Chippendale", "Pyrmont", "Surry Hills", "Kings Cross",
-        "Alexandria", "Redfern", "Waterloo", "Rosebery", "Botany", "Mascot",
-        "Paddington", "Bondi Junction", "Bellevue Hill", "Waverley", "Woollahra",
-        "Bondi", "Edgecliff", "Double Bay", "Rose Bay", "Vaucluse", "Randwick",
-        "Kingsford", "Kensington", "Coogee", "Northern Beaches", "North Shore"
-      ]
-    },
-    {
-      id: "regional-victoria",
-      name: "Regional Victoria",
-      description: "Extended security services beyond Melbourne metro area covering key regional destinations and tourist locations across Victoria.",
-      areas: [
-        "Geelong", "Torquay", "Lorne", "Warragul", "Mornington Peninsula",
-        "Surf Coast", "Bellarine Peninsula", "Dandenong Ranges", "Yarra Valley"
-      ]
-    },
-    {
-      id: "western-sydney",
-      name: "Western Sydney",
-      description: "Security coverage extending into Western Sydney areas for comprehensive metropolitan protection services.",
-      areas: [
-        "Parramatta", "Blacktown", "Penrith", "Liverpool", "Campbelltown",
-        "Fairfield", "Auburn", "Bankstown", "Canterbury", "Sutherland"
-      ]
-    },
-    {
-      id: "special-events",
-      name: "Special Events & VIP Services",
-      description: "For special events, private parties, corporate functions, and VIP protection, our professional security guards can travel beyond our regular coverage areas to meet your specific needs.",
-      areas: [
-        "Private parties", "Corporate events", "VIP protection", "Festivals",
-        "Concerts", "Weddings", "Product launches", "Conferences",
-        "Sports events", "Charity galas", "Award ceremonies", "Fashion shows"
-      ]
-    },
+    
     {
       id: "new-south-wales",
       name: "New South Wales",
@@ -81,57 +42,7 @@ export default function Location() {
         "Northern Beaches", "Inner West", "Eastern Suburbs", "Western Sydney"
       ]
     },
-    {
-      id: "australian-capital-territory",
-      name: "Australian Capital Territory",
-      areas: [
-        "Canberra", "Gungahlin", "Belconnen", "Woden", "Tuggeranong", "Inner North",
-        "Inner South", "Weston Creek", "Molonglo Valley"
-      ]
-    },
-    {
-      id: "queensland",
-      name: "Queensland",
-      areas: [
-        "Brisbane CBD", "Gold Coast", "Sunshine Coast", "Toowoomba", "Cairns", "Townsville",
-        "Rockhampton", "Bundaberg", "Hervey Bay", "Maryborough", "Gladstone", "Mount Isa",
-        "Logan", "Ipswich", "Redland", "Moreton Bay"
-      ]
-    },
-    {
-      id: "south-australia",
-      name: "South Australia",
-      areas: [
-        "Adelaide CBD", "North Adelaide", "Glenelg", "Port Adelaide", "Norwood", "Unley",
-        "Burnside", "Campbelltown", "Tea Tree Gully", "Salisbury", "Playford", "Onkaparinga",
-        "Mount Barker", "Victor Harbor", "Murray Bridge"
-      ]
-    },
-    {
-      id: "western-australia",
-      name: "Western Australia",
-      areas: [
-        "Perth CBD", "Fremantle", "Joondalup", "Rockingham", "Mandurah", "Bunbury",
-        "Geraldton", "Kalgoorlie", "Albany", "Broome", "Port Hedland", "Karratha",
-        "Armadale", "Gosnells", "Swan", "Wanneroo"
-      ]
-    },
-    {
-      id: "northern-territory",
-      name: "Northern Territory",
-      areas: [
-        "Darwin", "Palmerston", "Alice Springs", "Katherine", "Nhulunbuy", "Tennant Creek",
-        "Casuarina", "Tiwi", "Litchfield", "Coomalie"
-      ]
-    },
-    {
-      id: "tasmania",
-      name: "Tasmania",
-      areas: [
-        "Hobart", "Launceston", "Devonport", "Burnie", "Ulverstone", "Sorell", "Glenorchy",
-        "Clarence", "Kingborough", "Brighton", "Central Highlands", "Meander Valley"
-      ]
-    }
+    
   ];
 
   return (

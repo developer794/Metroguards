@@ -42,49 +42,13 @@ export default function Footer1() {
                                     <Link href="https://www.instagram.com/metropolitanguard/" className="social-link instagram">
                                         <i className="fab fa-instagram"></i>
                                     </Link>
-                                    <Link href="#" className="social-link whatsapp">
+                                    <Link href="https://api.whatsapp.com/send?phone=61422039505" className="social-link whatsapp">
                                         <i className="fab fa-whatsapp"></i>
                                     </Link>
                                 </div>
                                 
-                                <h3 className="footer-heading awards-heading">
-                                    <i className="fas fa-trophy"></i>
-                                    Awards
-                                </h3>
-                                <div className="awards-section">
-                                    <div className="award-logos">
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img1.webp" alt="Award 1" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img2.webp" alt="Award 2" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img3.webp" alt="Award 3" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img4.webp" alt="Award 4" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img5.webp" alt="Award 5" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img6.webp" alt="Award 6" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img7.webp" alt="Award 7" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img8.webp" alt="Award 8" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img9.webp" alt="Award 9" />
-                                        </div>
-                                        <div className="award-item">
-                                            <img src="/assets/img/corporate-responsibility/img10.webp" alt="Award 10" />
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                
                             </div>
                         </div>
 
