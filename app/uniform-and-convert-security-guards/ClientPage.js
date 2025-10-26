@@ -131,7 +131,7 @@ export default function UniformAndConvertSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="UNIFORMED & COVERT SECURITY GUARDS"
                 mainTitle="UNIFORMED & COVERT SECURITY GUARDS IN MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,7 +241,7 @@ export default function UniformAndConvertSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -486,7 +486,7 @@ export default function UniformAndConvertSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/721DA195-993B-4DA0-ADDB-58E8F37E17A3_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -565,7 +565,7 @@ export default function UniformAndConvertSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/721DA195-993B-4DA0-ADDB-58E8F37E17A3_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
                                                 alt="Uniformed and Covert Security Guards" 
                                                 className="img-fluid"
                                                 style={{

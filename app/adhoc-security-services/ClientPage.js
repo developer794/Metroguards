@@ -131,7 +131,7 @@ export default function AdhocSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="ADHOC SECURITY GUARDS "
                 mainTitle="ADHOC SECURITY GUARDS IN MELBOURNE" 
-                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -413,7 +413,7 @@ export default function AdhocSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

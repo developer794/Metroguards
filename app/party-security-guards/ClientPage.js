@@ -131,7 +131,7 @@ export default function PartySecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="PARTY SECURITY GUARDS"
                 mainTitle="PARTY SECURITY GUARDS IN MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,7 +241,7 @@ export default function PartySecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/4167D4C6-C6EC-4CFF-8531-980F347AA616_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/4167D4C6-C6EC-4CFF-8531-980F347AA616_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -406,7 +406,7 @@ export default function PartySecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/58108D6B-9846-43C4-89E9-EF7DFEBAE8E6_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/58108D6B-9846-43C4-89E9-EF7DFEBAE8E6_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

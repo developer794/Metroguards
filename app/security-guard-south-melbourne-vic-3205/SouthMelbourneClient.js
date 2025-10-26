@@ -161,7 +161,7 @@ export default function SouthMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp" 
                                             alt="Professional Security Guards South Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -213,7 +213,7 @@ export default function SouthMelbourneClient() {
                                 <div className="services-image-section pe-lg-4">
                                     <div className="image-container position-relative">
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/47170DD0-1721-43C9-BA58-B7D7C84C45DF_1_105_c.jpeg" 
                                             alt="Professional Security Guards South Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -458,7 +458,7 @@ export default function SouthMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/A7BE18A7-13A3-4A00-88C4-489D71E252D5_1_105_c.jpeg" 
                                             alt="South Melbourne Security" 
                                             className="img-fluid"
                                             style={{

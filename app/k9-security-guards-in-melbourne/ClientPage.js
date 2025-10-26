@@ -131,6 +131,7 @@ export default function K9SecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="K9 SECURITY GUARDS"
                 mainTitle="K9 SECURITY GUARDS IN MELBOURNE "
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/E1AD04AF-8F50-4A32-959C-94B8180F3D4C_1_105_c.webp"
                 
             >
                 <div>
@@ -240,7 +241,7 @@ export default function K9SecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/3306B975-83A6-4BCD-AA71-082374E3FE4F_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -292,7 +293,7 @@ export default function K9SecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/E1AD04AF-8F50-4A32-959C-94B8180F3D4C_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

@@ -131,7 +131,7 @@ export default function CorporateSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CORPORATE SECURITY GUARDS"
                 mainTitle="CORPORATE SECURITY GUARDS IN MELBOURNE"
-                
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -242,12 +242,12 @@ export default function CorporateSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '600px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -352,12 +352,12 @@ export default function CorporateSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/71A872B7-4647-45B4-A0C2-D01F1BF3056C_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '450px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -429,14 +429,14 @@ export default function CorporateSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/03549B5D-366A-47E3-BBF3-3C916341AA19_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />

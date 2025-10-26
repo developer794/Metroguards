@@ -10,7 +10,7 @@ const data = [
     description:
       "Comprehensive security solution for a major shopping center including CCTV monitoring, access control, and 24/7 security personnel ensuring customer and staff safety.",
     href: "/retail-security-guard",
-    image: "/assets/img/case-study/case-1.jpg",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/47170DD0-1721-43C9-BA58-B7D7C84C45DF_1_105_c.webp",
     icon: Shield,
   },
   {
@@ -19,7 +19,7 @@ const data = [
     description:
       "Advanced security systems for a high-rise corporate building featuring integrated access control, visitor management, and executive protection services.",
     href: "/building-security-guards",
-    image: "/assets/img/case-study/case-2.jpg",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/4E82685C-142E-406D-97AE-28BF37C77A2D_1_105_c.webp",
     icon: Building,
   },
   {
@@ -28,7 +28,7 @@ const data = [
     description:
       "Complete security infrastructure for logistics and warehouse facilities including perimeter security, cargo protection, and inventory monitoring systems.",
     href: "/warehouse-security-system",
-    image: "/assets/img/case-study/case-3.jpg",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/2856BED6-B88F-40F1-80C4-14A7F36AC8DB_1_105_c.webp",
     icon: Shield,
   },
   {
@@ -37,7 +37,7 @@ const data = [
     description:
       "Professional security coordination for major public events including crowd control, VIP protection, and emergency response planning for 10,000+ attendees.",
     href: "/event-security-guards",
-    image: "/assets/img/case-study/case-4.jpg",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/3B255AE5-CA5B-4ECF-950F-577AA9A09D6A_1_105_c.webp",
     icon: Calendar,
   },
 ];

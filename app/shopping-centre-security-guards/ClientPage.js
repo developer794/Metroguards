@@ -131,6 +131,7 @@ export default function ShoppingCentreSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SHOPPING CENTRE SECURITY GUARDS"
                 mainTitle="SHOPPING CENTRE SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/CA27AC6C-60CD-44D4-A422-3D5ECF81CF4B_1_105_c.webp"
                 
             >
                 <div>
@@ -241,7 +242,7 @@ export default function ShoppingCentreSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -351,7 +352,7 @@ export default function ShoppingCentreSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -436,7 +437,7 @@ export default function ShoppingCentreSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/4167D4C6-C6EC-4CFF-8531-980F347AA616_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

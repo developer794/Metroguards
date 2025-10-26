@@ -131,7 +131,7 @@ export default function RetailSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="RETAIL SECURITY GUARDS"
                 mainTitle="RETAIL SECURITY GUARDS IN MELBOURNE"
-                
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -240,7 +240,7 @@ export default function RetailSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -293,7 +293,7 @@ export default function RetailSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0CF93BF8-0B7B-43C2-B2FE-70B0F69C596A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

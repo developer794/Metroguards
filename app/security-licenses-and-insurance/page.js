@@ -43,6 +43,7 @@ export default function SecurityLicensePage() {
                 footerStyle={1} 
                 breadcrumbTitle="Security Licenses & Insurance"
                 mainTitle="Licensed & Insured Security Services"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
                 subtitle="Professional Security Solutions with Full Licensing and Comprehensive Insurance Coverage in Melbourne"
             >
                 <div>

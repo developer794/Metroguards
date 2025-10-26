@@ -131,6 +131,7 @@ export default function HospitalSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="HOSPITAL SECURITY GUARDS"
                 mainTitle="HOSPITAL SECURITY GUARDS IN MELBOURNE "
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/C4414502-E0C7-4E1C-B431-0D27054173C2_1_105_c.webp"
                 
             >
                 <div>
@@ -241,12 +242,12 @@ export default function HospitalSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/4F9FA8BC-5081-4EC6-8701-0B39FAA430E2_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '800px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -351,12 +352,12 @@ export default function HospitalSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/A9D17577-BA14-4697-A4E6-F23EFF824D9A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -430,14 +431,14 @@ export default function HospitalSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/B6B4C4AC-09D3-48A8-87B6-8844B434A753_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '600px',
                                                     objectFit: 'cover'
                                                 }}
                                             />

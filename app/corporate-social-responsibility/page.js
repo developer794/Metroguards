@@ -79,7 +79,7 @@ export default function Page() {
         breadcrumbTitle="ABOUT METRO GUARDS"
         mainTitle="Corporate <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Responsibility</span> & Community Service"
         subtitle="Leading Security Services with Excellence, Integrity & Environmental Sustainability"
-        backgroundImage="/assets/img/about/community.jpg"
+        backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/CA27AC6C-60CD-44D4-A422-3D5ECF81CF4B_1_105_c.webp"
       >
         <div>
           {/*===== Introduction Section =====*/}

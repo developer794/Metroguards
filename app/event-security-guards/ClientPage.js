@@ -125,6 +125,7 @@ export default function EventSecurityGuardsPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="EVENT SECURITY GUARDS"
                 mainTitle="EVENT SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
                 
             >
                 <div>
@@ -234,7 +235,7 @@ export default function EventSecurityGuardsPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/2049DFE4-9100-40B3-BFE7-7DBFF6FBBC49_1_105_c.webp" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -344,7 +345,7 @@ export default function EventSecurityGuardsPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/0CF93BF8-0B7B-43C2-B2FE-70B0F69C596A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -420,7 +421,7 @@ export default function EventSecurityGuardsPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

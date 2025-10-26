@@ -20,6 +20,7 @@ export default function TermsConditionsPage() {
                 footerStyle={1} 
                 breadcrumbTitle="Terms & Conditions"
                 mainTitle="Terms & Conditions"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp"
                 subtitle="Legal Terms and Conditions for Metropolitan Security Services in Melbourne"
             >
                 <div>

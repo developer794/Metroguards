@@ -125,6 +125,7 @@ export default function GateHouseSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="GATEHOUSE SECURITY GUARDS"
                 mainTitle="GATEHOUSE SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Gatehouse%20Security%20Guard/0DDA3933-2DD3-4AC3-9E0D-202CEE3C5A22_1_105_c.webp"
                 
             >
                 <div>
@@ -235,7 +236,7 @@ export default function GateHouseSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Gatehouse%20Security%20Guard/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -287,7 +288,7 @@ export default function GateHouseSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Gatehouse%20Security%20Guard/DF57F5E3-906F-4F75-A1AF-AE4A9D7754E1_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

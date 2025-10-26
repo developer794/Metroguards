@@ -15,9 +15,9 @@ export default function PrivacyPolicyPage() {
                 footerStyle={1} 
                 headTitle="Privacy Policy - Metropolitan Guards Security Services"
                 breadcrumbTitle="Privacy & Data Protection"
-                mainTitle="Your Privacy is Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Priority</span>"
+                mainTitle="Your Privacy is Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Priority</span>"
                 subtitle="We are committed to protecting your personal information and maintaining the highest standards of data security and privacy compliance."
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div className="privacy-policy-page">
                     {/*===== Introduction Section =====*/}
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
                                     <div className="intro-content" data-aos="fade-right">
                                         <div className="intro-badge" style={{
                                             display: 'inline-block',
-                                            background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                             color: '#1e2247',
                                             padding: '12px 24px',
                                             borderRadius: '30px',
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
                                         }}>
                                             Protecting Your Data with 
                                             <span style={{
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 WebkitBackgroundClip: 'text',
                                                 WebkitTextFillColor: 'transparent',
                                                 backgroundClip: 'text'
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-lg-6">
                                     <div className="intro-visual" data-aos="fade-left" style={{ position: 'relative' }}>
                                         <div style={{
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             borderRadius: '20px',
                                             padding: '40px',
                                             boxShadow: '0 20px 40px rgba(30, 34, 71, 0.2)',
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -175,7 +175,7 @@ export default function PrivacyPolicyPage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -205,15 +205,15 @@ export default function PrivacyPolicyPage() {
                         overflow: 'hidden'
                     }}>
                         {/* Decorative background */}
-                        <div style={{ position: 'absolute', top: '-140px', right: '-140px', width: '340px', height: '340px', background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.06) 0%, rgba(243, 156, 18, 0.04) 100%)', borderRadius: '50%', filter: 'blur(80px)' }}></div>
-                        <div style={{ position: 'absolute', bottom: '-160px', left: '-160px', width: '420px', height: '420px', background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.04) 0%, rgba(44, 62, 80, 0.03) 100%)', borderRadius: '50%', filter: 'blur(90px)' }}></div>
+                        <div style={{ position: 'absolute', top: '-140px', right: '-140px', width: '340px', height: '340px', background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.06) 0%, rgba(253, 197, 26, 0.04) 100%)', borderRadius: '50%', filter: 'blur(80px)' }}></div>
+                        <div style={{ position: 'absolute', bottom: '-160px', left: '-160px', width: '420px', height: '420px', background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.04) 0%, rgba(30, 34, 71, 0.03) 100%)', borderRadius: '50%', filter: 'blur(90px)' }}></div>
 
                         <div className="container">
                             {/* Section Header */}
                             <div className="text-center" style={{ marginBottom: '60px' }}>
                                 <div style={{
                                     display: 'inline-block',
-                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                     color: '#1e2247',
                                     padding: '12px 24px',
                                     borderRadius: '30px',
@@ -234,7 +234,7 @@ export default function PrivacyPolicyPage() {
                                     marginBottom: '12px'
                                 }}>
                                     How We <span style={{
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         WebkitBackgroundClip: 'text',
                                         WebkitTextFillColor: 'transparent',
                                         backgroundClip: 'text'
@@ -250,7 +250,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-12">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderLeft: '6px solid #fdc51a', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)' }}>
                                         <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                                            <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem' }}>
+                                            <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem' }}>
                                                 <i className="bi bi-emoji-smile"></i>
                                             </div>
                                             <div>
@@ -270,7 +270,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-shield-lock"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Collection and Use of Information</h4>
@@ -291,7 +291,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-lock"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Information Disclosure</h4>
@@ -306,7 +306,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-eye"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Access to Your Information</h4>
@@ -321,7 +321,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-shield-check"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Data Security</h4>
@@ -345,15 +345,15 @@ export default function PrivacyPolicyPage() {
                         overflow: 'hidden'
                     }}>
                         {/* Decorative background elements */}
-                        <div style={{ position: 'absolute', top: '-140px', right: '-140px', width: '340px', height: '340px', background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.06) 0%, rgba(243, 156, 18, 0.04) 100%)', borderRadius: '50%', filter: 'blur(80px)' }}></div>
-                        <div style={{ position: 'absolute', bottom: '-160px', left: '-160px', width: '420px', height: '420px', background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.04) 0%, rgba(44, 62, 80, 0.03) 100%)', borderRadius: '50%', filter: 'blur(90px)' }}></div>
+                        <div style={{ position: 'absolute', top: '-140px', right: '-140px', width: '340px', height: '340px', background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.06) 0%, rgba(253, 197, 26, 0.04) 100%)', borderRadius: '50%', filter: 'blur(80px)' }}></div>
+                        <div style={{ position: 'absolute', bottom: '-160px', left: '-160px', width: '420px', height: '420px', background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.04) 0%, rgba(30, 34, 71, 0.03) 100%)', borderRadius: '50%', filter: 'blur(90px)' }}></div>
 
                         <div className="container">
                             {/* Header */}
                             <div className="text-center" style={{ marginBottom: '60px' }}>
                                 <div style={{
                                     display: 'inline-block',
-                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                     color: '#1e2247',
                                     padding: '12px 24px',
                                     borderRadius: '30px',
@@ -374,7 +374,7 @@ export default function PrivacyPolicyPage() {
                                     marginBottom: '12px'
                                 }}>
                                     Our Privacy <span style={{
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         WebkitBackgroundClip: 'text',
                                         WebkitTextFillColor: 'transparent',
                                         backgroundClip: 'text'
@@ -390,7 +390,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-file-earmark-text"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Privacy Act 1988</h4>
@@ -404,7 +404,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-shield-check"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Data Protection</h4>
@@ -418,7 +418,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-people"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Staff Training</h4>
@@ -432,7 +432,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #dc3545 0%, #b91c1c 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-activity"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Incident Response</h4>
@@ -446,7 +446,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-diagram-3"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>Third-Party Processors</h4>
@@ -460,7 +460,7 @@ export default function PrivacyPolicyPage() {
                                 <div className="col-md-6 col-lg-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '18px', padding: '26px', boxShadow: '0 10px 30px rgba(0,0,0,0.06)', height: '100%' }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #17a2b8 0%, #138496 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
+                                            <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' }}>
                                                 <i className="bi bi-globe"></i>
                                             </div>
                                             <h4 style={{ margin: 0, color: '#1e2247', fontWeight: 700, fontSize: '1.1rem' }}>International Transfers</h4>

@@ -68,7 +68,7 @@ export default function Page() {
         breadcrumbTitle="ABOUT METRO GUARDS"
         mainTitle="Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Mission</span> & Vision"
         subtitle="Dedicated to Excellence in Security Services & Community Protection"
-        backgroundImage="/assets/img/about/about23.png"
+        backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.webp"
       >
                 <div>
           {/*===== Mission Statement Introduction Section =====*/}

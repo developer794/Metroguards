@@ -46,7 +46,7 @@ export default function ContractorDeclarationPage() {
                 breadcrumbTitle="Contractor Declaration Form"
                 mainTitle="Contractor Declaration & Compliance Form"
                 subtitle="Regulatory compliance • Insurance verification • License validation"
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
             >
                 
                 {/* Classic Hero Section */}
@@ -64,7 +64,7 @@ export default function ContractorDeclarationPage() {
                                     <div className="hero-badge" style={{
                                         display: 'inline-flex',
                                         alignItems: 'center',
-                                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                         color: '#ffffff',
                                         padding: '8px 20px',
                                         borderRadius: '25px',
@@ -108,11 +108,11 @@ export default function ContractorDeclarationPage() {
                                         marginBottom: '30px'
                                     }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <i className="bi bi-shield-check" style={{ color: '#28a745', fontSize: '1.2rem' }}></i>
+                                            <i className="bi bi-shield-check" style={{ color: '#fdc51a', fontSize: '1.2rem' }}></i>
                                             <span style={{ color: '#1e2247', fontWeight: '500' }}>Compliance Verification</span>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <i className="bi bi-file-earmark-check" style={{ color: '#007bff', fontSize: '1.2rem' }}></i>
+                                            <i className="bi bi-file-earmark-check" style={{ color: '#fdc51a', fontSize: '1.2rem' }}></i>
                                             <span style={{ color: '#1e2247', fontWeight: '500' }}>Legal Documentation</span>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -147,7 +147,7 @@ export default function ContractorDeclarationPage() {
                                         <div style={{
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                             borderRadius: '50%',
                                             display: 'flex',
                                             alignItems: 'center',
@@ -195,13 +195,13 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         marginRight: '15px',
-                                                        boxShadow: '0 4px 15px rgba(0, 123, 255, 0.3)'
+                                                        boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-building" style={{ fontSize: '1.3rem', color: '#ffffff' }}></i>
                                                     </div>
@@ -225,7 +225,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-6 mb-4">
                                                     <label htmlFor="companyName" className="classic-form-label">
                                                         <i className="bi bi-briefcase" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Company Name <span style={{ color: '#dc3545' }}>*</span>
+                                                        Company Name <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -239,7 +239,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-6 mb-4">
                                                     <label htmlFor="abnAcn" className="classic-form-label">
                                                         <i className="bi bi-hash" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        ABN / ACN Number <span style={{ color: '#dc3545' }}>*</span>
+                                                        ABN / ACN Number <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -255,9 +255,9 @@ export default function ContractorDeclarationPage() {
 
                                         {/* Declaration Statement Section */}
                                         <div className="form-section mb-5" style={{
-                                            background: 'rgba(253, 197, 26, 0.05)',
+                                            background: 'rgba(30, 34, 71, 0.05)',
                                             borderRadius: '15px',
-                                            border: '2px solid rgba(253, 197, 26, 0.2)',
+                                            border: '2px solid rgba(30, 34, 71, 0.2)',
                                             padding: '30px',
                                             position: 'relative'
                                         }}>
@@ -270,15 +270,15 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         marginRight: '15px',
-                                                        boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
+                                                        boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)'
                                                     }}>
-                                                        <i className="bi bi-person-badge" style={{ fontSize: '1.3rem', color: '#1e2247' }}></i>
+                                                        <i className="bi bi-person-badge" style={{ fontSize: '1.3rem', color: '#ffffff' }}></i>
                                                     </div>
                                                     <div>
                                                         <h4 style={{
@@ -300,7 +300,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-4 mb-4">
                                                     <label htmlFor="declarantName" className="classic-form-label">
                                                         <i className="bi bi-person" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        I, <span style={{ color: '#dc3545' }}>*</span>
+                                                        I, <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -314,7 +314,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-4 mb-4">
                                                     <label htmlFor="position" className="classic-form-label">
                                                         <i className="bi bi-award" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        in the position of <span style={{ color: '#dc3545' }}>*</span>
+                                                        in the position of <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <select className="form-control classic-form-input" id="position" name="position" required>
                                                         <option value="">Select Position</option>
@@ -325,7 +325,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-4 mb-4">
                                                     <label htmlFor="declarationDate" className="classic-form-label">
                                                         <i className="bi bi-calendar-date" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        state that as of <span style={{ color: '#dc3545' }}>*</span>
+                                                        state that as of <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="date" 
@@ -352,7 +352,7 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '40px',
                                                         height: '40px',
-                                                        background: 'linear-gradient(135deg, #17a2b8 0%, #138496 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -378,9 +378,9 @@ export default function ContractorDeclarationPage() {
 
                                         {/* Compliance Questions Section */}
                                         <div className="compliance-questions-wrapper form-section mb-5" style={{
-                                            background: 'rgba(40, 167, 69, 0.05)',
+                                            background: 'rgba(253, 197, 26, 0.05)',
                                             borderRadius: '15px',
-                                            border: '2px solid rgba(40, 167, 69, 0.2)',
+                                            border: '2px solid rgba(253, 197, 26, 0.2)',
                                             padding: '30px',
                                             position: 'relative'
                                         }}>
@@ -393,13 +393,13 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         marginRight: '15px',
-                                                        boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)'
+                                                        boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-shield-check" style={{ fontSize: '1.3rem', color: '#ffffff' }}></i>
                                                     </div>
@@ -466,7 +466,7 @@ export default function ContractorDeclarationPage() {
                                                                 <div style={{
                                                                     width: '28px',
                                                                     height: '28px',
-                                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                                     borderRadius: '50%',
                                                                     display: 'flex',
                                                                     alignItems: 'center',
@@ -502,7 +502,7 @@ export default function ContractorDeclarationPage() {
                                                                         style={{
                                                                             width: '18px',
                                                                             height: '18px',
-                                                                            border: '2px solid #28a745',
+                                                                            border: '2px solid #fdc51a',
                                                                             backgroundColor: '#fafafa'
                                                                         }}
                                                                     />
@@ -525,7 +525,7 @@ export default function ContractorDeclarationPage() {
                                                                         style={{
                                                                             width: '18px',
                                                                             height: '18px',
-                                                                            border: '2px solid #dc3545',
+                                                                            border: '2px solid #1e2247',
                                                                             backgroundColor: '#fafafa'
                                                                         }}
                                                                     />
@@ -547,9 +547,9 @@ export default function ContractorDeclarationPage() {
 
                                         {/* Declaration Text Section */}
                                         <div className="form-section mb-5" style={{
-                                            background: 'rgba(220, 53, 69, 0.05)',
+                                            background: 'rgba(30, 34, 71, 0.05)',
                                             borderRadius: '15px',
-                                            border: '2px solid rgba(220, 53, 69, 0.2)',
+                                            border: '2px solid rgba(30, 34, 71, 0.2)',
                                             padding: '30px',
                                             position: 'relative'
                                         }}>
@@ -562,13 +562,13 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         marginRight: '15px',
-                                                        boxShadow: '0 4px 15px rgba(220, 53, 69, 0.3)'
+                                                        boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)'
                                                     }}>
                                                         <i className="bi bi-exclamation-triangle" style={{ fontSize: '1.3rem', color: '#ffffff' }}></i>
                                                     </div>
@@ -599,7 +599,7 @@ export default function ContractorDeclarationPage() {
                                                     color: '#1e2247',
                                                     fontSize: '0.95rem'
                                                 }}>
-                                                    <strong style={{ color: '#dc3545' }}>I declare</strong> the above information is correct and that should any information supplied be misleading or incorrect may result in the termination of the Agreement with Metropolitan Guard Services.
+                                                    <strong style={{ color: '#1e2247' }}>I declare</strong> the above information is correct and that should any information supplied be misleading or incorrect may result in the termination of the Agreement with Metropolitan Guard Services.
                                                 </p>
                                                 <p className="mb-3" style={{ 
                                                     lineHeight: '1.6', 
@@ -621,9 +621,9 @@ export default function ContractorDeclarationPage() {
 
                                         {/* Signature Section */}
                                         <div className="form-section mb-5" style={{
-                                            background: 'rgba(111, 66, 193, 0.05)',
+                                            background: 'rgba(253, 197, 26, 0.05)',
                                             borderRadius: '15px',
-                                            border: '2px solid rgba(111, 66, 193, 0.2)',
+                                            border: '2px solid rgba(253, 197, 26, 0.2)',
                                             padding: '30px',
                                             position: 'relative'
                                         }}>
@@ -636,13 +636,13 @@ export default function ContractorDeclarationPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         marginRight: '15px',
-                                                        boxShadow: '0 4px 15px rgba(111, 66, 193, 0.3)'
+                                                        boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-pen" style={{ fontSize: '1.3rem', color: '#ffffff' }}></i>
                                                     </div>
@@ -666,7 +666,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-6 mb-4">
                                                     <label htmlFor="signature" className="classic-form-label">
                                                         <i className="bi bi-signature" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Digital Signature <span style={{ color: '#dc3545' }}>*</span>
+                                                        Digital Signature <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -680,7 +680,7 @@ export default function ContractorDeclarationPage() {
                                                 <div className="col-md-6 mb-4">
                                                     <label htmlFor="signatureDate" className="classic-form-label">
                                                         <i className="bi bi-calendar-check" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Signature Date <span style={{ color: '#dc3545' }}>*</span>
+                                                        Signature Date <span style={{ color: '#1e2247' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="date" 
@@ -701,7 +701,7 @@ export default function ContractorDeclarationPage() {
                                                     borderRadius: "12px",
                                                     fontSize: "1.1rem",
                                                     fontWeight: "600",
-                                                    background: "linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)",
+                                                    background: "linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)",
                                                     border: "2px solid #fdc51a",
                                                     color: "#1e2247",
                                                     boxShadow: "0 4px 15px rgba(253, 197, 26, 0.3)",
@@ -748,7 +748,7 @@ export default function ContractorDeclarationPage() {
                                                     justifyContent: 'center',
                                                     gap: '10px'
                                                 }}>
-                                                    <i className="bi bi-shield-lock" style={{ color: '#17a2b8', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-shield-lock" style={{ color: '#1e2247', fontSize: '1.1rem' }}></i>
                                                     <p style={{
                                                         color: '#1e2247',
                                                         margin: '0',
@@ -860,8 +860,8 @@ export default function ContractorDeclarationPage() {
 
                     /* Submit button hover effects */
                     .btn:hover:not(:disabled) {
-                        background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%) !important;
-                        border-color: #f39c12 !important;
+                        background: linear-gradient(135deg, #fdc51a 0%, #e67e22 100%) !important;
+                        border-color: #fdc51a !important;
                         box-shadow: 0 6px 20px rgba(253, 197, 26, 0.4) !important;
                         transform: translateY(-2px) !important;
                     }
@@ -944,7 +944,7 @@ export default function ContractorDeclarationPage() {
                     .compliance-item div[style*="background: linear-gradient"] {
                         width: 28px !important;
                         height: 28px !important;
-                        background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+                        background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%) !important;
                         border-radius: 50% !important;
                         display: flex !important;
                         align-items: center !important;

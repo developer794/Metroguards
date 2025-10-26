@@ -161,7 +161,7 @@ export default function WestMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/CA53F706-BC0B-42B2-87ED-F1408691158F_1_105_c.webp" 
                                             alt="Professional Security Guards West Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -213,7 +213,7 @@ export default function WestMelbourneClient() {
                                 <div className="services-image-section pe-lg-4">
                                     <div className="image-container position-relative">
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp" 
                                             alt="Professional Security Guards West Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -458,7 +458,7 @@ export default function WestMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
                                             alt="West Melbourne Security" 
                                             className="img-fluid"
                                             style={{

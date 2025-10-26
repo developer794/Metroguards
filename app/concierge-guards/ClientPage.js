@@ -131,6 +131,7 @@ export default function ConciergeSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONCIERGE SECURITY GUARDS"
                 mainTitle="CONCIERGE SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
                 
             >
                 <div>
@@ -241,12 +242,12 @@ export default function ConciergeSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -351,7 +352,7 @@ export default function ConciergeSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/CA53F706-BC0B-42B2-87ED-F1408691158F_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -428,7 +429,7 @@ export default function ConciergeSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

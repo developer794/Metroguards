@@ -12,7 +12,7 @@ export default function NewHero() {
   const slides = [
     {
       id: 1,
-      image: "/assets/img/banner/metro-2-copy.jpg",
+      image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp",
       kicker: "Welcome to Metro Guards",
       titleTop: "Security",
       titleBottom: " Services",
@@ -20,7 +20,7 @@ export default function NewHero() {
     },
     {
       id: 2,
-      image: "/assets/img/banner/metro-3.jpg",
+      image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Events%20Secuirty/51BEE2F0-1C5C-4D14-BE17-7CA4C4DDC7C5_1_105_c.jpeg",
       kicker: "Welcome to Metro Guards",
       titleTop: "Security",
       titleBottom: "Services",
@@ -28,7 +28,7 @@ export default function NewHero() {
     },
     {
       id: 3,
-      image: "/assets/img/banner/metro-2-copy.jpg",
+      image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Gatehouse%20Security%20Guard/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp",
       kicker: "Welcome to Metro Guards",
       titleTop: "Security",
       titleBottom: "Services",

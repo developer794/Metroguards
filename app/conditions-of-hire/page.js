@@ -25,9 +25,9 @@ export default function ConditionsOfHirePage() {
                 footerStyle={1} 
                 headTitle="Conditions of Hire - Metropolitan Guards Security Services"
                 breadcrumbTitle="Terms & Conditions"
-                mainTitle="Professional <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Hire Conditions</span>"
+                mainTitle="Professional <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Hire Conditions</span>"
                 subtitle="Comprehensive terms and conditions for hiring our professional security personnel. Clear, transparent, and designed to protect both parties in our service agreements."
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/A7BE18A7-13A3-4A00-88C4-489D71E252D5_1_105_c.jpeg"
             >
                 <div className={`conditions-page ${isVisible ? 'visible' : ''}`}>
                     {/*===== Introduction Section =====*/}
@@ -43,7 +43,7 @@ export default function ConditionsOfHirePage() {
                                     <div className="intro-content" data-aos="fade-right">
                                         <div className="intro-badge" style={{
                                             display: 'inline-block',
-                                            background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                             color: '#1e2247',
                                             padding: '12px 24px',
                                             borderRadius: '30px',
@@ -66,7 +66,7 @@ export default function ConditionsOfHirePage() {
                                         }}>
                                             Clear & Transparent 
                                             <span style={{
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 WebkitBackgroundClip: 'text',
                                                 WebkitTextFillColor: 'transparent',
                                                 backgroundClip: 'text'
@@ -100,7 +100,7 @@ export default function ConditionsOfHirePage() {
                                     <button 
                                         onClick={() => scrollToSection('overview')} 
                                                 style={{
-                                                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     color: '#fff',
                                                     border: 'none',
                                                     padding: '15px 30px',
@@ -160,7 +160,7 @@ export default function ConditionsOfHirePage() {
                                 <div className="col-lg-6">
                                     <div className="intro-visual" data-aos="fade-left" style={{ position: 'relative' }}>
                                         <div style={{
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             borderRadius: '20px',
                                             padding: '40px',
                                             boxShadow: '0 20px 40px rgba(30, 34, 71, 0.2)',
@@ -190,7 +190,7 @@ export default function ConditionsOfHirePage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -208,7 +208,7 @@ export default function ConditionsOfHirePage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -226,7 +226,7 @@ export default function ConditionsOfHirePage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -244,7 +244,7 @@ export default function ConditionsOfHirePage() {
                                                     <div style={{
                                                         width: '80px',
                                                         height: '80px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -301,7 +301,7 @@ export default function ConditionsOfHirePage() {
                             <div className="section-header text-center" style={{ marginBottom: '80px' }}>
                                 <div className="section-badge" style={{
                                     display: 'inline-block',
-                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                     color: '#1e2247',
                                     padding: '12px 24px',
                                     borderRadius: '30px',
@@ -323,7 +323,7 @@ export default function ConditionsOfHirePage() {
                                     lineHeight: '1.2'
                                 }}>
                                     Key <span style={{
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         WebkitBackgroundClip: 'text',
                                         WebkitTextFillColor: 'transparent',
                                         backgroundClip: 'text'
@@ -350,7 +350,7 @@ export default function ConditionsOfHirePage() {
                                     top: '0',
                                     bottom: '0',
                                     width: '4px',
-                                    background: 'linear-gradient(180deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(180deg, #fdc51a 0%, #fdc51a 100%)',
                                     transform: 'translateX(-50%)',
                                     borderRadius: '2px',
                                     zIndex: '1'
@@ -394,7 +394,7 @@ export default function ConditionsOfHirePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -470,7 +470,7 @@ export default function ConditionsOfHirePage() {
                                         transform: 'translateX(-50%)',
                                         width: '50px',
                                         height: '50px',
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -503,7 +503,7 @@ export default function ConditionsOfHirePage() {
                                         transform: 'translateX(-50%)',
                                         width: '50px',
                                         height: '50px',
-                                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -548,7 +548,7 @@ export default function ConditionsOfHirePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -645,7 +645,7 @@ export default function ConditionsOfHirePage() {
                                                 right: '-20px',
                                                 width: '100px',
                                                 height: '100px',
-                                                background: 'linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(185, 28, 28, 0.05) 100%)',
+                                                background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, rgba(30, 34, 71, 0.05) 100%)',
                                                 borderRadius: '50%'
                                             }}></div>
                                             <div className="condition-header" style={{
@@ -657,7 +657,7 @@ export default function ConditionsOfHirePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #dc3545 0%, #b91c1c 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -692,11 +692,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(220, 53, 69, 0.08)',
+                                                    background: 'rgba(30, 34, 71, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #dc3545'
+                                                    borderLeft: '4px solid #1e2247'
                                                 }}>
-                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#dc3545', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#1e2247', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>Management approval required</span>
                                                 </div>
                                                 <div style={{
@@ -704,11 +704,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(220, 53, 69, 0.08)',
+                                                    background: 'rgba(30, 34, 71, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #dc3545'
+                                                    borderLeft: '4px solid #1e2247'
                                                 }}>
-                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#dc3545', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#1e2247', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>160-hour placement fee</span>
                                                 </div>
                                                 <div style={{
@@ -716,11 +716,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(220, 53, 69, 0.08)',
+                                                    background: 'rgba(30, 34, 71, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #dc3545'
+                                                    borderLeft: '4px solid #1e2247'
                                                 }}>
-                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#dc3545', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-exclamation-triangle-fill" style={{ color: '#1e2247', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>Immediate invoicing</span>
                                                 </div>
                                             </div>
@@ -734,7 +734,7 @@ export default function ConditionsOfHirePage() {
                                         transform: 'translateX(-50%)',
                                         width: '50px',
                                         height: '50px',
-                                        background: 'linear-gradient(135deg, #dc3545 0%, #b91c1c 100%)',
+                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -743,7 +743,7 @@ export default function ConditionsOfHirePage() {
                                         fontWeight: '700',
                                         color: '#fff',
                                         zIndex: '2',
-                                        boxShadow: '0 8px 25px rgba(220, 53, 69, 0.4)'
+                                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.4)'
                                     }}>
                                         03
                                     </div>
@@ -766,7 +766,7 @@ export default function ConditionsOfHirePage() {
                                         transform: 'translateX(-50%)',
                                         width: '50px',
                                         height: '50px',
-                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         borderRadius: '50%',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -775,7 +775,7 @@ export default function ConditionsOfHirePage() {
                                         fontWeight: '700',
                                         color: '#fff',
                                         zIndex: '2',
-                                        boxShadow: '0 8px 25px rgba(40, 167, 69, 0.4)'
+                                        boxShadow: '0 8px 25px rgba(253, 197, 26, 0.4)'
                                     }}>
                                         04
                                     </div>
@@ -799,7 +799,7 @@ export default function ConditionsOfHirePage() {
                                                 left: '-20px',
                                                 width: '100px',
                                                 height: '100px',
-                                                background: 'linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%)',
+                                                background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
                                                 borderRadius: '50%'
                                             }}></div>
                                             <div className="condition-header" style={{
@@ -811,7 +811,7 @@ export default function ConditionsOfHirePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -846,11 +846,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(40, 167, 69, 0.08)',
+                                                    background: 'rgba(253, 197, 26, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #28a745'
+                                                    borderLeft: '4px solid #fdc51a'
                                                 }}>
-                                                    <i className="bi bi-clock-fill" style={{ color: '#28a745', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-clock-fill" style={{ color: '#fdc51a', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>48-hour notice required</span>
                                                 </div>
                                                 <div style={{
@@ -858,11 +858,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(40, 167, 69, 0.08)',
+                                                    background: 'rgba(253, 197, 26, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #28a745'
+                                                    borderLeft: '4px solid #fdc51a'
                                                 }}>
-                                                    <i className="bi bi-shield-check" style={{ color: '#28a745', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-shield-check" style={{ color: '#fdc51a', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>$10M public liability included</span>
                                                 </div>
                                                 <div style={{
@@ -870,11 +870,11 @@ export default function ConditionsOfHirePage() {
                                                     alignItems: 'center',
                                                     gap: '12px',
                                                     padding: '10px 15px',
-                                                    background: 'rgba(40, 167, 69, 0.08)',
+                                                    background: 'rgba(253, 197, 26, 0.08)',
                                                     borderRadius: '15px',
-                                                    borderLeft: '4px solid #28a745'
+                                                    borderLeft: '4px solid #fdc51a'
                                                 }}>
-                                                    <i className="bi bi-check-circle-fill" style={{ color: '#28a745', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-check-circle-fill" style={{ color: '#fdc51a', fontSize: '1.1rem' }}></i>
                                                     <span style={{ color: '#1e2247', fontWeight: '600', fontSize: '0.9rem' }}>All taxes and fees included</span>
                                                 </div>
                                             </div>
@@ -886,7 +886,7 @@ export default function ConditionsOfHirePage() {
                             {/* Call to Action */}
                             <div className="section-cta text-center" style={{ marginTop: '80px' }}>
                                 <div style={{
-                                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                     borderRadius: '25px',
                                     padding: '50px',
                                     color: '#fff',
@@ -931,7 +931,7 @@ export default function ConditionsOfHirePage() {
                                     </p>
                                     <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                                         <a href="/contacts" style={{
-                                            background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                             color: '#1e2247',
                                             padding: '15px 30px',
                                             borderRadius: '50px',
@@ -1023,7 +1023,7 @@ export default function ConditionsOfHirePage() {
                             <div className="text-center" style={{ marginBottom: '70px' }}>
                                 <div style={{
                                     display: 'inline-block',
-                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                     color: '#1e2247',
                                     padding: '12px 24px',
                                     borderRadius: '30px',
@@ -1044,7 +1044,7 @@ export default function ConditionsOfHirePage() {
                                     marginBottom: '16px'
                                 }}>
                                     Payment Terms <span style={{
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         WebkitBackgroundClip: 'text',
                                         WebkitTextFillColor: 'transparent',
                                         backgroundClip: 'text'
@@ -1077,7 +1077,7 @@ export default function ConditionsOfHirePage() {
                                                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
                                                     <div style={{
                                                         width: '56px', height: '56px', borderRadius: '14px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem'
                                                     }}>
                                                         <i className="bi bi-file-text"></i>
@@ -1097,15 +1097,15 @@ export default function ConditionsOfHirePage() {
                                             <div style={{
                                                 background: '#fff',
                                                 border: '1px solid #ffe5e8',
-                                                borderLeft: '6px solid #dc3545',
+                                                borderLeft: '6px solid #1e2247',
                                                 borderRadius: '18px',
                                                 padding: '28px',
-                                                boxShadow: '0 10px 30px rgba(220, 53, 69, 0.08)'
+                                                boxShadow: '0 10px 30px rgba(30, 34, 71, 0.08)'
                                             }}>
                                                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
                                                     <div style={{
                                                         width: '56px', height: '56px', borderRadius: '14px',
-                                                        background: 'linear-gradient(135deg, #dc3545 0%, #b91c1c 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem'
                                                     }}>
                                                         <i className="bi bi-exclamation-triangle-fill"></i>
@@ -1125,15 +1125,15 @@ export default function ConditionsOfHirePage() {
                                             <div style={{
                                                 background: '#fff',
                                                 border: '1px solid #e9f7ef',
-                                                borderLeft: '6px solid #28a745',
+                                                borderLeft: '6px solid #fdc51a',
                                                 borderRadius: '18px',
                                                 padding: '28px',
-                                                boxShadow: '0 10px 30px rgba(40, 167, 69, 0.08)'
+                                                boxShadow: '0 10px 30px rgba(253, 197, 26, 0.08)'
                                             }}>
                                                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
                                                     <div style={{
                                                         width: '56px', height: '56px', borderRadius: '14px',
-                                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem'
                                                     }}>
                                                         <i className="bi bi-credit-card-fill"></i>
@@ -1162,7 +1162,7 @@ export default function ConditionsOfHirePage() {
                                             }}>
                                                 <div style={{
                                                     width: '36px', height: '36px', borderRadius: '10px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center'
                                                 }}>
                                                     <i className={`bi ${step.icon}`}></i>
@@ -1177,7 +1177,7 @@ export default function ConditionsOfHirePage() {
                                 <div className="col-lg-5">
                                     <div style={{ height: '100%', display: 'grid', gap: '18px' }}>
                                         <div style={{
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             borderRadius: '20px', color: '#fff', padding: '28px', position: 'relative', overflow: 'hidden'
                                         }}>
                                             <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '110px', height: '110px', background: 'rgba(253,197,26,0.12)', borderRadius: '50%' }} />
@@ -1208,7 +1208,7 @@ export default function ConditionsOfHirePage() {
                                             <p style={{ margin: 0, color: '#6c757d' }}>Talk to our accounts team for flexible options or clarifications.</p>
                                             <div style={{ display: 'flex', gap: '12px', marginTop: '16px', flexWrap: 'wrap' }}>
                                                 <a href="tel:1300731173" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)', color: '#1e2247',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#1e2247',
                                                     padding: '10px 16px', borderRadius: '12px', fontWeight: 700, textDecoration: 'none'
                                                 }}><i className="bi bi-telephone me-1"></i> Call</a>
                                                 <a href="mailto:admin@metroguards.com.au" style={{
@@ -1229,7 +1229,7 @@ export default function ConditionsOfHirePage() {
                             <div className="text-center" style={{ marginBottom: '70px' }}>
                                 <div style={{
                                     display: 'inline-block',
-                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                     color: '#1e2247',
                                     padding: '12px 24px',
                                     borderRadius: '30px',
@@ -1250,7 +1250,7 @@ export default function ConditionsOfHirePage() {
                                     marginBottom: '12px'
                                 }}>
                                     General <span style={{
-                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                         WebkitBackgroundClip: 'text',
                                         WebkitTextFillColor: 'transparent',
                                         backgroundClip: 'text'
@@ -1268,7 +1268,7 @@ export default function ConditionsOfHirePage() {
                             <div className="row g-3 mb-4">
                                 <div className="col-md-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '14px', padding: '16px 18px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.05)' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#1e2247', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                             <i className="bi bi-shield-lock"></i>
                                         </div>
                                         <div>
@@ -1279,7 +1279,7 @@ export default function ConditionsOfHirePage() {
                                 </div>
                                 <div className="col-md-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '14px', padding: '16px 18px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.05)' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                             <i className="bi bi-briefcase"></i>
                                         </div>
                                         <div>
@@ -1290,7 +1290,7 @@ export default function ConditionsOfHirePage() {
                                 </div>
                                 <div className="col-md-4">
                                     <div style={{ background: '#fff', border: '1px solid #eff0f3', borderRadius: '14px', padding: '16px 18px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.05)' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                             <i className="bi bi-card-checklist"></i>
                                         </div>
                                         <div>
@@ -1824,7 +1824,7 @@ export default function ConditionsOfHirePage() {
 
                 .progress-fill {
                     height: 100%;
-                    background: linear-gradient(90deg, #fdc51a 0%, #f39c12 100%);
+                    background: linear-gradient(90deg, #fdc51a 0%, #fdc51a 100%);
                     border-radius: 4px;
                     transition: width 2s ease-in-out;
                 }
@@ -1887,7 +1887,7 @@ export default function ConditionsOfHirePage() {
 
                 .nav-tab.active {
                     border-color: #fdc51a;
-                    background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
+                    background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%);
                     color: white;
                 }
 
@@ -2013,7 +2013,7 @@ export default function ConditionsOfHirePage() {
                 .condition-icon-modern {
                     width: 50px;
                     height: 50px;
-                    background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
+                    background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%);
                     border-radius: 12px;
                     display: flex;
                     align-items: center;
@@ -2091,11 +2091,11 @@ export default function ConditionsOfHirePage() {
                 }
 
                 .timeline-marker.warning {
-                    background: #dc3545;
+                    background: #1e2247;
                 }
 
                 .timeline-marker.success {
-                    background: #28a745;
+                    background: #fdc51a;
                 }
 
                 .timeline-content {
@@ -2373,7 +2373,7 @@ export default function ConditionsOfHirePage() {
                 .condition-icon {
                     width: 80px;
                     height: 80px;
-                    background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
+                    background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%);
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -2438,11 +2438,11 @@ export default function ConditionsOfHirePage() {
                 }
 
                 .payment-icon.warning {
-                    background: #dc3545;
+                    background: #1e2247;
                 }
 
                 .payment-icon.success {
-                    background: #28a745;
+                    background: #fdc51a;
                 }
 
                 .payment-content-text h4 {

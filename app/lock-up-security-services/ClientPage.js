@@ -131,7 +131,7 @@ export default function LockUpSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOCK-UP & OPEN-UP SECURITY SERVICES"
                 mainTitle="LOCK-UP & OPEN-UP SECURITY SERVICES MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,7 +241,7 @@ export default function LockUpSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/C99EA37A-EA68-4BD9-9B4B-2025A1E56B2A_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/9D3EC0BD-7811-4083-AAFF-5CFB908FA234_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -421,7 +421,7 @@ export default function LockUpSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/C99EA37A-EA68-4BD9-9B4B-2025A1E56B2A_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

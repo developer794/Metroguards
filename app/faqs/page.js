@@ -13,7 +13,7 @@ export default function Page() {
                 breadcrumbTitle="Frequently Asked Questions"
                 mainTitle="Everything You Need to Know About <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Metropolitan Guards</span>"
                 subtitle="Find comprehensive answers to common questions about our security services, licensing, coverage areas, and more. Our expert team is always ready to help with any additional inquiries."
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp"
             >
                 {/* Hero Section */}
                 <div className="faq-hero-section">

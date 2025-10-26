@@ -45,7 +45,7 @@ export default function BookGuardPage() {
                 breadcrumbTitle="Book a Guard"
                 mainTitle="Book Professional Security Guards"
                 subtitle="Immediate response • Licensed guards • 24/7 availability"
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
             >
                 {/* Classic Hero Section */}
                 <section className="classic-hero-section" style={{

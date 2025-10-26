@@ -17,7 +17,7 @@ export default function FormsDownloadsPage() {
                 breadcrumbTitle="FORMS & DOWNLOADS"
                 mainTitle="Essential Forms & Documents"
                 subtitle="Comprehensive access to professional forms, employment documents, and essential company resources for seamless security service operations"
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.webp"
             >
                 <div>
                     {/*===== Enhanced Hero Section =====*/}
@@ -46,7 +46,7 @@ export default function FormsDownloadsPage() {
                                         <div className="hero-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '10px 20px',
                                             borderRadius: '25px',
@@ -91,7 +91,7 @@ export default function FormsDownloadsPage() {
                                             position: 'relative'
                                         }}>
                                             <div style={{
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 color: '#1e2247',
                                                 padding: '40px',
                                                 borderRadius: '15px',
@@ -127,7 +127,7 @@ export default function FormsDownloadsPage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -185,14 +185,14 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -211,7 +211,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -227,7 +227,7 @@ export default function FormsDownloadsPage() {
                                                         href="get-quotation" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -266,20 +266,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)'
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 8px 25px rgba(40, 167, 69, 0.3)'
+                                                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                                     }}>
                                                         <i className="bi bi-person-badge" style={{fontSize: '2rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -292,7 +292,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -308,7 +308,7 @@ export default function FormsDownloadsPage() {
                                                         href="book-a-guard" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -347,20 +347,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 8px 25px rgba(0, 123, 255, 0.3)'
+                                                        boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-calendar-check" style={{fontSize: '2rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -373,7 +373,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -389,7 +389,7 @@ export default function FormsDownloadsPage() {
                                                         href="/booking-form-security-services-australia" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -428,20 +428,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)'
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 8px 25px rgba(220, 53, 69, 0.3)'
+                                                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                                     }}>
                                                         <i className="bi bi-envelope" style={{fontSize: '2rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -454,7 +454,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -470,7 +470,7 @@ export default function FormsDownloadsPage() {
                                                         href="/contacts" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -509,20 +509,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #6f42c1 0%, #563d7c 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #6f42c1 0%, #563d7c 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 8px 25px rgba(111, 66, 193, 0.3)'
+                                                        boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-clipboard-check" style={{fontSize: '2rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -535,7 +535,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #6f42c1 0%, #563d7c 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -551,7 +551,7 @@ export default function FormsDownloadsPage() {
                                                         href="/contractor-declaration-form" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -590,20 +590,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '4px',
-                                                    background: 'linear-gradient(135deg, #fd7e14 0%, #e55353 100%)'
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                 }}></div>
                                                 
                                                 <div className="form-icon mb-3 text-center">
                                                     <div style={{
                                                         width: '70px',
                                                         height: '70px',
-                                                        background: 'linear-gradient(135deg, #fd7e14 0%, #e55353 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 8px 25px rgba(253, 126, 20, 0.3)'
+                                                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                                     }}>
                                                         <i className="bi bi-journal-text" style={{fontSize: '2rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -616,7 +616,7 @@ export default function FormsDownloadsPage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '2px',
-                                                    background: 'linear-gradient(135deg, #fd7e14 0%, #e55353 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     margin: '0 auto 20px',
                                                     borderRadius: '1px'
                                                 }}></div>
@@ -632,7 +632,7 @@ export default function FormsDownloadsPage() {
                                                         href="/incident-report-feedback-form" 
                                                         className="btn px-4 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '8px',
@@ -668,7 +668,7 @@ export default function FormsDownloadsPage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -725,20 +725,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="employment-icon mb-3">
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 5px 15px rgba(40, 167, 69, 0.3)'
+                                                        boxShadow: '0 5px 15px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-person-plus" style={{fontSize: '1.4rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -757,7 +757,7 @@ export default function FormsDownloadsPage() {
                                                         href="/wp-content/uploads/2025/05/Employee-Registration-Form.pdf" 
                                                         className="btn btn-sm px-3 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '6px',
@@ -795,14 +795,14 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)'
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                 }}></div>
                                                 
                                                 <div className="employment-icon mb-3">
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -827,7 +827,7 @@ export default function FormsDownloadsPage() {
                                                         href="/wp-content/uploads/2022/12/Site-specific-SOPS-Final-2.pdf" 
                                                         className="btn btn-sm px-3 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '6px',
@@ -865,20 +865,20 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #6f42c1 0%, #563d7c 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="employment-icon mb-3">
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #6f42c1 0%, #563d7c 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         justifyContent: 'center',
                                                         margin: '0 auto',
-                                                        boxShadow: '0 5px 15px rgba(111, 66, 193, 0.3)'
+                                                        boxShadow: '0 5px 15px rgba(253, 197, 26, 0.3)'
                                                     }}>
                                                         <i className="bi bi-book" style={{fontSize: '1.4rem', color: '#ffffff'}}></i>
                                                     </div>
@@ -897,7 +897,7 @@ export default function FormsDownloadsPage() {
                                                         href="/wp-content/uploads/2025/05/Employee-Handbook.pdf" 
                                                         className="btn btn-sm px-3 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '6px',
@@ -935,14 +935,14 @@ export default function FormsDownloadsPage() {
                                                     left: '0',
                                                     right: '0',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)'
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                 }}></div>
                                                 
                                                 <div className="employment-icon mb-3">
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -967,7 +967,7 @@ export default function FormsDownloadsPage() {
                                                         href="/wp-content/uploads/2025/05/Company-profile.pdf" 
                                                         className="btn btn-sm px-3 py-2"
                                                         style={{
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                             color: '#ffffff',
                                                             border: 'none',
                                                             borderRadius: '6px',
@@ -1002,7 +1002,7 @@ export default function FormsDownloadsPage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -1048,7 +1048,7 @@ export default function FormsDownloadsPage() {
                                                 border: '1px solid rgba(253, 197, 26, 0.2)'
                                             }}>
                                                 <div className="step-number" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     color: '#1e2247',
                                                     width: '40px',
                                                     height: '40px',
@@ -1077,7 +1077,7 @@ export default function FormsDownloadsPage() {
                                                 border: '1px solid rgba(253, 197, 26, 0.2)'
                                             }}>
                                                 <div className="step-number" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     color: '#1e2247',
                                                     width: '40px',
                                                     height: '40px',
@@ -1106,7 +1106,7 @@ export default function FormsDownloadsPage() {
                                                 border: '1px solid rgba(253, 197, 26, 0.2)'
                                             }}>
                                                 <div className="step-number" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     color: '#1e2247',
                                                     width: '40px',
                                                     height: '40px',
@@ -1135,7 +1135,7 @@ export default function FormsDownloadsPage() {
                                                 border: '1px solid rgba(253, 197, 26, 0.2)'
                                             }}>
                                                 <div className="step-number" style={{
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     color: '#1e2247',
                                                     width: '40px',
                                                     height: '40px',
@@ -1176,7 +1176,7 @@ export default function FormsDownloadsPage() {
                                                         left: '0',
                                                         right: '0',
                                                         height: '3px',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)'
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                     }}></div>
                                                     <div className="stat-number" style={{
                                                         fontSize: '2.5rem',
@@ -1209,12 +1209,12 @@ export default function FormsDownloadsPage() {
                                                         left: '0',
                                                         right: '0',
                                                         height: '3px',
-                                                        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)'
+                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)'
                                                     }}></div>
                                                     <div className="stat-number" style={{
                                                         fontSize: '2.5rem',
                                                         fontWeight: '700',
-                                                        color: '#28a745',
+                                                        color: '#fdc51a',
                                                         marginBottom: '10px'
                                                     }}>
                                                         24/7
@@ -1242,12 +1242,12 @@ export default function FormsDownloadsPage() {
                                                         left: '0',
                                                         right: '0',
                                                         height: '3px',
-                                                        background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)'
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                     }}></div>
                                                     <div className="stat-number" style={{
                                                         fontSize: '2.5rem',
                                                         fontWeight: '700',
-                                                        color: '#007bff',
+                                                        color: '#1e2247',
                                                         marginBottom: '10px'
                                                     }}>
                                                         Fast
@@ -1275,12 +1275,12 @@ export default function FormsDownloadsPage() {
                                                         left: '0',
                                                         right: '0',
                                                         height: '3px',
-                                                        background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)'
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)'
                                                     }}></div>
                                                     <div className="stat-number" style={{
                                                         fontSize: '2.5rem',
                                                         fontWeight: '700',
-                                                        color: '#dc3545',
+                                                        color: '#1e2247',
                                                         marginBottom: '10px'
                                                     }}>
                                                         Easy

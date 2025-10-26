@@ -131,7 +131,7 @@ export default function AssetSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONSTRUCTION PATROL SECURITY GUARDS "
                 mainTitle="ASSET PROTECTION SECURITY GUARDS IN MELBOURNE " 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/3EC7BE92-76FD-4F5A-849D-C8874BF17CCE_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,12 +241,12 @@ export default function AssetSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/3EC7BE92-76FD-4F5A-849D-C8874BF17CCE_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E906AD3-E59A-4B0D-AB5A-9FA58736A309_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -351,7 +351,7 @@ export default function AssetSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/71A872B7-4647-45B4-A0C2-D01F1BF3056C_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c%20(1).webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -429,14 +429,14 @@ export default function AssetSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp"
                                                 alt="Professional Asset Protection Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '700px',
+                                                    height: '550px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -979,7 +979,7 @@ export default function AssetSecurityPage() {
                                             e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                         }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp" 
                                                 alt="Technology Integration" 
                                                 className="img-fluid"
                                                 style={{

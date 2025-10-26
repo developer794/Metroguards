@@ -1,4 +1,4 @@
-import ClientPage from "./ClientPage";
+import PartySecurityPage from "./ClientPage";
 
 export const metadata = {
   title: "Party Security Guards in Melbourne | Metro Guards",
@@ -26,5 +26,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ClientPage />;
+  return <PartySecurityPage />;
 }

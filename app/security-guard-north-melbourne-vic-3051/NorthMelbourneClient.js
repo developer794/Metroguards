@@ -161,7 +161,7 @@ export default function NorthMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/71A872B7-4647-45B4-A0C2-D01F1BF3056C_1_105_c.webp" 
                                             alt="Professional Security Guards North Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -213,7 +213,7 @@ export default function NorthMelbourneClient() {
                                 <div className="services-image-section pe-lg-4">
                                     <div className="image-container position-relative">
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
                                             alt="Professional Security Guards North Melbourne" 
                                             className="img-fluid"
                                             style={{
@@ -458,7 +458,7 @@ export default function NorthMelbourneClient() {
                                         }}
                                     >
                                         <img 
-                                            src="/assets/img/about/about22.png" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp" 
                                             alt="North Melbourne Security" 
                                             className="img-fluid"
                                             style={{

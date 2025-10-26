@@ -147,21 +147,24 @@ export default function Menu() {
                     <li className="mega-menu">
                         {/* Security Guard Services Section */}
                         <div className="single-mega-menu" style={{marginRight: '20px'}}>
-                            <h3 className="font-f-1" style={{
-                                background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                color: '#fdc51a',
-                                padding: '12px 9px',
-                                borderRadius: '6px',
-                                marginBottom: '15px',
-                                fontSize: '14px',
-                                fontWeight: '700',
-                                letterSpacing: '0.5px',
-                                boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
-                                textTransform: 'uppercase',
-                                whiteSpace: 'nowrap'
-                            }}>
-                                Static Guards 
-                            </h3>
+                            <Link href="/security-guard-services">
+                                <h3 className="font-f-1" style={{
+                                    background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                    color: '#fdc51a',
+                                    padding: '12px 9px',
+                                    borderRadius: '6px',
+                                    marginBottom: '15px',
+                                    fontSize: '14px',
+                                    fontWeight: '700',
+                                    letterSpacing: '0.5px',
+                                    boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
+                                    textTransform: 'uppercase',
+                                    whiteSpace: 'nowrap',
+                                    cursor: 'pointer'
+                                }}>
+                                    Security Guards 
+                                </h3>
+                            </Link>
                             <ul style={{
                                 borderLeft: '3px solid #fdc51a',
                                 paddingLeft: '15px',
@@ -507,21 +510,24 @@ export default function Menu() {
 
                         {/* Crowd Controller Services */}
                         <div className="single-mega-menu" style={{marginRight: '20px'}}>
-                            <h3 className="font-f-1" style={{
-                                background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                color: '#fdc51a',
-                                padding: '12px 9px',
-                                borderRadius: '6px',
-                                marginBottom: '15px',
-                                fontSize: '14px',
-                                fontWeight: '700',
-                                letterSpacing: '0.5px',
-                                boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
-                                textTransform: 'uppercase',
-                                whiteSpace: 'nowrap'
-                            }}>
-                                Crowd Control
-                            </h3>
+                            <Link href="/crowd-control-services">
+                                <h3 className="font-f-1" style={{
+                                    background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                    color: '#fdc51a',
+                                    padding: '12px 9px',
+                                    borderRadius: '6px',
+                                    marginBottom: '15px',
+                                    fontSize: '14px',
+                                    fontWeight: '700',
+                                    letterSpacing: '0.5px',
+                                    boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
+                                    textTransform: 'uppercase',
+                                    whiteSpace: 'nowrap',
+                                    cursor: 'pointer'
+                                }}>
+                                    Crowd Control
+                                </h3>
+                            </Link>
                             <ul style={{
                                 borderLeft: '3px solid #fdc51a',
                                 paddingLeft: '15px',
@@ -589,21 +595,24 @@ export default function Menu() {
 
                         {/* Mobile Patrol Security */}
                         <div className="single-mega-menu" style={{marginRight: '20px'}}>
-                            <h3 className="font-f-1" style={{
-                                background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                color: '#fdc51a',
-                                padding: '12px 18px',
-                                borderRadius: '6px',
-                                marginBottom: '15px',
-                                fontSize: '14px',
-                                fontWeight: '700',
-                                letterSpacing: '0.5px',
-                                boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
-                                textTransform: 'uppercase',
-                                whiteSpace: 'nowrap'
-                            }}>
-                                Mobile Patrols
-                            </h3>
+                            <Link href="/mobile-patrol-services">
+                                <h3 className="font-f-1" style={{
+                                    background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                    color: '#fdc51a',
+                                    padding: '12px 18px',
+                                    borderRadius: '6px',
+                                    marginBottom: '15px',
+                                    fontSize: '14px',
+                                    fontWeight: '700',
+                                    letterSpacing: '0.5px',
+                                    boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)',
+                                    textTransform: 'uppercase',
+                                    whiteSpace: 'nowrap',
+                                    cursor: 'pointer'
+                                }}>
+                                    Mobile Patrols
+                                </h3>
+                            </Link>
                             <ul style={{
                                 borderLeft: '3px solid #fdc51a',
                                 paddingLeft: '15px',
@@ -708,7 +717,7 @@ export default function Menu() {
                         </div>
 
                         {/* Canine (K9) Security */}
-                        <div className="single-mega-menu">
+                        <div className="single-mega-menu"><br/>
                             <h3 className="font-f-1" style={{
                                 background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                 color: '#fdc51a',

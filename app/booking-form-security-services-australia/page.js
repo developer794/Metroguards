@@ -174,7 +174,7 @@ export default function BookingFormPage() {
                 breadcrumbTitle="Security Services Booking Form"
                 mainTitle="Professional Security Booking Form"
                 subtitle="Complete service details • Secure processing • Australia-wide coverage"
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
             >
                 
                 {/* Classic Hero Section */}

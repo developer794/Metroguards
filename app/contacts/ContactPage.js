@@ -67,6 +67,7 @@ export default function ContactPage() {
       <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Contact Us"
         mainTitle="Get In Touch With Metro Guards"
         subtitle="Professional Security Solutions in Melbourne - Available 24/7 for Your Protection"
+        backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.webp"
       >
         <div>
           

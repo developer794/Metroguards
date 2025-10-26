@@ -131,7 +131,7 @@ export default function MobilePatrolSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="MOBILE PATROL SECURITY GUARDS"
                 mainTitle="MOBILE PATROL SECURITY GUARDS IN MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,7 +241,7 @@ export default function MobilePatrolSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -351,7 +351,7 @@ export default function MobilePatrolSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -551,7 +551,7 @@ export default function MobilePatrolSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/8A82EA6E-FBF3-4DB1-BAED-E85EB4C94AF4_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/8A82EA6E-FBF3-4DB1-BAED-E85EB4C94AF4_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

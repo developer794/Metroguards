@@ -131,7 +131,7 @@ export default function CorporateEventSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CORPORATE EVENT SECURITY GUARDS "
                 mainTitle="CORPORATE EVENT SECURITY GUARDS IN MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Events%20Secuirty/2F1BB846-0629-4D4C-8C50-8F0FEA45C864_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,12 +241,12 @@ export default function CorporateEventSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Events%20Secuirty/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '600px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -423,7 +423,7 @@ export default function CorporateEventSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Events%20Secuirty/51BEE2F0-1C5C-4D14-BE17-7CA4C4DDC7C5_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/03549B5D-366A-47E3-BBF3-3C916341AA19_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

@@ -131,6 +131,7 @@ export default function StaticSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="STATIC SECURITY GUARDS"
                 mainTitle="STATIC SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/AF728EFE-11D1-4965-8948-52919A2FEB8C_1_105_c.webp"
                 
             >
                 <div>
@@ -241,12 +242,12 @@ export default function StaticSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -351,7 +352,7 @@ export default function StaticSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/B2A740BC-4957-41CE-9820-9D0F8AD63CC2_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

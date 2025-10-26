@@ -131,7 +131,7 @@ export default function ConstructionPatrolSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONSTRUCTION PATROL SECURITY GUARDS "
                 mainTitle="CONSTRUCTION PATROL SECURITY GUARDS IN MELBOURNE "
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/2D5B22B3-900D-4069-9953-7B5AC79A01FE_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -242,12 +242,12 @@ export default function ConstructionPatrolSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/5F52CC21-9494-47D5-9033-2F7959694AB9_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/51B540B4-F17C-4C76-8E82-D53AA10F6AF0_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '800px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -352,7 +352,7 @@ export default function ConstructionPatrolSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/3B6275D1-BFFB-422B-B84D-380C35BAFBED_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -431,7 +431,7 @@ export default function ConstructionPatrolSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative ">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/5CF6218B-BCA2-45F6-91F9-FACE835EEE17_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/6CBFDC64-548E-4EEB-BA9A-33CFCE62DC01_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -663,12 +663,12 @@ export default function ConstructionPatrolSecurityPage() {
                                             e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                         }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/6CBFDC64-548E-4EEB-BA9A-33CFCE62DC01_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/5F8E2353-9B55-423E-9079-9D679E1CAC1E_1_105_c.webp"
                                                 alt="Construction Patrol Security" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '600px',
+                                                    height: '900px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -923,12 +923,12 @@ export default function ConstructionPatrolSecurityPage() {
                                             boxShadow: '0 25px 50px rgba(0,0,0,0.3)'
                                         }}>
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Security%20Patrols/5CF6218B-BCA2-45F6-91F9-FACE835EEE17_1_105_c.jpeg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/5F8E2353-9B55-423E-9079-9D679E1CAC1E_1_105_c.webp" 
                                                 alt="Melbourne Construction Security" 
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '550px',
+                                                    height: '1050px',
                                                     objectFit: 'cover'
                                                 }}
                                             />

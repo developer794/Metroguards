@@ -46,7 +46,7 @@ export default function CareersPage() {
                 breadcrumbTitle="CAREERS"
                 mainTitle="Join Our Security Team"
                 subtitle="Build your career with Melbourne's leading security service provider. Explore opportunities and apply today."
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
             >
                 <div>
                     {/*===== Enhanced Hero Section =====*/}

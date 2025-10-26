@@ -131,6 +131,7 @@ export default function WareHouseSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="WAREHOUSE SECURITY GUARDS"
                 mainTitle="WAREHOUSE SECURITY GUARDS IN MELBOURNE "
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/2C5EE736-A80F-437B-8FE9-5382F7152C52_1_105_c.webp"
                 
             >
                 <div>
@@ -243,7 +244,7 @@ export default function WareHouseSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/3EC7BE92-76FD-4F5A-849D-C8874BF17CCE_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -353,7 +354,7 @@ export default function WareHouseSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/9F2FB6F7-8AB5-4520-ACBB-C7FB46822C4A_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -429,7 +430,7 @@ export default function WareHouseSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/2856BED6-B88F-40F1-80C4-14A7F36AC8DB_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{

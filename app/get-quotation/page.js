@@ -214,65 +214,9 @@ export default function Page() {
         breadcrumbTitle="GET QUOTATION"
         mainTitle="Request Your Quote"
         subtitle="Get a customized security solution proposal tailored to your specific needs and requirements"
-        backgroundImage="/assets/img/about/values.jpg"
+        backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.webp"
       >
-        {/*===== Enhanced Hero Section =====*/}
-        <div className="classic-hero-section section-padding" style={{
-          background: 'linear-gradient(135deg, #f8f9fa 0%, rgba(253, 197, 26, 0.05) 50%, #eceff3 100%)',
-          borderBottom: '2px solid #eceff3',
-          position: 'relative',
-          overflow: 'hidden'
-        }}>
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="hero-content">
-                  <h1 style={{
-                    fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-                    fontWeight: '700',
-                    color: '#1e2247',
-                    marginBottom: '15px',
-                    fontFamily: 'serif'
-                  }}>
-                    Get Your <span style={{ color: '#fdc51a' }}>Custom</span> Quote
-                  </h1>
-                  <p style={{
-                    fontSize: '1.1rem',
-                    color: '#6c757d',
-                    lineHeight: '1.6',
-                    marginBottom: '30px'
-                  }}>
-                    Professional security solutions tailored to your specific requirements. 
-                    Get a detailed proposal in minutes.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="hero-visual">
-                  <div style={{
-                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                    color: '#ffffff',
-                    padding: '40px',
-                    borderRadius: '15px',
-                    boxShadow: '0 15px 35px rgba(30, 34, 71, 0.3)',
-                    textAlign: 'center'
-                  }}>
-                    <i className="bi bi-calculator" style={{
-                      fontSize: '4rem',
-                      marginBottom: '20px',
-                      display: 'block',
-                      color: '#fdc51a'
-                    }}></i>
-                    <h3 style={{ fontWeight: '700', marginBottom: '15px' }}>Instant Quotation</h3>
-                    <p style={{ margin: '0', fontSize: '1rem', opacity: '0.9' }}>
-                      Fast, accurate, and comprehensive security service quotes
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            
 
         {/*===== Enhanced Quotation Form Section =====*/}
         <div className="quotation-section section-padding" style={{

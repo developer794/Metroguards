@@ -131,6 +131,7 @@ export default function LossPreventionSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOSS PREVENTION SECURITY GUARDS"
                 mainTitle="LOSS PREVENTION SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/51BEE2F0-1C5C-4D14-BE17-7CA4C4DDC7C5_1_105_c.webp"
                 
             >
                 <div>
@@ -241,7 +242,7 @@ export default function LossPreventionSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7F646248-8CCC-4766-A826-6F8F450DF5AE_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -351,7 +352,7 @@ export default function LossPreventionSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -429,14 +430,14 @@ export default function LossPreventionSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />

@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout"
 export default function Page() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="ABOUT METROGUARDS">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="ABOUT METROGUARDS" backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Shopping%20Center%20Secuirty%20Guards/CA27AC6C-60CD-44D4-A422-3D5ECF81CF4B_1_105_c.webp">
                 <div>
                     {/*===== How we serve our community =====*/}
                     <div className="about-inner bg-28 section-padding">

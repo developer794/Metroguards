@@ -131,7 +131,7 @@ export default function SecurityEscortPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SECURITY ESCORT SERVICES"
                 mainTitle="SECURITY ESCORT SERVICES MELBOURNE" 
-                image="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Secuirty%20Guard%20Services/5F52CC21-9494-47D5-9033-2F7959694AB9_1_105_c.jpeg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
@@ -241,7 +241,7 @@ export default function SecurityEscortPage() {
                                             }}
                                         >
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Secuirty%20Guard%20Services/7F646248-8CCC-4766-A826-6F8F450DF5AE_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/DF097D51-727E-4A2C-9D03-027909D6810E_1_105_c.webp"
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -425,7 +425,7 @@ export default function SecurityEscortPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Secuirty%20Guard%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.jpeg"
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/CCBD9C71-83AD-44D3-97FA-5FF6418F871C_1_105_c.webp"
                                                 alt="Mobile Patrol Security Guards" 
                                                 className="img-fluid"
                                                 style={{

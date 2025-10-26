@@ -44,7 +44,7 @@ export default function IncidentReportPage() {
                 breadcrumbTitle="Incident Report & Feedback Form"
                 mainTitle="Security Incident Reporting System"
                 subtitle="Professional incident management • Real-time reporting • Comprehensive documentation"
-                backgroundImage="/assets/img/about/values.jpg"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp"
             >
                 
                 {/* Classic Hero Section */}
@@ -62,7 +62,7 @@ export default function IncidentReportPage() {
                                     <div className="hero-badge" style={{
                                         display: 'inline-flex',
                                         alignItems: 'center',
-                                        background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                         color: '#ffffff',
                                         padding: '8px 20px',
                                         borderRadius: '25px',
@@ -107,15 +107,15 @@ export default function IncidentReportPage() {
                                         marginBottom: '30px'
                                     }}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <i className="bi bi-shield-exclamation" style={{ color: '#dc3545', fontSize: '1.2rem' }}></i>
+                                            <i className="bi bi-shield-exclamation" style={{ color: '#1e2247', fontSize: '1.2rem' }}></i>
                                             <span style={{ color: '#1e2247', fontWeight: '500' }}>Security Breaches</span>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <i className="bi bi-heart-pulse" style={{ color: '#28a745', fontSize: '1.2rem' }}></i>
+                                            <i className="bi bi-heart-pulse" style={{ color: '#fdc51a', fontSize: '1.2rem' }}></i>
                                             <span style={{ color: '#1e2247', fontWeight: '500' }}>OH&S Matters</span>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <i className="bi bi-gear" style={{ color: '#6f42c1', fontSize: '1.2rem' }}></i>
+                                            <i className="bi bi-gear" style={{ color: '#fdc51a', fontSize: '1.2rem' }}></i>
                                             <span style={{ color: '#1e2247', fontWeight: '500' }}>Equipment Issues</span>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -150,7 +150,7 @@ export default function IncidentReportPage() {
                                         <div style={{
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             borderRadius: '50%',
                                             display: 'flex',
                                             alignItems: 'center',
@@ -199,7 +199,7 @@ export default function IncidentReportPage() {
                                                     <div style={{
                                                         width: '50px',
                                                         height: '50px',
-                                                        background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                                                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         borderRadius: '50%',
                                                         display: 'flex',
                                                         alignItems: 'center',
@@ -537,8 +537,8 @@ export default function IncidentReportPage() {
                                                     borderRadius: "12px",
                                                     fontSize: "1.1rem",
                                                     fontWeight: "600",
-                                                    background: "linear-gradient(135deg, #dc3545 0%, #c82333 100%)",
-                                                    border: "2px solid #dc3545",
+                                                    background: "linear-gradient(135deg, #1e2247 0%, #1e2247 100%)",
+                                                    border: "2px solid #1e2247",
                                                     color: "#ffffff",
                                                     boxShadow: "0 4px 15px rgba(220, 53, 69, 0.3)",
                                                     transition: "all 0.3s ease",
@@ -582,7 +582,7 @@ export default function IncidentReportPage() {
                                                     justifyContent: 'center',
                                                     gap: '10px'
                                                 }}>
-                                                    <i className="bi bi-exclamation-triangle" style={{ color: '#dc3545', fontSize: '1.1rem' }}></i>
+                                                    <i className="bi bi-exclamation-triangle" style={{ color: '#1e2247', fontSize: '1.1rem' }}></i>
                                                     <p style={{
                                                         color: '#1e2247',
                                                         margin: '0',
@@ -731,8 +731,8 @@ export default function IncidentReportPage() {
 
                     /* Submit button hover effects */
                     .btn:hover:not(:disabled) {
-                        background: linear-gradient(135deg, #c82333 0%, #a71e2a 100%) !important;
-                        border-color: #c82333 !important;
+                        background: linear-gradient(135deg, #1e2247 0%, #1e2247 100%) !important;
+                        border-color: #1e2247 !important;
                         box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4) !important;
                         transform: translateY(-2px) !important;
                     }

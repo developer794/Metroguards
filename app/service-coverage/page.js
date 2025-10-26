@@ -38,7 +38,7 @@ export default function ServiceCoveragePage() {
     return (
         <>
         <ToastContainer position="bottom-right" autoClose={3000} />
-            <Layout headerStyle={1} footerStyle={1} headTitle="Service Coverage - Metropolitan Guards Security Services" breadcrumbTitle="Service Coverage" mainTitle="Service Coverage" subtitle="Areas we service across Melbourne, Sydney and surrounding regions." backgroundImage="/assets/img/about/values.jpg">
+            <Layout headerStyle={1} footerStyle={1} headTitle="Service Coverage - Metropolitan Guards Security Services" breadcrumbTitle="Service Coverage" mainTitle="Service Coverage" subtitle="Areas we service across Melbourne, Sydney and surrounding regions." backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp">
                 <div>
                     {/*===== Elegant Classic Hero Section =====*/}
                     <div className="classic-hero section-padding" style={{ 
@@ -77,7 +77,7 @@ export default function ServiceCoveragePage() {
                                         <div className="hero-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '10px 20px',
                                             borderRadius: '25px',
@@ -158,7 +158,7 @@ export default function ServiceCoveragePage() {
                                                 border: '1px solid rgba(30, 34, 71, 0.1)'
                                             }}>
                                                 <i className="bi bi-check-circle-fill" style={{ 
-                                                    color: '#28a745', 
+                                                    color: '#fdc51a', 
                                                     marginRight: '8px' 
                                                 }}></i>
                                                 <span style={{ 
@@ -194,7 +194,7 @@ export default function ServiceCoveragePage() {
                                                 border: '1px solid rgba(30, 34, 71, 0.1)'
                                             }}>
                                                 <i className="bi bi-shield-check" style={{ 
-                                                    color: '#dc3545', 
+                                                    color: '#1e2247', 
                                                     marginRight: '8px' 
                                                 }}></i>
                                                 <span style={{ 
@@ -224,7 +224,7 @@ export default function ServiceCoveragePage() {
                                                     boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)'
                                                 }}
                                                 onMouseOver={(e) => {
-                                                    e.target.style.backgroundColor = '#2c3e50';
+                                                    e.target.style.backgroundColor = '#1e2247';
                                                     e.target.style.transform = 'translateY(-2px)';
                                                 }}
                                                 onMouseOut={(e) => {
@@ -278,7 +278,7 @@ export default function ServiceCoveragePage() {
                                             boxShadow: '0 25px 50px rgba(30, 34, 71, 0.15)'
                                         }}>
                                             <img 
-                                                src="/assets/img/case-study/s6.webp" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp" 
                                                 alt="Security Service Coverage Map"
                                                 style={{
                                                     width: '100%',
@@ -319,7 +319,7 @@ export default function ServiceCoveragePage() {
                                             position: 'absolute',
                                             top: '20px',
                                             right: '-15px',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: 'white',
                                             padding: '15px 20px',
                                             borderRadius: '12px',
@@ -374,7 +374,7 @@ export default function ServiceCoveragePage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -434,7 +434,7 @@ export default function ServiceCoveragePage() {
                                             right: '-40px',
                                             width: '120px',
                                             height: '120px',
-                                            background: 'linear-gradient(135deg, rgba(40, 167, 69, 0.08) 0%, rgba(32, 201, 151, 0.04) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.08) 0%, rgba(253, 197, 26, 0.04) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -445,13 +445,13 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     margin: '0 auto 15px',
-                                                    boxShadow: '0 8px 25px rgba(40, 167, 69, 0.3)'
+                                                    boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                                 }}>
                                                     <i className="bi bi-geo-alt-fill" style={{ 
                                                         color: '#ffffff', 
@@ -468,7 +468,7 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     margin: '0 auto',
                                                     borderRadius: '2px'
                                                 }}></div>
@@ -482,13 +482,13 @@ export default function ServiceCoveragePage() {
                                                                 display: 'flex',
                                                                 alignItems: 'center',
                                                                 padding: '6px 0',
-                                                                borderBottom: '1px solid rgba(40, 167, 69, 0.1)',
+                                                                borderBottom: '1px solid rgba(253, 197, 26, 0.1)',
                                                                 marginBottom: '8px'
                                                             }}>
                                                                 <div style={{
                                                                     width: '6px',
                                                                     height: '6px',
-                                                                    background: '#28a745',
+                                                                    background: '#fdc51a',
                                                                     borderRadius: '50%',
                                                                     marginRight: '12px',
                                                                     flexShrink: '0'
@@ -509,13 +509,13 @@ export default function ServiceCoveragePage() {
                                                                 display: 'flex',
                                                                 alignItems: 'center',
                                                                 padding: '6px 0',
-                                                                borderBottom: '1px solid rgba(40, 167, 69, 0.1)',
+                                                                borderBottom: '1px solid rgba(253, 197, 26, 0.1)',
                                                                 marginBottom: '8px'
                                                             }}>
                                                                 <div style={{
                                                                     width: '6px',
                                                                     height: '6px',
-                                                                    background: '#28a745',
+                                                                    background: '#fdc51a',
                                                                     borderRadius: '50%',
                                                                     marginRight: '12px',
                                                                     flexShrink: '0'
@@ -533,7 +533,7 @@ export default function ServiceCoveragePage() {
 
                                             {/* Stats Footer */}
                                             <div className="card-footer mt-4 pt-3" style={{ 
-                                                borderTop: '1px solid rgba(40, 167, 69, 0.1)',
+                                                borderTop: '1px solid rgba(253, 197, 26, 0.1)',
                                                 textAlign: 'center'
                                             }}>
                                                 <div style={{
@@ -545,7 +545,7 @@ export default function ServiceCoveragePage() {
                                                         <div style={{ 
                                                             fontSize: '1.5rem', 
                                                             fontWeight: '700', 
-                                                            color: '#28a745' 
+                                                            color: '#fdc51a' 
                                                         }}>29</div>
                                                         <div style={{ 
                                                             fontSize: '0.8rem', 
@@ -557,13 +557,13 @@ export default function ServiceCoveragePage() {
                                                     <div style={{
                                                         width: '1px',
                                                         height: '30px',
-                                                        background: 'rgba(40, 167, 69, 0.2)'
+                                                        background: 'rgba(253, 197, 26, 0.2)'
                                                     }}></div>
                                                     <div>
                                                         <div style={{ 
                                                             fontSize: '1.5rem', 
                                                             fontWeight: '700', 
-                                                            color: '#28a745' 
+                                                            color: '#fdc51a' 
                                                         }}>24/7</div>
                                                         <div style={{ 
                                                             fontSize: '0.8rem', 
@@ -596,7 +596,7 @@ export default function ServiceCoveragePage() {
                                             right: '-40px',
                                             width: '120px',
                                             height: '120px',
-                                            background: 'linear-gradient(135deg, rgba(0, 123, 255, 0.08) 0%, rgba(0, 86, 179, 0.04) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.08) 0%, rgba(30, 34, 71, 0.04) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -607,13 +607,13 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '70px',
                                                     height: '70px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     margin: '0 auto 15px',
-                                                    boxShadow: '0 8px 25px rgba(0, 123, 255, 0.3)'
+                                                    boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                                 }}>
                                                     <i className="bi bi-geo-alt-fill" style={{ 
                                                         color: '#ffffff', 
@@ -630,7 +630,7 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '50px',
                                                     height: '3px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     margin: '0 auto',
                                                     borderRadius: '2px'
                                                 }}></div>
@@ -645,13 +645,13 @@ export default function ServiceCoveragePage() {
                                                                 display: 'flex',
                                                                 alignItems: 'center',
                                                                 padding: '6px 0',
-                                                                borderBottom: '1px solid rgba(0, 123, 255, 0.1)',
+                                                                borderBottom: '1px solid rgba(30, 34, 71, 0.1)',
                                                                 marginBottom: '8px'
                                                             }}>
                                                                 <div style={{
                                                                     width: '6px',
                                                                     height: '6px',
-                                                                    background: '#007bff',
+                                                                    background: '#1e2247',
                                                                     borderRadius: '50%',
                                                                     marginRight: '12px',
                                                                     flexShrink: '0'
@@ -672,13 +672,13 @@ export default function ServiceCoveragePage() {
                                                                 display: 'flex',
                                                                 alignItems: 'center',
                                                                 padding: '6px 0',
-                                                                borderBottom: '1px solid rgba(0, 123, 255, 0.1)',
+                                                                borderBottom: '1px solid rgba(30, 34, 71, 0.1)',
                                                                 marginBottom: '8px'
                                                             }}>
                                                                 <div style={{
                                                                     width: '6px',
                                                                     height: '6px',
-                                                                    background: '#007bff',
+                                                                    background: '#1e2247',
                                                                     borderRadius: '50%',
                                                                     marginRight: '12px',
                                                                     flexShrink: '0'
@@ -696,7 +696,7 @@ export default function ServiceCoveragePage() {
 
                                             {/* Stats Footer */}
                                             <div className="card-footer mt-4 pt-3" style={{ 
-                                                borderTop: '1px solid rgba(0, 123, 255, 0.1)',
+                                                borderTop: '1px solid rgba(30, 34, 71, 0.1)',
                                                 textAlign: 'center'
                                             }}>
                                                 <div style={{
@@ -708,7 +708,7 @@ export default function ServiceCoveragePage() {
                                                         <div style={{ 
                                                             fontSize: '1.5rem', 
                                                             fontWeight: '700', 
-                                                            color: '#007bff' 
+                                                            color: '#1e2247' 
                                                         }}>28</div>
                                                         <div style={{ 
                                                             fontSize: '0.8rem', 
@@ -720,13 +720,13 @@ export default function ServiceCoveragePage() {
                                                     <div style={{
                                                         width: '1px',
                                                         height: '30px',
-                                                        background: 'rgba(0, 123, 255, 0.2)'
+                                                        background: 'rgba(30, 34, 71, 0.2)'
                                                     }}></div>
                                                     <div>
                                                         <div style={{ 
                                                             fontSize: '1.5rem', 
                                                             fontWeight: '700', 
-                                                            color: '#007bff' 
+                                                            color: '#1e2247' 
                                                         }}>24/7</div>
                                                         <div style={{ 
                                                             fontSize: '0.8rem', 
@@ -772,7 +772,7 @@ export default function ServiceCoveragePage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -831,13 +831,13 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
-                                                background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 margin: '0 auto 15px',
-                                                boxShadow: '0 8px 25px rgba(40, 167, 69, 0.3)'
+                                                boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                             }}>
                                                 <i className="bi bi-building" style={{ 
                                                     color: '#ffffff', 
@@ -853,7 +853,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '40px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 margin: '0 auto',
                                                 borderRadius: '2px'
                                             }}></div>
@@ -866,13 +866,13 @@ export default function ServiceCoveragePage() {
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     padding: '8px 12px',
-                                                    background: 'rgba(40, 167, 69, 0.05)',
+                                                    background: 'rgba(253, 197, 26, 0.05)',
                                                     borderRadius: '8px',
-                                                    border: '1px solid rgba(40, 167, 69, 0.1)',
+                                                    border: '1px solid rgba(253, 197, 26, 0.1)',
                                                     transition: 'all 0.2s ease'
                                                 }}>
                                                     <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#28a745', 
+                                                        color: '#fdc51a', 
                                                         marginRight: '12px',
                                                         fontSize: '0.9rem'
                                                     }}></i>
@@ -892,7 +892,7 @@ export default function ServiceCoveragePage() {
                                             right: '-20px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -916,13 +916,13 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
-                                                background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 margin: '0 auto 15px',
-                                                boxShadow: '0 8px 25px rgba(0, 123, 255, 0.3)'
+                                                boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                             }}>
                                                 <i className="bi bi-buildings" style={{ 
                                                     color: '#ffffff', 
@@ -938,7 +938,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '40px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                 margin: '0 auto',
                                                 borderRadius: '2px'
                                             }}></div>
@@ -951,13 +951,13 @@ export default function ServiceCoveragePage() {
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     padding: '8px 12px',
-                                                    background: 'rgba(0, 123, 255, 0.05)',
+                                                    background: 'rgba(30, 34, 71, 0.05)',
                                                     borderRadius: '8px',
-                                                    border: '1px solid rgba(0, 123, 255, 0.1)',
+                                                    border: '1px solid rgba(30, 34, 71, 0.1)',
                                                     transition: 'all 0.2s ease'
                                                 }}>
                                                     <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#007bff', 
+                                                        color: '#1e2247', 
                                                         marginRight: '12px',
                                                         fontSize: '0.9rem'
                                                     }}></i>
@@ -977,7 +977,7 @@ export default function ServiceCoveragePage() {
                                             right: '-20px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 86, 179, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, rgba(30, 34, 71, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -1001,7 +1001,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
@@ -1023,7 +1023,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '40px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 margin: '0 auto',
                                                 borderRadius: '2px'
                                             }}></div>
@@ -1064,7 +1064,7 @@ export default function ServiceCoveragePage() {
                                             right: '-20px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(243, 156, 18, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -1102,7 +1102,7 @@ export default function ServiceCoveragePage() {
                                         <div className="section-badge" style={{
                                             display: 'inline-flex',
                                             alignItems: 'center',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                             color: '#ffffff',
                                             padding: '8px 20px',
                                             borderRadius: '25px',
@@ -1163,7 +1163,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '60px',
                                                 height: '60px',
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 borderRadius: '50%',
                                                 display: 'flex',
                                                 alignItems: 'center',
@@ -1185,7 +1185,7 @@ export default function ServiceCoveragePage() {
                                                 color: '#6c757d',
                                                 margin: '0',
                                                 fontSize: '0.95rem'
-                                            }}>All fields marked with <span style={{ color: '#dc3545' }}>*</span> are required</p>
+                                            }}>All fields marked with <span style={{ color: '#1e2247' }}>*</span> are required</p>
                                         </div>
                                         <form onSubmit={handleSubmit} noValidate>
                                             <div className="row">
@@ -1201,7 +1201,7 @@ export default function ServiceCoveragePage() {
                                                         fontSize: '0.95rem'
                                                     }}>
                                                         <i className="bi bi-person" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Your Name <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                                                        Your Name <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -1232,7 +1232,7 @@ export default function ServiceCoveragePage() {
                                                         fontSize: '0.95rem'
                                                     }}>
                                                         <i className="bi bi-envelope" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Email Address <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                                                        Email Address <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="email" 
@@ -1294,7 +1294,7 @@ export default function ServiceCoveragePage() {
                                                         fontSize: '0.95rem'
                                                     }}>
                                                         <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Property Location <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                                                        Property Location <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
                                                     </label>
                                                     <input 
                                                         type="text" 
@@ -1326,7 +1326,7 @@ export default function ServiceCoveragePage() {
                                                         fontSize: '0.95rem'
                                                     }}>
                                                         <i className="bi bi-shield-check" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Service Type <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                                                        Service Type <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
                                                     </label>
                                                     <select 
                                                         id="service" 
@@ -1368,7 +1368,7 @@ export default function ServiceCoveragePage() {
                                                         fontSize: '0.95rem'
                                                     }}>
                                                         <i className="bi bi-chat-dots" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Your Message <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                                                        Your Message <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
                                                     </label>
                                                     <textarea 
                                                         id="message" 
@@ -1406,7 +1406,7 @@ export default function ServiceCoveragePage() {
                                                         <div style={{
                                                             width: '40px',
                                                             height: '40px',
-                                                            background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                             borderRadius: '50%',
                                                             display: 'flex',
                                                             alignItems: 'center',
@@ -1442,7 +1442,7 @@ export default function ServiceCoveragePage() {
                                                     disabled={loading}
                                                     className="btn"
                                                     style={{
-                                                        background: loading ? '#6c757d' : 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                                        background: loading ? '#6c757d' : 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                         color: '#ffffff',
                                                         border: 'none',
                                                         borderRadius: '10px',
@@ -1491,7 +1491,7 @@ export default function ServiceCoveragePage() {
 
                     {/*===== Enhanced Assurance Section =====*/}
                     <div className="assurance-section section-padding" style={{ 
-                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)', 
+                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', 
                         position: 'relative',
                         overflow: 'hidden'
                     }}>
@@ -1598,7 +1598,7 @@ export default function ServiceCoveragePage() {
                                             right: '-30px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -1609,13 +1609,13 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '80px',
                                                     height: '80px',
-                                                    background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     margin: '0 auto',
-                                                    boxShadow: '0 10px 30px rgba(40, 167, 69, 0.3)',
+                                                    boxShadow: '0 10px 30px rgba(253, 197, 26, 0.3)',
                                                     transform: 'translateY(-10px)'
                                                 }}>
                                                     <i className="bi bi-truck" style={{
@@ -1637,7 +1637,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 margin: '0 auto 20px',
                                                 borderRadius: '2px'
                                             }}></div>
@@ -1654,8 +1654,8 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 display: 'inline-flex',
                                                 alignItems: 'center',
-                                                background: 'rgba(40, 167, 69, 0.1)',
-                                                color: '#28a745',
+                                                background: 'rgba(253, 197, 26, 0.1)',
+                                                color: '#fdc51a',
                                                 padding: '6px 12px',
                                                 borderRadius: '15px',
                                                 fontSize: '0.8rem',
@@ -1689,7 +1689,7 @@ export default function ServiceCoveragePage() {
                                             right: '-30px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 86, 179, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, rgba(30, 34, 71, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -1700,13 +1700,13 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '80px',
                                                     height: '80px',
-                                                    background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                    background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     margin: '0 auto',
-                                                    boxShadow: '0 10px 30px rgba(0, 123, 255, 0.3)',
+                                                    boxShadow: '0 10px 30px rgba(30, 34, 71, 0.3)',
                                                     transform: 'translateY(-10px)'
                                                 }}>
                                                     <i className="bi bi-shield-check" style={{
@@ -1728,7 +1728,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)',
+                                                background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                                                 margin: '0 auto 20px',
                                                 borderRadius: '2px'
                                             }}></div>
@@ -1745,8 +1745,8 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 display: 'inline-flex',
                                                 alignItems: 'center',
-                                                background: 'rgba(0, 123, 255, 0.1)',
-                                                color: '#007bff',
+                                                background: 'rgba(30, 34, 71, 0.1)',
+                                                color: '#1e2247',
                                                 padding: '6px 12px',
                                                 borderRadius: '15px',
                                                 fontSize: '0.8rem',
@@ -1780,7 +1780,7 @@ export default function ServiceCoveragePage() {
                                             right: '-30px',
                                             width: '80px',
                                             height: '80px',
-                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(243, 156, 18, 0.05) 100%)',
+                                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
                                             borderRadius: '50%',
                                             zIndex: '1'
                                         }}></div>
@@ -1791,7 +1791,7 @@ export default function ServiceCoveragePage() {
                                                 <div style={{
                                                     width: '80px',
                                                     height: '80px',
-                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                    background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                     borderRadius: '50%',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -1819,7 +1819,7 @@ export default function ServiceCoveragePage() {
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',
-                                                background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
+                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
                                                 margin: '0 auto 20px',
                                                 borderRadius: '2px'
                                             }}></div>

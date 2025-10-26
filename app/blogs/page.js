@@ -24,6 +24,7 @@ export default async function Page() {
     <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SECURITY BLOG"
     mainTitle="Our Security Blog"
     subtitle="Expert Insights & Industry News - Stay Informed with Latest Security Trends"
+    backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
 >
       <BlogPageClient 
         initialPosts={items}

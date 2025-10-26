@@ -131,6 +131,7 @@ export default function BuildingSecurityPage() {
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="BUILDING SITE SECURITY GUARDS"
                 mainTitle="BUILDING SITE SECURITY GUARDS IN MELBOURNE"
+                backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/58108D6B-9846-43C4-89E9-EF7DFEBAE8E6_1_105_c.webp"
                 
             >
                 <div>
@@ -241,7 +242,7 @@ export default function BuildingSecurityPage() {
                                             }}
                                         >
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/B6B4C4AC-09D3-48A8-87B6-8844B434A753_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -351,7 +352,7 @@ export default function BuildingSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/4E82685C-142E-406D-97AE-28BF37C77A2D_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -454,7 +455,7 @@ export default function BuildingSecurityPage() {
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/0109FC45-FC6E-49C7-9ED7-4ED7824C6780_1_105_c.webp" 
                                                 alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
@@ -674,7 +675,7 @@ export default function BuildingSecurityPage() {
                                                 e.currentTarget.style.boxShadow = '0 30px 60px rgba(0,0,0,0.3)';
                                             }}>
                                             <img 
-                                                src="/assets/img/blog/building-guard.jpg" 
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/153B12DF-BD5C-4455-A81F-419584193843_1_105_c.webp" 
                                                     alt="Professional Building Security Guards" 
                                                 className="img-fluid"
                                                 style={{
