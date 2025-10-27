@@ -5,19 +5,19 @@ import { Marquee } from "@/components/ui/marquee"
 // Client logos from the company folder
 const clientLogos = [
   { src: "/company/1.png", alt: "Client 1" },
-  { src: "/company/2.jpg", alt: "Client 2" },
+  { src: "/company/2.png", alt: "Client 2" },
   { src: "/company/3.png", alt: "Client 3" },
   { src: "/company/4.png", alt: "Client 4" },
-  { src: "/company/5.jpg", alt: "Client 5" },
-  { src: "/company/6.jpg", alt: "Client 6" },
+  { src: "/company/5.png", alt: "Client 5" },
+  { src: "/company/6.png", alt: "Client 6" },
   { src: "/company/7.png", alt: "Client 7" },
   { src: "/company/8.png", alt: "Client 8" },
-  { src: "/company/9.jpg", alt: "Client 9" },
+  { src: "/company/9.png", alt: "Client 9" },
   { src: "/company/10.png", alt: "Client 10" },
-  { src: "/company/11.jpg", alt: "Client 11" },
-  { src: "/company/12.jpg", alt: "Client 12" },
+  { src: "/company/11.png", alt: "Client 11" },
+  { src: "/company/12.png", alt: "Client 12" },
   { src: "/company/13.png", alt: "Client 13" },
-  { src: "/company/14.jpg", alt: "Client 14" },
+  { src: "/company/14.png", alt: "Client 14" },
 ];
 
 export function MarqueeDemo() {
@@ -42,15 +42,16 @@ export function MarqueeDemo() {
                   key={index}
                   className="flex items-center justify-center"
                   style={{ 
-                    marginLeft: '2rem', 
-                    marginRight: '2rem',
+                    marginLeft: '1rem', 
+                    marginRight: '1rem',
                     minWidth: '150px' 
                   }}
                 >
                   <img 
                     src={logo.src} 
                     alt={logo.alt}
-                    className="h-16 w-auto object-contain"
+                    height="100px"
+                    className="h-18 w-auto object-contain"
                   />
                 </div>
               ))}

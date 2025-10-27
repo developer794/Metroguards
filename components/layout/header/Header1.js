@@ -81,7 +81,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                                             }}
                                         >
                                             <i className="fa fa-phone" />
-                                            1300731173
+                                            1300 731 173
                                         </a>
                                     </div>
                                 </div>

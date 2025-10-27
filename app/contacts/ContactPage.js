@@ -97,7 +97,7 @@ export default function ContactPage() {
               </div>
                         <div className="card-content">
                       <h3>Call Us Directly</h3>
-                      <p className="contact-number">1300 73 11 73</p>
+                      <p className="contact-number">1300 731 173</p>
                       <p className="contact-description">Speak with our security experts for immediate assistance and consultation.</p>
                       <a href="tel:1300731173" className="contact-btn">
                         <Phone size={16} />
@@ -245,15 +245,42 @@ export default function ContactPage() {
                           onChange={handleInputChange}
                           required
                         >
-                                <option value="">Please select a service</option>
-                                <option value="residential">Residential Security</option>
-                                <option value="commercial">Commercial Security</option>
-                                <option value="event">Event Security</option>
-                                <option value="personal">Personal Protection</option>
-                          <option value="k9">K9 Security Services</option>
-                                <option value="consultation">Security Consultation</option>
-                                <option value="other">Other</option>
-                              </select>
+                          <option value="">Please select a service</option>
+                          <optgroup label="Security Guards Services">
+                            <option value="building-security-guards">Building Security Guards</option>
+                            <option value="construction-security-guards">Construction Security Guards</option>
+                            <option value="shopping-centre-security-guards">Shopping Centre Security Guards</option>
+                            <option value="hospital-security-guards">Hospital Security Guards</option>
+                            <option value="gatehouse-security-guards">Gatehouse Security Guards</option>
+                            <option value="educational-institution-security">Educational Institution Security</option>
+                            <option value="corporate-security-guards">Corporate Security Guards</option>
+                            <option value="retail-security-guards">Retail Security Guards</option>
+                            <option value="loss-prevention-security-guards">Loss Prevention Security Guards</option>
+                            <option value="concierge-security-guards">Concierge Security Guards</option>
+                            <option value="lock-up-and-open-up-security">Lock-Up and Open-Up Security</option>
+                            <option value="industrial-warehouse-security">Industrial Warehouse Security</option>
+                            <option value="static-security-guards">Static Security Guards</option>
+                            <option value="uniform-and-covert-security">Uniform and Covert Security</option>
+                            <option value="adhoc-security-services">Adhoc Security Services</option>
+                            <option value="asset-protection-security">Asset Protection Security</option>
+                          </optgroup>
+                          <optgroup label="Crowd Control Services">
+                            <option value="party-security-guards">Party Security Guards</option>
+                            <option value="event-security-guards">Event Security Guards</option>
+                            <option value="corporate-event-security">Corporate Event Security</option>
+                          </optgroup>
+                          <optgroup label="Mobile Patrols Services">
+                            <option value="lock-up-security">Lock-Up Security</option>
+                            <option value="security-escort">Security Escort</option>
+                            <option value="alarm-response">Alarm Response</option>
+                            <option value="mobile-patrols">Mobile Patrols</option>
+                            <option value="construction-patrol">Construction Patrol</option>
+                          </optgroup>
+                          <optgroup label="K9 Security Services">
+                            <option value="k9-security-with-handler">K9 Security With Handler</option>
+                          </optgroup>
+                          <option value="other-services">Other Services</option>
+                        </select>
                       </div>
 
                       <div className="form-group">
@@ -274,15 +301,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="form-footer">
-                        <div className="privacy-notice">
-                          <div className="privacy-icon">
-                            <Shield size={20} />
-                          </div>
-                          <div className="privacy-text">
-                            <h6>Your Privacy is Protected</h6>
-                            <p>We respect your privacy and will never share your personal information with third parties. Your data is encrypted and securely stored.</p>
-                          </div>
-                        </div>
+                        
                         
                         <button
                           type="submit"
@@ -303,21 +322,7 @@ export default function ContactPage() {
                         </button>
                       </div>
                       
-                      {/* Social Media Links */}
-                      <div className="social-links">
-                        <a href="#" className="social-link" title="WhatsApp">
-                          <i className="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.facebook.com/metroguards?_rdc=1&_rdr" className="social-link" title="Facebook">
-                          <i className="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/metropolitanguard/" className="social-link" title="Instagram">
-                          <i className="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://x.com/metroguards" className="social-link" title="Twitter">
-                          <i className="fa-brands fa-twitter"></i>
-                        </a>
-                      </div>
+                     
                       
                       
                     </form>

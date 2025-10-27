@@ -50,7 +50,7 @@ export default function Subscribe() {
                                                     transition: 'all 0.3s ease'
                                                 }}
                                             >
-                                                <i className="fa fa-phone"> </i> 1300731173
+                                                <i className="fa fa-phone"> </i> 1300 731 173
                                             </a>
                                         </div>
                                         

@@ -33,15 +33,7 @@ export default function Location() {
       ]
     },
     
-    {
-      id: "new-south-wales",
-      name: "New South Wales",
-      areas: [
-        "Sydney CBD", "Parramatta", "Penrith", "Liverpool", "Campbelltown", "Blacktown",
-        "Ryde", "Hornsby", "Sutherland", "Bankstown", "Fairfield", "Canterbury",
-        "Northern Beaches", "Inner West", "Eastern Suburbs", "Western Sydney"
-      ]
-    },
+   
     
   ];
 

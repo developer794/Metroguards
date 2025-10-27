@@ -8,6 +8,12 @@ export async function POST(req: Request) {
   try {
     const form = await req.formData();
 
+    // honeypot (spam trap)
+    const botField = String(form.get("companyWebsite") || "");
+    if (botField) {
+      return NextResponse.json({ success: true }); // silently ignore bots
+    }
+
     const name        = String(form.get("name") || "");
     const email       = String(form.get("email") || "");
     const phone       = String(form.get("phone") || "");

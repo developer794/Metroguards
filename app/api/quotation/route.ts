@@ -14,12 +14,9 @@ export async function POST(req: Request) {
     }
 
     const firstName  = String(form.get("name") || "");
-    
     const email      = String(form.get("email") || "");
     const phone      = String(form.get("phone") || "");
-    const serviceDate= String(form.get("serviceDate") || "");
     const location   = String(form.get("location") || "");
-    const attendees  = String(form.get("attendees") || "");
     const message    = String(form.get("message") || "");
 
     // arrays from checkboxes
@@ -40,14 +37,12 @@ export async function POST(req: Request) {
       subject: `New Contact Form Submission from ${firstName} `,
       html: `
         <h2>New Quotation Request</h2>
-        <p><strong>Name:</strong> ${firstName} </p>
+        <p><strong>Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "—"}</p>
-        <p><strong>Service Date:</strong> ${serviceDate || "—"}</p>
-        <p><strong>Location/Suburb:</strong> ${location || "—"}</p>
-        <p><strong>Attendees:</strong> ${attendees || "—"}</p>
-        <p><strong>Industries:</strong> ${industriesList}</p>
-        <p><strong>Services:</strong> ${servicesList}</p>
+        <p><strong>Service Site Address:</strong> ${location || "—"}</p>
+        <p><strong>Industry:</strong> ${industriesList}</p>
+        <p><strong>Service Type:</strong> ${servicesList}</p>
         <p><strong>Message:</strong><br/>${message ? message.replace(/\n/g, "<br/>") : "—"}</p>
       `,
     });

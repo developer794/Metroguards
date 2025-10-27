@@ -5,6 +5,7 @@ import Image from "next/image";
 import Layout from "@/components/layout/Layout"
 import Subscribe from "@/components/homepages/home1/Subscribe"
 import { Marquee } from "@/components/ui/marquee"
+import Accreditation from '@/components/accrediation10'
 
 
 
@@ -58,7 +59,7 @@ const clients = [
 // Social responsibility partner organizations
 const socialResponsibilityLogos = [
   { src: "/assets/img/social/The-Royal-Melbourne-Hospital-logo-new-150x150-1.jpg.bv_resized_desktop.jpg.bv (1).webp", alt: "The Royal Melbourne Hospital" },
-  { src: "/assets/img/social/blue-ribbon-foundation-150x150-2.jpg.bv_resized_desktop.jpg.bv.webp", alt: "Blue Ribbon Foundation" },
+  { src: "/assets/img/blog/awarness.png", alt: "Blue Ribbon Foundation" },
   { src: "/assets/img/social/royal-childeren-hospital-150x150-1.jpg.bv_resized_desktop.jpg.bv.webp", alt: "Royal Children's Hospital" },
   { src: "/assets/img/social/white-ribbon.webp", alt: "The Royal Melbourne Hospital" },
 ];
@@ -328,44 +329,7 @@ export default function Page() {
                 </div>
 
                 {/*===== Partnership Marquee Section =====*/}
-                <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-16" style={{marginTop:"50px"}}>
-    <div className="max-w-7xl mx-auto">
-      {/* Heading (always left) */}
-      <div className="mb-8">
-        <h2 className="acc-heading text-3xl sm:text-4xl font-bold text-gray-900" style={{color:"#1e2247"}}>
-          Accreditation
-        </h2>
-      </div>
-
-      {/* Grid for equal logos - 10 in one row on large screens */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-4 lg:gap-6">
-        {clients.map((client, index) => (
-          <div
-            key={index}
-            className="flex items-center justify-center p-2 sm:p-3 lg:p-4 bg-white rounded-md shadow-sm hover:shadow-md transition-shadow"
-          >
-            <a
-              href={client.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block hover:scale-105 transition-transform duration-200"
-            >
-              <Image
-                src={client.logo || "/placeholder.svg"}
-                alt={`${client.name} logo`}
-                width={120}
-                height={60}
-                className="max-h-12 sm:max-h-16 lg:max-h-20 w-auto object-contain mx-auto"
-              />
-            </a>
-          </div>
-        ))}
-      </div>
-    </div>
-    
-    
-   
-  </section>
+                <Accreditation/>
               </div>
             </section>
 

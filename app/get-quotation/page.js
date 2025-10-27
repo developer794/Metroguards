@@ -161,19 +161,36 @@ export default function Page() {
   ];
 
   const serviceOptions = [
-    { value: "alarm-response-unit", label: "Alarm Response Unit" },
-    { value: "concierge-services", label: "Concierge Services" },
-    { value: "crowd-controller", label: "Crowd Controller" },
-    { value: "guard-with-dog", label: "Guard with Dog" },
-    { value: "k9-response-unit", label: "K9 Response Unit" },
-    { value: "security-officers", label: "Security Officers" },
-    { value: "mobile-security-patrols", label: "Mobile Security Patrols" },
-    { value: "uniformed-guards", label: "Uniformed Guards" },
-    { value: "construction-site-security", label: "Construction Site Security" },
-    { value: "loss-prevention-officer", label: "Loss Prevention Officer" },
-    { value: "party-security", label: "Party Security" },
-    { value: "event-security", label: "Event Security" },
-    { value: "covid-marshal", label: "COVID Marshal" },
+    // Security Guards Services
+    { value: "building-security-guards", label: "Building Security Guards" },
+    { value: "construction-security-guards", label: "Construction Security Guards" },
+    { value: "shopping-centre-security-guards", label: "Shopping Centre Security Guards" },
+    { value: "hospital-security-guards", label: "Hospital Security Guards" },
+    { value: "gatehouse-security-guards", label: "Gatehouse Security Guards" },
+    { value: "educational-institution-security", label: "Educational Institution Security" },
+    { value: "corporate-security-guards", label: "Corporate Security Guards" },
+    { value: "retail-security-guards", label: "Retail Security Guards" },
+    { value: "loss-prevention-security-guards", label: "Loss Prevention Security Guards" },
+    { value: "concierge-security-guards", label: "Concierge Security Guards" },
+    { value: "lock-up-and-open-up-security", label: "Lock-Up and Open-Up Security" },
+    { value: "industrial-warehouse-security", label: "Industrial Warehouse Security" },
+    { value: "static-security-guards", label: "Static Security Guards" },
+    { value: "uniform-and-covert-security", label: "Uniform and Covert Security" },
+    { value: "adhoc-security-services", label: "Adhoc Security Services" },
+    { value: "asset-protection-security", label: "Asset Protection Security" },
+    // Crowd Control Services
+    { value: "party-security-guards", label: "Party Security Guards" },
+    { value: "event-security-guards", label: "Event Security Guards" },
+    { value: "corporate-event-security", label: "Corporate Event Security" },
+    // Mobile Patrols Services
+    { value: "lock-up-security", label: "Lock-Up Security" },
+    { value: "security-escort", label: "Security Escort" },
+    { value: "alarm-response", label: "Alarm Response" },
+    { value: "mobile-patrols", label: "Mobile Patrols" },
+    { value: "construction-patrol", label: "Construction Patrol" },
+    // K9 Security Services
+    { value: "k9-security-with-handler", label: "K9 Security With Handler" },
+    // Other
     { value: "other-services", label: "Other Services" }
   ];
 
@@ -247,24 +264,7 @@ export default function Page() {
                     }}></i>
                     Get In Touch Now
                   </div>
-                  <h2 style={{
-                    fontSize: 'clamp(2rem, 4vw, 3rem)',
-                    fontWeight: '700',
-                    color: '#1e2247',
-                    marginBottom: '15px',
-                    fontFamily: 'serif'
-                  }}>
-                    Professional <span style={{ color: '#fdc51a' }}>Quotation</span> Request
-                  </h2>
-                  <p style={{
-                    fontSize: '1.1rem',
-                    color: '#6c757d',
-                    maxWidth: '600px',
-                    margin: '0 auto',
-                    lineHeight: '1.6'
-                  }}>
-                    Complete the form below to receive a detailed security service proposal
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -287,27 +287,12 @@ export default function Page() {
                     paddingBottom: '20px',
                     borderBottom: '1px solid #eceff3'
                   }}>
-                    <div style={{
-                      width: '60px',
-                      height: '60px',
-                      background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                      borderRadius: '50%',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      margin: '0 auto 15px',
-                      boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
-                    }}>
-                      <i className="bi bi-file-text" style={{ 
-                        color: '#1e2247', 
-                        fontSize: '1.5rem' 
-                      }}></i>
-                    </div>
+                    
                     <h4 style={{
                       color: '#1e2247',
                       fontWeight: '600',
                       marginBottom: '8px'
-                    }}>Request Quote Form</h4>
+                    }}>Request A Quote</h4>
                     <p style={{
                       color: '#6c757d',
                       margin: '0',
@@ -422,67 +407,8 @@ export default function Page() {
                         </div>
                       </div>
 
-                      {/* Service Date */}
-                      <div className="col-md-6 mb-4">
-                        <div className="form-group">
-                          <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
-                          }}>
-                            <i className="bi bi-calendar-date" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Service Date <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
-                          </label>
-                          <input
-                            name="serviceDate"
-                            type="date"
-                            className="form-control classic-form-input"
-                            required
-                            style={{
-                              border: '2px solid #eceff3',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
-                              fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
-                              transition: 'all 0.3s ease'
-                            }}
-                          />
-                        </div>
-                      </div>
-
-                      {/* Location */}
-                      <div className="col-12 mb-4">
-                        <div className="form-group">
-                          <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
-                          }}>
-                            <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Service Location <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
-                          </label>
-                          <input
-                            name="location"
-                            type="text"
-                            className="form-control classic-form-input"
-                            placeholder="Enter service address or area"
-                            style={{
-                              border: '2px solid #eceff3',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
-                              fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
-                              transition: 'all 0.3s ease'
-                            }}
-                          />
-                        </div>
-                      </div>
+                      
+                      
 
                       {/* Industry Dropdown */}
                       <div className="col-md-6 mb-4">
@@ -575,21 +501,71 @@ export default function Page() {
                             }}
                           >
                             <option value="">Select Service</option>
-                            <option value="alarm-response-unit">Alarm Response Unit</option>
-                            <option value="concierge-services">Concierge Services</option>
-                            <option value="crowd-controller">Crowd Controller</option>
-                            <option value="guard-with-dog">Guard with Dog</option>
-                            <option value="k9-response-unit">K9 Response Unit</option>
-                            <option value="security-officers">Security Officers</option>
-                            <option value="mobile-security-patrols">Mobile Security Patrols</option>
-                            <option value="uniformed-guards">Uniformed Guards</option>
-                            <option value="construction-site-security">Construction Site Security</option>
-                            <option value="loss-prevention-officer">Loss Prevention Officer</option>
-                            <option value="party-security">Party Security</option>
-                            <option value="event-security">Event Security</option>
-                            <option value="covid-marshal">COVID Marshal</option>
+                            <optgroup label="Security Guards Services">
+                              <option value="building-security-guards">Building Security Guards</option>
+                              <option value="construction-security-guards">Construction Security Guards</option>
+                              <option value="shopping-centre-security-guards">Shopping Centre Security Guards</option>
+                              <option value="hospital-security-guards">Hospital Security Guards</option>
+                              <option value="gatehouse-security-guards">Gatehouse Security Guards</option>
+                              <option value="educational-institution-security">Educational Institution Security</option>
+                              <option value="corporate-security-guards">Corporate Security Guards</option>
+                              <option value="retail-security-guards">Retail Security Guards</option>
+                              <option value="loss-prevention-security-guards">Loss Prevention Security Guards</option>
+                              <option value="concierge-security-guards">Concierge Security Guards</option>
+                              <option value="lock-up-and-open-up-security">Lock-Up and Open-Up Security</option>
+                              <option value="industrial-warehouse-security">Industrial Warehouse Security</option>
+                              <option value="static-security-guards">Static Security Guards</option>
+                              <option value="uniform-and-covert-security">Uniform and Covert Security</option>
+                              <option value="adhoc-security-services">Adhoc Security Services</option>
+                              <option value="asset-protection-security">Asset Protection Security</option>
+                            </optgroup>
+                            <optgroup label="Crowd Control Services">
+                              <option value="party-security-guards">Party Security Guards</option>
+                              <option value="event-security-guards">Event Security Guards</option>
+                              <option value="corporate-event-security">Corporate Event Security</option>
+                            </optgroup>
+                            <optgroup label="Mobile Patrols Services">
+                              <option value="lock-up-security">Lock-Up Security</option>
+                              <option value="security-escort">Security Escort</option>
+                              <option value="alarm-response">Alarm Response</option>
+                              <option value="mobile-patrols">Mobile Patrols</option>
+                              <option value="construction-patrol">Construction Patrol</option>
+                            </optgroup>
+                            <optgroup label="K9 Security Services">
+                              <option value="k9-security-with-handler">K9 Security With Handler</option>
+                            </optgroup>
                             <option value="other-services">Other Services</option>
                           </select>
+                        </div>
+                      </div>
+                      {/* Location */}
+                      <div className="col-md-6 mb-4">
+                        <div className="form-group">
+                          <label style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            color: '#1e2247',
+                            fontWeight: '500',
+                            marginBottom: '8px',
+                            fontSize: '0.95rem'
+                          }}>
+                            <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                            Service Site Address <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
+                          </label>
+                          <input
+                            name="location"
+                            type="text"
+                            className="form-control classic-form-input"
+                            placeholder="Enter service address or area"
+                            style={{
+                              border: '2px solid #eceff3',
+                              borderRadius: '8px',
+                              padding: '12px 15px',
+                              fontSize: '0.95rem',
+                              backgroundColor: '#fafafa',
+                              transition: 'all 0.3s ease'
+                            }}
+                          />
                         </div>
                       </div>
 
@@ -626,52 +602,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      {/* Privacy Notice */}
-                      <div className="col-12 mb-4">
-                        <div style={{
-                          background: 'rgba(30, 34, 71, 0.05)',
-                          borderRadius: '10px',
-                          padding: '20px',
-                          border: '1px solid rgba(30, 34, 71, 0.1)'
-                        }}>
-                          <div style={{
-                            display: 'flex',
-                            alignItems: 'flex-start',
-                            gap: '15px'
-                          }}>
-                            <div style={{
-                              width: '40px',
-                              height: '40px',
-                              background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
-                              borderRadius: '50%',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              flexShrink: '0'
-                            }}>
-                              <i className="bi bi-shield-check" style={{ color: '#ffffff', fontSize: '1.1rem' }}></i>
-                            </div>
-                            <div>
-                              <h6 style={{
-                                color: '#1e2247',
-                                fontWeight: '600',
-                                marginBottom: '5px',
-                                fontSize: '0.95rem'
-                              }}>Fast Response Guarantee</h6>
-                              <p style={{
-                                color: '#6c757d',
-                                margin: '0',
-                                fontSize: '0.85rem',
-                                lineHeight: '1.5'
-                              }}>
-                                We'll respond to your quotation request within 2 hours during business hours. 
-                                Your information is secure and will never be shared with third parties.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
+                     
                       {/* Submit Button */}
                       <div className="col-12 text-center">
                         <button

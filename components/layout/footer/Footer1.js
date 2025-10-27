@@ -28,7 +28,7 @@ export default function Footer1() {
                                         </div>
                                     <div className="contact-item">
                                         <i className="fa fa-phone"></i>
-                                        <Link href="tel:1300731173">1300 73 11 73</Link>
+                                        <Link href="tel:1300731173">1300 731 173</Link>
                                     </div>
                                 </div>
                                 

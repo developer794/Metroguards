@@ -177,6 +177,91 @@ export default function CrowdCrontrolServicesPage() {
                         }}></div>
 
                         <div className="container" style={{position: 'relative', zIndex: 2}}>
+                             {/* Services List */}
+                             <div style={{marginBottom: '80px'}}>
+                                        
+                                        <h2 style={{
+                                            color: '#1e2247',
+                                            textAlign: 'center',
+                                            fontSize: 'clamp(2rem, 4vw, 3rem)',
+                                            fontWeight: '800',
+                                            marginBottom: '20px',
+                                            lineHeight: '1.2'
+                                        }}>Our Crowd Control{' '}
+                                            <span style={{color: '#fdc51a'}}>Services</span></h2>
+                                        <div className="row g-3 justify-content-center">
+                                            {[
+                                                { name: 'Party Security Guards', link: '/party-security-guards' },
+                                                { name: 'Event Security Guards', link: '/event-security-guards' },
+                                                { name: 'Corporate Event Security', link: '/corporate-event-security-guards' }
+                                            ].map((service, index) => (
+                                                <div key={index} className="col-md-6 col-lg-4">
+                                                    <a 
+                                                        href={service.link}
+                                                        style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            gap: '12px',
+                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2a2f5a 100%)',
+                                                            border: '2px solid rgba(253, 197, 26, 0.3)',
+                                                            borderRadius: '12px',
+                                                            padding: '18px 20px',
+                                                            color: 'rgba(255, 255, 255, 0.95)',
+                                                            textDecoration: 'none',
+                                                            fontSize: '0.92rem',
+                                                            fontWeight: '600',
+                                                            transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                                                            cursor: 'pointer',
+                                                            position: 'relative',
+                                                            overflow: 'hidden',
+                                                            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)'
+                                                        }}
+                                                        onMouseEnter={(e) => {
+                                                            e.currentTarget.style.background = 'linear-gradient(135deg, #fdc51a 0%, #ffdb5c 100%)';
+                                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                                            e.currentTarget.style.color = '#1e2247';
+                                                            e.currentTarget.style.transform = 'translateY(-5px) scale(1.02)';
+                                                            e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.4)';
+                                                            // Animate the shine effect
+                                                            const shine = e.currentTarget.querySelector('div');
+                                                            if (shine) shine.style.left = '100%';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.currentTarget.style.background = 'linear-gradient(135deg, #1e2247 0%, #2a2f5a 100%)';
+                                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.3)';
+                                                            e.currentTarget.style.color = 'rgba(255, 255, 255, 0.95)';
+                                                            e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                            e.currentTarget.style.boxShadow = '0 4px 15px rgba(30, 34, 71, 0.3)';
+                                                            // Reset shine effect
+                                                            const shine = e.currentTarget.querySelector('div');
+                                                            if (shine) shine.style.left = '-100%';
+                                                        }}
+                                                    >
+                                                        {/* Shine effect on hover */}
+                                                        <div style={{
+                                                            position: 'absolute',
+                                                            top: 0,
+                                                            left: '-100%',
+                                                            width: '100%',
+                                                            height: '100%',
+                                                            background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
+                                                            transition: 'left 0.5s',
+                                                            pointerEvents: 'none',
+                                                            zIndex: 0
+                                                        }}></div>
+                                                        <span style={{
+                                                            fontSize: '1.2rem',
+                                                            fontWeight: 'bold',
+                                                            flexShrink: 0,
+                                                            position: 'relative',
+                                                            zIndex: 1
+                                                        }}>›</span>
+                                                        <span style={{flex: 1, position: 'relative', zIndex: 1}}>{service.name}</span>
+                                                    </a>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
                             <div className="row justify-content-center mb-5">
                                 <div className="col-lg-10">
                                     {/* Section Header */}
@@ -566,91 +651,7 @@ export default function CrowdCrontrolServicesPage() {
                                         </div>
                                     </div>
 
-                                    {/* Services List */}
-                                    <div style={{marginTop: '80px'}}>
-                                        <h3 style={{
-                                            textAlign: 'center',
-                                            color: '#1e2247',
-                                            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
-                                            fontWeight: '800',
-                                            marginBottom: '40px'
-                                        }}>
-                                            Our Crowd Control{' '}
-                                            <span style={{color: '#fdc51a'}}>Services</span>
-                                        </h3>
-                                        <div className="row g-3 justify-content-center">
-                                            {[
-                                                { name: 'Party Security Guards', link: '/party-security-guards' },
-                                                { name: 'Event Security Guards', link: '/event-security-guards' },
-                                                { name: 'Corporate Event Security', link: '/corporate-event-security-guards' }
-                                            ].map((service, index) => (
-                                                <div key={index} className="col-md-6 col-lg-4">
-                                                    <a 
-                                                        href={service.link}
-                                                        style={{
-                                                            display: 'flex',
-                                                            alignItems: 'center',
-                                                            gap: '12px',
-                                                            background: 'linear-gradient(135deg, #1e2247 0%, #2a2f5a 100%)',
-                                                            border: '2px solid rgba(253, 197, 26, 0.3)',
-                                                            borderRadius: '12px',
-                                                            padding: '18px 20px',
-                                                            color: 'rgba(255, 255, 255, 0.95)',
-                                                            textDecoration: 'none',
-                                                            fontSize: '0.92rem',
-                                                            fontWeight: '600',
-                                                            transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                                                            cursor: 'pointer',
-                                                            position: 'relative',
-                                                            overflow: 'hidden',
-                                                            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)'
-                                                        }}
-                                                        onMouseEnter={(e) => {
-                                                            e.currentTarget.style.background = 'linear-gradient(135deg, #fdc51a 0%, #ffdb5c 100%)';
-                                                            e.currentTarget.style.borderColor = '#fdc51a';
-                                                            e.currentTarget.style.color = '#1e2247';
-                                                            e.currentTarget.style.transform = 'translateY(-5px) scale(1.02)';
-                                                            e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.4)';
-                                                            // Animate the shine effect
-                                                            const shine = e.currentTarget.querySelector('div');
-                                                            if (shine) shine.style.left = '100%';
-                                                        }}
-                                                        onMouseLeave={(e) => {
-                                                            e.currentTarget.style.background = 'linear-gradient(135deg, #1e2247 0%, #2a2f5a 100%)';
-                                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.3)';
-                                                            e.currentTarget.style.color = 'rgba(255, 255, 255, 0.95)';
-                                                            e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                                                            e.currentTarget.style.boxShadow = '0 4px 15px rgba(30, 34, 71, 0.3)';
-                                                            // Reset shine effect
-                                                            const shine = e.currentTarget.querySelector('div');
-                                                            if (shine) shine.style.left = '-100%';
-                                                        }}
-                                                    >
-                                                        {/* Shine effect on hover */}
-                                                        <div style={{
-                                                            position: 'absolute',
-                                                            top: 0,
-                                                            left: '-100%',
-                                                            width: '100%',
-                                                            height: '100%',
-                                                            background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)',
-                                                            transition: 'left 0.5s',
-                                                            pointerEvents: 'none',
-                                                            zIndex: 0
-                                                        }}></div>
-                                                        <span style={{
-                                                            fontSize: '1.2rem',
-                                                            fontWeight: 'bold',
-                                                            flexShrink: 0,
-                                                            position: 'relative',
-                                                            zIndex: 1
-                                                        }}>›</span>
-                                                        <span style={{flex: 1, position: 'relative', zIndex: 1}}>{service.name}</span>
-                                                    </a>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
