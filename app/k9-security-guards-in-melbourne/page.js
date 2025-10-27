@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional K9 security guards with handlers in Melbourne. Canine security units, detection services, patrol dogs, and specialized K9 security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/k9-security-guards-in-melbourne" 
+    canonical: "https://metroguards.com.au/k9-security-guards-in-melbourne" 
   },
   openGraph: {
     title: "K9 Security Guards with Handler in Melbourne | Metro Guards",
     description: "Professional K9 security guards with handlers in Melbourne. Canine security units, detection services, patrol dogs, and specialized K9 security services.",
-    url: "https://website-metroguards.vercel.app/k9-security-guards-in-melbourne",
+    url: "https://metroguards.com.au/k9-security-guards-in-melbourne",
     siteName: "Metro Guards",
     type: "website",
   },

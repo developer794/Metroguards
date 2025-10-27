@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional building security guards in Melbourne. 24/7 protection, licensed officers, live reporting, and ISO-certified standards for commercial and residential properties.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/building-security-guards" 
+    canonical: "https://metroguards.com.au/building-security-guards" 
   },
   openGraph: {
     title: "Building Security Guards in Melbourne | Metro Guards",
     description: "Professional building security guards in Melbourne. 24/7 protection, licensed officers, live reporting, and ISO-certified standards for commercial and residential properties.",
-    url: "https://website-metroguards.vercel.app/building-security-guards",
+    url: "https://metroguards.com.au/building-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

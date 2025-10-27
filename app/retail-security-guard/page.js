@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional retail security guards in Melbourne. Theft prevention, loss prevention, customer safety, and comprehensive retail store security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/retail-security-guard" 
+    canonical: "https://metroguards.com.au/retail-security-guard" 
   },
   openGraph: {
     title: "Retail Security Guards in Melbourne | Metro Guards",
     description: "Professional retail security guards in Melbourne. Theft prevention, loss prevention, customer safety, and comprehensive retail store security services.",
-    url: "https://website-metroguards.vercel.app/retail-security-guard",
+    url: "https://metroguards.com.au/retail-security-guard",
     siteName: "Metro Guards",
     type: "website",
   },

@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Expert construction site security guards in Melbourne. 24/7 on-site protection, licensed personnel, GPS tracking, and specialized training for construction security.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/construction-site-security-guards" 
+    canonical: "https://metroguards.com.au/construction-site-security-guards" 
   },
   openGraph: {
     title: "Construction Site Security Guards in Melbourne | Metro Guards",
     description: "Expert construction site security guards in Melbourne. 24/7 on-site protection, licensed personnel, GPS tracking, and specialized training for construction security.",
-    url: "https://website-metroguards.vercel.app/construction-site-security-guards",
+    url: "https://metroguards.com.au/construction-site-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional uniform and covert security guards in Melbourne. Visible deterrence and discreet protection, integrated security solutions, and 24/7 surveillance.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/uniform-and-convert-security-guards" 
+    canonical: "https://metroguards.com.au/uniform-and-convert-security-guards" 
   },
   openGraph: {
     title: "Uniform and Covert Security Guards in Melbourne | Metro Guards",
     description: "Professional uniform and covert security guards in Melbourne. Visible deterrence and discreet protection, integrated security solutions, and 24/7 surveillance.",
-    url: "https://website-metroguards.vercel.app/uniform-and-convert-security-guards",
+    url: "https://metroguards.com.au/uniform-and-convert-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

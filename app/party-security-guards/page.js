@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional party security guards in Melbourne. Private event security, crowd control, guest safety, and experienced party security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/party-security-guards" 
+    canonical: "https://metroguards.com.au/party-security-guards" 
   },
   openGraph: {
     title: "Party Security Guards in Melbourne | Metro Guards",
     description: "Professional party security guards in Melbourne. Private event security, crowd control, guest safety, and experienced party security services.",
-    url: "https://website-metroguards.vercel.app/party-security-guards",
+    url: "https://metroguards.com.au/party-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

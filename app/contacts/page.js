@@ -8,7 +8,7 @@ export const metadata = {
     title: "Security Guard Services - Security Company in Melbourne",
     description:
       "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
-    url: "https://metroguards.vercel.app",
+    url: "https://metroguards.com.au/contacts",
     siteName: "Metro Guards",
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata = {
     description:
       "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
     images: [
-      "https://metroguards.vercel.app/assets/img/logo/mg metro gaurds.jpg",
+      "https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg",
     ],
   },
 };

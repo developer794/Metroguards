@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional gatehouse security guards in Melbourne. Access control, visitor management, vehicle inspection, and 24/7 gatehouse security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/gate-house-security-guard" 
+    canonical: "https://metroguards.com.au/gate-house-security-guard" 
   },
   openGraph: {
     title: "Gatehouse Security Guards in Melbourne | Metro Guards",
     description: "Professional gatehouse security guards in Melbourne. Access control, visitor management, vehicle inspection, and 24/7 gatehouse security services.",
-    url: "https://website-metroguards.vercel.app/gate-house-security-guard",
+    url: "https://metroguards.com.au/gate-house-security-guard",
     siteName: "Metro Guards",
     type: "website",
   },

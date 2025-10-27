@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional lock-up and open-up security services in Melbourne. Property security, alarm systems, perimeter checks, and reliable lock-up services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/lock-up-security-services" 
+    canonical: "https://metroguards.com.au/lock-up-security-services" 
   },
   openGraph: {
     title: "Lock-Up Security Services in Melbourne | Metro Guards",
     description: "Professional lock-up and open-up security services in Melbourne. Property security, alarm systems, perimeter checks, and reliable lock-up services.",
-    url: "https://website-metroguards.vercel.app/lock-up-security-services",
+    url: "https://metroguards.com.au/lock-up-security-services",
     siteName: "Metro Guards",
     type: "website",
   },

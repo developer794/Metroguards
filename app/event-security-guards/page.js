@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Expert event security guards in Melbourne. Festival security, concert protection, crowd management, and professional event security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/event-security-guards" 
+    canonical: "https://metroguards.com.au/event-security-guards" 
   },
   openGraph: {
     title: "Event Security Guards in Melbourne | Metro Guards",
     description: "Expert event security guards in Melbourne. Festival security, concert protection, crowd management, and professional event security services.",
-    url: "https://website-metroguards.vercel.app/event-security-guards",
+    url: "https://metroguards.com.au/event-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

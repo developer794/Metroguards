@@ -49,7 +49,9 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Quotation form error:', error);
+    }
     return NextResponse.json({ success: false, error: "Email failed" }, { status: 500 });
   }
 }

@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Expert crowd control and event security services in Melbourne. Licensed crowd controllers for concerts, festivals, corporate events, and public gatherings. Ensuring safety and smooth operations for events of all sizes.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/crowd-control-services" 
+    canonical: "https://metroguards.com.au/crowd-control-services" 
   },
   openGraph: {
     title: "Professional Crowd Control Services in Melbourne | Metro Guards",
     description: "Expert crowd control and event security services in Melbourne. Licensed crowd controllers for concerts, festivals, corporate events, and public gatherings. Ensuring safety and smooth operations for events of all sizes.",
-    url: "https://website-metroguards.vercel.app/crowd-control-services",
+    url: "https://metroguards.com.au/crowd-control-services",
     siteName: "Metro Guards",
     type: "website",
   },

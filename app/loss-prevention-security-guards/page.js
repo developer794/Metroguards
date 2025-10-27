@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Expert loss prevention security guards in Melbourne. Retail theft prevention, shrinkage reduction, surveillance, and professional loss prevention services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/loss-prevention-security-guards" 
+    canonical: "https://metroguards.com.au/loss-prevention-security-guards" 
   },
   openGraph: {
     title: "Loss Prevention Security Guards in Melbourne | Metro Guards",
     description: "Expert loss prevention security guards in Melbourne. Retail theft prevention, shrinkage reduction, surveillance, and professional loss prevention services.",
-    url: "https://website-metroguards.vercel.app/loss-prevention-security-guards",
+    url: "https://metroguards.com.au/loss-prevention-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

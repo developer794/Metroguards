@@ -55,7 +55,6 @@ const MultiSelectDropdown = ({ options, selectedValues, onChange, placeholder, n
         onClick={(e) => {
           e.stopPropagation(); // stop form bubbling
           setIsOpen(!isOpen);
-          console.log("Dropdown open?", !isOpen);
         }}
       >
         <span className="selected-text" title={selectedLabels}>
@@ -215,7 +214,9 @@ export default function Page() {
       setSelectedServices([]);
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
-      console.error(err);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Quotation form submission error:', err);
+      }
     } finally {
       setLoading(false);
     }

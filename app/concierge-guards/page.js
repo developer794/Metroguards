@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional concierge security guards in Melbourne. Residential building security, visitor management, luxury property protection, and 24/7 concierge services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/concierge-guards" 
+    canonical: "https://metroguards.com.au/concierge-guards" 
   },
   openGraph: {
     title: "Concierge Security Guards in Melbourne | Metro Guards",
     description: "Professional concierge security guards in Melbourne. Residential building security, visitor management, luxury property protection, and 24/7 concierge services.",
-    url: "https://website-metroguards.vercel.app/concierge-guards",
+    url: "https://metroguards.com.au/concierge-guards",
     siteName: "Metro Guards",
     type: "website",
   },

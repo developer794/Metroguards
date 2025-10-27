@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Rapid alarm response security guards in Melbourne. 24/7 alarm monitoring, emergency response, property protection, and professional alarm response services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/alarm-response-security-guards" 
+    canonical: "https://metroguards.com.au/alarm-response-security-guards" 
   },
   openGraph: {
     title: "Alarm Response Security Guards in Melbourne | Metro Guards",
     description: "Rapid alarm response security guards in Melbourne. 24/7 alarm monitoring, emergency response, property protection, and professional alarm response services.",
-    url: "https://website-metroguards.vercel.app/alarm-response-security-guards",
+    url: "https://metroguards.com.au/alarm-response-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

@@ -40,18 +40,13 @@ export function MarqueeDemo() {
               {clientLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center"
-                  style={{ 
-                    marginLeft: '1rem', 
-                    marginRight: '1rem',
-                    minWidth: '150px' 
-                  }}
+                  className="flex items-center justify-center logo-container"
                 >
                   <img 
                     src={logo.src} 
                     alt={logo.alt}
                     height="100px"
-                    className="h-18 w-auto object-contain"
+                    className="logo-image"
                   />
                 </div>
               ))}
@@ -109,6 +104,20 @@ export function MarqueeDemo() {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
+        /* Logo Container - Desktop/Tablet Sizing (Default) */
+        .logo-container {
+          margin-left: 1rem;
+          margin-right: 1rem;
+          min-width: 150px;
+        }
+
+        /* Logo Image - Desktop/Tablet Sizing (Default) */
+        .logo-image {
+          height: 72px;
+          width: auto;
+          object-fit: contain;
+        }
+
         /* Responsive design */
         @media (max-width: 1024px) {
           .gallery-title {
@@ -121,6 +130,7 @@ export function MarqueeDemo() {
           }
         }
 
+        /* Mobile: 40% size reduction (60% of original) */
         @media (max-width: 768px) {
           .gallery-section {
             padding: 20px 0 80px 0;
@@ -141,6 +151,19 @@ export function MarqueeDemo() {
           .gallery-description {
             font-size: 0.95rem;
           }
+
+          /* Mobile Logo Sizing: 40% reduction */
+          .logo-container {
+            margin-left: 0.6rem;
+            margin-right: 0.6rem;
+            min-width: 90px;
+          }
+
+          .logo-image {
+            height: 43px;
+            width: auto;
+            object-fit: contain;
+          }
         }
 
         @media (max-width: 640px) {
@@ -155,6 +178,17 @@ export function MarqueeDemo() {
           
           .gallery-description {
             font-size: 0.9rem;
+          }
+
+          /* Extra small mobile: Additional refinement */
+          .logo-container {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            min-width: 80px;
+          }
+
+          .logo-image {
+            height: 40px;
           }
         }
       `}</style>

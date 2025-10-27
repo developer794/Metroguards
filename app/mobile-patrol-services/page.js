@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional mobile patrol security services in Melbourne. 24/7 roving patrols, rapid response, lock-up services, and comprehensive security monitoring. GPS-tracked patrols for your peace of mind.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/mobile-patrol-services" 
+    canonical: "https://metroguards.com.au/mobile-patrol-services" 
   },
   openGraph: {
     title: "Mobile Patrol Security Services in Melbourne | Metro Guards",
     description: "Professional mobile patrol security services in Melbourne. 24/7 roving patrols, rapid response, lock-up services, and comprehensive security monitoring. GPS-tracked patrols for your peace of mind.",
-    url: "https://website-metroguards.vercel.app/mobile-patrol-services",
+    url: "https://metroguards.com.au/mobile-patrol-services",
     siteName: "Metro Guards",
     type: "website",
   },

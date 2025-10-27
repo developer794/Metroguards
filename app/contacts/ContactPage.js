@@ -55,7 +55,9 @@ export default function ContactPage() {
       });
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
-      console.error(err);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('Contact form submission error:', err);
+      }
     } finally {
       setLoading(false);
     }

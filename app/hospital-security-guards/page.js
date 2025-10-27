@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Specialized hospital security guards in Melbourne. Healthcare facility protection, patient safety, emergency response, and 24/7 medical facility security.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/hospital-security-guards" 
+    canonical: "https://metroguards.com.au/hospital-security-guards" 
   },
   openGraph: {
     title: "Hospital Security Guards in Melbourne | Metro Guards",
     description: "Specialized hospital security guards in Melbourne. Healthcare facility protection, patient safety, emergency response, and 24/7 medical facility security.",
-    url: "https://website-metroguards.vercel.app/hospital-security-guards",
+    url: "https://metroguards.com.au/hospital-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

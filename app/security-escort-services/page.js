@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional security escort services in Melbourne. Personnel escort, valuable cargo protection, safe transportation, and reliable escort security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/security-escort-services" 
+    canonical: "https://metroguards.com.au/security-escort-services" 
   },
   openGraph: {
     title: "Security Escort Services in Melbourne | Metro Guards",
     description: "Professional security escort services in Melbourne. Personnel escort, valuable cargo protection, safe transportation, and reliable escort security services.",
-    url: "https://website-metroguards.vercel.app/security-escort-services",
+    url: "https://metroguards.com.au/security-escort-services",
     siteName: "Metro Guards",
     type: "website",
   },

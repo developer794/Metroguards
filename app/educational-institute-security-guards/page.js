@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",
     description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
-    url: "https://website-metroguards.vercel.app/educational-institute-security-guards",
+    url: "https://metroguards.com.au/educational-institute-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

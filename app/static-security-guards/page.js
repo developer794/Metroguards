@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Professional static security guards in Melbourne. On-site protection, access control, fixed-post security, and 24/7 static guard services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/static-security-guards" 
+    canonical: "https://metroguards.com.au/static-security-guards" 
   },
   openGraph: {
     title: "Static Security Guards in Melbourne | Metro Guards",
     description: "Professional static security guards in Melbourne. On-site protection, access control, fixed-post security, and 24/7 static guard services.",
-    url: "https://website-metroguards.vercel.app/static-security-guards",
+    url: "https://metroguards.com.au/static-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

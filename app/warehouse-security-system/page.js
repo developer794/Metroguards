@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Comprehensive warehouse security systems in Melbourne. Industrial facility protection, inventory security, access control, and 24/7 warehouse security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/warehouse-security-system" 
+    canonical: "https://metroguards.com.au/warehouse-security-system" 
   },
   openGraph: {
     title: "Industrial Warehouse Security in Melbourne | Metro Guards",
     description: "Comprehensive warehouse security systems in Melbourne. Industrial facility protection, inventory security, access control, and 24/7 warehouse security services.",
-    url: "https://website-metroguards.vercel.app/warehouse-security-system",
+    url: "https://metroguards.com.au/warehouse-security-system",
     siteName: "Metro Guards",
     type: "website",
   },

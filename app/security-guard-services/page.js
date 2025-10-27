@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Comprehensive security guard services in Melbourne. Expert protection for businesses, events, buildings, and more. 24/7 professional security solutions tailored to your needs.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/security-guard-services" 
+    canonical: "https://metroguards.com.au/security-guard-services" 
   },
   openGraph: {
     title: "Professional Security Guard Services in Melbourne | Metro Guards",
     description: "Comprehensive security guard services in Melbourne. Expert protection for businesses, events, buildings, and more. 24/7 professional security solutions tailored to your needs.",
-    url: "https://website-metroguards.vercel.app/security-guard-services",
+    url: "https://metroguards.com.au/security-guard-services",
     siteName: "Metro Guards",
     type: "website",
   },

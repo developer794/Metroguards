@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Elite corporate security guards in Melbourne. Executive protection, office security, access control, and professional corporate security services.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/corporate-security-guards" 
+    canonical: "https://metroguards.com.au/corporate-security-guards" 
   },
   openGraph: {
     title: "Corporate Security Guards in Melbourne | Metro Guards",
     description: "Elite corporate security guards in Melbourne. Executive protection, office security, access control, and professional corporate security services.",
-    url: "https://website-metroguards.vercel.app/corporate-security-guards",
+    url: "https://metroguards.com.au/corporate-security-guards",
     siteName: "Metro Guards",
     type: "website",
   },

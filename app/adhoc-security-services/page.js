@@ -5,12 +5,12 @@ export const metadata = {
   description:
     "Rapid-response ADHOC security guards in Melbourne. Licensed officers, GPS-tracked deployments, live reporting, and 24/7 command oversight.",
   alternates: { 
-    canonical: "https://website-metroguards.vercel.app/adhoc-security-services" 
+    canonical: "https://metroguards.com.au/adhoc-security-services" 
   },
   openGraph: {
     title: "ADHOC Security Guards in Melbourne | Metro Guards",
     description: "Rapid-response ADHOC security guards in Melbourne. Licensed officers, GPS-tracked deployments, live reporting, and 24/7 command oversight.",
-    url: "https://website-metroguards.vercel.app/adhoc-security-services",
+    url: "https://metroguards.com.au/adhoc-security-services",
     siteName: "Metro Guards",
     type: "website",
   },
