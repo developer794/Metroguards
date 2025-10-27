@@ -1,28 +1,12 @@
 # Metro Guards Security Services - Robots.txt
 # Last Updated: 2025-01-27
+# STATUS: MIGRATION IN PROGRESS - NO INDEXING ALLOWED
 
-# Allow all search engines to crawl the site
+# BLOCK ALL SEARCH ENGINES FROM INDEXING THE ENTIRE SITE
+# This is temporary during WordPress to Next.js migration
 User-agent: *
-Allow: /
+Disallow: /
 
-# Block admin and API routes
-Disallow: /dashboard/
-Disallow: /dashboard/*
-Disallow: /api/
-Disallow: /api/*
-
-# Block authentication pages
-Disallow: /signin
-Disallow: /signup
-Disallow: /forgot
-
-# Block test pages
-Disallow: /test
-Disallow: /test/
-
-# Sitemap location
-Sitemap: https://metroguards.com.au/sitemap.xml
-
-# Crawl-delay (optional, adjust if needed)
-# Crawl-delay: 10
+# Sitemap location (disabled during migration)
+# Sitemap: https://metroguards.com.au/sitemap.xml
 

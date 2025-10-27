@@ -51,14 +51,15 @@ export const metadata = {
     images: ["https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    noarchive: true,
+    nocache: true,
     googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      index: false,
+      follow: false,
+      noarchive: true,
+      nocache: true,
     },
   },
 }
