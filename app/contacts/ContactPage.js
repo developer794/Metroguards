@@ -203,7 +203,7 @@ export default function ContactPage() {
                         <div className="form-group">
                           <label htmlFor="phone" className="form-label">
                             <i className="bi bi-phone"></i>
-                            Phone Number <span className="optional">(Optional)</span>
+                            Phone Number 
                             </label>
                               <input 
                                 type="tel" 
@@ -237,7 +237,7 @@ export default function ContactPage() {
                       <div className="form-group">
                         <label htmlFor="serviceType" className="form-label">
                           
-                          Service Type 
+                          Service Type <span className="optional">(Optional)</span>
                             </label>
                         <select
                           id="serviceType"

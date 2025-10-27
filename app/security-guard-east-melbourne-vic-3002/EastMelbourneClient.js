@@ -579,22 +579,7 @@ export default function EastMelbourneClient() {
                                             >
                                                 {industry.icon}
                                                 
-                                                {/* Rotating ring around icon */}
-                                                <div 
-                                                    className="position-absolute"
-                                                    style={{
-                                                        width: '120px',
-                                                        height: '120px',
-                                                        border: '2px solid transparent',
-                                                        borderTop: '2px solid #fdc51a',
-                                                        borderRight: '2px solid #fdc51a',
-                                                        borderRadius: '50%',
-                                                        top: '-10px',
-                                                        left: '-10px',
-                                                        animation: 'rotate 3s linear infinite',
-                                                        zIndex: '1'
-                                                    }}
-                                                ></div>
+                                                
                                             </div>
                                             
                                             {/* Content */}
@@ -685,177 +670,112 @@ export default function EastMelbourneClient() {
                                 { icon: <Shield size={24} />, title: "Licensed Professionals", description: "Fully trained and certified security personnel" },
                                 { icon: <Users size={24} />, title: "Experienced Team", description: "Years of experience serving East Melbourne community" },
                                 { icon: <CheckCircle size={24} />, title: "Proven Track Record", description: "Reliable security solutions with excellent results" }
-                            ].map((benefit, index) => (
+                            ].map((benefit, index) => {
+                                const isBlue = index % 2 === 0; // Even index = blue, Odd = yellow
+                                const primaryColor = isBlue ? '#1e2247' : '#fdc51a';
+                                const secondaryColor = isBlue ? '#fdc51a' : '#1e2247';
+                                
+                                return (
                                 <div key={index} className="col-lg-4 col-md-6">
                                     <div 
-                                        className="benefit-card h-100"
+                                        className={`benefit-card benefit-card-${isBlue ? 'blue' : 'yellow'}`}
                                         style={{
+                                            height: '100%',
+                                            background: '#ffffff',
+                                            borderRadius: '12px',
+                                            padding: '40px 30px',
+                                            border: `2px solid ${isBlue ? '#1e2247' : '#fdc51a'}`,
+                                            transition: 'all 0.3s ease',
                                             position: 'relative',
-                                            cursor: 'pointer',
-                                            transition: 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                                            transform: 'translateY(0)',
-                                            padding: '10px'
+                                            overflow: 'hidden',
+                                            cursor: 'pointer'
                                         }}
                                     >
-                                        {/* Main Card Container */}
+                                        {/* Top Color Bar */}
                                         <div 
-                                            className="h-100"
                                             style={{
-                                                position: 'relative',
-                                                background: '#ffffff',
-                                                borderRadius: '0',
-                                                border: '2px solid transparent',
-                                                padding: '35px 25px',
-                                                transition: 'all 0.4s ease',
-                                                overflow: 'hidden',
-                                                boxShadow: '0 8px 25px rgba(0,0,0,0.1)',
-                                                clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))'
+                                                position: 'absolute',
+                                                top: 0,
+                                                left: 0,
+                                                right: 0,
+                                                height: '4px',
+                                                background: primaryColor
+                                            }}
+                                        ></div>
+
+                                        {/* Icon */}
+                                        <div 
+                                            className="benefit-icon-wrapper"
+                                            style={{
+                                                width: '70px',
+                                                height: '70px',
+                                                background: primaryColor,
+                                                borderRadius: '12px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                margin: '0 auto 25px',
+                                                transition: 'all 0.3s ease'
                                             }}
                                         >
-                                            {/* Animated Border */}
                                             <div 
-                                                className="position-absolute"
+                                                className="benefit-icon"
                                                 style={{
-                                                    top: '0',
-                                                    left: '0',
-                                                    right: '0',
-                                                    bottom: '0',
-                                                    background: 'linear-gradient(45deg, #fdc51a, #1e2247, #f39c12, #2a3458)',
-                                                    borderRadius: '0',
-                                                    zIndex: '-1',
-                                                    opacity: '0',
-                                                    transition: 'opacity 0.4s ease',
-                                                    clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))'
-                                                }}
-                                            ></div>
-
-                                            {/* Top Accent Line */}
-                                            <div 
-                                                className="position-absolute"
-                                                style={{
-                                                    top: '0',
-                                                    left: '0',
-                                                    right: '0',
-                                                    height: '4px',
-                                                    background: 'linear-gradient(90deg, #fdc51a 0%, #1e2247 100%)',
-                                                    transform: 'scaleX(0)',
-                                                    transformOrigin: 'left',
-                                                    transition: 'transform 0.6s ease'
-                                                }}
-                                            ></div>
-
-                                            {/* Icon Container */}
-                                            <div 
-                                                className="mb-4 d-flex align-items-center justify-content-center"
-                                                style={{
-                                                    position: 'relative',
-                                                    width: '80px',
-                                                    height: '80px',
-                                                    margin: '0 auto'
+                                                    color: secondaryColor,
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    transition: 'all 0.3s ease'
                                                 }}
                                             >
-                                                {/* Icon Background */}
-                                                <div 
-                                                    className="position-absolute"
-                                                    style={{
-                                                        width: '100%',
-                                                        height: '100%',
-                                                        background: 'linear-gradient(135deg, #fdc51a 0%, #ffd700 100%)',
-                                                        borderRadius: '50%',
-                                                        transform: 'scale(0.8)',
-                                                        transition: 'all 0.4s ease',
-                                                        zIndex: '1'
-                                                    }}
-                                                ></div>
-                                                
-                                                {/* Icon Shadow */}
-                                                <div 
-                                                    className="position-absolute"
-                                                    style={{
-                                                        width: '100%',
-                                                        height: '100%',
-                                                        background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
-                                                        borderRadius: '50%',
-                                                        transform: 'translate(4px, 4px)',
-                                                        zIndex: '0'
-                                                    }}
-                                                ></div>
-
-                                                {/* Icon */}
-                                                <div 
-                                                    className="position-relative d-flex align-items-center justify-content-center"
-                                                    style={{
-                                                        width: '100%',
-                                                        height: '100%',
-                                                        color: '#1e2247',
-                                                        zIndex: '2',
-                                                        transition: 'all 0.4s ease'
-                                                    }}
-                                                >
-                                                    {benefit.icon}
-                                                </div>
+                                                {benefit.icon}
                                             </div>
-
-                                            {/* Content */}
-                                            <div className="text-center">
-                                                <h5 
-                                                    className="fw-bold mb-3" 
-                                                    style={{
-                                                        color: '#1e2247',
-                                                        fontSize: '1.3rem',
-                                                        lineHeight: '1.3',
-                                                        transition: 'all 0.3s ease',
-                                                        position: 'relative'
-                                                    }}
-                                                >
-                                                    {benefit.title}
-                                                </h5>
-                                                <p 
-                                                    className="mb-0" 
-                                                    style={{
-                                                        color: '#6c757d',
-                                                        lineHeight: '1.6',
-                                                        fontSize: '0.95rem',
-                                                        transition: 'all 0.3s ease'
-                                                    }}
-                                                >
-                                                    {benefit.description}
-                                                </p>
-                                            </div>
-
-                                            {/* Bottom Corner Accent */}
-                                            <div 
-                                                className="position-absolute"
-                                                style={{
-                                                    bottom: '0',
-                                                    right: '0',
-                                                    width: '0',
-                                                    height: '0',
-                                                    borderLeft: '20px solid transparent',
-                                                    borderBottom: '20px solid #fdc51a',
-                                                    transition: 'all 0.4s ease',
-                                                    opacity: '0'
-                                                }}
-                                            ></div>
-
-                                            {/* Hover Overlay */}
-                                            <div 
-                                                className="position-absolute"
-                                                style={{
-                                                    top: '0',
-                                                    left: '0',
-                                                    right: '0',
-                                                    bottom: '0',
-                                                    background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.03) 0%, rgba(30, 34, 71, 0.03) 100%)',
-                                                    opacity: '0',
-                                                    transition: 'opacity 0.4s ease',
-                                                    zIndex: '1'
-                                                }}
-                                            ></div>
                                         </div>
+
+                                        {/* Content */}
+                                        <div className="text-center">
+                                            <h5 
+                                                className="benefit-title fw-bold mb-3"
+                                                style={{
+                                                    color: primaryColor,
+                                                    fontSize: '1.25rem',
+                                                    lineHeight: '1.4',
+                                                    fontFamily: 'satoshi, sans-serif',
+                                                    transition: 'all 0.3s ease'
+                                                }}
+                                            >
+                                                {benefit.title}
+                                            </h5>
+                                            <p 
+                                                className="benefit-desc mb-0"
+                                                style={{
+                                                    color: '#6c757d',
+                                                    lineHeight: '1.6',
+                                                    fontSize: '0.95rem',
+                                                    fontFamily: 'satoshi, sans-serif'
+                                                }}
+                                            >
+                                                {benefit.description}
+                                            </p>
+                                        </div>
+
+                                        {/* Bottom Accent Line */}
+                                        <div 
+                                            className="benefit-bottom-line"
+                                            style={{
+                                                position: 'absolute',
+                                                bottom: 0,
+                                                left: 0,
+                                                height: '3px',
+                                                width: '0',
+                                                background: secondaryColor,
+                                                transition: 'all 0.4s ease'
+                                            }}
+                                        ></div>
                                     </div>
                                 </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
@@ -961,37 +881,67 @@ export default function EastMelbourneClient() {
                 }
 
                 /* Benefit Cards Hover Effects */
+                .benefit-card {
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                }
+                
                 .benefit-card:hover {
-                    transform: translateY(-8px) !important;
+                    transform: translateY(-8px);
+                    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
                 }
                 
-                .benefit-card:hover .h-100 {
-                    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
-                    transform: scale(1.02) !important;
+                /* Blue Cards Hover */
+                .benefit-card-blue:hover {
+                    background: #1e2247 !important;
+                    border-color: #1e2247 !important;
                 }
                 
-                .benefit-card:hover .position-absolute:first-child {
-                    opacity: 1 !important;
+                .benefit-card-blue:hover .benefit-icon-wrapper {
+                    background: #fdc51a !important;
+                    transform: scale(1.1) rotate(5deg);
                 }
                 
-                .benefit-card:hover .position-absolute:nth-child(2) {
-                    transform: scaleX(1) !important;
+                .benefit-card-blue:hover .benefit-icon {
+                    color: #1e2247 !important;
                 }
                 
-                .benefit-card:hover .position-absolute:nth-child(3) {
-                    transform: scale(1.1) !important;
+                .benefit-card-blue:hover .benefit-title {
+                    color: #fdc51a !important;
                 }
                 
-                .benefit-card:hover .position-absolute:nth-child(4) {
-                    transform: scale(1.1) !important;
+                .benefit-card-blue:hover .benefit-desc {
+                    color: rgba(255, 255, 255, 0.9) !important;
                 }
                 
-                .benefit-card:hover .position-absolute:nth-child(5) {
-                    opacity: 1 !important;
+                .benefit-card-blue:hover .benefit-bottom-line {
+                    width: 100% !important;
                 }
                 
-                .benefit-card:hover .position-absolute:last-child {
-                    opacity: 1 !important;
+                /* Yellow Cards Hover */
+                .benefit-card-yellow:hover {
+                    background: #fdc51a !important;
+                    border-color: #fdc51a !important;
+                }
+                
+                .benefit-card-yellow:hover .benefit-icon-wrapper {
+                    background: #1e2247 !important;
+                    transform: scale(1.1) rotate(-5deg);
+                }
+                
+                .benefit-card-yellow:hover .benefit-icon {
+                    color: #fdc51a !important;
+                }
+                
+                .benefit-card-yellow:hover .benefit-title {
+                    color: #1e2247 !important;
+                }
+                
+                .benefit-card-yellow:hover .benefit-desc {
+                    color: #1e2247 !important;
+                }
+                
+                .benefit-card-yellow:hover .benefit-bottom-line {
+                    width: 100% !important;
                 }
 
                 /* Accordion Animations */
