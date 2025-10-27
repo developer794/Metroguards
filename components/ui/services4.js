@@ -6,38 +6,35 @@ import Image from "next/image";
 const data = [
   {
     id: "retail-security",
-    title: "Retail Security Implementation",
-    description:
-      "Comprehensive security solution for a major shopping center including CCTV monitoring, access control, and 24/7 security personnel ensuring customer and staff safety.",
-    href: "/retail-security-guard",
-    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/47170DD0-1721-43C9-BA58-B7D7C84C45DF_1_105_c.webp",
+    title: "Security Guard Services",
+    
+    description: "Professional and well-trained security guards providing on-site protection, access control, surveillance, and safety assurance for businesses and properties.",
+    href: "/security-guard-services",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/AF728EFE-11D1-4965-8948-52919A2FEB8C_1_105_c.webp",
     icon: Shield,
   },
   {
     id: "corporate-building",
-    title: "Corporate Building Security",
-    description:
-      "Advanced security systems for a high-rise corporate building featuring integrated access control, visitor management, and executive protection services.",
-    href: "/building-security-guards",
-    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/4E82685C-142E-406D-97AE-28BF37C77A2D_1_105_c.webp",
+    title: "Crowd Control Services",
+    description: "Trained security personnel managing large gatherings with strategic crowd flow, risk assessment, and incident prevention to ensure a safe environment.",
+    href: "/crowd-control-services",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/660438D5-A405-4A12-A141-34F598A00D3E_1_105_c%20(1).webp",
     icon: Building,
   },
   {
     id: "warehouse-security",
-    title: "Warehouse Security System",
-    description:
-      "Complete security infrastructure for logistics and warehouse facilities including perimeter security, cargo protection, and inventory monitoring systems.",
-    href: "/warehouse-security-system",
-    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/2856BED6-B88F-40F1-80C4-14A7F36AC8DB_1_105_c.webp",
+    title: "Mobile Patrol Services",
+    description: "Uniformed mobile patrol teams conducting scheduled and random patrols to deter crime, secure premises, and ensure safety across multiple locations.",
+    href: "/mobile-patrol-services",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c%20(1).webp",
     icon: Shield,
   },
   {
     id: "event-security",
-    title: "Large Event Security Management",
-    description:
-      "Professional security coordination for major public events including crowd control, VIP protection, and emergency response planning for 10,000+ attendees.",
-    href: "/event-security-guards",
-    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/3B255AE5-CA5B-4ECF-950F-577AA9A09D6A_1_105_c.webp",
+    title: "K9 Security Services",
+    description: "Highly trained K9 units providing enhanced detection, patrol support, and security presence to identify threats and protect property and personnel.",
+    href: "/k9-security-guards-in-melbourne",
+    image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/3306B975-83A6-4BCD-AA71-082374E3FE4F_1_105_c.webp",
     icon: Calendar,
   },
 ];
@@ -162,7 +159,7 @@ const Services4 = ({
         }
 
         .services-description {
-          max-width: 600px;
+          
           color: #666666;
           margin: 0;
           line-height: 1.7;
