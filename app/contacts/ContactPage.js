@@ -147,8 +147,8 @@ export default function ContactPage() {
           {/*===== Contact Form Section =====*/}
           <div className="contact-form-section">
             <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
+              <div className="row justify-content-center">
+                <div className="col-lg-10 col-xl-9">
                   <div className="form-wrapper">
                     <div className="form-header">
                       <div className="form-badge">
@@ -174,7 +174,7 @@ export default function ContactPage() {
                             id="name"
                             name="name"
                             className="form-input"
-                            placeholder="Enter your full name"
+                            
                             value={formData.name}
                             onChange={handleInputChange}
                                 required 
@@ -191,7 +191,7 @@ export default function ContactPage() {
                             id="email"
                             name="email"
                             className="form-input"
-                                placeholder="your.email@example.com" 
+                               
                             value={formData.email}
                             onChange={handleInputChange}
                                 required 
@@ -210,7 +210,7 @@ export default function ContactPage() {
                             id="phone"
                             name="phone"
                             className="form-input"
-                                placeholder="+61 xxx xxx xxx" 
+                                
                             value={formData.phone}
                             onChange={handleInputChange}
                               />
@@ -226,7 +226,7 @@ export default function ContactPage() {
                             id="location"
                             name="location"
                             className="form-input"
-                                placeholder="Enter property address or suburb" 
+                                
                             value={formData.location}
                             onChange={handleInputChange}
                                 required 
@@ -236,8 +236,8 @@ export default function ContactPage() {
                       
                       <div className="form-group">
                         <label htmlFor="serviceType" className="form-label">
-                          <i className="bi bi-shield-check"></i>
-                          Service Type <span className="required">*</span>
+                          
+                          Service Type 
                             </label>
                         <select
                           id="serviceType"
@@ -245,7 +245,7 @@ export default function ContactPage() {
                           className="form-select"
                           value={formData.serviceType}
                           onChange={handleInputChange}
-                          required
+                          
                         >
                           <option value="">Please select a service</option>
                           <optgroup label="Security Guards Services">
@@ -295,7 +295,7 @@ export default function ContactPage() {
                             name="message" 
                           className="form-textarea"
                                 rows="6" 
-                                placeholder="Please describe your security requirements, property details, expected duration, and any specific concerns you may have..."
+                                
                           value={formData.message}
                           onChange={handleInputChange}
                             required
@@ -399,147 +399,9 @@ export default function ContactPage() {
           </div>
 
           <style jsx>{`
-          /* Classic Hero Section */
-          .classic-hero-section {
-            background: linear-gradient(135deg, #1e2247 0%, #2a3458 100%);
-            padding: 100px 0;
-              position: relative;
-              overflow: hidden;
-            }
-
-          .classic-hero-section::before {
-            content: '';
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: 
-              radial-gradient(circle at 20% 50%, rgba(253, 197, 26, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-            pointer-events: none;
-            }
-
-            .hero-content {
-              position: relative;
-              z-index: 2;
-            }
-
-            .hero-badge {
-              display: inline-flex;
-              align-items: center;
-              gap: 8px;
-            background: rgba(253, 197, 26, 0.15);
-              backdrop-filter: blur(10px);
-            border: 1px solid rgba(253, 197, 26, 0.3);
-              border-radius: 50px;
-              padding: 8px 20px;
-            color: #fdc51a;
-            font-weight: 600;
-              margin-bottom: 20px;
-              font-size: 14px;
-            }
-
-            .hero-title {
-              font-size: 3.5rem;
-              font-weight: 800;
-              color: white;
-              margin-bottom: 20px;
-              line-height: 1.2;
-            }
-
-          .highlight-text {
-            background: linear-gradient(45deg, #fdc51a, #f39c12);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            }
-
-            .hero-description {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 40px;
-              line-height: 1.6;
-            }
-
-            .hero-stats {
-              display: flex;
-            gap: 40px;
-              margin-top: 40px;
-            }
-
-            .stat-item {
-              text-align: center;
-              color: white;
-            }
-
-            .stat-item h3 {
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 5px;
-              color: #fdc51a;
-            }
-
-            .stat-item p {
-              font-size: 1rem;
-              margin: 0;
-              opacity: 0.9;
-            }
-
-          .hero-image {
-            position: relative;
-          }
-
-          .image-container {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-          }
-
-          .image-container img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-          }
-
-          .floating-card {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            max-width: 250px;
-          }
-
-          .card-icon {
-            width: 50px;
-            height: 50px;
-            background: #fdc51a;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1e2247;
-          }
-
-          .card-content h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #1e2247;
-            margin-bottom: 5px;
-          }
-
-          .card-content p {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin: 0;
+          /* Global Font Family Override */
+          * {
+            font-family: "satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif !important;
           }
 
           /* Contact Methods Section */
@@ -556,40 +418,49 @@ export default function ContactPage() {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: #fdc51a;
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
             color: #1e2247;
-            padding: 8px 20px;
+            padding: 10px 24px;
             border-radius: 50px;
-            font-weight: 600;
-            font-size: 14px;
+            font-weight: 700;
+            font-size: 0.85rem;
             margin-bottom: 20px;
+            font-family: "satoshi", sans-serif;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 12px rgba(253, 197, 26, 0.25);
           }
 
           .section-title {
-                font-size: 2.5rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: #1e2247;
             margin-bottom: 20px;
+            font-family: "satoshi", sans-serif;
+            letter-spacing: -0.5px;
           }
 
           .section-description {
-            font-size: 1.1rem;
-            color: #6c757d;
+            font-size: 1.05rem;
+            color: #5C5B79;
             max-width: 600px;
             margin: 0 auto;
+            font-family: "satoshi", sans-serif;
+            line-height: 1.7;
           }
 
           .contact-method-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 25px;
+            background: linear-gradient(135deg, #ffffff 0%, #fcfcfd 100%);
+            border-radius: 20px;
             padding: 0;
             text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            transition: all 0.4s ease;
+            box-shadow: 0 10px 40px rgba(30, 34, 71, 0.08), 0 2px 8px rgba(30, 34, 71, 0.04);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             height: 100%;
-            border: 2px solid transparent;
+            border: 1px solid rgba(30, 34, 71, 0.06);
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(10px);
           }
 
           .contact-method-card::before {
@@ -598,43 +469,50 @@ export default function ContactPage() {
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #fdc51a, #f39c12, #e67e22);
-            border-radius: 25px 25px 0 0;
+            height: 5px;
+            background: linear-gradient(90deg, #fdc51a 0%, #f39c12 50%, #e67e22 100%);
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 2px 8px rgba(253, 197, 26, 0.3);
           }
 
           .contact-method-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-            border-color: #fdc51a;
+            transform: translateY(-12px) scale(1.01);
+            box-shadow: 0 30px 60px rgba(30, 34, 71, 0.12), 0 10px 20px rgba(253, 197, 26, 0.08);
+            border-color: rgba(253, 197, 26, 0.2);
           }
 
           .contact-method-card .card-icon {
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             background: linear-gradient(135deg, #1e2247 0%, #2a3458 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 30px auto 25px;
+            margin: 35px auto 25px;
             color: #fdc51a;
             position: relative;
-            box-shadow: 0 10px 25px rgba(30, 34, 71, 0.3);
+            box-shadow: 0 8px 24px rgba(30, 34, 71, 0.2), 0 4px 8px rgba(30, 34, 71, 0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           }
 
           .contact-method-card .card-icon::after {
             content: '';
             position: absolute;
-            top: -5px;
-            left: -5px;
-            right: -5px;
-            bottom: -5px;
-            background: linear-gradient(135deg, #fdc51a, #f39c12);
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 50%, #e67e22 100%);
             border-radius: 50%;
             z-index: -1;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          .contact-method-card:hover .card-icon {
+            transform: scale(1.08) rotate(5deg);
+            box-shadow: 0 12px 32px rgba(253, 197, 26, 0.3), 0 6px 12px rgba(253, 197, 26, 0.2);
           }
 
           .contact-method-card:hover .card-icon::after {
@@ -646,46 +524,52 @@ export default function ContactPage() {
           }
 
           .contact-method-card h3 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: #1e2247;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-          }
-
-          .contact-number {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #1e2247;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #fdc51a, #f39c12);
+            letter-spacing: -0.3px;
+            font-family: "satoshi", sans-serif;
+          }
+
+          .contact-number {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e2247;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 50%, #e67e22 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            font-family: "satoshi", sans-serif;
           }
 
           .contact-description {
-            color: #6c757d;
+            color: #5C5B79;
             margin-bottom: 30px;
             line-height: 1.7;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            font-weight: 400;
+            font-family: "satoshi", sans-serif;
           }
 
           .contact-btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(135deg, #1e2247, #2a3458);
+            background: linear-gradient(135deg, #1e2247 0%, #2a3458 100%);
             color: white;
-            padding: 15px 30px;
+            padding: 14px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(30, 34, 71, 0.3);
+            box-shadow: 0 6px 20px rgba(30, 34, 71, 0.25), 0 2px 8px rgba(30, 34, 71, 0.15);
+            font-family: "satoshi", sans-serif;
+            letter-spacing: 0.3px;
           }
 
           .contact-btn::before {
@@ -695,8 +579,8 @@ export default function ContactPage() {
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s ease;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: left 0.6s ease;
           }
 
           .contact-btn:hover::before {
@@ -704,10 +588,10 @@ export default function ContactPage() {
           }
 
           .contact-btn:hover {
-            background: linear-gradient(135deg, #fdc51a, #f39c12);
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 50%, #e67e22 100%);
             color: #1e2247;
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(253, 197, 26, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(253, 197, 26, 0.35), 0 6px 12px rgba(253, 197, 26, 0.2);
           }
 
           /* Contact Form Section */
@@ -733,12 +617,13 @@ export default function ContactPage() {
 
           .form-wrapper {
             background: white;
-            border-radius: 25px;
+            border-radius: 24px;
             padding: 0;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(30, 34, 71, 0.1), 0 8px 20px rgba(30, 34, 71, 0.06);
             position: relative;
-            border: 1px solid rgba(253, 197, 26, 0.2);
-            max-width: 800px;
+            border: 1px solid rgba(30, 34, 71, 0.08);
+            width: 100%;
+            max-width: 1300px;
             margin: 0 auto;
             overflow: hidden;
           }
@@ -749,10 +634,11 @@ export default function ContactPage() {
             top: 0;
             left: 0;
             right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #fdc51a, #f39c12, #e67e22, #fdc51a);
+            height: 5px;
+            background: linear-gradient(90deg, #fdc51a 0%, #f39c12 25%, #e67e22 50%, #f39c12 75%, #fdc51a 100%);
             background-size: 200% 100%;
-            animation: gradientShift 3s ease-in-out infinite;
+            animation: gradientShift 4s ease-in-out infinite;
+            box-shadow: 0 2px 8px rgba(253, 197, 26, 0.3);
           }
 
           @keyframes gradientShift {
@@ -799,19 +685,23 @@ export default function ContactPage() {
           }
 
           .form-header h2 {
-            font-size: 3rem;
-            font-weight: 800;
+            font-size: 2.5rem;
+            font-weight: 700;
             color: white;
             margin-bottom: 20px;
             line-height: 1.2;
+            font-family: "satoshi", sans-serif;
+            letter-spacing: -0.5px;
           }
 
           .form-header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.9);
             max-width: 700px;
             margin: 0 auto;
             line-height: 1.6;
+            font-family: "satoshi", sans-serif;
+            font-weight: 400;
           }
 
           .contact-form {
@@ -822,8 +712,8 @@ export default function ContactPage() {
           .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-                gap: 30px;
-            margin-bottom: 30px;
+            gap: 30px;
+            margin-bottom: 0px;
           }
 
           .form-group {
@@ -835,39 +725,43 @@ export default function ContactPage() {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-weight: 700;
-            color: #000000 !important;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-weight: 500;
+            color: #1e2247 !important;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            font-family: "satoshi", sans-serif;
+          }
+          
+          .form-label i {
+            color: #fdc51a;
           }
 
           .required {
             color: #e74c3c;
-                font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 700;
           }
 
           .optional {
             color: #6c757d;
-            font-size: 0.9rem;
-            font-weight: 500;
-            text-transform: none;
+            font-size: 0.85rem;
+            font-weight: 400;
           }
 
           .form-input,
           .form-select,
           .form-textarea {
             width: 100%;
-            padding: 20px 25px;
-            border: 3px solid #e9ecef;
-            border-radius: 15px;
-            font-size: 1.1rem;
-            transition: all 0.4s ease;
-            background: #f8f9fa;
+            padding: 12px 15px;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: #fafafa;
             font-weight: 500;
             position: relative;
+            font-family: "satoshi", sans-serif;
+            color: #1e2247;
           }
 
           .form-input:focus,
@@ -875,22 +769,38 @@ export default function ContactPage() {
           .form-textarea:focus {
             outline: none;
             border-color: #fdc51a;
-            background: white;
-            box-shadow: 0 0 0 5px rgba(253, 197, 26, 0.1);
-            transform: translateY(-2px);
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(253, 197, 26, 0.1);
           }
 
           .form-input::placeholder,
           .form-textarea::placeholder {
-            color: #adb5bd;
+            color: #6c757d;
             font-weight: 400;
+            font-family: "satoshi", sans-serif;
           }
 
           .form-textarea {
             resize: vertical;
-            min-height: 150px;
-            font-family: inherit;
+            min-height: 120px;
+            font-family: "satoshi", sans-serif;
             line-height: 1.6;
+          }
+          
+          /* Custom select dropdown arrow */
+          .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+            padding-right: 2.5rem;
+          }
+          
+          .form-select option {
+            background: #ffffff;
+            color: #1e2247;
+            padding: 10px;
           }
 
           .form-footer {
@@ -948,19 +858,20 @@ export default function ContactPage() {
             background: linear-gradient(135deg, #1e2247 0%, #2a3458 100%);
             color: white;
             border: none;
-            padding: 20px 40px;
+            padding: 18px 40px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             cursor: pointer;
-            transition: all 0.4s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             min-width: 220px;
             justify-content: center;
             position: relative;
             overflow: hidden;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 30px rgba(30, 34, 71, 0.3);
+            letter-spacing: 0.8px;
+            box-shadow: 0 8px 24px rgba(30, 34, 71, 0.25), 0 4px 8px rgba(30, 34, 71, 0.15);
+            font-family: "satoshi", sans-serif;
           }
 
           .submit-btn::before {
@@ -970,7 +881,7 @@ export default function ContactPage() {
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(253, 197, 26, 0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(253, 197, 26, 0.2), transparent);
             transition: left 0.6s ease;
           }
 
@@ -979,10 +890,10 @@ export default function ContactPage() {
           }
 
           .submit-btn:hover:not(:disabled) {
-            background: linear-gradient(135deg, #fdc51a, #f39c12);
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 50%, #e67e22 100%);
             color: #1e2247;
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(253, 197, 26, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(253, 197, 26, 0.35), 0 6px 12px rgba(253, 197, 26, 0.2);
           }
 
           .submit-btn:disabled {
@@ -992,10 +903,10 @@ export default function ContactPage() {
           }
 
           .spinner {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             border: 3px solid transparent;
-            border-top: 3px solid #1e2247;
+            border-top: 3px solid currentColor;
             border-radius: 50%;
             animation: spin 1s linear infinite;
           }
@@ -1092,44 +1003,56 @@ export default function ContactPage() {
           }
 
           .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
             padding: 40px 30px;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             height: 100%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
           }
 
           .feature-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
           }
 
           .feature-card .feature-icon {
-            width: 80px;
-            height: 80px;
-            background: #fdc51a;
-            border-radius: 20px;
+            width: 75px;
+            height: 75px;
+            background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
+            border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 25px;
             color: #1e2247;
+            box-shadow: 0 6px 16px rgba(253, 197, 26, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          .feature-card:hover .feature-icon {
+            transform: scale(1.08) rotate(5deg);
           }
 
           .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: white;
             margin-bottom: 15px;
+            font-family: "satoshi", sans-serif;
+            letter-spacing: -0.3px;
           }
 
           .feature-card p {
             color: rgba(255, 255, 255, 0.9);
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
+            font-family: "satoshi", sans-serif;
+            font-size: 0.95rem;
           }
 
           /* Final CTA Section */
@@ -1204,66 +1127,60 @@ export default function ContactPage() {
 
           /* Responsive Design */
           @media (max-width: 991px) {
-            .hero-title {
-              font-size: 2.5rem;
-            }
-
-            .hero-stats {
-              gap: 30px;
-            }
-
             .form-row {
               grid-template-columns: 1fr;
+              gap: 25px;
             }
 
             .form-footer {
               flex-direction: column;
               align-items: center;
               text-align: center;
-            }
-
-            .cta-buttons {
-              flex-direction: column;
-              align-items: center;
+              gap: 30px;
             }
 
             .form-header {
-              padding: 50px 40px 35px 40px;
+              padding: 50px 35px 35px 35px;
             }
 
             .form-header h2 {
-              font-size: 2.5rem;
+              font-size: 2.2rem;
             }
 
             .contact-form {
-              padding: 50px 40px;
+              padding: 50px 35px;
+            }
+
+            .section-title {
+              font-size: 2.2rem;
+            }
+
+            .contact-method-card {
+              margin-bottom: 25px;
+            }
+
+            .contact-method-card .card-icon {
+              width: 85px;
+              height: 85px;
             }
           }
 
           @media (max-width: 767px) {
-            .classic-hero-section {
+            .contact-methods-section {
               padding: 60px 0;
-            }
-
-            .hero-title {
-              font-size: 2rem;
-            }
-
-            .hero-stats {
-              flex-direction: column;
-              gap: 20px;
             }
 
             .form-wrapper {
               margin: 0 15px;
+              border-radius: 20px;
             }
 
             .form-header {
-              padding: 40px 30px 30px 30px;
+              padding: 40px 25px 30px 25px;
             }
 
             .form-header h2 {
-              font-size: 2rem;
+              font-size: 1.8rem;
             }
 
             .form-header p {
@@ -1271,33 +1188,97 @@ export default function ContactPage() {
             }
 
             .contact-form {
-              padding: 40px 30px;
+              padding: 40px 25px;
+            }
+
+            .form-group {
+              margin-bottom: 25px;
             }
 
             .form-input,
             .form-select,
             .form-textarea {
-              padding: 18px 20px;
-              font-size: 1rem;
+              padding: 12px 15px;
+              font-size: 0.95rem;
+              border-radius: 8px;
+            }
+
+            .form-label {
+              font-size: 0.85rem;
+              margin-bottom: 8px;
             }
 
             .submit-btn {
-              padding: 18px 35px;
-              font-size: 1rem;
-              min-width: 200px;
-            }
-
-            .privacy-notice {
-              flex-direction: column;
-              text-align: center;
+              padding: 16px 32px;
+              font-size: 0.95rem;
+              min-width: 100%;
             }
 
             .section-title {
-              font-size: 2rem;
+              font-size: 1.8rem;
             }
 
-            .cta-content h2 {
-              font-size: 2rem;
+            .section-description {
+              font-size: 0.95rem;
+            }
+
+            .contact-method-card h3 {
+              font-size: 1.3rem;
+            }
+
+            .contact-number {
+              font-size: 1.15rem;
+            }
+
+            .contact-description {
+              font-size: 0.9rem;
+            }
+
+            .contact-method-card .card-icon {
+              width: 75px;
+              height: 75px;
+              margin: 30px auto 20px;
+            }
+
+            .contact-method-card .card-content {
+              padding: 0 25px 35px 25px;
+            }
+
+            .feature-card {
+              padding: 35px 25px;
+              margin-bottom: 20px;
+            }
+
+            .feature-card h3 {
+              font-size: 1.25rem;
+            }
+
+            .feature-card p {
+              font-size: 0.9rem;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .section-badge {
+              font-size: 0.75rem;
+              padding: 8px 18px;
+            }
+
+            .form-header h2 {
+              font-size: 1.5rem;
+            }
+
+            .form-header p {
+              font-size: 0.9rem;
+            }
+
+            .section-title {
+              font-size: 1.6rem;
+            }
+
+            .contact-method-card .card-icon {
+              width: 70px;
+              height: 70px;
             }
           }
         `}</style>

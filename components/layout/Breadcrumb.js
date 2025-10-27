@@ -71,15 +71,17 @@ export default function Breadcrumb({
                                         display: "inline-block",
                                         background: "rgba(253, 197, 26, 0.15)",
                                         color: "#fdc51a",
-                                        padding: "8px 20px",
+                                        padding: "10px 24px",
                                         borderRadius: "25px",
-                                        fontSize: "0.9rem",
-                                        fontWeight: "600",
+                                        fontSize: "0.85rem",
+                                        fontWeight: "700",
                                         letterSpacing: "0.5px",
                                         textTransform: "uppercase",
                                         marginBottom: "20px",
                                         border: "1px solid rgba(253, 197, 26, 0.3)",
-                                        backdropFilter: "blur(10px)"
+                                        backdropFilter: "blur(10px)",
+                                        fontFamily: "satoshi, sans-serif",
+                                        boxShadow: "0 4px 12px rgba(253, 197, 26, 0.2)"
                                     }}
                                 >
                                     {breadcrumbTitle}
@@ -89,17 +91,18 @@ export default function Breadcrumb({
                                 <h1 
                                     style={{
                                         fontSize: "clamp(2rem, 4vw, 3rem)",
-                                        fontWeight: "600",
+                                        fontWeight: "700",
                                         color: "#ffffff",
                                         lineHeight: "1.3",
                                         marginBottom: "15px",
-                                        fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+                                        fontFamily: "satoshi, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
                                         textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)",
                                         maxWidth: "800px",
                                         textAlign: "left",
                                         textWrap: "balance",
                                         wordWrap: "break-word",
-                                        hyphens: "auto"
+                                        hyphens: "auto",
+                                        letterSpacing: "-0.5px"
                                     }}
                                     dangerouslySetInnerHTML={{
                                         __html: mainTitle || "Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Values</span> Define Our Excellence"
@@ -111,11 +114,12 @@ export default function Breadcrumb({
                                     <p 
                                         style={{
                                             fontSize: "1.1rem",
-                                            color: "rgba(255, 255, 255, 0.85)",
-                                            lineHeight: "1.5",
+                                            color: "rgba(255, 255, 255, 0.9)",
+                                            lineHeight: "1.6",
                                             marginBottom: "25px",
-                                            maxWidth: "500px",
-                                            fontWeight: "300"
+                                            maxWidth: "600px",
+                                            fontWeight: "400",
+                                            fontFamily: "satoshi, sans-serif"
                                         }}
                                     >
                                         {subtitle}

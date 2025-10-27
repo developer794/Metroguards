@@ -330,14 +330,14 @@ export default function Page() {
                             name="name"
                             type="text"
                             className="form-control classic-form-input"
-                            placeholder="Enter your full name"
+                            
                             required
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           />
@@ -362,14 +362,14 @@ export default function Page() {
                             name="email"
                             type="email"
                             className="form-control classic-form-input"
-                            placeholder="Enter your email address"
+                            
                             required
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           />
@@ -394,14 +394,14 @@ export default function Page() {
                             name="phone"
                             type="tel"
                             className="form-control classic-form-input"
-                            placeholder="Enter your phone number"
+                           
                             required
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           />
@@ -430,11 +430,11 @@ export default function Page() {
                             className="form-control classic-form-input"
                             required
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           >
@@ -493,11 +493,11 @@ export default function Page() {
                             className="form-control classic-form-input"
                             required
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           >
@@ -557,13 +557,13 @@ export default function Page() {
                             name="location"
                             type="text"
                             className="form-control classic-form-input"
-                            placeholder="Enter service address or area"
+                            
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease'
                             }}
                           />
@@ -588,13 +588,13 @@ export default function Page() {
                             name="message"
                             className="form-control classic-form-input"
                             rows="5"
-                            placeholder="Tell us more about your security requirements, timeline, special needs, or any specific questions..."
+                            
                             style={{
-                              border: '2px solid #eceff3',
+                              border: '1px solid #000000 !important',
                               borderRadius: '8px',
                               padding: '12px 15px',
                               fontSize: '0.95rem',
-                              backgroundColor: '#fafafa',
+                              backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease',
                               resize: 'vertical',
                               minHeight: '120px'
