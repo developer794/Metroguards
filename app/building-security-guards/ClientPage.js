@@ -140,7 +140,7 @@ export default function BuildingSecurityPage() {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
-                                    <div className="hero-content">
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
                                             <span 
                                                 className="badge px-4 py-2" 
@@ -162,7 +162,8 @@ export default function BuildingSecurityPage() {
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
-                                                fontSize: '3rem'
+                                                fontSize: '3rem',
+                                                textAlign: 'left'
                                             }}
                                         >
                                             Building Site Security, <br />
@@ -174,11 +175,12 @@ export default function BuildingSecurityPage() {
                                                 color: '#6c757d',
                                                 fontSize: '1.2rem', 
                                                 lineHeight: '1.6',
-                                                maxWidth: '500px'
+                                                maxWidth: '500px',
+                                                textAlign: 'left'
                                             }}
                                         >
-                                            When the last tradesman clocks out and the building lights fade, that’s when our work begins.  Most people never think about what happens between midnight and dawn. But at Metro Guards, those hours matter most: the quiet hum of the lifts, the echo of footsteps down an empty corridor, the sense that everything valuable in the building is now in our hands. 
-                                            <br />Our building site security guards don’t just keep watch; We understand the responsibility that comes with every key, every camera, every alarm. We know what it means to protect your hard work.
+                                            When the last tradesman clocks out and the building lights fade, that's when our work begins.  Most people never think about what happens between midnight and dawn. But at Metro Guards, those hours matter most: the quiet hum of the lifts, the echo of footsteps down an empty corridor, the sense that everything valuable in the building is now in our hands. 
+                                            <br />Our building site security guards don't just keep watch; We understand the responsibility that comes with every key, every camera, every alarm. We know what it means to protect your hard work.
                                         </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -195,7 +197,9 @@ export default function BuildingSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
+                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)',
+                                                    flex: '1',
+                                                    textAlign: 'center'
                                                 }}
                                             >
                                                 GET QUOTATION
@@ -212,7 +216,9 @@ export default function BuildingSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    borderWidth: '2px'
+                                                    borderWidth: '2px',
+                                                    flex: '1',
+                                                    textAlign: 'center'
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.backgroundColor = '#1e2247';
@@ -223,7 +229,7 @@ export default function BuildingSecurityPage() {
                                                     e.target.style.color = '#1e2247';
                                                 }}
                                             >
-                                                <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
                                                     <Phone size={16}/> 1300731173
                                                 </span>
                                                 </a>

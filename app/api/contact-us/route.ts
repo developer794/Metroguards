@@ -52,7 +52,7 @@ export async function POST(req: Request) {
     }
 
     const from =
-      "Metro Guards <onboarding@resend.dev>";
+      "Metro Guards <${process.env.CONTACT_FROM_EMAIL}>";
 
     const subject = `New Contact — ${service || purpose || "General"} — ${name}`;
 

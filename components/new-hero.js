@@ -195,13 +195,16 @@ export default function NewHero() {
                 exit="exit"
                 className="nh-cta-wrap"
               >
-                <Link
-                  href={current.cta.href}
-                  className="inline-flex items-center justify-center gap-2 bg-yellow-400 text-black font-semibold tracking-wide px-14 h-[44px] min-w-[240px]  hover:bg-yellow-300 transition"
-                >
-                  <Phone className="w-5 h-5" />
-                  <span>Call Now</span>
-                </Link>
+                
+                <a 
+                  href="tel:1300731173" 
+                  className="inline-flex items-center justify-center gap-2 bg-yellow-400 text-black font-semibold tracking-wide px-14 h-[44px] min-w-[240px]  hover:bg-yellow-300 transition" 
+                  
+                  
+              >
+                  <i className="fa fa-phone" />
+                  Call Now
+              </a>
               </motion.div>
             </div>
           </div>

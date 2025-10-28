@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     
     const emailResult = await resend.emails.send({
       // test-safe sender; switch to your domain once verified
-      from: "Metro Guards <onboarding@resend.dev>",
+      from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to: process.env.CONTACT_TO_EMAIL!,            // e.g. ummehabiba989@gmail.com
       replyTo: email,                                // <- correct key
       subject: `New Contact Form Submission from ${name}`,

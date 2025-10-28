@@ -31,7 +31,7 @@ export async function POST(req: Request) {
     const industriesList = industries.length ? `<ul>${industries.map(i => `<li>${i}</li>`).join("")}</ul>` : "—";
 
     await resend.emails.send({
-      from: "Metro Guards <onboarding@resend.dev>",
+      from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to: process.env.CONTACT_TO_EMAIL!,            // e.g. ummehabiba989@gmail.com
       replyTo: email,                                // <- correct key
       subject: `New Contact Form Submission from ${firstName} `,
