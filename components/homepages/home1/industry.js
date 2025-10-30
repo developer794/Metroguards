@@ -1,6 +1,6 @@
 "use client";
 
-import { Store, ShoppingCart, Warehouse, Gem, Building2, Hospital } from "lucide-react"
+import { Briefcase, Store, Truck, HardHat, Hospital, Users } from "lucide-react"
 
 
 
@@ -19,7 +19,7 @@ export default function Home() {
                     </span>
                 </div>
                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                    Industries We Serve
+                    Industries We Protect
                 </h2>
                 <p className="lead" style={{color: 'black'}}>
                     We provide comprehensive security services for a wide range of industries in Melbourne, tailoring our solutions to meet your specific needs.
@@ -28,12 +28,12 @@ export default function Home() {
         </div>
         <div className="row g-4 g-md-3 g-lg-4">
             {[
-                { icon: <Store size={32} />, title: "Retail Stores & Malls", description: "From small boutiques to large shopping centers" },
-                { icon: <ShoppingCart size={32} />, title: "Supermarkets", description: "Grocery stores and convenience outlets" },
-                { icon: <Warehouse size={32} />, title: "Warehouses", description: "Distribution centers and stock rooms" },
-                { icon: <Gem size={32} />, title: "High-End Retail", description: "Luxury boutiques and jewelry stores" },
-                { icon: <Building2 size={32} />, title: "Educational Institutions", description: "Schools and universities" },
-                { icon: <Hospital size={32} />, title: "Healthcare Facilities", description: "Hospitals and medical centers" }
+                { icon: <Briefcase size={32} />, title: "Corporate & Commercial", description: "Office Towers, Business Parks, Tech & Legal Firms" },
+                { icon: <Store size={32} />, title: "Retail, Hospitality & Major Events", description: "Shopping, Dining, Hotels, Venues, Festivals" },
+                { icon: <Truck size={32} />, title: "Industrial, Logistics & Transport", description: "Warehousing, Freight, Manufacturing, Ports" },
+                { icon: <HardHat size={32} />, title: "Construction & Infrastructure ", description: "Sites, Civil Works, Energy, Equipment Yards" },
+                { icon: <Hospital size={32} />, title: "Healthcare & Aged Care", description: "Hospitals, Clinics, Aged Care, Mental Health" },
+                { icon: <Users size={32} />, title: "Public & Community Services", description: " Schools, Councils, Worship, Culture" }
             ].map((industry, index) => (
                 <div key={index} className="col-lg-4 col-md-6">
                     <div 

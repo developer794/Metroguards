@@ -138,9 +138,9 @@ export default function ShoppingCentreSecurityPage() {
                     {/*===== Modern Hero Section =====*/}
                     <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
                         <div className="container">
-                            <div className="row align-items-center">
+                            <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content">
+                                    <div className="hero-content" style={{textAlign: 'left'}}>
                                         <div className="subtitle mb-4">
                                             <span 
                                                 className="badge px-4 py-2" 
@@ -195,7 +195,11 @@ export default function ShoppingCentreSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
+                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
+                                                    textAlign: 'center'
                                                 }}
                                             >
                                                 GET QUOTATION
@@ -212,7 +216,11 @@ export default function ShoppingCentreSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    borderWidth: '2px'
+                                                    borderWidth: '2px',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
+                                                    textAlign: 'center'
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.backgroundColor = '#1e2247';

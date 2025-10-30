@@ -579,35 +579,7 @@ export default function SecurityLicensePage() {
                                                         <span style={{fontWeight: '500'}}>Work Cover Insurance</span>
                                                     </a>
                                             </li>
-                                                <li className="document-item">
-                                                    <a href="/wp-content/uploads/2025/05/Labour-Hire-Organisation-Licence-Certificate-VICLHL01373.pdf" target="_blank"
-                                                       style={{
-                                                           display: 'flex',
-                                                           alignItems: 'center',
-                                                           textDecoration: 'none',
-                                                           color: '#495057',
-                                                           transition: 'color 0.3s ease',
-                                                           padding: '10px',
-                                                           borderRadius: '8px',
-                                                           border: '1px solid transparent'
-                                                       }}
-                                                       onMouseEnter={(e) => {
-                                                           e.currentTarget.style.color = '#fdc51a';
-                                                           e.currentTarget.style.backgroundColor = '#f8f9fa';
-                                                           e.currentTarget.style.borderColor = '#fdc51a';
-                                                       }}
-                                                       onMouseLeave={(e) => {
-                                                           e.currentTarget.style.color = '#495057';
-                                                           e.currentTarget.style.backgroundColor = 'transparent';
-                                                           e.currentTarget.style.borderColor = 'transparent';
-                                                       }}>
-                                                        <i className="fas fa-file-pdf me-3" style={{
-                                                            color: '#fdc51a',
-                                                            fontSize: '18px'
-                                                        }}></i>
-                                                        <span style={{fontWeight: '500'}}>Labour Hire Organization Licence</span>
-                                                    </a>
-                                            </li>
+                                                
                                         </ul>
                                         </div>
                                         
@@ -1280,7 +1252,7 @@ export default function SecurityLicensePage() {
                                             margin: '0 auto',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-file-alt" style={{
+                                            <i className="fas fa-award" style={{
                                                 color: '#1e2247',
                                                 fontSize: '32px'
                                             }}></i>
@@ -1299,7 +1271,7 @@ export default function SecurityLicensePage() {
                                                }}
                                                onMouseEnter={(e) => e.target.style.color = '#fdc51a'}
                                                onMouseLeave={(e) => e.target.style.color = '#1e2247'}>
-                                                E-Certificate of Registration
+                                                 ISO 14001
                                             </a>
                                         </h4>
                                         
@@ -1308,7 +1280,8 @@ export default function SecurityLicensePage() {
                                             fontSize: '1rem',
                                             lineHeight: '1.6'
                                         }}>
-                                            Electronic certification for digital verification
+                                            ENVIRONMENTAL MANAGEMENT SYSTEMS
+
                                         </p>
                                         
                                         <div className="quality-badge" style={{
@@ -1356,7 +1329,7 @@ export default function SecurityLicensePage() {
                                             margin: '0 auto',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-file" style={{
+                                            <i className="fas fa-award" style={{
                                                 color: '#fdc51a',
                                                 fontSize: '32px'
                                             }}></i>
@@ -1367,6 +1340,7 @@ export default function SecurityLicensePage() {
                                             fontSize: '1.3rem',
                                             fontWeight: '700'
                                         }}>
+                                            
                                             <a href="/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
                                                style={{
                                                    textDecoration: 'none',
@@ -1375,7 +1349,7 @@ export default function SecurityLicensePage() {
                                                }}
                                                onMouseEnter={(e) => e.target.style.color = '#fdc51a'}
                                                onMouseLeave={(e) => e.target.style.color = '#1e2247'}>
-                                                O-Certificate of Registration
+                                                ISO 45001
                                             </a>
                                         </h4>
                                         
@@ -1384,7 +1358,7 @@ export default function SecurityLicensePage() {
                                             fontSize: '1rem',
                                             lineHeight: '1.6'
                                         }}>
-                                            Original documentation for physical inspection
+                                            OCCUPATIONAL HEALTH & SAFETY MANAGEMENT SYSTEMS
                                         </p>
                                         
                                         <div className="quality-badge" style={{
@@ -1396,7 +1370,7 @@ export default function SecurityLicensePage() {
                                             fontWeight: '600',
                                             display: 'inline-block'
                                         }}>
-                                            ORIGINAL
+                                            DIGITAL
                                         </div>
                                     </div>
                                 </div>
@@ -1451,7 +1425,7 @@ export default function SecurityLicensePage() {
                                                }}
                                                onMouseEnter={(e) => e.target.style.color = '#fdc51a'}
                                                onMouseLeave={(e) => e.target.style.color = '#1e2247'}>
-                                                Q-Certificate of Registration
+                                                ISO 9001
                                             </a>
                                         </h4>
                                         
@@ -1460,7 +1434,7 @@ export default function SecurityLicensePage() {
                                             fontSize: '1rem',
                                             lineHeight: '1.6'
                                         }}>
-                                            Quality assurance certification meeting ISO standards
+                                            QUALITY MANAGEMENT SYSTEMS
                                         </p>
                                         
                                         <div className="quality-badge" style={{
@@ -1472,7 +1446,7 @@ export default function SecurityLicensePage() {
                                             fontWeight: '600',
                                             display: 'inline-block'
                                         }}>
-                                            ISO STANDARDS
+                                            DIGITAL
                                         </div>
                                     </div>
                                 </div>

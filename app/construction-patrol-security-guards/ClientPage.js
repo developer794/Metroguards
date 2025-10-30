@@ -195,7 +195,11 @@ export default function ConstructionPatrolSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)'
+                                                    boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
+                                                    textAlign: 'center'
                                                 }}
                                             >
                                                 GET QUOTATION
@@ -212,7 +216,11 @@ export default function ConstructionPatrolSecurityPage() {
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     transition: 'all 0.3s ease',
-                                                    borderWidth: '2px'
+                                                    borderWidth: '2px',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
+                                                    textAlign: 'center'
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.backgroundColor = '#1e2247';

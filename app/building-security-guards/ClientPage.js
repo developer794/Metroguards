@@ -199,6 +199,9 @@ export default function BuildingSecurityPage() {
                                                     transition: 'all 0.3s ease',
                                                     boxShadow: '0 4px 15px rgba(253, 197, 26, 0.3)',
                                                     flex: '1',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
                                                     textAlign: 'center'
                                                 }}
                                             >
@@ -218,6 +221,9 @@ export default function BuildingSecurityPage() {
                                                     transition: 'all 0.3s ease',
                                                     borderWidth: '2px',
                                                     flex: '1',
+                                                    minWidth: '200px',
+                                                    width: '100%',
+                                                    maxWidth: '280px',
                                                     textAlign: 'center'
                                                 }}
                                                 onMouseEnter={(e) => {

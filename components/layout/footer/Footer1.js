@@ -61,9 +61,9 @@ export default function Footer1() {
                                 </h3>
                                 <div className="footer-menu">
                                     <ul>
-                                        <li><Link href="/security-licenses-and-insurance">Security Licenses and Insurance</Link></li>
-                                        <li><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
-                                        <li><Link href="/conditions-of-hire">Condition of Hire</Link></li>
+                                        <li><Link href="/security-licenses-and-insurance">Licenses and Insurance</Link></li>
+                                        <li><Link href="/website-content-disclaimer">Website Content Disclaimer</Link></li>
+                                        <li><Link href="/conditions-of-hire">Conditions of Hire</Link></li>
                                         <li><Link href="/faqs">FAQs</Link></li>
                                         <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                                         <li><Link href="/Modern-Slavery-Statement-V2-1.pdf" target="_blank" rel="noopener noreferrer">Slavery Statement</Link></li>
