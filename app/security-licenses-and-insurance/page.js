@@ -128,7 +128,7 @@ export default function SecurityLicensePage() {
                                                     e.target.style.boxShadow = '0 4px 15px rgba(253, 197, 26, 0.3)';
                                                 }}
                                             >
-                                                REQUEST DOCUMENTS <i className="fas fa-arrow-right ms-2"></i>
+                                                Compliance Pack <i className="fas fa-arrow-right ms-2"></i>
                                                 </a>
                                             <a 
                                                 href="tel:1300731173" 

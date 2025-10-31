@@ -70,7 +70,7 @@ export default function SecurityLicensePage() {
                                                         textTransform: 'uppercase'
                                                     }}
                                                 >
-                                                    REQUEST DOCUMENTS <span><i className="bi bi-arrow-right"></i></span>
+                                                    Compliance Pack <span><i className="bi bi-arrow-right"></i></span>
                                                 </a>
                                                 <a 
                                                     href="tel:1300731173" 

@@ -124,6 +124,29 @@ export default function Page() {
   const [loading, setLoading] = useState(false);
   const [selectedIndustries, setSelectedIndustries] = useState([]);
   const [selectedServices, setSelectedServices] = useState([]);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Load reCAPTCHA v2 script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    // Define the callback function
+    window.onRecaptchaSuccess = (token) => {
+      setRecaptchaToken(token);
+    };
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+      delete window.onRecaptchaSuccess;
+    };
+  }, []);
 
   const industryOptions = [
     { value: "developer", label: "Developer" },
@@ -195,12 +218,22 @@ export default function Page() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    // Check reCAPTCHA v2
+    if (!recaptchaToken) {
+      toast.error("Please complete the reCAPTCHA verification");
+      return;
+    }
+
     setLoading(true);
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
     try {
+      const form = e.currentTarget;
+      const formData = new FormData(form);
+      
+      // Add reCAPTCHA token to form data
+      formData.append("recaptchaToken", recaptchaToken);
+
       const res = await fetch("/api/quotation", { method: "POST", body: formData });
       const data = await res.json().catch(() => ({}));
 
@@ -208,10 +241,17 @@ export default function Page() {
         throw new Error(data?.error || `Request failed: ${res.status}`);
       }
 
-      toast.success("Message sent successfully!");
+      // Show success page instead of toast
+      setIsSubmitted(true);
       form.reset();
       setSelectedIndustries([]);
       setSelectedServices([]);
+      
+      // Reset reCAPTCHA
+      setRecaptchaToken(null);
+      if (window.grecaptcha) {
+        window.grecaptcha.reset();
+      }
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
       if (process.env.NODE_ENV === 'development') {
@@ -236,70 +276,276 @@ export default function Page() {
       >
             
 
-        {/*===== Enhanced Quotation Form Section =====*/}
-        <div className="quotation-section section-padding" style={{
-          background: '#ffffff',
-          borderTop: '1px solid #eceff3'
-        }}>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 text-center mb-5">
-                <div className="section-header" data-aos="fade-up">
-                  <div className="section-badge" style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                    color: '#ffffff',
-                    padding: '8px 20px',
-                    borderRadius: '25px',
-                    fontSize: '0.85rem',
-                    fontWeight: '600',
-                    letterSpacing: '0.5px',
-                    textTransform: 'uppercase',
-                    marginBottom: '20px'
+        {isSubmitted ? (
+          /* ===== Success Thank You Page ===== */
+          <div className="quotation-section" style={{
+            background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+            padding: '100px 0',
+            minHeight: '70vh',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div style={{
+                    background: '#ffffff',
+                    borderRadius: '24px',
+                    padding: '60px 50px',
+                    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.15)',
+                    textAlign: 'center',
+                    border: '3px solid #fdc51a',
+                    position: 'relative',
+                    overflow: 'hidden'
                   }}>
-                    <i className="bi bi-clipboard-check" style={{ 
-                      color: '#fdc51a', 
-                      marginRight: '8px',
-                      fontSize: '1rem'
-                    }}></i>
-                    Get In Touch Now
+                    {/* Decorative Background Elements */}
+                    <div style={{
+                      position: 'absolute',
+                      top: '-50px',
+                      right: '-50px',
+                      width: '150px',
+                      height: '150px',
+                      background: 'rgba(253, 197, 26, 0.1)',
+                      borderRadius: '50%',
+                      filter: 'blur(40px)'
+                    }}></div>
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '-50px',
+                      left: '-50px',
+                      width: '150px',
+                      height: '150px',
+                      background: 'rgba(30, 34, 71, 0.05)',
+                      borderRadius: '50%',
+                      filter: 'blur(40px)'
+                    }}></div>
+
+                    {/* Success Icon */}
+                    <div style={{
+                      width: '120px',
+                      height: '120px',
+                      background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      margin: '0 auto 30px',
+                      boxShadow: '0 10px 30px rgba(30, 34, 71, 0.3)',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <i className="bi bi-check-circle-fill" style={{
+                        fontSize: '4rem',
+                        color: '#fdc51a'
+                      }}></i>
+                    </div>
+
+                    {/* Thank You Message */}
+                    <h1 style={{
+                      color: '#1e2247',
+                      fontSize: '2.8rem',
+                      fontWeight: '800',
+                      marginBottom: '20px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>Thank You!</h1>
+
+                    <div style={{
+                      width: '80px',
+                      height: '4px',
+                      background: 'linear-gradient(90deg, #fdc51a 0%, #e5b116 100%)',
+                      margin: '0 auto 25px',
+                      borderRadius: '2px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}></div>
+
+                    <h3 style={{
+                      color: '#1e2247',
+                      fontSize: '1.5rem',
+                      fontWeight: '600',
+                      marginBottom: '20px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>Your Quotation Request Has Been Sent Successfully!</h3>
+
+                    <p style={{
+                      color: '#6c757d',
+                      fontSize: '1.1rem',
+                      lineHeight: '1.8',
+                      marginBottom: '35px',
+                      maxWidth: '500px',
+                      margin: '0 auto 35px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      We've received your request and our team will review it carefully. 
+                      You'll receive a detailed quotation via email within <strong style={{ color: '#1e2247' }}>24 hours</strong>.
+                    </p>
+
+                    {/* Info Box */}
+                    <div style={{
+                      background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
+                      border: '2px solid rgba(253, 197, 26, 0.3)',
+                      borderRadius: '12px',
+                      padding: '25px',
+                      marginBottom: '35px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '15px',
+                        marginBottom: '15px'
+                      }}>
+                        <i className="bi bi-info-circle-fill" style={{ fontSize: '1.5rem', color: '#1e2247' }}></i>
+                        <h5 style={{
+                          color: '#1e2247',
+                          fontSize: '1.1rem',
+                          fontWeight: '700',
+                          margin: 0
+                        }}>What Happens Next?</h5>
+                      </div>
+                      <div style={{ textAlign: 'left', maxWidth: '500px', margin: '0 auto' }}>
+                        <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>1.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Check your email inbox (including spam folder)
+                          </p>
+                        </div>
+                        <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>2.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Our security expert will review your requirements
+                          </p>
+                        </div>
+                        <div style={{ display: 'flex', gap: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>3.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Receive a customized quotation tailored to your needs
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <a 
+                      href="/"
+                      style={{
+                        display: 'inline-block',
+                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                        color: '#fdc51a',
+                        padding: '16px 50px',
+                        borderRadius: '50px',
+                        fontSize: '1.1rem',
+                        fontWeight: '700',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        textDecoration: 'none',
+                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)',
+                        transition: 'all 0.3s ease',
+                        position: 'relative',
+                        zIndex: 1
+                      }}
+                      onMouseOver={(e) => {
+                        e.target.style.background = 'linear-gradient(135deg, #fdc51a 0%, #e5b116 100%)';
+                        e.target.style.color = '#1e2247';
+                        e.target.style.transform = 'translateY(-3px)';
+                        e.target.style.boxShadow = '0 12px 35px rgba(253, 197, 26, 0.4)';
+                      }}
+                      onMouseOut={(e) => {
+                        e.target.style.background = 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)';
+                        e.target.style.color = '#fdc51a';
+                        e.target.style.transform = 'translateY(0)';
+                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                      }}
+                    >
+                      <i className="bi bi-house-door-fill" style={{ marginRight: '10px' }}></i>
+                      Back to Home
+                    </a>
+
+                    {/* Contact Info */}
+                    <div style={{
+                      marginTop: '40px',
+                      paddingTop: '30px',
+                      borderTop: '2px solid #e9ecef',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <p style={{
+                        color: '#6c757d',
+                        fontSize: '0.9rem',
+                        marginBottom: '10px'
+                      }}>Need immediate assistance?</p>
+                      <p style={{
+                        color: '#1e2247',
+                        fontSize: '1.3rem',
+                        fontWeight: '700',
+                        margin: 0
+                      }}>
+                        <i className="bi bi-telephone-fill" style={{ color: '#fdc51a', marginRight: '10px' }}></i>
+                        1300 123 456
+                      </p>
+                    </div>
                   </div>
-                  
                 </div>
               </div>
             </div>
-            
-            <div className="row justify-content-center">
-              <div className="col-lg-9">
-                <div className="quotation-form" data-aos="fade-up" data-aos-delay="200" style={{
-                  background: '#ffffff',
-                  borderRadius: '20px',
-                  padding: '40px',
-                  boxShadow: '0 15px 35px rgba(0,0,0,0.1)',
-                  border: '2px solid #eceff3',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}>
-                  {/* Form Header */}
+          </div>
+        ) : (
+          /* ===== Original Form Section ===== */
+          <div className="quotation-section" style={{
+            background: '#f8f9fa',
+            padding: '80px 0'
+          }}>
+            <div className="container">
+              {/* Section Header */}
+              <div className="row mb-5">
+                <div className="col-12 text-center">
                   <div style={{
-                    textAlign: 'center',
-                    marginBottom: '30px',
-                    paddingBottom: '20px',
-                    borderBottom: '1px solid #eceff3'
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    background: '#1e2247',
+                    color: '#fdc51a',
+                    padding: '10px 24px',
+                    borderRadius: '30px',
+                    fontSize: '0.875rem',
+                    fontWeight: '700',
+                    letterSpacing: '1px',
+                    textTransform: 'uppercase',
+                    marginBottom: '16px'
                   }}>
-                    
-                    <h4 style={{
-                      color: '#1e2247',
-                      fontWeight: '600',
-                      marginBottom: '8px'
-                    }}>Request A Quote</h4>
-                    <p style={{
-                      color: '#6c757d',
-                      margin: '0',
-                      fontSize: '0.95rem'
-                    }}>Fill in your details for a personalized security solution</p>
+                    <i className="bi bi-envelope-open" style={{ marginRight: '10px', fontSize: '1.1rem' }}></i>
+                    Get In Touch
                   </div>
+                  <h2 style={{
+                    color: '#1e2247',
+                    fontSize: '2.5rem',
+                    fontWeight: '700',
+                    marginBottom: '12px'
+                  }}>Request Your Quote</h2>
+                  <p style={{
+                    color: '#6c757d',
+                    fontSize: '1.1rem',
+                    maxWidth: '600px',
+                    margin: '0 auto'
+                  }}>Fill out the form and our team will get back to you within 24 hours</p>
+                </div>
+              </div>
+
+              {/* Two Column Layout */}
+              <div className="row g-5">
+              {/* LEFT COLUMN - FORM */}
+              <div className="col-lg-7">
+                <div style={{
+                  background: '#ffffff',
+                  borderRadius: '16px',
+                  padding: '45px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.08)',
+                  border: '1px solid #e9ecef'
+                }}>
 
                   <form className="contact-form" onSubmit={handleSubmit} noValidate>
   {/* honeypot (spam trap) */}
@@ -312,33 +558,45 @@ export default function Page() {
   />
 
                     <div className="row">
-                      {/* Your Name */}
-                      <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                      {/* Full Name */}
+                      <div className="col-12 mb-4">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-person" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Your Name <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                            Full Name <span style={{ color: '#dc3545' }}>*</span>
                           </label>
                           <input
                             name="name"
                             type="text"
-                            className="form-control classic-form-input"
-                            
+                            placeholder="Enter Your Name"
                             required
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           />
                         </div>
@@ -346,31 +604,43 @@ export default function Page() {
 
                       {/* Email */}
                       <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-envelope" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Your Email <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                            Email <span style={{ color: '#dc3545' }}>*</span>
                           </label>
                           <input
                             name="email"
                             type="email"
-                            className="form-control classic-form-input"
-                            
+                            placeholder="Enter Your Email"
                             required
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           />
                         </div>
@@ -378,31 +648,43 @@ export default function Page() {
 
                       {/* Phone */}
                       <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-telephone" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Phone Number <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                            Phone <span style={{ color: '#dc3545' }}>*</span>
                           </label>
                           <input
                             name="phone"
                             type="tel"
-                            className="form-control classic-form-input"
-                           
+                            placeholder="Enter Your Phone"
                             required
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           />
                         </div>
@@ -413,158 +695,181 @@ export default function Page() {
 
                       {/* Industry Dropdown */}
                       <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-building" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Industry <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                            Industry <span style={{ color: '#dc3545' }}>*</span>
                           </label>
                           <select
                             name="industry[]" 
-                            className="form-control classic-form-input"
                             required
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              cursor: 'pointer',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           >
                             <option value="">Select Industry</option>
-                            <option value="developer">Developer</option>
-                            <option value="real-estate">Real Estate</option>
-                            <option value="property-management">Property Management</option>
-                            <option value="individual">Individual</option>
-                            <option value="holding-company">Holding Company</option>
-                            <option value="maritime">Maritime</option>
-                            <option value="education">Education</option>
-                            <option value="healthcare">Healthcare</option>
-                            <option value="government">Government</option>
-                            <option value="cultural">Cultural</option>
-                            <option value="cre">CRE</option>
-                            <option value="finance">Finance</option>
-                            <option value="aviation">Aviation</option>
-                            <option value="fm-partnership">FM Partnership</option>
-                            <option value="public-transport">Public Transport</option>
-                            <option value="custodial-court">Custodial / Court</option>
-                            <option value="critical-infrastructure">Critical Infrastructure</option>
-                            <option value="telecommunication">Telecommunication</option>
-                            <option value="it">IT</option>
-                            <option value="banking">Banking</option>
-                            <option value="commercial-real-estate">Commercial Real Estate</option>
-                            <option value="defense">Defense</option>
-                            <option value="health-welfare">Health / Welfare</option>
-                            <option value="manufacturing-petrochemical">Manufacturing / Petrochemical</option>
-                            <option value="mining-resources">Mining / Resources</option>
-                            <option value="overheads">Overheads</option>
-                            <option value="patrols">Patrols</option>
+                            <option value="Corporate">Corporate </option>
+                            <option value="Commercial">Commercial</option>
                             <option value="retail">Retail</option>
+                            <option value="Hospitality-and-Major-Events">Hospitality & Major Events</option>
+                            <option value="Industrial">Industrial</option>
                             <option value="transport">Transport</option>
-                            <option value="utilities-telecommunication-media">Utilities / Telecommunication / Media</option>
+                            <option value="Logistics">Logistics</option>
+                            <option value="Construction-and-Infrastructure">Construction & Infrastructure</option>
+                            <option value="healthcare">Healthcare & Aged Care</option>
+                            <option value="Public-and-Community-Services">Public & Community Services</option>
                             <option value="other">Other</option>
                           </select>
                         </div>
                       </div>
 
                       {/* Service Dropdown */}
-                      <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                      <div className="col-12 mb-4">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-shield-check" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Type of Service Required <span style={{ color: '#dc3545', marginLeft: '4px' }}>*</span>
+                            Type of Service Required <span style={{ color: '#dc3545' }}>*</span>
                           </label>
                           <select
                             name="service[]"
-                            className="form-control classic-form-input"
                             required
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              cursor: 'pointer',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           >
                             <option value="">Select Service</option>
-                            <optgroup label="Security Guards Services">
-                              <option value="building-security-guards">Building Security Guards</option>
-                              <option value="construction-security-guards">Construction Security Guards</option>
-                              <option value="shopping-centre-security-guards">Shopping Centre Security Guards</option>
-                              <option value="hospital-security-guards">Hospital Security Guards</option>
-                              <option value="gatehouse-security-guards">Gatehouse Security Guards</option>
-                              <option value="educational-institution-security">Educational Institution Security</option>
-                              <option value="corporate-security-guards">Corporate Security Guards</option>
-                              <option value="retail-security-guards">Retail Security Guards</option>
-                              <option value="loss-prevention-security-guards">Loss Prevention Security Guards</option>
-                              <option value="concierge-security-guards">Concierge Security Guards</option>
-                              <option value="lock-up-and-open-up-security">Lock-Up and Open-Up Security</option>
-                              <option value="industrial-warehouse-security">Industrial Warehouse Security</option>
-                              <option value="static-security-guards">Static Security Guards</option>
-                              <option value="uniform-and-covert-security">Uniform and Covert Security</option>
-                              <option value="adhoc-security-services">Adhoc Security Services</option>
-                              <option value="asset-protection-security">Asset Protection Security</option>
-                            </optgroup>
-                            <optgroup label="Crowd Control Services">
-                              <option value="party-security-guards">Party Security Guards</option>
-                              <option value="event-security-guards">Event Security Guards</option>
-                              <option value="corporate-event-security">Corporate Event Security</option>
-                            </optgroup>
-                            <optgroup label="Mobile Patrols Services">
-                              <option value="lock-up-security">Lock-Up Security</option>
-                              <option value="security-escort">Security Escort</option>
-                              <option value="alarm-response">Alarm Response</option>
-                              <option value="mobile-patrols">Mobile Patrols</option>
-                              <option value="construction-patrol">Construction Patrol</option>
-                            </optgroup>
-                            <optgroup label="K9 Security Services">
-                              <option value="k9-security-with-handler">K9 Security With Handler</option>
-                            </optgroup>
+                            
+                            {/* Security Guards Services - Heading as selectable option */}
+                            <option value="security-guards-services" className="service-heading" style={{fontWeight: '700', color: '#1e2247'}}>━━ Security Guards Services ━━</option>
+                              <option value="building-security-guards">&nbsp;&nbsp;&nbsp;Building Security Guards</option>
+                              <option value="construction-security-guards">&nbsp;&nbsp;&nbsp;Construction Security Guards</option>
+                              <option value="shopping-centre-security-guards">&nbsp;&nbsp;&nbsp;Shopping Centre Security Guards</option>
+                              <option value="hospital-security-guards">&nbsp;&nbsp;&nbsp;Hospital Security Guards</option>
+                              <option value="gatehouse-security-guards">&nbsp;&nbsp;&nbsp;Gatehouse Security Guards</option>
+                              <option value="educational-institution-security">&nbsp;&nbsp;&nbsp;Educational Institution Security</option>
+                              <option value="corporate-security-guards">&nbsp;&nbsp;&nbsp;Corporate Security Guards</option>
+                              <option value="retail-security-guards">&nbsp;&nbsp;&nbsp;Retail Security Guards</option>
+                              <option value="loss-prevention-security-guards">&nbsp;&nbsp;&nbsp;Loss Prevention Security Guards</option>
+                              <option value="concierge-security-guards">&nbsp;&nbsp;&nbsp;Concierge Security Guards</option>
+                              <option value="lock-up-and-open-up-security">&nbsp;&nbsp;&nbsp;Lock-Up and Open-Up Security</option>
+                              <option value="industrial-warehouse-security">&nbsp;&nbsp;&nbsp;Industrial Warehouse Security</option>
+                              <option value="static-security-guards">&nbsp;&nbsp;&nbsp;Static Security Guards</option>
+                              <option value="uniform-and-covert-security">&nbsp;&nbsp;&nbsp;Uniform and Covert Security</option>
+                              <option value="adhoc-security-services">&nbsp;&nbsp;&nbsp;Adhoc Security Services</option>
+                              <option value="asset-protection-security">&nbsp;&nbsp;&nbsp;Asset Protection Security</option>
+                            
+                            {/* Crowd Control Services - Heading as selectable option */}
+                            <option value="crowd-control-services" className="service-heading" style={{fontWeight: '700', color: '#1e2247'}}>━━ Crowd Control Services ━━</option>
+                              <option value="party-security-guards">&nbsp;&nbsp;&nbsp;Party Security Guards</option>
+                              <option value="event-security-guards">&nbsp;&nbsp;&nbsp;Event Security Guards</option>
+                              <option value="corporate-event-security">&nbsp;&nbsp;&nbsp;Corporate Event Security</option>
+                            
+                            {/* Mobile Patrols Services - Heading as selectable option */}
+                            <option value="mobile-patrols-services" className="service-heading" style={{fontWeight: '700', color: '#1e2247'}}>━━ Mobile Patrols Services ━━</option>
+                              <option value="lock-up-security">&nbsp;&nbsp;&nbsp;Lock-Up Security</option>
+                              <option value="security-escort">&nbsp;&nbsp;&nbsp;Security Escort</option>
+                              <option value="alarm-response">&nbsp;&nbsp;&nbsp;Alarm Response</option>
+                              <option value="mobile-patrols">&nbsp;&nbsp;&nbsp;Mobile Patrols</option>
+                              <option value="construction-patrol">&nbsp;&nbsp;&nbsp;Construction Patrol</option>
+                            
+                            {/* K9 Security Services - Heading as selectable option */}
+                            <option value="k9-security-services" className="service-heading" style={{fontWeight: '700', color: '#1e2247'}}>━━ K9 Security Services ━━</option>
+                              <option value="k9-security-with-handler">&nbsp;&nbsp;&nbsp;K9 Security With Handler</option>
+                            
                             <option value="other-services">Other Services</option>
                           </select>
                         </div>
                       </div>
-                      {/* Location */}
-                      <div className="col-md-6 mb-4">
-                        <div className="form-group">
+                      {/* Service Site Address */}
+                      <div className="col-12 mb-4">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
                             Service Site Address <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
                           </label>
                           <input
                             name="location"
                             type="text"
-                            className="form-control classic-form-input"
-                            
+                            placeholder="Enter Service Location"
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease'
+                              transition: 'all 0.3s ease',
+                              outline: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           />
                         </div>
@@ -572,164 +877,375 @@ export default function Page() {
 
                       {/* Message */}
                       <div className="col-12 mb-4">
-                        <div className="form-group">
+                        <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
-                            display: 'flex',
-                            alignItems: 'center',
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
                             color: '#1e2247',
-                            fontWeight: '500',
-                            marginBottom: '8px',
-                            fontSize: '0.95rem'
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
                           }}>
-                            <i className="bi bi-chat-dots" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                            Your Message <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
+                            Message <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
                           </label>
                           <textarea
                             name="message"
-                            className="form-control classic-form-input"
                             rows="5"
-                            
+                            placeholder="Please share your message here.."
                             style={{
-                              border: '1px solid #000000 !important',
-                              borderRadius: '8px',
-                              padding: '12px 15px',
+                              width: '100%',
+                              border: '2px solid rgba(30, 34, 71, 0.25)',
+                              borderRadius: '12px',
+                              padding: '12px 16px',
                               fontSize: '0.95rem',
                               backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease',
                               resize: 'vertical',
-                              minHeight: '120px'
+                              minHeight: '100px',
+                              outline: 'none',
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                            }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
                             }}
                           ></textarea>
                         </div>
                       </div>
 
-                     
+                      {/* reCAPTCHA v2 Checkbox */}
+                      <div className="col-12 mb-4">
+                        <div 
+                          className="g-recaptcha" 
+                          data-sitekey="6Lffx_0rAAAAAD3Krasm_8BDMYyLiiM4Ja0T9Pu7"
+                          data-callback="onRecaptchaSuccess"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'center'
+                          }}
+                        ></div>
+                      </div>
+
                       {/* Submit Button */}
-                      <div className="col-12 text-center">
+                      <div className="col-12">
                         <button
                           type="submit"
                           disabled={loading}
-                          className="btn"
                           style={{
-                            background: loading ? '#6c757d' : 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                            color: '#ffffff',
+                            width: '100%',
+                            background: loading ? '#6c757d' : '#1e2247',
+                            color: '#fdc51a',
                             border: 'none',
                             borderRadius: '10px',
-                            padding: '15px 40px',
-                            fontSize: '0.95rem',
-                            fontWeight: '600',
+                            padding: '16px',
+                            fontSize: '1rem',
+                            fontWeight: '700',
                             textTransform: 'uppercase',
-                            letterSpacing: '0.5px',
-                            boxShadow: loading ? 'none' : '0 8px 25px rgba(30, 34, 71, 0.3)',
+                            letterSpacing: '1px',
                             cursor: loading ? 'not-allowed' : 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '10px',
-                            margin: '0 auto',
-                            minWidth: '200px',
-                            transition: 'all 0.3s ease'
+                            transition: 'all 0.3s ease',
+                            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.2)'
                           }}
                           onMouseOver={(e) => {
                             if (!loading) {
+                              e.target.style.background = '#fdc51a';
+                              e.target.style.color = '#1e2247';
                               e.target.style.transform = 'translateY(-2px)';
-                              e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                              e.target.style.boxShadow = '0 6px 20px rgba(253, 197, 26, 0.4)';
                             }
                           }}
                           onMouseOut={(e) => {
                             if (!loading) {
+                              e.target.style.background = '#1e2247';
+                              e.target.style.color = '#fdc51a';
                               e.target.style.transform = 'translateY(0)';
-                              e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(30, 34, 71, 0.2)';
                             }
                           }}
                         >
-                          {loading ? (
-                            <>
-                              <div style={{
-                                width: '16px',
-                                height: '16px',
-                                border: '2px solid transparent',
-                                borderTop: '2px solid #ffffff',
-                                borderRadius: '50%',
-                                animation: 'spin 1s linear infinite'
-                              }}></div>
-                              Sending Request...
-                            </>
-                          ) : (
-                            <>
-                              <i className="bi bi-calculator"></i>
-                              Get Quotation
-                            </>
-                          )}
+                          {loading ? 'Sending Request...' : 'CONTACT US'}
                         </button>
                       </div>
                     </div>
 </form>
 
+                </div>
+              </div>
+
+              {/* RIGHT COLUMN - REDESIGNED INFO & IMAGES */}
+              <div className="col-lg-5">
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '20px',
+                  height: '100%'
+                }}>
+                  
+                  {/* Top Image Card */}
+                  <div style={{
+                    position: 'relative',
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    height: '280px',
+                    boxShadow: '0 8px 25px rgba(0, 0, 0, 0.15)'
+                  }}>
+                    <img 
+                      src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.webp"
+                      alt="Professional Security Guards"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover'
+                      }}
+                    />
+                    {/* Overlay */}
+                    <div style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      background: 'linear-gradient(to top, rgba(30, 34, 71, 0.95), transparent)',
+                      padding: '30px 25px 20px',
+                      color: '#fff'
+                    }}>
+                      <h4 style={{
+                        color: '#fdc51a',
+                        fontSize: '1.4rem',
+                        fontWeight: '700',
+                        marginBottom: '8px'
+                      }}>Victoria's Trusted Security</h4>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.9)',
+                        fontSize: '0.95rem',
+                        margin: 0,
+                        lineHeight: '1.5'
+                      }}>
+                        Over 15+ years protecting businesses across Melbourne
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Info Cards Grid */}
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '15px'
+                  }}>
+                    {/* Card 1 */}
+                    <div style={{
+                      background: '#1e2247',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      textAlign: 'center',
+                      border: '2px solid rgba(253, 197, 26, 0.2)',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <div style={{
+                        width: '50px',
+                        height: '50px',
+                        background: 'rgba(253, 197, 26, 0.15)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        margin: '0 auto 12px'
+                      }}>
+                        <i className="bi bi-shield-check" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                      </div>
+                      <h5 style={{
+                        color: '#fdc51a',
+                        fontSize: '0.95rem',
+                        fontWeight: '700',
+                        marginBottom: '5px'
+                      }}>Licensed</h5>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        fontSize: '0.85rem',
+                        margin: 0
+                      }}>Fully Certified</p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div style={{
+                      background: '#1e2247',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      textAlign: 'center',
+                      border: '2px solid rgba(253, 197, 26, 0.2)',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <div style={{
+                        width: '50px',
+                        height: '50px',
+                        background: 'rgba(253, 197, 26, 0.15)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        margin: '0 auto 12px'
+                      }}>
+                        <i className="bi bi-clock-history" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                      </div>
+                      <h5 style={{
+                        color: '#fdc51a',
+                        fontSize: '0.95rem',
+                        fontWeight: '700',
+                        marginBottom: '5px'
+                      }}>24/7 Available</h5>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        fontSize: '0.85rem',
+                        margin: 0
+                      }}>Round the Clock</p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div style={{
+                      background: '#1e2247',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      textAlign: 'center',
+                      border: '2px solid rgba(253, 197, 26, 0.2)',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <div style={{
+                        width: '50px',
+                        height: '50px',
+                        background: 'rgba(253, 197, 26, 0.15)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        margin: '0 auto 12px'
+                      }}>
+                        <i className="bi bi-lightning-charge" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                      </div>
+                      <h5 style={{
+                        color: '#fdc51a',
+                        fontSize: '0.95rem',
+                        fontWeight: '700',
+                        marginBottom: '5px'
+                      }}>Fast Response</h5>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        fontSize: '0.85rem',
+                        margin: 0
+                      }}>Quick Deployment</p>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div style={{
+                      background: '#1e2247',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      textAlign: 'center',
+                      border: '2px solid rgba(253, 197, 26, 0.2)',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <div style={{
+                        width: '50px',
+                        height: '50px',
+                        background: 'rgba(253, 197, 26, 0.15)',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        margin: '0 auto 12px'
+                      }}>
+                        <i className="bi bi-geo-alt" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                      </div>
+                      <h5 style={{
+                        color: '#fdc51a',
+                        fontSize: '0.95rem',
+                        fontWeight: '700',
+                        marginBottom: '5px'
+                      }}>All Victoria</h5>
+                      <p style={{
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        fontSize: '0.85rem',
+                        margin: 0
+                      }}>Wide Coverage</p>
+                    </div>
+                  </div>
+
+                  {/* Contact Info Box */}
+                  <div style={{
+                    background: 'linear-gradient(135deg, #fdc51a 0%, #e5b116 100%)',
+                    borderRadius: '12px',
+                    padding: '25px',
+                    textAlign: 'center',
+                    boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
+                  }}>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '10px',
+                      marginBottom: '10px'
+                    }}>
+                      <i className="bi bi-telephone-fill" style={{ fontSize: '1.3rem', color: '#1e2247' }}></i>
+                      <h5 style={{
+                        color: '#1e2247',
+                        fontSize: '1.1rem',
+                        fontWeight: '700',
+                        margin: 0
+                      }}>Need Immediate Assistance?</h5>
+                    </div>
+                    <p style={{
+                      color: '#1e2247',
+                      fontSize: '1.8rem',
+                      fontWeight: '800',
+                      margin: '8px 0',
+                      letterSpacing: '1px'
+                    }}>1300 123 456</p>
+                    <p style={{
+                      color: 'rgba(30, 34, 71, 0.8)',
+                      fontSize: '0.9rem',
+                      margin: 0
+                    }}>Available 24/7 for Emergency Response</p>
+                  </div>
 
                 </div>
               </div>
             </div>
           </div>
         </div>
+        )}
+        
 <style jsx>{`
-                            .classic-form-input,
-                            .glassmorphism-input {
-                              border: 2px solid #eceff3 !important;
-                              border-radius: 8px !important;
-                              padding: 12px 15px !important;
-                              font-size: 0.95rem !important;
-                              background-color: #fafafa !important;
-                              transition: all 0.3s ease !important;
-                              color: #1e2247 !important;
-                            }
-                            
-                            .classic-form-input:focus,
-                            .glassmorphism-input:focus {
-                              border-color: #fdc51a !important;
-                              background-color: #ffffff !important;
-                              box-shadow: 0 0 0 3px rgba(253, 197, 26, 0.1) !important;
-                              outline: none !important;
-                              color: #1e2247 !important;
-                            }
+          /* Custom styling for service headings in dropdown */
+          select option.service-heading {
+            background: #1e2247 !important;
+            color: #fdc51a !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+          }
 
-                            .classic-form-input::placeholder,
-                            .glassmorphism-input::placeholder {
-                              color: #6c757d !important;
-                            }
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
 
-                            .form-label {
-                              color: #1e2247 !important;
-                              font-weight: 500 !important;
-                              margin-bottom: 8px !important;
-                            }
+          /* Responsive adjustments */
+          @media (max-width: 991px) {
+            .col-lg-5 {
+              margin-top: 30px;
+            }
+          }
 
-                            @keyframes spin {
-                              0% { transform: rotate(0deg); }
-                              100% { transform: rotate(360deg); }
-                            }
-
-                            select.classic-form-input,
-                            select.glassmorphism-input {
-                              appearance: none !important;
-                              background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") !important;
-                              background-repeat: no-repeat !important;
-                              background-position: right 1rem center !important;
-                              background-size: 1em !important;
-                            }
-
-                            select.classic-form-input option,
-                            select.glassmorphism-input option {
-                              background: #ffffff !important;
-                              color: #1e2247 !important;
-                              padding: 10px !important;
-                            }
-
-                            textarea.glassmorphism-input {
-                              resize: vertical !important;
-                              min-height: 120px !important;
-                            }
-                        `}</style>
+          /* reCAPTCHA v3 badge positioning */
+          .grecaptcha-badge {
+            visibility: visible !important;
+            opacity: 1 !important;
+          }
+        `}</style>
         <Accreditation />
         <Subscribe />
       </Layout>
