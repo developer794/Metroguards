@@ -24,6 +24,7 @@ import HeroSection from "@/components/homepages/home1/hero-section";
 import Blog4 from "@/components/blog/Blog4";
 import Accreditation from "@/components/accreditation"
 import Industry from "@/components/homepages/home1/industry";
+import VideoSection from "@/components/VideoSection";
 import NewHero from "@/components/new-hero";
 
 
@@ -50,6 +51,7 @@ export default function Page() {
                 <MarqueeDemo />
                 
                <Industry />
+               <VideoSection />
                 
                 <Accreditation />
                 <Awareness />

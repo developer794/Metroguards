@@ -12,7 +12,7 @@ export default function Accreditation() {
     { name: "5", logo: "/assets/img/corporate-responsibility/img5.jpg", website: "https://geelongport.com.au" },
     { name: "6", logo: "/assets/img/corporate-responsibility/img6.jpg", website: "/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" },
     { name: "9", logo: "/assets/img/corporate-responsibility/img11.webp", website: "/wp-content/uploads/2025/06/13591.pdf" },
-    { name: "10", logo: "/assets/img/corporate-responsibility/img10.jpg", website: "https://mpdma.com" },
+    { name: "10", logo: "/assets/img/corporate-responsibility/img10.png", website: "https://mpdma.com" },
   ]
 
   return (
@@ -26,7 +26,7 @@ export default function Accreditation() {
         </div>
 
         {/* Single row for all logos */}
-        <div className="flex items-center justify-center  flex-nowrap overflow-x-auto" style={{ gap: "0.2rem" }}>
+        <div className="flex items-center justify-center  flex-nowrap overflow-x-clip" style={{ gap: "0.2rem" }}>
           {clients.map((client, index) => (
             <div
               key={index}
@@ -36,7 +36,12 @@ export default function Accreditation() {
                 href={client.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block hover:scale-105 transition-transform duration-200"
+                className="block transition-transform duration-200"
+                style={{ 
+                  transform: 'scale(1)',
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
                 <Image
                   src={client.logo || "/placeholder.svg"}

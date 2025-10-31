@@ -375,8 +375,8 @@ export default function ContactPage() {
                     <div className="feature-icon">
                       <Users size={32} />
                     </div>
-                    <h3>Experienced Team</h3>
-                    <p>Our security professionals have extensive training and experience in various security scenarios.</p>
+                    <h3>Award-Winning Service</h3>
+                    <p>Recognised for excellence, Metro Guards delivers award-winning service with ISO-certified security professionals, extensively trained to handle diverse and complex security situations.</p>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-4">
@@ -385,7 +385,7 @@ export default function ContactPage() {
                       <Star size={32} />
                     </div>
                     <h3>Proven Track Record</h3>
-                    <p>Over 500 satisfied clients across Melbourne with a 99% customer satisfaction rate.</p>
+                    <p>With over 3,000 successful security jobs completed for clients across Melbourne and Victoria, we proudly maintain a 99% customer satisfaction rate.</p>
                   </div>
                 </div>
               </div>

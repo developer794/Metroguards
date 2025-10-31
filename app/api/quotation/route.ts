@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-// Ensure Node runtime on Vercel (not Edge)
-export const runtime = "nodejs";
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -20,87 +19,39 @@ export async function POST(req: Request) {
     const location   = String(form.get("location") || "");
     const message    = String(form.get("message") || "");
 
-    // arrays from checkboxes/selects
+    // arrays from checkboxes
     const services   = form.getAll("service[]").map(v => String(v));
     const industries = form.getAll("industry[]").map(v => String(v));
 
-    if (!firstName || !email) {
-      return NextResponse.json(
-        { success: false, error: "Missing required fields" },
-        { status: 400 }
-      );
+    if (!firstName ||  !email) {
+      return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
 
-    // Build HTML lists exactly like your Resend version
-    const servicesList   = services.length
-      ? `<ul>${services.map(s => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`
-      : "—";
-    const industriesList = industries.length
-      ? `<ul>${industries.map(i => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`
-      : "—";
+    const servicesList   = services.length ? `<ul>${services.map(s => `<li>${s}</li>`).join("")}</ul>` : "—";
+    const industriesList = industries.length ? `<ul>${industries.map(i => `<li>${i}</li>`).join("")}</ul>` : "—";
 
-    const subject = `New Contact Form Submission from ${firstName}`;
-
-    const textBody = [
-      `New Quotation Request`,
-      `Name: ${firstName}`,
-      `Email: ${email}`,
-      `Phone: ${phone || "—"}`,
-      `Service Site Address: ${location || "—"}`,
-      `Industry: ${industries.join(", ") || "—"}`,
-      `Service Type: ${services.join(", ") || "—"}`,
-      `Message:`,
-      message || "—",
-    ].join("\n");
-
-    const htmlBody = `
-      <h2>New Quotation Request</h2>
-      <p><strong>Name:</strong> ${escapeHtml(firstName)}</p>
-      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-      <p><strong>Phone:</strong> ${escapeHtml(phone || "—")}</p>
-      <p><strong>Service Site Address:</strong> ${escapeHtml(location || "—")}</p>
-      <p><strong>Industry:</strong> ${industriesList}</p>
-      <p><strong>Service Type:</strong> ${servicesList}</p>
-      <p><strong>Message:</strong><br/>${
-        message ? escapeHtml(message).replace(/\n/g, "<br/>") : "—"
-      }</p>
-    `;
-
-    // --- Nodemailer transporter (Google Workspace SMTP) ---
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,               // smtp.gmail.com
-      port: Number(process.env.SMTP_PORT || 465),// 465
-      secure: String(process.env.SMTP_SECURE || "true").toLowerCase() === "true",
-      auth: {
-        user: process.env.SMTP_USER,             // admin@metroguards.com.au
-        pass: process.env.SMTP_PASS,             // 16-char App Password
-      },
-    });
-
-    await transporter.sendMail({
-      from: `Metro Guards <${process.env.MAIL_FROM || process.env.SMTP_USER}>`,
-      to: process.env.MAIL_TO,  // your admin inbox
-      replyTo: email,                                             // reply goes to requester
-      subject,
-      text: textBody,
-      html: htmlBody,
+    await resend.emails.send({
+      from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
+      to: process.env.CONTACT_TO_EMAIL!,            // e.g. ummehabiba989@gmail.com
+      replyTo: email,                                // <- correct key
+      subject: `New Contact Form Submission from ${firstName} `,
+      html: `
+        <h2>New Quotation Request</h2>
+        <p><strong>Name:</strong> ${firstName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "—"}</p>
+        <p><strong>Service Site Address:</strong> ${location || "—"}</p>
+        <p><strong>Industry:</strong> ${industriesList}</p>
+        <p><strong>Service Type:</strong> ${servicesList}</p>
+        <p><strong>Message:</strong><br/>${message ? message.replace(/\n/g, "<br/>") : "—"}</p>
+      `,
     });
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    if (process.env.NODE_ENV === "development") {
-      console.error("Quotation form error:", error);
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Quotation form error:', error);
     }
     return NextResponse.json({ success: false, error: "Email failed" }, { status: 500 });
   }
-}
-
-// Small HTML escaper to avoid breaking markup
-function escapeHtml(s: string) {
-  return s.replace(/[<>&"]/g, (c) => (
-    c === "<" ? "&lt;" :
-    c === ">" ? "&gt;" :
-    c === "&" ? "&amp;" :
-    "&quot;"
-  ));
 }
