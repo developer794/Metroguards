@@ -542,12 +542,29 @@ export default function Page() {
                 <div style={{
                   background: '#ffffff',
                   borderRadius: '16px',
-                  padding: '45px',
+                  padding: '0',
                   boxShadow: '0 10px 40px rgba(0,0,0,0.08)',
-                  border: '1px solid #e9ecef'
+                  border: '1px solid #e9ecef',
+                  overflow: 'hidden'
                 }}>
 
-                  <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                  {/* Form Header */}
+                  <div style={{
+                    background: '#1e2247',
+                    padding: '20px 30px',
+                    marginBottom: '0'
+                  }}>
+                    <h3 style={{
+                      color: '#fdc51a',
+                      fontSize: '1.5rem',
+                      fontWeight: '700',
+                      margin: 0,
+                      textAlign: 'center',
+                      letterSpacing: '0.5px'
+                    }}>Quotation Form</h3>
+                  </div>
+
+                  <form className="contact-form" onSubmit={handleSubmit} noValidate style={{padding:'45px'}}>
   {/* honeypot (spam trap) */}
   <input
     type="text"
@@ -588,7 +605,8 @@ export default function Page() {
                               backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease',
                               outline: 'none',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                              height: '48px'
                             }}
                             onFocus={(e) => {
                               e.target.style.borderColor = '#1e2247';
@@ -632,7 +650,8 @@ export default function Page() {
                               backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease',
                               outline: 'none',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                              height: '48px'
                             }}
                             onFocus={(e) => {
                               e.target.style.borderColor = '#1e2247';
@@ -676,7 +695,8 @@ export default function Page() {
                               backgroundColor: '#ffffff',
                               transition: 'all 0.3s ease',
                               outline: 'none',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                              height: '48px'
                             }}
                             onFocus={(e) => {
                               e.target.style.borderColor = '#1e2247';
@@ -722,7 +742,8 @@ export default function Page() {
                               transition: 'all 0.3s ease',
                               outline: 'none',
                               cursor: 'pointer',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                              height: '48px'
                             }}
                             onFocus={(e) => {
                               e.target.style.borderColor = '#1e2247';
@@ -746,6 +767,50 @@ export default function Page() {
                             <option value="Public-and-Community-Services">Public & Community Services</option>
                             <option value="other">Other</option>
                           </select>
+                        </div>
+                      </div>
+                            
+                        {/* Service Site Address */}
+                        <div className="col-md-6 mb-4">
+                        <div className="form-group" style={{ position: 'relative' }}>
+                          <label style={{
+                            position: 'absolute',
+                            top: '-12px',
+                            left: '18px',
+                            background: '#ffffff',
+                            padding: '0 8px',
+                            color: '#1e2247',
+                            fontWeight: '600',
+                            fontSize: '0.9rem',
+                            zIndex: 1
+                          }}>
+                            Service Site Address <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
+                          </label>
+                           <input
+                             name="location"
+                             type="text"
+                             placeholder="Enter Service Location"
+                             style={{
+                               width: '100%',
+                               border: '2px solid rgba(30, 34, 71, 0.25)',
+                               borderRadius: '12px',
+                               padding: '12px 16px',
+                               fontSize: '0.95rem',
+                               backgroundColor: '#ffffff',
+                               transition: 'all 0.3s ease',
+                               outline: 'none',
+                               boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                               height: '48px'
+                             }}
+                            onFocus={(e) => {
+                              e.target.style.borderColor = '#1e2247';
+                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
+                            }}
+                            onBlur={(e) => {
+                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
+                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
+                            }}
+                          />
                         </div>
                       </div>
 
@@ -778,7 +843,8 @@ export default function Page() {
                               transition: 'all 0.3s ease',
                               outline: 'none',
                               cursor: 'pointer',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
+                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
+                              height: '48px'
                             }}
                             onFocus={(e) => {
                               e.target.style.borderColor = '#1e2247';
@@ -832,48 +898,7 @@ export default function Page() {
                           </select>
                         </div>
                       </div>
-                      {/* Service Site Address */}
-                      <div className="col-12 mb-4">
-                        <div className="form-group" style={{ position: 'relative' }}>
-                          <label style={{
-                            position: 'absolute',
-                            top: '-12px',
-                            left: '18px',
-                            background: '#ffffff',
-                            padding: '0 8px',
-                            color: '#1e2247',
-                            fontWeight: '600',
-                            fontSize: '0.9rem',
-                            zIndex: 1
-                          }}>
-                            Service Site Address <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
-                          </label>
-                          <input
-                            name="location"
-                            type="text"
-                            placeholder="Enter Service Location"
-                            style={{
-                              width: '100%',
-                              border: '2px solid rgba(30, 34, 71, 0.25)',
-                              borderRadius: '12px',
-                              padding: '12px 16px',
-                              fontSize: '0.95rem',
-                              backgroundColor: '#ffffff',
-                              transition: 'all 0.3s ease',
-                              outline: 'none',
-                              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)'
-                            }}
-                            onFocus={(e) => {
-                              e.target.style.borderColor = '#1e2247';
-                              e.target.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.25)';
-                            }}
-                            onBlur={(e) => {
-                              e.target.style.borderColor = 'rgba(30, 34, 71, 0.25)';
-                              e.target.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.18)';
-                            }}
-                          />
-                        </div>
-                      </div>
+                      
 
                       {/* Message */}
                       <div className="col-12 mb-4">
@@ -970,7 +995,7 @@ export default function Page() {
                             }
                           }}
                         >
-                          {loading ? 'Sending Request...' : 'CONTACT US'}
+                          {loading ? 'Sending Request...' : 'SUBMIT'}
                         </button>
                       </div>
                     </div>
