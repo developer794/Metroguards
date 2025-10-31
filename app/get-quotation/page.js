@@ -1018,7 +1018,7 @@ export default function Page() {
                     position: 'relative',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    height: '280px',
+                    height: '360px',
                     boxShadow: '0 8px 25px rgba(0, 0, 0, 0.15)'
                   }}>
                     <img 

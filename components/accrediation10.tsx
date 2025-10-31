@@ -16,7 +16,7 @@ export default function Accreditation() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-16 pb-5" >
+    <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-16 mb-5">
       <div className="max-w-7xl mx-auto">
         {/* Heading (always left) */}
         <div className="mb-8">
@@ -26,11 +26,11 @@ export default function Accreditation() {
         </div>
 
         {/* Single row for all logos */}
-        <div className="flex items-center justify-center flex-wrap md:flex-nowrap overflow-x-clip" style={{ gap: "0.2rem" }}>
+        <div className="flex items-center justify-center  flex-nowrap overflow-x-clip" style={{ gap: "0.2rem" }}>
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center bg-white rounded-md w-[19%] md:w-auto" style={{padding: "0.2rem"}}
+              className="flex items-center justify-center  bg-white rounded-md" style={{padding: "0.2rem"}}
             >
               <a
                 href={client.website}
@@ -48,7 +48,7 @@ export default function Accreditation() {
                   alt={`${client.name} logo`}
                   width={200}
                   height={150}
-                  className="max-h-14 w-auto object-contain"
+                  className="max-h-16 w-auto object-contain"
                 />
               </a>
             </div>
@@ -66,6 +66,12 @@ export default function Accreditation() {
           color: #000;
           letter-spacing: -0.02em;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+          .acc-heading {
+            font-size: 2rem;
+          }
         }
       `}</style>
     </section>
