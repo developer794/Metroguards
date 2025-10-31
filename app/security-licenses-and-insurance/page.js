@@ -1280,10 +1280,12 @@ export default function SecurityLicensePage() {
                                             fontSize: '1rem',
                                             lineHeight: '1.6'
                                         }}>
-                                            ENVIRONMENTAL MANAGEMENT SYSTEMS
+                                            ENVIRONMENTAL MANAGEMENT SYSTEMS
 
                                         </p>
                                         
+                                        <a href="/wp-content/uploads/2025/06/3240701-E-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#1e2247',
                                             color: '#fdc51a',
@@ -1291,10 +1293,21 @@ export default function SecurityLicensePage() {
                                             borderRadius: '20px',
                                             fontSize: '0.9rem',
                                             fontWeight: '600',
-                                            display: 'inline-block'
+                                                display: 'inline-block',
+                                                cursor: 'pointer',
+                                                transition: 'all 0.3s ease'
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#fdc51a';
+                                                e.currentTarget.style.color = '#1e2247';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#1e2247';
+                                                e.currentTarget.style.color = '#fdc51a';
                                         }}>
                                             DIGITAL
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -1361,6 +1374,8 @@ export default function SecurityLicensePage() {
                                             OCCUPATIONAL HEALTH & SAFETY MANAGEMENT SYSTEMS
                                         </p>
                                         
+                                        <a href="/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#fdc51a',
                                             color: '#1e2247',
@@ -1368,10 +1383,21 @@ export default function SecurityLicensePage() {
                                             borderRadius: '20px',
                                             fontSize: '0.9rem',
                                             fontWeight: '600',
-                                            display: 'inline-block'
+                                                display: 'inline-block',
+                                                cursor: 'pointer',
+                                                transition: 'all 0.3s ease'
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#1e2247';
+                                                e.currentTarget.style.color = '#fdc51a';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#fdc51a';
+                                                e.currentTarget.style.color = '#1e2247';
                                         }}>
                                             DIGITAL
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -1437,6 +1463,8 @@ export default function SecurityLicensePage() {
                                             QUALITY MANAGEMENT SYSTEMS
                                         </p>
                                         
+                                        <a href="/wp-content/uploads/2025/06/3240701-Q-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#1e2247',
                                             color: '#fdc51a',
@@ -1444,10 +1472,21 @@ export default function SecurityLicensePage() {
                                             borderRadius: '20px',
                                             fontSize: '0.9rem',
                                             fontWeight: '600',
-                                            display: 'inline-block'
+                                                display: 'inline-block',
+                                                cursor: 'pointer',
+                                                transition: 'all 0.3s ease'
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#fdc51a';
+                                                e.currentTarget.style.color = '#1e2247';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.backgroundColor = '#1e2247';
+                                                e.currentTarget.style.color = '#fdc51a';
                                         }}>
                                             DIGITAL
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
