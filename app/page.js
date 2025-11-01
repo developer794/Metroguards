@@ -25,6 +25,7 @@ import Blog4 from "@/components/blog/Blog4";
 import Accreditation from "@/components/accreditation"
 import Industry from "@/components/homepages/home1/industry";
 import VideoSection from "@/components/VideoSection";
+import Testimonials from "@/components/Testimonials";
 import NewHero from "@/components/new-hero";
 
 
@@ -52,6 +53,7 @@ export default function Page() {
                 
                <Industry />
                <VideoSection />
+               
                 
                 <Accreditation />
                 <Awareness />
@@ -60,7 +62,7 @@ export default function Page() {
                 
                 <Blog4 />
                  
-                <Subscribe />
+                <Testimonials />
             </Layout>
             
             <style jsx>{`

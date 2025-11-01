@@ -9,10 +9,10 @@ export default function Accreditation() {
     { name: "8", logo: "/assets/img/corporate-responsibility/img8.jpg", website: "/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf" },
     { name: "7", logo: "/assets/img/corporate-responsibility/img7.jpg", website: "/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf" },
     { name: "1", logo: "/assets/img/corporate-responsibility/img1.jpg", website: "/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf" },
-    { name: "5", logo: "/assets/img/corporate-responsibility/img5.jpg", website: "https://geelongport.com.au" },
+    { name: "5", logo: "/assets/img/corporate-responsibility/img5.png", website: "https://geelongport.com.au" },
     { name: "6", logo: "/assets/img/corporate-responsibility/img6.jpg", website: "/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" },
     { name: "9", logo: "/assets/img/corporate-responsibility/img11.webp", website: "/wp-content/uploads/2025/06/13591.pdf" },
-    { name: "10", logo: "/assets/img/corporate-responsibility/img10.png", website: "https://mpdma.com" },
+    { name: "10", logo: "/assets/img/corporate-responsibility/img10.png", website: "/wp-content/uploads/2025/05/Labour-Hire-Organisation-Licence-Certificate-VICLHL01373.pdf" },
   ]
 
   return (
@@ -26,7 +26,7 @@ export default function Accreditation() {
         </div>
 
         {/* Single row for all logos */}
-        <div className="flex items-center justify-center  flex-nowrap overflow-x-clip" style={{ gap: "0.2rem" }}>
+        <div className="flex items-center justify-center  flex-nowrap overflow-x-clip " style={{ gap: "0.2rem" }}>
           {clients.map((client, index) => (
             <div
               key={index}
@@ -48,7 +48,7 @@ export default function Accreditation() {
                   alt={`${client.name} logo`}
                   width={200}
                   height={150}
-                  className="max-h-16 w-auto object-contain"
+                  className="max-h-16 h-26 w-auto object-contain"
                 />
               </a>
             </div>

@@ -3,6 +3,7 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "public/assets/css/plugins/bootstrap.min.css"
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "public/assets/css/plugins/aos.css"
 //import "public/assets/css/plugins/fontawesome.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";

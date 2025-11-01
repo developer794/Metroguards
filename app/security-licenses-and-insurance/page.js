@@ -55,9 +55,9 @@ export default function SecurityLicensePage() {
                         overflow: 'hidden'
                     }}>
                         <div className="container">
-                            <div className="row align-items-center">
+                            <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content">
+                                    <div className="hero-content" style={{textAlign: 'left'}}>
                                         <div className="badge-section mb-4">
                                             <span className="badge" style={{
                                                 backgroundColor: '#fdc51a',
@@ -74,15 +74,15 @@ export default function SecurityLicensePage() {
                                             </span>
                                         </div>
                                         
-                                        <h1 className="hero-title mb-4" style={{
+                                        
+                                        <h2 className="section-title mb-4" style={{
                                             color: '#1e2247',
-                                            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                                            fontSize: 'clamp(2rem, 4vw, 3rem)',
                                             fontWeight: '800',
-                                            lineHeight: '1.2',
-                                            marginBottom: '1.5rem'
+                                            lineHeight: '1.2'
                                         }}>
                                             SECURITY LICENSE & INSURANCE
-                                        </h1>
+                                        </h2>
                                         
                                         <p className="hero-description mb-4" style={{
                                             color: '#6c757d',
@@ -104,7 +104,9 @@ export default function SecurityLicensePage() {
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3">
                                                 <a 
-                                                    href="#contact-form" 
+                                                    href="/Compliance Pack (30th Oct 2025).pdf" 
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                 className="btn btn-primary-custom"
                                                     style={{
                                                     backgroundColor: '#fdc51a',

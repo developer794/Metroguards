@@ -1,6 +1,6 @@
 'use client';
 import Layout from "@/components/layout/Layout";
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Phone, Mail, MapPin, Clock, Shield, Users, Award, Star, Send, CheckCircle, AlertCircle, Building, Home, Calendar, MessageSquare } from 'lucide-react';
@@ -11,6 +11,9 @@ import Subscribe from '@/components/homepages/home1/Subscribe'
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,6 +22,53 @@ export default function ContactPage() {
     serviceType: '',
     message: ''
   });
+
+  // Smooth scroll to top when Thank You message appears
+  useEffect(() => {
+    if (isSubmitted) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, [isSubmitted]);
+
+  // Load reCAPTCHA v2 script and render widget
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoadContact&render=explicit';
+    script.async = true;
+    script.defer = true;
+
+    // Define the callback function for token
+    window.onRecaptchaSuccessContact = (token) => {
+      setRecaptchaToken(token);
+    };
+
+    // Define the onload callback to render the widget
+    window.onRecaptchaLoadContact = () => {
+      if (recaptchaRef.current && window.grecaptcha) {
+        try {
+          window.grecaptcha.render(recaptchaRef.current, {
+            'sitekey': process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+            'callback': window.onRecaptchaSuccessContact
+          });
+        } catch (e) {
+          console.error('reCAPTCHA render error:', e);
+        }
+      }
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+      delete window.onRecaptchaSuccessContact;
+      delete window.onRecaptchaLoadContact;
+    };
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,10 +80,20 @@ export default function ContactPage() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    // Check reCAPTCHA v2
+    if (!recaptchaToken) {
+      toast.error("Please complete the reCAPTCHA verification");
+      return;
+    }
+
     setLoading(true);
 
     const form = e.currentTarget;
     const formDataObj = new FormData(form);
+    
+    // Add reCAPTCHA token to form data
+    formDataObj.append("recaptchaToken", recaptchaToken);
 
     try {
       const res = await fetch("/api/contact", { method: "POST", body: formDataObj });
@@ -43,7 +103,8 @@ export default function ContactPage() {
         throw new Error(data?.error || `Request failed: ${res.status}`);
       }
 
-      toast.success("Message sent successfully!");
+      // Show success page instead of toast
+      setIsSubmitted(true);
       form.reset();
       setFormData({
         name: '',
@@ -53,6 +114,12 @@ export default function ContactPage() {
         serviceType: '',
         message: ''
       });
+      
+      // Reset reCAPTCHA
+      setRecaptchaToken(null);
+      if (window.grecaptcha) {
+        window.grecaptcha.reset();
+      }
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
       if (process.env.NODE_ENV === 'development') {
@@ -71,7 +138,227 @@ export default function ContactPage() {
         subtitle="Professional Security Solutions in Melbourne - Available 24/7 for Your Protection"
         backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.webp"
       >
-        <div>
+        {isSubmitted ? (
+          /* ===== Success Thank You Page ===== */
+          <div className="quotation-section" style={{
+            background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+            padding: '100px 0',
+            minHeight: '70vh',
+            display: 'flex',
+            alignItems: 'center',
+            animation: 'fadeIn 0.6s ease-in-out'
+          }}>
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div style={{
+                    background: '#ffffff',
+                    borderRadius: '24px',
+                    padding: '60px 50px',
+                    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.15)',
+                    textAlign: 'center',
+                    border: '3px solid #fdc51a',
+                    position: 'relative',
+                    overflow: 'hidden'
+                  }}>
+                    {/* Decorative Background Elements */}
+                    <div style={{
+                      position: 'absolute',
+                      top: '-50px',
+                      right: '-50px',
+                      width: '150px',
+                      height: '150px',
+                      background: 'rgba(253, 197, 26, 0.1)',
+                      borderRadius: '50%',
+                      filter: 'blur(40px)'
+                    }}></div>
+                    <div style={{
+                      position: 'absolute',
+                      bottom: '-50px',
+                      left: '-50px',
+                      width: '150px',
+                      height: '150px',
+                      background: 'rgba(30, 34, 71, 0.05)',
+                      borderRadius: '50%',
+                      filter: 'blur(40px)'
+                    }}></div>
+
+                    {/* Success Icon */}
+                    <div style={{
+                      width: '120px',
+                      height: '120px',
+                      background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      margin: '0 auto 30px',
+                      boxShadow: '0 10px 30px rgba(30, 34, 71, 0.3)',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <i className="bi bi-check-circle-fill" style={{
+                        fontSize: '4rem',
+                        color: '#fdc51a'
+                      }}></i>
+                    </div>
+                  
+                    {/* Thank You Message */}
+                    <h1 style={{
+                      color: '#1e2247',
+                      fontSize: '2.8rem',
+                      fontWeight: '800',
+                      marginBottom: '20px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>Thank You!</h1>
+
+                    <div style={{
+                      width: '80px',
+                      height: '4px',
+                      background: 'linear-gradient(90deg, #fdc51a 0%, #e5b116 100%)',
+                      margin: '0 auto 25px',
+                      borderRadius: '2px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}></div>
+
+                    <h3 style={{
+                      color: '#1e2247',
+                      fontSize: '1.5rem',
+                      fontWeight: '600',
+                      marginBottom: '20px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>Your Message Has Been Sent Successfully!</h3>
+
+                    <p style={{
+                      color: '#6c757d',
+                      fontSize: '1.1rem',
+                      lineHeight: '1.8',
+                      marginBottom: '35px',
+                      maxWidth: '500px',
+                      margin: '0 auto 35px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      We've received your message and our team will review it carefully. 
+                      You'll receive a response via email within <strong style={{ color: '#1e2247' }}>24 hours</strong>.
+                    </p>
+
+                    {/* Info Box */}
+                    <div style={{
+                      background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
+                      border: '2px solid rgba(253, 197, 26, 0.3)',
+                      borderRadius: '12px',
+                      padding: '25px',
+                      marginBottom: '35px',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '15px',
+                        marginBottom: '15px'
+                      }}>
+                        <i className="bi bi-info-circle-fill" style={{ fontSize: '1.5rem', color: '#1e2247' }}></i>
+                        <h5 style={{
+                          color: '#1e2247',
+                          fontSize: '1.1rem',
+                          fontWeight: '700',
+                          margin: 0
+                        }}>What Happens Next?</h5>
+                      </div>
+                      <div style={{ textAlign: 'left', maxWidth: '500px', margin: '0 auto' }}>
+                        <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>1.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Check your email inbox (including spam folder)
+                          </p>
+                        </div>
+                        <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>2.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Our team will review your message in detail
+                          </p>
+                        </div>
+                        <div style={{ display: 'flex', gap: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>3.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                            Receive a personalized response tailored to your needs
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+            
+                    {/* CTA Button */}
+                    <a 
+                      href="/"
+                      style={{
+                        display: 'inline-block',
+                        background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                        color: '#fdc51a',
+                        padding: '16px 50px',
+                        borderRadius: '50px',
+                        fontSize: '1.1rem',
+                        fontWeight: '700',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        textDecoration: 'none',
+                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)',
+                        transition: 'all 0.3s ease',
+                        position: 'relative',
+                        zIndex: 1
+                      }}
+                      onMouseOver={(e) => {
+                        e.target.style.background = 'linear-gradient(135deg, #fdc51a 0%, #e5b116 100%)';
+                        e.target.style.color = '#1e2247';
+                        e.target.style.transform = 'translateY(-3px)';
+                        e.target.style.boxShadow = '0 12px 35px rgba(253, 197, 26, 0.4)';
+                      }}
+                      onMouseOut={(e) => {
+                        e.target.style.background = 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)';
+                        e.target.style.color = '#fdc51a';
+                        e.target.style.transform = 'translateY(0)';
+                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                      }}
+                    >
+                      <i className="bi bi-house-door-fill" style={{ marginRight: '10px' }}></i>
+                      Back to Home
+                    </a>
+
+                    {/* Contact Info */}
+                    <div style={{
+                      marginTop: '40px',
+                      paddingTop: '30px',
+                      borderTop: '2px solid #e9ecef',
+                      position: 'relative',
+                      zIndex: 1
+                    }}>
+                      <p style={{
+                        color: '#6c757d',
+                        fontSize: '0.9rem',
+                        marginBottom: '10px'
+                      }}>Need immediate assistance?</p>
+                      <p style={{
+                        color: '#1e2247',
+                        fontSize: '1.3rem',
+                        fontWeight: '700',
+                        margin: 0
+                      }}>
+                        <i className="bi bi-telephone-fill" style={{ color: '#fdc51a', marginRight: '10px' }}></i>
+                        1300 731 173
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div>
           
 
           {/*===== Contact Methods Section =====*/}
@@ -302,6 +589,16 @@ export default function ContactPage() {
                           ></textarea>
                       </div>
 
+                      {/* reCAPTCHA v2 Checkbox */}
+                      <div style={{ 
+                        display: 'flex', 
+                        justifyContent: 'center', 
+                        marginBottom: '25px',
+                        marginTop: '25px'
+                      }}>
+                        <div ref={recaptchaRef}></div>
+                      </div>
+
                       <div className="form-footer">
                         
                         
@@ -397,8 +694,21 @@ export default function ContactPage() {
           <Accrediation />
           <Subscribe />
           </div>
+        )}
 
           <style jsx>{`
+          /* Smooth fade-in animation for Thank You message */
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
           /* Global Font Family Override */
           * {
             font-family: "satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif !important;

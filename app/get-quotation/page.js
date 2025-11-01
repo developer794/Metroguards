@@ -128,6 +128,16 @@ export default function Page() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const recaptchaRef = useRef(null);
 
+  // Smooth scroll to top when Thank You message appears
+  useEffect(() => {
+    if (isSubmitted) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, [isSubmitted]);
+
   // Load reCAPTCHA v2 script and render widget
   useEffect(() => {
     const script = document.createElement('script');
@@ -300,7 +310,8 @@ export default function Page() {
             padding: '100px 0',
             minHeight: '70vh',
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
+            animation: 'fadeIn 0.6s ease-in-out'
         }}>
           <div className="container">
               <div className="row justify-content-center">
@@ -1072,146 +1083,206 @@ export default function Page() {
                 </div>
               </div>
 
-                  {/* Info Cards Grid */}
+                  {/* Info Cards Grid - Modern Design with Visible Icons */}
                   <div style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr',
-                    gap: '15px'
+                    gap: '16px'
                   }}>
-                    {/* Card 1 */}
+                    {/* Card 1 - Licensed & Insured */}
                     <div style={{
-                      background: '#1e2247',
-                      borderRadius: '12px',
-                      padding: '20px',
+                      background: '#ffffff',
+                      borderRadius: '16px',
+                      padding: '24px 20px',
                       textAlign: 'center',
-                      border: '2px solid rgba(253, 197, 26, 0.2)',
-                      transition: 'all 0.3s ease'
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                      border: '2px solid #f8f9fa',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 8px 20px rgba(253, 197, 26, 0.2)';
+                      e.currentTarget.style.borderColor = '#fdc51a';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+                      e.currentTarget.style.borderColor = '#f8f9fa';
                     }}>
                       <div style={{
-                        width: '50px',
-                        height: '50px',
-                        background: 'rgba(253, 197, 26, 0.15)',
-                        borderRadius: '50%',
+                        width: '60px',
+                        height: '60px',
+                        background: 'linear-gradient(135deg, #fdc51a 0%, #f0b90b 100%)',
+                        borderRadius: '14px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        margin: '0 auto 12px'
+                        margin: '0 auto 16px',
+                        boxShadow: '0 4px 12px rgba(253, 197, 26, 0.25)'
                       }}>
-                        <i className="bi bi-shield-check" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
-            </div>
+                        <i className="bi bi-shield-fill-check" style={{ fontSize: '1.8rem', color: '#1e2247', fontWeight: 'bold' }}></i>
+                      </div>
                       <h5 style={{
-                        color: '#fdc51a',
-                        fontSize: '0.95rem',
+                        color: '#1e2247',
+                        fontSize: '1.05rem',
                         fontWeight: '700',
-                        marginBottom: '5px'
-                      }}>Licensed</h5>
+                        marginBottom: '6px',
+                        lineHeight: '1.3'
+                      }}>Licensed & Insured</h5>
                       <p style={{
-                        color: 'rgba(255, 255, 255, 0.8)',
-                        fontSize: '0.85rem',
-                        margin: 0
+                        color: '#6c757d',
+                        fontSize: '0.875rem',
+                        margin: 0,
+                        lineHeight: '1.4'
                       }}>Fully Certified</p>
-          </div>
+                    </div>
 
-                    {/* Card 2 */}
+                    {/* Card 2 - 24/7 Availability */}
                     <div style={{
-                      background: '#1e2247',
-                      borderRadius: '12px',
-                      padding: '20px',
+                      background: '#ffffff',
+                      borderRadius: '16px',
+                      padding: '24px 20px',
                       textAlign: 'center',
-                      border: '2px solid rgba(253, 197, 26, 0.2)',
-                      transition: 'all 0.3s ease'
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                      border: '2px solid #f8f9fa',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 8px 20px rgba(253, 197, 26, 0.2)';
+                      e.currentTarget.style.borderColor = '#fdc51a';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+                      e.currentTarget.style.borderColor = '#f8f9fa';
                     }}>
                       <div style={{
-                        width: '50px',
-                        height: '50px',
-                        background: 'rgba(253, 197, 26, 0.15)',
-                        borderRadius: '50%',
+                        width: '60px',
+                        height: '60px',
+                        background: 'linear-gradient(135deg, #fdc51a 0%, #f0b90b 100%)',
+                        borderRadius: '14px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        margin: '0 auto 12px'
+                        margin: '0 auto 16px',
+                        boxShadow: '0 4px 12px rgba(253, 197, 26, 0.25)'
                       }}>
-                        <i className="bi bi-clock-history" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
-        </div>
+                        <i className="bi bi-clock-fill" style={{ fontSize: '1.8rem', color: '#1e2247', fontWeight: 'bold' }}></i>
+                      </div>
                       <h5 style={{
-                        color: '#fdc51a',
-                        fontSize: '0.95rem',
+                        color: '#1e2247',
+                        fontSize: '1.05rem',
                         fontWeight: '700',
-                        marginBottom: '5px'
-                      }}>24/7 Available</h5>
+                        marginBottom: '6px',
+                        lineHeight: '1.3'
+                      }}>24/7 Availability</h5>
                       <p style={{
-                        color: 'rgba(255, 255, 255, 0.8)',
-                        fontSize: '0.85rem',
-                        margin: 0
+                        color: '#6c757d',
+                        fontSize: '0.875rem',
+                        margin: 0,
+                        lineHeight: '1.4'
                       }}>Round the Clock</p>
                     </div>
 
-                    {/* Card 3 */}
+                    {/* Card 3 - Award-Winning Service */}
                     <div style={{
-                      background: '#1e2247',
-                      borderRadius: '12px',
-                      padding: '20px',
+                      background: '#ffffff',
+                      borderRadius: '16px',
+                      padding: '24px 20px',
                       textAlign: 'center',
-                      border: '2px solid rgba(253, 197, 26, 0.2)',
-                      transition: 'all 0.3s ease'
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                      border: '2px solid #f8f9fa',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 8px 20px rgba(253, 197, 26, 0.2)';
+                      e.currentTarget.style.borderColor = '#fdc51a';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+                      e.currentTarget.style.borderColor = '#f8f9fa';
                     }}>
                       <div style={{
-                        width: '50px',
-                        height: '50px',
-                        background: 'rgba(253, 197, 26, 0.15)',
-                        borderRadius: '50%',
+                        width: '60px',
+                        height: '60px',
+                        background: 'linear-gradient(135deg, #fdc51a 0%, #f0b90b 100%)',
+                        borderRadius: '14px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        margin: '0 auto 12px'
+                        margin: '0 auto 16px',
+                        boxShadow: '0 4px 12px rgba(253, 197, 26, 0.25)'
                       }}>
-                        <i className="bi bi-lightning-charge" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                        <i className="bi bi-award-fill" style={{ fontSize: '1.8rem', color: '#1e2247', fontWeight: 'bold' }}></i>
                       </div>
                       <h5 style={{
-                        color: '#fdc51a',
-                        fontSize: '0.95rem',
+                        color: '#1e2247',
+                        fontSize: '1.05rem',
                         fontWeight: '700',
-                        marginBottom: '5px'
-                      }}>Fast Response</h5>
+                        marginBottom: '6px',
+                        lineHeight: '1.3'
+                      }}>Award-Winning Service</h5>
                       <p style={{
-                        color: 'rgba(255, 255, 255, 0.8)',
-                        fontSize: '0.85rem',
-                        margin: 0
-                      }}>Quick Deployment</p>
+                        color: '#6c757d',
+                        fontSize: '0.875rem',
+                        margin: 0,
+                        lineHeight: '1.4'
+                      }}>ISO Certified Excellence</p>
                     </div>
 
-                    {/* Card 4 */}
+                    {/* Card 4 - Proven Track Record */}
                     <div style={{
-                      background: '#1e2247',
-                      borderRadius: '12px',
-                      padding: '20px',
+                      background: '#ffffff',
+                      borderRadius: '16px',
+                      padding: '24px 20px',
                       textAlign: 'center',
-                      border: '2px solid rgba(253, 197, 26, 0.2)',
-                      transition: 'all 0.3s ease'
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                      border: '2px solid #f8f9fa',
+                      transition: 'all 0.3s ease',
+                      cursor: 'pointer'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-4px)';
+                      e.currentTarget.style.boxShadow = '0 8px 20px rgba(253, 197, 26, 0.2)';
+                      e.currentTarget.style.borderColor = '#fdc51a';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+                      e.currentTarget.style.borderColor = '#f8f9fa';
                     }}>
                       <div style={{
-                        width: '50px',
-                        height: '50px',
-                        background: 'rgba(253, 197, 26, 0.15)',
-                        borderRadius: '50%',
+                        width: '60px',
+                        height: '60px',
+                        background: 'linear-gradient(135deg, #fdc51a 0%, #f0b90b 100%)',
+                        borderRadius: '14px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        margin: '0 auto 12px'
+                        margin: '0 auto 16px',
+                        boxShadow: '0 4px 12px rgba(253, 197, 26, 0.25)'
                       }}>
-                        <i className="bi bi-geo-alt" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
+                        <i className="bi bi-graph-up-arrow" style={{ fontSize: '1.8rem', color: '#1e2247', fontWeight: 'bold' }}></i>
                       </div>
                       <h5 style={{
-                        color: '#fdc51a',
-                        fontSize: '0.95rem',
+                        color: '#1e2247',
+                        fontSize: '1.05rem',
                         fontWeight: '700',
-                        marginBottom: '5px'
-                      }}>All Victoria</h5>
+                        marginBottom: '6px',
+                        lineHeight: '1.3'
+                      }}>Proven Track Record</h5>
                       <p style={{
-                        color: 'rgba(255, 255, 255, 0.8)',
-                        fontSize: '0.85rem',
-                        margin: 0
-                      }}>Wide Coverage</p>
+                        color: '#6c757d',
+                        fontSize: '0.875rem',
+                        margin: 0,
+                        lineHeight: '1.4'
+                      }}>99% Customer Satisfaction</p>
                     </div>
                   </div>
 
@@ -1260,6 +1331,18 @@ export default function Page() {
         )}
         
 <style jsx>{`
+          /* Smooth fade-in animation for Thank You message */
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
           /* Custom styling for service headings in dropdown */
           select option.service-heading {
             background: #1e2247 !important;
