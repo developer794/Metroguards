@@ -228,9 +228,9 @@ export default function Page() {
     setLoading(true);
 
     try {
-      const form = e.currentTarget;
-      const formData = new FormData(form);
-      
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
       // Add reCAPTCHA token to form data
       formData.append("recaptchaToken", recaptchaToken);
 
@@ -284,8 +284,8 @@ export default function Page() {
             minHeight: '70vh',
             display: 'flex',
             alignItems: 'center'
-          }}>
-            <div className="container">
+        }}>
+          <div className="container">
               <div className="row justify-content-center">
                 <div className="col-lg-8">
                   <div style={{
@@ -324,7 +324,7 @@ export default function Page() {
                     <div style={{
                       width: '120px',
                       height: '120px',
-                      background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                    background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
                       borderRadius: '50%',
                       display: 'flex',
                       alignItems: 'center',
@@ -337,9 +337,9 @@ export default function Page() {
                       <i className="bi bi-check-circle-fill" style={{
                         fontSize: '4rem',
                         color: '#fdc51a'
-                      }}></i>
-                    </div>
-
+                    }}></i>
+                  </div>
+                  
                     {/* Thank You Message */}
                     <h1 style={{
                       color: '#1e2247',
@@ -407,7 +407,7 @@ export default function Page() {
                           fontWeight: '700',
                           margin: 0
                         }}>What Happens Next?</h5>
-                      </div>
+                </div>
                       <div style={{ textAlign: 'left', maxWidth: '500px', margin: '0 auto' }}>
                         <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
                           <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>1.</span>
@@ -427,9 +427,9 @@ export default function Page() {
                             Receive a customized quotation tailored to your needs
                           </p>
                         </div>
-                      </div>
-                    </div>
-
+              </div>
+            </div>
+            
                     {/* CTA Button */}
                     <a 
                       href="/"
@@ -446,7 +446,7 @@ export default function Page() {
                         textDecoration: 'none',
                         boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)',
                         transition: 'all 0.3s ease',
-                        position: 'relative',
+                  position: 'relative',
                         zIndex: 1
                       }}
                       onMouseOver={(e) => {
@@ -521,19 +521,19 @@ export default function Page() {
                     Get In Touch
                   </div>
                   <h2 style={{
-                    color: '#1e2247',
+                      color: '#1e2247',
                     fontSize: '2.5rem',
                     fontWeight: '700',
                     marginBottom: '12px'
                   }}>Request Your Quote</h2>
-                  <p style={{
-                    color: '#6c757d',
+                    <p style={{
+                      color: '#6c757d',
                     fontSize: '1.1rem',
                     maxWidth: '600px',
                     margin: '0 auto'
                   }}>Fill out the form and our team will get back to you within 24 hours</p>
                 </div>
-              </div>
+                  </div>
 
               {/* Two Column Layout */}
               <div className="row g-5">
@@ -564,7 +564,7 @@ export default function Page() {
                     }}>Quotation Form</h3>
                   </div>
 
-                  <form className="contact-form" onSubmit={handleSubmit} noValidate style={{padding:'45px'}}>
+                  <form className="contact-form" onSubmit={handleSubmit} noValidate style={{padding:'45px',marginTop:'0px'}}>
   {/* honeypot (spam trap) */}
   <input
     type="text"
@@ -769,9 +769,9 @@ export default function Page() {
                           </select>
                         </div>
                       </div>
-                            
+
                         {/* Service Site Address */}
-                        <div className="col-md-6 mb-4">
+                      <div className="col-md-6 mb-4">
                         <div className="form-group" style={{ position: 'relative' }}>
                           <label style={{
                             position: 'absolute',
@@ -790,13 +790,13 @@ export default function Page() {
                              name="location"
                              type="text"
                              placeholder="Enter Service Location"
-                             style={{
+                            style={{
                                width: '100%',
                                border: '2px solid rgba(30, 34, 71, 0.25)',
                                borderRadius: '12px',
                                padding: '12px 16px',
-                               fontSize: '0.95rem',
-                               backgroundColor: '#ffffff',
+                              fontSize: '0.95rem',
+                              backgroundColor: '#ffffff',
                                transition: 'all 0.3s ease',
                                outline: 'none',
                                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.18)',
@@ -949,7 +949,7 @@ export default function Page() {
                       <div className="col-12 mb-4">
                         <div 
                           className="g-recaptcha" 
-                          data-sitekey="6Lffx_0rAAAAAD3Krasm_8BDMYyLiiM4Ja0T9Pu7"
+                          data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                           data-callback="onRecaptchaSuccess"
                           style={{
                             display: 'flex',
@@ -957,7 +957,7 @@ export default function Page() {
                           }}
                         ></div>
                       </div>
-
+                     
                       {/* Submit Button */}
                       <div className="col-12">
                         <button
@@ -1018,7 +1018,7 @@ export default function Page() {
                     position: 'relative',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    height: '360px',
+                    height: '330px',
                     boxShadow: '0 8px 25px rgba(0, 0, 0, 0.15)'
                   }}>
                     <img 
@@ -1054,8 +1054,8 @@ export default function Page() {
                       }}>
                         Over 15+ years protecting businesses across Melbourne
                       </p>
-                    </div>
-                  </div>
+                </div>
+              </div>
 
                   {/* Info Cards Grid */}
                   <div style={{
@@ -1083,7 +1083,7 @@ export default function Page() {
                         margin: '0 auto 12px'
                       }}>
                         <i className="bi bi-shield-check" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
-                      </div>
+            </div>
                       <h5 style={{
                         color: '#fdc51a',
                         fontSize: '0.95rem',
@@ -1095,7 +1095,7 @@ export default function Page() {
                         fontSize: '0.85rem',
                         margin: 0
                       }}>Fully Certified</p>
-                    </div>
+          </div>
 
                     {/* Card 2 */}
                     <div style={{
@@ -1117,7 +1117,7 @@ export default function Page() {
                         margin: '0 auto 12px'
                       }}>
                         <i className="bi bi-clock-history" style={{ fontSize: '1.5rem', color: '#fdc51a' }}></i>
-                      </div>
+        </div>
                       <h5 style={{
                         color: '#fdc51a',
                         fontSize: '0.95rem',
@@ -1251,12 +1251,12 @@ export default function Page() {
             color: #fdc51a !important;
             font-weight: 700 !important;
             text-align: center !important;
-          }
+                            }
 
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
+                            @keyframes spin {
+                              0% { transform: rotate(0deg); }
+                              100% { transform: rotate(360deg); }
+                            }
 
           /* Responsive adjustments */
           @media (max-width: 991px) {
@@ -1269,8 +1269,8 @@ export default function Page() {
           .grecaptcha-badge {
             visibility: visible !important;
             opacity: 1 !important;
-          }
-        `}</style>
+                            }
+                        `}</style>
         <Accreditation />
         <Subscribe />
       </Layout>

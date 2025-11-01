@@ -320,7 +320,15 @@ export async function POST(req: Request) {
       );
     }
 
-    const recaptchaSecret = "6Lffx_0rAAAAAFhcCdpsdJHGXJQT3tR6kh-mSsTm";
+    const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
+    if (!recaptchaSecret) {
+      console.error("RECAPTCHA_SECRET_KEY is not defined in environment variables");
+      return NextResponse.json(
+        { error: "Server configuration error" },
+        { status: 500 }
+      );
+    }
+
     const recaptchaVerifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${recaptchaToken}`;
 
     const recaptchaResponse = await fetch(recaptchaVerifyUrl, {
