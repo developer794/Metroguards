@@ -126,25 +126,42 @@ export default function Page() {
   const [selectedServices, setSelectedServices] = useState([]);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const recaptchaRef = useRef(null);
 
-  // Load reCAPTCHA v2 script
+  // Load reCAPTCHA v2 script and render widget
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js';
+    script.src = 'https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit';
     script.async = true;
     script.defer = true;
-    document.body.appendChild(script);
 
-    // Define the callback function
+    // Define the callback function for token
     window.onRecaptchaSuccess = (token) => {
       setRecaptchaToken(token);
     };
+
+    // Define the onload callback to render the widget
+    window.onRecaptchaLoad = () => {
+      if (recaptchaRef.current && window.grecaptcha) {
+        try {
+          window.grecaptcha.render(recaptchaRef.current, {
+            'sitekey': process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+            'callback': window.onRecaptchaSuccess
+          });
+        } catch (e) {
+          console.error('reCAPTCHA render error:', e);
+        }
+      }
+    };
+
+    document.body.appendChild(script);
 
     return () => {
       if (document.body.contains(script)) {
         document.body.removeChild(script);
       }
       delete window.onRecaptchaSuccess;
+      delete window.onRecaptchaLoad;
     };
   }, []);
 
@@ -948,9 +965,7 @@ export default function Page() {
                       {/* reCAPTCHA v2 Checkbox */}
                       <div className="col-12 mb-4">
                         <div 
-                          className="g-recaptcha" 
-                          data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                          data-callback="onRecaptchaSuccess"
+                          ref={recaptchaRef}
                           style={{
                             display: 'flex',
                             justifyContent: 'center'
