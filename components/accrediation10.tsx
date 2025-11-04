@@ -9,11 +9,12 @@ export default function Accreditation() {
     { name: "8", logo: "/assets/img/corporate-responsibility/img8.jpg", website: "/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf" },
     { name: "7", logo: "/assets/img/corporate-responsibility/img7.jpg", website: "/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf" },
     { name: "1", logo: "/assets/img/corporate-responsibility/img1.jpg", website: "/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf" },
-    { name: "5", logo: "/assets/img/corporate-responsibility/img5.png", website: "https://geelongport.com.au" },
+    { name: "5", logo: "/assets/img/corporate-responsibility/img5.png", website: "/" },
     { name: "6", logo: "/assets/img/corporate-responsibility/img6.jpg", website: "/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" },
-    { name: "9", logo: "/assets/img/corporate-responsibility/img11.webp", website: "/wp-content/uploads/2025/06/13591.pdf" },
-    { name: "10", logo: "/assets/img/corporate-responsibility/img10.png", website: "/wp-content/uploads/2025/05/Labour-Hire-Organisation-Licence-Certificate-VICLHL01373.pdf" },
+    { name: "9", logo: "/assets/img/corporate-responsibility/img11.webp", website: "/cm3.pdf" },
+    { name: "10", logo: "/assets/img/corporate-responsibility/img10.png", website: "/Labour Hire Organisation Licence Certificate - VICLHL01373.pdf" },
   ]
+
 
   return (
     <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-16 mb-5">

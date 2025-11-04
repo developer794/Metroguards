@@ -13,9 +13,10 @@ import "public/assets/css/plugins/fonts.css"
 import "public/assets/css/master.css"
 import "public/assets/css/h4-master.css"
 import "./dashboard/globals.css"
-import TawkLoader from "@/components/TawkLoader";
+//import TawkLoader from "@/components/TawkLoader";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import StructuredData from "@/components/StructuredData";
+import ContactWidget from "@/components/contactWidget";
 
 
 
@@ -84,10 +85,10 @@ export default function RootLayout({ children }) {
         <main className="pt-[40px] min-h-screen"> {/* Adjust pt value based on your header strip height */}
           {children}
         </main>
-        
-        {/* Client-only injection avoids hydration mismatch */}
-        <TawkLoader />
-        
+       
+        {/* Client-only injection avoids hydration mismatch 
+        <TawkLoader />*/}
+        <ContactWidget/>
       </body>
     </html>
   )
