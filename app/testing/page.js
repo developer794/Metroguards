@@ -1,19 +1,17 @@
 "use client";
 import Layout from "@/components/layout/Layout"
 import Subscribe from "@/components/homepages/home1/Subscribe"
-import Image from "next/image"
 
-
-export default function ConditionsOfHirePage() {
+export default function TestingConditionsPage() {
     return (
         <>
             <Layout 
                 headerStyle={1} 
                 footerStyle={1} 
-                breadcrumbTitle="Conditions of Hire"
-                mainTitle="Conditions of Agreement"
+                breadcrumbTitle="Conditions of Agreement"
+                mainTitle="Terms & Conditions"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
-                subtitle="Metropolitan Guards / Manned Guarding Services Agreement"
+                subtitle="Metropolitan Guards / Security Services Agreement"
             >
                 <div className="container mx-auto px-4 py-16">
                     <div className="max-w-7xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden" style={{boxShadow: '0 15px 35px rgba(0,0,0,0.08)',padding: '20px'}}>
@@ -31,7 +29,7 @@ export default function ConditionsOfHirePage() {
                         <div className="px-10 py-12 md:px-16 md:py-16" style={{lineHeight: '1.7'}}>
                             {/* Section 1 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold  mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color: 'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     1 DEFINITIONS AND INTERPRETATION
                                 </h2>
 
@@ -153,7 +151,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 2 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     2 APPOINTMENT OF METRO GUARDS
                                 </h2>
                                 <div className="space-y-4 text-gray-800 text-base" style={{textAlign: 'justify'}}>
@@ -165,7 +163,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 3 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     3 PROVISION OF SERVICES
                                 </h2>
 
@@ -234,7 +232,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 4 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     4 METRO GUARDS'S GENERAL OBLIGATIONS
                                 </h2>
                                 <div className="space-y-4 text-gray-800 text-base" style={{textAlign: 'justify'}}>
@@ -249,7 +247,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 5 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     5 CLIENT'S GENERAL OBLIGATIONS
                                 </h2>
                                 <p className="text-gray-800 text-base" style={{textAlign: 'justify'}}>
@@ -259,7 +257,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 6 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     6 SERVICE FEES AND OTHER MONEY PAYABLE
                                 </h2>
 
@@ -294,7 +292,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 7 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     7 CONFIDENTIAL INFORMATION
                                 </h2>
 
@@ -326,7 +324,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 8 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     8 TERM AND TERMINATION
                                 </h2>
 
@@ -354,7 +352,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 9 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     9 INDEMNITY
                                 </h2>
                                 <p className="text-gray-800 text-base" style={{textAlign: 'justify'}}>
@@ -368,7 +366,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 10 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     10 LIMITS ON LIABILITY
                                 </h2>
 
@@ -439,7 +437,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 11 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     11 GENERAL
                                 </h2>
 
@@ -508,7 +506,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 12 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     12 FORCE MAJEURE EVENT
                                 </h2>
                                 <div className="space-y-4 text-gray-800 text-base" style={{textAlign: 'justify'}}>
@@ -519,7 +517,7 @@ export default function ConditionsOfHirePage() {
 
                             {/* Section 13 */}
                             <section className="mb-10">
-                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0',color:'black'}}>
+                                <h2 className="text-2xl font-bold text-[#1e2247] mb-6 pb-2 border-b-2 border-[#fdc51a]" style={{padding: '10px 0'}}>
                                     13 COSTS, STAMP DUTY AND GST
                                 </h2>
 
