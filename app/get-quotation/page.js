@@ -455,6 +455,12 @@ export default function Page() {
                             Receive a customized quotation tailored to your needs
                           </p>
                         </div>
+                        <div style={{ display: 'flex', gap: '12px' }}>
+                          <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>4.</span>
+                          <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                          We will contact you if any additional information is required.
+                          </p>
+                        </div>
               </div>
             </div>
             
