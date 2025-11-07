@@ -9,6 +9,21 @@ import Subscribe from "@/components/homepages/home1/Subscribe"
 
 export default function SecurityLicensePage() {
     const [loading, setLoading] = useState(false);
+    const [showPdfModal, setShowPdfModal] = useState(false);
+    const [currentPdfUrl, setCurrentPdfUrl] = useState('');
+    const [pdfTitle, setPdfTitle] = useState('');
+
+    const openPdfModal = (url, title) => {
+        setCurrentPdfUrl(url);
+        setPdfTitle(title);
+        setShowPdfModal(true);
+    };
+
+    const closePdfModal = () => {
+        setShowPdfModal(false);
+        setCurrentPdfUrl('');
+        setPdfTitle('');
+    };
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -38,6 +53,88 @@ export default function SecurityLicensePage() {
     return (
         <>
             <ToastContainer position="bottom-right" autoClose={3000} />
+            
+            {/* PDF Modal */}
+            {showPdfModal && (
+                <div 
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        zIndex: 9999,
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: '20px'
+                    }}
+                    onClick={closePdfModal}
+                >
+                    <div 
+                        style={{
+                            position: 'relative',
+                            width: '100%',
+                            maxWidth: '1200px',
+                            height: '90vh',
+                            backgroundColor: '#fff',
+                            borderRadius: '12px',
+                            overflow: 'hidden',
+                            boxShadow: '0 10px 40px rgba(0,0,0,0.3)'
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {/* Modal Header */}
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            padding: '20px 30px',
+                            backgroundColor: '#1e2247',
+                            borderBottom: '3px solid #fdc51a'
+                        }}>
+                            <h3 style={{
+                                color: '#fff',
+                                margin: 0,
+                                fontSize: '1.2rem',
+                                fontWeight: '600'
+                            }}>
+                                <i className="fas fa-file-pdf me-2" style={{color: '#fdc51a'}}></i>
+                                {pdfTitle}
+                            </h3>
+                            <button
+                                onClick={closePdfModal}
+                                style={{
+                                    background: 'none',
+                                    border: 'none',
+                                    color: '#fff',
+                                    fontSize: '24px',
+                                    cursor: 'pointer',
+                                    padding: '5px 10px',
+                                    transition: 'color 0.3s ease'
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#fdc51a'}
+                                onMouseLeave={(e) => e.currentTarget.style.color = '#fff'}
+                            >
+                                <i className="fas fa-times"></i>
+                            </button>
+                        </div>
+                        
+                        {/* PDF Viewer */}
+                        <iframe
+                            src={currentPdfUrl}
+                            style={{
+                                width: '100%',
+                                height: 'calc(100% - 80px)',
+                                border: 'none'
+                            }}
+                            title={pdfTitle}
+                        />
+                    </div>
+                </div>
+            )}
+
             <Layout 
                 headerStyle={1} 
                 footerStyle={1} 
@@ -104,9 +201,11 @@ export default function SecurityLicensePage() {
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3">
                                                 <a 
-                                                    href="/Compliance Pack (30th Oct 2025).pdf" 
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                    href="#"
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        openPdfModal('/Compliance Pack (30th Oct 2025).pdf', 'Compliance Pack (30th Oct 2025)');
+                                                    }}
                                                 className="btn btn-primary-custom"
                                                     style={{
                                                     backgroundColor: '#fdc51a',
@@ -340,7 +439,8 @@ export default function SecurityLicensePage() {
                                                 margin: '0'
                                             }}>
                                                 <li className="document-item mb-3">
-                                                    <a href="/Modern-Slavery-Statement-V2-1.pdf" target="_blank" 
+                                                    <a href="/modern-slavery-statement"
+                                                       
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -369,7 +469,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/06/business-name.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/06/business-name.pdf', 'Business Name Registration');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -398,7 +502,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item">
-                                                    <a href="/wp-content/uploads/2025/06/Organisation-Recognition-Certificate.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/06/Organisation-Recognition-Certificate.pdf', 'Organisation Recognition Certificate');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -495,7 +603,11 @@ export default function SecurityLicensePage() {
                                                 margin: '0'
                                             }}>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/03/Public-Liability.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/03/Public-Liability.pdf', 'Public Liability Insurance');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -524,7 +636,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/06/PI-Certificate-of-Insurance.pdf.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/06/PI-Certificate-of-Insurance.pdf.pdf', 'Professional Indemnity Insurance');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -553,7 +669,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/07/WorkCover-Insurance-Certificate-of-Currency-30-Jun-2026.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/07/WorkCover-Insurance-Certificate-of-Currency-30-Jun-2026.pdf', 'WorkCover Insurance Certificate');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -651,7 +771,11 @@ export default function SecurityLicensePage() {
                                                 margin: '0'
                                             }}>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/smush-webp/2025/07/LDR-License.jpg.webp" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/smush-webp/2025/07/LDR-License.jpg.webp', 'Private Security Business Licence (VIC)');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -680,7 +804,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/06/Master-Licence-NSW.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/06/Master-Licence-NSW.pdf', 'Master Licence NSW');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -709,7 +837,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item mb-3">
-                                                    <a href="/wp-content/uploads/2025/05/Labour-Hire-Organisation-Licence-Certificate-VICLHL01373.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/wp-content/uploads/2025/05/Labour-Hire-Organisation-Licence-Certificate-VICLHL01373.pdf', 'Labour Hire Organisation Licence Certificate');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -738,7 +870,11 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item">
-                                                    <a href="/cm3.pdf" target="_blank"
+                                                    <a href="#"
+                                                       onClick={(e) => {
+                                                           e.preventDefault();
+                                                           openPdfModal('/cm3.pdf', 'CM3 Certificate');
+                                                       }}
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -879,7 +1015,11 @@ export default function SecurityLicensePage() {
                                             fontWeight: '700',
                                             textAlign: 'center'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf" target="_blank" 
+                                            <a href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                openPdfModal('/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf', 'Australian Achiever Award Winner 2014');
+                                            }}
                                             style={{
                                                 textDecoration: 'none',
                                                 color: '#1e2247',
@@ -899,7 +1039,11 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Excellence in Customer Service
                                         </p>
-                                        <a href="/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf', 'Australian Achiever Award Winner 2014');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
@@ -963,7 +1107,11 @@ export default function SecurityLicensePage() {
                                             fontWeight: '700',
                                             textAlign: 'center'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf" target="_blank" 
+                                            <a href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                openPdfModal('/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf', 'Australian Achiever Award Winner 2015');
+                                            }}
                                             style={{
                                                 textDecoration: 'none',
                                                 color: '#1e2247',
@@ -983,7 +1131,11 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Business Performance Excellence
                                         </p>
-                                        <a href="/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf', 'Australian Achiever Award Winner 2015');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
@@ -1047,7 +1199,11 @@ export default function SecurityLicensePage() {
                                             fontWeight: '700',
                                             textAlign: 'center'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf" target="_blank" 
+                                            <a href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                openPdfModal('/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf', 'Australian Achiever Award Winner 2016');
+                                            }}
                                             style={{
                                                 textDecoration: 'none',
                                                 color: '#1e2247',
@@ -1067,7 +1223,11 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Industry Leadership
                                         </p>
-                                        <a href="/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf', 'Australian Achiever Award Winner 2016');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
@@ -1131,7 +1291,11 @@ export default function SecurityLicensePage() {
                                             fontWeight: '700',
                                             textAlign: 'center'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" target="_blank" 
+                                            <a href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                openPdfModal('/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf', 'ASIAL Corporate Membership');
+                                            }}
                                             style={{
                                                 textDecoration: 'none',
                                                 color: '#1e2247',
@@ -1151,7 +1315,11 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Australian Security Industry Association Limited
                                         </p>
-                                        <a href="/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf', 'ASIAL Corporate Membership');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#fdc51a',
@@ -1274,7 +1442,11 @@ export default function SecurityLicensePage() {
                                             fontSize: '1.3rem',
                                             fontWeight: '700'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/3240701-E-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                            <a href="#"
+                                               onClick={(e) => {
+                                                   e.preventDefault();
+                                                   openPdfModal('/wp-content/uploads/2025/06/3240701-E-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 14001 Environmental Management Systems');
+                                               }}
                                                style={{
                                                    textDecoration: 'none',
                                                    color: '#1e2247',
@@ -1295,7 +1467,11 @@ export default function SecurityLicensePage() {
 
                                         </p>
                                         
-                                        <a href="/wp-content/uploads/2025/06/3240701-E-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/3240701-E-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 14001 Environmental Management Systems');
+                                           }} 
                                            style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#1e2247',
@@ -1365,7 +1541,11 @@ export default function SecurityLicensePage() {
                                             fontWeight: '700'
                                         }}>
                                             
-                                            <a href="/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                            <a href="#"
+                                               onClick={(e) => {
+                                                   e.preventDefault();
+                                                   openPdfModal('/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 45001 Occupational Health & Safety Management');
+                                               }}
                                                style={{
                                                    textDecoration: 'none',
                                                    color: '#1e2247',
@@ -1385,7 +1565,11 @@ export default function SecurityLicensePage() {
                                             OCCUPATIONAL HEALTH & SAFETY MANAGEMENT SYSTEMS
                                         </p>
                                         
-                                        <a href="/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/3240701-O-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 45001 Occupational Health & Safety Management');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#fdc51a',
@@ -1454,7 +1638,11 @@ export default function SecurityLicensePage() {
                                             fontSize: '1.3rem',
                                             fontWeight: '700'
                                         }}>
-                                            <a href="/wp-content/uploads/2025/06/3240701-Q-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                            <a href="#"
+                                               onClick={(e) => {
+                                                   e.preventDefault();
+                                                   openPdfModal('/wp-content/uploads/2025/06/3240701-Q-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 9001 Quality Management Systems');
+                                               }}
                                                style={{
                                                    textDecoration: 'none',
                                                    color: '#1e2247',
@@ -1474,7 +1662,11 @@ export default function SecurityLicensePage() {
                                             QUALITY MANAGEMENT SYSTEMS
                                         </p>
                                         
-                                        <a href="/wp-content/uploads/2025/06/3240701-Q-Certificate-of-Registration-Metro-Guards.pdf" target="_blank" 
+                                        <a href="#"
+                                           onClick={(e) => {
+                                               e.preventDefault();
+                                               openPdfModal('/wp-content/uploads/2025/06/3240701-Q-Certificate-of-Registration-Metro-Guards.pdf', 'ISO 9001 Quality Management Systems');
+                                           }}
                                            style={{ textDecoration: 'none' }}>
                                         <div className="quality-badge" style={{
                                             backgroundColor: '#1e2247',

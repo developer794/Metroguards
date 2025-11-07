@@ -452,7 +452,7 @@ export default function ContactPage() {
                       <p>Ready to secure your business? Get in touch with our security experts for a personalized consultation and quote.</p>
                     </div>
                     
-                    <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                    <form className="contact-form" id="contact-form" onSubmit={handleSubmit} noValidate>
                       {/* honeypot (spam trap) */}
                       <input type="text" name="companyWebsite" tabIndex="-1" autoComplete="off" style={{ display: "none" }} />
 
