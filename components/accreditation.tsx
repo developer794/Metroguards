@@ -16,30 +16,28 @@ export default function Accreditation() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-16">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-18">
+      <div className="max-w-7xl mx-auto ml-[50px]">
         {/* Heading (always left) */}
-        <div className="mb-8">
+        <div className="mb-0 ml-[50px]">
           <h2 className="acc-heading text-3xl sm:text-4xl font-bold text-gray-900">
             Accreditation & Partnerships
           </h2>
         </div>
 
         {/* Single row for all logos */}
-        <div className="flex items-center justify-center  flex-nowrap overflow-x-clip " style={{ gap: "0.2rem" }}>
+        <div className="flex flex-wrap items-center justify-center overflow-x-clip" style={{ gap: "0.2rem" }}>
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center  bg-white rounded-md" style={{padding: "0.2rem"}}
+              className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/11 items-center justify-center   rounded-md" 
             >
               <a
                 href={client.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block transition-transform duration-200"
-                style={{ 
-                  transform: 'scale(1)',
-                }}
+                
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
@@ -48,7 +46,8 @@ export default function Accreditation() {
                   alt={`${client.name} logo`}
                   width={200}
                   height={150}
-                  className="max-h-16 h-26 w-auto object-contain"
+                  className=" object-contain w-[350px] md:w-[300px] lg:w-[450px] h-[100px] md:h-[200px] lg:h-[150px] m-0 p-0"
+                  
                 />
               </a>
             </div>

@@ -738,7 +738,7 @@ export default function SecurityLicensePage() {
                                                     </a>
                                             </li>
                                                 <li className="document-item">
-                                                    <a href="/wp-content/uploads/2025/06/13591.pdf" target="_blank"
+                                                    <a href="/cm3.pdf" target="_blank"
                                                        style={{
                                                            display: 'flex',
                                                            alignItems: 'center',
@@ -834,6 +834,7 @@ export default function SecurityLicensePage() {
                             
                             <div className="row g-4">
                                 <div className="col-lg-3 col-md-6 col-sm-12">
+                                    
                                     <div className="award-card" style={{
                                         backgroundColor: '#ffffff',
                                         borderRadius: '20px',
@@ -898,7 +899,8 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Excellence in Customer Service
                                         </p>
-                                        
+                                        <a href="/wp-content/uploads/2025/06/aus-achiever-award-2014.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
                                             color: '#fdc51a',
@@ -912,6 +914,7 @@ export default function SecurityLicensePage() {
                                         }}>
                                             2014
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -980,7 +983,8 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Business Performance Excellence
                                         </p>
-                                        
+                                        <a href="/wp-content/uploads/2025/06/aus-achiever-award-2015.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
                                             color: '#fdc51a',
@@ -994,6 +998,7 @@ export default function SecurityLicensePage() {
                                         }}>
                                             2015
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -1062,7 +1067,8 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Industry Leadership
                                         </p>
-                                        
+                                        <a href="/wp-content/uploads/2025/06/australian-achiever-award-2016.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#1e2247',
                                             color: '#fdc51a',
@@ -1076,6 +1082,7 @@ export default function SecurityLicensePage() {
                                         }}>
                                             2016
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -1144,7 +1151,8 @@ export default function SecurityLicensePage() {
                                         }}>
                                             Australian Security Industry Association Limited
                                         </p>
-                                        
+                                        <a href="/wp-content/uploads/2025/06/ASIAL-Org-Membership-Certificate-New.pdf" target="_blank" 
+                                           style={{ textDecoration: 'none' }}>
                                         <div className="award-year" style={{
                                             backgroundColor: '#fdc51a',
                                             color: '#1e2247',
@@ -1158,6 +1166,7 @@ export default function SecurityLicensePage() {
                                         }}>
                                             MEMBERSHIP
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
