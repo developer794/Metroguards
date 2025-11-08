@@ -14,10 +14,14 @@ export default function HeaderClient({ email }) {
       position: 'sticky',
       top: 0,
       zIndex: 30,
-      background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
+      background: 'linear-gradient(135deg, #1e2247 0%, #252958 50%, #1e2247 100%)',
       backdropFilter: 'blur(12px)',
       borderBottom: '2px solid rgba(253, 197, 26, 0.2)',
-      boxShadow: '0 4px 20px rgba(30, 34, 71, 0.08)'
+      boxShadow: '0 4px 20px rgba(30, 34, 71, 0.08)',
+      borderRadius: '20px',
+      padding: '20px',
+      marginBottom: '20px',
+      marginRight: '20px',
     }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8" style={{ height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -48,92 +52,38 @@ export default function HeaderClient({ email }) {
             </svg>
           </button>
 
-          <div>
-            <h1 style={{
-              fontSize: '1.75rem',
-              fontWeight: '700',
-              background: 'linear-gradient(135deg, #1e2247 0%, #fdc51a 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              marginBottom: '4px'
+          <div style={{ position: 'relative', zIndex: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+            <div style={{
+              width: '60px',
+              height: '60px',
+              background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 8px 20px rgba(253, 197, 26, 0.4)'
             }}>
-              Dashboard
-            </h1>
-            <p style={{ fontSize: '0.875rem', color: '#6c757d' }}>
-              Manage your security operations
-            </p>
+              <svg style={{ width: '32px', height: '32px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h1 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '8px' ,color:'white',marginTop:'20px'}}>
+            Welcome back, {email?.split('@')[0] || 'Admin'}! 👋
+          </h1>
+              <p style={{ color: '#fdc51a', fontSize: '1.1rem', fontWeight: '500' }}>
+                Here's your Metro Guards dashboard overview
+              </p>
+            </div>
           </div>
+         
+        </div>
         </div>
 
         {/* Header Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          {/* Search Button */}
-          <button 
-            style={{
-              padding: '10px',
-              borderRadius: '10px',
-              background: '#f8f9fa',
-              border: '2px solid rgba(30, 34, 71, 0.1)',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-              e.currentTarget.style.borderColor = '#fdc51a';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#f8f9fa';
-              e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
-            }}
-            aria-label="Search"
-          >
-            <svg style={{ width: '20px', height: '20px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-
-          {/* Notifications */}
-          <button 
-            style={{
-              position: 'relative',
-              padding: '10px',
-              borderRadius: '10px',
-              background: '#f8f9fa',
-              border: '2px solid rgba(30, 34, 71, 0.1)',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-              e.currentTarget.style.borderColor = '#fdc51a';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#f8f9fa';
-              e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
-            }}
-            aria-label="Notifications"
-          >
-            <svg style={{ width: '20px', height: '20px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-            </svg>
-            <span style={{
-              position: 'absolute',
-              top: '6px',
-              right: '6px',
-              width: '8px',
-              height: '8px',
-              background: '#fdc51a',
-              borderRadius: '50%',
-              border: '2px solid white',
-              boxShadow: '0 2px 4px rgba(253, 197, 26, 0.4)'
-            }}></span>
-          </button>
+          
 
           {/* User Profile */}
           <div style={{ position: 'relative' }}>

@@ -3,11 +3,18 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Mail, MapPin, X, MessageSquare, Clock, Headphones, Send, Calendar, ChevronRight } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export default function ContactWidget() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [showMobilePrompt, setShowMobilePrompt] = useState(false);
+
+  // Hide widget on dashboard pages
+  if (pathname?.startsWith('/dashboard')) {
+    return null;
+  }
 
   // Detect mobile viewport
   useEffect(() => {

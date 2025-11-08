@@ -46,91 +46,13 @@ export default async function DashboardPage() {
   
   return (
     <div className="space-y-8">
-      {/* Welcome Section */}
-      <div style={{
-        background: 'linear-gradient(135deg, #1e2247 0%, #252958 50%, #1e2247 100%)',
-        borderRadius: '20px',
-        padding: '40px',
-        color: 'white',
-        position: 'relative',
-        overflow: 'hidden',
-        boxShadow: '0 10px 40px rgba(30, 34, 71, 0.3)'
-      }}>
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'linear-gradient(45deg, rgba(253, 197, 26, 0.05) 0%, transparent 100%)',
-          borderRadius: '20px'
-        }}></div>
-        <div style={{ position: 'relative', zIndex: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-            <div style={{
-              width: '60px',
-              height: '60px',
-              background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 8px 20px rgba(253, 197, 26, 0.4)'
-            }}>
-              <svg style={{ width: '32px', height: '32px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
-            <div>
-              <h1 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '8px' }}>
-            Welcome back, {user?.email?.split('@')[0] || 'Admin'}! 👋
-          </h1>
-              <p style={{ color: '#fdc51a', fontSize: '1.1rem', fontWeight: '500' }}>
-                Here's your Metro Guards dashboard overview
-              </p>
-            </div>
-          </div>
-          <div style={{
-            background: 'rgba(253, 197, 26, 0.1)',
-            border: '2px solid rgba(253, 197, 26, 0.3)',
-            borderRadius: '12px',
-            padding: '16px 20px',
-            marginTop: '20px'
-          }}>
-            <p style={{ fontSize: '0.95rem', color: 'white', margin: 0 }}>
-              📊 <strong style={{ color: '#fdc51a' }}>Today's Focus:</strong> You have {mockStats.pendingQuotations} pending quotations and {mockStats.totalBookings} active bookings to manage
-            </p>
-          </div>
-        </div>
-        
-        {/* Decorative elements */}
-        <div style={{
-          position: 'absolute',
-          top: '-60px',
-          right: '-60px',
-          width: '200px',
-          height: '200px',
-          background: 'radial-gradient(circle, rgba(253, 197, 26, 0.15) 0%, transparent 70%)',
-          borderRadius: '50%',
-          filter: 'blur(40px)'
-        }}></div>
-        <div style={{
-          position: 'absolute',
-          bottom: '-80px',
-          left: '-80px',
-          width: '250px',
-          height: '250px',
-          background: 'radial-gradient(circle, rgba(253, 197, 26, 0.1) 0%, transparent 70%)',
-          borderRadius: '50%',
-          filter: 'blur(60px)'
-        }}></div>
-      </div>
+      
 
       {/* Stats Grid */}
       <StatsCards stats={mockStats} />
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{marginBottom: '20px', marginRight: '20px'}}>
         <div style={{
           background: 'white',
           borderRadius: '16px',
@@ -204,9 +126,9 @@ export default async function DashboardPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
-            <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247' }}>View Analytics</h3>
+            <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247' }}>View Contact Inquiries</h3>
           </div>
-          <p style={{ color: '#6c757d', marginBottom: '20px', fontSize: '0.9rem' }}>Track your blog performance and metrics</p>
+          <p style={{ color: '#6c757d', marginBottom: '20px', fontSize: '0.9rem' }}>Track your contact inquiries and responses</p>
           <button style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -222,7 +144,7 @@ export default async function DashboardPage() {
             fontWeight: '600',
             boxShadow: '0 4px 12px rgba(40, 167, 69, 0.3)'
           }}>
-            View Reports
+            View Inquiries
             <svg style={{ width: '16px', height: '16px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -253,9 +175,9 @@ export default async function DashboardPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247' }}>Manage Settings</h3>
+            <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247' }}>Manage Quotations</h3>
           </div>
-          <p style={{ color: '#6c757d', marginBottom: '20px', fontSize: '0.9rem' }}>Configure your dashboard preferences</p>
+          <p style={{ color: '#6c757d', marginBottom: '20px', fontSize: '0.9rem' }}>Manage your quotations and quotes</p>
           <button style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -271,7 +193,7 @@ export default async function DashboardPage() {
             fontWeight: '600',
             boxShadow: '0 4px 12px rgba(30, 34, 71, 0.3)'
           }}>
-            Open Settings
+            Open Quotations
             <svg style={{ width: '16px', height: '16px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -284,7 +206,9 @@ export default async function DashboardPage() {
         background: 'white',
         borderRadius: '16px',
         boxShadow: '0 4px 15px rgba(30, 34, 71, 0.08)',
-        border: '2px solid rgba(30, 34, 71, 0.1)'
+        border: '2px solid rgba(30, 34, 71, 0.1)',
+        marginBottom: '20px',
+        marginRight: '20px'
       }}>
         <div style={{
           padding: '20px 24px',
@@ -351,7 +275,8 @@ export default async function DashboardPage() {
         background: 'white',
         borderRadius: '16px',
         boxShadow: '0 4px 15px rgba(30, 34, 71, 0.08)',
-        border: '2px solid rgba(30, 34, 71, 0.1)'
+        border: '2px solid rgba(30, 34, 71, 0.1)',
+        marginRight: '20px'
       }}>
         <div style={{
           padding: '20px 24px',

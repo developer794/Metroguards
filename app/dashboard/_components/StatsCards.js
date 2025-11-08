@@ -2,7 +2,7 @@
 
 export default function StatsCards({ stats }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{marginBottom: '20px', marginRight: '20px'}}>
       {/* Active Guards */}
       <div style={{
         background: 'white',
@@ -11,7 +11,8 @@ export default function StatsCards({ stats }) {
         boxShadow: '0 4px 15px rgba(30, 34, 71, 0.08)',
         border: '2px solid rgba(253, 197, 26, 0.2)',
         transition: 'all 0.3s ease',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = 'translateY(-5px)';
@@ -23,7 +24,7 @@ export default function StatsCards({ stats }) {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
-            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#6c757d', marginBottom: '8px' }}>Active Guards</p>
+            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#6c757d', marginBottom: '8px' }}>Pulished Blogs</p>
             <p style={{ fontSize: '2rem', fontWeight: '700', color: '#1e2247' }}>{stats.activeGuards}</p>
           </div>
           <div style={{
@@ -43,7 +44,7 @@ export default function StatsCards({ stats }) {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', marginTop: '16px' }}>
           <span style={{ color: '#28a745', fontSize: '0.875rem', fontWeight: '600' }}>+4 today</span>
-          <span style={{ color: '#6c757d', fontSize: '0.875rem', marginLeft: '8px' }}>On duty</span>
+          <span style={{ color: '#6c757d', fontSize: '0.875rem', marginLeft: '8px' }}>On Processing</span>
         </div>
       </div>
 
@@ -67,7 +68,7 @@ export default function StatsCards({ stats }) {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
-            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#6c757d', marginBottom: '8px' }}>Total Bookings</p>
+            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#6c757d', marginBottom: '8px' }}>Total Contact Inquiries</p>
             <p style={{ fontSize: '2rem', fontWeight: '700', color: '#1e2247' }}>{stats.totalBookings}</p>
           </div>
           <div style={{
@@ -167,7 +168,7 @@ export default function StatsCards({ stats }) {
         }}></div>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative' }}>
           <div>
-            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#fdc51a', marginBottom: '8px' }}>Monthly Revenue</p>
+            <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#fdc51a', marginBottom: '8px' }}>Monthly Quotations </p>
             <p style={{ fontSize: '1.75rem', fontWeight: '700', color: 'white' }}>${stats.monthlyRevenue.toLocaleString()}</p>
           </div>
           <div style={{
