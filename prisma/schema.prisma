@@ -52,3 +52,17 @@ model ContactInquiry {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+model Quotation {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  phone     String?
+  industry  String
+  service   String
+  location  String?
+  message   String?  @db.Text
+  status    String   @default("new")  // new, contacted, resolved
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

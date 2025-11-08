@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import prisma from "@/lib/prisma";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -357,6 +358,24 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
 
+    // Get the first service and industry (or default values)
+    const industry = industries.length > 0 ? industries[0] : "Not specified";
+    const service = services.length > 0 ? services[0] : "Not specified";
+
+    // Save to database
+    const quotation = await prisma.quotation.create({
+      data: {
+        name: firstName,
+        email,
+        phone: phone || null,
+        industry,
+        service,
+        location: location || null,
+        message: message || null,
+        status: "new"
+      }
+    });
+
     const servicesList   = services.length ? `<ul>${services.map(s => `<li>${s}</li>`).join("")}</ul>` : "—";
     const industriesList = industries.length ? `<ul>${industries.map(i => `<li>${i}</li>`).join("")}</ul>` : "—";
 
@@ -368,6 +387,7 @@ export async function POST(req: Request) {
       subject: `New Quote Request from ${firstName}`,
       html: `
         <h2>New Quotation Request</h2>
+        <p><strong>Quotation ID:</strong> #${quotation.id}</p>
         <p><strong>Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "—"}</p>
@@ -394,7 +414,7 @@ export async function POST(req: Request) {
       ),
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, quotationId: quotation.id });
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       console.error('Quotation form error:', error);
