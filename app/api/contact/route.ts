@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import prisma from "@/lib/prisma";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -327,6 +328,19 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: false, error: "Missing required fields" }, { status: 400 });
     }
     
+    // Save to database
+    const contactInquiry = await prisma.contactInquiry.create({
+      data: {
+        name,
+        email,
+        phone: phone || null,
+        serviceType,
+        location,
+        message,
+        status: "new"
+      }
+    });
+
     // Send email to admin
     const adminEmailResult = await resend.emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
@@ -335,12 +349,14 @@ export async function POST(req: Request) {
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
+        <p><strong>Inquiry ID:</strong> #${contactInquiry.id}</p>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "—"}</p>
         <p><strong>Service Type:</strong> ${serviceType || "—"}</p>
         <p><strong>Property Location:</strong> ${location || "—"}</p>
         <p><strong>Message:</strong><br/>${message || "—"}</p>
+        <p style="margin-top: 20px;"><a href="${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/dashboard/bookings" style="background: #1e2247; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">View in Dashboard</a></p>
       `,
     });
 
@@ -352,11 +368,11 @@ export async function POST(req: Request) {
       html: createClientConfirmationEmail(name, email, phone, serviceType, location, message),
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, inquiryId: contactInquiry.id });
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
       console.error('Contact form error:', error);
     }
-    return NextResponse.json({ success: false, error: "Email failed" }, { status: 500 });
+    return NextResponse.json({ success: false, error: "Failed to process request" }, { status: 500 });
   }
 }
