@@ -11,11 +11,6 @@ export default function ContactWidget() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMobilePrompt, setShowMobilePrompt] = useState(false);
 
-  // Hide widget on dashboard pages
-  if (pathname?.startsWith('/dashboard')) {
-    return null;
-  }
-
   // Detect mobile viewport
   useEffect(() => {
     const checkMobile = () => {
@@ -43,6 +38,11 @@ export default function ContactWidget() {
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
   }, [isOpen, showMobilePrompt]);
+
+  // Hide widget on dashboard pages (AFTER all hooks)
+  if (pathname?.startsWith('/dashboard')) {
+    return null;
+  }
 
   const toggleWidget = () => {
     if (isMobile) {
