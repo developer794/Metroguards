@@ -611,7 +611,7 @@ export async function POST(req: Request) {
     // Add PDF to attachments
     emailAttachments.push({
       filename: `incident-report-${firstName}-${lastName}-${Date.now()}.pdf`,
-      content: pdfBuffer,
+      content: Buffer.from(pdfBuffer),
     });
 
     // Send admin email

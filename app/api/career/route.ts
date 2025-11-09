@@ -478,7 +478,7 @@ export async function POST(req: Request) {
         },
         {
           filename: `application-${firstName}-${lastName}-${Date.now()}.pdf`,
-          content: pdfBuffer,
+          content: Buffer.from(pdfBuffer),
         },
       ],
     });
@@ -502,7 +502,7 @@ export async function POST(req: Request) {
       attachments: [
         {
           filename: `application-${firstName}-${lastName}.pdf`,
-          content: pdfBuffer,
+          content: Buffer.from(pdfBuffer),
         },
       ],
       replyTo: to,
