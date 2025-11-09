@@ -1,6 +1,6 @@
 "use client"
 import Layout from "@/components/layout/Layout";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Accreditation from "@/components/accrediation10";
@@ -10,6 +10,17 @@ import Subscribe from "@/components/homepages/home1/Subscribe";
 
 export default function ContractorDeclarationPage() {
     const [loading, setLoading] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    // Smooth scroll to top when Thank You message appears
+    useEffect(() => {
+        if (isSubmitted) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }, [isSubmitted]);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -26,7 +37,8 @@ export default function ContractorDeclarationPage() {
                 throw new Error(data?.error || `Request failed: ${res.status}`);
             }
 
-            toast.success("Message sent successfully!");
+            // Show success page instead of toast
+            setIsSubmitted(true);
             form.reset();
         } catch (err) {
             toast.error(err.message || "Network error. Please try again.");
@@ -126,6 +138,226 @@ export default function ContractorDeclarationPage() {
                     </div>
                 </section>
 
+                {isSubmitted ? (
+                  /* ===== Success Thank You Page ===== */
+                  <div className="contractor-thank-you" style={{
+                    background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+                    padding: '100px 0',
+                    minHeight: '70vh',
+                    display: 'flex',
+                    alignItems: 'center',
+                    animation: 'fadeIn 0.6s ease-in-out'
+                  }}>
+                    <div className="container">
+                      <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                          <div style={{
+                            background: '#ffffff',
+                            borderRadius: '24px',
+                            padding: '60px 50px',
+                            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.15)',
+                            textAlign: 'center',
+                            border: '3px solid #fdc51a',
+                            position: 'relative',
+                            overflow: 'hidden'
+                          }}>
+                            {/* Decorative Background Elements */}
+                            <div style={{
+                              position: 'absolute',
+                              top: '-50px',
+                              right: '-50px',
+                              width: '150px',
+                              height: '150px',
+                              background: 'rgba(253, 197, 26, 0.1)',
+                              borderRadius: '50%',
+                              filter: 'blur(40px)'
+                            }}></div>
+                            <div style={{
+                              position: 'absolute',
+                              bottom: '-50px',
+                              left: '-50px',
+                              width: '150px',
+                              height: '150px',
+                              background: 'rgba(30, 34, 71, 0.05)',
+                              borderRadius: '50%',
+                              filter: 'blur(40px)'
+                            }}></div>
+
+                            {/* Success Icon */}
+                            <div style={{
+                              width: '120px',
+                              height: '120px',
+                              background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                              borderRadius: '50%',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              margin: '0 auto 30px',
+                              boxShadow: '0 10px 30px rgba(30, 34, 71, 0.3)',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>
+                              <i className="bi bi-check-circle-fill" style={{
+                                fontSize: '4rem',
+                                color: '#fdc51a'
+                              }}></i>
+                            </div>
+                            
+                            {/* Thank You Message */}
+                            <h1 style={{
+                              color: '#1e2247',
+                              fontSize: '2.8rem',
+                              fontWeight: '800',
+                              marginBottom: '20px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>Thank You!</h1>
+
+                            <div style={{
+                              width: '80px',
+                              height: '4px',
+                              background: 'linear-gradient(90deg, #fdc51a 0%, #e5b116 100%)',
+                              margin: '0 auto 25px',
+                              borderRadius: '2px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}></div>
+
+                            <h3 style={{
+                              color: '#1e2247',
+                              fontSize: '1.5rem',
+                              fontWeight: '600',
+                              marginBottom: '20px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>Your Declaration Has Been Submitted Successfully!</h3>
+
+                            <p style={{
+                              color: '#6c757d',
+                              fontSize: '1.1rem',
+                              lineHeight: '1.8',
+                              marginBottom: '35px',
+                              maxWidth: '500px',
+                              margin: '0 auto 35px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>
+                              We've received your contractor declaration and compliance form. 
+                              A confirmation email with your declaration (PDF attached) has been sent to your email address.
+                            </p>
+
+                            {/* Info Box */}
+                            <div style={{
+                              background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1) 0%, rgba(253, 197, 26, 0.05) 100%)',
+                              border: '2px solid rgba(253, 197, 26, 0.3)',
+                              borderRadius: '12px',
+                              padding: '25px',
+                              marginBottom: '35px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>
+                              <div style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: '15px',
+                                marginBottom: '15px'
+                              }}>
+                                <i className="bi bi-info-circle-fill" style={{ fontSize: '1.5rem', color: '#1e2247' }}></i>
+                                <h5 style={{
+                                  color: '#1e2247',
+                                  fontSize: '1.1rem',
+                                  fontWeight: '700',
+                                  margin: 0
+                                }}>What Happens Next?</h5>
+                              </div>
+                              <div style={{ textAlign: 'left', maxWidth: '500px', margin: '0 auto' }}>
+                                <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                                  <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>1.</span>
+                                  <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                                    Check your email inbox (including spam folder) for confirmation
+                                  </p>
+                                </div>
+                                <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                                  <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>2.</span>
+                                  <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                                    Our compliance team will review your declaration
+                                  </p>
+                                </div>
+                                <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                                  <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>3.</span>
+                                  <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                                    We may contact you if additional documentation is required
+                                  </p>
+                                </div>
+                                <div style={{ display: 'flex', gap: '12px' }}>
+                                  <span style={{ color: '#fdc51a', fontWeight: '700', fontSize: '1.1rem' }}>4.</span>
+                                  <p style={{ color: '#495057', margin: 0, fontSize: '0.95rem' }}>
+                                    Your compliance status will be updated in our system
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            {/* CTA Button */}
+                            <a 
+                              href="/"
+                              style={{
+                                display: 'inline-block',
+                                background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                color: '#fdc51a',
+                                padding: '16px 50px',
+                                borderRadius: '50px',
+                                fontSize: '1.1rem',
+                                fontWeight: '700',
+                                textTransform: 'uppercase',
+                                letterSpacing: '1px',
+                                textDecoration: 'none',
+                                boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)',
+                                transition: 'all 0.3s ease',
+                                position: 'relative',
+                                zIndex: 1
+                              }}
+                              onMouseOver={(e) => {
+                                e.target.style.background = 'linear-gradient(135deg, #fdc51a 0%, #e5b116 100%)';
+                                e.target.style.color = '#1e2247';
+                                e.target.style.transform = 'translateY(-3px)';
+                                e.target.style.boxShadow = '0 12px 35px rgba(253, 197, 26, 0.4)';
+                              }}
+                              onMouseOut={(e) => {
+                                e.target.style.background = 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)';
+                                e.target.style.color = '#fdc51a';
+                                e.target.style.transform = 'translateY(0)';
+                                e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                              }}
+                            >
+                              <i className="bi bi-house-door-fill" style={{ marginRight: '10px' }}></i>
+                              Back to Home
+                            </a>
+
+                            {/* Contact Info */}
+                            <div style={{
+                              marginTop: '40px',
+                              padding: '20px',
+                              background: 'rgba(30, 34, 71, 0.03)',
+                              borderRadius: '12px',
+                              position: 'relative',
+                              zIndex: 1
+                            }}>
+                              <p style={{ color: '#6c757d', fontSize: '0.95rem', margin: 0 }}>
+                                Questions about compliance? Call us at{' '}
+                                <a href="tel:1300661378" style={{ color: '#1e2247', fontWeight: '700', textDecoration: 'none' }}>
+                                  1300 661 378
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <>
                 {/* Declaration Form Section */}
                 <section className="declaration-form-section" style={{
                     background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
@@ -334,6 +566,26 @@ export default function ContractorDeclarationPage() {
                                                         name="declarationDate" 
                                                         required 
                                                     />
+                                                </div>
+                                            </div>
+
+                                            <div className="row">
+                                                <div className="col-md-12 mb-4">
+                                                    <label htmlFor="declarantEmail" className="classic-form-label">
+                                                        <i className="bi bi-envelope" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                        Contact Email <span style={{ color: '#1e2247' }}>*</span>
+                                                    </label>
+                                                    <input 
+                                                        type="email" 
+                                                        className="form-control classic-form-input" 
+                                                        id="declarantEmail" 
+                                                        name="declarantEmail" 
+                                                        placeholder="Enter your email address"
+                                                        required 
+                                                    />
+                                                    <small className="form-text text-muted" style={{ fontSize: '0.875rem', marginTop: '5px', display: 'block' }}>
+                                                        A confirmation email with the declaration form (PDF) will be sent to this address
+                                                    </small>
                                                 </div>
                                             </div>
 
@@ -1206,6 +1458,8 @@ export default function ContractorDeclarationPage() {
                         cursor: pointer;
                     }
                 `}</style>
+                </>
+                )}
                 <Accreditation />
                 <Subscribe />
             </Layout>

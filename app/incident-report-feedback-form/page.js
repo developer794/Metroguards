@@ -1,6 +1,6 @@
 "use client"
 import Layout from "@/components/layout/Layout";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Accreditation from "@/components/accrediation10";
@@ -9,6 +9,7 @@ import Subscribe from "@/components/homepages/home1/Subscribe";
 
 export default function IncidentReportPage() {
     const [loading, setLoading] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -25,7 +26,7 @@ export default function IncidentReportPage() {
         throw new Error(data?.error || `Request failed: ${res.status}`);
       }
 
-      toast.success("Message sent successfully!");
+      setIsSubmitted(true);
       form.reset();
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
@@ -34,6 +35,13 @@ export default function IncidentReportPage() {
       setLoading(false);
     }
   }
+
+  // Scroll to top when submitted
+  useEffect(() => {
+    if (isSubmitted) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [isSubmitted]);
     return (
         <>
         <ToastContainer position="bottom-right" autoClose={3000} />
@@ -135,53 +143,167 @@ export default function IncidentReportPage() {
                     padding: '60px 0'
                 }}>
                     <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-12">
-                                <div style={{
-                                    background: '#ffffff',
-                                    borderRadius: '20px',
-                                    padding: '40px',
-                                    boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
-                                    border: '2px solid #eceff3',
-                                    position: 'relative',
-                                    overflow: 'hidden'
-                                }}>
-                                    <div className="text-center mb-5">
+                        {/* Thank You Message */}
+                        {isSubmitted ? (
+                            <div className="row justify-content-center">
+                                <div className="col-lg-10">
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
+                                        padding: '60px 40px',
+                                        boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                                        border: '2px solid #eceff3',
+                                        textAlign: 'center'
+                                    }}>
                                         <div style={{
-                                            width: '80px',
-                                            height: '80px',
-                                            background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
+                                            width: '100px',
+                                            height: '100px',
+                                            background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
                                             borderRadius: '50%',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center',
-                                            margin: '0 auto 20px',
-                                            boxShadow: '0 8px 25px rgba(220, 53, 69, 0.3)'
+                                            margin: '0 auto 30px',
+                                            boxShadow: '0 10px 30px rgba(40, 167, 69, 0.3)'
                                         }}>
-                                            <i className="bi bi-file-earmark-text" style={{ fontSize: '2rem', color: '#ffffff' }}></i>
+                                            <i className="bi bi-check-circle" style={{ fontSize: '3rem', color: '#ffffff' }}></i>
                                         </div>
 
                                         <h2 style={{
-                                            color: '#1e2247',
+                                            fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
                                             fontWeight: '700',
-                                            marginBottom: '15px',
+                                            color: '#1e2247',
+                                            marginBottom: '20px',
                                             fontFamily: 'serif'
                                         }}>
-                                            Security Incident Report & Feedback
+                                            Incident Report Submitted!
                                         </h2>
 
                                         <p style={{
+                                            fontSize: '1.1rem',
                                             color: '#6c757d',
-                                            fontSize: '1rem',
-                                            maxWidth: '800px',
-                                            margin: '0 auto'
+                                            lineHeight: '1.6',
+                                            marginBottom: '30px',
+                                            maxWidth: '700px',
+                                            margin: '0 auto 30px'
                                         }}>
-                                            Please complete all relevant sections accurately. This form captures critical incident 
-                                            details for proper documentation, investigation, and response management.
+                                            Thank you for submitting your incident report. Your report has been received and will be reviewed by our security management team immediately.
                                         </p>
+
+                                        <div style={{
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05) 0%, rgba(253, 197, 26, 0.05) 100%)',
+                                            borderRadius: '15px',
+                                            padding: '30px',
+                                            border: '2px solid rgba(253, 197, 26, 0.2)',
+                                            marginBottom: '30px',
+                                            textAlign: 'left'
+                                        }}>
+                                            <h4 style={{
+                                                color: '#1e2247',
+                                                fontWeight: '600',
+                                                marginBottom: '15px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '10px'
+                                            }}>
+                                                <i className="bi bi-info-circle" style={{ color: '#fdc51a', fontSize: '1.5rem' }}></i>
+                                                What Happens Next?
+                                            </h4>
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                padding: '0',
+                                                margin: '0',
+                                                color: '#6c757d',
+                                                fontSize: '1rem',
+                                                lineHeight: '1.8'
+                                            }}>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    A confirmation email with your incident report has been sent to your inbox
+                                                </li>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    Your report will be reviewed by the security management team
+                                                </li>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    An investigation will be initiated if required
+                                                </li>
+                                                <li style={{ paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    You will be contacted if additional information is needed
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a href="/" style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '10px',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            color: '#ffffff',
+                                            padding: '15px 35px',
+                                            borderRadius: '10px',
+                                            textDecoration: 'none',
+                                            fontWeight: '600',
+                                            fontSize: '1rem',
+                                            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)',
+                                            transition: 'all 0.3s ease'
+                                        }}>
+                                            <i className="bi bi-house-door"></i>
+                                            Back to Home
+                                        </a>
                                     </div>
-                                    
-                                    <form onSubmit={handleSubmit} encType="multipart/form-data" noValidate>
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="row justify-content-center">
+                                <div className="col-lg-12">
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
+                                        padding: '40px',
+                                        boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                                        border: '2px solid #eceff3',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div className="text-center mb-5">
+                                            <div style={{
+                                                width: '80px',
+                                                height: '80px',
+                                                background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
+                                                borderRadius: '50%',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                margin: '0 auto 20px',
+                                                boxShadow: '0 8px 25px rgba(220, 53, 69, 0.3)'
+                                            }}>
+                                                <i className="bi bi-file-earmark-text" style={{ fontSize: '2rem', color: '#ffffff' }}></i>
+                                            </div>
+
+                                            <h2 style={{
+                                                color: '#1e2247',
+                                                fontWeight: '700',
+                                                marginBottom: '15px',
+                                                fontFamily: 'serif'
+                                            }}>
+                                                Security Incident Report & Feedback
+                                            </h2>
+
+                                            <p style={{
+                                                color: '#6c757d',
+                                                fontSize: '1rem',
+                                                maxWidth: '800px',
+                                                margin: '0 auto'
+                                            }}>
+                                                Please complete all relevant sections accurately. This form captures critical incident 
+                                                details for proper documentation, investigation, and response management.
+                                            </p>
+                                        </div>
+                                        
+                                        <form onSubmit={handleSubmit} encType="multipart/form-data" noValidate>
                                         {/* Event Type Section */}
                                         <div className="form-section mb-5" style={{
                                             background: 'rgba(220, 53, 69, 0.05)',
@@ -598,6 +720,7 @@ export default function IncidentReportPage() {
                                 </div>
                             </div>
                         </div>
+                        )}
                     </div>
                 </section>
 

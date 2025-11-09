@@ -1,6 +1,6 @@
 "use client"
 import Layout from "@/components/layout/Layout";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Accreditation from "@/components/accrediation10";
@@ -9,6 +9,7 @@ import Subscribe from "@/components/homepages/home1/Subscribe";
 
 export default function BookGuardPage() {
     const [loading, setLoading] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -25,7 +26,7 @@ export default function BookGuardPage() {
                 throw new Error(data?.error || `Request failed: ${res.status}`);
             }
 
-            toast.success("Message sent successfully!");
+            setIsSubmitted(true);
             form.reset();
         } catch (err) {
             toast.error(err.message || "Network error. Please try again.");
@@ -34,6 +35,13 @@ export default function BookGuardPage() {
             setLoading(false);
         }
     }
+
+    // Scroll to top when submitted
+    useEffect(() => {
+        if (isSubmitted) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [isSubmitted]);
 
     return (
         <>
@@ -153,34 +161,149 @@ export default function BookGuardPage() {
                     padding: '80px 0'
                 }}>
                     <div className="container">
-                        <div className="text-center mb-5">
-                            <h2 style={{
-                                fontSize: 'clamp(2rem, 4vw, 2.8rem)',
-                                fontWeight: '700',
-                                color: '#1e2247',
-                                marginBottom: '15px',
-                                fontFamily: 'serif'
-                            }}>
-                                Book Your <span style={{ color: '#fdc51a' }}>Security Guard</span>
-                            </h2>
-                        </div>
+                        {/* Thank You Message */}
+                        {isSubmitted ? (
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8">
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
+                                        padding: '60px 40px',
+                                        boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                                        border: '2px solid #eceff3',
+                                        textAlign: 'center'
+                                    }}>
+                                        <div style={{
+                                            width: '100px',
+                                            height: '100px',
+                                            background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)',
+                                            borderRadius: '50%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            margin: '0 auto 30px',
+                                            boxShadow: '0 10px 30px rgba(40, 167, 69, 0.3)'
+                                        }}>
+                                            <i className="bi bi-check-circle" style={{ fontSize: '3rem', color: '#ffffff' }}></i>
+                                        </div>
 
-                        <div className="row justify-content-center">
-                            <div className="col-lg-8">
-                                <div style={{
-                                    background: '#ffffff',
-                                    borderRadius: '20px',
-                                    padding: '40px',
-                                    boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
-                                    border: '2px solid #eceff3'
-                                }}>
-                                    <div className="text-center mb-4">
-                                        <h4 style={{ color: '#1e2247', fontWeight: '600', marginBottom: '10px' }}>
-                                            Security Booking Request
-                                        </h4>
+                                        <h2 style={{
+                                            fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+                                            fontWeight: '700',
+                                            color: '#1e2247',
+                                            marginBottom: '20px',
+                                            fontFamily: 'serif'
+                                        }}>
+                                            Booking Request Received!
+                                        </h2>
+
+                                        <p style={{
+                                            fontSize: '1.1rem',
+                                            color: '#6c757d',
+                                            lineHeight: '1.6',
+                                            marginBottom: '30px',
+                                            maxWidth: '600px',
+                                            margin: '0 auto 30px'
+                                        }}>
+                                            Thank you for choosing Metro Guards Security Services! We've received your security guard booking request and will respond within <strong style={{ color: '#1e2247' }}>30 minutes</strong>.
+                                        </p>
+
+                                        <div style={{
+                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05) 0%, rgba(253, 197, 26, 0.05) 100%)',
+                                            borderRadius: '15px',
+                                            padding: '30px',
+                                            border: '2px solid rgba(253, 197, 26, 0.2)',
+                                            marginBottom: '30px',
+                                            textAlign: 'left'
+                                        }}>
+                                            <h4 style={{
+                                                color: '#1e2247',
+                                                fontWeight: '600',
+                                                marginBottom: '15px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '10px'
+                                            }}>
+                                                <i className="bi bi-info-circle" style={{ color: '#fdc51a', fontSize: '1.5rem' }}></i>
+                                                What Happens Next?
+                                            </h4>
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                padding: '0',
+                                                margin: '0',
+                                                color: '#6c757d',
+                                                fontSize: '1rem',
+                                                lineHeight: '1.8'
+                                            }}>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    A confirmation email with your booking details has been sent to your inbox
+                                                </li>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    Our security team will review your requirements
+                                                </li>
+                                                <li style={{ marginBottom: '10px', paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    We'll contact you within 30 minutes to confirm availability and details
+                                                </li>
+                                                <li style={{ paddingLeft: '25px', position: 'relative' }}>
+                                                    <i className="bi bi-check2" style={{ position: 'absolute', left: '0', color: '#28a745', fontSize: '1.2rem' }}></i>
+                                                    Professional guards can be deployed within 2 hours
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a href="/" style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '10px',
+                                            background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
+                                            color: '#ffffff',
+                                            padding: '15px 35px',
+                                            borderRadius: '10px',
+                                            textDecoration: 'none',
+                                            fontWeight: '600',
+                                            fontSize: '1rem',
+                                            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.3)',
+                                            transition: 'all 0.3s ease'
+                                        }}>
+                                            <i className="bi bi-house-door"></i>
+                                            Back to Home
+                                        </a>
                                     </div>
+                                </div>
+                            </div>
+                        ) : (
+                            <>
+                                <div className="text-center mb-5">
+                                    <h2 style={{
+                                        fontSize: 'clamp(2rem, 4vw, 2.8rem)',
+                                        fontWeight: '700',
+                                        color: '#1e2247',
+                                        marginBottom: '15px',
+                                        fontFamily: 'serif'
+                                    }}>
+                                        Book Your <span style={{ color: '#fdc51a' }}>Security Guard</span>
+                                    </h2>
+                                </div>
 
-                                    <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-8">
+                                        <div style={{
+                                            background: '#ffffff',
+                                            borderRadius: '20px',
+                                            padding: '40px',
+                                            boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                                            border: '2px solid #eceff3'
+                                        }}>
+                                            <div className="text-center mb-4">
+                                                <h4 style={{ color: '#1e2247', fontWeight: '600', marginBottom: '10px' }}>
+                                                    Security Booking Request
+                                                </h4>
+                                            </div>
+
+                                            <form className="contact-form" onSubmit={handleSubmit} noValidate>
                                         <input type="text" name="companyWebsite" tabIndex="-1" autoComplete="off" style={{ display: "none" }} />
 
                                         <div className="row">
@@ -518,6 +641,8 @@ export default function BookGuardPage() {
                                 </div>
                             </div>
                         </div>
+                            </>
+                        )}
                     </div>
                 </section>
 
