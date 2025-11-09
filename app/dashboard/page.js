@@ -2,6 +2,7 @@
 import { cookies } from "next/headers";
 import { jwtVerify } from "jose";
 import StatsCards from "./_components/StatsCards";
+import HeaderClient from "./_components/HeaderClient";
 
 async function getUser() {
   const token = cookies().get("auth")?.value;
@@ -46,6 +47,8 @@ export default async function DashboardPage() {
   
   return (
     <div className="space-y-8">
+      {/* Full Header - Only shown on main dashboard page */}
+      <HeaderClient email={user.email} minimal={false} />
       
 
       {/* Stats Grid */}

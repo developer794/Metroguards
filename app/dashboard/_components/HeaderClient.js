@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function HeaderClient({ email }) {
+export default function HeaderClient({ email, minimal = false }) {
   const [showDropdown, setShowDropdown] = useState(false);
   
   const toggleSidebar = () => {
@@ -9,6 +9,14 @@ export default function HeaderClient({ email }) {
     if (aside) aside.classList.toggle('-translate-x-full');
   };
 
+  // Minimal version - only show dropdown
+  if (minimal) {
+    return (
+      <></>
+    );
+  }
+
+  // Full version - for main dashboard page
   return (
     <header style={{
       position: 'sticky',
