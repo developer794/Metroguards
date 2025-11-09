@@ -21,8 +21,8 @@ import ContactWidget from "@/components/contactWidget";
 
 
 export const metadata = {
-  title: 'Security Guard Services | Security Company in Melbourne',
-  description: 'Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173',
+  title: 'Security Company in Melbourne | Licensed Security Guards',
+  description: 'Licensed Security Company in Melbourne CBD & suburbs, protecting homes and businesses 24/7. Call Metro security Guards for instant quotes today.',
   viewport: {
     width: 'device-width',
     initialScale: 1,

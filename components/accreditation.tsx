@@ -16,13 +16,26 @@ export default function Accreditation() {
   ]
 
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-10 lg:px-18">
-      <div className="max-w-7xl mx-auto ml-[50px]">
-        {/* Heading (always left) */}
-        <div className="mb-0 ml-[50px]">
-          <h2 className="acc-heading text-3xl sm:text-4xl font-bold text-gray-900">
+    <section className="bg-white py-16 px-6 sm:px-10 lg:px-18">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="mb-12 px-10">
+          {/* Yellow Label */}
+          <div className="mb-4">
+            <span className="acc-label">
+              Accreditation
+            </span>
+          </div>
+
+          {/* Main Heading */}
+          <h2 className="acc-heading">
             Accreditation & Partnerships
           </h2>
+
+          {/* Description */}
+          <p className="acc-description">
+            Metro Guards is recognized as one of the best security companies in Melbourne for licensed, reliable, and professional security services.
+          </p>
         </div>
 
         {/* Single row for all logos */}
@@ -30,14 +43,13 @@ export default function Accreditation() {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/11 items-center justify-center   rounded-md" 
+              className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/11 items-center justify-center rounded-md" 
             >
               <a
                 href={client.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block transition-transform duration-200"
-                
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
@@ -46,8 +58,7 @@ export default function Accreditation() {
                   alt={`${client.name} logo`}
                   width={200}
                   height={150}
-                  className=" object-contain w-[350px] md:w-[300px] lg:w-[450px] h-[100px] md:h-[200px] lg:h-[150px] m-0 p-0"
-                  
+                  className="object-contain w-[350px] md:w-[300px] lg:w-[450px] h-[100px] md:h-[200px] lg:h-[150px] m-0 p-0"
                 />
               </a>
             </div>
@@ -56,20 +67,45 @@ export default function Accreditation() {
       </div>
 
       <style jsx>{`
-        .acc-heading {
-        padding-top: 50px;
-        padding-bottom: 50px;
-          font-size: 3rem;
+        .acc-label {
+          font-size: 1.8rem;
           font-weight: 700;
-          margin: 0;
-          color: #000;
+          color: #fdc51a;
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .acc-heading {
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #1e2247;
+          line-height: 1.2;
+          margin: 0 0 24px 0;
           letter-spacing: -0.02em;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
+        .acc-description {
+          font-size: 1.0625rem;
+          line-height: 1.7;
+          color: #333;
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          max-width: 800px;
+        }
+
         @media (max-width: 768px) {
+          .acc-label {
+            font-size: 1.5rem;
+          }
+
           .acc-heading {
             font-size: 2rem;
+          }
+
+          .acc-description {
+            font-size: 1rem;
           }
         }
       `}</style>

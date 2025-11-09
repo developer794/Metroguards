@@ -12,16 +12,42 @@ export default function Home() {
     <div className="container">
         <div className="row">
             <div className="col-lg-12 mb-5">
-                <div className="subtitle mb-3">
-                    <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
-                        <i className="bi bi-building me-2"></i>
-                        VERSATILE PROTECTION
+                {/* Yellow Label */}
+                <div className="mb-3">
+                    <span style={{ 
+                        fontSize: '1.8rem', 
+                        fontWeight: '700', 
+                        color: '#fdc51a', 
+                        letterSpacing: '-0.02em', 
+                        textTransform: 'uppercase',
+                        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                    }}>
+                        Industries
                     </span>
                 </div>
-                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+
+                {/* Main Heading */}
+                <h2 style={{
+                    fontSize: '2.5rem',
+                    fontWeight: '700',
+                    color: '#1e2247',
+                    lineHeight: '1.2',
+                    margin: '0 0 24px 0',
+                    letterSpacing: '-0.02em',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                }}>
                     Industries We Protect
                 </h2>
-                <p className="lead" style={{color: 'black'}}>
+
+                {/* Description */}
+                <p style={{
+                    fontSize: '1.0625rem',
+                    lineHeight: '1.7',
+                    color: '#333',
+                    margin: '0',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                    maxWidth: '800px'
+                }}>
                     We provide comprehensive security services for a wide range of industries in Melbourne, tailoring our solutions to meet your specific needs.
                 </p>
             </div>

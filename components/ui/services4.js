@@ -40,8 +40,8 @@ const data = [
 ];
 
 const Services4 = ({ 
-  title = "Our Services", 
-  description = "Discover our comprehensive range of professional security services designed to protect your business, events, and properties across Melbourne with cutting-edge technology and experienced personnel.", 
+  title = "Licensed Security Services Melbourne, Victoria", 
+  description = "Metro Guards offers a full range of security services in Melbourne for homes, businesses, and events. Our licensed private security guards are trained to prevent risks, respond immediately, and provide peace of mind.",
   items = data.slice(0, 4), // Show only first 4 items
 }) => {
   return (
@@ -50,6 +50,18 @@ const Services4 = ({
         <div className="container">
           <div className="services-header">
             <div className="services-header-content">
+            <div className="about-label" style={{ marginBottom: '16px' }}>
+            <span style={{ 
+              fontSize: '1.8rem', 
+              fontWeight: '700', 
+              color: '#fdc51a', 
+              letterSpacing: '-0.02em', 
+              textTransform: 'uppercase',
+              fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+            }}>
+              Our Services
+            </span>
+          </div>
               <h2 className="services-title">{title}</h2>
               <p className="services-description" style={{ color: 'black' ,fontFamily:' -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'}}>{description}</p>
             </div>

@@ -148,20 +148,15 @@ export default function Location() {
               <div className="section-title">
                 <span className="section-subtitle">COMPREHENSIVE PROTECTION</span>
                 <h2 className="main-title">
-                  Our Service<br />
-                  Coverage
+                Coverage & Local Security Services in Melbourne
                 </h2>
               </div>
               <div className="description-content">
                 <p className="description-text">
-                  We offer security solutions across Melbourne Metro Area and beyond. When you need Security Guards, 
-                  Mobile Security Patrols, Static Guards, or Event Security, there's a good chance we can help.
+                Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected around the clock.
+
                 </p>
-                <p className="description-text">
-                  Below is an easy reference to see if we cover your area for regular mobile security service. 
-                  For intermittent or one-off services like Party Security or VIP Protection, our professional 
-                  security guards can travel to meet your needs beyond these areas.
-                </p>
+                
               </div>
             </div>
 

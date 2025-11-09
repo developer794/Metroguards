@@ -7,7 +7,7 @@ import About2 from "@/components/homepages/home1/About2"
 import Blog from "@/components/homepages/home1/Blog"
 import CaseStudy from "@/components/homepages/home1/CaseStudy"
 //import Pricing from "@/components/homepages/home1/Pricing"
-import Subscribe from "@/components/homepages/home1/Subscribe"
+
 import TaxBusiness from "@/components/homepages/home1/TaxBusiness"
 import Testimonial from "@/components/homepages/home1/Testimonial"
 import Welcome from "@/components/homepages/home1/Welcome"
@@ -27,6 +27,12 @@ import Industry from "@/components/homepages/home1/industry";
 import VideoSection from "@/components/VideoSection";
 import Testimonials from "@/components/Testimonials";
 import NewHero from "@/components/new-hero";
+import WhyTrustUs from "@/components/homepages/home1/WhyTrustUs";
+import SecurityChallenges from "@/components/homepages/home1/SecurityChallenges";
+import ProcessSteps from "@/components/homepages/home1/ProcessSteps";
+import AboutMetroGuards from "@/components/homepages/home1/AboutMetroGuards";
+import FAQSection from "@/components/homepages/home1/FAQSection";
+import Subscribe from '@/components/homepages/home1/Subscribe';
 
 
 /*<Hero 
@@ -49,20 +55,26 @@ export default function Page() {
                 
                 <GoodPeople />
                 <Services4 />
-                <MarqueeDemo />
-                
-               <Industry />
-               <VideoSection />
-               
-                
-                <Accreditation />
-                <Awareness />
+                <WhyTrustUs />
+                <SecurityChallenges />
+                <ProcessSteps />
                 <Location />
-                
-                
+                <AboutMetroGuards />
+                <Accreditation />
+                <Industry />
+                <MarqueeDemo />
+                <VideoSection />
                 <Blog4 />
+                
+                <Awareness />
+                
+                
+                
+                
                  
                 <Testimonials />
+                <FAQSection />
+                <Subscribe />
             </Layout>
             
             <style jsx>{`

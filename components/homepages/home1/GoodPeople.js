@@ -36,7 +36,7 @@ export default function GoodPeople() {
               display: 'block',
               margin: '0'
             }}>
-              MetroGuards Security Services 
+              Where to Find 24/7 Security Guard Services in Melbourne?
             </span>
           </div>
 
@@ -50,7 +50,7 @@ export default function GoodPeople() {
               margin: '0',
               letterSpacing: '-0.02em',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-            }}>Right People.</h2>
+            }}>Professional Guards.</h2>
             <h2 className="heading-line" style={{
               fontSize: '2.5rem',
               fontWeight: '700',
@@ -59,7 +59,7 @@ export default function GoodPeople() {
               margin: '0',
               letterSpacing: '-0.02em',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-            }}>Right Protection.</h2>
+            }}>Proven Protection.</h2>
           </div>
 
           {/* Description */}
@@ -71,7 +71,7 @@ export default function GoodPeople() {
               margin: '0 0 16px 0',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
             }}>
-              Metro Guards has served its clients in Melbourne, Victoria, and its suburbs for years. We have a rigorous procedure for hiring and training our guards. Our highly professional security guards can exceptionally address the safety needs of individual, corporate, institutional, residential, and commercial clients.
+              Metro Guards offers 24/7 security coverage across Melbourne. Our trained and licensed security guards protect homes, commercial sites, and events with real-time monitoring, rapid response, and proactive risk management, keeping your property safe at all hours.
             </p>
             
           </div>
