@@ -37,22 +37,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                                 </Link>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                <Link href="/get-quotation" style={{
-                                    backgroundColor: '#1e2247',
-                                    color: '#fff',
-                                    textDecoration: 'none',
-                                    padding: '8px 16px',
-                                    borderRadius: '5px',
-                                    fontSize: '14px',
-                                    fontWeight: '600',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '6px',
-                                    transition: 'background-color 0.3s ease'
-                                }}>
-                                    {/* <i className="fa-solid fa-phone" style={{ fontSize: '12px' }} /> */}
-                                    Get Quotation
-                                </Link>
+                                
                                 <div className="mobile-nav-icon" onClick={handleMobileMenu} style={{
                                     cursor: 'pointer',
                                     fontSize: '24px',
