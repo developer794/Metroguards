@@ -71,6 +71,7 @@ export default function RootLayout({ children }) {
     <html lang="en" id="#top">
       <head>
         <StructuredData />
+        <link rel="icon" href="/assets/img/logo/icon.png" type="image/png" sizes="16x16"></link>
       </head>
       <body className="relative">
         {/* Google Analytics - Production Only */}

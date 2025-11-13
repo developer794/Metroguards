@@ -18,7 +18,7 @@ export default function StructuredData() {
     "telephone": "1300731173",
     "email": "admin@metroguards.com.au",
     "logo": "https://metroguards.com.au/assets/img/logo/metroguards logo 2.png",
-    "image": "https://metroguards.com.au/assets/img/logo/metroguards logo 2.png",
+    "image": "https://metroguards.com.au/assets/img/logo/icon.png",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
