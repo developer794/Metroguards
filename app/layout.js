@@ -37,7 +37,7 @@ export const metadata = {
     siteName: "Metro Guards",
     images: [
       {
-        url: "https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg",
+        url: "https://metroguards.com.au/assets/img/logo/metroguards logo 2.png",
         width: 1200,
         height: 630,
         alt: "Metro Guards Preview",
@@ -50,7 +50,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Security Guard Services - Security Company in Melbourne",
     description: "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
-    images: ["https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg"],
+    images: ["https://metroguards.com.au/assets/img/logo/metroguards logo 2.png"],
   },
   robots: {
     index: false,
