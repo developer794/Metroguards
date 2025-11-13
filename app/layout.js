@@ -35,22 +35,7 @@ export const metadata = {
   },
   themeColor: '#1e2247',
   manifest: '/manifest.json',
-  openGraph: {
-    title: "Security Guard Services - Security Company in Melbourne",
-    description: "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
-    url: "https://metroguards.com.au",
-    siteName: "Metro Guards",
-    images: [
-      {
-        url: "https://metroguards.com.au/assets/img/logo/metroguards logo.jpg",
-        width: 600,
-        height: 630,
-        alt: "Metro Guards Preview",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+ 
   
   robots: {
     index: false,
