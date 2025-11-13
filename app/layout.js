@@ -38,7 +38,7 @@ export const metadata = {
     images: [
       {
         url: "https://metroguards.com.au/assets/img/logo/metroguards logo.jpg",
-        width: 1200,
+        width: 600,
         height: 630,
         alt: "Metro Guards Preview",
       },
