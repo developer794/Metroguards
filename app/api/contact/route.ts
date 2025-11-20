@@ -159,58 +159,13 @@ function createAdminNotificationEmail(
                     </tr>
                   </table>
 
-                  <!-- Action Required Box -->
-                  <table width="100%" cellpadding="0" cellspacing="0" style="background: rgba(30, 34, 71, 0.05); border: 2px solid #1e2247; margin-bottom: 30px;">
-                    <tr>
-                      <td style="padding: 20px 25px;">
-                        <h3 style="color: #1e2247; margin: 0 0 18px 0; font-size: 17px; font-weight: 700; letter-spacing: 1px; font-family: 'Merriweather', Georgia, serif;">
-                          📋 Action Required
-                        </h3>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="padding: 0 25px 25px 25px;">
-                        <table width="100%" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td style="padding: 10px 0; vertical-align: top; width: 25px;">
-                              <strong style="color: #fdc51a; font-size: 18px; font-family: 'Merriweather', Georgia, serif;">1.</strong>
-                            </td>
-                            <td style="padding: 10px 0 10px 10px;">
-                              <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.7; font-family: 'Lato', Arial, sans-serif;">
-                                Review the inquiry details carefully
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding: 10px 0; vertical-align: top;">
-                              <strong style="color: #fdc51a; font-size: 18px; font-family: 'Merriweather', Georgia, serif;">2.</strong>
-                            </td>
-                            <td style="padding: 10px 0 10px 10px;">
-                              <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.7; font-family: 'Lato', Arial, sans-serif;">
-                                Contact the customer within <strong style="color: #1e2247;">24 hours</strong> via email or phone
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding: 10px 0; vertical-align: top;">
-                              <strong style="color: #fdc51a; font-size: 18px; font-family: 'Merriweather', Georgia, serif;">3.</strong>
-                            </td>
-                            <td style="padding: 10px 0 10px 10px;">
-                              <p style="margin: 0; color: #374151; font-size: 14px; line-height: 1.7; font-family: 'Lato', Arial, sans-serif;">
-                                Update the inquiry status in the dashboard after follow-up
-                              </p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
+                  
 
                   <!-- CTA Button -->
                   <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 30px;">
                     <tr>
                       <td align="center">
-                        <a href="${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/dashboard/bookings" style="display: inline-block; background: #1e2247; color: #fdc51a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; font-family: 'Lato', Arial, sans-serif; box-shadow: 0 4px 12px rgba(30, 34, 71, 0.3);">
+                        <a href="${process.env.NEXT_PUBLIC_BASE_URL}/dashboard/bookings" style="display: inline-block; background: #1e2247; color: #fdc51a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; letter-spacing: 0.5px; font-family: 'Lato', Arial, sans-serif; box-shadow: 0 4px 12px rgba(30, 34, 71, 0.3);">
                           📊 View in Dashboard
                         </a>
                       </td>
