@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
+import Testimonials from "@/components/Testimonials";
 
 export default function BuildingSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -23,6 +25,33 @@ export default function BuildingSecurityPage() {
     const toggleFeature = (index) => {
         setActiveFeature(activeFeature === index ? null : index);
     };
+
+    const buildingSecurityFaqs = [
+        {
+            question: "What does a building security guard do?",
+            answer: "A building security guard is responsible for protecting the premises, people, and property of a specific building, whether it's residential, commercial, or government. Their daily duties include monitoring CCTV cameras, controlling access points, patrolling the premises, and ensuring the overall safety of occupants and visitors."
+        },
+        {
+            question: "Do you provide apartment building security guards in Melbourne?",
+            answer: "Yes. Metro Guards offers licensed apartment building security guards across Melbourne and nearby suburbs. Our guards are trained to manage residential buildings, handle access control, assist residents, and maintain 24/7 surveillance to keep your apartment community secure."
+        },
+        {
+            question: "What's the difference between residential and office building security guards?",
+            answer: "Residential building security guards focus on protecting residents, monitoring guests, and ensuring safety in shared spaces such as parking lots or lobbies. Office building security guards, on the other hand, concentrate on employee safety, visitor management, and safeguarding business assets during and after working hours."
+        },
+        {
+            question: "How do building security guards respond to emergencies?",
+            answer: "All Metro Guards building security personnel are trained in emergency response, including fire safety, first aid, and evacuation procedures. In case of any incident, they take immediate action to protect people and property while coordinating with emergency services."
+        },
+        {
+            question: "Are your building security guards available for night shifts?",
+            answer: "Yes. We offer 24/7 protection, including overnight security. Our night building security guards remain alert throughout the night, ensuring continuous monitoring, physical patrols, and quick response in case of any suspicious activity."
+        },
+        {
+            question: "How can I hire building security guards in Melbourne?",
+            answer: "You can contact Metro Guards directly through our website or call our team for a free consultation. We'll assess your building's security requirements, recommend the right number of guards, and deploy trained professionals promptly."
+        }
+    ];
 
     const services = [
         {
@@ -130,7 +159,7 @@ export default function BuildingSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="BUILDING SITE SECURITY GUARDS"
-                mainTitle="BUILDING SITE SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Building Security Guards Melbourne  | On-Site Security Services"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Building%20Security%20Guard/58108D6B-9846-43C4-89E9-EF7DFEBAE8E6_1_105_c.webp"
                 
             >
@@ -157,7 +186,7 @@ export default function BuildingSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -168,7 +197,7 @@ export default function BuildingSecurityPage() {
                                         >
                                             Building Site Security, <br />
                                             <span style={{color: '#fdc51a'}}>You Can Trust</span>
-                                        </h1>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -179,10 +208,12 @@ export default function BuildingSecurityPage() {
                                                 textAlign: 'left'
                                             }}
                                         >
-                                            When the last tradesman clocks out and the building lights fade, that's when our work begins.  Most people never think about what happens between midnight and dawn. But at Metro Guards, those hours matter most: the quiet hum of the lifts, the echo of footsteps down an empty corridor, the sense that everything valuable in the building is now in our hands. 
-                                            <br />Our building site security guards don't just keep watch; We understand the responsibility that comes with every key, every camera, every alarm. We know what it means to protect your hard work.
-                                        </p>
-                                        
+                                            Metro Guards provides professional, fully licensed building security guards trained to protect corporate buildings, commercial sites, apartment buildings, and private facilities across Melbourne.
+                                            <br /><br />Our officers don't simply guard the site, they manage access control, safeguard high-value areas, monitor building site security cameras, and maintain strict physical security protocols. Every checkpoint, every patrol, every interaction is verified in real time, giving you confidence that your property is protected exactly the way it should be.
+                                            <br /><br />
+                                            We specialise in commercial building security guards, office building security guard services, and security guard apartment building operations, ensuring your entire site, from lobbies to rooftops, is guarded with precision and professionalism.
+                                            </p>
+                                                                                    
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
                                                     href="/get-quotation" 
@@ -299,10 +330,11 @@ export default function BuildingSecurityPage() {
                     </div>
 
                     {/*===== Enhanced Services Section =====*/}
-                    <div className="services-section section-padding" style={{
+                    <div className="services-section " style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
-                        overflow: 'hidden'
+                        overflow: 'hidden',
+                        marginTop: '10px'
                     }}>
                         {/* Background Pattern */}
                         <div style={{
@@ -403,7 +435,7 @@ export default function BuildingSecurityPage() {
                                                 display: "inline-flex", 
                                                 alignItems: "center", 
                                                 gap: "15px", 
-                                                marginBottom: "25px" 
+                                                
                                             }}>
                                                 <div style={{
                                                     width: "50px",
@@ -434,16 +466,113 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                While The City Sleeps, <span style={{ color: "#fdc51a" }}>We're Moving</span>
+                                               Chosen by Strata Committees
+                                               <span style={{ color: "#fdc51a" }}>Across Melbourne</span>
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
+                                               
+                                            }}>
+                                                With real-time reporting, GPS-verified patrols, and 24/7 oversight from our Melbourne operations centre, you always have full visibility over your site's protection.
+                                            </p>
+
+                                            <div style={{ 
+                                                background: "linear-gradient(135deg, rgba(253, 197, 26, 0.05) 0%, rgba(253, 197, 26, 0.02) 100%)",
+                                                border: "2px solid rgba(253, 197, 26, 0.2)",
+                                                borderRadius: "15px",
+                                                padding: "30px",
+                                                
+                                            }}>
+                                                <h4 style={{ 
+                                                    color: "#1e2247", 
+                                                    fontSize: "1.4rem",
+                                                    fontWeight: "700",
+                                                    marginBottom: "20px"
+                                                }}>
+                                                    You'll know:
+                                                </h4>
+                                                
+                                                <ul style={{ 
+                                                    listStyle: "none", 
+                                                    padding: 0, 
+                                                    margin: 0 
+                                                }}>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>Who accessed your building</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>Which areas were patrolled</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>What activity occurred</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>When incidents were managed and resolved</strong>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
                                                 marginBottom: "30px"
                                             }}>
-                                                At Metro Guards, we don't wait for something to go wrong, <strong style={{color: '#1e2247'}}>we prevent it</strong>. Our guards patrol gates, scan doors, walk halls, and monitor cameras with precision and care. Every action is logged, verified, and reviewed, not to tick boxes, but to give you something few can offer: <strong style={{color: '#1e2247'}}>certainty</strong>. Because your peace of mind shouldn't rely on assumptions, it should rest on <strong style={{color: '#fdc51a'}}>proof</strong>. With 100% client portal transparency and 24/7 support from our Melbourne operations centre, you'll always know what's happening in your building, every patrol, every report, every response, live and visible.
+                                                No assumptions, only transparent, verifiable security for your building, your people, and your operations. Metro Guards removes guesswork and replaces it with certainty, compliance, and a level of building security guard performance Melbourne's corporate clients rely on.
                                             </p>
                                         </div>
 
@@ -456,8 +585,6 @@ export default function BuildingSecurityPage() {
                         </div>
                     </div>
 
-                    
-                    
 
                     {/*=====  Section 2 =====*/}
                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
@@ -503,18 +630,113 @@ export default function BuildingSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    A Quiet Reality No One Likes to Admit
+                                                Why Professional Guards Are Essential 
                                                 </h2>
-                                                <p className="lead" style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1.2rem',
-                                                    lineHeight: '1.8',
-                                                    margin: 0
-                                                }}>
-                                                    Ask any site manager, and they'll tell you the same story:
-                                                    <br /><br />
-                                                    A door left ajar. A guard who missed a round. A few missing tools that <strong style={{color: '#1e2247'}}>"no one saw."</strong> These small lapses turn into big losses. And by the time you find out, it's already too late. That's the problem we built <strong style={{color: '#fdc51a'}}>Metro Guards</strong> to solve, making <strong style={{color: '#fdc51a'}}>reliability the rule, not the exception</strong>.
-                                                </p>
+                                                <div>
+                                                    <p className="lead" style={{
+                                                        color: '#6c757d',
+                                                        fontSize: '1.2rem',
+                                                        lineHeight: '1.8',
+                                                        marginBottom: '20px'
+                                                    }}>
+                                                        Without trained building security guards, sites face:
+                                                    </p>
+
+                                                    <ul style={{ 
+                                                        listStyle: "none", 
+                                                        padding: 0, 
+                                                        margin: '0 0 25px 0' 
+                                                    }}>
+                                                        <li style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                <strong style={{ color: "#1e2247" }}>Unauthorised access</strong>
+                                                            </span>
+                                                        </li>
+                                                        <li style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                <strong style={{ color: "#1e2247" }}>After-hours vulnerabilities</strong>
+                                                            </span>
+                                                        </li>
+                                                        <li style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                <strong style={{ color: "#1e2247" }}>Increased liability & compliance gaps</strong>
+                                                            </span>
+                                                        </li>
+                                                        <li style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                <strong style={{ color: "#1e2247" }}>Theft of equipment or assets</strong>
+                                                            </span>
+                                                        </li>
+                                                        <li style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                <strong style={{ color: "#1e2247" }}>Disturbances affecting staff or tenants</strong>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <p className="lead" style={{
+                                                        color: '#6c757d',
+                                                        fontSize: '1.2rem',
+                                                        lineHeight: '1.8',
+                                                        margin: 0
+                                                    }}>
+                                                        That's why Metro Guards deploys trained building security officers and commercial building security guards who eliminate these weaknesses before they become incidents.
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                         </div>
@@ -756,7 +978,7 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 4px 8px rgba(0,0,0,0.3)"
                                             }}>
-                                                The People Behind the <span style={{ color: "#fdc51a" }}>Uniforms</span>
+                                                Where Professionalism Meets <span style={{ color: "#fdc51a" }}> People</span>
                                             </h2>
                                             
                                             <p style={{ 
@@ -765,8 +987,8 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.8",
                                                 marginBottom: "30px"
                                             }}>
-                                                Our team isn't made up of placeholders in vests. We're <strong style={{color: '#fdc51a'}}>licensed professionals</strong>, trained under ISO-certified standards, insured, and held to the same level of accountability we hold ourselves to. Most of our security guards come from defence, emergency services, and security backgrounds. We've seen what happens when complacency takes over, and <strong style={{color: '#fdc51a'}}>We refuse to let it happen on our watch</strong>.
-                                            </p>
+                                               Our officers are not just guards, they’re trained building security officers who understand the complexities of modern facilities.
+                                               </p>
                                         </div>
                                         
                                         {/* Professional Standards Grid */}
@@ -774,24 +996,24 @@ export default function BuildingSecurityPage() {
                                             <div className="row g-3">
                                                 {[
                                                     {
-                                                        icon: "fas fa-certificate",
-                                                        title: "ISO Certified",
-                                                        subtitle: "Training Standards"
+                                                        icon: "fas fa-key",
+                                                        title: "Corporate building access control",
+                                                        
                                                     },
                                                     {
-                                                        icon: "fas fa-shield-alt",
-                                                        title: "Fully Licensed",
-                                                        subtitle: "& Insured"
+                                                        icon: "fas fa-building",
+                                                        title: "Security guard apartment building operations",
+                                                        
                                                     },
                                                     {
-                                                        icon: "fas fa-user-tie",
-                                                        title: "Defence Background",
-                                                        subtitle: "Emergency Services"
+                                                        icon: "fas fa-exclamation-triangle",
+                                                        title: "Incident response & emergency procedures",
+                                                        
                                                     },
                                                     {
-                                                        icon: "fas fa-eye",
-                                                        title: "Accountability",
-                                                        subtitle: "Standards"
+                                                        icon: "fas fa-clipboard-check",
+                                                        title: "Loss prevention & site safety protocols",
+                                                        
                                                     }
                                                 ].map((item, index) => (
                                                     <div key={index} className="col-md-6">
@@ -856,6 +1078,17 @@ export default function BuildingSecurityPage() {
                                             ))}
                                             </div>
                                         </div>
+                                        <p style={{ 
+                                                color: "rgba(255, 255, 255, 0.9)", 
+                                                fontSize: "1.2rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "30px"
+                                            }}>
+                                               Many come from defence, emergency services, and advanced security operations backgrounds. They know what can go wrong in a building and how to prevent it.
+                                               
+                                            <br /><br />
+                                            When we take responsibility for your site, we treat it like our own.
+                                               </p>
                                     </div>
                                 </div>
                             </div>
@@ -950,7 +1183,7 @@ export default function BuildingSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Security Tailored to <span style={{color: '#fdc51a'}}>Every Building</span>
+                                            Melbourne’s Trusted Custom-Tailored <span style={{color: '#fdc51a'}}>Building Security Guards</span>
                                         </h2>
                                         
                                         <p style={{
@@ -958,11 +1191,11 @@ export default function BuildingSecurityPage() {
                                             fontSize: '1.4rem',
                                             lineHeight: '1.7',
                                             marginBottom: '60px',
-                                            maxWidth: '800px',
+                                            maxWidth: '1200px',
                                             margin: '0 auto 60px'
                                         }}>
-                                            No two buildings are the same, and neither are their security needs. Whether it's a high-rise residence that never really sleeps or a commercial site that shuts down after hours, our guards <strong style={{color: '#fdc51a'}}>adapt to your environment</strong> and your people.
-                                        </p>
+                                            Our trained commercial & residential building security guards deliver customised protection for office buildings, construction sites, mixed-use developments, and apartment complexes. Whether your property is in Melbourne CBD, St Kilda Road, South Yarra, or Docklands, we adapt our security operations to match your building’s environment, visitor flow, and operational needs, ensuring total safety and zero disruption.
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -1026,14 +1259,16 @@ export default function BuildingSecurityPage() {
                                             zIndex: 2,
                                             marginBottom: '25px'
                                         }}>
-                                            Residential Properties
+                                            Apartment Buildings & Mixed-Use Spaces
                                         </h3>
 
                                         <div className="features-list" style={{position: 'relative', zIndex: 2}}>
                                             {[
-                                                "Friendly front-desk support for residents and visitors",
-                                                "Common-area patrols that actually happen - gyms, car parks, rooftops",
-                                                "Emergency response and fire safety assistance when it matters most"
+                                                "Access control for residents, visitors & contractors",
+                                                "Lobby and concierge-style support",
+                                                "Patrols covering lobbies, lifts, rooftops, common facilities, Pool area, Gym, basements & car parks",
+                                                "Responding to noise, after-hours movement & safety concerns",
+                                                "Monitoring common areas such as gyms, mailrooms & loading bays"
                                             ].map((feature, index) => (
                                                 <div key={index} className="feature-item d-flex align-items-start mb-4">
                                                     <div style={{
@@ -1117,14 +1352,16 @@ export default function BuildingSecurityPage() {
                                             zIndex: 2,
                                             marginBottom: '25px'
                                         }}>
-                                            Commercial Sites
+                                            Commercial Sites & Corporate Buildings
                                         </h3>
 
                                         <div className="features-list" style={{position: 'relative', zIndex: 2}}>
                                             {[
-                                                "Access control for restricted zones",
-                                                "CCTV monitoring and alarm response", 
-                                                "Asset protection and after-hours visitor management"
+                                                "Restricted-zone access management",
+                                                "CCTV and building site security camera monitoring",
+                                                "Protection of sensitive areas and equipment",
+                                                "Loading dock oversight & after-hours visitor control",
+                                                "Secure lock-up and open-up procedures"
                                             ].map((feature, index) => (
                                                 <div key={index} className="feature-item d-flex align-items-start mb-4">
                                                     <div style={{
@@ -1208,10 +1445,9 @@ export default function BuildingSecurityPage() {
                                                 marginRight: 'auto',
                                                 fontWeight: '600'
                                             }}>
-                                                <strong style={{color: '#fdc51a'}}>Every task, every report, every detail is uploaded to your portal in real time.</strong> 
+                                                <strong style={{color: '#fdc51a'}}>Serving Melbourne-Wide:                                                </strong> 
                                                 <br />
-                                                No waiting till morning to know what went on overnight.
-                                            </p>
+                                                CBD | Southbank | Docklands | Carlton | Richmond | St Kilda | South Yarra | Dandenong | Sunshine | Geelong & Metropolitan Melbourne</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1231,10 +1467,11 @@ export default function BuildingSecurityPage() {
                                         </span>
                                     </div>
                                     <h2 className="display-5 fw-bold mb-4 text-white">
-                                        Our Technology & Supervision
+                                    Technologies That Power Your Security
                                     </h2>
                                     <p className="lead text-white" style={{opacity: '0.9'}}>
-                                        We don't just promise security - we prove it with cutting-edge technology and rigorous supervision that keeps every guard accountable and every site protected.
+                                    Modern buildings demand modern security solutions. We combine trained guards with advanced technology for complete visibility and accountability.
+
                                     </p>
                                 </div>
                             </div>
@@ -1295,7 +1532,7 @@ export default function BuildingSecurityPage() {
                                             </h4>
                                             
                                             <p className="text-center" style={{color: '#6c757d', lineHeight: '1.7', fontSize: '1rem'}}>
-                                                GPS check-ins confirm every patrol and prove real movement, not guesses.
+                                            GPS-verified check-ins prove actual patrol movement, not assumptions.
                                             </p>
                                         </div>
                                     </div>
@@ -1353,11 +1590,12 @@ export default function BuildingSecurityPage() {
                                             
                                         <div className="tech-content position-relative" style={{zIndex: 2}}>
                                             <h4 className="text-center mb-3 fw-bold" style={{color: '#1e2247', fontSize: '1.4rem'}}>
-                                                Real-Time Reporting
+                                            Building site security cameras (CCTV)
+
                                             </h4>
                                             
                                             <p className="text-center" style={{color: '#6c757d', lineHeight: '1.7', fontSize: '1rem'}}>
-                                                Receive live updates through your client portal as activities happen.
+                                            Every task, photo log, or incident update appears instantly in your client portal.
                                             </p>
                                         </div>
                                     </div>
@@ -1415,11 +1653,12 @@ export default function BuildingSecurityPage() {
                                             
                                         <div className="tech-content position-relative" style={{zIndex: 2}}>
                                             <h4 className="text-center mb-3 fw-bold" style={{color: '#1e2247', fontSize: '1.4rem'}}>
-                                                Supervisor Inspections
+                                            Supervisor Inspections
                                             </h4>
                                             
                                             <p className="text-center" style={{color: '#6c757d', lineHeight: '1.7', fontSize: '1rem'}}>
-                                                Random visits keep every shift active, accountable, and on standard.
+                                            Unannounced on-site visits ensure guards remain active, compliant, and consistent.
+
                                             </p>
                                         </div>
                                     </div>
@@ -1477,11 +1716,11 @@ export default function BuildingSecurityPage() {
                                             
                                         <div className="tech-content position-relative" style={{zIndex: 2}}>
                                             <h4 className="text-center mb-3 fw-bold" style={{color: '#1e2247', fontSize: '1.4rem'}}>
-                                                Instant Incident Alerts
+                                            Instant Incident Alerts
                                             </h4>
                                             
                                             <p className="text-center" style={{color: '#6c757d', lineHeight: '1.7', fontSize: '1rem'}}>
-                                                Emergencies trigger immediate notifications to management for rapid action.
+                                            Emergencies trigger automatic notifications for rapid managerial action.
                                             </p>
                                         </div>
                                     </div>
@@ -1577,7 +1816,7 @@ export default function BuildingSecurityPage() {
                                         lineHeight: "1.2",
                                         textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                     }}>
-                                        What You'll Notice <span style={{ color: "#fdc51a" }}>Right Away</span>
+                                        What Sets Our Building Security Guards   <span style={{ color: "#fdc51a" }}>Apart</span>
                                     </h2>
                                 </div>
                             </div>
@@ -1590,34 +1829,35 @@ export default function BuildingSecurityPage() {
                                         {[
                                             {
                                                 title: "A real sense of safety",
-                                                description: "Tenants and residents relax knowing someone's truly present.",
+                                                description: "Your staff, tenants, and visitors feel secure with trained professionals on-site.",
                                                 icon: "fas fa-shield-alt",
                                                 color: "#fdc51a"
                                             },
                                             {
                                                 title: "Lower risk",
-                                                description: "Theft, trespassing, and damage drop dramatically.",
+                                                description: "Reduced theft, unauthorised access, and after-hours disturbances.",
                                                 icon: "fas fa-arrow-down",
                                                 color: "#1e2247"
                                             },
                                             {
                                                 title: "Faster responses",
-                                                description: "Because seconds matter when alarms sound.",
+                                                description: "Guards respond immediately, no delays, no unanswered alarms.",
                                                 icon: "fas fa-bolt",
                                                 color: "#fdc51a"
                                             },
                                             {
                                                 title: "Transparency",
-                                                description: "You can view every patrol in real-time.",
+                                                description: "You can view every patrol, every report, and every action in real time.",
                                                 icon: "fas fa-eye",
                                                 color: "#1e2247"
                                             },
                                             {
                                                 title: "Better reputation",
-                                                description: "Secure buildings attract better tenants and calmer communities.",
+                                                description: "Safe, well-managed sites attract better tenants and stronger compliance outcomes..",
                                                 icon: "fas fa-star",
                                                 color: "#fdc51a"
-                                    }
+                                            },
+                                            
                                 ].map((benefit, index) => (
                                             <div key={index} className="benefit-item d-flex align-items-start mb-4" style={{
                                                 background: '#ffffff',
@@ -1910,7 +2150,7 @@ export default function BuildingSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 4px 8px rgba(0,0,0,0.3)"
                                             }}>
-                                                The Metro Guards <span style={{ color: "#fdc51a" }}>Standard</span>
+                                                Excellence Defined: The  <span style={{ color: "#fdc51a" }}>Metro Guards Standard</span>
                                     </h2>
                                             
                                             <p style={{ 
@@ -1921,8 +2161,8 @@ export default function BuildingSecurityPage() {
                                                 maxWidth: "900px",
                                                 margin: "0 auto 30px"
                                             }}>
-                                                We hold ISO certification, maintain full licensing and insurance, and are proud ASIAL members with CM3 prequalification. These aren't just titles. <strong style={{color: '#fdc51a'}}>These are certifications of the quality and compliance we provide.</strong>
-                                            </p>
+                                                WMetro Guards operates under strict ISO-certified systems, fully licensed and insuranced, and nationally recognised ASIAL and CM3 approvals. These accreditations matter, especially for corporate buildings, commercial facilities, and high-risk building sites that demand verified compliance at every level.
+                                                </p>
                                             
                                             <p style={{ 
                                                 color: "rgba(255, 255, 255, 0.8)", 
@@ -1932,8 +2172,8 @@ export default function BuildingSecurityPage() {
                                                 maxWidth: "800px",
                                                 margin: "0 auto"
                                             }}>
-                                                Because in this industry, reliability isn't built on words, it's built on <strong style={{color: '#fdc51a'}}>consistent actions, shift after shift</strong>.
-                                    </p>
+                                               Shift after shift. Day after day. That’s the Metro Guards standard.
+                                                </p>
                                 </div>
 
                                         
@@ -2063,14 +2303,14 @@ export default function BuildingSecurityPage() {
                                             lineHeight: "1.1",
                                             textShadow: "0 4px 8px rgba(30, 34, 71, 0.2)"
                                         }}>
-                                            Choose Certainty. <br/>
+                                            Your Partner in Compliance <br/>
                                             <span style={{ 
                                                 background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 WebkitBackgroundClip: 'text',
                                                 WebkitTextFillColor: 'transparent',
                                                 backgroundClip: 'text'
                                             }}>
-                                                Choose Metro Guards
+                                               , Licensing, and Governance
                                             </span>
                                         </h2>
 
@@ -2085,20 +2325,69 @@ export default function BuildingSecurityPage() {
                                                 margin: "0 auto 25px auto",
                                                 fontWeight: "500"
                                             }}>
-                                                If you're tired of guessing whether your site is really protected, it's time to work with a team that treats your building like their own.
-                                            </p>
+                                                Our guards are trained to support all key compliance areas required across commercial buildings, corporate offices, apartment complexes, and building sites. We assist with:
+                                                </p>
                                             
-                                            <p style={{ 
-                                                color: "#1e2247", 
-                                                fontSize: "1.3rem",
-                                                lineHeight: "1.6",
-                                                fontWeight: "600",
-                                                fontStyle: "italic",
-                                                maxWidth: "700px",
+                                            <div className="row" style={{ 
+                                                maxWidth: "900px",
                                                 margin: "0 auto"
                                             }}>
-                                                Let's make sure the only thing that sleeps tonight is the building, <strong>not your security</strong>.
-                                            </p>
+                                                <div className="col-md-6">
+                                                    {[
+                                                        "OH&S / WorkSafe requirements",
+                                                        "Access control protocols",
+                                                        "Emergency management"
+                                                    ].map((item, index) => (
+                                                        <div key={index} style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ 
+                                                                color: "#1e2247", 
+                                                                fontSize: "1.1rem",
+                                                                lineHeight: "1.6",
+                                                                fontWeight: "600"
+                                                            }}>
+                                                                {item}
+                                                            </span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                                <div className="col-md-6">
+                                                    {[
+                                                        "Visitor management",
+                                                        "Incident reporting compliance"
+                                                    ].map((item, index) => (
+                                                        <div key={index} style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>✔</span>
+                                                            <span style={{ 
+                                                                color: "#1e2247", 
+                                                                fontSize: "1.1rem",
+                                                                lineHeight: "1.6",
+                                                                fontWeight: "600"
+                                                            }}>
+                                                                {item}
+                                                            </span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </div>
 
                                         {/* Call to Action Buttons */}
@@ -2255,7 +2544,7 @@ export default function BuildingSecurityPage() {
                                                     WebkitTextFillColor: 'transparent',
                                                     backgroundClip: 'text'
                                                 }}>
-                                                    When Your Building Sleeps, We Don't.
+                                                   Peace of Mind, Even When You’re Off the Clock
                                                 </span>
                                             </h3>
                                         </div>
@@ -2270,7 +2559,12 @@ export default function BuildingSecurityPage() {
                     
                 </div>
                     
-                
+                <Testimonials />
+                <FAQSectionDynamic 
+                    faqs={buildingSecurityFaqs}
+                    title="Frequently Asked Questions"
+                    subtitle="FAQs"
+                />
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />

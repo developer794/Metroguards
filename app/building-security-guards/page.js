@@ -1,9 +1,9 @@
 import BuildingSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Building Security Guards in Melbourne | Metro Guards",
+  title: "BProfessional Building Security Guards in Melbourne",
   description:
-    "Professional building security guards in Melbourne. 24/7 protection, licensed officers, live reporting, and ISO-certified standards for commercial and residential properties.",
+    "Need Building Security Guards in Melbourne? Protect your site with trained guards, loss prevention, and 24/7 coverage. Enquire for a quote now.",
   alternates: { 
     canonical: "https://metroguards.com.au/building-security-guards" 
   },
