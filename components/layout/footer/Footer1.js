@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer1() {
     return (
         <>
-            <footer className="footer-area">
+            <footer className="footer-area" style={{marginBottom:"-40px"}}>
                 <div className="container">
                     <div className="row">
                         {/* Left Column - Company Info & Social */}
@@ -69,47 +69,18 @@ export default function Footer1() {
                                         <li><Link href="/Modern-Slavery-Statement-V2-1.pdf" target="_blank" rel="noopener noreferrer">Slavery Statement</Link></li>
                                         <li><Link href="/service-coverage">Service Coverage</Link></li>
                                         <li><Link href="/forms-downloads">Forms & Downloads</Link></li>
+                                        <li><Link href="/careers">Careers</Link></li>
                                     </ul>
                                 </div>
                                 
-                                <h3 className="footer-heading">
-                                    <i className="fas fa-briefcase"></i>
-                                    Careers
-                                </h3>
-                                <p className="careers-text">
-                                    To find out more about current job opportunities at Metropolitan Guard Services,
-                                </p>
-                                <Link href="/careers" className="careers-link">Click Here</Link>
+                                
                             </div>
                         </div>
 
                         {/* Right Column - Service Areas & Map */}
                         <div className="col-lg-4 col-md-12">
                             <div className="single-footer">
-                                <h3 className="footer-heading">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    Service Areas
-                                </h3>
-                                <div className="service-areas">
-                                    <div className="area-grid">
-                                        <Link href="/security-guard-east-melbourne-vic-3002" className="area-link">
-                                            <i className="fas fa-arrow-right"></i>
-                                            <span>East Melbourne</span>
-                                        </Link>
-                                        <Link href="/security-guard-west-melbourne-vic-3003" className="area-link">
-                                            <i className="fas fa-arrow-right"></i>
-                                            <span>West Melbourne</span>
-                                        </Link>
-                                        <Link href="/security-guard-north-melbourne-vic-3051" className="area-link">
-                                            <i className="fas fa-arrow-right"></i>
-                                            <span>North Melbourne</span>
-                                        </Link>
-                                        <Link href="/security-guard-south-melbourne-vic-3205" className="area-link">
-                                            <i className="fas fa-arrow-right"></i>
-                                            <span>South Melbourne</span>
-                                        </Link>
-                        </div>
-                                </div>
+                                
                                 
                                 <h3 className="footer-heading">
                                     <i className="fas fa-map-marked-alt"></i>
