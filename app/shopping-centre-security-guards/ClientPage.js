@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function ShoppingCentreSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -23,6 +25,29 @@ export default function ShoppingCentreSecurityPage() {
     const toggleFeature = (index) => {
         setActiveFeature(activeFeature === index ? null : index);
     };
+
+    const shoppingCentreSecurityFaqs = [
+        {
+            question: "How Metro Guards Uses Mobile Patrols for Shopping Centre Security in Melbourne?",
+            answer: "Metro Guards uses mobile patrols to provide rapid response, perimeter checks, car-park monitoring, and after-hours security for Melbourne shopping centres. Patrol officers conduct scheduled and unscheduled visits, verify access points, deter theft, and support on-site guards with real-time reporting and incident escalation."
+        },
+        {
+            question: "Do You Have Enough Security Guards at Your Shopping Centre?",
+            answer: "Metro Guards assesses foot traffic, centre layout, risk zones, trading hours, and incident history to recommend the right number of guards. Most Melbourne centres require a combination of static officers and patrol support to maintain safety, loss prevention, and smooth customer flow."
+        },
+        {
+            question: "Do shopping centre security guards in Melbourne perform first-aid?",
+            answer: "Yes. Metro Guards provides trained shopping centre security officers who hold current First-Aid and CPR certifications. Our guards respond to medical incidents, assist injured visitors, support centre management during emergencies, and coordinate with paramedics to ensure fast, safe resolutions."
+        },
+        {
+            question: "What reporting procedures do shopping centre security guards follow in Melbourne?",
+            answer: "Metro Guards officers complete real-time digital reports covering incidents, patrols, hazards, and customer interactions. All activity is logged through our secure reporting system, giving centre management immediate visibility, accurate records, and full compliance with retail safety and operational requirements."
+        },
+        {
+            question: "How do security guards coordinate with police in Melbourne shopping centres?",
+            answer: "Metro Guards works closely with Victoria Police when serious incidents occur. Our guards provide detailed incident information, secure affected areas, assist officers on arrival, and maintain crowd control to ensure public safety and smooth coordination during investigations or emergency responses."
+        }
+    ];
 
     const services = [
         {
@@ -154,10 +179,10 @@ export default function ShoppingCentreSecurityPage() {
                                                     borderRadius: '25px'
                                                 }}
                                             >
-                                                PROFESSIONAL PROTECTION
+                                                Shopping Centre Security Guards in Melbourne
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -165,9 +190,11 @@ export default function ShoppingCentreSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Protecting Every Corner  <br />
-                                            <span style={{color: '#fdc51a'}}>Where Life Happens</span>
-                                        </h1>
+                                            Reliable 24/7 Security for Shopping Centres 
+
+                                            <br />
+                                            <span style={{color: '#fdc51a'}}>& Retail Complexes</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -177,10 +204,10 @@ export default function ShoppingCentreSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            There’s a rhythm inside every shopping centre, footsteps, laughter, the shuffle of bags, the ring of tills. Hidden inside that rhythm lies a promise: that everyone feels safe enough to live freely. Metro Guards exists to keep that promise.
-                                            <br /><br />We safeguard Melbourne’s retail spaces with retail security guard services trained not only to respond but to read the room, to sense unease before it turns into a threat. Whether it’s a busy weekend crowd or a quiet weekday shift, our teams stay alert, invisible when needed, present when it matters most.
+                                            Metro Guards delivers licensed, highly trained shopping centre security guards Melbourne retail centres rely on for safe, efficient daily operations.With specialists in loss prevention shopping centre guards Melbourne, crowd flow control, incident response, and centre-wide safety compliance, we help retailers minimise theft, reduce disruptions, and maintain a calm, well-managed environment, even during peak trading hours.
+                                            <br /><br />Whether your centre is in Melbourne CBD, Chadstone, Highpoint, Southland, DFO, or a local retail precinct, Metro Guards provides 24/7 shopping centre security guards Melbourne operators need for uninterrupted protection and smooth trading.
                                             </p>
-                                        
+                                                                                    
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
                                                     href="/get-quotation" 
@@ -255,7 +282,7 @@ export default function ShoppingCentreSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -295,7 +322,7 @@ export default function ShoppingCentreSecurityPage() {
                     </div>
 
                     {/*=====  Services Section =====*/}
-                    <div className="services-section section-padding" style={{
+                    <div className="services-section " style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -365,7 +392,7 @@ export default function ShoppingCentreSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '700px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -403,7 +430,8 @@ export default function ShoppingCentreSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                The Heartbeat of a Safe Shopping Centre
+                                                Trusted Retail Security & Loss Prevention for Melbourne Centres
+
                                             </h2>
                                             
                                             <p style={{ 
@@ -412,16 +440,56 @@ export default function ShoppingCentreSecurityPage() {
                                                 lineHeight: "1.8",
                                                 marginBottom: "30px"
                                             }}>
-                                                Security in retail goes beyond cameras or uniforms. It's about people who understand people, how families move, how tension looks, how calm feels.
+                                                Our licensed shopping centre security officers Melbourne manage foot traffic, monitor high-risk zones, support retailers, and respond quickly to incidents without disrupting the customer experience.
                                             </p>
                                             
+                                            <h4 style={{ 
+                                                color: "#1e2247", 
+                                                fontSize: "1.4rem",
+                                                fontWeight: "700",
+                                                marginBottom: "20px"
+                                            }}>
+                                                We protect every part of your centre:
+                                            </h4>
+
+                                            <ul style={{ 
+                                                listStyle: "none", 
+                                                padding: 0, 
+                                                margin: '0 0 30px 0' 
+                                            }}>
+                                                {[
+                                                    "Retail floors, malls, and walkways",
+                                                    "Car parks, entrances, and taxi zones",
+                                                    "Food courts and public seating areas",
+                                                    "Loading docks & service corridors",
+                                                    "High-value retail stores and anchor tenants"
+                                                ].map((item, idx) => (
+                                                    <li key={idx} style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>•</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            {item}
+                                                        </span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+
                                             <p style={{ 
                                                 color: "#6c757d", 
-                                                fontSize: "1.2rem",
+                                                fontSize: "1.15rem",
                                                 lineHeight: "1.8",
-                                                marginBottom: "30px"
+                                                marginBottom: "0"
                                             }}>
-                                                Our guards blend into the environment. They guide the flow of shoppers, support retail staff, and ensure peace never breaks its rhythm. Each one carries a deep understanding of retail dynamics, trained to protect without disrupting the pulse of daily life. At Metro Guards, our mall security and store security teams work quietly in the background to keep every visit safe and stress-free.
+                                                Our team supports both daily operations and after-hours security, providing top rated shopping centre theft security Melbourne for the areas with highest risk.
                                             </p>
                                         </div>
 
@@ -438,7 +506,7 @@ export default function ShoppingCentreSecurityPage() {
                     
 
                     {/*=====  Section 2 =====*/}
-                    <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section-2 " style={{background: '#ffffff', marginTop: '100px', marginBottom: '100px'}}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
@@ -481,20 +549,58 @@ export default function ShoppingCentreSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    The Human Element of Every Safe Space
+                                                Why Skilled Shopping Centre Security Officers Matter Most
                                                 </h2>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.2rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    marginBottom: '25px'
                                                 }}>
-                                                    Every shift begins long before the doors open. Our guards walk the floor, note the exits, learn the light, and sense the rhythm of the centre as if it were their own heartbeat. Our guards aren't stationed, they are placed with intention. Training gives them readiness. Awareness gives them reach. But it's their calm, their human touch, that makes shoppers feel protected without feeling watched.
-                                                    <br /><br />
-                                                    A crying child, a nervous staff member, a sudden commotion, our guards respond not from a manual, but from instinct. That's what real safety is built on: the quiet confidence of people who care enough to notice before something goes wrong.
-                                                    <br /><br />
-                                                    At Metro Guards, we don't measure success by how many incidents we stop, but by how seamlessly we keep life moving. Every smile, every safe return home, that's the reward.
+                                                    Our shopping centre security guard Melbourne team is trained to identify behavioural risks early, assist retailers dealing with attempted theft, monitor high-traffic areas, and respond quickly to disruptions. This is essential for Melbourne retail centres facing real pressures such as shoplifting spikes, aggressive customer behaviour, car park safety concerns, weekend crowd surges, and increased expectations for visible security presence.
                                                 </p>
+
+                                                <h4 style={{ 
+                                                    color: "#1e2247", 
+                                                    fontSize: "1.4rem",
+                                                    fontWeight: "700",
+                                                    marginBottom: "20px"
+                                                }}>
+                                                    With licensed shopping centre security officers Melbourne on the floor, centres benefit from:
+                                                </h4>
+
+                                                <ul style={{ 
+                                                    listStyle: "none", 
+                                                    padding: 0, 
+                                                    margin: '0 0 30px 0' 
+                                                }}>
+                                                    {[
+                                                        "Better management of foot traffic and crowd flow",
+                                                        "Stronger loss-prevention outcomes",
+                                                        "Faster response to incidents and hazards",
+                                                        "Improved customer confidence and tenant satisfaction",
+                                                        "Reduced operational disruptions across retail zones"
+                                                    ].map((item, idx) => (
+                                                        <li key={idx} style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "15px",
+                                                            fontSize: "1.1rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.3rem", 
+                                                                marginRight: "15px",
+                                                                fontWeight: "700"
+                                                            }}>•</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                {item}
+                                                            </span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -509,7 +615,7 @@ export default function ShoppingCentreSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Why Shopping Businesses Trust Metro Guards 
+                                            The Reasons Shopping Mall Businesses Trust Metro Guards 
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
                                                 We partner with major shopping centres, independent retailers, and facility managers across Melbourne. Every client has a different layout, a different crowd, a different tempo, and our strategies evolve with each.
@@ -633,7 +739,7 @@ export default function ShoppingCentreSecurityPage() {
                                         </div>
                                         
                                         <p style={{color: '#6c757d', fontSize: '1rem', lineHeight: '1.6', marginTop: '20px'}}>
-                                            <strong>Every service comes with discretion, respect, and consistency, values we've built our name on.</strong>
+                                        Our officers deliver the professionalism, awareness, and customer-service focus required to keep every shop, every walkway, and every visitor safe, ensuring your centre remains a secure and well-managed place to shop.
                                         </p>
                                     </div>
                                 </div>
@@ -709,7 +815,7 @@ export default function ShoppingCentreSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Our Commitment to <span style={{ color: "#fdc51a" }}>Every Centre We Serve</span>
+                                                Security Services Built Around Your  <span style={{ color: "#fdc51a" }}>Centre’s Unique Needs</span>
                                             </h2>
                                             
                                             <div style={{
@@ -722,16 +828,25 @@ export default function ShoppingCentreSecurityPage() {
                                                     lineHeight: "1.8",
                                                     marginBottom: "25px"
                                                 }}>
-                                                    When we take charge of a shopping precinct, we see more than retail square footage. We see a social space, a shared ground where the city gathers. <strong style={{color: '#1e2247'}}>Protecting that space means protecting connection itself.</strong>
+                                                    Metro Guards delivers shopping centre security guard services designed around your exact environment. We don't offer generic solutions; we match the right guard, the right strategy, and the right level of protection to your centre's daily operations.
                                                 </p>
                                                 
                                                 <p style={{ 
                                                     color: "#6c757d", 
                                                     fontSize: "1.2rem",
                                                     lineHeight: "1.8",
+                                                    marginBottom: "25px"
+                                                }}>
+                                                    Our team studies traffic patterns, identifies high-risk zones, and adapts security measures to seasonal peaks, sales periods, school holidays, late-night trading, and major events. From theft reduction to customer safety and centre-wide support, our trained shopping centre guards Melbourne adjust in real time to keep your site stable and compliant.
+                                                </p>
+
+                                                <p style={{ 
+                                                    color: "#6c757d", 
+                                                    fontSize: "1.2rem",
+                                                    lineHeight: "1.8",
                                                     marginBottom: "0"
                                                 }}>
-                                                    We monitor patterns, study crowd flow, and build strategies that evolve with seasons, sales, and special events. From the Christmas rush to weekend surges and overnight maintenance, our guards adapt in real time. <strong style={{color: '#fdc51a'}}>Safety here lives and breathes with the space.</strong>
+                                                    Whether you manage a large retail precinct, a suburban plaza, or a high-volume shopping mall, our guards ensure your centre remains safe, orderly, and ready for business — every hour, every shift.
                                                 </p>
                                             </div>
                                         </div>
@@ -869,7 +984,7 @@ export default function ShoppingCentreSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -972,7 +1087,8 @@ export default function ShoppingCentreSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Let's Build <span style={{color: '#fdc51a'}}>Calm Into Every Corner</span>
+                                                Get Secure With Melbourne’s Best Shopping 
+                                                <span style={{color: '#fdc51a'}}>Centre Security Guards</span>
                                             </h2>
                                             
                                             <p style={{
@@ -980,11 +1096,11 @@ export default function ShoppingCentreSecurityPage() {
                                                 fontSize: '1.4rem',
                                                 lineHeight: '1.7',
                                                 marginBottom: '40px',
-                                                maxWidth: '700px',
+                                                maxWidth: '1200px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                Let's build a security plan that keeps your shopping centre <strong style={{color: '#1e2247'}}>open, safe, and thriving</strong>, no interruptions, no uncertainty.
-                                            </p>
+                                               Whether you operate a local retail strip in Brunswick, a busy mall in Melbourne CBD, or a high-traffic centre in Chadstone, Highpoint, Southland, or DFO, our licensed shopping centre security guards Melbourne team is ready to stabilise your site and protect every corner.
+                                               </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1098,9 +1214,14 @@ export default function ShoppingCentreSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+  
                     {/*===== Benefits Section =====*/}
-                                        
+                    
+                       <FAQSectionDynamic                 
+                    faqs={shoppingCentreSecurityFaqs}
+                    title="Frequently Asked Questions"
+                    subtitle="FAQs"
+                />
                     
                 </div>
                     

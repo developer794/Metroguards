@@ -1,9 +1,9 @@
 import ConstructionSiteSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Construction Site Security Guards in Melbourne | Metro Guards",
+  title: "Construction Site Security Guards Melbourne",
   description:
-    "Expert construction site security guards in Melbourne. 24/7 on-site protection, licensed personnel, GPS tracking, and specialized training for construction security.",
+    "Require construction site security guards in Melbourne? Protect your project with fully licensed construction security guards, asset protection, & access control.",
   alternates: { 
     canonical: "https://metroguards.com.au/construction-site-security-guards" 
   },

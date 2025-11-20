@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function ConstructionSiteSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -23,6 +25,29 @@ export default function ConstructionSiteSecurityPage() {
     const toggleFeature = (index) => {
         setActiveFeature(activeFeature === index ? null : index);
     };
+
+    const constructionSiteSecurityFaqs = [
+        {
+            question: "What makes a good construction site security guard in Melbourne?",
+            answer: "A good construction site security guard in Melbourne is trained in access control, hazard awareness, asset protection, and emergency response. They monitor high-risk zones, prevent unauthorised entry, and provide accurate reporting to ensure the site remains compliant, safe, and free from disruptions."
+        },
+        {
+            question: "Are temporary construction site security guards available in Melbourne?",
+            answer: "Yes. Melbourne construction projects can hire temporary construction site security guards for short-term needs, night shifts, weekends, shutdown periods, or high-risk phases. Metro Guards can deploy licensed guards quickly to secure assets, manage access, and stabilise vulnerable stages of your project."
+        },
+        {
+            question: "Do Melbourne construction site security guards perform fire-watch duties?",
+            answer: "Yes. Many construction site security guards in Melbourne are trained to perform fire-watch duties. They monitor ignition hazards, check hot-work areas, identify fire risks, and maintain logs until works are safe. This supports site compliance with Victorian OH&S and WorkSafe requirements."
+        },
+        {
+            question: "What equipment do construction site security guards use in Melbourne?",
+            answer: "Construction site security guards typically use radios, torches, PPE, digital reporting devices, incident logs, and site access systems. Metro Guards officers also use GPS-verified patrol technology and construction site security camera monitoring tools to ensure complete visibility across high-risk areas."
+        },
+        {
+            question: "How do security guards ensure safety compliance on construction sites in Melbourne?",
+            answer: "Guards support compliance by enforcing access control, monitoring hazards, reporting risks, checking PPE usage, and ensuring restricted zones stay secure. They assist with OH&S procedures, maintain visitor logs, and document every patrol to help construction companies meet WorkSafe and safety standards."
+        }
+    ];
 
     const services = [
         {
@@ -130,7 +155,7 @@ export default function ConstructionSiteSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONSTRUCTION SITE SECURITY GUARDS"
-                mainTitle="CONSTRUCTION SITE SECURITY GUARDS IN MELBOURNE "
+                mainTitle="Construction Site Security Guards in Melbourne "
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/6CBFDC64-548E-4EEB-BA9A-33CFCE62DC01_1_105_c.webp"
                 >
                 <div>
@@ -156,7 +181,7 @@ export default function ConstructionSiteSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -164,9 +189,9 @@ export default function ConstructionSiteSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Where Protection Meets   <br />
-                                            <span style={{color: '#fdc51a'}}>Progress</span>
-                                        </h1>
+                                            Melbourne’s Leading Construction Site Security 
+                                            <span style={{color: '#fdc51a'}}>Guard Services</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -176,8 +201,18 @@ export default function ConstructionSiteSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Every site has a beginning: a sketch on a desk, a shared plan, a deadline pinned to the calendar. Some nights are full of progress; others test how much a project can stand. When the day ends and the floodlights go down, the job of keeping that work safe falls to someone else.
-                                            <br /><br />Metro Guards began on nights like that, the start of what would become one of the most trusted construction site security services in Melbourne. A small team of local security professionals watched over a single inner-city site and found they were protecting more than tools. They were protecting livelihoods, reputation, and the quiet promise of completion. Since then, that quiet duty grew into a service built around respect for work well done.
+                                            Metro Guards provides licensed, industry-trained construction site security guards Melbourne projects rely on to protect materials, equipment, and progress. Our officers control access points, monitor construction site security cameras, and apply strict physical security procedures across high-risk zones.
+                                            </p>
+                                        <p 
+                                            className="lead mb-4" 
+                                            style={{
+                                                color: '#6c757d',
+                                                fontSize: '1.2rem', 
+                                                lineHeight: '1.6',
+                                                maxWidth: '500px'
+                                            }}
+                                        >
+                                            With experienced construction security guards on site, your project remains protected, efficient, and free from disruption. Metro Guards specialises in security guard construction site Melbourne deployments for builders, developers, civil contractors, and asset owners across Melbourne's construction sector. Whether you're managing a single-stage build or a large multi-phase development, our construction security guard services provide the reliability and oversight your project demands.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -294,7 +329,7 @@ export default function ConstructionSiteSecurityPage() {
                     </div>
 
                     {/*=====  Services Section =====*/}
-                    <div className="services-section section-padding" style={{
+                    <div className="services-section " style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -402,18 +437,113 @@ export default function ConstructionSiteSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                The Silent Threats That Stall a Project
+                                                Melbourne Construction Security Partner Delivering 24/7 Protection
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "30px"
                                             }}>
-                                                Melbourne’s construction industry moves fast. A missing tool, a cut cable, or a broken lock can stretch timelines and raise costs overnight. The real risk shows up where attention drops and routine becomes habit.
-                                                <br /><br />Our guards train to read the site as you would: understanding who belongs, what looks right, and when something is out of place. That attention reduces surprises and keeps projects moving.
-                                                </p>
+                                                With real-time reporting, GPS-verified patrols, and 24/7 monitoring from our Melbourne control centre, you receive complete transparency over your site's protection.
+                                            </p>
+
+                                            <div style={{ 
+                                                background: "linear-gradient(135deg, rgba(253, 197, 26, 0.05) 0%, rgba(253, 197, 26, 0.02) 100%)",
+                                                border: "2px solid rgba(253, 197, 26, 0.2)",
+                                                borderRadius: "15px",
+                                                padding: "30px",
+                                                marginBottom: "30px"
+                                            }}>
+                                                <h4 style={{ 
+                                                    color: "#1e2247", 
+                                                    fontSize: "1.4rem",
+                                                    fontWeight: "700",
+                                                    marginBottom: "20px"
+                                                }}>
+                                                    You'll know:
+                                                </h4>
+                                                
+                                                <ul style={{ 
+                                                    listStyle: "none", 
+                                                    padding: 0, 
+                                                    margin: 0 
+                                                }}>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>Who accessed the construction site</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>Which zones were patrolled</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>What activity occurred</strong>
+                                                        </span>
+                                                    </li>
+                                                    <li style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>✔</span>
+                                                        <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                            <strong style={{ color: "#1e2247" }}>When incidents were managed and resolved</strong>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "0"
+                                            }}>
+                                                Only clear, verifiable protection for your workforce, equipment, and project timeline. Metro Guards replaces uncertainty with compliance, accountability, and a level of construction security guard services Melbourne contractors depend on.
+                                            </p>
                                             
                                             
                                         </div>
@@ -473,24 +603,52 @@ export default function ConstructionSiteSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    The Cost of Neglect Runs Deeper
+                                                Common Security Gaps That Leave Construction Sites Exposed
+
                                                 </h2>
                                                 <p className="lead mb-4" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    marginBottom: '25px'
                                                 }}>
-                                                    Losses show up as replacements and repairs, but they also show up as delayed handovers, strained contractor relationships, and lost confidence from investors. When progress pauses, everyone pays.
+                                                    Without trained construction security guards and robust security measures, sites become vulnerable to disruptions that impact safety, budgets, and deadlines.
                                                 </p>
-                                                <p className="lead" style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                    margin: 0
+
+                                                <ul style={{ 
+                                                    listStyle: "none", 
+                                                    padding: 0, 
+                                                    margin: '0 0 30px 0' 
                                                 }}>
-                                                    Metro Guards treats each assignment like a milestone. Plans focus on prevention and clarity, and the result is fewer interruptions and steadier schedules.
-                                                </p>
+                                                    {[
+                                                        "Unauthorised access during and after work hours",
+                                                        "Theft of tools, machinery, and stored materials",
+                                                        "Damage or tampering with equipment and site sheds",
+                                                        "Trespassing in high-risk areas or incomplete structures",
+                                                        "Vandalism that delays inspections or scheduled works",
+                                                        "Fuel theft, copper wire theft, and targeted material removal",
+                                                        "Gaps in compliance, visitor logging, and access control"
+                                                    ].map((item, idx) => (
+                                                        <li key={idx} style={{ 
+                                                            display: "flex", 
+                                                            alignItems: "flex-start", 
+                                                            marginBottom: "12px",
+                                                            fontSize: "1.05rem"
+                                                        }}>
+                                                            <span style={{ 
+                                                                color: "#fdc51a", 
+                                                                fontSize: "1.2rem", 
+                                                                marginRight: "12px",
+                                                                fontWeight: "700"
+                                                            }}>•</span>
+                                                            <span style={{ color: "#495057", lineHeight: "1.6" }}>
+                                                                {item}
+                                                            </span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -505,10 +663,10 @@ export default function ConstructionSiteSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                How Metro Guards <span style={{color: '#fdc51a'}}>Protects Your Site</span>
+                                            How Our Construction Security Guards <span style={{color: '#fdc51a'}}>Safeguard Your Assets</span>
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                                Every project has its own shape and needs. Our approach begins with walking the ground and listening, to the site manager, the foreman, the delivery team, then matching coverage to the work's rhythm.
+                                            Every construction project has its own demands. Our approach begins by understanding your site, your workflow, and your risks then delivering the right protection at the right time.
                                             </p>
                                         </div>
                                         
@@ -516,29 +674,34 @@ export default function ConstructionSiteSecurityPage() {
                                         <div className="services-accordion">
                                             {[
                                                 {
+                                                    number: "1",
                                                     icon: "fas fa-user-shield",
-                                                    title: "On-site guards",
-                                                    details: "Experienced officers manage access, perform checks, and respond to incidents."
+                                                    title: "On-Site Security Guards",
+                                                    details: "Licensed guards securing access, assets, and high-risk construction areas."
                                                 },
                                                 {
+                                                    number: "2",
                                                     icon: "fas fa-route",
-                                                    title: "Mobile patrol units",
-                                                    details: "Unpredictable patrol patterns make intrusion harder and detection faster."
+                                                    title: "Mobile Patrol Units",
+                                                    details: "Rapid-response vehicles preventing theft, trespassing, and after-hours activity."
                                                 },
                                                 {
+                                                    number: "3",
+                                                    icon: "fas fa-door-open",
+                                                    title: "Gatehouse & Access Control",
+                                                    details: "Controlled site entry for workers, visitors, and contractors."
+                                                },
+                                                {
+                                                    number: "4",
+                                                    icon: "fas fa-toolbox",
+                                                    title: "Asset & Equipment Protection",
+                                                    details: "Monitoring and safeguarding tools, machinery, and high-value materials."
+                                                },
+                                                {
+                                                    number: "5",
                                                     icon: "fas fa-video",
-                                                    title: "24/7 monitored CCTV",
-                                                    details: "Continuous recording with immediate escalation for suspicious activity."
-                                                },
-                                                {
-                                                    icon: "fas fa-clipboard-check",
-                                                    title: "Access control & visitor logging",
-                                                    details: "Verified entries, clear records, and controlled deliveries."
-                                                },
-                                                {
-                                                    icon: "fas fa-moon",
-                                                    title: "Night-shift protection",
-                                                    details: "Dedicated teams for after-hours risk around high-value equipment."
+                                                    title: "24/7 Site Monitoring",
+                                                    details: "Constant oversight with CCTV, hazard checks, and incident reporting."
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
@@ -563,14 +726,15 @@ export default function ConstructionSiteSecurityPage() {
                                                                         height: '50px',
                                                                         borderRadius: '10px',
                                                                         backgroundColor: '#1e2247',
-                                                                        color: '#ffffff',
-                                                                        fontSize: '1.5rem'
+                                                                        color: '#fdc51a',
+                                                                        fontSize: '1.3rem',
+                                                                        fontWeight: '700'
                                                                     }}
                                                                 >
-                                                                    <i className={service.icon}></i>
+                                                                    {service.number}
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
+                                                                    <h5 className="mb-0 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
                                                                 </div>
                                                             </div>
                                                             <div className="expand-icon">
@@ -611,7 +775,7 @@ export default function ConstructionSiteSecurityPage() {
                                                                 margin: 0,
                                                                 fontSize: '1rem'
                                                             }}>
-                                                                {service.details}
+                                                                • {service.details}
                                                             </p>
                                                         </div>
                                                     )}
@@ -625,8 +789,7 @@ export default function ConstructionSiteSecurityPage() {
                                             lineHeight: '1.7',
                                             fontStyle: 'italic'
                                         }}>
-                                            These measures stack together to create continuous protection, daytime certainty and overnight assurance.
-                                        </p>
+                                            Metro Guards keeps your project running by eliminating these risks before they become delays. Through proactive protection, real-time reporting, and consistent on-site oversight, we strengthen compliance, maintain safety, and keep your progress on track.</p>
                                     </div>
                                 </div>
                             </div>
@@ -727,13 +890,13 @@ export default function ConstructionSiteSecurityPage() {
                                         color: '#ffffff',
                                         letterSpacing: '-0.5px'
                                     }}>
-                                        Where the Brand <span style={{
+                                        Construction Site Security Guard  <span style={{
                                             color: '#fdc51a',
                                             background: 'linear-gradient(135deg, #fdc51a 0%, #ffdb5c 100%)',
                                             WebkitBackgroundClip: 'text',
                                             WebkitTextFillColor: 'transparent',
                                             backgroundClip: 'text'
-                                        }}>Came From</span>
+                                        }}>Duties</span>
                                     </h2>
                                 </div>
                             </div>
@@ -766,45 +929,64 @@ export default function ConstructionSiteSecurityPage() {
 
                                         {/* Content */}
                                         <div style={{ position: 'relative', zIndex: 2 }}>
-                                            {/* Paragraph 1 */}
+                                            {/* Opening Paragraph */}
                                             <p style={{
                                                 color: 'rgba(255, 255, 255, 0.95)',
                                                 fontSize: '1.2rem',
-                                                lineHeight: '2',
-                                                marginBottom: '35px',
-                                                textAlign: 'justify'
+                                                lineHeight: '1.8',
+                                                marginBottom: '30px'
                                             }}>
-                                                One late shift, a foreman walked the site at dawn and found the crane controls untouched, cables intact, and a log that recorded every patrol. He walked to the small container where the night team had left a note: <span style={{
-                                                    color: '#fdc51a',
-                                                    fontWeight: '700',
-                                                    fontStyle: 'italic',
-                                                    fontSize: '1.35rem',
-                                                    display: 'inline-block',
-                                                    padding: '0 8px',
-                                                    background: 'rgba(253, 197, 26, 0.1)',
-                                                    borderRadius: '6px'
-                                                }}>"We left it ready."</span> That simple line summed the brand's view of duty, keep work intact so mornings run as planned.
+                                                Our licensed guards carry out defined duties and responsibilities of security guard in construction site operations, ensuring nothing is overlooked and every risk is managed before it becomes a problem.
                                             </p>
 
-                                            {/* Divider */}
-                                            <div style={{
-                                                width: '100px',
-                                                height: '3px',
-                                                background: 'linear-gradient(90deg, #fdc51a, transparent)',
-                                                margin: '30px 0',
-                                                borderRadius: '2px'
-                                            }}></div>
-
-                                            {/* Paragraph 2 */}
-                                            <p style={{
-                                                color: 'rgba(255, 255, 255, 0.9)',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '2',
-                                                marginBottom: '0',
-                                                textAlign: 'justify'
+                                            {/* Subheading */}
+                                            <h3 style={{
+                                                color: '#fdc51a',
+                                                fontSize: '1.5rem',
+                                                fontWeight: '700',
+                                                marginBottom: '25px',
+                                                letterSpacing: '-0.5px'
                                             }}>
-                                                That work ethic shaped Metro Guards. Local hires, regular supervisor visits, and a commitment to reporting that matches how builders work. The team's choices grew from practical nights on site, not from a manual of buzzwords.
-                                            </p>
+                                                Daily Responsibilities That Protect Your Progress
+                                            </h3>
+
+                                            {/* Responsibilities List */}
+                                            <ul style={{ 
+                                                listStyle: "none", 
+                                                padding: 0, 
+                                                margin: 0
+                                            }}>
+                                                {[
+                                                    "Monitoring and securing high-value equipment, tools, and materials",
+                                                    "Enforcing access control for workers, contractors, and visitors",
+                                                    "Patrolling perimeters, site sheds, storage zones, and hazard areas",
+                                                    "Logging vehicle movement, deliveries, and after-hours activity",
+                                                    "Responding to alarms, hazards, and suspicious behaviour",
+                                                    "Recording all incidents in compliance with site protocols",
+                                                    "Supporting OH&S requirements and construction safety procedures",
+                                                    "Identifying risks and reporting issues to supervisors and site managers"
+                                                ].map((item, idx) => (
+                                                    <li key={idx} style={{ 
+                                                        display: "flex", 
+                                                        alignItems: "flex-start", 
+                                                        marginBottom: "15px",
+                                                        fontSize: "1.1rem"
+                                                    }}>
+                                                        <span style={{ 
+                                                            color: "#fdc51a", 
+                                                            fontSize: "1.3rem", 
+                                                            marginRight: "15px",
+                                                            fontWeight: "700"
+                                                        }}>•</span>
+                                                        <span style={{ 
+                                                            color: "rgba(255, 255, 255, 0.9)", 
+                                                            lineHeight: "1.6" 
+                                                        }}>
+                                                            {item}
+                                                        </span>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
 
                                         {/* Bottom Accent Line */}
@@ -945,6 +1127,8 @@ export default function ConstructionSiteSecurityPage() {
                         </div>
                     </div>
 
+                    <Testimonials />
+                                        
                     {/*===== Stewards of Progress Section =====*/}
                     <div className="stewards-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2a2f5a 100%)',
@@ -995,17 +1179,66 @@ export default function ConstructionSiteSecurityPage() {
                                             OUR COMMITMENT
                                         </span>
                                         <h2 className="display-5 fw-bold mb-4" style={{color: '#ffffff'}}>
-                                            More Than Guards – <span style={{color: '#fdc51a'}}>Stewards of Progress</span>
+                                        The Tools, Machinery & Materials We – <span style={{color: '#fdc51a'}}>Keep Safe Each Night </span>
                                         </h2>
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.9)',
                                             fontSize: '1.2rem',
-                                            lineHeight: '1.9',
+                                            lineHeight: '1.8',
                                             maxWidth: '900px',
-                                            margin: '0 auto 40px',
+                                            margin: '0 auto 30px',
                                             textAlign: 'center'
                                         }}>
-                                            Every delivered floor and every finished wall traces back to countless small choices. Metro Guards keeps those choices intact each night. Our presence helps supervisors sleep easier, crews start on time, and projects maintain credibility with stakeholders.
+                                            Our trained security guard construction site Melbourne officers protect high-value, high-risk assets, including:
+                                        </p>
+
+                                        <ul style={{ 
+                                            listStyle: "none", 
+                                            padding: 0, 
+                                            margin: '0 auto 40px',
+                                            maxWidth: '900px'
+                                        }}>
+                                            {[
+                                                "Excavators, scissor lifts, boom lifts, and earthmoving machinery",
+                                                "Site sheds, storage containers, and tool lock-ups",
+                                                "Power tools and specialised trade equipment",
+                                                "Electrical cabling and copper wire (common Melbourne theft targets)",
+                                                "Formwork materials, steel, timber, and scaffolding components",
+                                                "Concrete equipment, mixers, and reinforcement supplies",
+                                                "Fuel storage units and on-site generators",
+                                                "Metals, fixtures, fittings, and bulk material pallets"
+                                            ].map((item, idx) => (
+                                                <li key={idx} style={{ 
+                                                    display: "flex", 
+                                                    alignItems: "flex-start", 
+                                                    marginBottom: "15px",
+                                                    fontSize: "1.1rem"
+                                                }}>
+                                                    <span style={{ 
+                                                        color: "#fdc51a", 
+                                                        fontSize: "1.3rem", 
+                                                        marginRight: "15px",
+                                                        fontWeight: "700"
+                                                    }}>•</span>
+                                                    <span style={{ 
+                                                        color: "rgba(255, 255, 255, 0.9)", 
+                                                        lineHeight: "1.6" 
+                                                    }}>
+                                                        {item}
+                                                    </span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.15rem',
+                                            lineHeight: '1.8',
+                                            maxWidth: '900px',
+                                            margin: '0 auto',
+                                            textAlign: 'center'
+                                        }}>
+                                            With dedicated construction security guard services, GPS-verified patrols, and active monitoring, your equipment remains secure, your timelines stay intact, and your project avoids the losses Melbourne sites face far too often.
                                         </p>
 
                                         
@@ -1247,7 +1480,11 @@ export default function ConstructionSiteSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
+                    <FAQSectionDynamic 
+                    faqs={constructionSiteSecurityFaqs}
+                    title="Frequently Asked Questions"
+                    subtitle="FAQs"
+                />                  
                     
                 </div>
                     
