@@ -591,7 +591,7 @@ export async function POST(req: Request) {
     // Send elegant notification email to admin
     const adminEmailResult = await resend.emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
-      to: "admin@metroguard.com.au",
+      to: `${process.env.CONTACT_TO_EMAIL}`,
       replyTo: email,
       subject: `New Contact Inquiry #${contactInquiry.id} from ${name}`,
       html: createAdminNotificationEmail(contactInquiry.id, name, email, phone, serviceType, location, message),
