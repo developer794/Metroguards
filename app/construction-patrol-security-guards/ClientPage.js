@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function ConstructionPatrolSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function ConstructionPatrolSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONSTRUCTION PATROL SECURITY GUARDS "
-                mainTitle="CONSTRUCTION PATROL SECURITY GUARDS IN MELBOURNE "
+                mainTitle="Construction Patrol Security Guards in Melbourne "
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Construction%20Site%20Security%20Guard/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.webp"
             >
                 <div>
@@ -164,8 +166,8 @@ export default function ConstructionPatrolSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            A New Standard in Construction   <br />
-                                            <span style={{color: '#fdc51a'}}>Site Protection</span>
+                                            24/7 Construction Patrol Security 
+                                            <span style={{color: '#fdc51a'}}>Melbourne Near Me</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,9 +178,8 @@ export default function ConstructionPatrolSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Metro Guards introduces a new tier of site protection, “Construction Patrol Security Guards”.
-                                            <br /><br />This service was designed specifically for active construction environments that demand more than static observation. Our patrol guards move through your site systematically, inspecting access points, equipment zones, and boundary lines at scheduled and unscheduled intervals. Each patrol is tracked, logged, and reported in real-time, providing complete visibility and accountability for site managers.
-                                            <br /><br />This isn’t a generic mobile patrol adapted for construction. It’s a dedicated form of construction site patrol services, refined through years of securing Melbourne’s commercial builds and infrastructure projects.
+                                            Metro Guards delivers professional construction patrol security guards Melbourne who safeguard building sites from theft, trespassing, vandalism, and after-hours risks. Our patrol units conduct systematic checks across perimeters, materials, access points, equipment zones, storage containers, and hazardous areas, ensuring your project is protected day and night.
+                                            Whether your site is in Melbourne CBD, Southbank, Richmond, Dandenong, Tullamarine, Derrimut, Epping, Footscray, or Clyde North, our construction site patrol guards Melbourne provide mobile and on-foot coverage that strengthens site security and reduces costly delays.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -255,7 +256,7 @@ export default function ConstructionPatrolSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '800px',
+                                                    height: '600px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -403,19 +404,73 @@ export default function ConstructionPatrolSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Why Construction Patrol Security Matters
+                                                Why Melbourne Construction Sites Need Patrol Security
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
-                                                fontSize: "1.2rem",
+                                                fontSize: "1.15rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
                                             }}>
-                                                Construction sites operate differently from fixed facilities. They expand, contract, and change layout week to week. Static guards cover entry points, but what happens inside those perimeters changes constantly, new storage areas, scaffolding, temporary offices, night deliveries, or subcontractor movements.
-                                            <br /><br />Traditional mobile patrols don’t adapt to this pace. They check perimeters from outside. Metro Guards’ Construction Patrol Security Guards operate inside the site, fully briefed on current project stages, safety zones, and material storage maps. Their job is to detect issues before they disrupt progress, theft, equipment misuse, safety breaches, or unauthorized after-hours presence.
-                                            <br /><br />Every patrol follows a detailed checklist aligned with your project plan. Reports are shared directly with supervisors, giving you data-backed assurance that your site remains compliant, safe, and secure.
-                                                </p>
+                                                Construction sites attract high-risk activity, especially after hours. Metro Guards provides patrols that prevent:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Construction theft patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Equipment theft prevention patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Trespassing construction patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Vandalism prevention construction patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>After-hours break-in construction patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised entry construction patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Vacant site break-in patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>High-value equipment patrol Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Dangerous site patrol Melbourne</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{
+                                                color: '#6c757d',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '0'
+                                            }}>
+                                                Mobile patrols ensure your project stays safe, compliant, and operational, even when workers are off-site.
+                                            </p>
                                             
                                             
                                         </div>
@@ -432,7 +487,7 @@ export default function ConstructionPatrolSecurityPage() {
                     
 
                     {/*=====  Section 2 =====*/}
-                    <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section-2 " style={{background: '#ffffff'}}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
@@ -484,18 +539,64 @@ export default function ConstructionPatrolSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Metro Guards Approach
+                                                Construction Site Patrol Guards Melbourne | What We Check
                                                 </h2>
-                                                <p className="lead mb-4" style={{
+                                                <p style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
                                                 }}>
-                                                    We built this service for builders and site managers who manage multiple projects or high-value worksites. Our patrol guards are licensed, uniformed, and trained to conduct patrols under live site conditions, navigating construction zones safely while maintaining full situational awareness.
-                                                    <br /><br />Each deployment begins with a site familiarisation audit, identifying key assets, risk zones, and access routes. Patrol schedules are configured according to risk exposure, more frequent in high-theft areas or open perimeters, lighter where camera coverage already exists.
-                                                    <br /><br />Guards record every patrol through GPS-enabled systems. Any anomaly, open gates, equipment left running, damaged fencing, or suspicious activity,  is logged and reported instantly through our 24-hour control room. This isn’t reactionary security. It’s structured risk prevention integrated with operational workflow.
-                                                    </p>
+                                                    Our patrol officers perform thorough checks tailored to construction risks, including:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Construction site perimeter inspection</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Construction equipment monitoring patrol</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Construction entry and exit point patrol</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Hazard detection construction patrol</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Trespassing prevention construction patrol</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Unauthorised access construction patrol</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Construction materials security patrol</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '0'
+                                                }}>
+                                                    We identify issues early, reduce downtime, and keep your project secure.
+                                                </p>
                                                 
                                                 
                                             </div>
@@ -564,91 +665,69 @@ export default function ConstructionPatrolSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                            The Advantage of Being <span style={{color: '#fdc51a'}}>First</span>
+                                            Mobile Construction Patrol Services <span style={{color: '#fdc51a'}}>Melbourne</span>
                                     </h2>
 
                                     <p style={{
                                         color: '#6c757d',
                                             fontSize: '1.15rem',
                                         lineHeight: '1.8',
-                                            marginBottom: '25px'
+                                            marginBottom: '1rem',
+                                            fontWeight: '600'
                                         }}>
-                                            At present, most Melbourne security providers offer only static guards for construction sites or generic mobile patrols that visit briefly. Metro Guards is the <strong style={{color: '#1e2247'}}>first to formalise Construction Patrol Security</strong> as a dedicated service category. That difference means:
+                                            Metro Guards provides flexible construction site mobile patrol Melbourne options suitable for all project sizes:
                                         </p>
 
-                                        {/* Advantage Points */}
-                                        <div className="advantages-list" style={{marginTop: '35px'}}>
-                                            {[
-                                                'Patrols within the construction site, not just around it.',
-                                                'Guards trained for construction-specific risk recognition.',
-                                                'A reporting framework tailored to builder and project manager requirements.',
-                                                'Coordination with your own supervisors for seamless incident response.'
-                                            ].map((advantage, index) => (
-                                                <div key={index} style={{
-                                                    display: 'flex',
-                                                    alignItems: 'flex-start',
-                                                    gap: '15px',
-                                                    marginBottom: '20px',
-                                                    padding: '20px',
-                                        background: '#ffffff',
-                                                    borderRadius: '12px',
-                                                    border: '2px solid rgba(253, 197, 26, 0.15)',
-                                                    transition: 'all 0.3s ease'
-                                    }}
-                                    onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateX(8px)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                                    e.currentTarget.style.boxShadow = '0 8px 20px rgba(253, 197, 26, 0.15)';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateX(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.15)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                    }}>
-                                        <div style={{
-                                                        width: '32px',
-                                                        height: '32px',
-                                                        borderRadius: '50%',
-                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                                        flexShrink: 0,
-                                                        boxShadow: '0 4px 12px rgba(253, 197, 26, 0.3)'
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.8',
+                                            paddingLeft: '0',
+                                            marginBottom: '1.5rem'
                                         }}>
-                                                        <CheckCircle size={18} style={{color: '#1e2247'}} />
-                                        </div>
-                                                    <p style={{
-                                            color: '#1e2247',
-                                                        fontSize: '1.05rem',
-                                                        margin: 0,
-                                                        lineHeight: '1.6',
-                                                        fontWeight: '500'
-                                                    }}>
-                                                        {advantage}
-                                                    </p>
-                                                </div>
-                                            ))}
-                                        </div>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Drive-by mobile patrols</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>On-foot perimeter patrols</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Randomised patrol schedules</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>After-hours construction night patrol security Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Lock-up checks & open-up assistance</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Alarm response for activated construction systems</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Rapid emergency attendance</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Weekend and holiday coverage</span>
+                                            </li>
+                                        </ul>
 
-                                        <div style={{
-                                            marginTop: '35px',
-                                            padding: '25px',
-                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.05))',
-                                            borderRadius: '15px',
-                                            border: '2px solid rgba(253, 197, 26, 0.2)'
-                                        }}>
                                         <p style={{
-                                                color: '#1e2247',
-                                                fontSize: '1.15rem',
-                                            lineHeight: '1.7',
-                                                margin: 0,
-                                                fontWeight: '600',
-                                                fontStyle: 'italic'
+                                            color: '#6c757d',
+                                            fontSize: '1.1rem',
+                                            lineHeight: '1.8',
+                                            marginBottom: '0'
                                         }}>
-                                                This service bridges the gap between general site guarding and professional risk management, giving Melbourne builders <span style={{color: '#fdc51a'}}>protection designed for the realities of their industry</span>.
+                                            Perfect for high-risk builds, multi-stage construction zones, and remote industrial developments.
                                         </p>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -767,7 +846,7 @@ export default function ConstructionPatrolSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Duties of Construction Patrol <span style={{color: '#fdc51a'}}>Security Guards</span>
+                                            You Get Melbourne’s Most Trusted Construction <span style={{color: '#fdc51a'}}>Patrol Protection</span>
                                         </h2>
 
                                         <p style={{
@@ -1015,25 +1094,68 @@ export default function ConstructionPatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Designed for Melbourne's <span style={{color: '#fdc51a'}}>Construction Sector</span>
+                                            Why Choose Metro Guards for Site Patrol <span style={{color: '#fdc51a'}}>Security Melbourne</span>
                                         </h2>
 
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.95)',
                                             fontSize: '1.15rem',
                                             lineHeight: '1.8',
-                                            marginBottom: '25px'
+                                            marginBottom: '1rem',
+                                            fontWeight: '600'
                                         }}>
-                                            With Victoria's construction industry operating across large, multi-phase sites, security must move at the same pace as the build. Our construction patrol guards are trained to integrate into that rhythm — <strong style={{color: '#fdc51a'}}>observing safety protocols, maintaining professional communication with contractors</strong>, and ensuring their patrol activity supports, rather than interrupts, site operations.
+                                            Metro Guards is trusted across Melbourne because:
                                         </p>
+
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            color: 'rgba(255, 255, 255, 0.95)',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.8',
+                                            paddingLeft: '0',
+                                            marginBottom: '1.5rem'
+                                        }}>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We operate construction patrol security Melbourne 24/7</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We reach your site fast during emergencies</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Patrols reduce equipment loss and project delays</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We secure property within 400m & 800m of high-risk work zones</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We deter offenders through visible patrol presence</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We offer random or scheduled patrol routes</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We're rated among the best construction patrol guards Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>We support builders, developers & contractors across all metro regions</span>
+                                            </li>
+                                        </ul>
 
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.95)',
-                                            fontSize: '1.15rem',
+                                            fontSize: '1.1rem',
                                             lineHeight: '1.8',
-                                            marginBottom: '30px'
+                                            marginBottom: '0'
                                         }}>
-                                            Metro Guards currently provides patrol security for <strong style={{color: '#fdc51a'}}>residential developments, infrastructure projects, and high-value commercial builds</strong> across Melbourne's north, west, and inner suburbs. Each project receives a dedicated account manager who reviews reports, coordinates deployment, and ensures service continuity.
+                                            Our patrols protect the progress and profitability of every construction stage.
                                         </p>
 
                                         {/* Service Areas */}
@@ -1077,7 +1199,7 @@ export default function ConstructionPatrolSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+                    <Testimonials />
                     {/*===== Compliance Section =====*/}
                     <div className="compliance-section section-padding" style={{
                         background: '#ffffff',
@@ -1139,7 +1261,7 @@ export default function ConstructionPatrolSecurityPage() {
                                                     marginBottom: '30px',
                                                     lineHeight: '1.2'
                                         }}>
-                                                    Compliance and <span style={{color: '#fdc51a'}}>Assurance</span>
+                                                    Technology Backing Every  <span style={{color: '#fdc51a'}}>Construction Patrol</span>
                                         </h2>
                                     </div>
 
@@ -1392,7 +1514,7 @@ export default function ConstructionPatrolSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Secure Your Site with Melbourne's First <span style={{color: '#fdc51a'}}>Construction Patrol Security Service</span>
+                                                Construction Patrol Security Melbourne  <span style={{color: '#fdc51a'}}>Builders Depend On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1403,19 +1525,10 @@ export default function ConstructionPatrolSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                If your project involves <strong style={{color: '#1e2247'}}>high-value assets, open perimeters, or complex schedules</strong>, Metro Guards' Construction Patrol Security Guards provide the protection framework you need.
+                                                Metro Guards ensures your site remains protected, your equipment secure and your project timeline uninterrupted. Our patrols are precise, consistent and engineered for high-risk construction environments.
                                             </p>
                                             
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                Speak with our operations team to arrange a <strong style={{color: '#1e2247'}}>site assessment</strong> and receive a <strong style={{color: '#fdc51a'}}>tailored patrol plan</strong> for your construction project.
-                                            </p>
+                                            
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1539,5 +1652,33 @@ export default function ConstructionPatrolSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "What do construction patrol security guards do in Melbourne?",
+                            answer: "They protect building sites by performing perimeter checks, monitoring equipment, preventing trespassing, deterring theft, and documenting hazards. Metro Guards' construction patrol officers secure the site after hours and maintain safety throughout all construction phases."
+                        },
+                        {
+                            question: "What are the duties of construction patrol officers in Melbourne?",
+                            answer: "Their duties include monitoring access points, performing mobile and on-foot patrols, checking materials and machinery, inspecting for hazards, responding to alarms, and reporting security breaches. Metro Guards ensures structured, high-visibility patrols across all construction environments."
+                        },
+                        {
+                            question: "What are the benefits of construction patrol security in Melbourne?",
+                            answer: "Construction patrols reduce theft, vandalism, unauthorised entry, and after-hours incidents. They protect tools, equipment, materials, and site integrity. Metro Guards helps builders avoid costly delays and maintain compliance."
+                        },
+                        {
+                            question: "Why do construction sites need patrol security in Melbourne?",
+                            answer: "They need patrol security to prevent equipment loss, trespassing, break-ins, vandalism, and safety hazards that commonly target unsecured sites. Metro Guards' patrol units operate 24/7 to safeguard active and vacant sites across Melbourne."
+                        },
+                        {
+                            question: "How do I hire construction patrol security guards in Melbourne?",
+                            answer: "Simply contact Metro Guards for a site assessment. We provide construction patrol security guards Melbourne for single sites, multi-level builds, and long-term developments."
+                        },
+                        {
+                            question: "How does construction patrol security prevent theft in Melbourne?",
+                            answer: "Through visible presence, randomised patrol patterns, equipment checks, access point monitoring, and rapid response to suspicious activity. Metro Guards significantly reduces theft on high-value building sites."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

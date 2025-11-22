@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function EducationalSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function EducationalSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="EDUCATIONAL INSTITUTE SECURITY GUARDS"
-                mainTitle="EDUCATIONAL INSTITUTE SECURITY GUARDS IN MELBOURNE "
+                mainTitle="Educational Institute Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp"
                 
             >
@@ -165,8 +167,8 @@ export default function EducationalSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Guarding the Future Begins at the Gate  <br />
-                                            <span style={{color: '#fdc51a'}}>at the Gate</span>
+                                           Comprehensive Security for Schools                                            <br />
+                                            <span style={{color: '#fdc51a'}}>and Educational Centres</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -177,12 +179,12 @@ export default function EducationalSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Every morning, the gates open to a world of promise, classrooms hum, laughter spills into hallways, and a new day of learning begins. Yet, behind the calm stands an unseen presence, the quiet discipline that ensures every student and teacher feels safe enough to grow.  
-                                            <br /><br />That’s what our guards do. Every check, every clearance, every silent scan of a passing face done with intent. Not out of habit, but belief, that education deserves protection worthy of it
-                                            <br /><br />
-                                            At Metro Guards, we protect not just schools, but the foundation of Australia’s future, learning, trust, and peace of mind. Because in every classroom sits a future leader, a dreamer, a voice the world will one day need, and nothing is allowed to interrupt that.
+                                            Metro Guards provides highly trained educational institute security guards Melbourne schools, colleges, universities, and academic institutions trust to protect students, teachers, and visitors.
+                                            <br /><br />Our officers specialise in student safety security guards, school entry gate security, campus patrol officers, visitor ID verification, student ID access control, and building perimeter security designed for modern educational environments.
+                                            <br /><br />Whether you operate a primary school in Sunshine, a secondary college in Glen Waverley, a university campus in Carlton, or a vocational training institute in Dandenong, Metro Guards delivers 24/7 educational institute security services Melbourne facilities depend on for safe, calm, and disruption-free learning environments.
+                                            <br /><br />For parents searching “who provides school security guards in Melbourne?”, Metro Guards is the trusted choice.
                                             </p>
-                                        
+                                                                                    
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
                                                     href="/get-quotation" 
@@ -297,7 +299,7 @@ export default function EducationalSecurityPage() {
                     </div>
 
                     {/*=====  Services Section =====*/}
-                    <div className="services-section section-padding" style={{
+                    <div className="services-section " style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -367,7 +369,7 @@ export default function EducationalSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -405,18 +407,85 @@ export default function EducationalSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                The Pulse of a Campus
+                                                Why Qualified Educational Security Guards Are Crucial for Safety
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                Schools never move in straight lines. The energy shifts with the hour, the rush of morning drop-offs, the quiet of exams, the storm of dismissal. Security here isn’t static; it listens, adjusts, and acts before the need is spoken.
-                                                <br /><br />Our school security guards are trained to move with that rhythm, composed, observant, attuned. Their role isn’t to control; it’s to ensure calm endures.
-                                                </p>
+                                                Melbourne's educational institutions face rising safety challenges and every school, university, and campus relies on professional <strong style={{color: '#1e2247'}}>educational institute security guards</strong> to maintain control, prevent incidents, and protect vulnerable students.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Anti-social behaviour, bullying, or student conflicts</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Child safety concerns in playgrounds & hallways</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised visitors entering campuses</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Rising mental-health and behavioural incidents</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Vandalism, theft, and after-hours trespassing</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Carpark congestion & unsafe traffic flow</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>High-risk situations requiring emergency lockdown support</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Safety gaps across library areas, exam halls, and classrooms</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unsupervised movement through restricted zones</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Lack of trained personnel to manage large crowds at events</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These challenges require <strong style={{color: '#fdc51a'}}>campus security guards Melbourne</strong> trained in youth engagement, de-escalation, emergency response, and compliance with Victorian child safety standards.
+                                            </p>
                                             
                                             
                                         </div>
@@ -447,7 +516,7 @@ export default function EducationalSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '300px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -476,23 +545,60 @@ export default function EducationalSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Adaptability Is Our Discipline
+                                                Melbourne’s Leading Provider of School & Campus Security
                                                 </h2>
-                                                <p className="lead mb-4" style={{
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    Campuses breathe, they shift with the seasons, timetables, and energy of their people. From primary schools to universities, no two days are alike.
+                                                    Educational environments require officers who engage respectfully with students, support teachers, and maintain a calm presence. <strong style={{color: '#fdc51a'}}>Metro Guards</strong> provides <strong style={{color: '#1e2247'}}>school security guards Melbourne</strong> trained to:
                                                 </p>
+                                                
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginTop: '1rem',
+                                                    marginBottom: '1rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Communicate confidently with students of all age groups</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Build trust with staff and families</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Respond discreetly to behavioural issues</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect vulnerable or distressed students</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Manage student flow during busy times</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Monitor high-risk areas without disrupting learning</span>
+                                                    </li>
+                                                </ul>
+
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    margin: 0,
+                                                    marginTop: '0.5rem'
                                                 }}>
-                                                    Our systems evolve with them, daily patrol routes, tailored communication with staff, and digital logs that adapt to each site's rhythm. Metro Guards doesn't impose control; we integrate, quietly, precisely, dependably.
+                                                    Our officers operate with empathy, cultural awareness, and professionalism — essential qualities for any <strong style={{color: '#fdc51a'}}>university security guards Melbourne</strong>, <strong style={{color: '#fdc51a'}}>college security guards Melbourne</strong>, or <strong style={{color: '#fdc51a'}}>campus security guards Melbourne</strong>.
                                                 </p>
                                                 
                                                 
@@ -510,10 +616,10 @@ export default function EducationalSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Specialised for Education – <span style={{color: '#fdc51a'}}>Protecting Future</span>
+                                            Specialised Educational Institute  <span style={{color: '#fdc51a'}}>Security Guard Services </span>
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            Every guard at Metro Guards assigned to an educational site is chosen with precision. Their qualifications extend beyond compliance, into understanding human behaviour, emotional cues, and institutional etiquette.
+                                            Metro Guards delivers customised education security services Melbourne covering schools, colleges, universities, training institutes, and academic facilities.
                                             </p>
                                         </div>
                                         
@@ -703,7 +809,7 @@ export default function EducationalSecurityPage() {
                                                 marginBottom: '30px',
                                                 lineHeight: '1.3'
                                             }}>
-                                                When Calm Feels <span style={{color: '#fdc51a'}}>Effortless</span>
+                                                Accountability That Meets  <span style={{color: '#fdc51a'}}>Educational Standards</span>
                                             </h2>
 
                                             <p style={{
@@ -716,20 +822,70 @@ export default function EducationalSecurityPage() {
                                                 marginRight: 'auto',
                                                 fontWeight: '500'
                                             }}>
-                                                Some measure safety in response time. We measure it in <strong style={{color: '#fdc51a'}}>prevention</strong>, in the silence between incidents, the order in motion, the trust unspoken.
+                                                Our <strong style={{color: '#fdc51a'}}>security guards for educational institutes Melbourne</strong> are supported by digital reporting tools, live location tracking, and supervisor oversight, ensuring complete transparency.
                                             </p>
+
+                                            <p style={{
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.15rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '15px',
+                                                maxWidth: '850px',
+                                                marginLeft: 'auto',
+                                                marginRight: 'auto'
+                                            }}>
+                                                We deliver:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem',
+                                                maxWidth: '800px',
+                                                margin: '0 auto',
+                                                textAlign: 'left'
+                                            }}>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Student-safe, school-compliant processes</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Documented incident reporting</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Real-time response coordination</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>CCTV-linked patrol verification</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Compliance with Victorian Child Safe Standards</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Integration with school emergency plans</span>
+                                                </li>
+                                            </ul>
 
                                             <p style={{
                                                 color: 'rgba(255, 255, 255, 0.9)',
                                                 fontSize: '1.2rem',
                                                 lineHeight: '1.8',
-                                                margin: 0,
+                                                margin: '0',
+                                                marginTop: '1rem',
                                                 maxWidth: '850px',
                                                 marginLeft: 'auto',
                                                 marginRight: 'auto',
                                                 fontStyle: 'italic'
                                             }}>
-                                                Metro Guards officers don't command attention; they preserve normalcy. And in education, that is the highest form of mastery, when learning continues, <strong style={{color: '#fdc51a'}}>undisturbed and uninterrupted</strong>.
+                                                From primary schools to large university campuses, <strong style={{color: '#fdc51a'}}>Metro Guards</strong> maintains strict safeguarding protocols.
                                             </p>
                                         </div>
                                     </div>
@@ -779,7 +935,7 @@ export default function EducationalSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Proof of <span style={{color: '#fdc51a'}}>Precision</span>
+                                        Real-Time Verified Security Systems <span style={{color: '#fdc51a'}}>for Melbourne Sites</span>
                                     </h2>
 
                                     <p style={{
@@ -1185,7 +1341,7 @@ export default function EducationalSecurityPage() {
                                             marginBottom: '35px',
                                             lineHeight: '1.3'
                                         }}>
-                                            Protecting Melbourne's <span style={{color: '#fdc51a'}}>Most Demanding Sites</span>
+                                            Why Metro Guards Is the Trusted Security Partner <span style={{color: '#fdc51a'}}>for Melbourne’s Schools? </span>
                                         </h2>
                                     </div>
 
@@ -1221,7 +1377,8 @@ export default function EducationalSecurityPage() {
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    For over a decade, Metro Guards has stood in places where composure is non-negotiable: <strong style={{color: '#fdc51a'}}>government offices, corporate towers, logistics hubs</strong>, and now, the institutions that shape our nation's next generation.
+                                                    From student pick-up zones to campus perimeters, playgrounds, libraries, and exam halls, our presence ensures every learning space remains secure, calm, and free from disruption.We stand beside the institutions shaping Australia’s next generation, delivering security that supports education, wellbeing, and trust.
+
                                                 </p>
                                             </div>
                                         </div>
@@ -1256,18 +1413,10 @@ export default function EducationalSecurityPage() {
                                                     lineHeight: '1.8',
                                                     marginBottom: '25px'
                                                 }}>
-                                                    Our experience has taught us that the greatest form of authority isn't power, <strong style={{color: '#fdc51a'}}>it's presence</strong>.
-                                                </p>
+                                                   Every educational institute security guard we deploy is trained to guide with respect, de-escalate with confidence, and protect with purpose. Whether monitoring hallways, managing visitors, safeguarding teachers, or supporting students during sensitive moments, our officers bring composure, clarity, and care to every shift.
+                                                   </p>
 
-                                                <p style={{
-                                                    color: 'rgba(255, 255, 255, 0.9)',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                    margin: 0,
-                                                    fontStyle: 'italic'
-                                                }}>
-                                                    Every education security guard we deploy carries that truth into the field: trained to protect with restraint, to stand firm with respect, and to guard with purpose.
-                                                </p>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1344,6 +1493,9 @@ export default function EducationalSecurityPage() {
                             </div>
                         </div>
                     </div>
+
+                    
+                    <Testimonials />
 
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
@@ -1447,7 +1599,7 @@ export default function EducationalSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Protecting Education Is Protecting <span style={{color: '#fdc51a'}}>Australia's Tomorrow</span>
+                                                Educational Security That Safeguards the  <span style={{color: '#fdc51a'}}>Future of Melbourne</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1458,8 +1610,8 @@ export default function EducationalSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Our presence in schools, colleges, and universities across Melbourne is not an expansion, <strong style={{color: '#1e2247'}}>it's a commitment</strong>. We've guarded commerce, government, and logistics. But education is different.
-                                            </p>
+                                                Our role goes beyond guarding entrances, we uphold safety so students can grow, teachers can lead, and education can thrive without disruption.
+                                                </p>
                                             
                                             <p style={{
                                                 color: '#6c757d',
@@ -1469,8 +1621,8 @@ export default function EducationalSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                It carries the country's continuity, its intellect, its ethics, its future. <strong style={{color: '#1e2247'}}>Metro Guards stands for that continuity.</strong> Our officers don't just protect spaces; <strong style={{color: '#fdc51a'}}>they safeguard purpose</strong>.
-                                            </p>
+                                                When Melbourne’s education sector looks for protection, it looks to Metro Guards.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1594,5 +1746,29 @@ export default function EducationalSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides school security guards in Melbourne?",
+                            answer: "Metro Guards provides school security guards in Melbourne, offering trained officers for campuses, classrooms, playgrounds, and carparks. Their education-focused security teams protect students, support staff, manage access points, and maintain safe learning environments across primary schools, secondary colleges, universities, and training institutes."
+                        },
+                        {
+                            question: "How do I hire school security guards in Melbourne?",
+                            answer: "To hire school security guards in Melbourne, contact Metro Guards for a tailored security assessment. They supply education-specific safety officers, including school entry gate guards, campus patrol officers, student-safety personnel, and access-control specialists to protect students, staff, and visitors across all types of educational facilities."
+                        },
+                        {
+                            question: "Do you offer 24/7 campus security in Melbourne?",
+                            answer: "Yes. Metro Guards provides 24/7 campus security across Melbourne, including daytime coverage, after-hours protection, and overnight patrols. Their trained education security guards safeguard classrooms, buildings, playgrounds, carparks, and entry points while ensuring continuous student and staff safety around the clock."
+                        },
+                        {
+                            question: "Are your officers trained for emergencies?",
+                            answer: "Yes. Metro Guards' education security officers are trained in emergency lockdown procedures, conflict de-escalation, first aid, evacuation support, and crisis response. They help schools and campuses manage fast-moving incidents safely while supporting staff and ensuring student protection during emergencies."
+                        },
+                        {
+                            question: "Do you offer library and exam hall security?",
+                            answer: "Yes. Metro Guards provides security for libraries, exam halls, classrooms, and other academic facilities. Their officers monitor quiet study areas, protect resources, manage crowd flow during exams, and support safe learning environments for students across schools, colleges, and universities."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

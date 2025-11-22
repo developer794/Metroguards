@@ -1,9 +1,9 @@
 import CorporateSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Corporate Security Guards in Melbourne | Metro Guards",
+  title: "Top-Rated Corporate Security Guards in Melbourne ",
   description:
-    "Elite corporate security guards in Melbourne. Executive protection, office security, access control, and professional corporate security services.",
+    "Hire trained corporate security guards in Melbourne for events, offices, conferences, functions & galas: 24/7 corporate event security, crowd control & VIP protection.",
   alternates: { 
     canonical: "https://metroguards.com.au/corporate-security-guards" 
   },

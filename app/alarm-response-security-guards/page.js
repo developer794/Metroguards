@@ -1,9 +1,9 @@
 import AlarmResponseSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Alarm Response Security Guards in Melbourne | Metro Guards",
+  title: "Emergency Alarm Response Security Guards in Melbourne",
   description:
-    "Rapid alarm response security guards in Melbourne. 24/7 alarm monitoring, emergency response, property protection, and professional alarm response services.",
+    "24/7 alarm response security in Melbourne. Rapid mobile alarm response, break-in investigations, intrusion checks, after-hours call-outs & emergency alarm activation response.24/7 alarm response security in Melbourne. Rapid mobile alarm response, break-in investigations, intrusion checks, after-hours call-outs & emergency alarm activation response.",
   alternates: { 
     canonical: "https://metroguards.com.au/alarm-response-security-guards" 
   },

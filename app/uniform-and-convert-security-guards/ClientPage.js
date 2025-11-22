@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function UniformAndConvertSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function UniformAndConvertSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="UNIFORMED & COVERT SECURITY GUARDS"
-                mainTitle="UNIFORMED & COVERT SECURITY GUARDS IN MELBOURNE" 
+                mainTitle="Uniform and Covert Security Guards in Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.webp"
             >
                 <div>
@@ -164,8 +166,8 @@ export default function UniformAndConvertSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Visible Discipline.  <br />
-                                            <span style={{color: '#fdc51a'}}>Unseen Control</span>
+                                            24/7 Uniform & Covert Security Guards 
+                                            <span style={{color: '#fdc51a'}}>Service in Melbourne</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,9 +178,9 @@ export default function UniformAndConvertSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Security comes in two forms, the presence that deters, and the precision that observes. Metro Guards deploys both. Our uniformed security guards and covert security guards operate across Melbourne’s corporate, industrial, and high-risk environments, protecting assets and people with measured authority.
-                                            <br /><br />Uniformed security officers establish structure. Their presence is clear, professional, and instantly recognisable. Covert security officers extend that protection quietly, blending into environments to monitor threats before they surface. Together, they form a layered system designed to maintain order without interruption.
-                                            </p>
+                                            Metro Guards provides trained uniformed security guards Melbourne and covert security guards Melbourne for sites requiring both visible deterrence and discreet monitoring. Our dual-approach security model protects businesses through high-visibility patrols, plainclothes surveillance, covert loss-prevention operations, and undercover investigation support.
+                                            We service Melbourne CBD, Docklands, Dandenong, Richmond, Southbank, Footscray, and all major commercial and retail precincts. Whether you need professional uniformed guards, experienced covert surveillance officers, or licensed undercover security guards Melbourne, Metro Guards delivers 24/7 reliability and unmatched industry expertise.
+                                            For anyone searching “who provides covert security guards in Melbourne” or “uniformed security guards near me Melbourne”, Metro Guards is the trusted choice.</p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
@@ -402,19 +404,70 @@ export default function UniformAndConvertSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Uniformed Security – Command by Presence
+                                               Why Melbourne Businesses Use Uniform & Covert Security Guards
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                Uniformed security is more than appearance; it’s the language of authority. Every officer carries a visible standard of discipline, trained to control access points, manage site movements, and provide consistent reassurance to staff and visitors.
-                                                <br /><br />At Metro Guards, our uniformed guards represent years of operational refinement. Each guard is equipped with real-time communication tools, digital patrol verification, and access management protocols. From corporate offices and retail precincts to logistics hubs and construction zones, their function is to maintain visible order with professional restraint.
-                                                <br /><br />Their conduct builds confidence, punctual arrival, clear communication, verified reporting. Every shift runs under command supervision, ensuring the operation aligns with your protocols and compliance requirements.
-                                                </p>
+                                                Different environments require different methods, and modern risks demand more than visible guards alone. Melbourne organisations rely on both overt and covert officers to combat theft, aggression, internal misconduct, and suspicious behaviour.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Internal theft covert investigation Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Inventory shrinkage covert security Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Employee theft covert detection Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Shoplifting covert prevention Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Aggressive behaviour, uniformed response Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access or confrontational visitors</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These risks make <strong style={{color: '#fdc51a'}}>uniform and covert security Melbourne</strong> essential for businesses needing silent protection and visible deterrence simultaneously.
+                                            </p>
+                                            
                                             
                                             
                                         </div>
@@ -609,64 +662,67 @@ export default function UniformAndConvertSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h3 className="fw-bold mb-3" style={{color: '#1e2247', fontSize: '1.4rem'}}>
-                                                Our Control Room <span style={{color: '#fdc51a'}}>Maintains:</span>
+                                                Metro Guards: A Strong, Visible Deterrent for  <span style={{color: '#fdc51a'}}>Melbourne Sites:</span>
                                                 </h3>
                                                 
-                                                <div className="features-list">
-                                                    {[
-                                                        '24/7 communication with all deployed personnel',
-                                                        'GPS tracking and patrol validation',
-                                                        'Live incident logging with photo and timestamp entries',
-                                                        'Supervisor escalation protocols for high-risk responses'
-                                                    ].map((feature, index) => (
-                                                        <div key={index} style={{
-                                                            display: 'flex',
-                                                            alignItems: 'flex-start',
-                                                            gap: '12px',
-                                                            marginBottom: '15px'
-                                                        }}>
-                                                            <div style={{
-                                                                width: '24px',
-                                                                height: '24px',
-                                                                borderRadius: '50%',
-                                                                background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                                display: 'flex',
-                                                                alignItems: 'center',
-                                                                justifyContent: 'center',
-                                                                flexShrink: 0,
-                                                                marginTop: '2px'
-                                                            }}>
-                                                                <CheckCircle size={14} style={{color: '#1e2247'}} />
-                                                            </div>
-                                                            <p style={{
+                                                <p style={{
                                                     color: '#6c757d',
-                                                                fontSize: '1.05rem',
-                                                                lineHeight: '1.7',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    Our professional <strong style={{color: '#1e2247'}}>uniformed guards Melbourne</strong> are trained to:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Manage access control & visitor verification</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Deter aggression, vandalism & unauthorised entry</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Respond to incidents quickly & professionally</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Conduct high-visibility patrols inside/outside the site</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Provide first aid when required</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Assist staff, customers, residents & contractors</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect entrances, lobbies, loading docks & retail floors</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.7',
                                                     margin: 0
                                                 }}>
-                                                                {feature}
+                                                    They reinforce safety by being seen — keeping your site stable, orderly, and compliant.
                                                 </p>
-                                            </div>
-                                                    ))}
-                                                </div>
 
-                                                <div style={{
-                                                    marginTop: '25px',
-                                                    padding: '20px',
-                                                    background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.05))',
-                                                    borderRadius: '12px',
-                                                    border: '1px solid rgba(253, 197, 26, 0.2)'
-                                                }}>
-                                                    <p style={{
-                                                        color: '#1e2247',
-                                                        fontSize: '1.05rem',
-                                                        lineHeight: '1.7',
-                                                        margin: 0,
-                                                        fontWeight: '600'
-                                                    }}>
-                                                        Whether you require ongoing coverage or a temporary integration, the command structure remains the same: <span style={{color: '#fdc51a'}}>documented, verifiable, and accountable</span>.
-                                                    </p>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -681,7 +737,7 @@ export default function UniformAndConvertSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Integrated Operations. <span style={{color: '#fdc51a'}}>One Command Structure</span>
+                                             Melbourne’s Trusted Choice for Uniformed &  <span style={{color: '#fdc51a'}}>Covert Security Across Every Industry</span>
                                             </h2>
                                             <p style={{
                                                 color: '#6c757d',
@@ -689,7 +745,7 @@ export default function UniformAndConvertSecurityPage() {
                                                 lineHeight: '1.8',
                                                 marginBottom: '30px'
                                             }}>
-                                                Both uniformed and covert deployments operate under a <strong style={{color: '#1e2247'}}>single command framework</strong>. This allows for real-time coordination between visible deterrence and discreet observation.
+                                                We protect the environments Melbourne businesses depend on,  from high-visibility spaces to operations needing discreet undercover monitoring.
                                             </p>
                                         </div>
                                         
@@ -885,7 +941,7 @@ export default function UniformAndConvertSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Training. Verification. <span style={{color: '#fdc51a'}}>Accountability</span>
+                                            Technology-Supported Uniform & Covert  <span style={{color: '#fdc51a'}}>Security Operations</span>
                                         </h2>
 
                                         <p style={{
@@ -896,8 +952,8 @@ export default function UniformAndConvertSecurityPage() {
                                             maxWidth: '900px',
                                             margin: '0 auto 40px'
                                         }}>
-                                            Every Metro Guards officer undergoes ongoing evaluation through <strong style={{color: '#fdc51a'}}>examination, audit, training, and testing framework</strong>. Each guard is licensed under Victorian law, background-checked, and briefed per-site before deployment.
-                                        </p>
+                                            To enhance reliability and accountability, our uniform and covert deployments use:
+                                            </p>
                                 </div>
 
                                     {/* Two Column Content */}
@@ -1049,7 +1105,7 @@ export default function UniformAndConvertSecurityPage() {
                                             marginBottom: '25px',
                                                     lineHeight: '1.2'
                                                 }}>
-                                            Why <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Melbourne’s Leading Businesses <span style={{color: '#fdc51a'}}>Choose Metro Guards</span>
                                                 </h2>
                                             </div>
                                                 </div>
@@ -1162,7 +1218,7 @@ export default function UniformAndConvertSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+                    <Testimonials />
                     
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
@@ -1266,7 +1322,7 @@ export default function UniformAndConvertSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Let's Metro Guards Structure Your <span style={{color: '#fdc51a'}}>Safety</span>
+                                                Uniform & Covert Security Guards Melbourne <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1277,19 +1333,10 @@ export default function UniformAndConvertSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Every operation we undertake begins with <strong style={{color: '#1e2247'}}>assessment, not availability</strong>. Our teams are briefed on context, client objectives, and escalation boundaries before a single shift begins.
-                                            </p>
+                                                Whether you need visible stability or hidden surveillance, Metro Guards deploys the right officers for your site, protecting people, assets, stock, and reputations across all Melbourne industries.
+                                                </p>
                                             
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                The <strong style={{color: '#1e2247'}}>uniform communicates readiness</strong>. The <strong style={{color: '#1e2247'}}>covert operation ensures continuity</strong>. Together, they <strong style={{color: '#fdc51a'}}>close every gap</strong>.
-                                            </p>
+                                            
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1413,5 +1460,29 @@ export default function UniformAndConvertSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides covert security guards in Melbourne?",
+                            answer: "Metro Guards provides licensed covert security guards in Melbourne for undercover surveillance, internal theft detection, loss-prevention, and discreet monitoring. Our officers blend into your environment to identify risks, gather evidence, and protect stock, staff, and operations without being noticed."
+                        },
+                        {
+                            question: "What is the difference between uniformed and covert security guards in Melbourne?",
+                            answer: "Uniformed security guards provide a visible, high-deterrence presence, managing access control, patrolling sites, and responding to incidents. Covert security guards operate discreetly in plain clothes to detect theft, investigate internal misconduct, and observe behaviour unnoticed. Metro Guards supplies both options to match each Melbourne site's risk profile and environment."
+                        },
+                        {
+                            question: "Are female uniformed and covert security guards available in Melbourne?",
+                            answer: "Yes. Metro Guards provides trained female uniformed guards and female covert security officers in Melbourne. They support roles requiring strong communication, sensitivity, discreet observation, and customer-facing professionalism, making them ideal for retail, corporate, hospitality, residential, and undercover loss-prevention environments."
+                        },
+                        {
+                            question: "Do you offer 24/7 uniformed and covert security in Melbourne?",
+                            answer: "Yes. Metro Guards provides 24/7 uniformed security Melbourne and 24/7 covert security Melbourne, including overnight surveillance, weekend operations, and continuous loss-prevention coverage."
+                        },
+                        {
+                            question: "How do I hire covert security guards in Melbourne?",
+                            answer: "You can hire covert security guards by contacting Metro Guards for a confidential assessment. We provide trained undercover officers, store detectives, and covert monitoring teams for retail, warehouses, and commercial sites across Melbourne."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

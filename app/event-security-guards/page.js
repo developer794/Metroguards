@@ -1,9 +1,9 @@
 import EventSecurityGuardsPage from "./ClientPage";
 
 export const metadata = {
-  title: "Event Security Guards in Melbourne | Metro Guards",
+  title: "Event Security Guards in Melbourne | Event Crowd Control",
   description:
-    "Expert event security guards in Melbourne. Festival security, concert protection, crowd management, and professional event security services.",
+    "Hire professional event security guards in Melbourne. Crowd control, public & private event protection, festivals, concerts, venues & emergency response. 24/7 coverage.",
   alternates: { 
     canonical: "https://metroguards.com.au/event-security-guards" 
   },

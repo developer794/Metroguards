@@ -6,6 +6,7 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function EventSecurityGuardsPage() {
     const [activeService, setActiveService] = useState(null);
@@ -124,7 +125,7 @@ export default function EventSecurityGuardsPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="EVENT SECURITY GUARDS"
-                mainTitle="EVENT SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Event Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
                 
             >
@@ -159,8 +160,8 @@ export default function EventSecurityGuardsPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Where Celebration Meets  <br />
-                                            <span style={{color: '#fdc51a'}}>Control</span>
+                                            Event Security Melbourne 
+                                            <span style={{color: '#fdc51a'}}>Near Me</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -171,7 +172,8 @@ export default function EventSecurityGuardsPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            An event tells a story. A story of music, connection, and shared emotion. But behind every perfect night stands a team that makes it possible. At Metro Guards, our event security guards protect not just spaces, but the experience itself. We manage movement, protect people, and ensure that Melbourne’s biggest celebrations remain safe, seamless, and unforgettable.
+                                            Metro Guards provides specialised event security guards Melbourne trained to handle high-energy environments, large crowds, multiple entry points, alcohol-related risks, and fast-moving situations. Whether you’re organising a concert, festival, corporate gala, community celebration, or private function, our event security services Melbourne deliver safety, structure, and confidence from the first guest arrival to the final pack-down.
+                                            Our officers are familiar with Melbourne’s busiest event precincts, from Rod Laver Arena, Sidney Myer Music Bowl, Marvel Stadium, and Birrarung Marr, to boutique venues in Southbank, St Kilda, Fitzroy, Carlton, Brunswick, and Richmond, ensuring your event runs securely in any setting.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -396,18 +398,71 @@ export default function EventSecurityGuardsPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                               A Trained Skill of Maintaining Peace
+                                              Why Choose Metro Guards for Event Security in Melbourne
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                Anyone can stand in a crowd. Few can control one. Our team is built from licensed professionals, trained in de-escalation, crowd psychology, and emergency coordination. When tension rises, they don’t react, they regulate. When thousands cheer, they stay focused. And when pressure peaks, they make calm look effortless.
-                                                <br/><br/>Every Metro Guards officer carries RSA certification, holds Victorian Security Licences, and operates under ISO-certified systems. They represent the balance between authority and approachability, security that reassures, not restricts.
-                                                </p>
+                                                Melbourne organisers trust Metro Guards because:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We specialise in event crowd control security Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Officers are trained for large-scale and high-risk events</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We protect entrances, stages, bars, exits & VIP zones</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We prevent gatecrashers & manage queue control</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We handle alcohol incidents discreetly</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We provide event security guards Melbourne 24/7</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Our teams scale from small functions to major festivals</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We respond quickly for urgent, last-minute deployments</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>We provide local event security guards Melbourne across all suburbs</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                Every event is unique, and our security adapts to match.
+                                            </p>
                                             
                                             
                                         </div>
@@ -465,18 +520,62 @@ export default function EventSecurityGuardsPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    Designed for Every Kind of <span style={{color: '#fdc51a'}}>Event</span>
+                                                Event Security Services Melbourne |  <span style={{color: '#fdc51a'}}>Full-Spectrum Protection</span>
                                                 </h2>
-                                                <p className="lead" style={{
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
-                                                    fontSize: '1.2rem',
+                                                    fontSize: '1.15rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    margin: 0,
+                                                    fontWeight: '600'
                                                 }}>
-                                                    From spring carnivals and corporate functions to global concerts and cultural festivals, we secure every environment with the same discipline and discretion. Our event security services are built around <strong style={{color: '#fdc51a'}}>flexibility</strong>, because every event has its own rhythm.
-                                                    <br /><br />
-                                                    Whether it's 100 guests or 10,000, our systems scale with precision, so the event never loses its focus, and safety never loses priority. From <strong style={{color: '#1e2247'}}>concert security to festival security guards</strong>, our teams adapt to your audience, your venue, and your expectations.
+                                                    We secure both public and private events, including:
                                                 </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginTop: '1rem',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Concert security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Festival security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Private event security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Public event security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Corporate events & launches</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Sporting events & community gatherings</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Markets, exhibitions, expos & cultural events</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>High-profile entertainment events</span>
+                                                    </li>
+                                                </ul>
+
+                                                
                                             </div>
                                         </div>
                         </div>
@@ -491,8 +590,9 @@ export default function EventSecurityGuardsPage() {
                                                 </span>
                                     </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Our Capabilities <span style={{color: '#fdc51a'}}>Include</span>
+                                            Professional Event Security <span style={{color: '#fdc51a'}}>Guards Melbourne</span>
                                             </h2>
+                                            <p>Metro Guards supplies event personnel trained for high-pressure environments:</p>
                                 </div>
                                         
                                         {/* Expandable Service Cards */}
@@ -621,7 +721,7 @@ export default function EventSecurityGuardsPage() {
                                             </span>
                                         </div>
                                         <h2 className="display-5 fw-bold" style={{color: '#1e2247'}}>
-                                            Hospitality With <span style={{color: '#fdc51a'}}>Protection</span>
+                                        Crowd Management & Entry Control
                                         </h2>
                                     </div>
 
@@ -637,17 +737,61 @@ export default function EventSecurityGuardsPage() {
                                             color: '#6c757d',
                                             fontSize: '1.15rem',
                                             lineHeight: '1.8',
-                                            marginBottom: '25px'
+                                            marginBottom: '1rem',
+                                            fontWeight: '600'
                                         }}>
-                                            True professionalism isn't loud, it's consistent. Our event security guards don't just monitor guests; they represent your brand. They greet, assist, and protect with the same poise you expect from your own staff.
+                                            Metro Guards specialises in professional crowd management security, including:
                                         </p>
+
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            color: '#6c757d',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.8',
+                                            paddingLeft: '0',
+                                            marginBottom: '1.5rem'
+                                        }}>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Entry and exit gate security</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Ticket-scanning security officers</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Bag check security event teams</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Queue control event security</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Alcohol management event security</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>VIP event security Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Stage security guards Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Event patrol security Melbourne</span>
+                                            </li>
+                                        </ul>
+
                                         <p style={{
                                             color: '#6c757d',
-                                            fontSize: '1.15rem',
+                                            fontSize: '1.1rem',
                                             lineHeight: '1.8',
                                             marginBottom: '0'
                                         }}>
-                                            That's what separates Metro Guards from traditional security providers. We blend <strong style={{color: '#fdc51a'}}>customer service and crowd control</strong>, ensuring every interaction builds trust, not tension. Your guests remember the celebration, not the checkpoints.
+                                            We maintain a safe atmosphere without interrupting guest enjoyment.
                                         </p>
                                     </div>
                                 </div>
@@ -709,7 +853,7 @@ export default function EventSecurityGuardsPage() {
                                             </span>
                                         </div>
                                         <h2 className="display-5 fw-bold" style={{color: '#ffffff'}}>
-                                            Technology That Moves as Fast as the <span style={{color: '#fdc51a'}}>Crowd</span>
+                                        Event Risk Management & <span style={{color: '#fdc51a'}}>Emergency Response</span>
                                         </h2>
                                     </div>
 
@@ -727,7 +871,7 @@ export default function EventSecurityGuardsPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '25px'
                                         }}>
-                                            Every event is a moving ecosystem, our systems move with it. Metro Guards uses <strong style={{color: '#fdc51a'}}>GPS-tracked patrols, real-time client dashboards, and incident reporting</strong> that turns activity into proof. Every action, every checkpoint, every patrol is timestamped and visible.
+                                            Metro Guards' event security officers are trained to manage high-pressure situations with calm, decisive action. Our team responds quickly to fights at events, aggressive crowd behaviour, ensuring risks are controlled before they escalate. We provide robust event theft prevention, proactive gatecrasher prevention, event security Melbourne, and protective measures for VIP safety security Melbourne at high-profile functions.
                                         </p>
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.9)',
@@ -735,7 +879,7 @@ export default function EventSecurityGuardsPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '0'
                                         }}>
-                                            Our 24/7 Operations Centre monitors live footage and coordinates communication between on-ground teams and event organisers, ensuring that responses aren't delayed, they're anticipated. It's not about surveillance; it's about <strong style={{color: '#fdc51a'}}>situational intelligence</strong>, knowing what's happening before it becomes a problem.
+                                            In the event of emergencies, our guards coordinate event evacuation support Melbourne, working alongside venue staff and emergency services to maintain guest safety and event continuity. With Metro Guards, every event benefits from a reliable, trained response team ready for any scenario.
                                         </p>
                                     </div>
                                 </div>
@@ -797,7 +941,7 @@ export default function EventSecurityGuardsPage() {
                                             </span>
                                         </div>
                                         <h2 className="display-5 fw-bold" style={{color: '#1e2247'}}>
-                                            Why Melbourne's Biggest Events Trust <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                        Why Melbourne Chooses Metro Guards for Event <span style={{color: '#fdc51a'}}> Crowd Control</span>
                                         </h2>
                                     </div>
 
@@ -816,16 +960,9 @@ export default function EventSecurityGuardsPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '25px'
                                         }}>
-                                            Because reliability is more than a roster, it's a reputation. For over 15 years, Metro Guards has been the quiet presence behind some of Melbourne's most iconic events. We're <strong style={{color: '#fdc51a'}}>fully licensed, ISO Certified, CM3 Prequalified, and proud ASIAL members</strong>.
-                                        </p>
-                                        <p style={{
-                                            color: '#6c757d',
-                                            fontSize: '1.15rem',
-                                            lineHeight: '1.8',
-                                            marginBottom: '0'
-                                        }}>
-                                            Anyone can show up; few stay till the end. When the celebration winds down, we're still there, checking the grounds, guiding the stragglers, and making sure everyone leaves as safely as they arrived.
-                                        </p>
+                                            Event organisers across Melbourne choose Metro Guards because we deliver top rated event security guards Melbourne who are trained specifically for high-energy environments and complex crowd dynamics. Known as the best event security guards Melbourne, our officers balance hospitality with firm control, ensuring guests feel safe while remaining compliant with venue rules.
+                                            </p>
+                                       
                                     </div>
 
                                     {/* Certification Icons */}
@@ -982,7 +1119,7 @@ export default function EventSecurityGuardsPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Event Security That Understands <span style={{color: '#fdc51a'}}>Celebration</span>
+                                                Event Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Organisers Depend On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -993,8 +1130,8 @@ export default function EventSecurityGuardsPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                Events are more than gatherings, they're memories in motion. Our job is to protect that motion, to ensure that every cheer, every toast, every moment feels free, because it's safe. Choose security that blends into the joy, not the noise. Choose the team that knows how to <strong style={{color: '#fdc51a'}}>stand still when everyone else is moving</strong>.
-                                            </p>
+                                                Metro Guards keep events safe, structured, and enjoyable. Whether it’s a corporate gala, a stadium performance, a music festival, or a private celebration, our guards maintain order, protect guests, and ensure the event runs to plan.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1116,5 +1253,29 @@ export default function EventSecurityGuardsPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides event security guards in Melbourne?",
+                            answer: "Metro Guards provides licensed event security guards in Melbourne trained in crowd control, alcohol management, entry screening, and incident response. We secure concerts, festivals, private functions, corporate events, and community gatherings across all major Melbourne venues."
+                        },
+                        {
+                            question: "How do event security guards manage crowds in Melbourne?",
+                            answer: "Metro Guards' event guards manage crowds by controlling entry points, guiding guest flow, enforcing venue rules, preventing gatecrashing, and de-escalating aggressive behaviour. They help maintain safety and ensure the event runs smoothly without disruption."
+                        },
+                        {
+                            question: "Do event security guards in Melbourne handle alcohol-related incidents?",
+                            answer: "Yes. Metro Guards trains event officers to identify intoxication, prevent alcohol-fuelled conflict, and safely manage disruptive guests. This helps maintain order, reduce risk, and protect venue's reputation."
+                        },
+                        {
+                            question: "Can I hire event security for private or house events in Melbourne?",
+                            answer: "Absolutely. Metro Guards provides private event security guards Melbourne for birthdays, house parties, functions, family events, and private celebrations. Our guards prevent gatecrashers, manage noise concerns, and protect guests."
+                        },
+                        {
+                            question: "Are Metro event security guards licensed and trained?",
+                            answer: "Yes. All Metro event security guards hold valid Victorian licences and are trained in crowd management, emergency response, conflict de-escalation, and first aid. They are prepared for both small gatherings and large-scale events."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

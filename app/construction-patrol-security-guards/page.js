@@ -1,9 +1,9 @@
 import ClientPage from "./ClientPage";
 
 export const metadata = {
-  title: "Construction Patrol Security Guards in Melbourne | Metro Guards",
+  title: "Local Construction Patrol Security Guards in Melbourne ",
   description:
-    "Specialized construction patrol security guards in Melbourne. Site protection, equipment security, theft prevention, and professional construction patrol services.",
+    "Hire construction patrol security guards in Melbourne. 24/7 mobile patrols, theft prevention, trespass deterrence, after-hours checks & equipment protection.",
   alternates: { 
     canonical: "https://metroguards.com.au/construction-patrol-security-guards" 
   },

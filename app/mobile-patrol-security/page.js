@@ -1,9 +1,9 @@
 import MobilePatrolSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Mobile Patrol Security in Melbourne | Metro Guards",
+  title: "Top-Rated Mobile Patrol Security Guards in Melbourne",
   description:
-    "Professional mobile patrol security services in Melbourne. GPS-tracked patrols, property inspections, alarm response, and 24/7 mobile security services.",
+    "Hire mobile patrol security guards in Melbourne. 24/7 patrol units, rapid response, after-hours site protection, vandalism prevention & break-in deterrence.",
   alternates: { 
     canonical: "https://metroguards.com.au/mobile-patrol-security" 
   },

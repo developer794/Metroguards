@@ -1,9 +1,9 @@
 import K9SecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "K9 Security Guards with Handler in Melbourne | Metro Guards",
+  title: "Best K9 Security Guards in Melbourne | Dog Security Patrol ",
   description:
-    "Professional K9 security guards with handlers in Melbourne. Canine security units, detection services, patrol dogs, and specialized K9 security services.",
+    "Hire K9 security guards in Melbourne. Professional dog handlers, mobile K9 patrols, intruder prevention, construction & warehouse protection. 24/7 coverage.",
   alternates: { 
     canonical: "https://metroguards.com.au/k9-security-guards-in-melbourne" 
   },

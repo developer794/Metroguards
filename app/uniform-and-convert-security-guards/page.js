@@ -1,9 +1,9 @@
 import UniformAndConvertSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Uniform and Covert Security Guards in Melbourne | Metro Guards",
+  title: "Best Local Uniform & Covert Security Guards in Melbourne",
   description:
-    "Professional uniform and covert security guards in Melbourne. Visible deterrence and discreet protection, integrated security solutions, and 24/7 surveillance.",
+    "Hire uniformed & covert security guards in Melbourne. Overt protection, undercover surveillance and discreet investigation services. 24/7 deployment.",
   alternates: { 
     canonical: "https://metroguards.com.au/uniform-and-convert-security-guards" 
   },

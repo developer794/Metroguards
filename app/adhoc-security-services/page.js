@@ -1,9 +1,9 @@
 import AdhocSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "ADHOC Security Guards in Melbourne | Metro Guards",
+  title: "Hire Adhoc Security Guards in Melbourne | On-Call Security ",
   description:
-    "Rapid-response ADHOC security guards in Melbourne. Licensed officers, GPS-tracked deployments, live reporting, and 24/7 command oversight.",
+    "Need adhoc security guards in Melbourne? Fast on-call, temporary and emergency security for last-minute shifts, staff no-shows and urgent site protection. 24/7.",
   alternates: { 
     canonical: "https://metroguards.com.au/adhoc-security-services" 
   },

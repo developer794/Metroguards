@@ -1,9 +1,9 @@
 import ConciergeSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Concierge Security Guards in Melbourne | Metro Guards",
+  title: "Top-Rated Concierge Security Guards in Melbourne",
   description:
-    "Professional concierge security guards in Melbourne. Residential building security, visitor management, luxury property protection, and 24/7 concierge services.",
+    "Hire professional concierge security guards in Melbourne. Front desk, lobby, residential & corporate concierge security. 24/7 building access control & customer service safety.",
   alternates: { 
     canonical: "https://metroguards.com.au/concierge-guards" 
   },

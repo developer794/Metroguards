@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function LockUpSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function LockUpSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOCK-UP & OPEN-UP SECURITY SERVICES"
-                mainTitle="LOCK-UP & OPEN-UP SECURITY SERVICES MELBOURNE" 
+                mainTitle="Lock-Up & Open-Up Security Services Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp"
             >
                 <div>
@@ -156,7 +158,7 @@ export default function LockUpSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -164,9 +166,9 @@ export default function LockUpSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Securing the First and Final  <br />
-                                            <span style={{color: '#fdc51a'}}>Moments of Every Day</span>
-                                        </h1>
+                                            Lock-Up Security Melbourne 
+                                            <span style={{color: '#fdc51a'}}>24/7</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -176,8 +178,8 @@ export default function LockUpSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Every site has two most vulnerable points, the moment it opens, and the moment it closes. Between those transitions, security is often assumed. But at the start and end of operations, everything depends on a single process: who enters first, who leaves last, and how that transition is controlled.
-                                            <br/><br/>Metro Guards provides dedicated Lock-Up and Open-Up Security Services across Melbourne and regional Victoria, a disciplined service built from the structure of our mobile patrol division. Each operation is mapped to time, procedure, and verification, ensuring your sites open safely, and close without exposure.
+                                            Metro Guards provides reliable lock-up & open-up security Melbourne businesses rely on for safe end-of-day closure and protected early-morning access. Our trained officers handle secure shutdowns, unlock buildings, perform safety inspections, set alarms, monitor entrances, and ensure your premises are safe before the first staff member arrives.
+                                            From office buildings and retail stores to commercial facilities, warehouses, shopping centres, and hospitality venues, Metro Guards delivers business lock-up security Melbourne and morning open-up security Melbourne that keep your operations protected around the clock. For anyone searching “who provides lock-up security guards in Melbourne?” Metro Guards remains a trusted, 24/7 solution.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -300,7 +302,6 @@ export default function LockUpSecurityPage() {
                             <div className="row">
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="services-content ps-lg-4">
-                                        {/* Real-Time Proof Section - Accordion Style */}
                                         <div className="human-element-section section-header mb-5">
                                             <div className="subtitle mb-3">
                                                 <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
@@ -308,122 +309,76 @@ export default function LockUpSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Purpose Behind <span style={{color: '#fdc51a'}}>Lock-Up and Open-Up Security</span>
+                                                Why Lock-Up & Open-Up Security Matters in <span style={{color: '#fdc51a'}}>Melbourne</span>
                                             </h2>
                                             
-                                            <div className="features-accordion">
-                                                {[
-                                                    {
-                                                        icon: "fas fa-lock",
-                                                        title: 'Secure and Release Access Points',
-                                                        description: 'Entrances and gates locked or opened at scheduled times.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-shield-alt",
-                                                        title: 'Verify Alarm Systems',
-                                                        description: 'Armed or disarmed under supervisor confirmation.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-search",
-                                                        title: 'Inspect All Zones',
-                                                        description: 'Internal and external areas checked for unauthorised presence.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-power-off",
-                                                        title: 'Control Power and Equipment',
-                                                        description: 'Lights, power, and systems activated or shut down as per client procedure.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-check-circle",
-                                                        title: 'Reinforce Perimeter Integrity',
-                                                        description: 'Fences, locks, and entry barriers inspected for tampering or forced access.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-clipboard-check",
-                                                        title: 'Track Every Movement',
-                                                        description: 'Each action recorded and verified through our command centre\'s digital system.'
-                                                    }
-                                                ].map((feature, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
-                                                            className="accordion-header p-3"
-                                                        style={{
-                                                                backgroundColor: activeFeature === index ? '#ffffff' : '#f8f9fa',
-                                                                borderRadius: activeFeature === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
-                                                            onClick={() => toggleFeature(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
-                                                                        className="feature-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                            width: '45px',
-                                                                            height: '45px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
-                                                                            color: '#fdc51a',
-                                                                            fontSize: '1.2rem'
-                                                                    }}
-                                                                >
-                                                                        <i className={feature.icon}></i>
-                                                                </div>
-                                                                <div>
-                                                                        <h6 className="mb-0 fw-bold" style={{color: '#1e2247', fontSize: '1rem'}}>{feature.title}</h6>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                style={{
-                                                                            width: '35px',
-                                                                            height: '35px',
-                                                                            backgroundColor: activeFeature === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
-                                                                            color: activeFeature === index ? '#fdc51a' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                        <span style={{fontSize: '1.1rem', fontWeight: 'bold'}}>
-                                                                            {activeFeature === index ? '−' : '+'}
-                                                                    </span>
-                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                                        {activeFeature === index && (
-                                                        <div 
-                                                                className="accordion-content p-3"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
                                             <p style={{ 
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
-                                                                    fontSize: '0.95rem'
-                                                            }}>
-                                                                    {feature.description}
-                                                            </p>
+                                                color: '#6c757d', 
+                                                fontSize: '1.2rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                Melbourne businesses face real operational and safety risks at opening and closing times. Staff may be alone, visibility is low, and criminals often target these vulnerable moments.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: '#6c757d', 
+                                                fontSize: '1.15rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '1rem',
+                                                fontWeight: '600'
+                                            }}>
+                                                Common challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access after-hours Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Buildings left unlocked Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>End-of-day safety concerns Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Risk of break-ins during closing Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Early morning opening security risk Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Late-night lock-up security risk Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Store closing safety issues Melbourne</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These risks make <strong style={{color: '#fdc51a'}}>after-hours security lock-up Melbourne</strong> and daily opening security checks essential for business continuity, asset protection, and staff safety.
+                                            </p>
                                         </div>
-                                                    )}
                                     </div>
-                                            ))}
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
@@ -441,12 +396,10 @@ export default function LockUpSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
-                                        
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     
@@ -504,7 +457,7 @@ export default function LockUpSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Designed for Melbourne's <span style={{color: '#fdc51a'}}>Working Landscape</span>
+                                            Supporting Melbourne’s Critical Business Sectors with  <span style={{color: '#fdc51a'}}>WorkSecure Opening & Closing Procedures</span>
                                         </h2>
 
                                         <p style={{
@@ -514,8 +467,8 @@ export default function LockUpSecurityPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            This service was developed for <strong style={{color: '#fdc51a'}}>councils, facility managers, and multi-site operators</strong> who require consistent security coverage without maintaining full-time on-site guards. Our Lock-Up, Open-Up, and after hours security services currently manage:
-                                        </p>
+                                            Our lock-up and open-up services Melbourne protect finance offices, medical centres, retail chains, logistics hubs, and premium commercial buildings. Metro Guards ensures your premises remains secured overnight and ready for operations every morning.
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -698,8 +651,60 @@ export default function LockUpSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        The System That Commands Each <span style={{color: '#fdc51a'}}>Operation</span>
+                                        Technology-Backed Accountability 
+                                        <span style={{color: '#fdc51a'}}>for Peace of Mind</span>
                                     </h2>
+
+                                    <p style={{
+                                        color: '#6c757d',
+                                        fontSize: '1.15rem',
+                                        lineHeight: '1.8',
+                                        marginBottom: '1rem'
+                                    }}>
+                                        Our <strong style={{color: '#1e2247'}}>lock-up security Melbourne</strong> and <strong style={{color: '#1e2247'}}>open-up guards Melbourne</strong> are supported by:
+                                    </p>
+
+                                    <ul style={{
+                                        listStyle: 'none',
+                                        color: '#6c757d',
+                                        fontSize: '1.05rem',
+                                        lineHeight: '1.8',
+                                        paddingLeft: '0',
+                                        marginBottom: '1rem'
+                                    }}>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Time-stamped digital closure reports</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>GPS-verified patrol routes</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Photographic evidence of lock-up conditions</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Alarm activation/disarm logs</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Supervisor oversight</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Real-time notifications for unusual activity</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Building system checks</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Compliance with OH&S and insurance requirements</span>
+                                        </li>
+                                    </ul>
 
                                     <p style={{
                                         color: '#6c757d',
@@ -707,7 +712,7 @@ export default function LockUpSecurityPage() {
                                         lineHeight: '1.8',
                                         marginBottom: '0'
                                     }}>
-                                        Each assignment begins before arrival, with <strong style={{color: '#1e2247'}}>client-specific instructions preloaded into our command network</strong>. Guards follow a defined digital checklist covering entry codes, alarm sequences, and inspection zones. Every step is GPS-tracked, validated, and monitored live through our control centre, ensuring no task is skipped and no risk goes unnoticed. It's how Metro Guards delivers real accountability, <strong style={{color: '#fdc51a'}}>not through promises, but through proof</strong>.
+                                        You receive verified proof that your premises was safely closed or opened every single day.
                                     </p>
                                 </div>
 
@@ -720,7 +725,7 @@ export default function LockUpSecurityPage() {
                                         border: '3px solid rgba(253, 197, 26, 0.3)'
                                     }}>
                                         <img 
-                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/7E906AD3-E59A-4B0D-AB5A-9FA58736A309_1_105_c.jpeg" 
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/7E906AD3-E59A-4B0D-AB5A-9FA58736A309_1_105_c.webp" 
                                             alt="Lock-Up Security Command System"
                                             className="img-fluid"
                                             style={{
@@ -814,7 +819,7 @@ export default function LockUpSecurityPage() {
                                             marginBottom: '35px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Risk Prevention Through <span style={{color: '#fdc51a'}}>Routine</span>
+                                            Specialist Lock-Up & Open-Up Security  <span style={{color: '#fdc51a'}}>Services in Melbourne</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -843,25 +848,113 @@ export default function LockUpSecurityPage() {
 
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.95)',
-                                            fontSize: '1.15rem',
+                                            fontSize: '1.2rem',
                                             lineHeight: '1.9',
-                                            marginBottom: '25px',
+                                            marginBottom: '1.5rem',
                                             fontWeight: '500',
                                             position: 'relative',
                                             zIndex: 2
                                         }}>
-                                            Every late alarm, missed closure, or unsecured gate carries cost — <strong style={{color: '#fdc51a'}}>theft, vandalism, or liability</strong>.
+                                            Metro Guards delivers a complete range of <strong style={{color: '#fdc51a'}}>lock-up & open-up services Melbourne</strong>, tailored to retail, office, commercial, and industrial premises.
                                         </p>
                                         
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.9)',
-                                            fontSize: '1.1rem',
-                                            lineHeight: '1.9',
-                                            marginBottom: '25px',
+                                            fontSize: '1.15rem',
+                                            lineHeight: '1.8',
+                                            marginBottom: '1rem',
                                             position: 'relative',
                                             zIndex: 2
                                         }}>
-                                            Our lock-up patrols eliminate that variable. By combining procedural consistency with digital oversight, each transition becomes a controlled handover from vulnerability to protection.
+                                            Our services include:
+                                        </p>
+
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.8',
+                                            paddingLeft: '0',
+                                            marginBottom: '1.5rem',
+                                            position: 'relative',
+                                            zIndex: 2
+                                        }}>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>End-of-day lock-up services Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Morning open-up security Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>After-hours security lock-up Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Secure lock-up patrol Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Building lock-up services Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Office lock-up security Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Retail lock-up & open-up services Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Commercial lock-up services Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Premises shutdown security</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Safety check before opening</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Secure closing patrol services</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Alarm setting & disarming services</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Access control lock-up</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Opening procedure security Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Daily opening security checks</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>End-of-day secure closure</span>
+                                            </li>
+                                        </ul>
+
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.1rem',
+                                            lineHeight: '1.8',
+                                            marginBottom: '0',
+                                            position: 'relative',
+                                            zIndex: 2,
+                                            fontStyle: 'italic'
+                                        }}>
+                                            Each officer follows strict security protocols, ensuring your site is fully secured at night and safely prepared for operations in the morning.
                                         </p>
 
                                         <div style={{
@@ -898,7 +991,7 @@ export default function LockUpSecurityPage() {
                                         border: '3px solid rgba(253, 197, 26, 0.3)'
                                     }}>
                                         <img 
-                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/9D3EC0BD-7811-4083-AAFF-5CFB908FA234_1_105_c.jpeg"
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Lock%20Up%20Secuirty/9D3EC0BD-7811-4083-AAFF-5CFB908FA234_1_105_c.webp"
                                             alt="Operational Verification and Reporting"
                                             className="img-fluid"
                                             style={{
@@ -986,25 +1079,59 @@ export default function LockUpSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Operational Verification and <span style={{color: '#fdc51a'}}>Reporting</span>
+                                        Reliable Security for Opening & <span style={{color: '#fdc51a'}}>Closing Times</span>
                                     </h2>
+
+                                    <p style={{
+                                        color: '#6c757d',
+                                        fontSize: '1.15rem',
+                                        lineHeight: '1.8',
+                                        marginBottom: '1rem'
+                                    }}>
+                                        Every <strong style={{color: '#1e2247'}}>Metro Guard's lock-up and open-up officer</strong> is trained to:
+                                    </p>
+                                    
+                                    <ul style={{
+                                        listStyle: 'none',
+                                        color: '#6c757d',
+                                        fontSize: '1.05rem',
+                                        lineHeight: '1.8',
+                                        paddingLeft: '0',
+                                        marginBottom: '1.5rem'
+                                    }}>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Conduct complete building walk-throughs</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Check exits, storage areas, stockrooms & loading docks</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Confirm all staff have safely exited</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Secure all access points before leaving</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Set & verify alarms and locking systems</span>
+                                        </li>
+                                        <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                            <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                            <span>Unlock and inspect the site before the first staff arrival</span>
+                                        </li>
+                                    </ul>
 
                                     <p style={{
                                         color: '#6c757d',
                                         fontSize: '1.1rem',
                                         lineHeight: '1.8',
-                                        marginBottom: '25px'
+                                        marginBottom: '0'
                                     }}>
-                                        Every lock, every alarm, every gate — <strong style={{color: '#1e2247'}}>tracked, verified, and reported</strong>. Our system gives you a transparent record of every open and close operation, complete with time logs, supervisor checks, and photographic proof.
-                                    </p>
-                                    
-                                    <p style={{
-                                        color: '#6c757d',
-                                        fontSize: '1.1rem',
-                                        lineHeight: '1.8',
-                                        marginBottom: '30px'
-                                    }}>
-                                        Clients receive instant alerts and post-operation summaries, ensuring no step is missed and no area is left unprotected.
+                                        This ensures your business starts and ends each day securely, with no gaps in protection.
                                     </p>
 
                                     <div style={{
@@ -1083,7 +1210,7 @@ export default function LockUpSecurityPage() {
                                             marginBottom: '50px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Why Organisations Choose <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                             Why Melbourne Businesses Choose Metro Guards for  <span style={{color: '#fdc51a'}}>Lock-Up & Open-Up Services</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -1201,7 +1328,7 @@ export default function LockUpSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+                   <Testimonials />
                     
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
@@ -1305,7 +1432,7 @@ export default function LockUpSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Securing the Edges of Every <span style={{color: '#fdc51a'}}>Working Day</span>
+                                                Lock-Up Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1316,8 +1443,8 @@ export default function LockUpSecurityPage() {
                                                 maxWidth: '900px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                The end of the day isn't the end of risk. The start of the day isn't the beginning of safety. <strong style={{color: '#1e2247'}}>Metro Guards closes that gap</strong>. With lock-up and open-up security services that function like clockwork, every day, across Melbourne and Victoria. If your operations depend on certainty, schedule an assessment. We'll build a lock-up and open-up program <strong style={{color: '#fdc51a'}}>aligned precisely with your site's risk profile and operating rhythm</strong>.
-                                            </p>
+                                                From small retail stores to large corporate buildings, Metro Guards ensures your premises is safely closed each night and securely opened each morning with precision, consistency, and care.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1441,5 +1568,33 @@ export default function LockUpSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "How does lock-up security work in Melbourne?",
+                            answer: "Metro Guards' lock-up services include end-of-day patrols, securing all entry points, setting alarms, confirming staff exit, reporting hazards, and ensuring the site is safe before departure. This prevents break-ins and ensures full building security overnight."
+                        },
+                        {
+                            question: "What is lock-up security in Melbourne?",
+                            answer: "Lock-up security in Melbourne involves trained officers securing a business at closing time, inspecting the premises, locking all access points, setting alarms, and ensuring no risks remain. Metro Guards provides nightly lock-up services to prevent break-ins, vandalism, and after-hours safety threats."
+                        },
+                        {
+                            question: "Why do businesses need lock-up & open-up services?",
+                            answer: "Businesses need lock-up and open-up services to reduce after-hours risks, protect staff, prevent unauthorised access, and maintain building safety. Metro Guards ensures your premises are safely closed at night and securely opened in the morning, minimising threats during vulnerable hours."
+                        },
+                        {
+                            question: "What do Metro lock-up security guards do?",
+                            answer: "Metro Lock-up security guards conduct final checks, secure doors, activate alarms, patrol vulnerable zones, escort staff, and ensure the site is protected after hours. Our trained officers follow strict procedures to deliver a reliable nightly closure."
+                        },
+                        {
+                            question: "Do you provide morning open-up security?",
+                            answer: "Yes. Metro Guards provides morning open-up security Melbourne businesses use for safe entry. We unlock premises, check for overnight issues, disarm alarms, inspect the building, and ensure staff can enter safely each morning."
+                        },
+                        {
+                            question: "How do I hire lock-up security guards?",
+                            answer: "You can hire lock-up security guards by contacting Metro Guards for a tailored assessment. We offer scheduled or urgent deployment for offices, retail stores, commercial sites, and industrial facilities needing reliable opening and closing protection."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

@@ -1,9 +1,9 @@
 import StaticSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Static Security Guards in Melbourne | Metro Guards",
+  title: "Static Security Guards in Melbourne Near Me | 24/7",
   description:
-    "Professional static security guards in Melbourne. On-site protection, access control, fixed-post security, and 24/7 static guard services.",
+    "Hire trained static security guards in Melbourne. On-site guards for buildings, retail, warehouses, commercial sites & 24/7 property protection.",
   alternates: { 
     canonical: "https://metroguards.com.au/static-security-guards" 
   },

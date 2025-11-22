@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function CorporateSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function CorporateSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CORPORATE SECURITY GUARDS"
-                mainTitle="CORPORATE SECURITY GUARDS IN MELBOURNE"
+                mainTitle="CORPORATE SECURITY GUARDS IN MELBOURNECorporate Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
             >
                 <div>
@@ -164,8 +166,8 @@ export default function CorporateSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Precision That Protects  <br />
-                                            <span style={{color: '#fdc51a'}}>Corporate Continuity</span>
+                                            On-Site Corporate Guard Services for 
+                                            <span style={{color: '#fdc51a'}}> Events, Offices & Commercial Spaces</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,9 +178,10 @@ export default function CorporateSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Business runs on rhythm, the flow between systems, people, and decisions that never truly stop.
-                                            <br /><br />When offices fall silent and corridors empty, that rhythm still moves beneath the surface.
-                                            <br /><br />Metro Guards sustains that movement. Our corporate security guards services safeguard Melbourne’s corporate environments with a discipline built on structure, verification, and trust earned over 15 years of uninterrupted performance. We maintain what others depend on; confidence that tomorrow will begin exactly as planned.
+                                           Metro Guards provides highly trained corporate security guards Melbourne businesses rely on to protect offices, corporate events, boardrooms, commercial buildings, and VIP guests. Our officers specialise in corporate event security, corporate crowd control, VIP escorting, and professional access management, ensuring every business function runs safely and without interruption.
+                                            <br /><br />Whether you’re hosting a corporate gala in Docklands, a conference in Southbank, a seminar in Hawthorn, or managing a high-rise office in the CBD, Metro Guards delivers corporate event security services Melbourne companies depend on for a refined, professional, and seamless security presence.
+                                            <br /><br />
+                                            For anyone searching “who provides corporate event security guards in Melbourne?”, Metro Guards is the trusted choice.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -255,7 +258,7 @@ export default function CorporateSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '600px',
+                                                    height: '800px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -295,7 +298,7 @@ export default function CorporateSecurityPage() {
                     </div>
 
                     {/*=====  Services Section =====*/}
-                    <div className="services-section section-padding" style={{
+                    <div className="services-section " style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         position: 'relative',
                         overflow: 'hidden'
@@ -365,7 +368,7 @@ export default function CorporateSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '450px',
+                                                        height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -403,17 +406,85 @@ export default function CorporateSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Accountability Without Interruption
+                                                Why Offices & Corporate Functions Run Safer With Professional Security
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                Corporate certainty relies on precision. A single lapse, a missed report, an unverified patrol, an unmonitored entry, can ripple through everything built on consistency. Metro Guards operates through systems designed to prevent that break. Each action is logged, each site monitored, each officer supported by real-time supervision and reporting infrastructure. Confidence, in this environment, is the result of repetition done right.
-                                                </p>
+                                                Corporate environments require a higher level of discipline, discretion, and professionalism. Events and workplaces across Melbourne face increasing risks that demand trained security officers who understand business etiquette and stakeholder expectations.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common risks include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access to offices, meetings, or private events</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Uncontrolled guest movement during functions</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>High-value equipment or asset protection</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>VIP safety & escorting</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Aggressive behaviour, intoxication, or crowd escalation</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Security vulnerabilities at entry points</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Sensitive corporate information exposure risks</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Safety concerns during high-traffic corporate events</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Emergency response readiness</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Theft, vandalism, or disruption during major functions</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These challenges require Metro <strong style={{color: '#fdc51a'}}>corporate event security guards Melbourne</strong> trained to maintain safety while preserving the professionalism expected in business environments.
+                                            </p>
                                             
                                             
                                         </div>
@@ -444,7 +515,7 @@ export default function CorporateSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '700px',
+                                                    height: '400px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -473,15 +544,72 @@ export default function CorporateSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Accountability Without <span style={{color: '#fdc51a'}}>Interruption</span>
+                                                A Professional Security Services for  <span style={{color: '#fdc51a'}}>Melbourne’s Corporate Sector</span>
                                                 </h2>
-                                                <p className="lead" style={{
+                                                                                               <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    Corporate certainty relies on precision. A single lapse, a missed report, an unverified patrol, an unmonitored entry, can ripple through everything built on consistency. Metro Guards operates through systems designed to prevent that break. Each action is logged, each site monitored, each officer supported by real-time supervision and reporting infrastructure. Confidence, in this environment, is the result of <strong style={{color: '#1e2247'}}>repetition done right</strong>.
+                                                    Corporate spaces require officers who present well, communicate professionally, and maintain a calm presence. <strong style={{color: '#fdc51a'}}>Metro Guards</strong> provides <strong style={{color: '#1e2247'}}>professional corporate event security in Melbourne</strong> designed to:
+                                                </p>
+                                                
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginTop: '1rem',
+                                                    marginBottom: '1rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Engage respectfully with executives, staff, and guests</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Maintain access control with discretion</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Monitor crowd behaviour at large events</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect high-profile speakers & VIPs</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Respond quickly to behavioural issues</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>De-escalate conflicts discreetly</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Support event organisers and venue managers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect sensitive business environments</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Provide security that enhances, not interrupts, the event experience</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p className="lead" style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    margin: 0,
+                                                    marginTop: '0.5rem'
+                                                }}>
+                                                    Our officers embody professionalism, punctuality, and the composure expected in Melbourne's leading event and corporate venues.
                                                 </p>
                                             </div>
                                         </div>
@@ -497,8 +625,10 @@ export default function CorporateSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            What Metro Guards Officers <span style={{color: '#fdc51a'}}>Bring to the Table</span>
+                                            Specialised Corporate Security  <span style={{color: '#fdc51a'}}>Guard Services</span>
                                             </h2>
+                                            <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>Metro Guards provides complete corporate security Melbourne solutions tailored to office buildings, commercial sites, and business events.
+                                            </p>
                                         </div>
                                         
                                         {/* Interactive Service Accordion */}
@@ -717,8 +847,12 @@ export default function CorporateSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        A Framework Built on <span style={{color: '#fdc51a'}}>Discipline</span>
+                                        Corporate & Event  <span style={{color: '#fdc51a'}}>Standards</span>
                                     </h2>
+                                    <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>Our corporate event security guards are supported by real-time monitoring, professional reporting, and strict compliance procedures.
+                                      <br /><br />We ensure:
+
+                                    </p>
                                 </div>
                             </div>
 
@@ -1139,7 +1273,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Professionals Shaped by <span style={{color: '#fdc51a'}}>Responsibility</span>
+                                            Corporate Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                         </h2>
                                     </div>
 
@@ -1156,17 +1290,10 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '30px'
                                         }}>
-                                            Our personnel come from sectors where precision isn't optional: <strong style={{color: '#1e2247'}}>defence, emergency services, and high-compliance industries</strong>. We bring an instinct for order, an understanding of procedure, and a commitment to reliability that becomes second nature over time.
-                                        </p>
+                                            Whether you need office security during operating hours or corporate event security guards for tonight in Melbourne, Metro Guards is ready to deploy trained professionals immediately.
+                                            </p>
 
-                                        <p style={{
-                                            color: '#6c757d',
-                                            fontSize: '1.2rem',
-                                            lineHeight: '1.8',
-                                            marginBottom: '0'
-                                        }}>
-                                            At Metro Guards, that standard never fades. Our officers carry it into every shift, every corridor, every call. They read rooms the way others read reports, <strong style={{color: '#1e2247'}}>instinctively, quietly, completely</strong>. Their focus doesn't seek recognition, it seeks results. This is executive security delivered with the <strong style={{color: '#fdc51a'}}>discipline of experience</strong>.
-                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1182,7 +1309,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Visibility Through <span style={{color: '#fdc51a'}}>Technology</span>
+                                            Smarter Security, Powered by  <span style={{color: '#fdc51a'}}>Real-Time Technology</span>
                                         </h2>
 
                                         <p style={{
@@ -1192,7 +1319,8 @@ export default function CorporateSecurityPage() {
                                             maxWidth: '750px',
                                             margin: '0 auto'
                                         }}>
-                                            Every patrol, every report, every decision is captured through digital systems that make performance <strong style={{color: '#1e2247'}}>visible in real time</strong>.
+                                            Every patrol, report, and security action is captured through advanced digital systems that deliver real-time visibility, complete transparency, and measurable accountability for every Melbourne site we protect.
+
                                         </p>
                                     </div>
 
@@ -1430,7 +1558,7 @@ export default function CorporateSecurityPage() {
                                                     margin: 0,
                                                     fontWeight: '800'
                                                 }}>
-                                                    Trusted Across Melbourne's <span style={{color: '#fdc51a'}}>Corporate Network</span>
+                                                    Trusted for Melbourne’s Most Important <span style={{color: '#fdc51a'}}>Corporate Events & Venues</span>
                                                 </h2>
                                             </div>
 
@@ -1440,15 +1568,16 @@ export default function CorporateSecurityPage() {
                                                 lineHeight: '1.8',
                                                 margin: 0
                                             }}>
-                                                From financial institutions and data centres to executive offices and government facilities, Metro Guards supports environments where stability cannot waver. Our commercial security operations continue after the workday ends, ensuring that the structures of <strong style={{color: '#fdc51a'}}>confidence, reputation, safety, compliance</strong>, remain intact through every hour. That reliability has defined our presence for <strong style={{color: '#fdc51a'}}>more than a decade</strong>.
-                                            </p>
+                                                From high-profile conferences and black-tie galas to business meetings, award nights, seminars, and office celebrations, Metro Guards provides corporate event security Melbourne businesses rely on for seamless protection. Our team delivers trained corporate function security guards, corporate party security guards, and business event security guards who operate with professionalism, discretion, and an understanding of corporate etiquette.
+                                                <br /><br />We secure your venue before, during, and after the event, ensuring assets, guests, staff, and executives remain protected. This consistent performance is why we’re trusted as one of the top-rated corporate event security guards Melbourne and the preferred choice for companies searching for local corporate event security Melbourne or corporate event security guards in my area.
+                                                </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1551,7 +1680,7 @@ export default function CorporateSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Secure the Confidence Your <span style={{color: '#fdc51a'}}>Business Runs On</span>
+                                                Strengthen Your Corporate Operations With Security  <span style={{color: '#fdc51a'}}>You Can Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1562,8 +1691,7 @@ export default function CorporateSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Metro Guards works beside corporate management to maintain the conditions for success — <strong style={{color: '#1e2247'}}>safe spaces, secure systems, and confidence</strong> that leadership decisions are protected at every level.
-                                            </p>
+                                                In a corporate world driven by precision and accountability, security isn’t optional, it’s the foundation of trust, continuity, and performance. With Metro Guards, your business operates with the assurance that every asset, every event, and every person is protected with unwavering professionalism.</p>
                                             
                                             <p style={{
                                                 color: '#6c757d',
@@ -1699,5 +1827,33 @@ export default function CorporateSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides corporate event security guards in Melbourne?",
+                            answer: "Metro Guards provides professional corporate event security guards in Melbourne, protecting conferences, seminars, galas, award nights, office parties, and high-profile business functions with trained, discreet security officers."
+                        },
+                        {
+                            question: "How do I hire corporate event security guards in Melbourne?",
+                            answer: "You can hire corporate event security guards by contacting Metro Guards for a tailored assessment. We provide corporate crowd control, access management, and VIP protection for all types of business events."
+                        },
+                        {
+                            question: "Do you offer 24/7 corporate event security in Melbourne?",
+                            answer: "Yes. Metro Guards offers 24/7 corporate event security for day events, evening functions, overnight setups, and multi-day conferences across Melbourne."
+                        },
+                        {
+                            question: "What do corporate event security guards do?",
+                            answer: "Corporate event security guards manage access control, protect VIPs, maintain crowd safety, prevent disruptions, secure entry points, monitor event floors, and support organisers to ensure a smooth, professional event environment."
+                        },
+                        {
+                            question: "Why do corporate events need security?",
+                            answer: "Corporate events require security to prevent disruptions, manage guests safely, protect VIPs, support emergency procedures, deter theft, and maintain a controlled, professional environment."
+                        },
+                        {
+                            question: "Do you provide security for galas, conferences & award nights?",
+                            answer: "Yes, Metro corporate security guards provide security for galas, award nights, conferences, seminars, and crowd control officers for all corporate events."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

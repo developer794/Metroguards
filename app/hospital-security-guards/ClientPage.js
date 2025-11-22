@@ -6,6 +6,7 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function HospitalSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -23,6 +24,29 @@ export default function HospitalSecurityPage() {
     const toggleFeature = (index) => {
         setActiveFeature(activeFeature === index ? null : index);
     };
+
+    const hospitalSecurityFaqs = [
+        {
+            question: "What does a Metro hospital security guard do in Melbourne?",
+            answer: "A Metro hospital security guard in Melbourne monitors entrances, manages visitor access, responds to emergencies, patrols hospital grounds, and supports staff during critical incidents. They ensure patient, staff, and property safety while maintaining a calm, secure healthcare environment."
+        },
+        {
+            question: "Why are hospital security guards important in Melbourne?",
+            answer: "Hospital security guards are essential in Melbourne because they protect patients, staff, and facilities from threats, manage high-stress situations, prevent unauthorized access, and support emergency responses. Their presence ensures a safe, controlled environment for quality healthcare delivery."
+        },
+        {
+            question: "How do Metro security guards protect hospitals in Melbourne?",
+            answer: "Metro security guards protect Melbourne hospitals by conducting routine patrols, monitoring CCTV, managing entry points, handling aggressive behaviour, supporting medical staff, and responding quickly to emergencies. Their proactive approach reduces risks and maintains safety across all hospital departments."
+        },
+        {
+            question: "What qualifications do hospital security guards need in Melbourne?",
+            answer: "Hospital security guards in Melbourne must hold a valid Victorian Security Licence, complete Certificate II or III in Security Operations, undergo first aid training, and maintain strong communication and conflict-resolution skills. Some facilities also require healthcare-specific security training."
+        },
+        {
+            question: "Are female hospital security guards available in Melbourne?",
+            answer: "Yes, female hospital security guards are available in Melbourne. Metro security company provide trained female officers to support patient comfort, assist with sensitive situations, and ensure balanced, professional coverage across hospital environments."
+        }
+    ];
 
     const services = [
         {
@@ -130,7 +154,7 @@ export default function HospitalSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="HOSPITAL SECURITY GUARDS"
-                mainTitle="HOSPITAL SECURITY GUARDS IN MELBOURNE "
+                mainTitle="Hospital Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/C4414502-E0C7-4E1C-B431-0D27054173C2_1_105_c.webp"
                 
             >
@@ -157,7 +181,7 @@ export default function HospitalSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -165,9 +189,9 @@ export default function HospitalSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Every Second Inside a Hospital   <br />
-                                            <span style={{color: '#fdc51a'}}>Holds a Life Waiting for Calm</span>
-                                        </h1>
+                                            Hospital Security Guards Service in Melbourne |
+                                            <span style={{color: '#fdc51a'}}>Professional Healthcare Protection</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -177,8 +201,8 @@ export default function HospitalSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Hospitals never rest. Corridors stay lit long after the world outside goes quiet. Machines beep through the night, footsteps echo between wards, and exhaustion wears the faces of those who refuse to stop caring. In places built to heal, tension often walks in unannounced. An aggressive visitor, a missing patient, a code call that changes everything.
-                                            <br /><br />Metro Guards stands in that space, the line between care and crisis, providing dedicated hospital security guards and healthcare security services that keep every ward, staff member, and visitor safe so healing can continue uninterrupted.
+                                            Metro Guards provides licensed, highly trained hospital security guards Melbourne healthcare facilities rely on to maintain safety, protect staff, and support patients around the clock. Our officers are trained in Code Black and Code Grey response, aggression management, access control, patient assistance, and emergency coordination, ensuring calm, controlled hospital environments at all times. 
+                                            <br/><br/>Whether you operate a major hospital in Parkville, a private clinic in East Melbourne, an aged-care centre in Werribee, or a specialist medical facility in Dandenong, Metro Guards provides 24/7 hospital security guards Melbourne organisations depend on for stable, uninterrupted operations.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -294,140 +318,7 @@ export default function HospitalSecurityPage() {
                         </div>
                     </div>
 
-                    {/*=====  Services Section =====*/}
-                    <div className="services-section section-padding" style={{
-                        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
-                        position: 'relative',
-                        overflow: 'hidden'
-                    }}>
-                        {/* Background Pattern */}
-                        <div style={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            backgroundImage: `
-                                radial-gradient(circle at 15% 25%, rgba(253, 197, 26, 0.05) 0%, transparent 50%),
-                                radial-gradient(circle at 85% 75%, rgba(30, 34, 71, 0.03) 0%, transparent 50%)
-                            `,
-                            zIndex: 1
-                        }}></div>
-
-                        {/* Floating Decorative Elements */}
-                        <div style={{
-                            position: 'absolute',
-                            top: '10%',
-                            right: '5%',
-                            width: '120px',
-                            height: '120px',
-                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
-                            borderRadius: '50%',
-                            zIndex: 1
-                        }}></div>
-                        <div style={{
-                            position: 'absolute',
-                            bottom: '15%',
-                            left: '8%',
-                            width: '80px',
-                            height: '80px',
-                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.08), transparent)',
-                            borderRadius: '50%',
-                            zIndex: 1
-                        }}></div>
-
-                        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                            <div className="row align-items-center g-5">
-                                {/* Left Column - Enhanced Image Section */}
-                                <div className="col-lg-6 order-2 order-lg-1">
-                                    <div className="services-image-section">
-                                        <div className="image-container position-relative">
-                                            {/* Main Image */}
-                                            <div style={{
-                                                position: 'relative',
-                                                borderRadius: '25px',
-                                                overflow: 'hidden',
-                                                boxShadow: '0 25px 50px rgba(0,0,0,0.15)',
-                                                transform: 'perspective(1000px) rotateY(-5deg)',
-                                                transition: 'all 0.4s ease'
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Hospital%20Secuirty%20Guards/A9D17577-BA14-4697-A4E6-F23EFF824D9A_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
-                                                        height: '750px',
-                                                        objectFit: 'cover',
-                                                        display: 'block'
-                                                    }}
-                                                />
-                                                
-                                                {/* Image Overlay */}
-                                                <div style={{
-                                                    position: 'absolute',
-                                                    top: 0,
-                                                    left: 0,
-                                                    right: 0,
-                                                    bottom: 0,
-                                                    background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
-                                                    zIndex: 1
-                                                }}></div>
-                                </div>
-
-                                            {/* Floating Stats Cards */}
-                                            
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Right Column - Enhanced Content Section */}
-                                <div className="col-lg-6 order-1 order-lg-2">
-                                    <div className="services-content">
-                                        {/* Header Section */}
-                                        <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
-                                                fontSize: "3.2rem",
-                                                fontWeight: "800",
-                                                marginBottom: "25px",
-                                                lineHeight: "1.2",
-                                                textShadow: "0 2px 4px rgba(0,0,0,0.1)"
-                                            }}>
-                                                The Reality Inside Hospitals
-                                            </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
-                                                fontSize: "1.2rem",
-                                                lineHeight: "1.8",
-                                               
-                                            }}>
-                                                In healthcare, threats don’t always look like danger. Sometimes it’s the agitation of a frightened patient, the frustration of a family that’s waited too long, or the quiet theft of restricted medication. At any hour, a routine moment can turn volatile.
-                                                <br /><br />That’s why hospital security isn’t a background service, it’s an essential part of the care system. The calm presence that restores order before fear spreads. The eyes that notice what stress blinds others to. The hands that act quickly, yet with restraint and respect.
-                                                <br /><br />Every hospital carries a different rhythm. Emergency departments demand speed and control. Mental health units require patience and compassion. Aged care wings need gentleness above all else. Metro Guards trains every officer to understand these environments not as “sites,” but as living systems of trust, 
-                                            </p>
-                                            
-                                            
-                                        </div>
-
-                                      
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     
 
@@ -435,7 +326,7 @@ export default function HospitalSecurityPage() {
                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-6 order-2 order-lg-2">
+                                <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
@@ -446,7 +337,7 @@ export default function HospitalSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '600px',
+                                                    height: '400px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -475,7 +366,7 @@ export default function HospitalSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Security That Understands Humanity
+                                                Specialised Hospital Security Guard Services
                                                 </h2>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
@@ -483,13 +374,14 @@ export default function HospitalSecurityPage() {
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    Our guards work in places where life is fragile. They move quietly through corridors, protect privacy with discretion, and step in only when it truly matters. A mother walking alone to the car park after midnight. A nurse handling a difficult patient during a double shift. A newborn ward that must remain undisturbed. These are not “tasks.” They are moments of responsibility that demand awareness and heart. Every officer we assign carries both.</p>
+                                                    Our team understands the sensitivities of emergency departments, mental-health units, maternity wards, aged-care wings, and high-risk treatment areas. Each officer is selected for calm decision-making, respectful communication, and an ability to support medical teams during fast-moving situations.
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6 order-1 order-lg-1">
+                                <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
@@ -498,132 +390,61 @@ export default function HospitalSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Dedicated Protection for the Heart of Care 
+                                            Why Skilled Hospital Security Guards Matter                                           
                                             </h2>
-                                            <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            Metro Guards officers are more than uniformed responders, they are trained caretakers of calm. Each guard is hand-selected for their ability to stay composed under pressure and to communicate with empathy when emotions run high.
-
-                                               </p>
+                                            
                                             <p style={{color: '#6c757d', fontSize: '1rem', lineHeight: '1.6', fontWeight: '600'}}>
-                                            Our hospital-ready team delivers:
-                                            </p>
+                                            Rising patient aggression, overcrowded emergency departments, increased mental-health presentations, and strict access-control requirements mean every shift relies on trained hospital security guards Melbourne facilities can trust. Common challenges Melbourne hospitals face include:
+                                           </p>
                                         </div>
+
                                         
-                                        {/* Interactive Service Accordion */}
-                                        <div className="services-accordion">
+                                        {/* Challenges List */}
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            padding: 0,
+                                            margin: 0,
+                                            marginBottom: '25px'
+                                        }}>
                                             {[
-                                                {
-                                                    icon: "fas fa-bell",
-                                                    title: "Code-specific response readiness",
-                                                    
-                                                    details: "Trained for Code Black, Code Grey, Code Red, and evacuation procedures."
-                                                },
-                                                {
-                                                    icon: "fas fa-user-friends",
-                                                    title: "Patient and visitor assistance",
-                                                    
-                                                    details: "Guiding, escorting, and supporting without disrupting care."
-                                                },
-                                                {
-                                                    icon: "fas fa-hand-paper",
-                                                    title: "Aggression management",
-                                                   
-                                                    details: "Defusing conflict through de-escalation, not intimidation."
-                                                },
-                                                {
-                                                    icon: "fas fa-shield-alt",
-                                                    title: "Property and asset protection",
-                                                    
-                                                    details: "Preventing theft and maintaining order across wards, pharmacies, and car parks."
-                                                },
-                                                {
-                                                    icon: "fas fa-eye",
-                                                    title: "Continuous presence",
-                                                    
-                                                    details: "Punctual, alert, and fully accountable through digital tracking and live supervision."
-                                                }
-                                            ].map((service, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
-                                                        className="accordion-header p-4"
-                                                        style={{
-                                                            backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
-                                                            borderRadius: activeService === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
-                                                        onClick={() => toggleService(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
-                                                                    className="service-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                        width: '50px',
-                                                                        height: '50px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
-                                                                        color: '#ffffff',
-                                                                        fontSize: '1.5rem'
-                                                                    }}
-                                                                >
-                                                                    <i className={service.icon}></i>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                                                    <p className="mb-0" style={{color: '#6c757d', fontSize: '0.9rem'}}>{service.summary}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                        width: '40px',
-                                                                        height: '40px',
-                                                                        backgroundColor: activeService === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
-                                                                        color: activeService === index ? '#ffffff' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
-                                                                        {activeService === index ? '−' : '+'}
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    {activeService === index && (
-                                                        <div 
-                                                            className="accordion-content p-4"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
-                                                            <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
-                                                                fontSize: '1rem'
-                                                            }}>
-                                                                {service.details}
-                                                            </p>
-                                                        </div>
-                                                    )}
-                                                </div>
+                                                'Patient or visitor aggression in ED and waiting areas',
+                                                'Code Black & Code Grey behavioural escalations',
+                                                'Unauthorised access to maternity, ICU, and restricted wards',
+                                                'Missing patients or absconding risks',
+                                                'Theft of medications, equipment, and personal belongings',
+                                                'Car-park safety for staff working night shifts',
+                                                'High-risk mental-health and alcohol-related incidents',
+                                                'After-hours movement through critical areas',
+                                                'Safety compliance requirements under Victorian OH&S legislation'
+                                            ].map((item, index) => (
+                                                <li key={index} style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '12px',
+                                                    paddingLeft: '30px',
+                                                    position: 'relative'
+                                                }}>
+                                                    <span style={{
+                                                        position: 'absolute',
+                                                        left: 0,
+                                                        color: '#fdc51a',
+                                                        fontWeight: 'bold',
+                                                        fontSize: '1.2rem'
+                                                    }}>✔</span>
+                                                    {item}
+                                                </li>
                                             ))}
-                                        </div>
+                                        </ul>
                                         
-                                        <p style={{color: '#6c757d', fontSize: '1rem', lineHeight: '1.6', marginTop: '20px'}}>
-                                            <strong>Our guards don’t replace care staff; they reinforce them. Their duty is to preserve safety so doctors, nurses, and paramedics can do their work without distraction or fear.</strong>
+                                        <p style={{
+                                            color: '#6c757d', 
+                                            fontSize: '1.05rem', 
+                                            lineHeight: '1.7', 
+                                            marginTop: '20px',
+                                            fontWeight: '500'
+                                        }}>
+                                            These challenges demand hospital security Victoria specialists who can respond fast, de-escalate safely, and support clinical teams without interrupting patient care.
                                         </p>
                                     </div>
                                 </div>
@@ -698,7 +519,7 @@ export default function HospitalSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Accountability That Lives Up to <span style={{color: '#fdc51a'}}>the Responsibility</span>
+                                        Accountability That Meets  <span style={{color: '#fdc51a'}}>Clinical Standards</span>
                                     </h2>
                                     
                                     <p style={{
@@ -708,8 +529,8 @@ export default function HospitalSecurityPage() {
                                         maxWidth: '850px',
                                         margin: '0 auto'
                                     }}>
-                                        In hospitals, words mean little without proof. Metro Guards operates with full transparency through verified systems that document every patrol, every report, every shift.
-                                    </p>
+                                        Our hospital security guard Melbourne teams are supported by real-time monitoring, digital reporting, and rigorous supervision frameworks that meet the expectations of major hospitals, private clinics, and aged-care facilities across Victoria.
+                                        </p>
                                 </div>
                             </div>
 
@@ -1095,7 +916,7 @@ export default function HospitalSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Why Hospitals Across Melbourne <span style={{color: '#fdc51a'}}>Choose Metro Guards</span>
+                                        Why Melbourne’s Leading Hospital Security Teams<span style={{color: '#fdc51a'}}>Choose Metro Guards</span>
                                     </h2>
                                 </div>
                             </div>
@@ -1167,17 +988,10 @@ export default function HospitalSecurityPage() {
                                                 marginBottom: '35px',
                                                 fontWeight: '500'
                                             }}>
-                                                Over 15+ years of experience in healthcare environments has taught us one truth: <strong style={{color: '#fdc51a'}}>safety and compassion are inseparable</strong>.
-                                            </p>
+                                               Hospitals across Melbourne operate under constant pressure, surging patient numbers, stretched clinical teams, unpredictable emergency department behaviour, and strict OH&S obligations. What they need is not generic guarding, but healthcare-ready officers who can support nurses during high-risk interactions, de-escalate distressed visitors, control access to sensitive zones, and protect staff during Code Black and mental-health escalations. 
+                                                </p>
 
-                                            <p style={{
-                                                color: 'rgba(255, 255, 255, 0.9)',
-                                                fontSize: '1.1rem',
-                                                lineHeight: '1.8',
-                                                margin: 0
-                                            }}>
-                                                Metro Guards continues to support major hospitals, private clinics, and aged care facilities across Melbourne through reliable, OH&S-centric protection that adapts to their culture and workflow. <strong style={{color: '#fdc51a'}}>We integrate into hospital teams, not as outsiders, but as silent protectors of the environment that makes healing possible.</strong>.
-                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1475,7 +1289,7 @@ export default function HospitalSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Let's Keep Every <span style={{color: '#fdc51a'}}>Heartbeat Safe</span>
+                                                Hospital Security Guards Melbourne <span style={{color: '#fdc51a'}}>Facilities Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1486,8 +1300,8 @@ export default function HospitalSecurityPage() {
                                                 maxWidth: '750px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                A hospital's greatest strength isn't its building or its technology, it's the people who keep moving when others can't. <strong style={{color: '#1e2247'}}>Metro Guards exists to protect them.</strong>
-                                            </p>
+                                                When your facility needs reliable protection, Metro Guards delivers trained hospital security officers who are present, prepared, and ready to respond.
+                                                </p>
                                             
                                             <p style={{
                                                 color: '#6c757d',
@@ -1620,8 +1434,14 @@ export default function HospitalSecurityPage() {
                 </div>
                     
                 
+                
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={hospitalSecurityFaqs}
+                    title="Frequently Asked Questions"
+                    subtitle="FAQs"
+                />
             </Layout>
             </> ) }

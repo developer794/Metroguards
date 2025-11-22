@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function SecurityEscortPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function SecurityEscortPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SECURITY ESCORT SERVICES"
-                mainTitle="SECURITY ESCORT SERVICES MELBOURNE" 
+                mainTitle="Security Escort Services Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
@@ -156,7 +158,7 @@ export default function SecurityEscortPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -164,9 +166,9 @@ export default function SecurityEscortPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Safe Passage. Structured    <br />
-                                            <span style={{color: '#fdc51a'}}>Protection</span>
-                                        </h1>
+                                            Professional  Escort Security Guards 
+                                            <span style={{color: '#fdc51a'}}>Melbourne Near Me</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -176,8 +178,8 @@ export default function SecurityEscortPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Every movement carries exposure, whether it’s an executive leaving a late-night meeting, an artist departing a venue, or staff finishing a shift in an empty car park. Metro Guards provides Security Escort Services across Melbourne and Victoria, ensuring people, vehicles, and assets move safely under verified supervision.
-                                            <br/><br/>Our mobile patrol escorts operate wherever fixed security ends and mobility begins, maintaining visibility, timing accuracy, and control through every transfer. From high-profile clients and corporate teams to contractors and logistics convoys, Metro Guards ensures safe passage with precision, not presence alone.
+                                            Metro Guards provides trusted security escort services Melbourne designed to protect individuals, staff members, executives, VIPs, and valuable goods during travel or movement through high-risk environments. Whether you require a personal security escort Melbourne, medical staff escort, lone worker escort, or executive escort security Melbourne, our trained officers ensure safe passage, situational awareness and discreet protection at all times.
+                                            We support travel across Melbourne CBD, Southbank, Richmond, Dandenong, Footscray, St Kilda, and all suburbs requiring safe accompaniment, day, night, or 24/7. Our escort security guards Melbourne are trained to protect against aggressive individuals, stalking threats, unsafe neighbourhoods and workplace harassment risks.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -308,7 +310,7 @@ export default function SecurityEscortPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Situations That Require <span style={{color: '#fdc51a'}}>Escort Coverage</span>
+                                            Why Melbourne Relies on Metro Guards for <span style={{color: '#fdc51a'}}>Escort Security</span>
                                             </h2>
                                             
                                             <p style={{
@@ -317,114 +319,52 @@ export default function SecurityEscortPage() {
                                                 lineHeight: '1.8',
                                                 marginBottom: '30px'
                                             }}>
-                                                Security escort operations apply where risk exists <strong style={{color: '#1e2247'}}>between destinations, not within them</strong>. Metro Guards delivers tailored coverage for:
-                                            </p>
+                                                Safety concerns during travel or movement can arise unexpectedly, especially for vulnerable individuals, staff working late, or VIPs navigating high-risk situations. Metro Guards provides reassurance through:
+                                                </p>
                                             
-                                            <div className="features-accordion">
-                                                {[
-                                                    {
-                                                        icon: "fas fa-user-shield",
-                                                        title: 'After-Hours Staff Escorts',
-                                                        description: 'Ensuring safe travel to vehicles or stations.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-truck",
-                                                        title: 'Cargo and Equipment Transfers',
-                                                        description: 'Accompanying delivery trucks carrying high-value or restricted goods.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-user-tie",
-                                                        title: 'Executive and Contractor Escorts',
-                                                        description: 'Controlled passage through high-risk or unfamiliar areas.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-calendar-times",
-                                                        title: 'Event Close-Downs',
-                                                        description: 'Protecting crews and vehicles during late-night pack-downs.'
-                                                    },
-                                                    {
-                                                        icon: "fas fa-plane",
-                                                        title: 'Airport and Logistics Corridors',
-                                                        description: 'Maintaining oversight for container or material transfers.'
-                                                    }
-                                                ].map((feature, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
-                                                            className="accordion-header p-3"
-                                                        style={{
-                                                                backgroundColor: activeFeature === index ? '#ffffff' : '#f8f9fa',
-                                                                borderRadius: activeFeature === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
-                                                            onClick={() => toggleFeature(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
-                                                                        className="feature-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                            width: '45px',
-                                                                            height: '45px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
-                                                                            color: '#fdc51a',
-                                                                            fontSize: '1.2rem'
-                                                                    }}
-                                                                >
-                                                                        <i className={feature.icon}></i>
-                                                                </div>
-                                                                <div>
-                                                                        <h6 className="mb-0 fw-bold" style={{color: '#1e2247', fontSize: '1rem'}}>{feature.title}</h6>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                style={{
-                                                                            width: '35px',
-                                                                            height: '35px',
-                                                                            backgroundColor: activeFeature === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
-                                                                            color: activeFeature === index ? '#fdc51a' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                        <span style={{fontSize: '1.1rem', fontWeight: 'bold'}}>
-                                                                            {activeFeature === index ? '−' : '+'}
-                                                                    </span>
-                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Protective movement for at-risk executives, professionals & staff</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Discreet escorts for lone workers & late-night travellers</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Security for valuable goods or sensitive documents</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Support for medical staff, nurses & healthcare professionals</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Response for stalking threats, domestic risks & aggressive individuals</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Trained escorts for unsafe neighbourhoods and unfamiliar routes</span>
+                                                </li>
+                                            </ul>
 
-                                                        {activeFeature === index && (
-                                                        <div 
-                                                                className="accordion-content p-3"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
-                                            <p style={{ 
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
-                                                                    fontSize: '0.95rem'
-                                                            }}>
-                                                                    {feature.description}
-                                                            </p>
-                                        </div>
-                                                    )}
-                                    </div>
-                                            ))}
-                                </div>
+                                            <p style={{
+                                                color: '#6c757d',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '0',
+                                                fontWeight: '600'
+                                            }}>
+                                                Our goal is simple: keep you safe from departure to arrival.
+                                            </p>
                             </div>
                         </div>
                     </div>
@@ -508,7 +448,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            How Security Escort <span style={{color: '#fdc51a'}}>Operations Work</span>
+                                            Security Escort Services Melbourne | <span style={{color: '#fdc51a'}}>Tailored to Every Situation</span>
                                         </h2>
 
                                                 <p style={{
@@ -518,8 +458,7 @@ export default function SecurityEscortPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            A security escort is not a personal guard or a driver. It's a <strong style={{color: '#fdc51a'}}>coordinated movement protocol</strong> led by trained security officers and supported by patrol vehicles and live command oversight.
-                                        </p>
+                                            Metro Guards offers fully customised escort protection services, including:</p>
                                     </div>
                                 </div>
                             </div>
@@ -688,7 +627,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Field Discipline and <span style={{color: '#fdc51a'}}>Officer Capability</span>
+                                            Advanced Escort Guard Training Built for <span style={{color: '#fdc51a'}}>Melbourne’s Real-World Risks</span>
                                             </h2>
 
                                             <p style={{
@@ -698,8 +637,8 @@ export default function SecurityEscortPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            Our escort officers are drawn from Metro Guards' <strong style={{color: '#1e2247'}}>advanced mobile patrol division</strong>. They are trained not just in observation — but in <strong style={{color: '#fdc51a'}}>motion management</strong>:
-                                        </p>
+                                            Our security escort officers are drawn from Metro Guards’ elite mobile patrol and close-protection division.
+                                            </p>
                                     </div>
                                         </div>
                                         </div>
@@ -881,7 +820,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Command and <span style={{color: '#fdc51a'}}>Verification System</span>
+                                            Real-Time Visibility & <span style={{color: '#fdc51a'}}>Safety Monitoring</span>
                                         </h2>
 
                                         <p style={{
@@ -891,8 +830,8 @@ export default function SecurityEscortPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            Every escort operates under a <strong style={{color: '#fdc51a'}}>live command network</strong>. Our control centre coordinates all mobile escorts with:
-                                        </p>
+                                            Metro Guards uses digital tools to ensure you remain safe throughout your journey:
+                                            </p>
                                     </div>
                                 </div>
                                     </div>
@@ -1062,7 +1001,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Industry <span style={{color: '#fdc51a'}}>Coverage</span>
+                                            Multi-Sector Coverage for Our Security <span style={{color: '#fdc51a'}}>Escort Services Across Melbourne</span>
                                         </h2>
 
                                         <p style={{
@@ -1245,8 +1184,10 @@ export default function SecurityEscortPage() {
                                             marginBottom: '50px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Why Clients Trust <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Melbourne Chooses Metro Guards for  <span style={{color: '#fdc51a'}}>Security Escort Protection</span>
                                         </h2>
+                                        <p>Melbourne residents, corporate teams and high-profile individuals choose Metro Guards because:
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1347,7 +1288,7 @@ export default function SecurityEscortPage() {
                         </div>
                     </div>
 
-                    
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1450,7 +1391,7 @@ export default function SecurityEscortPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                The Continuity Between <span style={{color: '#fdc51a'}}>Sites</span>
+                                                Security Escort Services Melbourne <span style={{color: '#fdc51a'}}>Clients Trust</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1461,8 +1402,8 @@ export default function SecurityEscortPage() {
                                                 maxWidth: '850px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                Security doesn't stop at the gate. It extends through movement, <strong style={{color: '#1e2247'}}>from site to site, shift to shift</strong>. Metro Guards escorts make that transition <strong style={{color: '#fdc51a'}}>visible, accountable, and controlled</strong>.
-                                            </p>
+                                                From executives and VIPs to lone workers, nurses, vulnerable individuals and those facing personal safety concerns, Metro Guards ensures every journey is secure,  no matter the distance, location or time of day.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1586,5 +1527,29 @@ export default function SecurityEscortPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides security escort services in Melbourne?",
+                            answer: "Metro Guards provides licensed security escort services in Melbourne, offering personal, VIP, executive and female escort officers for safe travel, workplace protection and high-risk situations. Our guards accompany clients through unsafe areas, unfamiliar routes or sensitive environments with full discretion."
+                        },
+                        {
+                            question: "How do security escort guards protect individuals in Melbourne?",
+                            answer: "Escort guards protect individuals by monitoring surroundings, assessing risks, managing aggressive behaviour, securing travel routes and ensuring safe arrival. Metro Guards' officers provide close support for lone workers, executives, vulnerable individuals and anyone requiring safe movement."
+                        },
+                        {
+                            question: "Do you provide VIP security escorts in Melbourne?",
+                            answer: "Yes. Metro Guards offers VIP escort security Melbourne, including executive protection officers, close protection guards and female escort staff. We manage routes, crowds and threats discreetly to safeguard high-profile individuals during travel or public appearances."
+                        },
+                        {
+                            question: "Can I hire a female security escort in Melbourne?",
+                            answer: "Absolutely. Metro Guards supplies female security escort Melbourne officers for clients who prefer a more comfortable or sensitive support experience. They assist with personal safety, professional travel and vulnerable individual escorts."
+                        },
+                        {
+                            question: "How do I hire security escort guards in Melbourne?",
+                            answer: "You can hire escort guards by contacting Metro Guards for a confidential assessment. We provide personal escort security hire Melbourne, VIP escorts, corporate protection and emergency escort services with rapid deployment available 24/7."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

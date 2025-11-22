@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function StaticSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function StaticSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="STATIC SECURITY GUARDS"
-                mainTitle="STATIC SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Static Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/AF728EFE-11D1-4965-8948-52919A2FEB8C_1_105_c.webp"
                 
             >
@@ -165,8 +167,8 @@ export default function StaticSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                           Protection That Feels Personal  <br />
-                                            <span style={{color: '#fdc51a'}}>Luxury</span>
+                                           Local Static Security Guards Service 
+                                            <span style={{color: '#fdc51a'}}>in Melbourne</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -177,8 +179,9 @@ export default function StaticSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           You trust us with what matters most, your people, your property, your peace of mind. At Metro Guards, we take that responsibility as personally as family. We protect your site the way we would protect our own, with patience, precision, and pride.
-                                            <br/><br/>Every decision we make carries your long-term safety in mind. Not just for today’s shift, but for every night after, every contract renewed through trust, not convenience. When our static security guards stand post, they represent your calm, your reputation, and your standards.
+                                           Metro Guards provides reliable static security guards Melbourne businesses depend on to protect buildings, assets, high-risk sites, and sensitive locations. Our guards remain positioned at key entry points, reception areas, gates, warehouses, retail floors, or construction perimeters, ensuring continuous visibility, controlled access, and proactive risk prevention.
+                                            From the Melbourne CBD and Docklands to Dandenong South, Laverton North, Tullamarine, and suburban commercial precincts, we deliver static security Melbourne and on-site security guards Melbourne to office towers, distribution centres, retail stores, industrial facilities, construction sites, and residential complexes.
+                                            <br/><br/>For anyone searching “who provides static security guards in Melbourne” or “best static security guards near me”, Metro Guards is the trusted local provider.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -365,7 +368,7 @@ export default function StaticSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -403,19 +406,79 @@ export default function StaticSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Security That Serves, Not Sells
+                                               Why Melbourne Businesses Need Static Security Guards
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                We don’t ask you to choose Metro Guards. We ask you to choose the right security partner. Whether that’s us or someone else, the right choice is the one that listens, understands, and truly aligns with your needs.
-                                                <br/><br/>Our static security services are designed around people, not packages. We invite you to reach out, talk about your site, and explore solutions, even if you don’t end up hiring us. Because real security begins with understanding, not obligation.
+                                                Many Melbourne sites require a fixed guard presence to maintain order, block threats, and deter criminal activity.
+                                            </p>
 
-                                                </p>
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common security challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access to static security Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Building access breach protection Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Retail theft prevention static guards</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Construction static guard protection Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Warehouse theft static guard Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Vandalism prevention static security Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Aggressive visitor management security Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Static guard for building entrance Melbourne</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                <strong style={{color: '#fdc51a'}}>Static security</strong> prevents these risks through consistent, visible, and trained on-site protection.
+                                            </p>
+
+                                            
                                             
                                         </div>
 
@@ -489,7 +552,7 @@ export default function StaticSecurityPage() {
 											lineHeight: 1.2,
 											marginBottom: '18px'
 										}}>
-											The Quiet Strength of <span style={{color: '#fdc51a'}}>Static Protection</span>
+											The Reliability of On-Site, <span style={{color: '#fdc51a'}}>Always-Present Protection</span>
 										</h2>
 										<p style={{
 											color: '#6c757d',
@@ -497,8 +560,9 @@ export default function StaticSecurityPage() {
 											lineHeight: 1.8,
 											margin: 0
 										}}>
-											Static security isn’t about standing still. It’s about staying aware, a presence that protects without pressing, that reassures without restricting. Our static security guards in Melbourne are trained to blend discipline with empathy. They notice what others overlook, act when others hesitate, and hold composure when pressure peaks. They don’t just occupy space, they uphold safety as a living, breathing standard.
-										</p>
+											Our static security guards Melbourne serve where visibility matters most: building entrances, office receptions, warehouse gates, retail floors, construction perimeters, and high-risk industrial zones.
+                                            We supply fixed security guards, static site security, property static security, and stationary security guards Melbourne trained to manage access, supervise crowds, oversee CCTV, support loading docks, and maintain order with quiet confidence. Wherever you need an unwavering security presence, Metro Guards provides the discipline, professionalism, and awareness your site demands.
+                                            </p>
 									</div>
 								</div>
 								<div className="col-lg-6">
@@ -516,16 +580,17 @@ export default function StaticSecurityPage() {
 											lineHeight: 1.2,
 											marginBottom: '18px'
 										}}>
-											15 Years of <span style={{color: '#fdc51a'}}>Steady Eyes</span> and Reliable Hands
-										</h2>
+											Tailored Static Guarding for Every <span style={{color: '#fdc51a'}}>Industry & Every Hour</span>
+                                            </h2>
 										<p style={{
 											color: '#6c757d',
 											fontSize: '1.15rem',
 											lineHeight: 1.8,
 											margin: 0
 										}}>
-											For over 15 years, Metro Guards has stood watch across Melbourne, from high-rise offices and construction sites to logistics yards and private facilities. We’ve seen what makes a site secure and what makes a client stay. Experience taught us that the best protection is quiet consistency, guards who adapt, anticipate, and never lose focus no matter the hour or environment. Every guard we deploy carries that same discipline. Every shift, that same standard.
-										</p>
+											Our team delivers static commercial security, industrial static security, retail static security guards, and building static security guards Melbourne aligned with the exact needs of your operation. From gatehouse & entrance guards to reception static guarding, access control officers, and 24/7 on-site security guards Melbourne, every deployment is built around your risk profile and environment.
+                                            We protect assets, equipment, loading bays, parking zones, and high-traffic areas while providing crucial support such as CCTV monitoring, incident logging, visitor verification, and warehouse or construction zone supervision. 
+                                            </p>
 									</div>
 								</div>
 							</div>
@@ -608,7 +673,7 @@ export default function StaticSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Built on Integrity,  <span style={{color: '#fdc51a'}}>Backed by Evidence</span>
+                                       Technology-Backed Static Security  <span style={{color: '#fdc51a'}}>That Raises Site Safety </span>
                                     </h2>
 
                                     <p style={{
@@ -618,8 +683,8 @@ export default function StaticSecurityPage() {
                                         maxWidth: '750px',
                                         margin: '0 auto'
                                     }}>
-                                        From the first briefing to the final handover, every action is accountable, every guard verified, every report traceable. And   <strong style={{color: '#fdc51a'}}>our standards</strong>include:.
-                                    </p>
+                                        Metro Guards enhances all static security Melbourne deployments with digital tracking and reporting, including:
+                                        </p>
                                 </div>
                             </div>
 
@@ -1037,7 +1102,7 @@ export default function StaticSecurityPage() {
                                                     lineHeight: 1.2,
                                                     marginBottom: '20px'
                                                 }}>
-                                                    A Relationship, Not a <span style={{color: '#fdc51a'}}>Roster</span>
+                                                    Trusted Across Melbourne’s Most  <span style={{color: '#fdc51a'}}>Demanding Sites</span>
                                                 </h2>
                                                 <p style={{
                                                     color: 'rgba(255, 255, 255, 0.95)',
@@ -1045,9 +1110,7 @@ export default function StaticSecurityPage() {
                                                     lineHeight: 1.8,
                                                     margin: 0
                                                 }}>
-                                                    You're never just another client. Every site has a pulse, a rhythm, a story, and our guards learn it. They adapt to your environment, work in harmony with your people, and build familiarity that turns vigilance into comfort.
-                                                    <br/><br/>
-                                                    We don't measure success by how many incidents we stop, but by how steady your workplace feels. <strong style={{color: '#fdc51a'}}>Calm is our product; protection is our craft.</strong>
+                                                    From high-rise commercial towers and logistics warehouses to retail precincts, construction sites, industrial yards, and residential complexes, Metro Guards protects the spaces Melbourne relies on. Our static security officers adapt to each environment, safeguarding assets, managing access, supervising high-risk areas, and maintaining safety where consistency matters most.
                                                 </p>
                                             </div>
                                         </div>
@@ -1071,9 +1134,9 @@ export default function StaticSecurityPage() {
                                             marginBottom: '35px',
                                             textAlign: 'center'
                                         }}>
-                                            Why Businesses Stay With <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Melbourne’s Businesses Choose  <span style={{color: '#fdc51a'}}>Metro Guards</span>
                                         </h2>
-                                        
+                                        <p> Melbourne organisations across retail, commercial, industrial, construction and residential sectors trust Metro Guards because:</p>
                                         <div className="row g-4">
                                             <div className="col-lg-4 col-md-6">
                                                 <div style={{
@@ -1261,7 +1324,7 @@ export default function StaticSecurityPage() {
                         </div>
                     </div>
 
-                    
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1364,7 +1427,7 @@ export default function StaticSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Let’s Talk About <span style={{color: '#fdc51a'}}>Your Site</span>
+                                                Static Security Guards Melbourne <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1375,8 +1438,8 @@ export default function StaticSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                If you’re considering static security guards in Melbourne, let’s start with a conversation — no pressure, no pitch. Just a clear understanding of what will make your site safer, steadier, and simpler to manage. We believe our quality should speak for itself, not through incentives. That’s the Metro Guards way — clarity, confidence, and care that lasts.
-                                            </p>
+                                                From office buildings to logistics hubs, retail stores, and construction projects, Metro Guards provides dependable fixed security guards Melbourne who protect your site with diligence, integrity, and professionalism.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1462,5 +1525,29 @@ export default function StaticSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides static security guards in Melbourne?",
+                            answer: "Metro Guards provides trained static security guards in Melbourne, delivering fixed on-site protection for buildings, warehouses, retail stores, construction sites, and commercial facilities. Our guards prevent unauthorised access, protect property, and maintain a continuous security presence."
+                        },
+                        {
+                            question: "What do static security guards do?",
+                            answer: "Static security guards monitor entry points, manage access control, prevent trespassing, deter theft, and supervise high-risk zones. Metro Guards' officers stay stationed at critical positions, providing round-the-clock visibility and immediate incident response at Melbourne workplaces."
+                        },
+                        {
+                            question: "Why do businesses need static security guards in Melbourne?",
+                            answer: "Businesses need static guards to stop unauthorised access, improve safety, prevent theft, and maintain order in high-traffic or high-risk areas. Metro Guards provides reliable static site security in Melbourne that protects assets, staff, and premises."
+                        },
+                        {
+                            question: "Do you offer 24/7 static security in Melbourne?",
+                            answer: "Yes. Metro Guards supplies 24/7 static security guards Melbourne, covering daytime, night shifts, weekends, and continuous on-site presence for commercial, industrial, and retail locations."
+                        },
+                        {
+                            question: "How do I hire static security guards in Melbourne?",
+                            answer: "You can hire static security guards by contacting Metro Guards for a tailored security assessment. We deploy trained officers for building entrances, warehouses, retail stores, and industrial sites across Melbourne."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

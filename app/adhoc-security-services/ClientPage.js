@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function AdhocSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function AdhocSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="ADHOC SECURITY GUARDS "
-                mainTitle="ADHOC SECURITY GUARDS IN MELBOURNE" 
+                mainTitle="Adhoc Security Guards in Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/C38803E5-A7C7-472E-839D-290BBEA65378_1_105_c.webp"
             >
                 <div>
@@ -163,9 +165,9 @@ export default function AdhocSecurityPage() {
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
-                                        >
-                                            When Time Runs Out,    <br />
-                                            <span style={{color: '#fdc51a'}}>Discipline Steps In</span>
+                                        >Licensed Adhoc Security Officers 
+
+                                            <span style={{color: '#fdc51a'}}>Melbourne</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,8 +178,8 @@ export default function AdhocSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Security isn't always scheduled. Sometimes the call comes after hours, when a site's been left exposed, when a guard hasn't shown, when the risk is already moving. Metro Guards fills that void instantly.
-                                            <br/><br/>With over fifteen years of operational excellence, we provide rapid-response ADHOC security guards services in Melbourne for businesses, events, and critical infrastructure. Every deployment carries the same structure, precision, and accountability as our permanent operations.
+                                           Metro Guards supplies fast, flexible adhoc security guards Melbourne businesses rely on during sudden shortages, unexpected risks, and last-minute operational demands. Whether you need short-term coverage for a shift, emergency protection after an incident, or on-call guards for multiple locations, we deploy trained officers anywhere in Melbourne, often within hours.
+                                            From the CBD and Docklands to Dandenong, Derrimut, Tullamarine, Thomastown and Richmond, our adhoc security services Melbourne support retail, corporate, industrial, construction, hospitality, and event environments. For anyone searching “who provides adhoc security guards in Melbourne” or “adhoc guards near me open now”, Metro Guards is the trusted 24/7 provider.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -310,9 +312,9 @@ export default function AdhocSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Why <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Choose Metro Guards for <span style={{color: '#fdc51a'}}>Adhoc Security</span>
                                             </h2>
-                                            
+                                            <p>Companies across Melbourne rely on Metro Guards because:</p>
                                             <div className="features-accordion">
                                                 {[
                                                     {
@@ -495,7 +497,7 @@ export default function AdhocSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            The Command Behind <span style={{color: '#fdc51a'}}>Urgency</span>
+                                            Highly Trained, Licensed & Ready<span style={{color: '#fdc51a'}}> When You Are</span>
                                         </h2>
 
                                                 <p style={{
@@ -505,8 +507,9 @@ export default function AdhocSecurityPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            Every ADHOC operation runs through our central command hub, staffed 24/7 to coordinate, brief, and monitor each post. When you call, the process begins immediately:
-                                        </p>
+                                            Our adhoc officers are carefully selected for skill, reliability and rapid adaptation in unfamiliar environments.
+                                            <br/><br/>Metro Guards provides:
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -711,8 +714,9 @@ export default function AdhocSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Protocol You Can <span style={{color: '#fdc51a'}}>Audit</span>
+                                            Technology Trained Adhoc Security <span style={{color: '#fdc51a'}}>Guards Melbourne</span>
                                         </h2>
+                                        <p>Every adhoc deployment is supported with digital documentation, including:</p>
                                     </div>
                                     </div>
                                 </div>
@@ -902,7 +906,7 @@ export default function AdhocSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Situations We <span style={{color: '#fdc51a'}}>Secure</span>
+                                            Professional Adhoc Security Officers  <span style={{color: '#fdc51a'}}>Ready for Any Situation</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -1077,7 +1081,7 @@ export default function AdhocSecurityPage() {
                                             marginBottom: '35px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Data. Proof. <span style={{color: '#fdc51a'}}>Continuity.</span>
+                                            Real-Time Reporting for Every  <span style={{color: '#fdc51a'}}>Adhoc Deployment.</span>
                                         </h2>
 
                                             <div style={{
@@ -1116,18 +1120,8 @@ export default function AdhocSecurityPage() {
                                                 position: 'relative',
                                                 zIndex: 2
                                             }}>
-                                                Each deployment generates a <strong style={{color: '#1e2247'}}>live digital record</strong> — timestamps, reports, and GPS mapping. This transparency isn't an add-on; it's the <strong style={{color: '#fdc51a'}}>foundation of our credibility</strong>.
-                                            </p>
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.25rem',
-                                                lineHeight: '2',
-                                                margin: 0,
-                                                position: 'relative',
-                                                zIndex: 2
-                                            }}>
-                                                After completion, you receive a <strong style={{color: '#1e2247'}}>post-deployment summary</strong> that details every round, every event, and every measure taken.
-                                            </p>
+                                                Whether responding to emergency site protection, staff no-show replacement, or last-minute shift cover security Melbourne, you receive a detailed post-deployment summary outlining every action taken. For businesses searching for reliable adhoc security services Melbourne, this level of proof and continuity is what keeps operations protected, even during unexpected disruptions.                                                </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1135,7 +1129,7 @@ export default function AdhocSecurityPage() {
                         </div>
                     </div>
 
-                    
+                    <Testimonials />                    
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1238,7 +1232,7 @@ export default function AdhocSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Metro Guards – The Line Between <span style={{color: '#fdc51a'}}>Order and Chaos</span>
+                                                Adhoc Security Guards Melbourne<span style={{color: '#fdc51a'}}> Can Count On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1249,19 +1243,10 @@ export default function AdhocSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                ADHOC security isn't an emergency solution — it's <strong style={{color: '#1e2247'}}>continuity in motion</strong>. When pressure rises, we don't send availability; we send <strong style={{color: '#fdc51a'}}>authority</strong>.
+                                               Metro Guards ensures your business stays protected,  even when plans fall through or emergencies arise. Our on-call, temporary and short-term guards keep operations stable and sites secure across every Melbourne suburb.
                                             </p>
                                             
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                When you call, <strong style={{color: '#1e2247'}}>we're already moving</strong>.
-                                            </p>
+                                           
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1345,6 +1330,30 @@ export default function AdhocSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Are Metro adhoc security guards in Melbourne licensed?",
+                            answer: "Yes. Metro Adhoc security guards in Melbourne must hold a valid Victorian security licence, complete accredited training, and meet industry compliance standards. Metro Guards supplies only licensed, vetted and professionally trained officers to ensure that temporary or emergency deployments meet all regulatory requirements and duty-of-care obligations."
+                        },
+                        {
+                            question: "How do adhoc security guards provide temporary security in Melbourne?",
+                            answer: "Metro Adhoc security guards deliver temporary protection by filling last-minute gaps, covering staff absences, and responding to urgent site needs. We deploy trained officers who can immediately secure entrances, patrol premises, manage incidents, and stabilise operations until permanent security staff return or risk levels decrease."
+                        },
+                        {
+                            question: "How do adhoc security guards manage access control in Melbourne buildings?",
+                            answer: "Adhoc security guards handle access control by verifying visitors, checking IDs, monitoring entry points, managing sign-in procedures, and ensuring only authorised personnel enter the building. They maintain secure, organised access flow during temporary assignments or unexpected staffing shortages, supporting business safety without disrupting operations."
+                        },
+                        {
+                            question: "How do adhoc security guards respond to emergencies in Melbourne?",
+                            answer: "Adhoc security guards respond to emergencies by quickly assessing risks, securing the area, guiding occupants, and contacting emergency services if required. Metro Guards trains all adhoc officers in incident response, conflict management, and rapid decision-making to stabilise Melbourne sites during urgent or unplanned situations."
+                        },
+                        {
+                            question: "Do adhoc security guards in Melbourne perform after-hours security duties?",
+                            answer: "Yes. Adhoc security guards in Melbourne can perform after-hours duties, including night patrols, alarm response, building lock-up, monitoring access, and securing vacant sites. They provide flexible coverage for businesses needing temporary overnight protection, weekend support, or assistance during unexpected security gaps outside normal hours."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }
 

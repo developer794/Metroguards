@@ -6,6 +6,9 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonial from '@/components/homepages/home1/Testimonial';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function GateHouseSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -124,7 +127,7 @@ export default function GateHouseSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="GATEHOUSE SECURITY GUARDS"
-                mainTitle="GATEHOUSE SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Gatehouse Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Gatehouse%20Security%20Guard/0DDA3933-2DD3-4AC3-9E0D-202CEE3C5A22_1_105_c.webp"
                 
             >
@@ -159,8 +162,8 @@ export default function GateHouseSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            The First Line Shapes <br />
-                                            <span style={{color: '#fdc51a'}}>Everything</span>
+                                            Best Gatehouse Security <br />
+                                            <span style={{color: '#fdc51a'}}>Guards Melbourne</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -171,8 +174,8 @@ export default function GateHouseSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           The gatehouse isn’t just a small booth at the front of your property. It’s command control, the filter, the checkpoint, the first handshake your site offers. When that line holds strong, the entire operation runs in order. When it cracks, everything behind it becomes vulnerable.
-                                            <br/><br/>That’s why Metro Guards places its sharpest, most disciplined officers at your front line of security, the gate where protection, order, and reputation begin. They are not seat-fillers in uniforms. They are operators who understand the weight of the role, that every ID checked, every log entry made, and every visitor turned away is a decision that keeps your people and your reputation intact.
+                                           Metro Guards delivers highly trained gatehouse security guards Melbourne, businesses rely on to protect entry points, manage vehicle movements, verify visitors, and secure high-risk access zones. Our gatehouse officers specialise in gatehouse access control, visitor verification security, vehicle screening security, and driver ID verification, ensuring only authorised personnel and vehicles enter your premises.
+                                            <br/><br/>Whether you manage a busy logistics depot in Port Melbourne, a manufacturing plant in Campbellfield, a distribution centre in Truganina, or a corporate facility in Southbank, Metro Guards provides 24/7 gatehouse security services Melbourne companies depend on for uninterrupted, compliant, and controlled site operations.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -249,7 +252,7 @@ export default function GateHouseSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -292,7 +295,7 @@ export default function GateHouseSecurityPage() {
                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-6 order-2 order-lg-2">
+                                <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
                                             <img 
@@ -303,7 +306,7 @@ export default function GateHouseSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '300px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -332,31 +335,69 @@ export default function GateHouseSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    The Gatehouse That Works in <span style={{color: '#fdc51a'}}>Silence</span>
+                                                Human-Centred Gatehouse <span style={{color: '#fdc51a'}}>Security Melbourne</span>
                                                 </h2>
-                                                <p className="lead mb-4" style={{
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    When it's done right, <strong style={{color: '#1e2247'}}>no one notices</strong>. The right delivery logs in, the wrong one never gets through. A visitor finds the right building without confusion. An ex-employee looking for trouble turns back at the gate.
+                                                    Gatehouse security environments require officers who can communicate clearly with truck drivers, contractors, courier personnel, employees, and visitors, often under time pressure. <strong style={{color: '#fdc51a'}}>Metro Guards</strong> provides <strong style={{color: '#1e2247'}}>gatehouse security Melbourne</strong> teams who balance firmness with courtesy, ensuring safety while maintaining operational flow.
                                                 </p>
-                                                <p className="lead" style={{
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
                                                     margin: 0,
                                                     marginTop: '1rem'
                                                 }}>
-                                                    A late-night worker gets a safe walk to the car. These small moments hold the weight of calm. They happen because <strong style={{color: '#fdc51a'}}>Metro Guards</strong> is there, not to be seen, but to make sure everything else can keep moving, <strong style={{color: '#fdc51a'}}>quietly and safely</strong>.
+                                                    Our officers are trained in:
+                                                </p>
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5'}}>✓</span>
+                                                        <span>Professional communication & conflict avoidance</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5'}}>✓</span>
+                                                        <span>Fast, accurate documentation checks</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5'}}>✓</span>
+                                                        <span>Clear instructions for vehicle movements</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5'}}>✓</span>
+                                                        <span>Assisting lost or distressed visitors</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5'}}>✓</span>
+                                                        <span>Intelligent judgement during high-volume traffic</span>
+                                                    </li>
+                                                </ul>
+                                                <p className="lead" style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    margin: 0,
+                                                    marginTop: '0.5rem'
+                                                }}>
+                                                    They operate with respect, awareness, and an understanding of how crucial gatehouse operations are to business efficiency.
                                                 </p>
                                             </div>
                                         </div>
                         </div>
                     </div>
 
-                                <div className="col-lg-6 order-1 order-lg-1">
+                                <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
@@ -365,10 +406,10 @@ export default function GateHouseSecurityPage() {
                                                 </span>
                                     </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            More Than Gatekeepers – <span style={{color: '#fdc51a'}}>The System That Holds The Line</span>
+                                            Specialised Gatehouse Security – <span style={{color: '#fdc51a'}}>Guard Services </span>
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            Our front gate security guards don't just open barriers; they manage flow, authority, and accountability all at once. Each guard is trained to operate like a control point, aware, analytical, precise.
+                                            Metro Guards provides gatehouse guard services Melbourne tailored to industrial, logistics, corporate, and government sites. Our officers are trained to deliver:
                                             </p>
                                 </div>
                                         
@@ -535,7 +576,7 @@ export default function GateHouseSecurityPage() {
                                                 lineHeight: '1.3',
                                                 textAlign: 'center'
                                             }}>
-                                                Where Discipline Becomes <span style={{color: '#fdc51a'}}>Harmony</span>
+                                               Accountability That <span style={{color: '#fdc51a'}}>Meets Industry Standards </span>
                                             </h2>
                                             
                                             <p style={{ 
@@ -547,19 +588,53 @@ export default function GateHouseSecurityPage() {
                                                 margin: '0 auto 25px',
                                                 textAlign: 'center'
                                             }}>
-                                                Unlike traditional security providers who focus solely on reaction or deterrence, Metro Guards builds <strong style={{color: '#fdc51a'}}>operational harmony</strong> through disciplined gatehouse systems, blending human judgment, procedural precision, and situational awareness to keep every moving part of a site functioning without interruption.
+                                                Our <strong style={{color: '#fdc51a'}}>gatehouse entry security guards Melbourne</strong> teams are supported by real-time digital reporting, CCTV integration, incident logging, and supervisor oversight.
                                             </p>
 
                                             <p style={{
                                                 color: 'rgba(255, 255, 255, 0.9)',
                                                 fontSize: '1.15rem',
                                                 lineHeight: '1.8',
-                                                margin: '0 auto',
+                                                marginBottom: '15px',
                                                 maxWidth: '900px',
+                                                margin: '0 auto 15px',
                                                 textAlign: 'center'
                                             }}>
-                                                Every Metro Guards officer is trained not just to guard, but to <strong style={{color: '#fdc51a'}}>maintain rhythm</strong>: of logistics, visitor flow, and daily activity, ensuring security becomes an invisible part of your site's efficiency, not an obstacle to it.
+                                                This ensures:
                                             </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '0',
+                                                maxWidth: '800px',
+                                                margin: '0 auto',
+                                                textAlign: 'left'
+                                            }}>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Accurate entry and exit data</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Verified contractor/driver documentation</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Immediate alerts for suspicious activity</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Compliance with safety and insurance requirements</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Alignment with OH&S standards across Victoria</span>
+                                                </li>
+                                            </ul>
 
                                                         <div style={{
                                                 marginTop: '35px',
@@ -576,7 +651,7 @@ export default function GateHouseSecurityPage() {
                                                     margin: 0,
                                                     fontStyle: 'italic'
                                                 }}>
-                                                    This turns Metro Guards from a security service into a <span style={{color: '#ffffff'}}>stability system</span>.
+                                                    From gatehouse control room security Melbourne to on-ground gate officers, we deliver full  <span style={{color: '#ffffff'}}>accountability at every checkpoint.</span>.
                                                 </p>
                                     </div>
                                 </div>
@@ -627,7 +702,7 @@ export default function GateHouseSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                        Proofs In <span style={{color: '#fdc51a'}}>Action</span>
+                                        Real-Time Verified Security Systems <span style={{color: '#fdc51a'}}>for Melbourne Sites</span>
                                         </h2>
                                         
                                         <p style={{
@@ -956,7 +1031,7 @@ export default function GateHouseSecurityPage() {
                                             boxShadow: "0 8px 25px rgba(253, 197, 26, 0.3)"
                                         }}>
                                             <i className="fas fa-award me-2"></i>
-                                            15+ Years Experience
+                                            16+ Years Experience
                                         </span>
                                         <div style={{
                                             width: "50px",
@@ -973,7 +1048,7 @@ export default function GateHouseSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Why Melbourne's Most Demanding Sites <span style={{color: '#fdc51a'}}>Choose Metro Guards</span>
+                                       Why Melbourne’s Leading Industrial Facilities  <span style={{color: '#fdc51a'}}>Choose Metro Guards</span>
                                     </h2>
 
                                     <p style={{
@@ -1169,6 +1244,7 @@ export default function GateHouseSecurityPage() {
                         </div>
                     </div>
 
+                    <Testimonials />
                     {/*===== Fast Operations Section =====*/}
                     <div className="fast-operations-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
@@ -1243,7 +1319,7 @@ export default function GateHouseSecurityPage() {
                                                 lineHeight: '1.3',
                                                 textAlign: 'center'
                                             }}>
-                                                Fast for Operations. <span style={{color: '#fdc51a'}}>Tight for Security</span>
+                                                Gatehouse Security Guards Melbourne <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                     </h2>
                                             
                                             <p style={{ 
@@ -1255,7 +1331,7 @@ export default function GateHouseSecurityPage() {
                                                 margin: '0 auto 30px',
                                                 textAlign: 'center'
                                             }}>
-                                                At Metro Guards, we understand that <strong style={{color: '#1e2247'}}>your gate should never become a bottleneck</strong>. Our systems combine discipline with efficiency:
+                                                When your facility requires disciplined, detail-focused entry security, Metro Guards delivers trained officers who are   <strong style={{color: '#1e2247'}}>alert, accurate, and ready to respond.</strong>. Our systems combine discipline with efficiency:
                                             </p>
 
                                             {/* Features List */}
@@ -1585,5 +1661,29 @@ export default function GateHouseSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "What do gatehouse security guards do in Melbourne?",
+                            answer: "Gatehouse security guards manage gatehouse access control, verify visitors, screen vehicles, monitor CCTV, operate boom gates, log entries and exits, and secure all truck and employee access points. They ensure only authorised people and vehicles enter your site."
+                        },
+                        {
+                            question: "Why is gatehouse security important?",
+                            answer: "Gatehouse security protects businesses from theft, unauthorised access, safety hazards, and operational disruptions. It provides controlled, documented, and secure entry for staff, contractors, and freight vehicles."
+                        },
+                        {
+                            question: "Do gatehouse security guards perform vehicle and cargo checks?",
+                            answer: "Yes. Our officers conduct vehicle screening security, cargo & freight screening, driver ID verification, and documentation checks to maintain site integrity and safety."
+                        },
+                        {
+                            question: "Do you provide 24/7 gatehouse security in Melbourne?",
+                            answer: "Yes, Metro Guards provides gatehouse security guards Melbourne 24/7, including night shifts, weekends, and public holidays."
+                        },
+                        {
+                            question: "Are your gatehouse officers trained in access control systems?",
+                            answer: "Absolutely. Our officers are trained in digital CCTV gatehouse monitoring, access control software, boom gate systems, and real-time reporting."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

@@ -1,9 +1,9 @@
 import LossPreventionSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Loss Prevention Security Guards in Melbourne | Metro Guards",
+  title: "Loss Prevention Security Guards in Melbourne | Retail Theft Protection",
   description:
-    "Expert loss prevention security guards in Melbourne. Retail theft prevention, shrinkage reduction, surveillance, and professional loss prevention services.",
+    "Hire trained loss prevention security guards in Melbourne. Retail theft prevention, store asset protection, shrinkage reduction & 24/7 LP security officers for shops & shopping centres.",
   alternates: { 
     canonical: "https://metroguards.com.au/loss-prevention-security-guards" 
   },

@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function MobilePatrolSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function MobilePatrolSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="MOBILE PATROL SECURITY GUARDS"
-                mainTitle="MOBILE PATROL SECURITY GUARDS IN MELBOURNE" 
+                mainTitle="Mobile Patrol Security Guards in Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
@@ -164,8 +166,8 @@ export default function MobilePatrolSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Movement That Means   <br />
-                                            <span style={{color: '#fdc51a'}}>Something</span>
+                                            Trained Mobile Patrol Security 
+                                            <span style={{color: '#fdc51a'}}>Melbourne 24/7</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -176,9 +178,9 @@ export default function MobilePatrolSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Melbourne never sleeps, it simply changes pace. Long after the last shift ends, our mobile security patrols take over that rhythm. They move through silence with intent, headlights sweeping across closed gates and empty carparks, keeping life in spaces that seem still.
-                                            <br/><br/>Metro Guards was built on motion, not noise, not routine, but awareness that travels. Each patrol is an act of presence, carried by mobile security services that protect what’s left behind after hours: your sites, your systems, your confidence.
-                                            </p>
+                                           Metro Guards provides professional mobile patrol security guards Melbourne businesses rely on to deter crime, monitor high-risk zones, and respond rapidly to alarms, trespassing, suspicious activity, and after-hours breaches. Our marked patrol vehicles operate across Melbourne’s CBD, industrial zones, commercial districts, and suburban business hubs, ensuring constant protection through day, night, and 24/7 operations.
+                                           Whether you manage a retail strip, warehouse district, construction site, multi-site operation, or vacant property, our mobile patrol security Melbourne offers a flexible, high-visibility security presence that strengthens safety and reduces risk before incidents can occur.
+                                           </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
@@ -402,7 +404,7 @@ export default function MobilePatrolSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Security That Doesn’t Wait for Trouble
+                                                Why Melbourne Businesses Need Mobile Patrol Security
                                             </h2>
                                             
                                             <p style={{ 
@@ -411,8 +413,9 @@ export default function MobilePatrolSecurityPage() {
                                                 lineHeight: "1.8",
                                                
                                             }}>
-                                                Mobile security isn’t about response, it’s about rhythm. Our patrol vehicles follow routes designed from risk, not convenience. They appear when least expected, covering multiple sites through the night, checking, logging, and clearing zones before problems ever take form.
-                                                <br /><br />While static guards anchor one site, our mobile patrol security guards become its pulse, deterring intruders through movement, timing, and visibility. Every turn of the wheel is a quiet reminder that your property is never left unguarded, even when unattended.
+                                                Melbourne businesses face real after-hours risks that demand active, visible protection. Mobile patrols help stop trespassing mobile patrol response Melbourne, protect assets through vandalism prevention patrol Melbourne, and reduce crime with break-in prevention mobile patrol Melbourne in commercial, retail and industrial zones. 
+                                                They also deter unauthorised entry patrol Melbourne, investigate suspicious activity mobile patrol Melbourne, and deliver essential after-hours site protection mobile patrol when buildings are empty. Vacant sites benefit from vacant property break-in patrol Melbourne, while construction operators rely on construction theft patrol Melbourne to protect tools and materials. Even carparks and logistics yards require vehicle theft patrol Melbourne, especially in high-risk areas.
+                                                With fast emergency patrol response Melbourne, mobile units safeguard your property at the exact times criminals strike most.
                                                 </p>
                                             
                                             
@@ -443,9 +446,9 @@ export default function MobilePatrolSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Real-Time Proof, <span style={{color: '#fdc51a'}}>Real-World Reliability</span>
+                                            Mobile Patrol Services  <span style={{color: '#fdc51a'}}>Melbourne</span>
                                             </h2>
-                                            
+                                            <p>Metro Guards delivers a full range of mobile patrol services Melbourne, including:</p>
                                             <div className="features-accordion">
                                                 {[
                                                     {
@@ -595,24 +598,72 @@ export default function MobilePatrolSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h3 className="fw-bold mb-4" style={{color: '#1e2247', fontSize: '1.5rem'}}>
-                                                    The Work Behind <span style={{color: '#fdc51a'}}>the Wheel</span>
+                                                Skilled & Licensed Mobile Patrol O <span style={{color: '#fdc51a'}}>fficers Ready 24/7</span>
                                                 </h3>
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.15rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    Metro Guards deploys:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Trained mobile patrol security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Licensed mobile patrol security officers Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Experienced mobile patrol guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>First-aid trained mobile patrol officers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Rapid response mobile patrol guards</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>High-visibility mobile patrol guards</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Vehicle patrol specialists Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Professional mobile patrol officers Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>24/7 mobile patrol guard teams</span>
+                                                    </li>
+                                                </ul>
+
                                                 <p style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
-                                                    marginBottom: '20px'
+                                                    marginBottom: '0'
                                                 }}>
-                                                    Each patrol has a purpose beyond the drive. Our officers <strong style={{color: '#1e2247'}}>inspect perimeters, secure access points, and verify alarms with precision</strong>. They document with GPS-tracked software, capture photo evidence, and leave digital footprints that confirm every stop.
+                                                    Our officers are trained to recognise risks, secure properties quickly, and perform systematic patrol routines for maximum deterrence.
                                                 </p>
-                                                            <p style={{
-                                                                color: '#6c757d',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                                margin: 0
-                                                            }}>
-                                                    These aren't box-ticking rounds — they're <strong style={{color: '#1e2247'}}>structured sweeps designed around real patterns of risk and vulnerability</strong>. Our security patrol services aren't built to look busy. They're built to <strong style={{color: '#fdc51a'}}>make absence impossible</strong>.
-                                                            </p>
                                                         </div>
                                                 </div>
                                                 </div>
@@ -674,7 +725,7 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            When Coverage Becomes <span style={{color: '#fdc51a'}}>Confidence</span>
+                                           Industries That Rely on Mobile Patrol <span style={{color: '#fdc51a'}}>Security in Melbourne</span>
                                             </h2>
 
                                             <p style={{
@@ -683,7 +734,7 @@ export default function MobilePatrolSecurityPage() {
                                                 lineHeight: '1.8',
                                             marginBottom: '25px'
                                             }}>
-                                            A well-planned patrol is <strong style={{color: '#1e2247'}}>part science, part instinct</strong>. Our teams coordinate routes with live data, weather conditions, and peak vulnerability windows.
+                                            Melbourne’s commercial, industrial and retail sectors depend on mobile patrol security to protect sites that can’t maintain full-time guards. From warehouses and construction zones to office parks, shopping centres and council facilities, our patrol units provide fast deterrence, after-hours protection and ongoing risk reduction across every environment.
                                             </p>
                                         </div>
                                         </div>
@@ -858,8 +909,7 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            The Routine That <span style={{color: '#fdc51a'}}>Never Repeats</span>
-                                        </h2>
+                                            How Mobile Patrol Security Protects Melbourne Businesses</h2>
 
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.95)',
@@ -869,8 +919,9 @@ export default function MobilePatrolSecurityPage() {
                                             maxWidth: '900px',
                                             margin: '0 auto 30px'
                                         }}>
-                                            <strong style={{color: '#fdc51a'}}>Predictability breeds risk</strong>. That's why no two nights look the same for us.
-                                        </p>
+                                            Mobile patrols are among the most effective crime-prevention strategies, ideal for properties that cannot maintain static guards around the clock.
+                                            Patrols protect sites from:
+                                            </p>
                                     </div>
 
                                     {/* Unpredictability Features */}
@@ -1026,7 +1077,7 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Built From 15 Years of <span style={{color: '#fdc51a'}}>Forward Motion</span>
+                                           Metro’s Mobile Patrol <span style={{color: '#fdc51a'}}>Inspection Process</span>
                                         </h2>
 
                                         <p style={{
@@ -1035,17 +1086,10 @@ export default function MobilePatrolSecurityPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '25px'
                                         }}>
-                                            From the <strong style={{color: '#1e2247'}}>outskirts of industrial estates to Melbourne's central business corridors</strong>, Metro Guards has covered ground that most never notice.
-                                        </p>
+                                            During every patrol, our officers conduct full perimeter inspections, check doors, windows and gates, and monitor all vehicle and pedestrian activity across the site. They follow up on alarm activations, verify hazards through CCTV cross-checks, and provide lock-up or open-up assistance where required. Each visit is documented with time-stamped digital reports and photos, giving you complete transparency and proof of service. 
+                                            </p>
 
-                                        <p style={{
-                                            color: '#6c757d',
-                                            fontSize: '1.15rem',
-                                            lineHeight: '1.8',
-                                            marginBottom: '30px'
-                                        }}>
-                                            Fifteen years taught us that <strong style={{color: '#1e2247'}}>security on wheels isn't just about miles covered</strong> — it's about <strong style={{color: '#fdc51a'}}>moments anticipated</strong>.
-                                        </p>
+                                        
                                 </div>
                             </div>
 
@@ -1184,7 +1228,7 @@ export default function MobilePatrolSecurityPage() {
                         </div>
                     </div>
 
-                    
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1287,7 +1331,7 @@ export default function MobilePatrolSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Peace That Doesn't <span style={{color: '#fdc51a'}}>Stand Still</span>
+                                                Mobile Patrol Security Guards Melbourne  <span style={{color: '#fdc51a'}}>You Can Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1298,19 +1342,10 @@ export default function MobilePatrolSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                When the last engine shuts off and the city exhales, <strong style={{color: '#1e2247'}}>we keep moving</strong>. Because protection doesn't live in one place — it moves with those who care enough to check twice.
-                                            </p>
+                                                Metro Guards delivers dependable, fast and high-visibility patrols across Melbourne’s industrial, retail, commercial and residential sectors. Whether you need routine patrols, random checks, or emergency response, our teams are ready day and night.
+                                                </p>
                                             
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                Metro Guards' mobile security patrols <strong style={{color: '#1e2247'}}>aren't a service you hire</strong> — they're the <strong style={{color: '#fdc51a'}}>motion behind your peace of mind</strong>.
-                                            </p>
+                                            
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1434,5 +1469,33 @@ export default function MobilePatrolSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "What do mobile patrol security guards do in Melbourne?",
+                            answer: "Mobile patrol guards perform perimeter checks, deter trespassers, inspect access points, monitor suspicious activity, and respond to alarms. Metro Guards' patrols protect Melbourne businesses with fast, high-visibility drive-by and on-foot inspections across commercial, retail and industrial sites."
+                        },
+                        {
+                            question: "What are the duties of mobile patrol officers in Melbourne?",
+                            answer: "Their duties include locking and unlocking sites, responding to alarms, checking doors and windows, monitoring activity, reporting hazards, deterring intruders and conducting random or scheduled patrols. Metro Guards provides licensed officers trained for rapid-response security."
+                        },
+                        {
+                            question: "What are the benefits of mobile patrol security in Melbourne?",
+                            answer: "Mobile patrols deter crime, reduce break-ins, provide after-hours protection, secure vacant properties, and deliver fast response to alarm activations. Metro Guards' patrols offer flexible, cost-effective protection across large or multi-site environments."
+                        },
+                        {
+                            question: "Why do businesses need mobile patrol security in Melbourne?",
+                            answer: "Businesses need mobile patrols to prevent theft, vandalism, trespassing and after-hours entry. Metro Guards provides randomised and scheduled patrols that protect property when staff are off-site."
+                        },
+                        {
+                            question: "How do I hire mobile patrol security guards in Melbourne?",
+                            answer: "Contact Metro Guards for a tailored quote. We provide 24/7 mobile patrol units, rapid response guards, and routine or random patrol schedules for properties of all sizes across Melbourne."
+                        },
+                        {
+                            question: "How do mobile patrols prevent crime in Melbourne?",
+                            answer: "Patrols prevent crime through visibility, unpredictability and rapid on-site inspections. Metro Guards uses marked patrol vehicles, trained officers, and technology-backed reporting to deter offenders before they act."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

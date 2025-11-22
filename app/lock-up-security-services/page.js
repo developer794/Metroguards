@@ -1,9 +1,9 @@
 import LockUpSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Lock-Up Security Services in Melbourne | Metro Guards",
+  title: "Lock-Up & Open-Up Security Melbourne Near Me",
   description:
-    "Professional lock-up and open-up security services in Melbourne. Property security, alarm systems, perimeter checks, and reliable lock-up services.",
+    "Professional lock-up & open-up security Melbourne. 24/7 business closing, building opening, after-hours patrols, alarm setting & safe morning access for offices and retail.",
   alternates: { 
     canonical: "https://metroguards.com.au/lock-up-security-services" 
   },

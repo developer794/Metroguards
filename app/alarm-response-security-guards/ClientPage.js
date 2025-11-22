@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function AlarmResponseSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -124,7 +126,7 @@ export default function AlarmResponseSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="ALARM RESPONSE SECURITY GUARDS"
-                mainTitle="ALARM RESPONSE SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Alarm Response Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
                 
             >
@@ -159,8 +161,8 @@ export default function AlarmResponseSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Time Never Waits –  <br />
-                                            <span style={{color: '#fdc51a'}}>Neither Do We</span>
+                                            24/7 Alarm Response Security 
+                                            <span style={{color: '#fdc51a'}}>Melbourne Near Me</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -171,8 +173,8 @@ export default function AlarmResponseSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            When the alarm pierces silence at 2 AM, every second decides what survives. You don’t need reassurance. You need arrival. 
-                                            <br/><br/>Like any other alarm response security company, Metro Guards doesn’t chase emergencies. We meet them before they have a name. Our alarm response services move with engineered certainty, built on systems designed for one purpose: to reach before regret. Because in those moments between activation and arrival, trust is either earned, or lost forever. We make sure it’s never the latter.
+                                            When an alarm activates, every second matters. Metro Guards provides alarm response security guards Melbourne who respond rapidly to break-ins, suspicious activity, and after-hours alerts. Our officers handle alarm activation response security Melbourne, conduct full property checks, verify threats, and secure your site before damage escalates.
+                                            From CBD offices and retail stores to warehouses in Dandenong, Derrimut, Tullamarine, Campbellfield, and Richmond, our mobile alarm response Melbourne team operates 24/7 to protect businesses from overnight risks, forced entry, and perimeter breaches.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -364,7 +366,7 @@ export default function AlarmResponseSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Where Speed Becomes <span style={{color: '#fdc51a'}}>Proof</span>
+                                        Technology-Driven Alarm Response  <span style={{color: '#fdc51a'}}>Security Melbourne</span>
                                     </h2>
 
                                     <p style={{
@@ -374,8 +376,8 @@ export default function AlarmResponseSecurityPage() {
                                         maxWidth: '750px',
                                         margin: '0 auto 40px'
                                     }}>
-                                        Fast means nothing if you can't prove it. That's why every Metro Guards response is backed by real data, not promises.
-                                    </p>
+                                        Each alarm response includes:
+                                        </p>
                                 </div>
                             </div>
 
@@ -649,7 +651,7 @@ export default function AlarmResponseSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '300px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -678,21 +680,95 @@ export default function AlarmResponseSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                    Melbourne's Only Pre-Mapped <span style={{color: '#fdc51a'}}>Response Grid</span>
+                                                Skilled Alarm Response Officers Trained for  <span style={{color: '#fdc51a'}}>High-Risk Situations</span>
                                                 </h2>
-                                                <p className="lead" style={{
+                                                <p style={{
                                                     color: '#6c757d',
-                                                    fontSize: '1.2rem',
+                                                    fontSize: '1.15rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
                                                 }}>
-                                                    Others wait for alarms. We're already positioned for them.
-                                                    <br /><br />
-                                                    Our fleet doesn't wander, it's strategically stationed across Melbourne, each patrol synced to a live-response grid that cuts minutes off every dispatch.
-                                                    <br /><br />
-                                                    When something happens in Carlton, Footscray, or the CBD, we don't find the route, <strong style={{color: '#fdc51a'}}>we activate it</strong>.
-                                                    <br /><br />
-                                                    That's the difference between being fast and <strong style={{color: '#1e2247'}}>being ready</strong>.
+                                                    Our guards undergo specialised alarm response training, including:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Alarm activation verification</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Secure perimeter sweep protocols</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Entry point damage inspection</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>CCTV cross-check & alarm source analysis</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Emergency coordination & reporting</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.15rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    Metro Guards supplies:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Trained alarm response security guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Licensed alarm investigation officers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Emergency alarm response guards Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Mobile alarm response patrol officers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>First-aid trained & risk-aware alarm responders</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '0'
+                                                }}>
+                                                    Every response follows strict process to ensure nothing is missed.
                                                 </p>
                                             </div>
                                         </div>
@@ -708,7 +784,7 @@ export default function AlarmResponseSecurityPage() {
                                                 </span>
                                     </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            The Anatomy of a True <span style={{color: '#fdc51a'}}>Response</span>
+                                            Alarm Response Services <span style={{color: '#fdc51a'}}>Melbourne</span>
                                             </h2>
                                             <p className="lead" style={{
                                                 color: '#6c757d',
@@ -716,8 +792,8 @@ export default function AlarmResponseSecurityPage() {
                                                 lineHeight: '1.7',
                                                 marginBottom: '30px'
                                             }}>
-                                                Speed without structure is chaos. Ours is coordination with purpose. A full-service alarm response system that turns urgency into order.
-                                            </p>
+                                                Metro Guards provides a full range of alarm response services Melbourne, including:
+                                                </p>
                                 </div>
                                         
                                         {/* Expandable Service Cards */}
@@ -844,7 +920,7 @@ export default function AlarmResponseSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Calm Under Pressure Isn't Luck – <span style={{color: '#fdc51a'}}>It's Training</span>
+                                        Our Alarm Response Process | <span style={{color: '#fdc51a'}}>Fast, Structured, and Reliable </span>
                                     </h2>
                                     <p style={{
                                         color: '#6c757d',
@@ -853,8 +929,12 @@ export default function AlarmResponseSecurityPage() {
                                         maxWidth: '800px',
                                         margin: '0 auto'
                                     }}>
-                                        Our guards don't just arrive quickly; they arrive composed. Every officer is trained for high-stakes calm, where decisions are made faster than fear can rise.
-                                    </p>
+                                        When your alarm triggers, our system receives the activation instantly, and a trained officer is dispatched within minutes.
+                                        Upon arrival, they assess for forced entry, intruder, or suspicious activity before completing a full internal and external sweep.
+                                        The officer then verifies whether the alarm was a genuine break-in, false trigger, system fault, or sensor malfunction.
+                                        Once the site is secured, you receive a detailed digital report with photos and findings.
+                                        This ensures your property is safe, documented, and ready before staff return.
+                                        </p>
                                 </div>
                             </div>
 
@@ -1054,7 +1134,7 @@ export default function AlarmResponseSecurityPage() {
                                             lineHeight: '1.2',
                                             textAlign: 'center'
                                         }}>
-                                            Delay Costs More Than <span style={{color: '#fdc51a'}}>Damage</span>
+                                            24/7 Alarm Response Security Guards Melbourne <span style={{color: '#fdc51a'}}>You Can Rely On</span>
                                         </h2>
                                         <p style={{
                                             color: 'rgba(255, 255, 255, 0.95)',
@@ -1063,17 +1143,9 @@ export default function AlarmResponseSecurityPage() {
                                             textAlign: 'center',
                                             marginBottom: '30px'
                                         }}>
-                                            A missed response doesn't just break glass, it breaks confidence. Every delay tells clients their protection is optional. <strong style={{color: '#fdc51a'}}>We make it non-negotiable</strong>.
-                                        </p>
-                                        <p style={{
-                                            color: 'rgba(255, 255, 255, 0.95)',
-                                            fontSize: '1.2rem',
-                                            lineHeight: '1.8',
-                                            textAlign: 'center',
-                                            margin: 0
-                                        }}>
-                                            Metro Guards exists to end uncertainty. When your alarm sounds, you'll never wonder if someone's coming, <strong style={{color: '#fdc51a'}}>you'll see who already did</strong>.
-                                        </p>
+                                            Metro Guards provides 24/7 alarm response security guards Melbourne who attend activations day, night, weekends, and public holidays. The moment your alarm triggers, our closest mobile patrol unit is dispatched to verify the alert, investigate signs of forced entry, and secure your premises before damage or loss can escalate.
+                                            </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1110,7 +1182,7 @@ export default function AlarmResponseSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Technology Built for <span style={{color: '#fdc51a'}}>Human Speed</span>
+                                        Intelligent Alarm Response  <span style={{color: '#fdc51a'}}>Technology</span>
                                     </h2>
                                     <p style={{
                                         color: '#6c757d',
@@ -1119,8 +1191,8 @@ export default function AlarmResponseSecurityPage() {
                                         maxWidth: '800px',
                                         margin: '0 auto'
                                     }}>
-                                        Behind every dispatch is a system that anticipates movement before it's needed, the backbone of our alarm response services:
-                                    </p>
+                                        With live alarm integration, secure keyholding and automated deployment, our rapid alarm response security Melbourne reaches your site in minutes.
+                                        </p>
                                 </div>
                             </div>
 
@@ -1385,7 +1457,7 @@ export default function AlarmResponseSecurityPage() {
                                         lineHeight: '1.2',
                                         textAlign: 'center'
                                     }}>
-                                        15 Years of Running Toward <span style={{color: '#fdc51a'}}>the Noise</span>
+                                       Why Melbourne Businesses Need Metro  <span style={{color: '#fdc51a'}}>Alarm Response Security</span>
                                     </h2>
 
                                     <p style={{
@@ -1395,8 +1467,8 @@ export default function AlarmResponseSecurityPage() {
                                         textAlign: 'center',
                                         marginBottom: '35px'
                                     }}>
-                                        For over a decade, Melbourne's most trusted businesses have relied on Metro Guards to turn alarms into action. We're <strong style={{color: '#fdc51a'}}>ISO Certified, CM3 Prequalified, ASIAL Members</strong>, but what defines us isn't certification.
-                                    </p>
+                                        With 16+ years of protecting Melbourne businesses, Metro Guards delivers the experience and reliability needed for fast, effective alarm response. As an ISO-certified and CM3-accredited security provider, we are trusted to handle property breach alarm response Melbourne, after-hours break-in response Melbourne, and night-time alarm security Melbourne with proven professionalism.
+                                        </p>
 
                                     <div style={{
                                         background: 'rgba(253, 197, 26, 0.15)',
@@ -1413,14 +1485,14 @@ export default function AlarmResponseSecurityPage() {
                                             lineHeight: '1.7',
                                             textAlign: 'center'
                                         }}>
-                                            It's the consistency of being first on scene, every single time. Because we don't defend buildings, <span style={{color: '#fdc51a'}}>we defend everything built inside them: work, trust, legacy</span>.
-                                        </p>
+                                           Our certified systems ensure accurate false alarm investigation Melbourne, rapid dispatch for dangerous alarm activation Melbourne, and full compliance and documentation for insurance and safety standards. When your premises is unstaffed, Metro’s accredited alarm response team becomes the frontline protection your business can rely on
+                                           </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <Testimonials />
 
                    {/*===== Call to Action Section =====*/}
                    <div className="cta-section section-padding" style={{
@@ -1524,7 +1596,7 @@ export default function AlarmResponseSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                When Seconds Decide <span style={{color: '#fdc51a'}}>Everything</span>
+                                               Security Escort Services Melbourne <span style={{color: '#fdc51a'}}>Clients Trust</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1535,8 +1607,8 @@ export default function AlarmResponseSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                When the alarm goes off, there are no second chances. That's why our response isn't a promise, <strong style={{color: '#fdc51a'}}>it's a timestamp</strong>.
-                                            </p>
+                                                From executives and VIPs to lone workers, nurses, vulnerable individuals and those facing personal safety concerns, Metro Guards ensures every journey is secure, no matter the distance, location or time of day.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1658,5 +1730,29 @@ export default function AlarmResponseSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides security escort services in Melbourne?",
+                            answer: "Metro Guards provides licensed security escort services in Melbourne, offering personal, VIP, executive and female escort officers for safe travel, workplace protection and high-risk situations. Our guards accompany clients through unsafe areas, unfamiliar routes or sensitive environments with full discretion."
+                        },
+                        {
+                            question: "How do security escort guards protect individuals in Melbourne?",
+                            answer: "Escort guards protect individuals by monitoring surroundings, assessing risks, managing aggressive behaviour, securing travel routes and ensuring safe arrival. Metro Guards' officers provide close support for lone workers, executives, vulnerable individuals and anyone requiring safe movement."
+                        },
+                        {
+                            question: "Do you provide VIP security escorts in Melbourne?",
+                            answer: "Yes. Metro Guards offers VIP escort security Melbourne, including executive protection officers, close protection guards and female escort staff. We manage routes, crowds and threats discreetly to safeguard high-profile individuals during travel or public appearances."
+                        },
+                        {
+                            question: "Can I hire a female security escort in Melbourne?",
+                            answer: "Absolutely. Metro Guards supplies female security escort Melbourne officers for clients who prefer a more comfortable or sensitive support experience. They assist with personal safety, professional travel and vulnerable individual escorts."
+                        },
+                        {
+                            question: "How do I hire security escort guards in Melbourne?",
+                            answer: "You can hire escort guards by contacting Metro Guards for a confidential assessment. We provide personal escort security hire Melbourne, VIP escorts, corporate protection and emergency escort services with rapid deployment available 24/7."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

@@ -1,9 +1,9 @@
 import EducationalSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Educational Institution Security Guards in Melbourne | Metro Guards",
+  title: "Educational Institute Security Guards in Melbourne",
   description:
-    "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
+    "Hire trained educational institute security guards in Melbourne. We protect schools, colleges & universities with 24/7 campus patrols, student safety & access control.",
   alternates: { 
     canonical: "https://metroguards.com.au/educational-institute-security-guards" 
   },

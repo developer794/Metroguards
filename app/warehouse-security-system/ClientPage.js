@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function WareHouseSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function WareHouseSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="WAREHOUSE SECURITY GUARDS"
-                mainTitle="WAREHOUSE SECURITY GUARDS IN MELBOURNE "
+                mainTitle="Warehouse Security Guards in Melbourne "
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Warehouse%20Security%20System/2C5EE736-A80F-437B-8FE9-5382F7152C52_1_105_c.webp"
                 
             >
@@ -157,7 +159,7 @@ export default function WareHouseSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -165,9 +167,9 @@ export default function WareHouseSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            When the Noise Stops,  <br />
-                                            <span style={{color: '#fdc51a'}}>Responsibility Stays</span>
-                                        </h1>
+                                            24/7 Warehouse Security Melbourne 
+                                            <span style={{color: '#fdc51a'}}>Melbourne</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -177,10 +179,8 @@ export default function WareHouseSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            When the forklifts still, and the floor no longer hums with motion, the air inside a warehouse changes.
-                                            <br /><br />It’s quieter, but heavier. The weight of everything stored, everything waiting for tomorrow, hangs in that silence. 
-                                            <br /><br />
-                                            That’s where Metro Guards begins. Not in the rush of day, but in the calm between shifts, where vigilance becomes the heartbeat that keeps your operation alive. Our warehouse security guards in Melbourne don’t just watch walls; they protect the rhythm that makes industry breathe. Each site is a living organism, gates, lights, corridors, forklifts, trucks, all moving parts that need balance, not interruption. Our guards understand that. They don’t disrupt the flow. They protect it.
+                                            Metro Guards delivers professional warehouse security guards Melbourne businesses rely on to safeguard high-value stock, loading docks, transport lanes, and major logistics operations. Our team protects key industrial corridors, including Truganina, Derrimut, Laverton North, Dandenong South, Campbellfield, Keysborough, Clayton, Tullamarine, and West Melbourne, areas with the city’s busiest freight activity.
+                                            We secure distribution centres, industrial warehouses, storage facilities, freight depots, and logistics warehouses, providing 24/7 patrols, access control, inventory protection, and safety supervision. For companies searching for “who provides warehouse security in Melbourne” or “best industrial warehouse security Melbourne”, Metro Guards remains the trusted choice across Victoria.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -405,16 +405,73 @@ export default function WareHouseSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                The Quiet Work That Keeps Industry Moving
+                                                Why Warehouse Security Matters in Melbourne’s
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                                Security isn’t about presence; it’s about awareness that feels invisible yet absolute. Our warehouse security guard services operate with a calm discipline that fits seamlessly within warehouse life, checking gates, managing contractors, verifying trucks, all without breaking the pace. They are trained to read more than movement: posture, tone, hesitation. They sense when something’s out of rhythm before anyone else does. Their purpose isn’t to be seen. It’s to make sure your warehouse never has to stop.</p>
+                                                Warehouses across Melbourne face rising risks due to expanded freight movement, after-hours operations, and high-value stock stored on-site. Industrial facilities require <strong style={{color: '#1e2247'}}>warehouse security services Melbourne</strong> designed to eliminate vulnerabilities before they become losses.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Warehouse theft prevention Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access warehouse Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Inventory loss warehouse Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Break-ins at warehouses Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Loading dock theft Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Cargo tampering issues Melbourne</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Warehouse vandalism Melbourne</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These issues demand trained <strong style={{color: '#fdc51a'}}>warehouse security guards Melbourne</strong> who understand industrial workflows, traffic movements, and supply chain vulnerabilities.
+                                            </p>
                                             
                                             
                                         </div>
@@ -474,45 +531,92 @@ export default function WareHouseSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                When One Slip Means More Than a Loss
+                                                Industrial-Ready Warehouse <span style={{color: '#fdc51a'}}>Security Officers</span>
                                                 </h2>
-                                                <p className="lead mb-4" style={{
+                                                
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    A missed patrol. An unlocked side gate. A forklift left out overnight. In warehousing, a small lapse can ripple through everything, shipments delayed, contracts strained, reputations tested.
+                                                    Metro Guards supplies licensed <strong style={{color: '#1e2247'}}>warehouse security officers Melbourne</strong> trained specifically for industrial environments. Our officers understand logistics operations and know how to keep fast-moving sites safe without interrupting productivity.
                                                 </p>
+
+                                                <p className="lead mb-3" style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    margin: 0,
+                                                    marginTop: '1rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    They are trained to:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginTop: '1rem',
+                                                    marginBottom: '1rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Control freight entry and contractor access</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Monitor forklift & machinery zones</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect high-value stock & cages</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Perform safety checks in low-visibility areas</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Supervise shift changes and overnight activity</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Support drivers with instructions & compliance</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Patrol loading docks and perimeter fencing</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Monitor CCTV and blind spots</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Detect suspicious or unauthorised behaviour</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Assist in emergencies or evacuations</span>
+                                                    </li>
+                                                </ul>
+
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
-                                                    marginBottom: '2rem'
+                                                    margin: 0,
+                                                    marginTop: '0.5rem'
                                                 }}>
-                                                    That's why our warehouse security services are built on precision. Every guard follows exact site SOPs, every report reflects reality, every decision is measured by impact. We protect more than assets. We protect reliability, the foundation every industrial operation depends on.
+                                                    Our guards are skilled <strong style={{color: '#fdc51a'}}>warehouse patrol officers in Melbourne</strong>, ensuring ongoing safety throughout complex industrial environments.
                                                 </p>
                                                 
-                                                <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Fifteen Years of Steady Hands and Clear Eyes
-                                                </h2>
-                                                <p className="lead" style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                    margin: 0
-                                                }}>
-                                                    For over 15 years, Metro Guards has stood inside Melbourne's warehouses, from cold storage facilities to sprawling logistics hubs, protecting everything that keeps the city supplied.
-                                                </p>
-                                                <p className="lead" style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                    marginTop: '1rem',
-                                                    margin: 0
-                                                }}>
-                                                    Our strength lies not in force, but in follow-through. Each officer is trained for industrial environments, aware of OH&S, and skilled in communication as much as control. They arrive prepared, stay composed, and leave behind peace of mind. Because in places where precision defines profit, security must mirror that same precision.
-                                                </p>
+                                                
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -520,149 +624,79 @@ export default function WareHouseSecurityPage() {
 
                                 <div className="col-lg-6 order-1 order-lg-1">
                                     <div className="services-content ps-lg-4">
-                                        <div className="section-header mb-5">
+                                        <div className="section-header mb-4">
                                             <div className="subtitle mb-3">
                                                 <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
                                                     WAREHOUSE SECURITY
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Ironclad <span style={{color: '#fdc51a'}}>Accountability</span>
+                                                Specialised Warehouse Security Services <span style={{color: '#fdc51a'}}>We Provide</span>
                                             </h2>
-                                            <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            From the first patrol to the last light, nothing goes unseen, nothing unverified.
+                                            
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1.5rem"
+                                            }}>
+                                                Metro Guards offers fully customised <strong style={{color: '#1e2247'}}>warehouse security services Melbourne</strong> tailored to logistics, freight, industrial, and storage operations.
                                             </p>
-                                        </div>
-                                        
-                                        {/* Interactive Service Accordion */}
-                                        <div className="services-accordion">
-                                            {[
-                                                {
-                                                    icon: "fas fa-route",
-                                                    title: "GPS-tracked patrols",
-                                                    
-                                                    details: "Every movement recorded and verified in real time."
-                                                },
-                                                {
-                                                    icon: "fas fa-camera",
-                                                    title: "Photo-verified reports",
-                                                    
-                                                    details: "Visual documentation with every patrol log."
-                                                },
-                                                {
-                                                    icon: "fas fa-user-check",
-                                                    title: "Unannounced supervisor checks",
-                                                   
-                                                    details: "Random field audits to maintain consistent performance."
-                                                },
-                                                {
-                                                    icon: "fas fa-desktop",
-                                                    title: "Live command oversight",
-                                                    
-                                                    details: "Real-time monitoring and support from our operations center."
-                                                },
-                                                {
-                                                    icon: "fas fa-certificate",
-                                                    title: "ISO Certified",
-                                                    
-                                                    details: "Quality, OH&S, and Environmental Management standards."
-                                                },
-                                                {
-                                                    icon: "fas fa-award",
-                                                    title: "Member Of ASIAL",
-                                                    
-                                                    details: "Nationally recognized security industry membership."
-                                                },
-                                                {
-                                                    icon: "fas fa-check-circle",
-                                                    title: "CM3 Prequalified",
-                                                    
-                                                    details: "Compliance certified for government and major contracts."
-                                                }
-                                            ].map((service, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
-                                                        className="accordion-header p-4"
-                                                        style={{
-                                                            backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
-                                                            borderRadius: activeService === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
-                                                        onClick={() => toggleService(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
-                                                                    className="service-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                        width: '50px',
-                                                                        height: '50px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
-                                                                        color: '#ffffff',
-                                                                        fontSize: '1.5rem'
-                                                                    }}
-                                                                >
-                                                                    <i className={service.icon}></i>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                                                    <p className="mb-0" style={{color: '#6c757d', fontSize: '0.9rem'}}>{service.summary}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                                    style={{
-                                                                        width: '40px',
-                                                                        height: '40px',
-                                                                        backgroundColor: activeService === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
-                                                                        color: activeService === index ? '#ffffff' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
-                                                                        {activeService === index ? '−' : '+'}
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    {activeService === index && (
-                                                        <div 
-                                                            className="accordion-content p-4"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.1rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Our services include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Comprehensive 24/7 Warehouse Security & On-Site Guarding</strong></span>
+                                                </li>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Warehouse Patrols, Monitoring & Perimeter Protection</strong></span>
+                                                </li>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Loading Dock, Gatehouse & Freight Movement Security</strong></span>
+                                                </li>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Access Control & Warehouse Entry Management</strong></span>
+                                                </li>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Inventory Protection, Loss Prevention & Shrinkage Reduction</strong></span>
+                                                </li>
+                                                <li style={{marginBottom: '0.75rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span><strong>Industrial Asset Protection & Safety Compliance Support</strong></span>
+                                                </li>
+                                            </ul>
+
                                                             <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
-                                                                fontSize: '1rem'
-                                                            }}>
-                                                                {service.details}
+                                                color: "#6c757d", 
+                                                fontSize: "1.1rem",
+                                                lineHeight: "1.8",
+                                                fontStyle: "italic"
+                                            }}>
+                                                <strong style={{color: '#fdc51a'}}>Metro Guards</strong> delivers reliable, compliant, and results-driven security designed to keep your people, property, and supply chain safe round the clock.
                                                             </p>
                                                         </div>
-                                                    )}
                                                 </div>
-                                            ))}
-                                        </div>
-                                        
-                                        <p style={{color: '#6c757d', fontSize: '1rem', lineHeight: '1.6', marginTop: '20px', fontStyle: 'italic'}}>
-                                            <strong>It's not about trust alone. It's about trust that's earned, shift after shift, audit after audit.</strong>
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -742,7 +776,7 @@ export default function WareHouseSecurityPage() {
                                                 marginBottom: '30px',
                                                 lineHeight: '1.3'
                                             }}>
-                                                Every Warehouse Holds <span style={{color: '#fdc51a'}}>More Than Stock</span>
+                                                Technology-Driven Security for <span style={{color: '#fdc51a'}}> Melbourne Warehouses</span>
                                             </h2>
 
                                             <p style={{
@@ -755,21 +789,10 @@ export default function WareHouseSecurityPage() {
                                                 marginRight: 'auto',
                                                 fontWeight: '500'
                                             }}>
-                                                It holds <strong style={{color: '#fdc51a'}}>commitment</strong>. It holds someone's overtime, someone's deadline, someone's livelihood.
-                                            </p>
+                                                Metro Guards strengthens all warehouse security Melbourne operations with advanced digital systems that enhance accuracy, visibility, and compliance. Our officers use GPS-verified warehouse patrols, time-stamped shift reports, alarm response documentation, and real-time incident reporting to ensure every action is tracked. Through live CCTV surveillance warehouse integration, photographic proof of checks, vehicle gate entry logs, and asset protection data insights, we support industrial facilities, logistics hubs, and distribution centres with complete transparency. These technology-driven processes give businesses relying on industrial warehouse security Melbourne full confidence across multi-site operations.
+                                                </p>
 
-                                            <p style={{
-                                                color: 'rgba(255, 255, 255, 0.9)',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                margin: 0,
-                                                maxWidth: '850px',
-                                                marginLeft: 'auto',
-                                                marginRight: 'auto',
-                                                fontStyle: 'italic'
-                                            }}>
-                                                Every pallet represents trust, trust that what was built today will still be there tomorrow. That's what we guard. Not just steel, stock, or machinery, but the effort behind it all. Metro Guards keeps that promise intact, <strong style={{color: '#fdc51a'}}>night after night, gate after gate</strong>.
-                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -883,7 +906,7 @@ export default function WareHouseSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                What's Inside Deserves <span style={{color: '#fdc51a'}}>Certainty</span>
+                                                Warehouse Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Facilities Depend On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -894,19 +917,10 @@ export default function WareHouseSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                When it comes to warehouse security guard services in Melbourne, we bring more than guards, <strong style={{color: '#1e2247'}}>we bring assurance</strong>. The assurance that when your people go home, the site they've built is still safe.
-                                            </p>
+                                                From small storage units to major distribution centres handling national freight volume, Metro Guards provides professional warehouse security designed to keep your site, stock, and people safe round the clock.
+                                                </p>
                                             
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                That when the lights go out, <strong style={{color: '#1e2247'}}>the heartbeat of your business doesn't fade</strong>. Security that doesn't sleep. Confidence that doesn't falter. <strong style={{color: '#fdc51a'}}>Metro Guards</strong>.
-                                            </p>
+                                            
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1026,9 +1040,33 @@ export default function WareHouseSecurityPage() {
                     
                 </div>
                     
-                
+                <Testimonials />
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides warehouse security in Melbourne?",
+                            answer: "Metro Guards provides trained warehouse security guards in Melbourne, offering 24/7 industrial protection for distribution centres, freight hubs, logistics warehouses, and storage facilities. Our officers safeguard stock, loading docks, vehicles, and perimeter areas to prevent theft, damage, and unauthorised access."
+                        },
+                        {
+                            question: "What do warehouse security guards do?",
+                            answer: "Warehouse security guards monitor inventory, control access points, patrol loading docks, supervise forklift areas, inspect vehicles, oversee shift changes, and prevent theft or break-ins. Metro Guards' officers ensure safe, secure, and compliant industrial operations across Melbourne's warehouse districts."
+                        },
+                        {
+                            question: "Why do warehouses need security in Melbourne?",
+                            answer: "Warehouses need security to stop theft, prevent break-ins, protect high-value stock, secure loading docks, and monitor industrial activity after hours. Metro Guards helps reduce shrinkage, safeguard supply chain operations, and create a safe working environment across Melbourne industrial zones."
+                        },
+                        {
+                            question: "Do you offer 24/7 warehouse security in Melbourne?",
+                            answer: "Yes. Metro Guards provides 24/7 warehouse security Melbourne, covering day shifts, overnight patrols, weekends, and continuous industrial monitoring. We protect freight, stock, equipment, and staff across Melbourne's busiest warehouse districts."
+                        },
+                        {
+                            question: "How do I hire warehouse security guards in Melbourne?",
+                            answer: "You can hire warehouse security guards by contacting Metro Guards for a tailored security assessment. We deploy trained industrial officers for patrols, loading dock protection, access control, CCTV monitoring, and high-value goods security."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function LossPreventionSecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function LossPreventionSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOSS PREVENTION SECURITY GUARDS"
-                mainTitle="LOSS PREVENTION SECURITY GUARDS IN MELBOURNE"
+                mainTitle="Loss Prevention Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/51BEE2F0-1C5C-4D14-BE17-7CA4C4DDC7C5_1_105_c.webp"
                 
             >
@@ -165,8 +167,8 @@ export default function LossPreventionSecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Because Control Deserves <br />
-                                            <span style={{color: '#fdc51a'}}>Its Own Craft</span>
+                                            Loss Prevention Security Guards 
+                                            <span style={{color: '#fdc51a'}}>Service in Melbourne 24/7</span>
                                         </h1>
                                         <p 
                                             className="lead mb-4" 
@@ -177,9 +179,9 @@ export default function LossPreventionSecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           Every product on a shelf represents hours, hands, and heart. What leaves your store should be what was meant to leave. That’s the promise Metro Guards protects, not through fear or visibility,
-                                            but through a discipline that sees what spreadsheets never will. Loss doesn’t start when something is stolen. It starts when no one’s watching. We make sure someone always is.
-                                            </p>
+                                           Metro Guards provides trained loss prevention guards Melbourne retailers rely on to reduce theft, protect stock, and maintain safe trading environments. Our highly skilled loss prevention officers Melbourne specialise in preventing shoplifting, monitoring high-risk areas, and identifying suspicious behaviour before losses occur.
+                                           From supermarkets and department stores to fashion retailers, shopping centres, and national retail chains, Metro Guards delivers loss prevention services in Melbourne designed to reduce shrinkage, protect staff, and secure assets. Retailers searching “who provides loss prevention security guards in Melbourne?” rely on Metro Guards for unmatched performance and professionalism.
+                                           </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
                                                 <a 
@@ -255,7 +257,7 @@ export default function LossPreventionSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -365,7 +367,7 @@ export default function LossPreventionSecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                        height: '550px',
+                                                        height: '850px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
@@ -403,18 +405,81 @@ export default function LossPreventionSecurityPage() {
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Protection That Pays for Itself
+                                                Why Loss Prevention Guards Are Essential for Melbourne Retailers
                                             </h2>
                                             
                                             <p style={{ 
                                                 color: "#6c757d", 
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+                                                marginBottom: "1.5rem"
                                             }}>
-                                               In retail, the smallest cracks cost the most. A skipped refund check. A trusted employee’s quiet shortcut.
-                                               <br /><br />A blind spot between cameras. Our loss prevention security guards seal those cracks before they ever reach your ledger. They blend observation, intuition, and verified reporting into one rhythm of control. Because protection isn’t an expense, it’s what keeps your business breathing.
-                                               </p>
+                                                Retail crime across Melbourne continues to rise, impacting profit margins, staff safety, and customer experience. Retailers need <strong style={{color: '#1e2247'}}>LP security guards Melbourne</strong> who understand theft patterns, behavioural detection, and the fast-paced nature of modern retail environments.
+                                            </p>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8",
+                                                marginBottom: "1rem",
+                                                fontWeight: "600"
+                                            }}>
+                                                Common challenges include:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Shoplifting incidents (individual & organised)</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Concealment theft in high-risk aisles</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Refund fraud & ticket switching</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Aggressive or repeat offenders</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>After-hours break-ins or stockroom theft</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Crowded store blind spots</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Safety risks for staff confronting offenders</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Loss of high-value or easily concealed items</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Shrinkage from internal or customer theft</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{ 
+                                                color: "#6c757d", 
+                                                fontSize: "1.15rem",
+                                                lineHeight: "1.8"
+                                            }}>
+                                                These issues demand <strong style={{color: '#fdc51a'}}>retail loss prevention Melbourne</strong> specialists trained to protect stock discreetly, safely, and without interrupting business flow.
+                                            </p>
                                             
                                             
                                         </div>
@@ -445,7 +510,7 @@ export default function LossPreventionSecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '700px',
+                                                    height: '400px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -474,22 +539,70 @@ export default function LossPreventionSecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Loss No <span style={{color: '#fdc51a'}}>Spreadsheet Can Measure</span>
+                                                A Professional Security for <span style={{color: '#fdc51a'}}>Melbourne’s Retail Sector</span>
                                                 </h2>
                                                 <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8'
                                                 }}>
-                                                    Loss eats morale long before it touches revenue. It tells your honest staff, "no one's watching." It tells opportunists, "no one cares." That's when culture starts to corrode.
+                                                    <strong style={{color: '#fdc51a'}}>Metro Guards'</strong> <strong style={{color: '#1e2247'}}>loss prevention officers Melbourne</strong> are trained to:
                                                 </p>
+                                                
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Identify suspicious behaviour before theft occurs</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Blend into the retail environment discreetly</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Communicate professionally with staff and customers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Protect high-risk aisles & blind spots</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Support staff during difficult incidents</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>De-escalate conflicts safely</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Work alongside CCTV operators & managers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Deliver detailed post-incident reporting</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Support bag checks & store policies</span>
+                                                    </li>
+                                                </ul>
+
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    margin: 0,
+                                                    marginTop: '0.5rem'
                                                 }}>
-                                                    Metro Guards stops that corrosion before it begins. Our presence restores confidence, for staff, customers, and management alike. We rebuild the invisible layer of trust that keeps everything else intact.
+                                                    Whether you need <strong style={{color: '#fdc51a'}}>high-risk store security Melbourne</strong> or discreet <strong style={{color: '#fdc51a'}}>LP security guards Melbourne</strong> for sensitive areas, our team operates with confidence, awareness, and professionalism.
                                                 </p>
                                             </div>
                                         </div>
@@ -505,10 +618,10 @@ export default function LossPreventionSecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Guards Who Don't Watch – They <span style={{color: '#fdc51a'}}>Read the Room</span>
+                                            Specialised Loss Prevention & <span style={{color: '#fdc51a'}}>Retail Security Services</span>
                                             </h2>
                                             <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            Our loss prevention officers don't chase problems; they predict them. They read patterns, not just people — posture, proximity, hesitation, and intent. It's security powered by instinct and precision.
+                                            Metro Guards offers a full range of loss prevention security Melbourne solutions tailored to retail environments, including:
                                             </p>
                                         </div>
                                         
@@ -820,7 +933,7 @@ export default function LossPreventionSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Proof That Doesn't Need <span style={{color: '#fdc51a'}}>a Meeting</span>
+                                        Accountability & Security Technology <span style={{color: '#fdc51a'}}>for Retail Protection</span>
                                     </h2>
                                     
                                     <p style={{
@@ -830,8 +943,7 @@ export default function LossPreventionSecurityPage() {
                                         maxWidth: '850px',
                                         margin: '0 auto'
                                     }}>
-                                        Trust is earned through proof. Our systems record, timestamp, and verify every patrol, ensuring complete accountability.
-                                    </p>
+                                        All Metro Guards loss prevention security guards Melbourne are supported by:</p>
                                 </div>
                             </div>
 
@@ -1374,16 +1486,78 @@ export default function LossPreventionSecurityPage() {
                                                 marginBottom: '25px',
                                                 lineHeight: '1.2'
                                             }}>
-                                                Why Melbourne's Smart Retailers <span style={{color: '#fdc51a'}}>Trust Metro Guards</span>
+                                               Why Melbourne’s Leading Retailers Choose  <span style={{color: '#fdc51a'}}> Metro Guards</span>
                                             </h2>
 
                                                         <p style={{
                                                 color: 'rgba(255, 255, 255, 0.95)',
                                                 fontSize: '1.2rem',
                                                 lineHeight: '1.9',
-                                                            margin: 0
+                                                marginBottom: '1.5rem',
+                                                margin: '0 auto 1.5rem'
                                                         }}>
-                                                With 15+ years of experience across Melbourne's retail sector, Metro Guards has become the quiet strength behind countless boutiques and shopping centres. Our loss prevention specialists combine precision, discretion, and genuine care for your brand. <strong style={{color: '#fdc51a'}}>Backed by round-the-clock coverage, local supervision, and award-winning service, we don't just place guards, we place people who protect what matters most.</strong>
+                                                From small boutique stores to national chains, retailers choose Metro Guards for our reputation, reliability, and results in <strong style={{color: '#fdc51a'}}>store theft prevention Melbourne</strong>.
+                                                        </p>
+
+                                                <p style={{
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.15rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '1rem'
+                                                        }}>
+                                                We are trusted because:
+                                                        </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: 'rgba(255, 255, 255, 0.9)',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem',
+                                                    textAlign: 'left',
+                                                    maxWidth: '800px',
+                                                    margin: '0 auto 1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Our LP officers are trained in modern theft-detection techniques</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We provide discreet, customer-friendly security</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We reduce shrinkage across multiple store formats</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We respond quickly to urgent LP staffing needs</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We protect stock, staff, and customers simultaneously</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We understand the unique risks of Melbourne retail locations</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>We offer loss prevention security guards Melbourne 24/7</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.15rem',
+                                                lineHeight: '1.8',
+                                                margin: '0 auto',
+                                                fontStyle: 'italic',
+                                                marginTop: '1rem'
+                                                        }}>
+                                                Whether you're searching for "loss prevention guards Melbourne near me", "loss prevention security near me open now", or "best loss prevention security guards Melbourne", <strong style={{color: '#fdc51a'}}>Metro Guards</strong> delivers unmatched performance.
                                                         </p>
                                         </div>
                                     </div>
@@ -1391,7 +1565,8 @@ export default function LossPreventionSecurityPage() {
                             </div>
                         </div>
                     </div>
-
+                                                    
+                                                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1494,7 +1669,7 @@ export default function LossPreventionSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Every Product Has a Story – <span style={{color: '#fdc51a'}}>We Guard How It Ends</span>
+                                                Loss Prevention Security Guards Melbourne <span style={{color: '#fdc51a'}}>Retailers Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1505,7 +1680,7 @@ export default function LossPreventionSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Every item represents a decision, an effort, a belief that it will reach the right hands. We make sure it does. <strong style={{color: '#1e2247'}}>Metro Guards doesn't just secure stock, we secure the story your brand tells every day.</strong>
+                                                From shopping centres and flagship stores to supermarkets and high-value department stores, Metro Guards supports retail operations with proactive, effective loss prevention.
                                             </p>
                                         </div>
 
@@ -1630,5 +1805,29 @@ export default function LossPreventionSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "Who provides loss prevention security guards in Melbourne?",
+                            answer: "Metro Guards provides trained loss prevention security guards in Melbourne, specialising in retail theft prevention, store protection, shrinkage reduction, and high-risk store surveillance for supermarkets, shopping centres, and department stores."
+                        },
+                        {
+                            question: "How do I hire loss prevention guards in Melbourne?",
+                            answer: "You can hire loss prevention guards by contacting Metro Guards for a tailored retail assessment. We supply LP officers trained in shoplifting prevention, store patrols, CCTV coordination, and asset protection."
+                        },
+                        {
+                            question: "What do loss prevention officers do?",
+                            answer: "Loss prevention officers monitor high-risk areas, identify suspicious behaviour, prevent shoplifting, secure stockrooms, support CCTV teams, and reduce shrinkage through active store surveillance and real-time intervention."
+                        },
+                        {
+                            question: "Do you offer 24/7 loss prevention in Melbourne?",
+                            answer: "Yes. We offer loss prevention security guards Melbourne 24/7, including day shifts, night shifts, weekends, and after-hours store protection."
+                        },
+                        {
+                            question: "Do you provide LP guards for supermarkets and department stores?",
+                            answer: "Absolutely. Metro guards supply supermarket loss prevention, department store loss prevention guards, and shopping centre loss prevention guards for all retail formats."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

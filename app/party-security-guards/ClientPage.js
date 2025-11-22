@@ -6,6 +6,8 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import Testimonials from '@/components/Testimonials';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function PartySecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +132,7 @@ export default function PartySecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="PARTY SECURITY GUARDS"
-                mainTitle="PARTY SECURITY GUARDS IN MELBOURNE" 
+                mainTitle="Party Security Guards in Melbourne" 
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Party%20Security%20Guards/1785C6E4-ADDF-4BC0-A8F5-0281E26F413A_1_105_c.webp"
             >
                 <div>
@@ -156,7 +158,7 @@ export default function PartySecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -164,9 +166,9 @@ export default function PartySecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Celebration With  <br />
-                                            <span style={{color: '#fdc51a'}}>Protection</span>
-                                        </h1>
+                                            Experienced  Party Security Guards 
+                                            <span style={{color: '#fdc51a'}}>Melbourne 24/7</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -176,8 +178,8 @@ export default function PartySecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            A party event is the real test of your security preparations. One unpredictable guest. One unnoticed entry. One moment that shifts from celebration to crisis. Metro Guards eliminates that margin of risk.
-                                            <br/><br/>For over fifteen years, we’ve provided party security in Melbourne for the city’s most exclusive private events, from estate celebrations and milestone birthdays to high-profile galas and invitation-only launches. Our party security guards combine hospitality discipline with security intelligence, ensuring every party event unfolds seamlessly from first arrival to final exit.
+                                            Metro Guards provides reliable party security guards Melbourne for private parties, celebrations, house events, birthdays, and large entertainment gatherings. Our officers are trained in RSA compliance, conflict management, alcohol-related incident prevention and party crowd control security Melbourne, ensuring your event remains safe and enjoyable for everyone.
+                                            From Southbank rooftops to Richmond warehouses, St Kilda house parties, Brunswick backyard events and CBD private venues, our private party security guards Melbourne handle access control, crowd behaviour, intoxicated guests, and high-risk situations discreetly. For anyone searching “best party security guards Melbourne” or “private party security Melbourne in my area”, Metro Guards is the trusted, local provider.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -308,8 +310,9 @@ export default function PartySecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Why <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Melbourne Chooses Metro Guards for  <span style={{color: '#fdc51a'}}>Party Security</span>
                                             </h2>
+                                            <p>Party hosts choose Metro Guards because:</p>
                                             
                                             <div className="features-accordion">
                                                 {[
@@ -489,7 +492,7 @@ export default function PartySecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            The Discipline Behind <span style={{color: '#fdc51a'}}>Discretion</span>
+                                            Reporting, Monitoring &  <span style={{color: '#fdc51a'}}>Real-Time Updates</span>
                                         </h2>
 
                                         <p style={{
@@ -499,8 +502,8 @@ export default function PartySecurityPage() {
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
-                                            Private events require <strong style={{color: '#fdc51a'}}>subtle control, safety delivered without spectacle</strong>. Our command centre tracks each post through live reporting, supervisor check-ins, and digital route logging. If intervention is required, it's executed quietly, efficiently, and with complete documentation.
-                                        </p>
+                                            Every deployment uses digital tools to ensure transparency and quality:
+                                            </p>
 
                                         <h3 style={{
                                             color: '#fdc51a',
@@ -685,7 +688,7 @@ export default function PartySecurityPage() {
                                             marginBottom: '50px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Threats Neutralised Before They <span style={{color: '#fdc51a'}}>Escalate</span>
+                                            Trained Party Security <span style={{color: '#fdc51a'}}>Guards Melbourne </span>
                                         </h2>
                                     </div>
                                 </div>
@@ -859,8 +862,77 @@ export default function PartySecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Operational <span style={{color: '#fdc51a'}}>Intelligence</span>
+                                            Skilled, Licensed &  <span style={{color: '#fdc51a'}}>RSA-Qualified Officers</span>
                                         </h2>
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.95)',
+                                            fontSize: '1.15rem',
+                                            lineHeight: '1.8',
+                                            marginBottom: '1.5rem'
+                                        }}>
+                                            Every Metro Guard officer is trained to handle high-pressure party environments where alcohol, crowds and unpredictable behaviour combine.
+                                        </p>
+
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.1rem',
+                                            lineHeight: '1.8',
+                                            marginBottom: '1rem',
+                                            fontWeight: '600'
+                                        }}>
+                                            We supply:
+                                        </p>
+
+                                        <ul style={{
+                                            listStyle: 'none',
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.05rem',
+                                            lineHeight: '1.8',
+                                            paddingLeft: '0',
+                                            marginBottom: '1.5rem'
+                                        }}>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Uniformed party security guards Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Licensed party security officers Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>RSA-qualified party security guards Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Experienced party security guards Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Conflict-management party guards</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>Crowd management specialists Melbourne</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>First-aid trained party guards</span>
+                                            </li>
+                                            <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <span>High-risk party security personnel</span>
+                                            </li>
+                                        </ul>
+
+                                        <p style={{
+                                            color: 'rgba(255, 255, 255, 0.9)',
+                                            fontSize: '1.1rem',
+                                            lineHeight: '1.8',
+                                            fontStyle: 'italic'
+                                        }}>
+                                            Our guards anticipate issues before they occur — preventing injuries, fights, property damage, and police involvement.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -947,7 +1019,7 @@ export default function PartySecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Fifteen Years of <span style={{color: '#fdc51a'}}>Controlled Celebration</span>
+                                             Professional Party Bouncers &  <span style={{color: '#fdc51a'}}>Doormen Melbourne</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -995,11 +1067,9 @@ export default function PartySecurityPage() {
                                             textAlign: 'center',
                                                 margin: 0
                                             }}>
-                                            We've delivered security for parties across <strong style={{color: '#fdc51a'}}>Melbourne's skyline venues, Yarra River estates, and private island retreats</strong>. Each event different in atmosphere, all identical in one expectation: <strong style={{color: '#ffffff'}}>flawless execution</strong>. Our record stands on consistency, calm, and the quiet confidence that <span style={{
-                                                color: '#fdc51a',
-                                                fontWeight: '800',
-                                                fontSize: '1.3rem'
-                                            }}>no disturbance will ever define your night</span>.
+                                            Our party bouncers Melbourne and party doormen Melbourne provide firm but respectful management at entry points. They prevent gatecrashers, manage invitations, check IDs, screen guests discreetly, and maintain smooth entry and exit flow.
+This ensures the only people inside your event are the ones who are meant to be there.
+
                                             </p>
                                         </div>
                                     </div>
@@ -1109,7 +1179,7 @@ export default function PartySecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Protection Without <span style={{color: '#fdc51a'}}>Interruption</span>
+                                                Party Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Hosts Depend On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1120,8 +1190,8 @@ export default function PartySecurityPage() {
                                                 maxWidth: '900px',
                                                 margin: '0 auto 40px'
                                             }}>
-                                                Hiring Metro Guards is not a cost — it's a <strong style={{color: '#1e2247'}}>risk strategy</strong>. You gain a security partner that aligns with your reputation, protects your brand image, and sustains the integrity of your event. We don't manage problems; we <strong style={{color: '#fdc51a'}}>remove their possibility</strong>. When your night has no room for uncertainty, our experience becomes every margin of your safety.
-                                            </p>
+                                                Metro Guards protect your event so you can enjoy it. Our guards maintain calm, handle issues discreetly, and keep everyone safe, from the first guest’s arrival to the final pack-down.
+                                                </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1241,9 +1311,33 @@ export default function PartySecurityPage() {
                     
                 </div>
                     
-                
+                <Testimonials />
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "How do party security guards maintain safety at Melbourne events?",
+                            answer: "Metro Guards' party security guards manage entry control, prevent gatecrashers, monitor alcohol behaviour, de-escalate conflicts, and remove disruptive guests. They maintain safety, protect property, and respond to incidents quickly, ensuring private parties, birthdays, and celebrations remain controlled and enjoyable."
+                        },
+                        {
+                            question: "Do party security guards handle aggressive or intoxicated guests in Melbourne?",
+                            answer: "Yes. Our trained officers manage aggressive behaviour, intoxicated guests, and volatile situations using de-escalation techniques. Metro Guards ensure parties stay safe without disrupting the atmosphere, stepping in only when necessary to protect guests and prevent escalation."
+                        },
+                        {
+                            question: "Can I hire party bouncers or doormen in Melbourne?",
+                            answer: "Absolutely. Metro Guards provides professional party bouncers Melbourne and party doormen Melbourne to manage entry points, screen guests, prevent gatecrashers, and maintain venue security throughout the event."
+                        },
+                        {
+                            question: "Do your party security guards work at private homes?",
+                            answer: "Yes, we provide house party security guards Melbourne and private residence party guards for backyard parties, celebrations, and residential events. Our officers prevent disturbances, keep guests safe, and minimise neighbourhood complaints."
+                        },
+                        {
+                            question: "Are Metro party security guards licensed and experienced?",
+                            answer: "Yes. Metro Guards supplies licensed party security officers Melbourne, including RSA-qualified, first-aid trained, and conflict-management specialists. Our guards have extensive experience in managing crowds, mitigating alcohol risks, and overseeing private functions of all sizes."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

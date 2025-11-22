@@ -1,9 +1,9 @@
 import SecurityEscortPage from "./ClientPage";
 
 export const metadata = {
-  title: "Security Escort Services in Melbourne | Metro Guards",
+  title: "Security Escort Services Melbourne | VIP Security Services",
   description:
-    "Professional security escort services in Melbourne. Personnel escort, valuable cargo protection, safe transportation, and reliable escort security services.",
+    "PProfessional security escort services in Melbourne. Personal, VIP, executive & female escort guards for safe travel, high-risk routes, staff protection & valuable goods.",
   alternates: { 
     canonical: "https://metroguards.com.au/security-escort-services" 
   },

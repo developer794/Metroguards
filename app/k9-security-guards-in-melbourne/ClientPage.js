@@ -6,6 +6,7 @@ import Gallery4 from "@/components/ui/gallery4"
 import WhyChooseUs from "@/components/ui/why-choose-us"
 import Accreditation from '@/components/accrediation10'
 import Subscribe from '@/components/homepages/home1/Subscribe';
+import FAQSectionDynamic from '@/components/FAQSectionDynamic';
 
 export default function K9SecurityPage() {
     const [activeService, setActiveService] = useState(null);
@@ -130,7 +131,7 @@ export default function K9SecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="K9 SECURITY GUARDS"
-                mainTitle="K9 SECURITY GUARDS IN MELBOURNE "
+                mainTitle="K9 Security Guards in Melbourne "
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/E1AD04AF-8F50-4A32-959C-94B8180F3D4C_1_105_c.webp"
                 
             >
@@ -157,7 +158,7 @@ export default function K9SecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -165,9 +166,9 @@ export default function K9SecurityPage() {
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Instinct You Can Trust. Loyalty  <br />
-                                            <span style={{color: '#fdc51a'}}>You Can Feel</span>
-                                        </h1>
+                                            K9 Security Melbourne | Licensed Dog 
+                                            <span style={{color: '#fdc51a'}}>Handlers Melbourne</span>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
@@ -177,7 +178,8 @@ export default function K9SecurityPage() {
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Long before alarms sound or motion sensors blink, a trained K9 senses intent, the shift in the air, the heartbeat of hesitation, and moves before threat becomes harm. At Metro Guards, our K9 guards redefine protection: instinct and discipline working in concert, handlers and dogs moving as one.
+                                            Metro Guards provides K9 security guards Melbourne businesses depend on for powerful deterrence, rapid threat detection and superior response capabilities. Our trained security dog handlers and patrol units outperform traditional guarding by identifying intruders faster, covering more ground, and deterring criminal behaviour before it begins.
+                                            From industrial estates in Dandenong, commercial warehouses in Derrimut, and construction sites in Tullamarine, to logistics centres in Truganina and retail complexes across Melbourne, our K9 dog security Melbourne services deliver unmatched security presence and risk reduction across all sectors.
                                             </p>
                                         
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
@@ -254,7 +256,7 @@ export default function K9SecurityPage() {
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '700px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -308,7 +310,7 @@ export default function K9SecurityPage() {
                                                     borderRadius: '20px',
                                                     boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
                                                     width: '100%',
-                                                    height: '500px',
+                                                    height: '400px',
                                                     objectFit: 'cover'
                                                 }}
                                             />
@@ -337,15 +339,66 @@ export default function K9SecurityPage() {
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
                                                 <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Bond That Never Breaks
+                                                Trained Handlers & High-Performance Security Dogs
                                                 </h2>
-                                                <p className="lead" style={{
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.15rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '1rem',
+                                                    fontWeight: '600'
+                                                }}>
+                                                    Metro Guards deploys:
+                                                </p>
+
+                                                <ul style={{
+                                                    listStyle: 'none',
+                                                    color: '#6c757d',
+                                                    fontSize: '1.05rem',
+                                                    lineHeight: '1.8',
+                                                    paddingLeft: '0',
+                                                    marginBottom: '1.5rem'
+                                                }}>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Licensed security dog handlers Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Experienced K9 patrol officers Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Professional K9 security Melbourne</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>First-aid trained handlers</span>
+                                                    </li>
+                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                        <span>Rapid-response K9 teams</span>
+                                                    </li>
+                                                </ul>
+
+                                                <p style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8',
-                                                    margin: 0
+                                                    marginBottom: '2.5rem'
                                                 }}>
-                                                    Teams train until trust is reflex. The handler reads context; the dog reads what can’t be seen, scent, micro-movement, emotional tension. Together they turn uncertainty into awareness and act before risk becomes reality.
+                                                    Every handler is certified and trained under strict national K9 deployment standards.
+                                                </p>
+
+                                                
+
+                                                <p style={{
+                                                    color: '#6c757d',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    marginBottom: '0'
+                                                }}>
+                                                    K9 units elevate site security by detecting threats that humans, CCTV or alarms may miss.
                                                 </p>
                                                 
                                             </div>
@@ -362,9 +415,9 @@ export default function K9SecurityPage() {
                                                 </span>
                                             </div>
                                             <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Our K9 Teams <span style={{color: '#fdc51a'}}>Deliver </span>
+                                            Professional K9 Dog Security Melbourne <span style={{color: '#fdc51a'}}>| What You Get </span>
                                             </h2>
-                                            
+                                            <p>Metro Guards delivers end-to-end K9 protection services Melbourne, including:</p>
                                         </div>
                                         
                                         {/* Interactive Service Accordion */}
@@ -559,20 +612,77 @@ export default function K9SecurityPage() {
                                                 marginBottom: '30px',
                                                 lineHeight: '1.3'
                                             }}>
-                                                Presence That Speaks <span style={{color: '#fdc51a'}}>Without Sound</span>
+                                                K9 Patrol Security Melbourne | <span style={{color: '#fdc51a'}}>How It Works </span>
                                             </h2>
 
                                             <p style={{
                                                 color: 'rgba(255, 255, 255, 0.95)',
-                                                fontSize: '1.25rem',
+                                                fontSize: '1.15rem',
+                                                lineHeight: '1.8',
+                                                marginBottom: '1rem',
+                                                fontWeight: '600',
+                                                maxWidth: '850px',
+                                                marginLeft: 'auto',
+                                                marginRight: 'auto'
+                                            }}>
+                                                Our K9 patrol process includes:
+                                            </p>
+
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: 'rgba(255, 255, 255, 0.95)',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem',
+                                                maxWidth: '850px',
+                                                marginLeft: 'auto',
+                                                marginRight: 'auto'
+                                            }}>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Perimeter patrols</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Intruder detection sweeps</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Construction & warehouse after-hours patrols</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Vehicle & pedestrian activity monitoring</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Unauthorised access response</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Locked-up site inspection</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>High-risk zone patrols</span>
+                                                </li>
+                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
+                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <span>Documentation of all findings</span>
+                                                </li>
+                                            </ul>
+
+                                            <p style={{
+                                                color: 'rgba(255, 255, 255, 0.95)',
+                                                fontSize: '1.1rem',
                                                 lineHeight: '1.8',
                                                 margin: 0,
                                                 maxWidth: '850px',
                                                 marginLeft: 'auto',
-                                                marginRight: 'auto',
-                                                fontWeight: '500'
+                                                marginRight: 'auto'
                                             }}>
-                                                A canine security guard's calm stance carries <strong style={{color: '#fdc51a'}}>authority</strong>. In events, warehouses, or construction zones, these trained protection dogs sense adrenaline before it spikes, detect hidden scents, and keep spaces steady by simply being there. Deterrence happens through <strong style={{color: '#fdc51a'}}>presence, not performance</strong>.
+                                                K9 units elevate site security by detecting threats that humans, CCTV or alarms may miss.
                                             </p>
                                         </div>
                                     </div>
@@ -668,7 +778,7 @@ export default function K9SecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        From Patrol to <span style={{color: '#fdc51a'}}>Proof</span>
+                                        Technology-Backed K9 Security  <span style={{color: '#fdc51a'}}>for Melbourne Sites</span>
                                     </h2>
 
                                     <p style={{
@@ -679,8 +789,8 @@ export default function K9SecurityPage() {
                                         maxWidth: '800px',
                                         margin: '0 auto 50px'
                                     }}>
-                                        Every K9 patrol is <strong style={{color: '#fdc51a'}}>accountable and auditable</strong>. Systems track movement, document incidents, and provide supervisor oversight so protection is transparent.
-                                    </p>
+                                        Every K9 deployment includes:
+                                        </p>
                                 </div>
                             </div>
 
@@ -1018,7 +1128,7 @@ export default function K9SecurityPage() {
                                                 lineHeight: '1.3',
                                                 textAlign: 'center'
                                             }}>
-                                                Guarding What Builds <span style={{color: '#fdc51a'}}>the Future</span>
+                                               Industries That Rely on K9  <span style={{color: '#fdc51a'}}>Security in Melbourne</span>
                                             </h2>
 
                                             <p style={{
@@ -1030,8 +1140,8 @@ export default function K9SecurityPage() {
                                                 maxWidth: '900px',
                                                 margin: '0 auto'
                                             }}>
-                                                Where risk costs millions, <strong style={{color: '#1e2247'}}>certainty is currency</strong>. Metro K9 teams protect environments where loss is not acceptable:
-                                            </p>
+                                                Metro Guards protects industrial warehouses, construction sites, logistics yards, manufacturing facilities, transport hubs, shopping precincts, vacant properties and high-risk commercial environments. K9 units provide powerful deterrence and superior detection across Melbourne’s most vulnerable industries.
+                                                </p>
 
                                             {/* Protected Environments Grid */}
                                             <div className="row g-3 mt-4" style={{maxWidth: '900px', margin: '30px auto 0'}}>
@@ -1195,7 +1305,7 @@ export default function K9SecurityPage() {
                                                 lineHeight: '1.3',
                                                 textAlign: 'center'
                                             }}>
-                                                Loyalty, Precision <span style={{color: '#fdc51a'}}>and Heart</span>
+                                                Why Melbourne Trusts Metro for  <span style={{color: '#fdc51a'}}>Advanced K9 Security</span>
                                             </h2>
 
                                             <p style={{
@@ -1207,35 +1317,13 @@ export default function K9SecurityPage() {
                                                 margin: '0 auto 25px',
                                                 textAlign: 'center'
                                             }}>
-                                                For over <strong style={{color: '#fdc51a'}}>15 years</strong>, Metro Guards has protected Melbourne's most trusted spaces with loyalty that feels human and precision that endures. Our K9 teams are chosen for calm intelligence, guided by handlers defined by <strong style={{color: '#fdc51a'}}>discipline, empathy, and quiet strength</strong>.
-                                            </p>
+                                                Metro Guards delivers K9 security guards Melbourne businesses rely on for powerful deterrence and rapid threat detection. With over 15 years of experience, certified dog handlers, and professionally trained K9S, we provide superior protection for high-risk sites. 
+                                                Our units combine intelligence, discipline and instinct, delivering security Melbourne can count on.
+                                                </p>
 
-                                            <p style={{
-                                                color: 'rgba(255, 255, 255, 0.9)',
-                                                fontSize: '1.15rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '25px',
-                                                maxWidth: '900px',
-                                                margin: '0 auto 25px',
-                                                textAlign: 'center'
-                                            }}>
-                                                Together, they do more than secure, <strong style={{color: '#fdc51a'}}>they reassure</strong>. Each patrol is a promise of safety carried out with composure and care.
-                                            </p>
+                                            
 
-                                            <p style={{
-                                                color: 'rgba(255, 255, 255, 0.95)',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                margin: '0 auto',
-                                                maxWidth: '850px',
-                                                textAlign: 'center',
-                                                fontStyle: 'italic',
-                                                paddingTop: '20px',
-                                                borderTop: '2px solid rgba(253, 197, 26, 0.3)',
-                                                marginTop: '30px'
-                                            }}>
-                                                Behind every alert gaze is years of training, trust, and understanding. <strong style={{color: '#fdc51a'}}>We don't guard gates. We protect peace of mind.</strong>
-                                            </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1346,7 +1434,7 @@ export default function K9SecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                The Kind of Loyalty <span style={{color: '#fdc51a'}}>You Can't Program</span>
+                                                K9 Security Guards Melbourne <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
                                             </h2>
                                             
                                             <p style={{
@@ -1357,8 +1445,8 @@ export default function K9SecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Technology detects. <strong style={{color: '#1e2247'}}>Dogs feel</strong>. A K9's fidelity is a silent promise: <em>I've got this. I've got you.</em> Metro Guards pairs that instinct with <strong style={{color: '#fdc51a'}}>human commitment</strong>, side by side, always ready.
-                                            </p>
+                                                Whether it’s a high-value warehouse, an exposed construction site or a large industrial estate, Metro Guards’ K9 security guards Melbourne provide unmatched patrol presence, threat prevention and rapid response capability.
+                                                </p>
                                             
                                             <p style={{
                                                 color: '#6c757d',
@@ -1489,5 +1577,33 @@ export default function K9SecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
+                <FAQSectionDynamic 
+                    faqs={[
+                        {
+                            question: "What do K9 security guards do in Melbourne?",
+                            answer: "K9 security guards patrol sites with trained dogs to detect intruders, deter criminal activity, identify threats quickly and protect high-risk areas. Metro Guards' K9 units secure warehouses, construction sites and industrial zones with superior detection and rapid response."
+                        },
+                        {
+                            question: "What are the duties of K9 patrol officers in Melbourne?",
+                            answer: "K9 patrol officers handle trained security dogs, conduct perimeter checks, investigate suspicious activity, prevent trespassing, respond to intrusions and document all findings. Metro Guards provides licensed handlers who follow strict professional K9 deployment guidelines."
+                        },
+                        {
+                            question: "What are the benefits of K9 security guards in Melbourne?",
+                            answer: "K9 units deter offenders instantly, detect hidden threats, respond rapidly to intrusions and provide superior night-time protection. Metro Guards' K9 services reduce theft, break-ins and vandalism across high-risk Melbourne sites."
+                        },
+                        {
+                            question: "Why do businesses need K9 security in Melbourne?",
+                            answer: "Businesses need K9 security for enhanced protection in areas prone to break-ins, vandalism, trespassing or equipment theft. Metro Guards' K9 teams provide high-visibility patrols and powerful deterrence unmatched by traditional guards."
+                        },
+                        {
+                            question: "How does K9 patrol prevent crime in Melbourne?",
+                            answer: "K9 patrols prevent crime through strong visual presence, rapid intruder detection, scent tracking and controlled aggression. Metro Guards' dogs identify threats earlier than humans, alarms or cameras, making them ideal for high-risk environments."
+                        },
+                        {
+                            question: "How do I hire K9 security guards in Melbourne?",
+                            answer: "Contact Metro Guards for a K9 security assessment. We provide trained handlers, high-performance dogs and customised patrol plans for commercial, industrial and construction environments."
+                        }
+                    ]}
+                />
             </Layout>
             </> ) }

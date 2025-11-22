@@ -1,9 +1,9 @@
 import GateHouseSecurityPage from "./ClientPage";
 
 export const metadata = {
-  title: "Gatehouse Security Guards in Melbourne | Metro Guards",
+  title: "Gatehouse Security Guards in Melbourne 24/7 ",
   description:
-    "Professional gatehouse security guards in Melbourne. Access control, visitor management, vehicle inspection, and 24/7 gatehouse security services.",
+    "Hire professional gatehouse security guards in Melbourne. We provide visitor verification, vehicle screening, & gatehouse monitoring for industrial, commercial & logistics sites.",
   alternates: { 
     canonical: "https://metroguards.com.au/gate-house-security-guard" 
   },
