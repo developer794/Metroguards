@@ -52,6 +52,25 @@ const principlesData = [
   }
 ];
 
+const ourGoals = [
+  {
+    text: "Provide 24/7 protection with rapid response and dependable services.",
+    icon: "fas fa-shield-alt"
+  },
+  {
+    text: "Maintain the highest standards of professionalism, accountability, and integrity.",
+    icon: "fas fa-award"
+  },
+  {
+    text: "Innovate and adopt advanced security practices to anticipate risks.",
+    icon: "fas fa-lightbulb"
+  },
+  {
+    text: "Deliver measurable results that exceed client expectations and build long-term trust.",
+    icon: "fas fa-chart-line"
+  }
+];
+
 export default function Page() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -105,7 +124,7 @@ export default function Page() {
                     marginBottom: '30px',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                   }}>
-                    Providing Security with <span style={{ color: '#fdc51a' }}>Integrity & Excellence</span>
+                    Our Purpose in <span style={{ color: '#fdc51a' }}>Action</span>
                   </h2>
                   
                   <div 
@@ -125,99 +144,12 @@ export default function Page() {
                       color: '#1e2247',
                       fontWeight: '400'
                     }}>
-                      As the premier security company in Australia, our mission is to provide customers with <strong style={{ color: '#fdc51a' }}>cost-effective solutions of the highest quality</strong> and the best security guard services using the latest technologies with global connections whilst targeting enhanced security in the Melbourne and Sydney security industry.
+                     At MetroGuards, our mission is to provide <strong style={{ color: '#fdc51a' }}>reliable, professional, and innovative security solutions</strong> that safeguard Melbourne's businesses, institutions, events, and communities. Every guard, patrol, and security strategy we deploy is guided by our core values: <strong style={{ color: '#fdc51a' }}>integrity, professionalism, accountability, and teamwork</strong>, ensuring <strong style={{ color: '#fdc51a' }}>safety and peace of mind</strong> for our clients.
                     </p>
                   </div>
-
-                  {/* Mission Statistics */}
-                  <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-                    gap: '30px',
-                    marginTop: '50px'
-                  }}>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{
-                        width: '80px',
-                        height: '80px',
-                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        margin: '0 auto 15px auto',
-                        color: '#1e2247',
-                        fontSize: '1.8rem',
-                        fontWeight: '700',
-                        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                      }}>
-                        15+
-                      </div>
-                      <p style={{
-                        fontSize: '1.1rem',
-                        color: '#6c757d',
-                        margin: 0,
-                        fontWeight: '600'
-                      }}>
-                        Years of Excellence
-                                            </p>
-                                        </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{
-                        width: '80px',
-                        height: '80px',
-                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        margin: '0 auto 15px auto',
-                        color: '#1e2247',
-                        fontSize: '1.6rem',
-                        fontWeight: '700',
-                        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                      }}>
-                        500+
-                      </div>
-                      <p style={{
-                        fontSize: '1.1rem',
-                        color: '#6c757d',
-                        margin: 0,
-                        fontWeight: '600'
-                      }}>
-                        Satisfied Clients
-                      </p>
-                                    </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{
-                        width: '80px',
-                        height: '80px',
-                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        margin: '0 auto 15px auto',
-                        color: '#1e2247',
-                        fontSize: '1.4rem',
-                        fontWeight: '700',
-                        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                      }}>
-                        24/7
-                                </div>
-                      <p style={{
-                        fontSize: '1.1rem',
-                        color: '#6c757d',
-                        margin: 0,
-                        fontWeight: '600'
-                      }}>
-                        Security Coverage
-                      </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/*===== Vision & Values Section =====*/}
@@ -253,8 +185,8 @@ export default function Page() {
                     marginBottom: '40px',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                   }}>
-                    To Be Australia's Most <span style={{ color: '#fdc51a' }}>Trusted Security Partner</span>
-                                        </h2>
+                    Why <span style={{ color: '#fdc51a' }}>Metro Guards Exist</span>
+                  </h2>
                   
                   <div style={{
                     background: '#f8f9fa',
@@ -271,7 +203,7 @@ export default function Page() {
                       marginBottom: '25px',
                       fontWeight: '500'
                     }}>
-                      We envision a future where every business, event, and community in Australia feels completely secure and protected through our innovative security solutions.
+                      Metro Guards exists to deliver comprehensive security services that protect people, property, and assets across Melbourne. We aim to create safe environments where businesses and communities can thrive without worry.
                     </p>
                     <p style={{
                       fontSize: '1.1rem',
@@ -279,99 +211,60 @@ export default function Page() {
                       lineHeight: '1.7',
                       margin: 0
                     }}>
-                      Our vision extends beyond traditional security services to encompass comprehensive protection strategies that adapt to evolving threats while maintaining the highest standards of professionalism and reliability.
+                     
                     </p>
-                                    </div>
-                                </div>
-                            </div>
-
-              {/* Core Services Grid */}
-                            <div className="row">
-                <div className="col-12">
-                  <h3 style={{
-                    fontSize: '2.2rem',
-                    fontWeight: '600',
-                    color: '#1e2247',
-                    textAlign: 'center',
-                    marginBottom: '60px',
-                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                  }}>
-                    Our Core Services
-                  </h3>
+                  </div>
                 </div>
               </div>
 
-              <div 
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                  gap: '30px',
-                  marginBottom: '60px'
-                }}
-              >
-                {missionValues.map((value, index) => (
-                  <div 
-                    key={index}
-                    style={{
-                      background: '#ffffff',
-                      borderRadius: '20px',
-                      padding: '40px 30px',
-                      border: '1px solid #f1f3f4',
-                      boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
-                      transition: 'all 0.3s ease',
-                      textAlign: 'center',
-                      position: 'relative',
-                      overflow: 'hidden'
-                    }}
-                    onMouseEnter={(e) => {
-                      setHoveredCard(index);
-                      e.currentTarget.style.transform = 'translateY(-10px)';
-                      e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
-                      e.currentTarget.style.background = 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)';
-                      e.currentTarget.style.color = '#1e2247';
-                    }}
-                    onMouseLeave={(e) => {
-                      setHoveredCard(null);
-                      e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.08)';
-                      e.currentTarget.style.background = '#ffffff';
-                      e.currentTarget.style.color = 'inherit';
-                    }}
-                  >
-                    <div style={{
-                      marginBottom: '20px',
-                      lineHeight: '1',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      color: hoveredCard === index ? '#1e2247' : '#fdc51a'
+              {/* Our Goals Section */}
+              <div className="row justify-content-center mb-5">
+                <div className="col-lg-10">
+                  <div className="brand-label" style={{ marginBottom: '25px', textAlign: 'center' }}>
+                    <span style={{ 
+                      fontSize: '1rem', 
+                      fontWeight: '600', 
+                      color: '#fdc51a', 
+                      letterSpacing: '0.1em', 
+                      textTransform: 'uppercase',
+                      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
-                      {value.icon}
-                                        </div>
-                    <h4 style={{
-                      fontSize: '1.4rem',
-                      fontWeight: '600',
-                      marginBottom: '15px',
-                      color: hoveredCard === index ? '#1e2247' : '#1e2247'
-                    }}>
-                      {value.title}
-                    </h4>
-                    <p style={{
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      margin: 0,
-                      color: hoveredCard === index ? '#1e2247' : '#6c757d'
-                    }}>
-                      {value.description}
-                    </p>
+                      Our Commitment
+                    </span>
                   </div>
-                ))}
-                                    </div>
-                                </div>
+                  
+                  <h2 style={{
+                    fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+                    fontWeight: '700',
+                    color: '#1e2247',
+                    lineHeight: '1.3',
+                    marginBottom: '40px',
+                    textAlign: 'center',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                  }}>
+                    OUR <span style={{ color: '#fdc51a' }}>GOALS</span>
+                  </h2>
+
+                  {/* Goals Grid - 4 cards in one row on desktop */}
+                  <div className="goals-grid">
+                    {ourGoals.map((goal, index) => (
+                      <div 
+                        key={index}
+                        className="goal-card"
+                      >
+                        <div className="goal-icon">
+                          <i className={goal.icon}></i>
+                        </div>
+                        <p className="goal-text">
+                          {goal.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
-
-
-         
 
           <Accrediation10 />
 
@@ -395,33 +288,110 @@ export default function Page() {
           animation: fadeInUp 0.8s ease-out;
         }
 
+        .goals-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 25px;
+          margin-bottom: 60px;
+        }
+
+        .goal-card {
+          background: #ffffff;
+          border-radius: 15px;
+          padding: 40px 25px;
+          border: 1px solid #f1f3f4;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 200px;
+        }
+
+        .goal-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+          background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%);
+        }
+
+        .goal-icon {
+          width: 60px;
+          height: 60px;
+          background: #fdc51a;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+
+        .goal-icon i {
+          font-size: 1.5rem;
+          color: #1e2247;
+          font-weight: 900;
+        }
+
+        .goal-text {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin: 0;
+          color: #1e2247;
+          font-weight: 500;
+        }
+
+        @media (max-width: 1200px) {
+          .goals-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
         @media (max-width: 768px) {
           .container {
-            padding-left: 15px !important;
-            padding-right: 15px !important;
+            padding-left: 15px;
+            padding-right: 15px;
           }
           
           .brand-label span {
-            font-size: 0.9rem !important;
+            font-size: 0.9rem;
           }
           
-          .col-lg-6 {
-            margin-bottom: 30px;
+          .goals-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .goal-card {
+            min-height: 180px;
+            padding: 30px 20px;
+          }
+
+          .goal-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+          }
+
+          .goal-icon i {
+            font-size: 1.3rem;
+          }
+
+          .goal-text {
+            font-size: 0.95rem;
           }
         }
 
         @media (max-width: 576px) {
           .mission-intro-section {
-            padding-top: 60px !important;
-            padding-bottom: 50px !important;
+            padding-top: 60px;
+            padding-bottom: 50px;
           }
           
           .mission-intro-section div[style*="padding: 40px"] {
-            padding: 30px 25px !important;
-          }
-          
-          .row div[style*="gap: 30px"] {
-            gap: 20px !important;
+            padding: 30px 25px;
           }
         }
       `}</style>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Users, Trophy, TrendingUp, Handshake, Shield, Zap, Target, Rocket } from "lucide-react";
+import { Users, Zap, TrendingUp, Target } from "lucide-react";
 import Layout from "@/components/layout/Layout"
 import Subscribe from "@/components/homepages/home1/Subscribe"
 import Accrediation10 from "@/components/accrediation10"
@@ -9,67 +9,23 @@ import Accrediation10 from "@/components/accrediation10"
 const thriveFactors = [
   {
     icon: <Users size={48} />,
-    title: "Employee-Centric Culture",
-    description: "We foster a vibrant corporate culture with continuous positive reinforcements, creating a healthy work environment where our employees can excel and grow."
+    title: "Employee Training & Development",
+    description: "Our team is the backbone of MetroGuards. Guards undergo rigorous training and ongoing development to handle every security challenge with confidence and expertise."
   },
   {
-    icon: <Trophy size={48} />,
-    title: "Recognition & Praise",
-    description: "Our employee praise portal ensures every team member realizes their worth and contribution to making us a top-tier security company in Melbourne."
+    icon: <Zap size={48} />,
+    title: "Advanced Technology",
+    description: "We combine human expertise with cutting-edge technology from alarm response systems to mobile patrol tracking to stay ahead of risks and provide real-time protection."
   },
   {
     icon: <TrendingUp size={48} />,
-    title: "Continuous Development",
-    description: "We invest in ongoing training and professional development, ensuring our team stays ahead in the rapidly evolving security industry."
+    title: "Innovation & Expertise",
+    description: "We continuously improve and innovate, applying industry-leading practices and expert strategies to deliver tailored security solutions for offices, hospitals, retail centers, and events."
   },
   {
-    icon: <Handshake size={48} />,
-    title: "Collaborative Environment",
-    description: "We believe in teamwork and collaboration, where every voice is heard and every contribution is valued towards our collective success."
-  }
-];
-
-const fundamentalPrinciples = [
-  {
-    number: "01",
-    title: "Customers First",
-    description: "We are customer care oriented and dedicated to customer satisfaction. Every decision we make prioritizes our clients' needs and security requirements.",
-    icon: <Shield size={40} />
-  },
-  {
-    number: "02", 
-    title: "Risk Prevention",
-    description: "We have licensed, experienced officers to detect and reduce risks for safety. Proactive threat assessment is at the core of our service delivery.",
-    icon: <Zap size={40} />
-  },
-  {
-    number: "03",
-    title: "Threat Response",
-    description: "Our officers handle threats efficiently using expert conflict resolution techniques. Quick, professional response is our trademark.",
-    icon: <Target size={40} />
-  }
-];
-
-const successMetrics = [
-  {
-    number: "500+",
-    label: "Happy Clients",
-    description: "Satisfied customers across Melbourne and Sydney"
-  },
-  {
-    number: "15+",
-    label: "Years Experience",
-    description: "Proven track record in security services"
-  },
-  {
-    number: "24/7",
-    label: "Service Availability", 
-    description: "Round-the-clock protection and support"
-  },
-  {
-    number: "100%",
-    label: "Licensed Personnel",
-    description: "Fully certified and trained security professionals"
+    icon: <Target size={48} />,
+    title: "Operational Excellence & Client Focus",
+    description: "Every solution is customized to the client's needs. Our operations prioritize efficiency, reliability, and professionalism, ensuring excellence on every shift and site."
   }
 ];
 
@@ -83,9 +39,9 @@ export default function Page() {
 
   return (
     <>
-      <Layout 
-        headerStyle={1} 
-        footerStyle={1} 
+      <Layout
+        headerStyle={1}
+        footerStyle={1}
         breadcrumbTitle="ABOUT METRO GUARDS"
         mainTitle="How We <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Thrive</span> & Excel"
         subtitle="Building Excellence Through People, Culture & Client Relationships"
@@ -93,7 +49,7 @@ export default function Page() {
       >
         <div>
           {/*===== Introduction Section =====*/}
-          <section 
+          <section
             className={`thrive-intro-section ${isLoaded ? 'loaded' : ''}`}
             style={{
               paddingTop: '80px',
@@ -106,18 +62,18 @@ export default function Page() {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="brand-label" style={{ marginBottom: '25px' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
+                    <span style={{
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      color: '#fdc51a',
+                      letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
-                      Our Success Story
+                      Our Journey to Excellence
                     </span>
                   </div>
-                  
+
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -126,63 +82,28 @@ export default function Page() {
                     marginBottom: '30px',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                   }}>
-                    How Do We <span style={{ color: '#fdc51a' }}>Thrive</span> in Security?
+                    How We <span style={{ color: '#fdc51a' }}>Achieve Excellence</span>
                   </h2>
-                  
+
                   <p style={{
                     fontSize: '1.1rem',
                     color: '#6c757d',
                     lineHeight: '1.7',
                     marginBottom: '25px'
                   }}>
-                    To maintain a top position in the security industry, we provide our employees with a vibrant corporate culture and continuous positive reinforcements to develop a healthy work environment for them as they are our assets.
-                  </p>
-                  
-                  <p style={{
-                    fontSize: '1.1rem',
-                    color: '#6c757d',
-                    lineHeight: '1.7',
-                    marginBottom: '35px'
-                  }}>
-                    We genuinely regard their efforts in making us a top hire security company in Melbourne. Our employee praise portal makes our employees realize their worth to our security company and enables them to work more efficiently.
+                    For our experienced guards in Melbourne, thriving means more than providing security. It’s about exceeding expectations, innovating solutions, and delivering peace of mind across Melbourne. Every shift, every patrol, and every service reflects our commitment to excellence and client satisfaction.
                   </p>
 
-                  {/* Key Benefits */}
-                  <div style={{ marginBottom: '30px' }}>
-                    {[
-                      "Vibrant Corporate Culture",
-                      "Continuous Employee Development", 
-                      "Recognition & Reward Systems",
-                      "Healthy Work Environment"
-                    ].map((benefit, index) => (
-                      <div key={index} style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        marginBottom: '12px'
-                      }}>
-                        <div style={{
-                          width: '20px',
-                          height: '20px',
-                          background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                          borderRadius: '50%',
-                          marginRight: '15px',
-                          flexShrink: 0,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center'
-                        }}>
-                          <span style={{ color: '#1e2247', fontSize: '12px', fontWeight: '700' }}>✓</span>
-                        </div>
-                        <span style={{
-                          fontSize: '1rem',
-                          color: '#1e2247',
-                          fontWeight: '500'
-                        }}>
-                          {benefit}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                  <blockquote style={{
+                    fontSize: '1.2rem',
+                    fontStyle: 'italic',
+                    color: '#1e2247',
+                    borderLeft: '4px solid #fdc51a',
+                    paddingLeft: '20px',
+                    margin: '30px 0'
+                  }}>
+                    "Excellence at Metro Guards is the standard we uphold every day."
+                  </blockquote>
                 </div>
 
                 <div className="col-lg-6">
@@ -196,16 +117,16 @@ export default function Page() {
                       boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)',
                       position: 'relative'
                     }}>
-                      <img 
-                        src="/assets/img/about/why mg.webp" 
-                        alt="How we thrive" 
+                      <img
+                        src="/assets/img/about/why mg.webp"
+                        alt="How we thrive"
                         style={{
                           width: '100%',
                           height: '100%',
                           objectFit: 'cover'
                         }}
                       />
-                      
+
                     </div>
                   </div>
                 </div>
@@ -214,7 +135,7 @@ export default function Page() {
           </section>
 
           {/*===== How We Thrive Factors =====*/}
-          <section 
+          <section
             style={{
               paddingTop: '80px',
               paddingBottom: '80px',
@@ -225,18 +146,18 @@ export default function Page() {
               <div className="row justify-content-center text-center mb-5">
                 <div className="col-lg-8">
                   <div className="brand-label" style={{ marginBottom: '25px' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
+                    <span style={{
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      color: '#fdc51a',
+                      letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
-                      Our Thriving Culture
+                      Our Approach
                     </span>
                   </div>
-                  
+
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -245,21 +166,12 @@ export default function Page() {
                     marginBottom: '30px',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                   }}>
-                    What Makes Us <span style={{ color: '#fdc51a' }}>Thrive</span> Every Day
+                    What Makes Us <span style={{ color: '#fdc51a' }}>Thrive</span>
                   </h2>
-                  
-                  <p style={{
-                    fontSize: '1.2rem',
-                    color: '#6c757d',
-                    lineHeight: '1.6',
-                    marginBottom: '60px'
-                  }}>
-                    Our success stems from four fundamental pillars that create an environment where excellence flourishes naturally.
-                  </p>
                 </div>
               </div>
 
-              <div 
+              <div
                 style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -268,7 +180,7 @@ export default function Page() {
                 }}
               >
                 {thriveFactors.map((factor, index) => (
-                  <div 
+                  <div
                     key={index}
                     style={{
                       background: '#ffffff',
@@ -328,8 +240,8 @@ export default function Page() {
             </div>
           </section>
 
-          {/*===== Fundamental Principles Section =====*/}
-          <section 
+          {/*===== Partner Section =====*/}
+          <section
             style={{
               paddingTop: '80px',
               paddingBottom: '80px',
@@ -337,21 +249,8 @@ export default function Page() {
             }}
           >
             <div className="container" style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 20px' }}>
-              <div className="row justify-content-center text-center mb-5">
+              <div className="row justify-content-center text-center">
                 <div className="col-lg-8">
-                  <div className="brand-label" style={{ marginBottom: '25px' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
-                      textTransform: 'uppercase',
-                      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                    }}>
-                      Core Principles
-                    </span>
-                  </div>
-                  
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -360,103 +259,23 @@ export default function Page() {
                     marginBottom: '30px',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                   }}>
-                    Our <span style={{ color: '#fdc51a' }}>Fundamental</span> Principles
+                    Partner with MetroGuards for <span style={{ color: '#fdc51a' }}>Trusted Security</span>
                   </h2>
-                  
+
                   <p style={{
                     fontSize: '1.2rem',
                     color: '#6c757d',
                     lineHeight: '1.6',
-                    marginBottom: '60px'
+                    marginBottom: '40px'
                   }}>
-                    These core principles guide every aspect of our security services and define our approach to excellence.
+                    From corporate offices to large events, MetroGuards delivers professional, reliable security solutions that keep people and property safe across Melbourne. Let us tailor a plan that meets your unique needs.
                   </p>
                 </div>
-              </div>
-
-              <div className="row">
-                {fundamentalPrinciples.map((principle, index) => (
-                  <div key={index} className="col-lg-4 col-md-6" style={{ marginBottom: '40px' }}>
-                    <div 
-                      style={{
-                        background: '#ffffff',
-                        borderRadius: '20px',
-                        padding: '40px 30px',
-                        border: '1px solid #f1f3f4',
-                        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
-                        transition: 'all 0.3s ease',
-                        height: '100%',
-                        textAlign: 'center',
-                        position: 'relative'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = 'translateY(-10px)';
-                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.transform = 'translateY(0)';
-                        e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.08)';
-                      }}
-                    >
-                      <div style={{
-                        position: 'absolute',
-                        top: '-20px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        width: '60px',
-                        height: '60px',
-                        background: 'linear-gradient(135deg, #fdc51a 0%, #f39c12 100%)',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontSize: '1.2rem',
-                        fontWeight: '700',
-                        color: '#1e2247'
-                      }}>
-                        {principle.number}
-                      </div>
-                      
-                      <div style={{
-                        marginBottom: '20px',
-                        marginTop: '20px',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        color: '#fdc51a'
-                      }}>
-                        {principle.icon}
-                      </div>
-                      
-                      <h4 style={{
-                        fontSize: '1.4rem',
-                        fontWeight: '600',
-                        color: '#1e2247',
-                        marginBottom: '15px',
-                        lineHeight: '1.3'
-                      }}>
-                        {principle.title}
-                      </h4>
-                      <p style={{
-                        fontSize: '1rem',
-                        color: '#6c757d',
-                        lineHeight: '1.6',
-                        margin: 0
-                      }}>
-                        {principle.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </section>
 
-          
-
-          
-
-         <Accrediation10 />
+          <Accrediation10 />
 
           <Subscribe />
         </div>
