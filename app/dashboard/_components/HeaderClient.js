@@ -1,24 +1,89 @@
 "use client";
 import { useState } from "react";
+import { useSidebar } from "./SidebarContext";
 
 export default function HeaderClient({ email, minimal = false }) {
   const [showDropdown, setShowDropdown] = useState(false);
-  
-  const toggleSidebar = () => {
-    const aside = document.querySelector('aside[data-sidebar]');
-    if (aside) aside.classList.toggle('-translate-x-full');
-  };
+  const { toggleSidebar } = useSidebar();
 
-  // Minimal version - only show dropdown
+  // Minimal version - show mobile toggle and user dropdown
   if (minimal) {
     return (
-      <></>
+      <div className="dashboard-header-minimal sticky top-0 z-20 bg-white/80 backdrop-blur-sm border-b border-gray-200 px-4 py-3">
+        <div className="flex items-center justify-between">
+          {/* Mobile menu button - only on mobile/tablet */}
+          <button
+            onClick={toggleSidebar}
+            className="dashboard-mobile-toggle lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Toggle sidebar"
+          >
+            <svg className="w-6 h-6 text-[#1e2247]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          {/* Spacer for desktop to push dropdown to right */}
+          <div className="hidden lg:block flex-1"></div>
+
+          {/* User dropdown - shown on all screens */}
+          <div className="dashboard-user-dropdown-minimal relative ml-auto">
+            <button
+              onClick={() => setShowDropdown(!showDropdown)}
+              className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+              aria-label="User menu"
+            >
+              <div className="w-8 h-8 bg-gradient-to-r from-[#fdc51a] to-[#e7b80f] rounded-full flex items-center justify-center">
+                <span className="text-sm font-bold text-[#1e2247]">
+                  {(email?.charAt(0) || "U").toUpperCase()}
+                </span>
+              </div>
+              <span className="hidden lg:block text-sm font-semibold text-[#1e2247]">
+                {email?.split('@')[0] || "Admin"}
+              </span>
+              <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {/* Dropdown Menu */}
+            {showDropdown && (
+              <div className="dashboard-dropdown-menu absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
+                <div className="px-4 py-3 border-b border-gray-100">
+                  <p className="text-sm font-semibold text-[#1e2247] truncate">{email || "admin@metroguards.com"}</p>
+                  <p className="text-xs text-gray-500">Admin Account</p>
+                </div>
+                <a
+                  href="/dashboard/settings"
+                  className="dashboard-dropdown-item flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Settings
+                </a>
+                <form action="/api/signout" method="POST">
+                  <button 
+                    type="submit"
+                    className="dashboard-dropdown-signout w-full flex items-center gap-3 px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors text-left"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    Sign Out
+                  </button>
+                </form>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
     );
   }
 
   // Full version - for main dashboard page
   return (
-    <header style={{
+    <header className="dashboard-header-full" style={{
       position: 'sticky',
       top: 0,
       zIndex: 30,
@@ -31,11 +96,11 @@ export default function HeaderClient({ email, minimal = false }) {
       marginBottom: '20px',
       marginRight: '20px',
     }}>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8" style={{ height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8" style={{ minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flex: 1 }}>
           {/* Mobile menu button */}
           <button
-            className="md:hidden"
+            className="dashboard-mobile-toggle-btn lg:hidden"
             onClick={toggleSidebar}
             aria-label="Toggle sidebar"
             style={{
@@ -44,7 +109,8 @@ export default function HeaderClient({ email, minimal = false }) {
               background: '#f8f9fa',
               border: '2px solid rgba(30, 34, 71, 0.1)',
               cursor: 'pointer',
-              transition: 'all 0.3s ease'
+              transition: 'all 0.3s ease',
+              flexShrink: 0
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = '#fdc51a';
@@ -60,27 +126,27 @@ export default function HeaderClient({ email, minimal = false }) {
             </svg>
           </button>
 
-          <div style={{ position: 'relative', zIndex: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-            <div style={{
+          <div className="dashboard-welcome-section" style={{ position: 'relative', zIndex: 10 }}>
+          <div className="dashboard-welcome-content" style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+            <div className="dashboard-shield-icon hidden sm:flex" style={{
               width: '60px',
               height: '60px',
               background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
               borderRadius: '50%',
-              display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 8px 20px rgba(253, 197, 26, 0.4)'
+              boxShadow: '0 8px 20px rgba(253, 197, 26, 0.4)',
+              flexShrink: 0
             }}>
               <svg style={{ width: '32px', height: '32px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <div>
-              <h1 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '8px' ,color:'white',marginTop:'20px'}}>
+            <div className="dashboard-welcome-text">
+              <h1 className="dashboard-welcome-title" style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)', fontWeight: '700', marginBottom: '8px', color:'white', marginTop:'20px'}}>
             Welcome back, {email?.split('@')[0] || 'Admin'}! 👋
           </h1>
-              <p style={{ color: '#fdc51a', fontSize: '1.1rem', fontWeight: '500' }}>
+              <p className="dashboard-welcome-subtitle hidden sm:block" style={{ color: '#fdc51a', fontSize: 'clamp(0.875rem, 2vw, 1.1rem)', fontWeight: '500' }}>
                 Here's your Metro Guards dashboard overview
               </p>
             </div>
@@ -90,12 +156,13 @@ export default function HeaderClient({ email, minimal = false }) {
         </div>
 
         {/* Header Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <div className="dashboard-header-actions" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           
 
           {/* User Profile */}
-          <div style={{ position: 'relative' }}>
+          <div className="dashboard-user-profile" style={{ position: 'relative' }}>
             <button
+              className="dashboard-user-button"
               onClick={() => setShowDropdown(!showDropdown)}
               style={{
                 display: 'flex',
@@ -118,7 +185,7 @@ export default function HeaderClient({ email, minimal = false }) {
                 e.currentTarget.style.boxShadow = '0 4px 12px rgba(30, 34, 71, 0.15)';
               }}
             >
-              <div style={{
+              <div className="dashboard-user-avatar" style={{
                 width: '36px',
                 height: '36px',
                 background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
@@ -126,7 +193,8 @@ export default function HeaderClient({ email, minimal = false }) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 2px 8px rgba(253, 197, 26, 0.4)'
+                boxShadow: '0 2px 8px rgba(253, 197, 26, 0.4)',
+                flexShrink: 0
               }}>
                 <span style={{
                   fontSize: '0.875rem',
@@ -136,22 +204,22 @@ export default function HeaderClient({ email, minimal = false }) {
                 {(email?.charAt(0) || "U").toUpperCase()}
               </span>
             </div>
-              <div className="hidden lg:block" style={{ textAlign: 'left' }}>
-                <p style={{ fontSize: '0.875rem', fontWeight: '600', color: 'white', marginBottom: '2px' }}>
+              <div className="dashboard-user-info hidden lg:block" style={{ textAlign: 'left' }}>
+                <p className="dashboard-user-name" style={{ fontSize: '0.875rem', fontWeight: '600', color: 'white', marginBottom: '2px' }}>
                   {email?.split('@')[0] || "User"}
                 </p>
-                <p style={{ fontSize: '0.75rem', color: '#fdc51a', fontWeight: '500' }}>
+                <p className="dashboard-user-role" style={{ fontSize: '0.75rem', color: '#fdc51a', fontWeight: '500' }}>
                   Administrator
                 </p>
               </div>
-              <svg style={{ width: '16px', height: '16px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="dashboard-dropdown-arrow" style={{ width: '16px', height: '16px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
 
             {/* Dropdown Menu */}
             {showDropdown && (
-              <div style={{
+              <div className="dashboard-dropdown-menu-full" style={{
                 position: 'absolute',
                 top: '105%',
                 right: 0,
@@ -163,20 +231,21 @@ export default function HeaderClient({ email, minimal = false }) {
                 padding: '8px',
                 zIndex: 50
               }}>
-                <div style={{
+                <div className="dashboard-dropdown-header" style={{
                   padding: '12px',
                   borderBottom: '1px solid rgba(30, 34, 71, 0.1)',
                   marginBottom: '8px'
                 }}>
-                  <p style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1e2247', marginBottom: '4px' }}>
+                  <p className="dashboard-dropdown-email" style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1e2247', marginBottom: '4px' }}>
                     {email || "admin@metroguards.com"}
                   </p>
-                  <p style={{ fontSize: '0.75rem', color: '#6c757d' }}>
+                  <p className="dashboard-dropdown-role" style={{ fontSize: '0.75rem', color: '#6c757d' }}>
                     Admin Account
                   </p>
                 </div>
                 <a
                   href="/dashboard/settings"
+                  className="dashboard-dropdown-link"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -195,7 +264,7 @@ export default function HeaderClient({ email, minimal = false }) {
                     e.currentTarget.style.background = 'transparent';
                   }}
                 >
-                  <svg style={{ width: '18px', height: '18px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="dashboard-icon" style={{ width: '18px', height: '18px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -204,6 +273,7 @@ export default function HeaderClient({ email, minimal = false }) {
                 <form action="/api/signout" method="POST">
                   <button 
                     type="submit"
+                    className="dashboard-signout-button"
                     style={{
                       width: '100%',
                       display: 'flex',
@@ -226,7 +296,7 @@ export default function HeaderClient({ email, minimal = false }) {
                       e.currentTarget.style.background = 'transparent';
                     }}
                   >
-                    <svg style={{ width: '18px', height: '18px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="dashboard-icon" style={{ width: '18px', height: '18px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                     </svg>
                     Sign Out

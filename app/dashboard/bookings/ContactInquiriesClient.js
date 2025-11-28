@@ -446,7 +446,7 @@ export default function ContactInquiriesClient({ inquiries: initialInquiries, st
         </div>
       )}
 
-      {/* Inquiries Table */}
+      {/* Inquiries Table/Cards - Responsive */}
       {filteredInquiries.length === 0 ? (
         <div style={{
           background: 'white',
@@ -483,17 +483,205 @@ export default function ContactInquiriesClient({ inquiries: initialInquiries, st
           </p>
         </div>
       ) : (
-        <div style={{
-          background: 'white',
-          borderRadius: '16px',
-          overflow: 'hidden',
-          boxShadow: '0 4px 15px rgba(30, 34, 71, 0.08)',
-          border: '2px solid rgba(30, 34, 71, 0.08)',
-          marginRight: '20px',
-          marginBottom: '20px'
-        }}>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <>
+          {/* Mobile Card View */}
+          <div className="dashboard-mobile-cards md:hidden" style={{ marginRight: '20px', marginBottom: '20px' }}>
+            {filteredInquiries.map((inquiry) => {
+              const isUpdating = updatingId === inquiry.id;
+              return (
+                <div
+                  key={inquiry.id}
+                  style={{
+                    background: 'white',
+                    borderRadius: '12px',
+                    padding: '14px',
+                    marginBottom: '12px',
+                    boxShadow: '0 2px 8px rgba(30, 34, 71, 0.08)',
+                    border: '1px solid rgba(30, 34, 71, 0.12)'
+                  }}
+                >
+                  {/* Card Header */}
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    marginBottom: '10px',
+                    paddingBottom: '10px',
+                    borderBottom: '1px solid #e5e7eb'
+                  }}>
+                    <div style={{ flex: 1 }}>
+                      <div style={{
+                        fontSize: '0.85rem',
+                        fontWeight: '700',
+                        color: '#1e2247'
+                      }}>
+                        Id : {String(inquiry.id).substring(0, 8).toUpperCase()}
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', gap: '6px' }}>
+                      <button
+                        onClick={() => setSelectedInquiry(inquiry)}
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '6px',
+                          background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
+                          border: 'none',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                          boxShadow: '0 2px 4px rgba(30, 34, 71, 0.2)'
+                        }}
+                        title="View Details"
+                      >
+                        <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => setConfirmDelete(inquiry)}
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '6px',
+                          background: 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)',
+                          border: 'none',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                          boxShadow: '0 2px 4px rgba(220, 53, 69, 0.2)'
+                        }}
+                        title="Delete"
+                      >
+                        <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Card Body - Compact Table Layout */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    {/* Customer Name */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '12px', alignItems: 'start' }}>
+                      <div style={{ fontSize: '0.8rem', color: '#6c757d', fontWeight: '600' }}>
+                        Customer Name
+                      </div>
+                      <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1e2247' }}>
+                        {inquiry.name}
+                      </div>
+                    </div>
+
+                    {/* Email */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '12px', alignItems: 'start' }}>
+                      <div style={{ fontSize: '0.8rem', color: '#6c757d', fontWeight: '600' }}>
+                        Email
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#374151', wordBreak: 'break-word' }}>
+                        {inquiry.email}
+                      </div>
+                    </div>
+
+                    {/* Phone */}
+                    {inquiry.phone && (
+                      <div style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '12px', alignItems: 'start' }}>
+                        <div style={{ fontSize: '0.8rem', color: '#6c757d', fontWeight: '600' }}>
+                          Phone
+                        </div>
+                        <div style={{ fontSize: '0.8rem', color: '#374151' }}>
+                          {inquiry.phone}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Location */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '12px', alignItems: 'start' }}>
+                      <div style={{ fontSize: '0.8rem', color: '#6c757d', fontWeight: '600' }}>
+                        Location
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#374151' }}>
+                        {inquiry.location}
+                      </div>
+                    </div>
+
+                    {/* Status */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '12px', alignItems: 'center' }}>
+                      <div style={{ fontSize: '0.8rem', color: '#6c757d', fontWeight: '600' }}>
+                        Status
+                      </div>
+                      <select
+                        value={inquiry.status}
+                        onChange={(e) => handleStatusUpdate(inquiry.id, e.target.value)}
+                        disabled={isUpdating}
+                        style={{
+                          padding: '6px 10px',
+                          fontSize: '0.8rem',
+                          fontWeight: '600',
+                          borderRadius: '6px',
+                          border: '2px solid',
+                          borderColor: inquiry.status === 'new' ? 'rgba(59, 130, 246, 0.3)' : 
+                                      inquiry.status === 'contacted' ? 'rgba(253, 197, 26, 0.3)' : 
+                                      'rgba(40, 167, 69, 0.3)',
+                          background: inquiry.status === 'new' ? 'rgba(59, 130, 246, 0.1)' : 
+                                     inquiry.status === 'contacted' ? 'rgba(253, 197, 26, 0.1)' : 
+                                     'rgba(40, 167, 69, 0.1)',
+                          color: inquiry.status === 'new' ? '#3b82f6' : 
+                                inquiry.status === 'contacted' ? '#1e2247' : 
+                                '#28a745',
+                          cursor: isUpdating ? 'not-allowed' : 'pointer',
+                          outline: 'none'
+                        }}
+                      >
+                        <option value="new">📋 New</option>
+                        <option value="contacted">📞 Contacted</option>
+                        <option value="resolved">✅ Completed</option>
+                      </select>
+                    </div>
+
+                    {/* Send Button */}
+                    <button
+                      onClick={() => handleOpenEmailModal(inquiry)}
+                      style={{
+                        width: '100%',
+                        padding: '8px',
+                        borderRadius: '8px',
+                        background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
+                        border: 'none',
+                        color: '#1e2247',
+                        fontSize: '0.85rem',
+                        fontWeight: '600',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '6px',
+                        boxShadow: '0 2px 6px rgba(253, 197, 26, 0.3)',
+                        marginTop: '4px'
+                      }}
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Desktop Table View */}
+          <div className="dashboard-desktop-table hidden md:block" style={{
+            background: 'white',
+            borderRadius: '16px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 15px rgba(30, 34, 71, 0.08)',
+            border: '2px solid rgba(30, 34, 71, 0.08)',
+            marginRight: '20px',
+            marginBottom: '20px'
+          }}>
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{
                   background: 'linear-gradient(135deg, #1e2247 0%, #252958 100%)',
@@ -763,6 +951,7 @@ export default function ContactInquiriesClient({ inquiries: initialInquiries, st
             </table>
           </div>
         </div>
+        </>
       )}
 
       {/* Detail Modal */}

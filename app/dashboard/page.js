@@ -2,7 +2,6 @@
 import { cookies } from "next/headers";
 import { jwtVerify } from "jose";
 import StatsCards from "./_components/StatsCards";
-import HeaderClient from "./_components/HeaderClient";
 
 async function getUser() {
   const token = cookies().get("auth")?.value;
@@ -47,9 +46,77 @@ export default async function DashboardPage() {
   
   return (
     <div className="space-y-8">
-      {/* Full Header - Only shown on main dashboard page */}
-      <HeaderClient email={user.email} minimal={false} />
-      
+      {/* Welcome Section */}
+      <div className="dashboard-welcome" style={{
+        background: 'linear-gradient(135deg, #1e2247 0%, #252958 50%, #1e2247 100%)',
+        borderRadius: '20px',
+        padding: '32px',
+        color: 'white',
+        position: 'relative',
+        overflow: 'hidden',
+        boxShadow: '0 10px 40px rgba(30, 34, 71, 0.3)',
+        border: '2px solid rgba(253, 197, 26, 0.2)',
+        marginBottom: '20px',
+        marginRight: '20px'
+      }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(45deg, rgba(253, 197, 26, 0.05) 0%, transparent 100%)',
+          borderRadius: '20px'
+        }}></div>
+        
+        <div style={{
+          position: 'absolute',
+          top: '-60px',
+          right: '-60px',
+          width: '200px',
+          height: '200px',
+          background: 'radial-gradient(circle, rgba(253, 197, 26, 0.15) 0%, transparent 70%)',
+          borderRadius: '50%',
+          filter: 'blur(40px)'
+        }}></div>
+
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div className="hidden sm:flex" style={{
+              width: '56px',
+              height: '56px',
+              background: 'linear-gradient(135deg, #fdc51a 0%, #e7b80f 100%)',
+              borderRadius: '16px',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 8px 20px rgba(253, 197, 26, 0.4)',
+              flexShrink: 0
+            }}>
+              <svg style={{ width: '28px', height: '28px', color: '#1e2247' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h1 style={{ 
+                fontSize: 'clamp(1.25rem, 4vw, 1.75rem)', 
+                fontWeight: '700', 
+                marginBottom: '6px', 
+                margin: 0 
+              }}>
+                Welcome back, {user?.email?.split('@')[0] || 'Admin'}! 👋
+              </h1>
+              <p className="hidden sm:block" style={{ 
+                color: 'rgba(253, 197, 26, 0.9)', 
+                fontSize: 'clamp(0.8rem, 2vw, 0.95rem)', 
+                fontWeight: '500', 
+                margin: 0 
+              }}>
+                Here's your Metro Guards dashboard overview
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Stats Grid */}
       <StatsCards stats={mockStats} />

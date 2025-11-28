@@ -228,21 +228,19 @@ export default function BlogCard({ post }) {
         </div>
 
         {/* Actions */}
-        <div style={{
-          display: 'flex',
-          gap: '8px',
-          flexWrap: 'wrap'
+        <div className="dashboard-blog-actions" style={{
+          display: 'grid',
+          gridTemplateColumns: post.published ? '1fr 1fr 1fr' : '1fr 1fr',
+          gap: '8px'
         }}>
           <Link
             href={`/dashboard/blogs/${post.id}/edit`}
             style={{
-              flex: 1,
-              minWidth: '100px',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
               gap: '6px',
-              padding: '10px 16px',
+              padding: '10px 12px',
               background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
               color: 'white',
               borderRadius: '10px',
@@ -265,7 +263,7 @@ export default function BlogCard({ post }) {
             <svg style={{ width: '16px', height: '16px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
             </svg>
-            Edit
+            <span className="dashboard-btn-text">Edit</span>
           </Link>
 
           {post.published && (
@@ -277,7 +275,7 @@ export default function BlogCard({ post }) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '6px',
-                padding: '10px 16px',
+                padding: '10px 12px',
                 background: 'white',
                 color: '#1e2247',
                 borderRadius: '10px',
@@ -300,7 +298,7 @@ export default function BlogCard({ post }) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
               </svg>
-              View
+              <span className="dashboard-btn-text">View</span>
             </Link>
           )}
 

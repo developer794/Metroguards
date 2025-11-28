@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useSidebar } from "./SidebarContext";
 
 function cx(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -9,6 +9,7 @@ function cx(...classes) {
 
 function SidebarItem({ href, label, icon, exact = false }) {
   const pathname = usePathname();
+  const { closeSidebar } = useSidebar();
   
   // Determine if this item should be active
   let active;
@@ -29,10 +30,11 @@ function SidebarItem({ href, label, icon, exact = false }) {
   return (
     <Link
       href={href}
+      onClick={closeSidebar}
       className={cx(
-        "group flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-medium transition-all duration-200",
+        "dashboard-sidebar-item group flex items-center gap-3 rounded-lg px-4 py-3 text-sm font-medium transition-all duration-200",
         active 
-          ? "bg-gradient-to-r from-[#fdc51a] to-[#e7b80f] text-[#1e2247] shadow-lg shadow-[#fdc51a]/25 transform scale-[1.02]" 
+          ? "dashboard-sidebar-item-active bg-gradient-to-r from-[#fdc51a] to-[#e7b80f] text-[#1e2247] shadow-lg shadow-[#fdc51a]/25 transform scale-[1.02]" 
           : "text-slate-300 hover:text-white hover:bg-[#252958] hover:shadow-md hover:transform hover:scale-[1.01]"
       )}
     >
@@ -48,63 +50,62 @@ function SidebarItem({ href, label, icon, exact = false }) {
 }
 
 export default function Sidebar() {
-  const [open, setOpen] = useState(false);
+  const { sidebarOpen, closeSidebar } = useSidebar();
 
   return (
     <>
       {/* Mobile overlay */}
-      {open && (
+      {sidebarOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-30 md:hidden"
-          onClick={() => setOpen(false)}
+          className="dashboard-overlay fixed inset-0 bg-black/50 backdrop-blur-sm z-30 lg:hidden"
+          onClick={closeSidebar}
         />
       )}
       
       <aside
         data-sidebar
         className={cx(
-          "fixed inset-y-0 left-0 z-40 w-64 bg-gradient-to-b from-[#1e2247] via-[#1a1e3f] to-[#1e2247] text-white shadow-2xl transition-transform duration-300 ease-in-out",
-          open ? "translate-x-0" : "-translate-x-full",
-          "md:sticky md:top-0 md:h-screen md:translate-x-0 md:transform-none"
+          "dashboard-sidebar fixed inset-y-0 left-0 z-40 w-64 bg-gradient-to-b from-[#1e2247] via-[#1a1e3f] to-[#1e2247] text-white shadow-2xl transition-transform duration-300 ease-in-out",
+          sidebarOpen ? "translate-x-0" : "-translate-x-full",
+          "lg:sticky lg:top-0 lg:h-screen lg:translate-x-0 lg:transform-none"
         )}
       >
         {/* Header with Logo */}
-        <div className="flex h-24 items-center justify-between px-6 border-b border-[#fdc51a]/20 bg-[#1e2247]/80 backdrop-blur-sm">
-          <Link href="/" className="flex items-center gap-3 group " 
-          style={{backgroundColor:'rgb(228 228 228)', boxShadow: '0 0 10px 0 rgba(195, 186, 186, 0.9)',marginLeft:'40px'}}>
+        <div className="dashboard-sidebar-header flex h-24 items-center justify-between px-6 border-b border-[#fdc51a]/20 bg-[#1e2247]/80 backdrop-blur-sm">
+          <Link href="/" className="dashboard-logo-container flex items-center gap-3 group" 
+          style={{backgroundColor:'rgb(228 228 228)', boxShadow: '0 0 10px 0 rgba(195, 186, 186, 0.9)', padding: '8px', borderRadius: '8px'}}>
             <img 
               src="/assets/img/logo/metroguards logo 2.png" 
               alt="Metro Guards Logo" 
+              className="dashboard-logo"
               style={{ 
                 maxWidth: '150px', 
                 height: 'auto',
-                
               }} 
             />
           </Link>
           <button
-            onClick={() => setOpen(false)}
-            className="md:hidden rounded-lg p-2 hover:bg-[#252958] transition-colors duration-200"
+            onClick={closeSidebar}
+            className="dashboard-close-btn lg:hidden rounded-lg p-2 hover:bg-[#252958] transition-colors duration-200"
             aria-label="Close sidebar"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
 
         {/* Admin Badge */}
-        <div className="text-center py-4">
+        <div className="dashboard-admin-badge text-center py-4 px-4">
           <div className="bg-gradient-to-r from-[#fdc51a] to-[#e7b80f] rounded-lg p-3 shadow-lg">
             <h5 className="text-xs font-semibold text-[#1e2247] uppercase tracking-wider" style={{fontWeight:'700'}}>Admin Panel</h5>
-            
           </div>
         </div>
 
         {/* Navigation */}
-        <nav className="px-4 py-2 space-y-6 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 280px)' }}>
+        <nav className="dashboard-nav px-4 py-2 space-y-6 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 280px)' }}>
           <div>
-            <h2 className=" text-xs font-semibold text-[#fdc51a] uppercase tracking-wider mb-3">
+            <h2 className="dashboard-nav-heading text-xs font-semibold text-[#fdc51a] uppercase tracking-wider mb-3">
               Dashboard
             </h2>
             <div className="space-y-1">

@@ -340,7 +340,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
         </div>
       </div>
 
-      {/* Quotations Table or Empty State */}
+      {/* Quotations Table/Cards - Responsive */}
       {filteredQuotations.length === 0 ? (
         <div style={{
           background: '#ffffff',
@@ -362,16 +362,205 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
           </p>
         </div>
       ) : (
-        <div style={{
-          background: '#ffffff',
-          borderRadius: '16px',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-          border: '1px solid #e5e7eb',
-          marginRight: '20px',
-          overflow: 'hidden'
-        }}>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <>
+          {/* Mobile Card View */}
+          <div className="dashboard-mobile-cards md:hidden" style={{ marginRight: '20px', marginBottom: '20px' }}>
+            {filteredQuotations.map((quotation) => (
+              <div
+                key={quotation.id}
+                style={{
+                  background: 'white',
+                  borderRadius: '12px',
+                  padding: '14px',
+                  marginBottom: '12px',
+                  boxShadow: '0 2px 8px rgba(30, 34, 71, 0.08)',
+                  border: '1px solid rgba(30, 34, 71, 0.12)'
+                }}
+              >
+                {/* Card Header */}
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '10px',
+                  paddingBottom: '10px',
+                  borderBottom: '1px solid #e5e7eb'
+                }}>
+                  <div style={{ flex: 1 }}>
+                    <div style={{
+                      fontSize: '0.85rem',
+                      fontWeight: '700',
+                      color: '#1e2247'
+                    }}>
+                      Id : {quotation.id}
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '6px' }}>
+                    <button
+                      onClick={() => setSelectedQuotation(quotation)}
+                      style={{
+                        width: '32px',
+                        height: '32px',
+                        borderRadius: '6px',
+                        background: '#1e2247',
+                        border: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        boxShadow: '0 2px 4px rgba(30, 34, 71, 0.2)'
+                      }}
+                      title="View Details"
+                    >
+                      <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    </button>
+                    <button
+                      onClick={() => setConfirmDelete(quotation)}
+                      style={{
+                        width: '32px',
+                        height: '32px',
+                        borderRadius: '6px',
+                        background: '#ef4444',
+                        border: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        cursor: 'pointer',
+                        boxShadow: '0 2px 4px rgba(239, 68, 68, 0.2)'
+                      }}
+                      title="Delete"
+                    >
+                      <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Card Body - Compact Table Layout */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  {/* Customer Name */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                      Buyer Name
+                    </div>
+                    <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1e2247' }}>
+                      {quotation.name}
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                      Email
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#374151', wordBreak: 'break-word' }}>
+                      {quotation.email}
+                    </div>
+                  </div>
+
+                  {/* Phone */}
+                  {quotation.phone && (
+                    <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
+                      <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                        Phone
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#374151' }}>
+                        {quotation.phone}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Industry */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'center' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                      Industry
+                    </div>
+                    <div style={{
+                      display: 'inline-block',
+                      padding: '4px 10px',
+                      background: 'rgba(253, 197, 26, 0.1)',
+                      color: '#1e2247',
+                      borderRadius: '5px',
+                      fontSize: '0.75rem',
+                      fontWeight: '500'
+                    }}>
+                      {quotation.industry}
+                    </div>
+                  </div>
+
+                  {/* Service */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                      Service
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: '#374151' }}>
+                      {quotation.service}
+                    </div>
+                  </div>
+
+                  {/* Status */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'center' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
+                      Status
+                    </div>
+                    <div style={{
+                      display: 'inline-block',
+                      padding: '4px 10px',
+                      background: getStatusColor(quotation.status).bg,
+                      color: getStatusColor(quotation.status).text,
+                      borderRadius: '12px',
+                      fontSize: '0.7rem',
+                      fontWeight: '600',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.3px'
+                    }}>
+                      {quotation.status}
+                    </div>
+                  </div>
+
+                  {/* Send Button */}
+                  <button
+                    onClick={() => handleOpenEmailModal(quotation)}
+                    style={{
+                      width: '100%',
+                      padding: '8px',
+                      borderRadius: '8px',
+                      background: '#fdc51a',
+                      border: 'none',
+                      color: '#1e2247',
+                      fontSize: '0.85rem',
+                      fontWeight: '600',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '6px',
+                      marginTop: '4px',
+                      boxShadow: '0 2px 6px rgba(253, 197, 26, 0.3)'
+                    }}
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Table View */}
+          <div className="dashboard-desktop-table hidden md:block" style={{
+            background: '#ffffff',
+            borderRadius: '16px',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+            border: '1px solid #e5e7eb',
+            marginRight: '20px',
+            overflow: 'hidden'
+          }}>
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{
                   background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
@@ -576,6 +765,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             </table>
           </div>
         </div>
+        </>
       )}
 
       {/* View Details Modal */}
