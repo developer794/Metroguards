@@ -36,7 +36,7 @@ const principlesData = [
     description: "Every security solution is tailored to meet the specific needs and challenges of our clients, ensuring optimal protection and peace of mind."
   },
   {
-    number: "02", 
+    number: "02",
     title: "24/7 Vigilance",
     description: "Round-the-clock security services with rapid response capabilities, ensuring continuous protection for our clients' assets and personnel."
   },
@@ -79,19 +79,19 @@ export default function Page() {
     setIsLoaded(true);
   }, []);
 
-    return (
-        <>
-      <Layout 
-        headerStyle={1} 
-        footerStyle={1} 
+  return (
+    <>
+      <Layout
+        headerStyle={1}
+        footerStyle={1}
         breadcrumbTitle="ABOUT METRO GUARDS"
-        mainTitle="Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Mission</span> & Vision"
-        subtitle="Dedicated to Excellence in Security Services & Community Protection"
+        mainTitle="Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #f39c12 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Mission:</span> Protecting What Matters Most Across Melbourne"
+        subtitle="Your safety is our mission, from corporate offices to hospitals and community events, we protect."
         backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Event%20Security%20Guards/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c.webp"
       >
-                <div>
+        <div>
           {/*===== Mission Statement Introduction Section =====*/}
-          <section 
+          <section
             className={`mission-intro-section ${isLoaded ? 'loaded' : ''}`}
             style={{
               paddingTop: '80px',
@@ -104,18 +104,18 @@ export default function Page() {
               <div className="row justify-content-center text-center">
                 <div className="col-lg-10">
                   <div className="brand-label" style={{ marginBottom: '25px' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
+                    <span style={{
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      color: '#fdc51a',
+                      letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
                       Our Mission Statement
                     </span>
                   </div>
-                  
+
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -126,8 +126,8 @@ export default function Page() {
                   }}>
                     Our Purpose in <span style={{ color: '#fdc51a' }}>Action</span>
                   </h2>
-                  
-                  <div 
+
+                  <div
                     style={{
                       background: '#f8f9fa',
                       borderRadius: '20px',
@@ -144,7 +144,7 @@ export default function Page() {
                       color: '#1e2247',
                       fontWeight: '400'
                     }}>
-                     At MetroGuards, our mission is to provide <strong style={{ color: '#fdc51a' }}>reliable, professional, and innovative security solutions</strong> that safeguard Melbourne's businesses, institutions, events, and communities. Every guard, patrol, and security strategy we deploy is guided by our core values: <strong style={{ color: '#fdc51a' }}>integrity, professionalism, accountability, and teamwork</strong>, ensuring <strong style={{ color: '#fdc51a' }}>safety and peace of mind</strong> for our clients.
+                      At MetroGuards, our mission is to provide <strong style={{ color: '#fdc51a' }}>reliable, professional, and innovative security solutions</strong> that safeguard Melbourne's businesses, institutions, events, and communities. Every guard, patrol, and security strategy we deploy is guided by our core values: <strong style={{ color: '#fdc51a' }}>integrity, professionalism, accountability, and teamwork</strong>, ensuring <strong style={{ color: '#fdc51a' }}>safety and peace of mind</strong> for our clients.
                     </p>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default function Page() {
           </section>
 
           {/*===== Vision & Values Section =====*/}
-          <section 
+          <section
             style={{
               paddingTop: '80px',
               paddingBottom: '80px',
@@ -165,18 +165,18 @@ export default function Page() {
               <div className="row justify-content-center text-center mb-5">
                 <div className="col-lg-10">
                   <div className="brand-label" style={{ marginBottom: '25px' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
+                    <span style={{
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      color: '#fdc51a',
+                      letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
                       Our Vision
                     </span>
                   </div>
-                  
+
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -187,7 +187,7 @@ export default function Page() {
                   }}>
                     Why <span style={{ color: '#fdc51a' }}>Metro Guards Exist</span>
                   </h2>
-                  
+
                   <div style={{
                     background: '#f8f9fa',
                     borderRadius: '20px',
@@ -211,7 +211,7 @@ export default function Page() {
                       lineHeight: '1.7',
                       margin: 0
                     }}>
-                     
+
                     </p>
                   </div>
                 </div>
@@ -221,18 +221,18 @@ export default function Page() {
               <div className="row justify-content-center mb-5">
                 <div className="col-lg-10">
                   <div className="brand-label" style={{ marginBottom: '25px', textAlign: 'center' }}>
-                    <span style={{ 
-                      fontSize: '1rem', 
-                      fontWeight: '600', 
-                      color: '#fdc51a', 
-                      letterSpacing: '0.1em', 
+                    <span style={{
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      color: '#fdc51a',
+                      letterSpacing: '0.1em',
                       textTransform: 'uppercase',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                     }}>
                       Our Commitment
                     </span>
                   </div>
-                  
+
                   <h2 style={{
                     fontSize: 'clamp(2rem, 3.5vw, 3rem)',
                     fontWeight: '700',
@@ -248,7 +248,7 @@ export default function Page() {
                   {/* Goals Grid - 4 cards in one row on desktop */}
                   <div className="goals-grid">
                     {ourGoals.map((goal, index) => (
-                      <div 
+                      <div
                         key={index}
                         className="goal-card"
                       >
@@ -269,8 +269,8 @@ export default function Page() {
           <Accrediation10 />
 
           <Subscribe />
-                </div>
-            </Layout>
+        </div>
+      </Layout>
 
       <style jsx>{`
         @keyframes fadeInUp {
@@ -395,6 +395,6 @@ export default function Page() {
           }
         }
       `}</style>
-        </>
-    )
+    </>
+  )
 }
