@@ -46,7 +46,7 @@ export default async function DashboardPage() {
   
   return (
     <div className="space-y-8">
-      {/* Welcome Section */}
+      {/* Welcome Section - Replaces the full header */}
       <div className="dashboard-welcome" style={{
         background: 'linear-gradient(135deg, #1e2247 0%, #252958 50%, #1e2247 100%)',
         borderRadius: '20px',
@@ -81,7 +81,7 @@ export default async function DashboardPage() {
         }}></div>
 
         <div style={{ position: 'relative', zIndex: 10 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <div className="hidden sm:flex" style={{
               width: '56px',
               height: '56px',

@@ -6,12 +6,12 @@ export default function HeaderClient({ email, minimal = false }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const { toggleSidebar } = useSidebar();
 
-  // Minimal version - show mobile toggle and user dropdown
+  // Minimal version - show toggle on mobile/tablet, dropdown on all screens
   if (minimal) {
     return (
       <div className="dashboard-header-minimal sticky top-0 z-20 bg-white/80 backdrop-blur-sm border-b border-gray-200 px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Mobile menu button - only on mobile/tablet */}
+          {/* Mobile menu button - hidden on desktop */}
           <button
             onClick={toggleSidebar}
             className="dashboard-mobile-toggle lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -22,11 +22,11 @@ export default function HeaderClient({ email, minimal = false }) {
             </svg>
           </button>
 
-          {/* Spacer for desktop to push dropdown to right */}
-          <div className="hidden lg:block flex-1"></div>
+          {/* Spacer for desktop (when toggle button is hidden) */}
+          <div className="hidden lg:block"></div>
 
-          {/* User dropdown - shown on all screens */}
-          <div className="dashboard-user-dropdown-minimal relative ml-auto">
+          {/* User dropdown - visible on all screens */}
+          <div className="dashboard-user-dropdown-minimal relative">
             <button
               onClick={() => setShowDropdown(!showDropdown)}
               className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-colors"
@@ -37,9 +37,6 @@ export default function HeaderClient({ email, minimal = false }) {
                   {(email?.charAt(0) || "U").toUpperCase()}
                 </span>
               </div>
-              <span className="hidden lg:block text-sm font-semibold text-[#1e2247]">
-                {email?.split('@')[0] || "Admin"}
-              </span>
               <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
