@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from 'next/link';
 
 export default function Location() {
   const [expandedStates, setExpandedStates] = useState({});
@@ -22,6 +23,7 @@ export default function Location() {
       id: "north-melbourne",
       name: "North Melbourne Suburbs",
       description: "Professional security services across North Melbourne suburbs. Our Security Guards and Mobile Patrols cover North Melbourne, Carlton, Brunswick, Coburg, Preston, and surrounding areas with 24/7 protection.",
+      link: "/north-melbourne",
       areas: [
         "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065", 
         "Brunswick 3056", "Collingwood 3066", "Coburg 3058", "Preston 3072", 
@@ -35,6 +37,7 @@ export default function Location() {
       id: "east-melbourne",
       name: "East Melbourne Suburbs",
       description: "Comprehensive security solutions for East Melbourne suburbs including Richmond, Hawthorn, Kew, Box Hill, and Ringwood. Our security guards provide static guards, mobile patrols, and event security services.",
+      link: "/east-melbourne",
       areas: [
         "East Melbourne 3002", "Richmond 3121", "Abbotsford 3067", "Hawthorn 3122", 
         "Kew 3101", "Box Hill 3128", "Balwyn 3103", "Doncaster 3108", 
@@ -47,6 +50,7 @@ export default function Location() {
       id: "south-melbourne",
       name: "South Melbourne Suburbs",
       description: "Expert security guard services for South Melbourne areas including South Melbourne, St Kilda, Prahran, Dandenong, and Frankston. We offer Mobile Security Patrols, Static Guards, and specialized Event Security.",
+      link: "/south-melbourne",
       areas: [
         "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207", 
         "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181", 
@@ -60,6 +64,7 @@ export default function Location() {
       id: "west-melbourne",
       name: "West Melbourne Suburbs",
       description: "Professional security coverage across West Melbourne suburbs including Footscray, Sunshine, Altona, Werribee, Point Cook, and Melton. Our security guards deliver reliable protection for residential and commercial properties.",
+      link: "/west-melbourne",
       areas: [
         "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031", 
         "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019", 
@@ -73,6 +78,7 @@ export default function Location() {
       id: "northwest-melbourne",
       name: "Northwest Melbourne Suburbs",
       description: "Dedicated security services for Northwest Melbourne including Carlton, Brunswick, Coburg, Broadmeadows, Craigieburn, and Epping. Our security guards provide comprehensive protection with mobile patrols and static guard services.",
+      link: "/north-west-melbourne",
       areas: [
         "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065", 
         "Brunswick 3056", "Coburg 3058", "Pascoe Vale 3044", "Glenroy 3046", 
@@ -86,6 +92,7 @@ export default function Location() {
       id: "west-east-melbourne",
       name: "West–East Melbourne Suburbs",
       description: "Extensive security coverage spanning West to East Melbourne suburbs. From Footscray and Werribee to Richmond and Ringwood, our security guards offer comprehensive protection across this diverse region.",
+      link: "/west-east-melbourne",
       areas: [
         "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031", 
         "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019", 
@@ -104,6 +111,7 @@ export default function Location() {
       id: "south-east-melbourne",
       name: "South–East Melbourne Suburbs",
       description: "Specialized security services for South-East Melbourne covering St Kilda, Prahran, Dandenong, Frankston, and surrounding suburbs. Our professional security guards provide mobile patrols, static guards, and event security.",
+      link: "/south-east-melbourne",
       areas: [
         "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207", 
         "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181", 
@@ -114,9 +122,22 @@ export default function Location() {
       ]
     },
     {
+      id: "melbourne-cbd",
+      name: "Melbourne CBD",
+      description: "Premium security services for Melbourne's Central Business District, covering CBD, Docklands, Southbank, and surrounding inner-city areas. Our security guards provide corporate building security, retail protection, and event security for Melbourne's busiest commercial zone.",
+      link: "/melbourne-CBD",
+      areas: [
+        "Melbourne CBD 3000", "Docklands 3008", "Southbank 3006", "East Melbourne 3002",
+        "West Melbourne 3003", "North Melbourne 3051", "Carlton 3053", "Parkville 3052",
+        "Fitzroy 3065", "Collingwood 3066", "Richmond 3121", "South Yarra 3141",
+        "Port Melbourne 3207", "Albert Park 3206"
+      ]
+    },
+    {
       id: "regional-victoria",
       name: "Regional Victoria Cities",
       description: "Extended security services across Regional Victoria including Geelong, Ballarat, Bendigo, Shepparton, and other major regional cities. Our security guards travel to provide professional protection beyond Melbourne metro areas.",
+      link: "/regional-victoria-cities",
       areas: [
         "Geelong 3220", "Ballarat 3350", "Bendigo 3550", "Shepparton 3630", 
         "Warrnambool 3280", "Traralgon 3844", "Morwell 3840", "Sale 3850", 
@@ -164,14 +185,19 @@ export default function Location() {
               <div className="locations-list">
                 {locations.map((location) => (
                   <div key={location.id} className="location-item">
-                    <button 
-                      className="location-toggle"
-                      onClick={() => toggleExpanded(location.id)}
-                      aria-expanded={expandedStates[location.id]}
-                    >
-                      <span className="plus-icon">{expandedStates[location.id] ? '−' : '+'}</span>
-                      <span className="location-name">{location.name}</span>
-                    </button>
+                    <div className="location-header-wrapper">
+                      <button 
+                        className="location-toggle-icon"
+                        onClick={() => toggleExpanded(location.id)}
+                        aria-expanded={expandedStates[location.id]}
+                        aria-label={`Toggle ${location.name}`}
+                      >
+                        <span className="plus-icon">{expandedStates[location.id] ? '−' : '+'}</span>
+                      </button>
+                      <Link href={location.link} className="location-link">
+                        <span className="location-name">{location.name}</span>
+                      </Link>
+                    </div>
                     {expandedStates[location.id] && (
                       <div className="location-areas">
                         {location.description && (
@@ -370,24 +396,23 @@ export default function Location() {
           border-bottom: none;
         }
 
-        .location-toggle {
-          width: 100%;
+        .location-header-wrapper {
           display: flex;
           align-items: center;
           gap: 20px;
           padding: 20px 0;
+        }
+
+        .location-toggle-icon {
           background: none;
           border: none;
           cursor: pointer;
-          text-align: left;
+          padding: 0;
           transition: all 0.3s ease;
+          flex-shrink: 0;
         }
 
-        .location-toggle:hover {
-          color: #F39C12;
-        }
-
-        .location-toggle .plus-icon {
+        .location-toggle-icon .plus-icon {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -399,13 +424,26 @@ export default function Location() {
           font-size: 1.2rem;
           font-weight: 300;
           line-height: 1;
-          flex-shrink: 0;
           transition: all 0.3s ease;
         }
 
-        .location-toggle[aria-expanded="true"] .plus-icon {
+        .location-toggle-icon[aria-expanded="true"] .plus-icon {
           background: #F39C12;
           transform: rotate(180deg);
+        }
+
+        .location-link {
+          flex: 1;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .location-link:hover {
+          color: #F39C12;
+        }
+
+        .location-link:hover .location-name {
+          color: #F39C12;
         }
 
         .location-name {
@@ -571,7 +609,7 @@ export default function Location() {
             padding: 20px;
           }
 
-          .location-toggle {
+          .location-header-wrapper {
             padding: 16px 0;
           }
 

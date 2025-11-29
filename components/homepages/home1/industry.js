@@ -1,6 +1,7 @@
 "use client";
 
 import { Briefcase, Store, Truck, HardHat, Hospital, Users } from "lucide-react"
+import Link from 'next/link'
 
 
 
@@ -54,28 +55,29 @@ export default function Home() {
         </div>
         <div className="row g-4 g-md-3 g-lg-4">
             {[
-                { icon: <Briefcase size={32} />, title: "Corporate & Commercial", description: "Office Towers, Business Parks, Tech & Legal Firms" },
-                { icon: <Store size={32} />, title: "Retail, Hospitality & Major Events", description: "Shopping, Dining, Hotels, Venues, Festivals" },
-                { icon: <Truck size={32} />, title: "Industrial, Logistics & Transport", description: "Warehousing, Freight, Manufacturing, Ports" },
-                { icon: <HardHat size={32} />, title: "Construction & Infrastructure ", description: "Sites, Civil Works, Energy, Equipment Yards" },
-                { icon: <Hospital size={32} />, title: "Healthcare & Aged Care", description: "Hospitals, Clinics, Aged Care, Mental Health" },
-                { icon: <Users size={32} />, title: "Public & Community Services", description: " Schools, Councils, Worship, Culture" }
+                { icon: <Briefcase size={32} />, title: "Corporate & Commercial", description: "Office Towers, Business Parks, Tech & Legal Firms", link: "/industry-corporate-commercial" },
+                { icon: <Store size={32} />, title: "Retail, Hospitality & Major Events", description: "Shopping, Dining, Hotels, Venues, Festivals", link: "/industry-retail-hospitality" },
+                { icon: <Truck size={32} />, title: "Industrial, Logistics & Transport", description: "Warehousing, Freight, Manufacturing, Ports", link: "/industrial-logistics" },
+                { icon: <HardHat size={32} />, title: "Construction & Infrastructure ", description: "Sites, Civil Works, Energy, Equipment Yards", link: "/industry-construction-infrastructure" },
+                { icon: <Hospital size={32} />, title: "Healthcare & Aged Care", description: "Hospitals, Clinics, Aged Care, Mental Health", link: "/industry-healthcare-aged" },
+                { icon: <Users size={32} />, title: "Public & Community Services", description: " Schools, Councils, Worship, Culture", link: "/industry-public-community" }
             ].map((industry, index) => (
                 <div key={index} className="col-lg-4 col-md-6">
-                    <div 
-                        className="industry-card h-100 position-relative"
-                        style={{
-                            backgroundColor: 'transparent',
-                            borderRadius: '0',
-                            boxShadow: 'none',
-                            border: 'none',
-                            transition: 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)',
-                            textAlign: 'center',
-                            overflow: 'visible',
-                            cursor: 'pointer',
-                            padding: '20px'
-                        }}
-                    >
+                    <Link href={industry.link} style={{textDecoration: 'none', display: 'block'}}>
+                        <div 
+                            className="industry-card h-100 position-relative"
+                            style={{
+                                backgroundColor: 'transparent',
+                                borderRadius: '0',
+                                boxShadow: 'none',
+                                border: 'none',
+                                transition: 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)',
+                                textAlign: 'center',
+                                overflow: 'visible',
+                                cursor: 'pointer',
+                                padding: '20px'
+                            }}
+                        >
                         {/* Card container with unique design */}
                         <div 
                             className="position-relative h-100"
@@ -205,9 +207,10 @@ export default function Home() {
                                     opacity: '0.4',
                                     zIndex: '1'
                                 }}
-                            ></div>
+                            >                            </div>
                         </div>
-                    </div>
+                        </div>
+                    </Link>
                 </div>
             ))}
         </div>
