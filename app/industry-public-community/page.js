@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Safeguard schools, councils, places of worship, and cultural venues in Melbourne with Metro Guard’s trained security teams’ proactive monitoring now.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/industry-public-community" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",

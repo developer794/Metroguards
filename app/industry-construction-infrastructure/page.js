@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Keep Melbourne construction and infrastructure sites secure with Metro Guards’ trained staff, patrols, real-time monitoring, and risk handling.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/industry-construction-infrastructure" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",

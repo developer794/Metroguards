@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Get security guards for Melbourne warehouses, freight, manufacturing, and ports for 24/7 patrols, CCTV monitoring, and access control.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/industrial-logistics" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Hire security guards for retail, hospitality, and major events across Melbourne. Protect your shops, hotels, restaurants, venues, and festivals now.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/industry-retail-hospitality" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",

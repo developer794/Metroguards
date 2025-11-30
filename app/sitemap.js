@@ -1,7 +1,7 @@
 /**
  * Sitemap for Metro Guards Security Services
  * Auto-generated sitemap for SEO optimization
- * Last updated: 2025-01-27
+ * Last updated: 2025-11-30
  */
 
 export default function sitemap() {
@@ -213,7 +213,61 @@ export default function sitemap() {
       priority: 0.8,
     },
 
-    // Location-Specific Pages
+    // Location-Specific Pages - Melbourne Regions
+    {
+      url: `${baseUrl}/east-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/north-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/south-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/west-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/north-west-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/west-east-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/south-east-melbourne`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/melbourne-CBD`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/regional-victoria-cities`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/security-guard-east-melbourne-vic-3002`,
       lastModified: currentDate,
@@ -237,6 +291,44 @@ export default function sitemap() {
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+
+    // Industry-Specific Pages
+    {
+      url: `${baseUrl}/industry-corporate-commercial`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/industry-retail-hospitality`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/industrial-logistics`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/industry-construction-infrastructure`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/industry-healthcare-aged`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/industry-public-community`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
 
     // About Us & Company Pages

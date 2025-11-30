@@ -35,6 +35,57 @@ const nextConfig = {
         },
       ],
     },
+    
+    // Security Headers
+    async headers() {
+      return [
+        {
+          // Apply security headers to all routes
+          source: '/(.*)',
+          headers: [
+            {
+              key: 'X-Frame-Options',
+              value: 'SAMEORIGIN',
+            },
+            {
+              key: 'X-Content-Type-Options',
+              value: 'nosniff',
+            },
+            {
+              key: 'X-XSS-Protection',
+              value: '1; mode=block',
+            },
+            {
+              key: 'Referrer-Policy',
+              value: 'strict-origin-when-cross-origin',
+            },
+            {
+              key: 'Permissions-Policy',
+              value: 'camera=(), microphone=(), geolocation=()',
+            },
+            // Add HSTS only in production with HTTPS
+            ...(process.env.NODE_ENV === 'production' ? [{
+              key: 'Strict-Transport-Security',
+              value: 'max-age=31536000; includeSubDomains; preload',
+            }] : []),
+          ],
+        },
+        {
+          // Additional protection for API routes
+          source: '/api/:path*',
+          headers: [
+            {
+              key: 'X-Content-Type-Options',
+              value: 'nosniff',
+            },
+            {
+              key: 'X-Frame-Options',
+              value: 'DENY',
+            },
+          ],
+        },
+      ];
+    },
   };
   
   module.exports = nextConfig;

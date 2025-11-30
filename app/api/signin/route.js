@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import bcrypt from "bcryptjs";
 import { SignJWT } from "jose";
+import { authLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 function getSecretKey() {
   const secret = process.env.JWT_SECRET;
@@ -11,6 +12,25 @@ function getSecretKey() {
 
 export async function POST(req) {
   try {
+    // Apply rate limiting (5 requests per minute)
+    const ip = getClientIp(req);
+    const rateLimitError = checkRateLimit(authLimiter, ip);
+    
+    if (rateLimitError) {
+      return NextResponse.json(
+        { error: rateLimitError.error },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': String(rateLimitError.retryAfter),
+            'X-RateLimit-Limit': String(rateLimitError.limit),
+            'X-RateLimit-Remaining': String(rateLimitError.remaining),
+            'X-RateLimit-Reset': String(rateLimitError.reset),
+          }
+        }
+      );
+    }
+
     const { email, password, remember } = await req.json();
 
     if (!email || !password) {

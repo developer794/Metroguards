@@ -2,6 +2,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
+import { formLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -340,6 +341,25 @@ async function generateIncidentPDF(data: any): Promise<Buffer> {
 
 export async function POST(req: Request) {
   try {
+    // Apply rate limiting (10 requests per minute)
+    const ip = getClientIp(req);
+    const rateLimitError = checkRateLimit(formLimiter, ip);
+    
+    if (rateLimitError) {
+      return NextResponse.json(
+        { error: rateLimitError.error, success: false },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': String(rateLimitError.retryAfter),
+            'X-RateLimit-Limit': String(rateLimitError.limit),
+            'X-RateLimit-Remaining': String(rateLimitError.remaining),
+            'X-RateLimit-Reset': String(rateLimitError.reset),
+          }
+        }
+      );
+    }
+
     const form = await req.formData();
 
     // Event types (multi-checkbox)

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Protect Melbourne hospitals, clinics, aged care, and similar facilities with Metro Guards’ trained healthcare security staff and vigilant monitoring.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/industry-healthcare-aged" 
   },
   openGraph: {
     title: "Educational Institution Security Guards in Melbourne | Metro Guards",

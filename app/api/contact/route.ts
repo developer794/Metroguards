@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import prisma from "@/lib/prisma";
+import { formLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -478,6 +479,25 @@ function createClientConfirmationEmail(
 
 export async function POST(req: Request) {
   try {
+    // Apply rate limiting (10 requests per minute)
+    const ip = getClientIp(req);
+    const rateLimitError = checkRateLimit(formLimiter, ip);
+    
+    if (rateLimitError) {
+      return NextResponse.json(
+        { error: rateLimitError.error, success: false },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': String(rateLimitError.retryAfter),
+            'X-RateLimit-Limit': String(rateLimitError.limit),
+            'X-RateLimit-Remaining': String(rateLimitError.remaining),
+            'X-RateLimit-Reset': String(rateLimitError.reset),
+          }
+        }
+      );
+    }
+
     const form = await req.formData();
 
     // honeypot (spam trap)
