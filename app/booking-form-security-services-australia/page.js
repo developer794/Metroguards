@@ -121,6 +121,7 @@ export default function BookingFormPage() {
     const [loading, setLoading] = useState(false);
     const [selectedServices, setSelectedServices] = useState([]);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [agreedToTerms, setAgreedToTerms] = useState(false);
 
     // Smooth scroll to top when Thank You message appears
     useEffect(() => {
@@ -151,6 +152,13 @@ export default function BookingFormPage() {
 
     async function handleSubmit(e) {
         e.preventDefault();
+
+        // Check Terms and Conditions
+        if (!agreedToTerms) {
+            toast.error("Please accept the Terms and Conditions to continue");
+            return;
+        }
+
         setLoading(true);
 
         const form = e.currentTarget;
@@ -168,6 +176,7 @@ export default function BookingFormPage() {
             setIsSubmitted(true);
             form.reset();
             setSelectedServices([]);
+            setAgreedToTerms(false);
         } catch (err) {
             toast.error(err.message || "Network error. Please try again.");
             console.error(err);
@@ -953,6 +962,55 @@ export default function BookingFormPage() {
                                                 <p style={{ color: '#6c757d', margin: '0', fontSize: '0.9rem' }}>
                                                     Your booking information will be processed securely. We'll contact you within 2 hours to confirm your security service deployment.
                                                 </p>
+                                            </div>
+
+                                            {/* Terms and Conditions Checkbox */}
+                                            <div style={{
+                                                display: 'flex',
+                                                alignItems: 'flex-start',
+                                                gap: '12px',
+                                                padding: '16px',
+                                                background: 'rgba(253, 197, 26, 0.05)',
+                                                borderRadius: '12px',
+                                                border: '2px solid rgba(253, 197, 26, 0.2)',
+                                                marginBottom: '20px'
+                                            }}>
+                                                <input
+                                                    type="checkbox"
+                                                    checked={agreedToTerms}
+                                                    onChange={(e) => setAgreedToTerms(e.target.checked)}
+                                                    required
+                                                    style={{
+                                                        width: '20px',
+                                                        height: '20px',
+                                                        marginTop: '2px',
+                                                        cursor: 'pointer',
+                                                        accentColor: '#fdc51a',
+                                                        flexShrink: 0
+                                                    }}
+                                                />
+                                                <label style={{
+                                                    color: '#1e2247',
+                                                    fontSize: '0.95rem',
+                                                    lineHeight: '1.5',
+                                                    cursor: 'pointer',
+                                                    flex: 1
+                                                }}>
+                                                    I have read and agree to the{' '}
+                                                    <a 
+                                                        href="/conditions-of-hire" 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        style={{
+                                                            color: '#007bff',
+                                                            textDecoration: 'underline',
+                                                            fontWeight: '600'
+                                                        }}
+                                                    >
+                                                        Terms and Conditions
+                                                    </a>
+                                                    {' '}<span style={{ color: '#dc3545' }}>*</span>
+                                                </label>
                                             </div>
                                             
                                             <button

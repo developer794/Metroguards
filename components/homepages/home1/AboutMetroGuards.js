@@ -54,7 +54,7 @@ const AboutMetroGuards = () => {
             fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             maxWidth: '900px'
           }}>
-            Trusted Security Company in Melbourne
+            Award-Winning Security Company in Melbourne
           </h2>
 
           <p className="about-description" style={{
@@ -65,8 +65,8 @@ const AboutMetroGuards = () => {
             fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             maxWidth: '900px'
           }}>
-            With 16+ years of experience, Metro Guards has served Melbourne homes, businesses, and events with fully licensed, insured, and safety-trained private security guards. All personnel are background-checked, follow strict on-site protocols, and provide real-time reporting.
-          </p>
+            With 16+ years of experience, Metro Guards delivers trusted security solutions for Melbourne’s corporate, commercial, and industrial sectors. Our team of licensed and insured professional security officers operates under strict on-site protocols and provides real-time reporting, ensuring every site is monitored, compliant, and secure.
+            </p>
 
           
         </div>

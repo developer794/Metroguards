@@ -10,9 +10,17 @@ import Subscribe from "@/components/homepages/home1/Subscribe";
 export default function IncidentReportPage() {
     const [loading, setLoading] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    // Check Terms and Conditions
+    if (!agreedToTerms) {
+      toast.error("Please accept the Terms and Conditions to continue");
+      return;
+    }
+
     setLoading(true);
 
     const form = e.currentTarget;
@@ -28,6 +36,7 @@ export default function IncidentReportPage() {
 
       setIsSubmitted(true);
       form.reset();
+      setAgreedToTerms(false);
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
       console.error(err);
@@ -646,6 +655,56 @@ export default function IncidentReportPage() {
                                                 <label htmlFor="fileAttachments" className="form-label text-dark">File Attachments</label>
                                                 <input type="file" className="form-control" id="fileAttachments" name="attachments" multiple />
                                             </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Terms and Conditions Checkbox */}
+                                        <div className="col-12 mb-4">
+                                            <div style={{
+                                                display: 'flex',
+                                                alignItems: 'flex-start',
+                                                gap: '12px',
+                                                padding: '16px',
+                                                background: 'rgba(253, 197, 26, 0.05)',
+                                                borderRadius: '12px',
+                                                border: '2px solid rgba(253, 197, 26, 0.2)'
+                                            }}>
+                                                <input
+                                                    type="checkbox"
+                                                    checked={agreedToTerms}
+                                                    onChange={(e) => setAgreedToTerms(e.target.checked)}
+                                                    required
+                                                    style={{
+                                                        width: '20px',
+                                                        height: '20px',
+                                                        marginTop: '2px',
+                                                        cursor: 'pointer',
+                                                        accentColor: '#fdc51a',
+                                                        flexShrink: 0
+                                                    }}
+                                                />
+                                                <label style={{
+                                                    color: '#1e2247',
+                                                    fontSize: '0.95rem',
+                                                    lineHeight: '1.5',
+                                                    cursor: 'pointer',
+                                                    flex: 1
+                                                }}>
+                                                    I have read and agree to the{' '}
+                                                    <a 
+                                                        href="/conditions-of-hire" 
+                                                        target="_blank" 
+                                                        rel="noopener noreferrer"
+                                                        style={{
+                                                            color: '#007bff',
+                                                            textDecoration: 'underline',
+                                                            fontWeight: '600'
+                                                        }}
+                                                    >
+                                                        Terms and Conditions
+                                                    </a>
+                                                    {' '}<span style={{ color: '#dc3545' }}>*</span>
+                                                </label>
                                             </div>
                                         </div>
 

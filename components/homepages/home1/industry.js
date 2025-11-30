@@ -37,7 +37,7 @@ export default function Home() {
                     letterSpacing: '-0.02em',
                     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                 }}>
-                    Industries We Protect
+                    Industries We Served
                 </h2>
 
                 {/* Description */}

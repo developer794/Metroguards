@@ -174,7 +174,7 @@ export default function Location() {
               </div>
               <div className="description-content">
                 <p className="description-text">
-                Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected around the clock.
+                Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected round the clock.
 
                 </p>
                 

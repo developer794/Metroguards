@@ -36,7 +36,7 @@ export default function GoodPeople() {
               display: 'block',
               margin: '0'
             }}>
-              Where to Find 24/7 Security Guard Services in Melbourne?
+              Reliable security for businesses, construction sites, and commercial properties right across Melbourne and Victoria.
             </span>
           </div>
 
@@ -50,7 +50,7 @@ export default function GoodPeople() {
               margin: '0',
               letterSpacing: '-0.02em',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-            }}>Professional Guards.</h2>
+            }}>Local Expertise</h2>
             <h2 className="heading-line" style={{
               fontSize: '2.5rem',
               fontWeight: '700',
@@ -59,7 +59,7 @@ export default function GoodPeople() {
               margin: '0',
               letterSpacing: '-0.02em',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-            }}>Proven Protection.</h2>
+            }}>Melbourne Standards</h2>
           </div>
 
           {/* Description */}
@@ -71,8 +71,9 @@ export default function GoodPeople() {
               margin: '0 0 16px 0',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
             }}>
-              Metro Guards offers 24/7 security coverage across Melbourne. Our trained and licensed security guards protect homes, commercial sites, and events with real-time monitoring, rapid response, and proactive risk management, keeping your property safe at all hours.
-            </p>
+              At Metro Guards, our licensed security officers use smart patrol systems with NFC and AI technology to keep your premises safe, backed by ISO, CM3, and ASIAL certifications for quality and compliance.
+              <br/>We’re a locally based security company in Melbourne, trusted by businesses for responsive service, fair rates, and no outsourcing delays.
+              </p>
             
           </div>
         </div>

@@ -23,8 +23,8 @@ const SecurityChallenges = () => {
     },
     {
       icon: Users,
-      title: "Event Safety Concerns",
-      description: "Corporate events, private gatherings, and large functions require trained private security guards Melbourne for smooth operations."
+      title: "Building Safety Concerns",
+      description: "Corporate events, private gatherings, and large functions require trained private security guards in Melbourne for smooth operations."
     },
     {
       icon: ShieldAlert,
@@ -62,7 +62,7 @@ const SecurityChallenges = () => {
               textTransform: 'uppercase',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
             }}>
-              Security Challenges
+              On-Site Threats
             </span>
           </div>
 
@@ -76,7 +76,7 @@ const SecurityChallenges = () => {
             fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             maxWidth: '900px'
           }}>
-            Common Security Challenges Melbourne Businesses & Residents Face
+            Common Security Challenges Melbourne Businesses  Face
           </h2>
 
           <p style={{

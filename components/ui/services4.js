@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Shield, Users, Building, Smartphone, Calendar, HardHat, UserCheck } from "lucide-react";
+import { ArrowRight, Shield, Users, Building, Smartphone, Calendar, HardHat, UserCheck, Car, Dog } from "lucide-react";
 import Image from "next/image";
 
 const data = [
@@ -19,7 +19,7 @@ const data = [
     description: "Trained security personnel managing large gatherings with strategic crowd flow, risk assessment, and incident prevention to ensure a safe environment.",
     href: "/crowd-control-services",
     image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Crowd%20Controller%20Services/660438D5-A405-4A12-A141-34F598A00D3E_1_105_c%20(1).webp",
-    icon: Building,
+    icon: Users,
   },
   {
     id: "warehouse-security",
@@ -27,7 +27,7 @@ const data = [
     description: "Uniformed mobile patrol teams conducting scheduled and random patrols to deter crime, secure premises, and ensure safety across multiple locations.",
     href: "/mobile-patrol-services",
     image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c%20(1).webp",
-    icon: Shield,
+    icon: Car,
   },
   {
     id: "event-security",
@@ -35,13 +35,13 @@ const data = [
     description: "Highly trained K9 units providing enhanced detection, patrol support, and security presence to identify threats and protect property and personnel.",
     href: "/k9-security-guards-in-melbourne",
     image: "https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Canine%20(K9)%20Security%20Services/3306B975-83A6-4BCD-AA71-082374E3FE4F_1_105_c.webp",
-    icon: Calendar,
+    icon: Dog,
   },
 ];
 
 const Services4 = ({ 
   title = "Licensed Security Services Melbourne, Victoria", 
-  description = "Metro Guards offers a full range of security services in Melbourne for homes, businesses, and events. Our licensed private security guards are trained to prevent risks, respond immediately, and provide peace of mind.",
+  description = "Metro Guards delivers a full range of professional security services in Melbourne for businesses, construction sites, logistics hubs, and commercial properties.Our private security guards are trained to identify and prevent risks, respond promptly to alarm activations, and provide peace of mind for your operations.",
   items = data.slice(0, 4), // Show only first 4 items
 }) => {
   return (
@@ -59,7 +59,7 @@ const Services4 = ({
               textTransform: 'uppercase',
               fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
             }}>
-              Our Services
+              Guard Services
             </span>
           </div>
               <h2 className="services-title">{title}</h2>

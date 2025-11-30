@@ -1,6 +1,6 @@
 "use client"
 import Layout from "@/components/layout/Layout";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MultiSelectDropdown from "./multiSelect";
@@ -12,13 +12,67 @@ import Subscribe from "@/components/homepages/home1/Subscribe"
 export default function CareersPage() {
     const [loading, setLoading] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [agreedToTerms, setAgreedToTerms] = useState(false);
+    const [recaptchaToken, setRecaptchaToken] = useState(null);
+    const recaptchaRef = useRef(null);
+
+  // Load reCAPTCHA v2 script and render widget
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoadCareer&render=explicit';
+    script.async = true;
+    script.defer = true;
+
+    window.onRecaptchaSuccessCareer = (token) => {
+      setRecaptchaToken(token);
+    };
+
+    window.onRecaptchaLoadCareer = () => {
+      if (recaptchaRef.current && window.grecaptcha) {
+        try {
+          window.grecaptcha.render(recaptchaRef.current, {
+            'sitekey': process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+            'callback': window.onRecaptchaSuccessCareer
+          });
+        } catch (e) {
+          console.error('reCAPTCHA render error:', e);
+        }
+      }
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+      delete window.onRecaptchaSuccessCareer;
+      delete window.onRecaptchaLoadCareer;
+    };
+  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
+
+    // Check Terms and Conditions
+    if (!agreedToTerms) {
+      toast.error("Please accept the Terms and Conditions to continue");
+      return;
+    }
+
+    // Check reCAPTCHA v2
+    if (!recaptchaToken) {
+      toast.error("Please complete the reCAPTCHA verification");
+      return;
+    }
+
     setLoading(true);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+
+    // Add reCAPTCHA token to form data
+    formData.append("recaptchaToken", recaptchaToken);
 
     try {
       const res = await fetch("/api/career", { method: "POST", body: formData });
@@ -30,6 +84,13 @@ export default function CareersPage() {
 
       setIsSubmitted(true);
       form.reset();
+      setAgreedToTerms(false);
+      
+      // Reset reCAPTCHA
+      setRecaptchaToken(null);
+      if (window.grecaptcha) {
+        window.grecaptcha.reset();
+      }
     } catch (err) {
       toast.error(err.message || "Network error. Please try again.");
       console.error(err);
@@ -503,19 +564,65 @@ export default function CareersPage() {
                                             <textarea className="form-control glassmorphism-input " id="comments" name="comments" rows="4"></textarea>
                                             </div>
 
+                                            {/* Terms and Conditions Checkbox */}
                                             <div className="col-12 mb-4">
-                                            <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" id="terms" name="terms" required />
-                                                <label className="form-check-label " style={{color:"white"}} htmlFor="terms">
-                                                I have read the terms and conditions *
-                                                </label>
+                                                <div style={{
+                                                    display: 'flex',
+                                                    alignItems: 'flex-start',
+                                                    gap: '12px',
+                                                    padding: '16px',
+                                                    background: 'rgba(253, 197, 26, 0.05)',
+                                                    borderRadius: '12px',
+                                                    border: '2px solid rgba(253, 197, 26, 0.2)'
+                                                }}>
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={agreedToTerms}
+                                                        onChange={(e) => setAgreedToTerms(e.target.checked)}
+                                                        required
+                                                        style={{
+                                                            width: '20px',
+                                                            height: '20px',
+                                                            marginTop: '2px',
+                                                            cursor: 'pointer',
+                                                            accentColor: '#fdc51a',
+                                                            flexShrink: 0
+                                                        }}
+                                                    />
+                                                    <label style={{
+                                                        color: '#1e2247',
+                                                        fontSize: '0.95rem',
+                                                        lineHeight: '1.5',
+                                                        cursor: 'pointer',
+                                                        flex: 1
+                                                    }}>
+                                                        I have read and agree to the{' '}
+                                                        <a 
+                                                            href="/conditions-of-hire" 
+                                                            target="_blank" 
+                                                            rel="noopener noreferrer"
+                                                            style={{
+                                                                color: '#007bff',
+                                                                textDecoration: 'underline',
+                                                                fontWeight: '600'
+                                                            }}
+                                                        >
+                                                            Terms and Conditions
+                                                        </a>
+                                                        {' '}<span style={{ color: '#dc3545' }}>*</span>
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" id="newsletter" name="newsletter" />
-                                                <label className="form-check-label " style={{color:"white"}} htmlFor="newsletter">
-                                                I would like to receive emails from Metropolitan Guard Services about important news
-                                                </label>
-                                            </div>
+
+                                            {/* reCAPTCHA v2 Checkbox */}
+                                            <div className="col-12 mb-4">
+                                                <div 
+                                                    ref={recaptchaRef}
+                                                    style={{
+                                                        display: 'flex',
+                                                        justifyContent: 'center'
+                                                    }}
+                                                ></div>
                                             </div>
 
                                             <div className="col-12 text-center">

@@ -283,6 +283,16 @@ export default function NewHero() {
   .nh-cta-wrap { margin-top: 2.3rem; }         /* ~ mt-10 */
 }
 
+  @media (max-width: 1440px) {                    /* sm and below */
+  .nh-cta-wrap { margin-top: 3.3rem; }         /* ~ mt-10 */
+  .nh-title-top { font-size: 12vw; max-font-size: 260px; }
+  .nh-title-bottom { font-size: 12vw; max-font-size: 240px; }
+}
+  @media (min-width: 2000px) {                    /* sm and below */
+  .nh-cta-wrap { margin-top: 0rem; }         /* ~ mt-10 */
+  .nh-title-top { font-size: 7vw; max-font-size: 260px; }
+  .nh-title-bottom { font-size: 7vw; max-font-size: 240px; }
+}
       `}</style>
     </section>
   );

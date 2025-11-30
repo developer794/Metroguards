@@ -19,7 +19,7 @@ export default function Accreditation() {
     <section className="bg-white py-16 px-6 sm:px-10 lg:px-18">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="mb-12 px-10">
+        <div className="mb-12 px-2">
           {/* Yellow Label */}
           <div className="mb-4">
             <span className="acc-label">
@@ -34,7 +34,7 @@ export default function Accreditation() {
 
           {/* Description */}
           <p className="acc-description">
-            Metro Guards is recognized as one of the best security companies in Melbourne for licensed, reliable, and professional security services.
+          Metro Guards is recognised as an award-winning, leading security company in Melbourne, holding industry-standard certifications and accolades, including ISO quality management, CM3 contractor compliance, ASIAL membership, and the Australian Achiever Award for outstanding service.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function Accreditation() {
           color: #333;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          max-width: 800px;
+          max-width: 1200px;
         }
 
         @media (max-width: 768px) {

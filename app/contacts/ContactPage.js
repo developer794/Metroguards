@@ -22,6 +22,7 @@ export default function ContactPage() {
     serviceType: '',
     message: ''
   });
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   // Smooth scroll to top when Thank You message appears
   useEffect(() => {
@@ -81,6 +82,12 @@ export default function ContactPage() {
   async function handleSubmit(e) {
     e.preventDefault();
 
+    // Check Terms and Conditions agreement
+    if (!agreedToTerms) {
+      toast.error("Please accept the Terms and Conditions to continue");
+      return;
+    }
+
     // Check reCAPTCHA v2
     if (!recaptchaToken) {
       toast.error("Please complete the reCAPTCHA verification");
@@ -114,6 +121,7 @@ export default function ContactPage() {
         serviceType: '',
         message: ''
       });
+      setAgreedToTerms(false);
       
       // Reset reCAPTCHA
       setRecaptchaToken(null);
@@ -593,6 +601,31 @@ export default function ContactPage() {
                           onChange={handleInputChange}
                             required
                           ></textarea>
+                      </div>
+
+                      {/* Terms and Conditions Checkbox */}
+                      <div className="terms-checkbox-container">
+                        <label className="terms-checkbox-label">
+                          <input
+                            type="checkbox"
+                            className="terms-checkbox"
+                            checked={agreedToTerms}
+                            onChange={(e) => setAgreedToTerms(e.target.checked)}
+                            required
+                          />
+                          <span className="terms-text">
+                            I have read and agree to the{' '}
+                            <a 
+                              href="/conditions-of-hire" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="terms-link"
+                            >
+                              Terms and Conditions
+                            </a>
+                            {' '}<span className="required">*</span>
+                          </span>
+                        </label>
                       </div>
 
                       {/* reCAPTCHA v2 Checkbox */}
@@ -1119,12 +1152,64 @@ export default function ContactPage() {
             padding: 10px;
           }
 
+          /* Terms and Conditions Checkbox */
+          .terms-checkbox-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(253, 197, 26, 0.05) 0%, rgba(253, 197, 26, 0.02) 100%);
+            border: 2px solid rgba(253, 197, 26, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+          }
+
+          .terms-checkbox-container:hover {
+            border-color: rgba(253, 197, 26, 0.4);
+            background: rgba(253, 197, 26, 0.08);
+          }
+
+          .terms-checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            margin: 0;
+          }
+
+          .terms-checkbox {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            cursor: pointer;
+            flex-shrink: 0;
+            accent-color: #1e2247;
+          }
+
+          .terms-text {
+            font-size: 0.95rem;
+            color: #1e2247;
+            line-height: 1.6;
+            font-family: "satoshi", sans-serif;
+            font-weight: 500;
+          }
+
+          .terms-link {
+            color: #fdc51a;
+            text-decoration: underline;
+            font-weight: 700;
+            transition: all 0.3s ease;
+          }
+
+          .terms-link:hover {
+            color: #f39c12;
+            text-decoration: none;
+          }
+
           .form-footer {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             gap: 40px;
-            margin-top: 50px;
+            margin-top: 20px;
             padding-top: 30px;
             border-top: 2px solid #e9ecef;
           }
@@ -1522,6 +1607,15 @@ export default function ContactPage() {
             .form-label {
               font-size: 0.85rem;
               margin-bottom: 8px;
+            }
+
+            .terms-checkbox-container {
+              padding: 15px;
+              margin: 25px 0;
+            }
+
+            .terms-text {
+              font-size: 0.85rem;
             }
 
             .submit-btn {

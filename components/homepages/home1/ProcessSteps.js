@@ -25,7 +25,7 @@ const ProcessSteps = () => {
     {
       number: "3",
       icon: ShieldCheck,
-      title: "Deploy & Protect",
+      title: "Deploy & Protect with Real-Time Reporting",
       description: "Our fully licensed, trained security guards arrive on time, ensuring your property or event is fully protected."
     }
   ];

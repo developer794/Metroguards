@@ -161,7 +161,7 @@ export default function VideoSection() {
                   border: 'none',
                   borderRadius: '12px'
                 }}
-                src="https://www.youtube.com/embed/mzH1s7Z3Ve4?si=Vt0vrDt0RC7QOVuq&autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/nrhwVnuYHMI?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
                 title="Metropolitan Guard Services - Professional Security Solutions"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

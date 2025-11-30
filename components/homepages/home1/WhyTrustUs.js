@@ -11,34 +11,34 @@ const WhyTrustUs = () => {
 
   const features = [
     {
-      icon: DollarSign,
-      title: "Flat Rates, No Hidden Fees",
-      description: "Transparent pricing for shifts, locations, and site conditions."
+      icon: Award,
+      title: "Certified & Accredited",
+      description: "Metro Guards is ISO-certified, CM3-certified, an ASIAL member, and an Australian Achiever Award recipient, demonstrating compliance, quality, and industry excellence."
+    },
+    {
+      icon: CheckCircle2,
+      title: "Registered, Trained Professionals",
+      description: "All security personnel are licensed, insured, background-checked, and fully trained, ensuring safe, professional, and accountable operations."
     },
     {
       icon: Eye,
       title: "Proactive Risk Management",
-      description: "Guards monitor your property in real-time, preventing theft, vandalism, or unauthorized access."
+      description: "Our guards monitor sites continuously, preventing unauthorised access, theft, and operational disruptions before they occur."
     },
     {
       icon: Settings,
       title: "Flexible Security Solutions",
-      description: "Tailored security guard services for homes, businesses, or events."
+      description: "We offer tailored corporate and commercial security services, including mobile patrols, alarm response, and on-site guard deployment to match your business requirements."
     },
     {
       icon: Shield,
-      title: "Licensed, Certified & Trained Professionals",
-      description: "All guards are licensed, insured, background-checked, and trained to handle emergencies."
-    },
-    {
-      icon: Award,
       title: "16+ Years of Experience",
-      description: "Serving homes, construction sites, and events across Melbourne."
+      description: "Trusted by Melbourne businesses across construction, logistics, retail, healthcare, hospitality, and industrial sectors."
     },
     {
       icon: Clock,
-      title: "24/7 Coverage",
-      description: "Day, night, weekends, and holidays, we ensure continuous protection."
+      title: "24/7 Operations",
+      description: "Round-the-clock support from our Melbourne-based command centre, including nights, weekends, and public holidays, providing uninterrupted protection."
     }
   ];
 
@@ -70,7 +70,7 @@ const WhyTrustUs = () => {
                 textTransform: 'uppercase',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
               }}>
-                Why Choose Metro Guards
+                Metro Difference
               </span>
             </div>
 
@@ -132,25 +132,16 @@ const WhyTrustUs = () => {
                 <Award size={48} strokeWidth={1.5} />
               </div>
               <div className="recognition-text">
-                <h3 style={{
-                  fontSize: '2rem',
+                <h5 style={{
+                  fontSize: '1.5rem',
                   fontWeight: '700',
                   color: '#ffffff',
                   margin: '0 0 12px 0',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
                 }}>
-                  Top 10 Security Company in Melbourne
-                </h3>
-                <p style={{
-                  fontSize: '1.125rem',
-                  lineHeight: '1.6',
-                  color: '#ffffff',
-                  margin: '0',
-                  opacity: 0.95,
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-                }}>
-                  Metro Guards is recognized among the <strong style={{ color: '#fdc51a' }}>top 10 security companies in Melbourne</strong> for reliability and professionalism.
-                </p>
+                  As a leading security company in Melbourne, Metro Guards focuses on reliability, clear communication, and 24/7 protection for your premises.
+                </h5>
+                
               </div>
             </div>
           </div>
