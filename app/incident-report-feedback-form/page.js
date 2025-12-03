@@ -388,93 +388,227 @@ export default function IncidentReportPage() {
                                                     </div>
                                                 </div>
                                             <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>OH&S matters; including "near misses"; onsite injuries; First Aid; Inclimate Weather</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="ohsMatters" name="eventTypes" value="OH&S / near misses / first aid / weather" />
-                                                    <label className="form-check-label" htmlFor="ohsMatters" style={{color: '#fff'}}>Yes</label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Security Breaches; Physical Break in's; Lock & Access issues; Patrol KPI Issues; Arrest</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="securityBreaches" name="eventTypes" value="Security breaches / break-ins / access / patrol KPI / arrest" />
-                                                    <label className="form-check-label" htmlFor="securityBreaches" style={{color: '#fff'}}>Yes</label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Equipment damage or loss; Missing Items; Uniform Request</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="equipmentDamage" name="eventTypes" value="Equipment damage/loss / missing items / uniform" />
-                                                    <label className="form-check-label" htmlFor="equipmentDamage" style={{color: '#fff'}}>Yes</label>
-                                                </div>
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-heart-pulse" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        OH&S matters; including "near misses"; onsite injuries; First Aid; Inclimate Weather
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="ohsMatters" name="eventTypes" value="OH&S / near misses / first aid / weather" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="ohsMatters" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>CCTV related OR Thermal Temperature Variations (mention the dropbox *.jpg file names)</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="cctvRelated" name="eventTypes" value="CCTV / thermal temperature variations" />
-                                                    <label className="form-check-label" htmlFor="cctvRelated" style={{color: '#fff'}}>Yes</label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Emergency Services on Site; Fire Fighting Responses</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="emergencyServices" name="eventTypes" value="Emergency services / fire response" />
-                                                    <label className="form-check-label" htmlFor="emergencyServices" style={{color: '#fff'}}>Yes</label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Alarm is Active (Security Alarm Panel, Fire Panel, VESDA, or other equipment)</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="alarmActive" name="eventTypes" value="Alarm active (security/fire/VESDA/other)" />
-                                                    <label className="form-check-label" htmlFor="alarmActive" style={{color: '#fff'}}>Yes</label>
-                                                </div>
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-shield-exclamation" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Security Breaches; Physical Break in's; Lock & Access issues; Patrol KPI Issues; Arrest
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="securityBreaches" name="eventTypes" value="Security breaches / break-ins / access / patrol KPI / arrest" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="securityBreaches" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Alarm is Disabled (Late to Close / site not sealed)</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="alarmDisabled" name="eventTypes" value="Alarm disabled (late to close / site not sealed)" />
-                                                    <label className="form-check-label" htmlFor="alarmDisabled" style={{color: '#fff'}}>Yes</label>
-                                                </div>
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-tools" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Equipment damage or loss; Missing Items; Uniform Request
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="equipmentDamage" name="eventTypes" value="Equipment damage/loss / missing items / uniform" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="equipmentDamage" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Client or Authorised person was still onsite (ie: not an intruder)</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="clientOnsite" name="eventTypes" value="Client/authorised person onsite" />
-                                                    <label className="form-check-label" htmlFor="clientOnsite" style={{color: '#fff'}}>Yes</label>
-                                                </div>
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-camera-video" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        CCTV related OR Thermal Temperature Variations (mention the dropbox *.jpg file names)
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="cctvRelated" name="eventTypes" value="CCTV / thermal temperature variations" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="cctvRelated" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-3">
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                <span style={{color: '#fff'}}>Other Categories / Feedback and Suggestions</span>
-                                                <div className="form-check form-check-inline">
-                                                    <input className="form-check-input" type="checkbox" id="otherCategories" name="eventTypes" value="Other categories / feedback / suggestions" />
-                                                    <label className="form-check-label" htmlFor="otherCategories" style={{color: '#fff'}}>Yes</label>
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-hospital" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Emergency Services on Site; Fire Fighting Responses
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="emergencyServices" name="eventTypes" value="Emergency services / fire response" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="emergencyServices" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div className="col-md-6 mb-3">
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-bell" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Alarm is Active (Security Alarm Panel, Fire Panel, VESDA, or other equipment)
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="alarmActive" name="eventTypes" value="Alarm active (security/fire/VESDA/other)" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="alarmActive" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 mb-3">
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-bell-slash" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Alarm is Disabled (Late to Close / site not sealed)
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="alarmDisabled" name="eventTypes" value="Alarm disabled (late to close / site not sealed)" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="alarmDisabled" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 mb-3">
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-person-check" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Client or Authorised person was still onsite (ie: not an intruder)
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="clientOnsite" name="eventTypes" value="Client/authorised person onsite" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="clientOnsite" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 mb-3">
+                                                <div className="event-type-item" style={{
+                                                    background: '#f8f9fa',
+                                                    borderRadius: '8px',
+                                                    padding: '15px',
+                                                    border: '1px solid #eceff3',
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <span style={{ color: '#1e2247', fontSize: '0.9rem', fontWeight: '500', flex: '1' }}>
+                                                        <i className="bi bi-chat-dots" style={{ color: '#fdc51a', marginRight: '8px' }}></i>
+                                                        Other Categories / Feedback and Suggestions
+                                                    </span>
+                                                    <div className="form-check">
+                                                        <input className="form-check-input" type="checkbox" id="otherCategories" name="eventTypes" value="Other categories / feedback / suggestions" style={{
+                                                            width: '18px',
+                                                            height: '18px',
+                                                            marginLeft: '15px'
+                                                        }} />
+                                                        <label className="form-check-label" htmlFor="otherCategories" style={{ color: '#1e2247', marginLeft: '8px', fontWeight: '500' }}>Yes</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                                 </div>
                                             </div>
                                         </div>
                                         {/* Smart Roaster Section */}
-                                        {/* Smart Roaster Section */}
                                         <div className="section-box mb-5 p-4 border rounded">
-                                            <h4 className="mb-4" style={{color: '#fff'}}>Smart ROASTER Scanned?</h4>
+                                            <h4 className="mb-4" style={{color: '#1e2247'}}>Smart ROASTER Scanned?</h4>
                                             <div className="row">
                                             <div className="col-md-6">
                                                 <label className="form-label text-dark">Was Roaster scanned?</label>
@@ -492,7 +626,7 @@ export default function IncidentReportPage() {
 
                                         {/* Officer Details Section */}
                                         <div className="section-box mb-5 p-4 border rounded">
-                                            <h4 className="mb-4" style={{color: '#fff'}}>Officer Details</h4>
+                                            <h4 className="mb-4" style={{color: '#1e2247'}}>Officer Details</h4>
                                             <div className="row">
                                             <div className="col-md-6 mb-3">
                                                 <label htmlFor="firstName" className="form-label text-dark">First Name</label>
@@ -510,15 +644,15 @@ export default function IncidentReportPage() {
                                                 <label className="form-label text-dark">Gender</label>
                                                 <div className="form-check">
                                                 <input className="form-check-input" type="radio" name="gender" id="male" value="male" />
-                                                <label className="form-check-label " htmlFor="male" style={{color:"#fff"}}>Male</label>
+                                                <label className="form-check-label" htmlFor="male" style={{color:"#1e2247"}}>Male</label>
                                                 </div>
-                                                <div className="form-check" >
-                                                <input className="form-check-input" type="radio" name="gender" id="female" value="female"  />
-                                                <label className="form-check-label " htmlFor="female" style={{color:"#fff"}}>Female</label>
+                                                <div className="form-check">
+                                                <input className="form-check-input" type="radio" name="gender" id="female" value="female" />
+                                                <label className="form-check-label" htmlFor="female" style={{color:"#1e2247"}}>Female</label>
                                                 </div>
                                                 <div className="form-check">
                                                 <input className="form-check-input" type="radio" name="gender" id="otherGender" value="other" />
-                                                <label className="form-check-label" htmlFor="otherGender" style={{color:"#fff"}}>Other</label>
+                                                <label className="form-check-label" htmlFor="otherGender" style={{color:"#1e2247"}}>Other</label>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-3">
@@ -575,7 +709,7 @@ export default function IncidentReportPage() {
 
                                         {/* Incident Date/Location Section */}
                                         <div className="section-box mb-5 p-4 border rounded">
-                                            <h4 className="mb-4" style={{color:"#fff"}}>Incident Date / Location</h4>
+                                            <h4 className="mb-4" style={{color:"#1e2247"}}>Incident Date / Location</h4>
                                             <div className="row">
                                             <div className="col-md-3 mb-3">
                                                 <label htmlFor="incidentDate" className="form-label text-dark">Date</label>
@@ -605,11 +739,11 @@ export default function IncidentReportPage() {
                                                 <label className="form-label text-dark">Patrol:</label>
                                                 <div className="form-check">
                                                 <input className="form-check-input" type="radio" name="patrol" id="external" value="external" />
-                                                <label className="form-check-label " style={{color:"#fff"}} htmlFor="external">External</label>
+                                                <label className="form-check-label" style={{color:"#1e2247"}} htmlFor="external">External</label>
                                                 </div>
                                                 <div className="form-check">
                                                 <input className="form-check-input" type="radio" name="patrol" id="internal" value="internal" />
-                                                <label className="form-check-label " style={{color:"#fff"}} htmlFor="internal">Internal</label>
+                                                <label className="form-check-label" style={{color:"#1e2247"}} htmlFor="internal">Internal</label>
                                                 </div>
                                             </div>
                                             <div className="col-md-3 mb-3">

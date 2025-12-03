@@ -1003,7 +1003,7 @@ export default function BookingFormPage() {
                                                                 selectedValues={selectedServices}
                                                                 onChange={setSelectedServices}
                                                                 placeholder="Click to select services..."
-                                                                name="serviceType[]"
+                                                                name="serviceType"
                                                             />
                                                             {selectedServices.length > 0 && (
                                                                 <div style={{

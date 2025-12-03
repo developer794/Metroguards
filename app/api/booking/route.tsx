@@ -356,7 +356,41 @@ export async function POST(req: Request) {
     }
 
     const subject = `New Booking — ${clientName}${siteName ? ` @ ${siteName}` : ""}`;
-    const services = serviceType.length ? serviceType.join(", ") : "—";
+    
+    // Convert service values to readable labels
+    const serviceLabels: { [key: string]: string } = {
+      "building-security-guards": "Building Security Guards",
+      "construction-security-guards": "Construction Security Guards",
+      "shopping-centre-security-guards": "Shopping Centre Security Guards",
+      "hospital-security-guards": "Hospital Security Guards",
+      "gatehouse-security-guards": "Gatehouse Security Guards",
+      "educational-institution-security": "Educational Institution Security",
+      "corporate-security-guards": "Corporate Security Guards",
+      "retail-security-guards": "Retail Security Guards",
+      "loss-prevention-security-guards": "Loss Prevention Security Guards",
+      "concierge-security-guards": "Concierge Security Guards",
+      "lock-up-and-open-up-security": "Lock-Up and Open-Up Security",
+      "industrial-warehouse-security": "Industrial Warehouse Security",
+      "static-security-guards": "Static Security Guards",
+      "uniform-and-covert-security": "Uniform and Covert Security",
+      "adhoc-security-services": "Adhoc Security Services",
+      "asset-protection-security": "Asset Protection Security",
+      "party-security-guards": "Party Security Guards",
+      "event-security-guards": "Event Security Guards",
+      "corporate-event-security": "Corporate Event Security",
+      "lock-up-security": "Lock-Up Security",
+      "security-escort": "Security Escort",
+      "alarm-response": "Alarm Response",
+      "mobile-patrols": "Mobile Patrols",
+      "construction-patrol": "Construction Patrol",
+      "k9-security-with-handler": "K9 Security With Handler",
+      "other-services": "Other Services"
+    };
+    
+    const services = serviceType.length 
+      ? serviceType.map((val: string) => serviceLabels[val] || val).join(", ") 
+      : "—";
+    
     const schedule =
       (fromDate || fromTime || toDate || toTime)
         ? `${fromDate || "—"} ${fromTime || ""} → ${toDate || "—"} ${toTime || ""}`.trim()
