@@ -14,6 +14,7 @@ export default function CareersPage() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [agreedToTerms, setAgreedToTerms] = useState(false);
     const [recaptchaToken, setRecaptchaToken] = useState(null);
+    const [selectedRoles, setSelectedRoles] = useState([]);
     const recaptchaRef = useRef(null);
 
   // Load reCAPTCHA v2 script and render widget
@@ -54,6 +55,12 @@ export default function CareersPage() {
   async function handleSubmit(e) {
     e.preventDefault();
 
+    // Check if at least one role is selected
+    if (selectedRoles.length === 0) {
+      toast.error("Please select at least one role you're applying for");
+      return;
+    }
+
     // Check Terms and Conditions
     if (!agreedToTerms) {
       toast.error("Please accept the Terms and Conditions to continue");
@@ -85,6 +92,7 @@ export default function CareersPage() {
       setIsSubmitted(true);
       form.reset();
       setAgreedToTerms(false);
+      setSelectedRoles([]);
       
       // Reset reCAPTCHA
       setRecaptchaToken(null);
@@ -533,6 +541,8 @@ export default function CareersPage() {
                                             <MultiSelectDropdown
                                                 name="roles[]" // will send array to API
                                                 placeholder="Select roles..."
+                                                selectedValues={selectedRoles}
+                                                onChange={setSelectedRoles}
                                                 options={[
                                                 { value: "Alarm Response Unit", label: "Alarm Response Unit" },
                                                 { value: "Concierge Services", label: "Concierge Services" },
@@ -550,6 +560,26 @@ export default function CareersPage() {
                                                 { value: "Other Services", label: "Other Services" },
                                                 ]}
                                             />
+                                            {selectedRoles.length > 0 && (
+                                                <div style={{
+                                                    marginTop: '10px',
+                                                    padding: '10px 15px',
+                                                    background: 'rgba(40, 167, 69, 0.1)',
+                                                    borderRadius: '8px',
+                                                    border: '1px solid rgba(40, 167, 69, 0.3)'
+                                                }}>
+                                                    <small style={{ 
+                                                        color: '#28a745',
+                                                        fontWeight: '600',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        gap: '8px'
+                                                    }}>
+                                                        <i className="bi bi-check-circle-fill"></i>
+                                                        {selectedRoles.length} role{selectedRoles.length > 1 ? 's' : ''} selected: {selectedRoles.join(', ')}
+                                                    </small>
+                                                </div>
+                                            )}
                                             </div>
 
 
