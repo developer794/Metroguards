@@ -607,6 +607,7 @@ export default function CareersPage() {
                                                 }}>
                                                     <input
                                                         type="checkbox"
+                                                        name="terms"
                                                         checked={agreedToTerms}
                                                         onChange={(e) => setAgreedToTerms(e.target.checked)}
                                                         required
