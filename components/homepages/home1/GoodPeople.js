@@ -36,7 +36,7 @@ export default function GoodPeople() {
               display: 'block',
               margin: '0'
             }}>
-              Reliable security for businesses, construction sites, and commercial properties right across Melbourne and Victoria.
+              Reliable Security Services in Melbourne
             </span>
           </div>
 
