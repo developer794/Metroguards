@@ -39,8 +39,8 @@ export default function ContactWidget() {
     return () => document.removeEventListener('keydown', handleEscape);
   }, [isOpen, showMobilePrompt]);
 
-  // Hide widget on dashboard pages (AFTER all hooks)
-  if (pathname?.startsWith('/dashboard')) {
+  // Hide widget on dashboard and signin pages (AFTER all hooks)
+  if (pathname?.startsWith('/dashboard') || pathname === '/signin') {
     return null;
   }
 
