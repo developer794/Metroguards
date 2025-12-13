@@ -373,37 +373,49 @@ export default function Page() {
                                         </button>
                                     </form>
 
-                                {/* Sign Up Link */}
+                                {/* Authorized Access Notice */}
                                 <div style={{
                                     textAlign: 'center',
                                     marginTop: '30px',
                                     paddingTop: '25px',
                                     borderTop: '2px solid #e9ecef'
                                 }}>
-                                    <p style={{
-                                        color: '#6c757d',
-                                        fontSize: '0.95rem',
-                                        marginBottom: '0'
+                                    <div style={{
+                                        background: 'rgba(253, 197, 26, 0.1)',
+                                        border: '2px solid rgba(253, 197, 26, 0.3)',
+                                        borderRadius: '12px',
+                                        padding: '20px',
+                                        marginBottom: '15px'
                                     }}>
-                                        Don't have an account?{' '}
-                                        <Link 
-                                            href="/signup"
-                                            style={{
+                                        <div style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: '10px',
+                                            marginBottom: '10px'
+                                        }}>
+                                            <i className="bi bi-lock-fill" style={{ 
+                                                fontSize: '1.5rem', 
+                                                color: '#1e2247' 
+                                            }}></i>
+                                            <h4 style={{
                                                 color: '#1e2247',
+                                                fontSize: '1.1rem',
                                                 fontWeight: '700',
-                                                textDecoration: 'none',
-                                                transition: 'all 0.3s ease'
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.target.style.color = '#fdc51a';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.target.style.color = '#1e2247';
-                                            }}
-                                        >
-                                            Create Account
-                                        </Link>
-                                    </p>
+                                                margin: '0'
+                                            }}>Authorized Access Only</h4>
+                                        </div>
+                                        <p style={{
+                                            color: '#495057',
+                                            fontSize: '0.95rem',
+                                            marginBottom: '15px',
+                                            lineHeight: '1.6'
+                                        }}>
+                                            This dashboard is restricted to authorized personnel only. 
+                                            If you need access, please contact the administrator.
+                                        </p>
+                                        
+                                    </div>
                                 </div>
 
                                 {/* Home Link */}
