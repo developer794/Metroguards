@@ -87,7 +87,7 @@ export default function EastMelbourneClient() {
                                             PROFESSIONAL PROTECTION
                                         </span>
                                     </div>
-                                    <h1 
+                                    <h2 
                                         className="display-3 fw-bold mb-4" 
                                         style={{
                                             color: '#1e2247',
@@ -97,7 +97,7 @@ export default function EastMelbourneClient() {
                                     >
                                         SECURITY GUARDS<br />
                                         <span style={{color: '#fdc51a'}}>EAST MELBOURNE VIC</span>
-                                    </h1>
+                                    </h2>
                                     <p 
                                         className="lead mb-4" 
                                         style={{

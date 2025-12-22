@@ -1,10 +1,19 @@
 import Layout from "@/components/layout/Layout"
 import EastMelbourneClient from "./EastMelbourneClient"
 
+
+export const metadata = {
+    title: 'Security Guards East Melbourne - Professional Security Services',
+    description: 'Licensed & Insured Security Services in East Melbourne. 24/7 Protection for Homes & Businesses. Professional Security Guards.',
+    alternates: {
+        canonical: 'https://metroguards.com.au/security-guard-east-melbourne-vic-3002',
+    },
+}
+
 export default function Page() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} 
+            <Layout headerStyle={1} footerStyle={1}
                 breadcrumbTitle="SECURITY GUARDS EAST MELBOURNE"
                 mainTitle="Professional Security Guards in East Melbourne, VIC"
                 subtitle="Licensed & Insured Security Services - 24/7 Protection for East Melbourne Homes & Businesses"

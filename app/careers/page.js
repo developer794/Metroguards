@@ -137,7 +137,7 @@ export default function CareersPage() {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="hero-content">
-                                        <h1 style={{
+                                        <h2 style={{
                                             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
                                             fontWeight: '700',
                                             color: '#1e2247',
@@ -145,7 +145,7 @@ export default function CareersPage() {
                                             fontFamily: 'serif'
                                         }}>
                                             Build Your <span style={{ color: '#fdc51a' }}>Security</span> Career
-                                        </h1>
+                                        </h2>
                                         <p style={{
                                             fontSize: '1.1rem',
                                             color: '#6c757d',

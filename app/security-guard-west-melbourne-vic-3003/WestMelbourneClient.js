@@ -28,7 +28,7 @@ export default function WestMelbourneClient() {
             details: "Our security guards provide round-the-clock protection for residential properties in West Melbourne, ensuring the safety of families and their valuable assets through professional monitoring and patrol services."
         },
         {
-            title: "Commercial Building Security", 
+            title: "Commercial Building Security",
             icon: <Building size={24} />,
             iconSymbol: <Users size={24} />,
             description: "Professional security services for office buildings and commercial spaces",
@@ -66,17 +66,17 @@ export default function WestMelbourneClient() {
         <>
             <div>
                 {/*===== Modern Hero Section =====*/}
-                <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className="hero-content">
                                     <div className="subtitle mb-4">
-                                        <span 
-                                            className="badge px-4 py-2" 
+                                        <span
+                                            className="badge px-4 py-2"
                                             style={{
-                                                backgroundColor: '#fdc51a', 
-                                                color: '#1e2247', 
+                                                backgroundColor: '#fdc51a',
+                                                color: '#1e2247',
                                                 fontWeight: '600',
                                                 fontSize: '0.85rem',
                                                 textTransform: 'uppercase',
@@ -87,8 +87,8 @@ export default function WestMelbourneClient() {
                                             PROFESSIONAL PROTECTION
                                         </span>
                                     </div>
-                                    <h1 
-                                        className="display-3 fw-bold mb-4" 
+                                    <h2
+                                        className="display-3 fw-bold mb-4"
                                         style={{
                                             color: '#1e2247',
                                             lineHeight: '1.1',
@@ -96,23 +96,23 @@ export default function WestMelbourneClient() {
                                         }}
                                     >
                                         SECURITY GUARDS<br />
-                                        <span style={{color: '#fdc51a'}}>WEST MELBOURNE VIC</span>
-                                    </h1>
-                                    <p 
-                                        className="lead mb-4" 
+                                        <span style={{ color: '#fdc51a' }}>WEST MELBOURNE VIC</span>
+                                    </h2>
+                                    <p
+                                        className="lead mb-4"
                                         style={{
                                             color: '#6c757d',
-                                            fontSize: '1.2rem', 
+                                            fontSize: '1.2rem',
                                             lineHeight: '1.6',
                                             maxWidth: '500px'
                                         }}
                                     >
                                         Metro Guards is the most reliable & Affordable local Security Company in West Melbourne VIC 3003, and it is the frontline for your safety. We are the pinnacle of protection for our clients and deliver the most trusted security services in Melbourne, Victoria, and its suburbs.
                                     </p>
-                                    
+
                                     <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                        <a 
-                                            href="/get-quotation" 
+                                        <a
+                                            href="/get-quotation"
                                             className="btn btn-primary px-5 py-3"
                                             style={{
                                                 backgroundColor: '#fdc51a',
@@ -129,8 +129,8 @@ export default function WestMelbourneClient() {
                                         >
                                             GET QUOTATION
                                         </a>
-                                        <a 
-                                            href="tel:1300731173" 
+                                        <a
+                                            href="tel:1300731173"
                                             className="btn btn-outline-dark px-5 py-3"
                                             style={{
                                                 borderColor: '#1e2247',
@@ -144,15 +144,15 @@ export default function WestMelbourneClient() {
                                                 borderWidth: '2px'
                                             }}
                                         >
-                                            <Phone size={16} style={{marginRight: '8px'}} /> 1300731173
+                                            <Phone size={16} style={{ marginRight: '8px' }} /> 1300731173
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-6">
                                 <div className="hero-image position-relative mt-5 mt-lg-0">
-                                    <div 
+                                    <div
                                         className="image-container position-relative"
                                         style={{
                                             borderRadius: '25px',
@@ -160,9 +160,9 @@ export default function WestMelbourneClient() {
                                             boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                         }}
                                     >
-                                        <img 
-                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/CA53F706-BC0B-42B2-87ED-F1408691158F_1_105_c.webp" 
-                                            alt="Professional Security Guards West Melbourne" 
+                                        <img
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/CA53F706-BC0B-42B2-87ED-F1408691158F_1_105_c.webp"
+                                            alt="Professional Security Guards West Melbourne"
                                             className="img-fluid"
                                             style={{
                                                 width: '100%',
@@ -171,9 +171,9 @@ export default function WestMelbourneClient() {
                                             }}
                                         />
                                     </div>
-                                    
+
                                     {/* Decorative Elements */}
-                                    <div 
+                                    <div
                                         className="decoration-circle position-absolute"
                                         style={{
                                             top: '-20px',
@@ -186,7 +186,7 @@ export default function WestMelbourneClient() {
                                             zIndex: '-1'
                                         }}
                                     ></div>
-                                    <div 
+                                    <div
                                         className="decoration-square position-absolute"
                                         style={{
                                             bottom: '-30px',
@@ -206,15 +206,15 @@ export default function WestMelbourneClient() {
                 </div>
 
                 {/*===== Our Services Section =====*/}
-                <div className="services-section section-padding" style={{background: '#ffffff'}}>
+                <div className="services-section section-padding" style={{ background: '#ffffff' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 order-2 order-lg-1">
                                 <div className="services-image-section pe-lg-4">
                                     <div className="image-container position-relative">
-                                        <img 
-                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp" 
-                                            alt="Professional Security Guards West Melbourne" 
+                                        <img
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/F0299D08-6BF5-4E7B-AED4-001DEE4D65BC_1_105_c.webp"
+                                            alt="Professional Security Guards West Melbourne"
                                             className="img-fluid"
                                             style={{
                                                 borderRadius: '20px',
@@ -225,14 +225,14 @@ export default function WestMelbourneClient() {
                                             }}
                                         />
                                     </div>
-                                    
+
                                     {/* Additional Features */}
                                     <div className="features-list mt-4">
                                         <div className="align-items-center mb-3">
                                             <p>Our security guards provide professional protection with local expertise that ensures effective security coverage across West Melbourne.</p>
                                         </div>
                                         <div className="feature-item d-flex align-items-center mb-3">
-                                            <div 
+                                            <div
                                                 className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                 style={{
                                                     width: '40px',
@@ -245,10 +245,10 @@ export default function WestMelbourneClient() {
                                             >
                                                 <Clock size={20} />
                                             </div>
-                                            <span style={{color: '#1e2247', fontWeight: '500'}}>24/7 Available Service</span>
+                                            <span style={{ color: '#1e2247', fontWeight: '500' }}>24/7 Available Service</span>
                                         </div>
                                         <div className="feature-item d-flex align-items-center mb-3">
-                                            <div 
+                                            <div
                                                 className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                 style={{
                                                     width: '40px',
@@ -261,10 +261,10 @@ export default function WestMelbourneClient() {
                                             >
                                                 <User size={20} />
                                             </div>
-                                            <span style={{color: '#1e2247', fontWeight: '500'}}>Licensed Professional Guards</span>
+                                            <span style={{ color: '#1e2247', fontWeight: '500' }}>Licensed Professional Guards</span>
                                         </div>
                                         <div className="feature-item d-flex align-items-center">
-                                            <div 
+                                            <div
                                                 className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                 style={{
                                                     width: '40px',
@@ -277,33 +277,33 @@ export default function WestMelbourneClient() {
                                             >
                                                 <Zap size={20} />
                                             </div>
-                                            <span style={{color: '#1e2247', fontWeight: '500'}}>Local Area Expertise</span>
+                                            <span style={{ color: '#1e2247', fontWeight: '500' }}>Local Area Expertise</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-6 order-1 order-lg-2">
                                 <div className="services-content ps-lg-4">
                                     <div className="section-header mb-5">
                                         <div className="subtitle mb-3">
-                                            <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                            <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                 OUR SERVICES
                                             </span>
                                         </div>
-                                        <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                        <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                             Security Services in West Melbourne
                                         </h2>
-                                        <p className="lead" style={{color: '#6c757d'}}>
+                                        <p className="lead" style={{ color: '#6c757d' }}>
                                             If you're in West Melbourne and looking for dependable security, you need more than just uniforms. You need licensed professionals who understand the area, respond quickly, and adapt to your specific needs.
                                         </p>
                                     </div>
-                                    
+
                                     {/* Expandable Service Cards */}
                                     <div className="services-accordion">
                                         {services.map((service, index) => (
                                             <div key={index} className="accordion-item mb-3">
-                                                <div 
+                                                <div
                                                     className="accordion-header p-4"
                                                     style={{
                                                         backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -317,7 +317,7 @@ export default function WestMelbourneClient() {
                                                 >
                                                     <div className="d-flex align-items-center justify-content-between">
                                                         <div className="d-flex align-items-center">
-                                                            <div 
+                                                            <div
                                                                 className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                 style={{
                                                                     width: '50px',
@@ -331,11 +331,11 @@ export default function WestMelbourneClient() {
                                                                 {service.iconSymbol}
                                                             </div>
                                                             <div>
-                                                                <h5 className="mb-0 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
+                                                                <h5 className="mb-0 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
                                                             </div>
                                                         </div>
                                                         <div className="expand-icon">
-                                                            <div 
+                                                            <div
                                                                 className="d-flex align-items-center justify-content-center"
                                                                 style={{
                                                                     width: '40px',
@@ -346,7 +346,7 @@ export default function WestMelbourneClient() {
                                                                     transition: 'all 0.3s ease'
                                                                 }}
                                                             >
-                                                                <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                     {activeService === index ? '−' : '+'}
                                                                 </span>
                                                             </div>
@@ -355,7 +355,7 @@ export default function WestMelbourneClient() {
                                                 </div>
 
                                                 {activeService === index && (
-                                                    <div 
+                                                    <div
                                                         className="accordion-content p-4"
                                                         style={{
                                                             backgroundColor: '#ffffff',
@@ -366,11 +366,11 @@ export default function WestMelbourneClient() {
                                                             animation: 'slideDown 0.3s ease'
                                                         }}
                                                     >
-                                                        <p className="mb-3" style={{color: '#6c757d', lineHeight: '1.6', fontSize: '0.95rem'}}>
+                                                        <p className="mb-3" style={{ color: '#6c757d', lineHeight: '1.6', fontSize: '0.95rem' }}>
                                                             {service.description}
                                                         </p>
                                                         <div className="service-details">
-                                                            <p className="mb-0" style={{color: '#495057', lineHeight: '1.7', fontSize: '0.9rem'}}>
+                                                            <p className="mb-0" style={{ color: '#495057', lineHeight: '1.7', fontSize: '0.9rem' }}>
                                                                 {service.details}
                                                             </p>
                                                         </div>
@@ -386,13 +386,13 @@ export default function WestMelbourneClient() {
                 </div>
 
                 {/*===== Threat Response Section =====*/}
-                <div className="threat-section section-padding" style={{background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)'}}>
+                <div className="threat-section section-padding" style={{ background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)' }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <div className="threat-content">
                                     <div className="subtitle mb-3">
-                                        <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                        <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                             <i className="bi bi-shield-exclamation me-2"></i>
                                             PROFESSIONAL HANDLING
                                         </span>
@@ -400,12 +400,12 @@ export default function WestMelbourneClient() {
                                     <h2 className="display-5 fw-bold mb-4 text-white">
                                         Why Security is a Priority in West Melbourne
                                     </h2>
-                                    <p className="lead text-white mb-4" style={{opacity: '0.9'}}>
+                                    <p className="lead text-white mb-4" style={{ opacity: '0.9' }}>
                                         West Melbourne is known for its diverse mix of residential, commercial, and industrial areas. These features create unique security challenges that require specialized local knowledge and rapid response capabilities.
                                     </p>
                                     <div className="threat-features">
                                         <div className="feature-item d-flex align-items-start mb-4">
-                                            <div 
+                                            <div
                                                 className="feature-icon me-3 d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style={{
                                                     width: '50px',
@@ -419,13 +419,13 @@ export default function WestMelbourneClient() {
                                             </div>
                                             <div>
                                                 <h5 className="text-white fw-bold mb-2">Diverse Area Challenges</h5>
-                                                <p className="text-white mb-0" style={{opacity: '0.9', lineHeight: '1.6'}}>
+                                                <p className="text-white mb-0" style={{ opacity: '0.9', lineHeight: '1.6' }}>
                                                     West Melbourne's mix of residential, commercial, and industrial areas creates unique security challenges requiring specialized local knowledge and rapid response capabilities.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className="feature-item d-flex align-items-start">
-                                            <div 
+                                            <div
                                                 className="feature-icon me-3 d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style={{
                                                     width: '50px',
@@ -439,7 +439,7 @@ export default function WestMelbourneClient() {
                                             </div>
                                             <div>
                                                 <h5 className="text-white fw-bold mb-2">Local Expertise</h5>
-                                                <p className="text-white mb-0" style={{opacity: '0.9', lineHeight: '1.6'}}>
+                                                <p className="text-white mb-0" style={{ opacity: '0.9', lineHeight: '1.6' }}>
                                                     Our team is familiar with West Melbourne's streets, landmarks, and common activity patterns, enabling proactive security measures and faster emergency response.
                                                 </p>
                                             </div>
@@ -449,7 +449,7 @@ export default function WestMelbourneClient() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="threat-image mt-5 mt-lg-0">
-                                    <div 
+                                    <div
                                         className="image-container position-relative"
                                         style={{
                                             borderRadius: '20px',
@@ -457,9 +457,9 @@ export default function WestMelbourneClient() {
                                             boxShadow: '0 25px 50px rgba(0,0,0,0.3)'
                                         }}
                                     >
-                                        <img 
-                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
-                                            alt="West Melbourne Security" 
+                                        <img
+                                            src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Educational%20Insitute%20Security%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp"
+                                            alt="West Melbourne Security"
                                             className="img-fluid"
                                             style={{
                                                 width: '100%',
@@ -475,20 +475,20 @@ export default function WestMelbourneClient() {
                 </div>
 
                 {/*===== Industries Section =====*/}
-                <div className="industries-section section-padding" style={{background: '#f8f9fa'}}>
+                <div className="industries-section section-padding" style={{ background: '#f8f9fa' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-5">
                                 <div className="subtitle mb-3">
-                                    <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                    <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                         <i className="bi bi-building me-2"></i>
                                         VERSATILE PROTECTION
                                     </span>
                                 </div>
-                                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                     Where We Provide Security in West Melbourne
                                 </h2>
-                                <p className="lead" style={{color: '#6c757d'}}>
+                                <p className="lead" style={{ color: '#6c757d' }}>
                                     Our security services are versatile and can be deployed across various locations in West Melbourne, providing professional protection where needed.
                                 </p>
                             </div>
@@ -503,7 +503,7 @@ export default function WestMelbourneClient() {
                                 { icon: <Calendar size={32} />, title: "Events & Functions", description: "Special events and gatherings" }
                             ].map((industry, index) => (
                                 <div key={index} className="col-lg-4 col-md-6">
-                                    <div 
+                                    <div
                                         className="industry-card h-100 position-relative"
                                         style={{
                                             backgroundColor: 'transparent',
@@ -518,7 +518,7 @@ export default function WestMelbourneClient() {
                                         }}
                                     >
                                         {/* Card container with unique design */}
-                                        <div 
+                                        <div
                                             className="position-relative h-100"
                                             style={{
                                                 background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
@@ -532,7 +532,7 @@ export default function WestMelbourneClient() {
                                             }}
                                         >
                                             {/* Animated background elements */}
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     top: '-100px',
@@ -545,7 +545,7 @@ export default function WestMelbourneClient() {
                                                     zIndex: '0'
                                                 }}
                                             ></div>
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     bottom: '-80px',
@@ -558,9 +558,9 @@ export default function WestMelbourneClient() {
                                                     zIndex: '0'
                                                 }}
                                             ></div>
-                                            
+
                                             {/* Icon with unique styling */}
-                                            <div 
+                                            <div
                                                 className="industry-icon mb-4 d-flex align-items-center justify-content-center mx-auto position-relative"
                                                 style={{
                                                     width: '100px',
@@ -575,14 +575,14 @@ export default function WestMelbourneClient() {
                                                 }}
                                             >
                                                 {industry.icon}
-                                                
-                                                
+
+
                                             </div>
-                                            
+
                                             {/* Content */}
-                                            <div className="position-relative" style={{zIndex: '2'}}>
-                                                <h5 
-                                                    className="fw-bold mb-3" 
+                                            <div className="position-relative" style={{ zIndex: '2' }}>
+                                                <h5
+                                                    className="fw-bold mb-3"
                                                     style={{
                                                         color: '#1e2247',
                                                         fontSize: '1.3rem',
@@ -592,8 +592,8 @@ export default function WestMelbourneClient() {
                                                 >
                                                     {industry.title}
                                                 </h5>
-                                                <p 
-                                                    className="mb-0" 
+                                                <p
+                                                    className="mb-0"
                                                     style={{
                                                         color: '#6c757d',
                                                         lineHeight: '1.6',
@@ -604,9 +604,9 @@ export default function WestMelbourneClient() {
                                                     {industry.description}
                                                 </p>
                                             </div>
-                                            
+
                                             {/* Decorative corner elements */}
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     top: '20px',
@@ -619,7 +619,7 @@ export default function WestMelbourneClient() {
                                                     zIndex: '1'
                                                 }}
                                             ></div>
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     bottom: '20px',
@@ -642,20 +642,20 @@ export default function WestMelbourneClient() {
 
 
                 {/*===== Key Benefits Section =====*/}
-                <div className="benefits-section section-padding" style={{background: '#ffffff'}}>
+                <div className="benefits-section section-padding" style={{ background: '#ffffff' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-5">
                                 <div className="subtitle mb-3">
-                                    <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                    <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                         <i className="bi bi-award me-2"></i>
                                         KEY BENEFITS
                                     </span>
                                 </div>
-                                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                     Why Choose Metro Guards for West Melbourne Security
                                 </h2>
-                                <p className="lead" style={{color: '#6c757d'}}>
+                                <p className="lead" style={{ color: '#6c757d' }}>
                                     Our local expertise and professional approach make us the preferred choice for security services in West Melbourne.
                                 </p>
                             </div>
@@ -672,106 +672,106 @@ export default function WestMelbourneClient() {
                                 const isBlue = index % 2 === 0; // Even index = blue, Odd = yellow
                                 const primaryColor = isBlue ? '#1e2247' : '#fdc51a';
                                 const secondaryColor = isBlue ? '#fdc51a' : '#1e2247';
-                                
-                                return (
-                                <div key={index} className="col-lg-4 col-md-6">
-                                    <div 
-                                        className={`benefit-card benefit-card-${isBlue ? 'blue' : 'yellow'}`}
-                                        style={{
-                                            height: '100%',
-                                            background: '#ffffff',
-                                            borderRadius: '12px',
-                                            padding: '40px 30px',
-                                            border: `2px solid ${isBlue ? '#1e2247' : '#fdc51a'}`,
-                                            transition: 'all 0.3s ease',
-                                            position: 'relative',
-                                            overflow: 'hidden',
-                                            cursor: 'pointer'
-                                        }}
-                                    >
-                                        {/* Top Color Bar */}
-                                        <div 
-                                            style={{
-                                                position: 'absolute',
-                                                top: 0,
-                                                left: 0,
-                                                right: 0,
-                                                height: '4px',
-                                                background: primaryColor
-                                            }}
-                                        ></div>
 
-                                        {/* Icon */}
-                                        <div 
-                                            className="benefit-icon-wrapper"
+                                return (
+                                    <div key={index} className="col-lg-4 col-md-6">
+                                        <div
+                                            className={`benefit-card benefit-card-${isBlue ? 'blue' : 'yellow'}`}
                                             style={{
-                                                width: '70px',
-                                                height: '70px',
-                                                background: primaryColor,
+                                                height: '100%',
+                                                background: '#ffffff',
                                                 borderRadius: '12px',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                margin: '0 auto 25px',
-                                                transition: 'all 0.3s ease'
+                                                padding: '40px 30px',
+                                                border: `2px solid ${isBlue ? '#1e2247' : '#fdc51a'}`,
+                                                transition: 'all 0.3s ease',
+                                                position: 'relative',
+                                                overflow: 'hidden',
+                                                cursor: 'pointer'
                                             }}
                                         >
-                                            <div 
-                                                className="benefit-icon"
+                                            {/* Top Color Bar */}
+                                            <div
                                                 style={{
-                                                    color: secondaryColor,
+                                                    position: 'absolute',
+                                                    top: 0,
+                                                    left: 0,
+                                                    right: 0,
+                                                    height: '4px',
+                                                    background: primaryColor
+                                                }}
+                                            ></div>
+
+                                            {/* Icon */}
+                                            <div
+                                                className="benefit-icon-wrapper"
+                                                style={{
+                                                    width: '70px',
+                                                    height: '70px',
+                                                    background: primaryColor,
+                                                    borderRadius: '12px',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
+                                                    margin: '0 auto 25px',
                                                     transition: 'all 0.3s ease'
                                                 }}
                                             >
-                                                {benefit.icon}
+                                                <div
+                                                    className="benefit-icon"
+                                                    style={{
+                                                        color: secondaryColor,
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        transition: 'all 0.3s ease'
+                                                    }}
+                                                >
+                                                    {benefit.icon}
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        {/* Content */}
-                                        <div className="text-center">
-                                            <h5 
-                                                className="benefit-title fw-bold mb-3"
-                                                style={{
-                                                    color: primaryColor,
-                                                    fontSize: '1.25rem',
-                                                    lineHeight: '1.4',
-                                                    fontFamily: 'satoshi, sans-serif',
-                                                    transition: 'all 0.3s ease'
-                                                }}
-                                            >
-                                                {benefit.title}
-                                            </h5>
-                                            <p 
-                                                className="benefit-desc mb-0"
-                                                style={{
-                                                    color: '#6c757d',
-                                                    lineHeight: '1.6',
-                                                    fontSize: '0.95rem',
-                                                    fontFamily: 'satoshi, sans-serif'
-                                                }}
-                                            >
-                                                {benefit.description}
-                                            </p>
-                                        </div>
+                                            {/* Content */}
+                                            <div className="text-center">
+                                                <h5
+                                                    className="benefit-title fw-bold mb-3"
+                                                    style={{
+                                                        color: primaryColor,
+                                                        fontSize: '1.25rem',
+                                                        lineHeight: '1.4',
+                                                        fontFamily: 'satoshi, sans-serif',
+                                                        transition: 'all 0.3s ease'
+                                                    }}
+                                                >
+                                                    {benefit.title}
+                                                </h5>
+                                                <p
+                                                    className="benefit-desc mb-0"
+                                                    style={{
+                                                        color: '#6c757d',
+                                                        lineHeight: '1.6',
+                                                        fontSize: '0.95rem',
+                                                        fontFamily: 'satoshi, sans-serif'
+                                                    }}
+                                                >
+                                                    {benefit.description}
+                                                </p>
+                                            </div>
 
-                                        {/* Bottom Accent Line */}
-                                        <div 
-                                            className="benefit-bottom-line"
-                                            style={{
-                                                position: 'absolute',
-                                                bottom: 0,
-                                                left: 0,
-                                                height: '3px',
-                                                width: '0',
-                                                background: secondaryColor,
-                                                transition: 'all 0.4s ease'
-                                            }}
-                                        ></div>
+                                            {/* Bottom Accent Line */}
+                                            <div
+                                                className="benefit-bottom-line"
+                                                style={{
+                                                    position: 'absolute',
+                                                    bottom: 0,
+                                                    left: 0,
+                                                    height: '3px',
+                                                    width: '0',
+                                                    background: secondaryColor,
+                                                    transition: 'all 0.4s ease'
+                                                }}
+                                            ></div>
+                                        </div>
                                     </div>
-                                </div>
                                 );
                             })}
                         </div>
@@ -779,20 +779,20 @@ export default function WestMelbourneClient() {
                 </div>
 
                 {/*===== FAQ Section =====*/}
-                <div className="faq-section section-padding" style={{background: '#f8f9fa'}}>
+                <div className="faq-section section-padding" style={{ background: '#f8f9fa' }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mb-5">
                                 <div className="subtitle mb-3">
-                                    <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                    <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                         <i className="bi bi-question-circle me-2"></i>
                                         FREQUENTLY ASKED
                                     </span>
                                 </div>
-                                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                     Frequently Asked Questions
                                 </h2>
-                                <p className="lead" style={{color: '#6c757d'}}>
+                                <p className="lead" style={{ color: '#6c757d' }}>
                                     Get answers to common questions about our security services in West Melbourne.
                                 </p>
                             </div>
@@ -802,7 +802,7 @@ export default function WestMelbourneClient() {
                                 <div className="faq-accordion">
                                     {faqData.map((faq, index) => (
                                         <div key={index} className="accordion-item mb-3">
-                                            <div 
+                                            <div
                                                 className="accordion-header p-4"
                                                 style={{
                                                     backgroundColor: activeFaq === index ? '#ffffff' : '#f8f9fa',
@@ -815,11 +815,11 @@ export default function WestMelbourneClient() {
                                                 onClick={() => toggleFaq(index)}
                                             >
                                                 <div className="d-flex align-items-center justify-content-between">
-                                                    <h5 className="mb-0 fw-bold" style={{color: '#1e2247'}}>
+                                                    <h5 className="mb-0 fw-bold" style={{ color: '#1e2247' }}>
                                                         {faq.question}
                                                     </h5>
                                                     <div className="expand-icon">
-                                                        <div 
+                                                        <div
                                                             className="d-flex align-items-center justify-content-center"
                                                             style={{
                                                                 width: '40px',
@@ -830,7 +830,7 @@ export default function WestMelbourneClient() {
                                                                 transition: 'all 0.3s ease'
                                                             }}
                                                         >
-                                                            <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                            <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                 {activeFaq === index ? '−' : '+'}
                                                             </span>
                                                         </div>
@@ -839,7 +839,7 @@ export default function WestMelbourneClient() {
                                             </div>
 
                                             {activeFaq === index && (
-                                                <div 
+                                                <div
                                                     className="accordion-content p-4"
                                                     style={{
                                                         backgroundColor: '#ffffff',
@@ -850,7 +850,7 @@ export default function WestMelbourneClient() {
                                                         animation: 'slideDown 0.3s ease'
                                                     }}
                                                 >
-                                                    <p className="mb-0" style={{color: '#495057', lineHeight: '1.7'}}>
+                                                    <p className="mb-0" style={{ color: '#495057', lineHeight: '1.7' }}>
                                                         {faq.answer}
                                                     </p>
                                                 </div>

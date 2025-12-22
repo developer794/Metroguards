@@ -34,7 +34,7 @@ export default function MobilePatrolSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -132,22 +132,22 @@ export default function MobilePatrolSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="MOBILE PATROL SECURITY GUARDS"
-                mainTitle="Mobile Patrol Security Guards in Melbourne" 
+                mainTitle="Mobile Patrol Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -158,40 +158,40 @@ export default function MobilePatrolSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Trained Mobile Patrol Security 
-                                            <span style={{color: '#fdc51a'}}>Melbourne 24/7</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            Trained Mobile Patrol Security
+                                            <span style={{ color: '#fdc51a' }}>Melbourne 24/7</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           Metro Guards provides professional mobile patrol security guards Melbourne businesses rely on to deter crime, monitor high-risk zones, and respond rapidly to alarms, trespassing, suspicious activity, and after-hours breaches. Our marked patrol vehicles operate across Melbourne’s CBD, industrial zones, commercial districts, and suburban business hubs, ensuring constant protection through day, night, and 24/7 operations.
-                                           Whether you manage a retail strip, warehouse district, construction site, multi-site operation, or vacant property, our mobile patrol security Melbourne offers a flexible, high-visibility security presence that strengthens safety and reduces risk before incidents can occur.
-                                           </p>
-                                        
+                                            Metro Guards provides professional mobile patrol security guards Melbourne businesses rely on to deter crime, monitor high-risk zones, and respond rapidly to alarms, trespassing, suspicious activity, and after-hours breaches. Our marked patrol vehicles operate across Melbourne’s CBD, industrial zones, commercial districts, and suburban business hubs, ensuring constant protection through day, night, and 24/7 operations.
+                                            Whether you manage a retail strip, warehouse district, construction site, multi-site operation, or vacant property, our mobile patrol security Melbourne offers a flexible, high-visibility security presence that strengthens safety and reduces risk before incidents can occur.
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -204,15 +204,15 @@ export default function MobilePatrolSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -233,16 +233,16 @@ export default function MobilePatrolSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -250,9 +250,9 @@ export default function MobilePatrolSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -261,9 +261,9 @@ export default function MobilePatrolSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -276,7 +276,7 @@ export default function MobilePatrolSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -352,26 +352,26 @@ export default function MobilePatrolSecurityPage() {
                                                 transform: 'perspective(1000px) rotateY(-5deg)',
                                                 transition: 'all 0.4s ease'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                                }}>
+                                                <img
+                                                    src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/5B83C27B-9BC1-4C81-9191-1A25F2C536FA_1_105_c.webp"
+                                                    alt="Professional Building Security Guards"
+                                                    className="img-fluid"
+                                                    style={{
+                                                        width: '100%',
                                                         height: '550px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
                                                 />
-                                                
+
                                                 {/* Image Overlay */}
                                                 <div style={{
                                                     position: 'absolute',
@@ -382,11 +382,11 @@ export default function MobilePatrolSecurityPage() {
                                                     background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
                                                     zIndex: 1
                                                 }}></div>
-                                </div>
+                                            </div>
 
                                             {/* Floating Stats Cards */}
-                                            
-                                           
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -396,8 +396,8 @@ export default function MobilePatrolSecurityPage() {
                                     <div className="services-content">
                                         {/* Header Section */}
                                         <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
+                                            <h2 style={{
+                                                color: "#1e2247",
                                                 fontSize: "3.2rem",
                                                 fontWeight: "800",
                                                 marginBottom: "25px",
@@ -406,24 +406,24 @@ export default function MobilePatrolSecurityPage() {
                                             }}>
                                                 Why Melbourne Businesses Need Mobile Patrol Security
                                             </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
+
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+
                                             }}>
-                                                Melbourne businesses face real after-hours risks that demand active, visible protection. Mobile patrols help stop trespassing mobile patrol response Melbourne, protect assets through vandalism prevention patrol Melbourne, and reduce crime with break-in prevention mobile patrol Melbourne in commercial, retail and industrial zones. 
+                                                Melbourne businesses face real after-hours risks that demand active, visible protection. Mobile patrols help stop trespassing mobile patrol response Melbourne, protect assets through vandalism prevention patrol Melbourne, and reduce crime with break-in prevention mobile patrol Melbourne in commercial, retail and industrial zones.
                                                 They also deter unauthorised entry patrol Melbourne, investigate suspicious activity mobile patrol Melbourne, and deliver essential after-hours site protection mobile patrol when buildings are empty. Vacant sites benefit from vacant property break-in patrol Melbourne, while construction operators rely on construction theft patrol Melbourne to protect tools and materials. Even carparks and logistics yards require vehicle theft patrol Melbourne, especially in high-risk areas.
                                                 With fast emergency patrol response Melbourne, mobile units safeguard your property at the exact times criminals strike most.
-                                                </p>
-                                            
-                                            
+                                            </p>
+
+
                                         </div>
 
-                                      
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
@@ -432,8 +432,8 @@ export default function MobilePatrolSecurityPage() {
 
 
 
-                     {/*=====  Section 2 =====*/}
-                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    {/*=====  Section 2 =====*/}
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-1 order-lg-1">
@@ -441,12 +441,12 @@ export default function MobilePatrolSecurityPage() {
                                         {/* Real-Time Proof Section - Accordion Style */}
                                         <div className="human-element-section section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     PROVEN SYSTEMS
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Mobile Patrol Services  <span style={{color: '#fdc51a'}}>Melbourne</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Mobile Patrol Services  <span style={{ color: '#fdc51a' }}>Melbourne</span>
                                             </h2>
                                             <p>Metro Guards delivers a full range of mobile patrol services Melbourne, including:</p>
                                             <div className="features-accordion">
@@ -477,93 +477,93 @@ export default function MobilePatrolSecurityPage() {
                                                         description: 'We\'ve patrolled Melbourne\'s commercial, industrial, and corporate districts for over a decade and a half, adapting routes as the city evolved, never missing a turn.'
                                                     }
                                                 ].map((feature, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div key={index} className="accordion-item mb-3">
+                                                        <div
                                                             className="accordion-header p-3"
-                                                        style={{
+                                                            style={{
                                                                 backgroundColor: activeFeature === index ? '#ffffff' : '#f8f9fa',
                                                                 borderRadius: activeFeature === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
+                                                                border: '1px solid #e9ecef',
+                                                                borderLeft: '4px solid #fdc51a',
+                                                                cursor: 'pointer',
+                                                                transition: 'all 0.3s ease'
+                                                            }}
                                                             onClick={() => toggleFeature(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
+                                                        >
+                                                            <div className="d-flex align-items-center justify-content-between">
+                                                                <div className="d-flex align-items-center">
+                                                                    <div
                                                                         className="feature-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
+                                                                        style={{
                                                                             width: '45px',
                                                                             height: '45px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
+                                                                            borderRadius: '10px',
+                                                                            backgroundColor: '#1e2247',
                                                                             color: '#fdc51a',
                                                                             fontSize: '1.2rem'
-                                                                    }}
-                                                                >
+                                                                        }}
+                                                                    >
                                                                         <i className={feature.icon}></i>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h6 className="mb-0 fw-bold" style={{ color: '#1e2247', fontSize: '1rem' }}>{feature.title}</h6>
+                                                                    </div>
                                                                 </div>
-                                                                <div>
-                                                                        <h6 className="mb-0 fw-bold" style={{color: '#1e2247', fontSize: '1rem'}}>{feature.title}</h6>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                style={{
+                                                                <div className="expand-icon">
+                                                                    <div
+                                                                        className="d-flex align-items-center justify-content-center"
+                                                                        style={{
                                                                             width: '35px',
                                                                             height: '35px',
                                                                             backgroundColor: activeFeature === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
+                                                                            borderRadius: '50%',
                                                                             color: activeFeature === index ? '#fdc51a' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                        <span style={{fontSize: '1.1rem', fontWeight: 'bold'}}>
+                                                                            transition: 'all 0.3s ease'
+                                                                        }}
+                                                                    >
+                                                                        <span style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>
                                                                             {activeFeature === index ? '−' : '+'}
-                                                                    </span>
-                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
                                                         {activeFeature === index && (
-                                                        <div 
+                                                            <div
                                                                 className="accordion-content p-3"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
-                                            <p style={{ 
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
+                                                                style={{
+                                                                    backgroundColor: '#ffffff',
+                                                                    borderRadius: '0 0 12px 12px',
+                                                                    border: '1px solid #e9ecef',
+                                                                    borderTop: 'none',
+                                                                    borderLeft: '4px solid #fdc51a',
+                                                                    animation: 'slideDown 0.3s ease'
+                                                                }}
+                                                            >
+                                                                <p style={{
+                                                                    color: '#6c757d',
+                                                                    lineHeight: '1.7',
+                                                                    margin: 0,
                                                                     fontSize: '0.95rem'
-                                                            }}>
+                                                                }}>
                                                                     {feature.description}
-                                                            </p>
+                                                                </p>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                                    )}
                                     </div>
-                                            ))}
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
                                 <div className="col-lg-6 order-2 order-lg-2">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Mobile%20Patrol%20Security/8A82EA6E-FBF3-4DB1-BAED-E85EB4C94AF4_1_105_c.webp"
-                                                alt="Mobile Patrol Security Guards" 
+                                                alt="Mobile Patrol Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -574,7 +574,7 @@ export default function MobilePatrolSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* The Work Behind the Wheel Section */}
                                         <div className="section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
@@ -597,8 +597,8 @@ export default function MobilePatrolSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                <h3 className="fw-bold mb-4" style={{color: '#1e2247', fontSize: '1.5rem'}}>
-                                                Skilled & Licensed Mobile Patrol O <span style={{color: '#fdc51a'}}>fficers Ready 24/7</span>
+                                                <h3 className="fw-bold mb-4" style={{ color: '#1e2247', fontSize: '1.5rem' }}>
+                                                    Skilled & Licensed Mobile Patrol O <span style={{ color: '#fdc51a' }}>fficers Ready 24/7</span>
                                                 </h3>
                                                 <p style={{
                                                     color: '#6c757d',
@@ -618,40 +618,40 @@ export default function MobilePatrolSecurityPage() {
                                                     paddingLeft: '0',
                                                     marginBottom: '1.5rem'
                                                 }}>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Trained mobile patrol security guards Melbourne</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Licensed mobile patrol security officers Melbourne</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Experienced mobile patrol guards Melbourne</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>First-aid trained mobile patrol officers</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Rapid response mobile patrol guards</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>High-visibility mobile patrol guards</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Vehicle patrol specialists Melbourne</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Professional mobile patrol officers Melbourne</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>24/7 mobile patrol guard teams</span>
                                                     </li>
                                                 </ul>
@@ -664,15 +664,15 @@ export default function MobilePatrolSecurityPage() {
                                                 }}>
                                                     Our officers are trained to recognise risks, secure properties quickly, and perform systematic patrol routines for maximum deterrence.
                                                 </p>
-                                                        </div>
-                                                </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    
+
                     {/*===== When Coverage Becomes Confidence Section =====*/}
                     <div className="coverage-confidence-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
@@ -680,7 +680,7 @@ export default function MobilePatrolSecurityPage() {
                         overflow: 'hidden'
                     }}>
                         {/* Background Pattern */}
-                                        <div style={{
+                        <div style={{
                             position: 'absolute',
                             top: 0,
                             left: 0,
@@ -703,7 +703,7 @@ export default function MobilePatrolSecurityPage() {
                                             gap: '12px',
                                             marginBottom: '25px'
                                         }}>
-                                            <Target size={24} style={{color: '#fdc51a'}} />
+                                            <Target size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 color: '#fdc51a',
@@ -715,8 +715,8 @@ export default function MobilePatrolSecurityPage() {
                                                 boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                             }}>
                                                 Strategic Planning
-                                                </span>
-                                            </div>
+                                            </span>
+                                        </div>
 
                                         <h2 style={{
                                             color: '#1e2247',
@@ -725,19 +725,19 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                           Industries That Rely on Mobile Patrol <span style={{color: '#fdc51a'}}>Security in Melbourne</span>
-                                            </h2>
+                                            Industries That Rely on Mobile Patrol <span style={{ color: '#fdc51a' }}>Security in Melbourne</span>
+                                        </h2>
 
-                                            <p style={{
-                                                color: '#6c757d',
+                                        <p style={{
+                                            color: '#6c757d',
                                             fontSize: '1.2rem',
-                                                lineHeight: '1.8',
+                                            lineHeight: '1.8',
                                             marginBottom: '25px'
-                                            }}>
+                                        }}>
                                             Melbourne’s commercial, industrial and retail sectors depend on mobile patrol security to protect sites that can’t maintain full-time guards. From warehouses and construction zones to office parks, shopping centres and council facilities, our patrol units provide fast deterrence, after-hours protection and ongoing risk reduction across every environment.
-                                            </p>
-                                        </div>
-                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
 
                                 <div className="col-lg-6">
                                     <div className="coverage-grid">
@@ -763,28 +763,28 @@ export default function MobilePatrolSecurityPage() {
                                                     <div style={{
                                                         background: '#ffffff',
                                                         borderRadius: '15px',
-                                            padding: '25px',
+                                                        padding: '25px',
                                                         border: '2px solid transparent',
                                                         transition: 'all 0.3s ease',
                                                         display: 'flex',
                                                         alignItems: 'center',
                                                         gap: '20px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.currentTarget.style.transform = 'translateX(10px)';
-                                                        e.currentTarget.style.boxShadow = '0 10px 30px rgba(253, 197, 26, 0.2)';
-                                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.currentTarget.style.transform = 'translateX(0)';
-                                                        e.currentTarget.style.boxShadow = 'none';
-                                                        e.currentTarget.style.borderColor = 'transparent';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.currentTarget.style.transform = 'translateX(10px)';
+                                                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(253, 197, 26, 0.2)';
+                                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.currentTarget.style.transform = 'translateX(0)';
+                                                            e.currentTarget.style.boxShadow = 'none';
+                                                            e.currentTarget.style.borderColor = 'transparent';
+                                                        }}>
                                                         <div style={{
                                                             width: '60px',
                                                             height: '60px',
                                                             borderRadius: '12px',
-                                                            background: index % 2 === 0 
+                                                            background: index % 2 === 0
                                                                 ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                                 : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                             display: 'flex',
@@ -792,13 +792,13 @@ export default function MobilePatrolSecurityPage() {
                                                             justifyContent: 'center',
                                                             color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
                                                             flexShrink: 0,
-                                                            boxShadow: index % 2 === 0 
+                                                            boxShadow: index % 2 === 0
                                                                 ? '0 8px 20px rgba(253, 197, 26, 0.3)'
                                                                 : '0 8px 20px rgba(30, 34, 71, 0.3)'
                                                         }}>
                                                             {item.icon}
-                                                                </div>
-                                                                <div>
+                                                        </div>
+                                                        <div>
                                                             <h4 style={{
                                                                 color: '#1e2247',
                                                                 fontSize: '1.3rem',
@@ -808,7 +808,7 @@ export default function MobilePatrolSecurityPage() {
                                                                 {item.title}
                                                             </h4>
                                                             <p style={{
-                                                                color: '#6c757d', 
+                                                                color: '#6c757d',
                                                                 fontSize: '1rem',
                                                                 margin: 0
                                                             }}>
@@ -821,35 +821,35 @@ export default function MobilePatrolSecurityPage() {
                                         </div>
                                     </div>
                                 </div>
-                                        </div>
+                            </div>
 
                             <div className="row mt-5">
                                 <div className="col-12">
-                                        <div style={{
-                                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.05))',
+                                    <div style={{
+                                        background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.05))',
                                         borderRadius: '20px',
                                         padding: '35px',
                                         border: '2px solid rgba(253, 197, 26, 0.2)',
                                         textAlign: 'center'
-                                        }}>
-                                            <p style={{
-                                                color: '#1e2247',
+                                    }}>
+                                        <p style={{
+                                            color: '#1e2247',
                                             fontSize: '1.3rem',
                                             lineHeight: '1.8',
-                                                margin: 0,
+                                            margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            Every environment has a rhythm, and our security patrol services are designed to <span style={{color: '#fdc51a'}}>move in tune with it, not against it</span>.
+                                            Every environment has a rhythm, and our security patrol services are designed to <span style={{ color: '#fdc51a' }}>move in tune with it, not against it</span>.
                                         </p>
                                         <p style={{
                                             color: '#6c757d',
                                             fontSize: '1.1rem',
                                             lineHeight: '1.8',
                                             margin: '15px 0 0 0',
-                                                fontStyle: 'italic'
-                                            }}>
-                                            This is the part of protection most never see — <strong style={{color: '#1e2247'}}>the coordination behind the calm</strong>.
-                                            </p>
+                                            fontStyle: 'italic'
+                                        }}>
+                                            This is the part of protection most never see — <strong style={{ color: '#1e2247' }}>the coordination behind the calm</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -887,7 +887,7 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '25px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Shuffle size={24} style={{color: '#fdc51a'}} />
+                                            <Shuffle size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -921,7 +921,7 @@ export default function MobilePatrolSecurityPage() {
                                         }}>
                                             Mobile patrols are among the most effective crime-prevention strategies, ideal for properties that cannot maintain static guards around the clock.
                                             Patrols protect sites from:
-                                            </p>
+                                        </p>
                                     </div>
 
                                     {/* Unpredictability Features */}
@@ -944,81 +944,81 @@ export default function MobilePatrolSecurityPage() {
                                             }
                                         ].map((feature, index) => (
                                             <div key={index} className="col-lg-4 col-md-6">
-                                            <div style={{
-                                                background: 'rgba(255, 255, 255, 0.05)',
-                                                borderRadius: '20px',
+                                                <div style={{
+                                                    background: 'rgba(255, 255, 255, 0.05)',
+                                                    borderRadius: '20px',
                                                     padding: '40px 30px',
-                                                height: '100%',
-                                                border: '1px solid rgba(253, 197, 26, 0.2)',
+                                                    height: '100%',
+                                                    border: '1px solid rgba(253, 197, 26, 0.2)',
                                                     backdropFilter: 'blur(10px)',
                                                     transition: 'all 0.3s ease'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-10px)';
-                                                    e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                            }}>
-                                                <div style={{
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(-10px)';
+                                                        e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(0)';
+                                                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                                    }}>
+                                                    <div style={{
                                                         width: '70px',
                                                         height: '70px',
                                                         borderRadius: '15px',
-                                                        background: index % 2 === 0 
+                                                        background: index % 2 === 0
                                                             ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                             : 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
                                                         margin: '0 auto 25px',
                                                         color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
-                                                        boxShadow: index % 2 === 0 
+                                                        boxShadow: index % 2 === 0
                                                             ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                             : '0 10px 25px rgba(30, 34, 71, 0.3)'
                                                     }}>
                                                         {feature.icon}
-                                                </div>
-                                                <h3 style={{
-                                                    color: '#ffffff',
+                                                    </div>
+                                                    <h3 style={{
+                                                        color: '#ffffff',
                                                         fontSize: '1.4rem',
-                                                    fontWeight: '700',
+                                                        fontWeight: '700',
                                                         marginBottom: '15px'
-                                                }}>
+                                                    }}>
                                                         {feature.title}
-                                                </h3>
-                                                <p style={{
+                                                    </h3>
+                                                    <p style={{
                                                         color: 'rgba(255, 255, 255, 0.85)',
                                                         fontSize: '1.05rem',
                                                         lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
+                                                        margin: 0
+                                                    }}>
                                                         {feature.description}
-                                                </p>
-                                            </div>
+                                                    </p>
+                                                </div>
                                             </div>
                                         ))}
-                                        </div>
+                                    </div>
 
                                     {/* Closing Statement */}
-                                            <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.15), rgba(255, 219, 92, 0.1))',
-                                                borderRadius: '20px',
-                                                padding: '40px',
+                                        borderRadius: '20px',
+                                        padding: '40px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
-                                                backdropFilter: 'blur(10px)'
-                                            }}>
-                                                <p style={{
+                                        backdropFilter: 'blur(10px)'
+                                    }}>
+                                        <p style={{
                                             color: '#ffffff',
                                             fontSize: '1.4rem',
-                                                    lineHeight: '1.8',
+                                            lineHeight: '1.8',
                                             margin: 0,
                                             fontWeight: '600'
-                                                }}>
-                                            This unpredictability is the <span style={{color: '#fdc51a'}}>invisible shield that deters before it defends</span> — protection that feels like <strong>presence, not pattern</strong>.
-                                                </p>
+                                        }}>
+                                            This unpredictability is the <span style={{ color: '#fdc51a' }}>invisible shield that deters before it defends</span> — protection that feels like <strong>presence, not pattern</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1055,7 +1055,7 @@ export default function MobilePatrolSecurityPage() {
                                             gap: '12px',
                                             marginBottom: '25px'
                                         }}>
-                                            <Award size={24} style={{color: '#fdc51a'}} />
+                                            <Award size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: '#fdc51a',
                                                 color: '#1e2247',
@@ -1077,7 +1077,7 @@ export default function MobilePatrolSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                           Metro’s Mobile Patrol <span style={{color: '#fdc51a'}}>Inspection Process</span>
+                                            Metro’s Mobile Patrol <span style={{ color: '#fdc51a' }}>Inspection Process</span>
                                         </h2>
 
                                         <p style={{
@@ -1086,12 +1086,12 @@ export default function MobilePatrolSecurityPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '25px'
                                         }}>
-                                            During every patrol, our officers conduct full perimeter inspections, check doors, windows and gates, and monitor all vehicle and pedestrian activity across the site. They follow up on alarm activations, verify hazards through CCTV cross-checks, and provide lock-up or open-up assistance where required. Each visit is documented with time-stamped digital reports and photos, giving you complete transparency and proof of service. 
-                                            </p>
+                                            During every patrol, our officers conduct full perimeter inspections, check doors, windows and gates, and monitor all vehicle and pedestrian activity across the site. They follow up on alarm activations, verify hazards through CCTV cross-checks, and provide lock-up or open-up assistance where required. Each visit is documented with time-stamped digital reports and photos, giving you complete transparency and proof of service.
+                                        </p>
 
-                                        
+
+                                    </div>
                                 </div>
-                            </div>
 
                                 <div className="col-lg-6">
                                     <div className="training-features">
@@ -1115,67 +1115,67 @@ export default function MobilePatrolSecurityPage() {
                                                 icon: <Users size={24} />,
                                                 title: 'Law Enforcement Liaison',
                                                 description: 'After-hours interaction and collaboration protocols'
-                                    }
-                                ].map((feature, index) => (
+                                            }
+                                        ].map((feature, index) => (
                                             <div key={index} style={{
                                                 background: index % 2 === 0 ? '#f8f9fa' : '#ffffff',
                                                 borderRadius: '15px',
                                                 padding: '25px',
                                                 marginBottom: '15px',
-                                            border: '2px solid transparent',
-                                            transition: 'all 0.3s ease',
+                                                border: '2px solid transparent',
+                                                transition: 'all 0.3s ease',
                                                 display: 'flex',
                                                 alignItems: 'flex-start',
                                                 gap: '20px'
-                                        }}
-                                        onMouseEnter={(e) => {
-                                                e.currentTarget.style.borderColor = '#fdc51a';
-                                                e.currentTarget.style.transform = 'translateX(10px)';
-                                                e.currentTarget.style.boxShadow = '0 10px 30px rgba(253, 197, 26, 0.15)';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.borderColor = 'transparent';
-                                                e.currentTarget.style.transform = 'translateX(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                        }}>
-                                            <div style={{
+                                            }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.borderColor = '#fdc51a';
+                                                    e.currentTarget.style.transform = 'translateX(10px)';
+                                                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(253, 197, 26, 0.15)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.borderColor = 'transparent';
+                                                    e.currentTarget.style.transform = 'translateX(0)';
+                                                    e.currentTarget.style.boxShadow = 'none';
+                                                }}>
+                                                <div style={{
                                                     width: '50px',
                                                     height: '50px',
                                                     borderRadius: '10px',
-                                                background: index % 2 === 0 
-                                                    ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
-                                                    : 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
+                                                    background: index % 2 === 0
+                                                        ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
+                                                        : 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
                                                     color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
                                                     flexShrink: 0,
-                                                boxShadow: index % 2 === 0 
+                                                    boxShadow: index % 2 === 0
                                                         ? '0 8px 20px rgba(253, 197, 26, 0.3)'
                                                         : '0 8px 20px rgba(30, 34, 71, 0.2)'
-                                            }}>
-                                                {feature.icon}
-                                            </div>
+                                                }}>
+                                                    {feature.icon}
+                                                </div>
                                                 <div>
                                                     <h4 style={{
-                                                color: '#1e2247',
+                                                        color: '#1e2247',
                                                         fontSize: '1.2rem',
-                                                fontWeight: '700',
+                                                        fontWeight: '700',
                                                         marginBottom: '8px'
-                                            }}>
-                                                {feature.title}
+                                                    }}>
+                                                        {feature.title}
                                                     </h4>
-                                            <p style={{
-                                                color: '#6c757d',
+                                                    <p style={{
+                                                        color: '#6c757d',
                                                         fontSize: '1rem',
                                                         lineHeight: '1.6',
-                                                margin: 0
-                                            }}>
-                                                {feature.description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
+                                                        margin: 0
+                                                    }}>
+                                                        {feature.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1201,8 +1201,8 @@ export default function MobilePatrolSecurityPage() {
                                             borderRadius: '20px',
                                             zIndex: 1
                                         }}></div>
-                                        
-                                        <div style={{position: 'relative', zIndex: 2}}>
+
+                                        <div style={{ position: 'relative', zIndex: 2 }}>
                                             <p style={{
                                                 color: '#fdc51a',
                                                 fontSize: '1.4rem',
@@ -1219,7 +1219,7 @@ export default function MobilePatrolSecurityPage() {
                                                 margin: 0,
                                                 fontStyle: 'italic'
                                             }}>
-                                                Every site visit, a piece of <strong style={{color: '#fdc51a'}}>Melbourne quietly kept safe</strong>.
+                                                Every site visit, a piece of <strong style={{ color: '#fdc51a' }}>Melbourne quietly kept safe</strong>.
                                             </p>
                                         </div>
                                     </div>
@@ -1289,10 +1289,10 @@ export default function MobilePatrolSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1302,9 +1302,9 @@ export default function MobilePatrolSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1312,7 +1312,7 @@ export default function MobilePatrolSecurityPage() {
                                                     letterSpacing: "1px",
                                                     boxShadow: "0 6px 20px rgba(30, 34, 71, 0.25)"
                                                 }}>
-                                                    <Shield size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                    <Shield size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                     Get Started Today
                                                 </span>
                                                 <div style={{
@@ -1322,7 +1322,7 @@ export default function MobilePatrolSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1331,9 +1331,9 @@ export default function MobilePatrolSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Mobile Patrol Security Guards Melbourne  <span style={{color: '#fdc51a'}}>You Can Rely On</span>
+                                                Mobile Patrol Security Guards Melbourne  <span style={{ color: '#fdc51a' }}>You Can Rely On</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1343,9 +1343,9 @@ export default function MobilePatrolSecurityPage() {
                                                 margin: '0 auto 30px'
                                             }}>
                                                 Metro Guards delivers dependable, fast and high-visibility patrols across Melbourne’s industrial, retail, commercial and residential sectors. Whether you need routine patrols, random checks, or emergency response, our teams are ready day and night.
-                                                </p>
-                                            
-                                            
+                                            </p>
+
+
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1366,18 +1366,18 @@ export default function MobilePatrolSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Request a Quote
                                                     </a>
@@ -1396,18 +1396,18 @@ export default function MobilePatrolSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1449,8 +1449,8 @@ export default function MobilePatrolSecurityPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <Shield size={20} style={{display: 'inline', marginRight: '8px', color: '#fdc51a'}} />
-                                                    <span style={{color: '#ffffff'}}>The world rests easier when someone's still awake, still moving, still watching over what matters most.</span>
+                                                    <Shield size={20} style={{ display: 'inline', marginRight: '8px', color: '#fdc51a' }} />
+                                                    <span style={{ color: '#ffffff' }}>The world rests easier when someone's still awake, still moving, still watching over what matters most.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1461,15 +1461,15 @@ export default function MobilePatrolSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                <FAQSectionDynamic 
+                <FAQSectionDynamic
                     faqs={[
                         {
                             question: "What do mobile patrol security guards do in Melbourne?",
@@ -1498,4 +1498,5 @@ export default function MobilePatrolSecurityPage() {
                     ]}
                 />
             </Layout>
-            </> ) }
+        </>)
+}

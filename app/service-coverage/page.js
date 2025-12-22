@@ -11,38 +11,38 @@ import Subscribe from "@/components/homepages/home1/Subscribe";
 export default function ServiceCoveragePage() {
     const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
+    async function handleSubmit(e) {
+        e.preventDefault();
+        setLoading(true);
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
 
-    try {
-      const res = await fetch("/api/contact-us", { method: "POST", body: formData });
-      const data = await res.json().catch(() => ({}));
+        try {
+            const res = await fetch("/api/contact-us", { method: "POST", body: formData });
+            const data = await res.json().catch(() => ({}));
 
-      if (!res.ok || !data?.success) {
-        throw new Error(data?.error || `Request failed: ${res.status}`);
-      }
+            if (!res.ok || !data?.success) {
+                throw new Error(data?.error || `Request failed: ${res.status}`);
+            }
 
-      toast.success("Message sent successfully!");
-      form.reset();
-    } catch (err) {
-      toast.error(err.message || "Network error. Please try again.");
-      console.error(err);
-    } finally {
-      setLoading(false);
+            toast.success("Message sent successfully!");
+            form.reset();
+        } catch (err) {
+            toast.error(err.message || "Network error. Please try again.");
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
     }
-  }
     return (
         <>
-        <ToastContainer position="bottom-right" autoClose={3000} />
+            <ToastContainer position="bottom-right" autoClose={3000} />
             <Layout headerStyle={1} footerStyle={1} headTitle="Service Coverage - Metropolitan Guards Security Services" breadcrumbTitle="Service Coverage" mainTitle="Service Coverage" subtitle="Areas we service across Melbourne, Sydney and surrounding regions." backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/250DB2AD-5550-45A8-A9FE-940905978EFD_1_105_c.webp">
                 <div>
                     {/*===== Elegant Classic Hero Section =====*/}
-                    <div className="classic-hero section-padding" style={{ 
-                        background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)', 
+                    <div className="classic-hero section-padding" style={{
+                        background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
                         borderBottom: '2px solid #eceff3',
                         position: 'relative',
                         overflow: 'hidden'
@@ -68,7 +68,7 @@ export default function ServiceCoveragePage() {
                             borderRadius: '50%',
                             zIndex: '1'
                         }}></div>
-                        
+
                         <div className="container" style={{ position: 'relative', zIndex: '2' }}>
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
@@ -88,16 +88,16 @@ export default function ServiceCoveragePage() {
                                             marginBottom: '25px',
                                             border: '1px solid rgba(253, 197, 26, 0.2)'
                                         }}>
-                                            <i className="bi bi-shield-check" style={{ 
-                                                color: '#fdc51a', 
+                                            <i className="bi bi-shield-check" style={{
+                                                color: '#fdc51a',
                                                 marginRight: '8px',
                                                 fontSize: '1.1rem'
                                             }}></i>
-                                                Comprehensive Protection
+                                            Comprehensive Protection
                                         </div>
 
                                         {/* Main Heading */}
-                                        <h1 style={{
+                                        <h2 style={{
                                             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
                                             fontWeight: '700',
                                             color: '#1e2247',
@@ -109,7 +109,7 @@ export default function ServiceCoveragePage() {
                                                 color: '#fdc51a',
                                                 position: 'relative'
                                             }}>Service Coverage</span>
-                                        </h1>
+                                        </h2>
 
                                         {/* Subheading */}
                                         <div style={{
@@ -143,9 +143,9 @@ export default function ServiceCoveragePage() {
                                         </div>
 
                                         {/* Service Highlights */}
-                                        <div className="service-highlights" style={{ 
-                                            display: 'flex', 
-                                            gap: '20px', 
+                                        <div className="service-highlights" style={{
+                                            display: 'flex',
+                                            gap: '20px',
                                             marginBottom: '35px',
                                             flexWrap: 'wrap'
                                         }}>
@@ -157,12 +157,12 @@ export default function ServiceCoveragePage() {
                                                 borderRadius: '20px',
                                                 border: '1px solid rgba(30, 34, 71, 0.1)'
                                             }}>
-                                                <i className="bi bi-check-circle-fill" style={{ 
-                                                    color: '#fdc51a', 
-                                                    marginRight: '8px' 
+                                                <i className="bi bi-check-circle-fill" style={{
+                                                    color: '#fdc51a',
+                                                    marginRight: '8px'
                                                 }}></i>
-                                                <span style={{ 
-                                                    fontSize: '0.9rem', 
+                                                <span style={{
+                                                    fontSize: '0.9rem',
                                                     color: '#1e2247',
                                                     fontWeight: '500'
                                                 }}>24/7 Availability</span>
@@ -175,12 +175,12 @@ export default function ServiceCoveragePage() {
                                                 borderRadius: '20px',
                                                 border: '1px solid rgba(30, 34, 71, 0.1)'
                                             }}>
-                                                <i className="bi bi-geo-alt-fill" style={{ 
-                                                    color: '#fdc51a', 
-                                                    marginRight: '8px' 
+                                                <i className="bi bi-geo-alt-fill" style={{
+                                                    color: '#fdc51a',
+                                                    marginRight: '8px'
                                                 }}></i>
-                                                <span style={{ 
-                                                    fontSize: '0.9rem', 
+                                                <span style={{
+                                                    fontSize: '0.9rem',
                                                     color: '#1e2247',
                                                     fontWeight: '500'
                                                 }}>Rapid Response</span>
@@ -193,12 +193,12 @@ export default function ServiceCoveragePage() {
                                                 borderRadius: '20px',
                                                 border: '1px solid rgba(30, 34, 71, 0.1)'
                                             }}>
-                                                <i className="bi bi-shield-check" style={{ 
-                                                    color: '#1e2247', 
-                                                    marginRight: '8px' 
+                                                <i className="bi bi-shield-check" style={{
+                                                    color: '#1e2247',
+                                                    marginRight: '8px'
                                                 }}></i>
-                                                <span style={{ 
-                                                    fontSize: '0.9rem', 
+                                                <span style={{
+                                                    fontSize: '0.9rem',
                                                     color: '#1e2247',
                                                     fontWeight: '500'
                                                 }}>Licensed Guards</span>
@@ -207,16 +207,16 @@ export default function ServiceCoveragePage() {
 
                                         {/* Action Buttons */}
                                         <div className="btn-area" style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-                                                <a 
-                                                    href="#coverage-map" 
+                                            <a
+                                                href="#coverage-map"
                                                 className="btn px-4 py-3"
-                                                    style={{
-                                                        backgroundColor: '#1e2247',
+                                                style={{
+                                                    backgroundColor: '#1e2247',
                                                     color: 'white',
                                                     border: '2px solid #1e2247',
                                                     borderRadius: '8px',
-                                                        textDecoration: 'none',
-                                                        fontWeight: '600',
+                                                    textDecoration: 'none',
+                                                    fontWeight: '600',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     letterSpacing: '0.5px',
@@ -233,17 +233,17 @@ export default function ServiceCoveragePage() {
                                                 }}
                                             >
                                                 <i className="bi bi-map me-2"></i>VIEW COVERAGE MAP
-                                                </a>
-                                                <a 
-                                                    href="/contacts" 
+                                            </a>
+                                            <a
+                                                href="/contacts"
                                                 className="btn px-4 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: 'transparent',
                                                     color: '#1e2247',
                                                     border: '2px solid #1e2247',
                                                     borderRadius: '8px',
-                                                        textDecoration: 'none',
-                                                        fontWeight: '600',
+                                                    textDecoration: 'none',
+                                                    fontWeight: '600',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
                                                     letterSpacing: '0.5px',
@@ -259,13 +259,13 @@ export default function ServiceCoveragePage() {
                                                 }}
                                             >
                                                 <i className="bi bi-telephone me-2"></i>CONTACT US
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
-                                    <div className="hero-visual" data-aos="fade-left" style={{ 
+                                    <div className="hero-visual" data-aos="fade-left" style={{
                                         position: 'relative',
                                         paddingLeft: '30px'
                                     }}>
@@ -277,8 +277,8 @@ export default function ServiceCoveragePage() {
                                             border: '3px solid #ffffff',
                                             boxShadow: '0 25px 50px rgba(30, 34, 71, 0.15)'
                                         }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Uniformed%20&%20Covert%20Secuirty%20Guards/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp"
                                                 alt="Security Service Coverage Map"
                                                 style={{
                                                     width: '100%',
@@ -286,7 +286,7 @@ export default function ServiceCoveragePage() {
                                                     display: 'block'
                                                 }}
                                             />
-                                            
+
                                             {/* Image Overlay */}
                                             <div style={{
                                                 position: 'absolute',
@@ -297,15 +297,15 @@ export default function ServiceCoveragePage() {
                                                 padding: '30px 25px 25px',
                                                 color: 'white'
                                             }}>
-                                                <h4 style={{ 
-                                                    margin: '0 0 8px 0', 
+                                                <h4 style={{
+                                                    margin: '0 0 8px 0',
                                                     fontSize: '1.3rem',
                                                     fontWeight: '600'
                                                 }}>
                                                     Wide Coverage Area
                                                 </h4>
-                                                <p style={{ 
-                                                    margin: '0', 
+                                                <p style={{
+                                                    margin: '0',
                                                     fontSize: '0.95rem',
                                                     opacity: '0.9'
                                                 }}>
@@ -328,14 +328,14 @@ export default function ServiceCoveragePage() {
                                             zIndex: '3'
                                         }}>
                                             <div style={{ textAlign: 'center' }}>
-                                                <div style={{ 
-                                                    fontSize: '1.8rem', 
-                                                    fontWeight: '700', 
+                                                <div style={{
+                                                    fontSize: '1.8rem',
+                                                    fontWeight: '700',
                                                     color: '#fdc51a',
                                                     lineHeight: '1'
                                                 }}>50+</div>
-                                                <div style={{ 
-                                                    fontSize: '0.8rem', 
+                                                <div style={{
+                                                    fontSize: '0.8rem',
                                                     textTransform: 'uppercase',
                                                     letterSpacing: '0.5px',
                                                     opacity: '0.9'
@@ -349,8 +349,8 @@ export default function ServiceCoveragePage() {
                     </div>
 
                     {/*===== Enhanced Coverage Map Section =====*/}
-                    <div id="coverage-map" className="map-section section-padding" style={{ 
-                        background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)', 
+                    <div id="coverage-map" className="map-section section-padding" style={{
+                        background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
                         borderTop: '1px solid #eceff3',
                         position: 'relative',
                         overflow: 'hidden'
@@ -385,8 +385,8 @@ export default function ServiceCoveragePage() {
                                             marginBottom: '20px',
                                             border: '1px solid rgba(253, 197, 26, 0.2)'
                                         }}>
-                                            <i className="bi bi-pin-map" style={{ 
-                                                color: '#fdc51a', 
+                                            <i className="bi bi-pin-map" style={{
+                                                color: '#fdc51a',
                                                 marginRight: '8px',
                                                 fontSize: '1rem'
                                             }}></i>
@@ -453,9 +453,9 @@ export default function ServiceCoveragePage() {
                                                     margin: '0 auto 15px',
                                                     boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                                 }}>
-                                                    <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#ffffff', 
-                                                        fontSize: '1.8rem' 
+                                                    <i className="bi bi-geo-alt-fill" style={{
+                                                        color: '#ffffff',
+                                                        fontSize: '1.8rem'
                                                     }}></i>
                                                 </div>
                                                 <h3 style={{
@@ -532,7 +532,7 @@ export default function ServiceCoveragePage() {
                                             </div>
 
                                             {/* Stats Footer */}
-                                            <div className="card-footer mt-4 pt-3" style={{ 
+                                            <div className="card-footer mt-4 pt-3" style={{
                                                 borderTop: '1px solid rgba(253, 197, 26, 0.1)',
                                                 textAlign: 'center'
                                             }}>
@@ -542,13 +542,13 @@ export default function ServiceCoveragePage() {
                                                     alignItems: 'center'
                                                 }}>
                                                     <div>
-                                                        <div style={{ 
-                                                            fontSize: '1.5rem', 
-                                                            fontWeight: '700', 
-                                                            color: '#fdc51a' 
+                                                        <div style={{
+                                                            fontSize: '1.5rem',
+                                                            fontWeight: '700',
+                                                            color: '#fdc51a'
                                                         }}>29</div>
-                                                        <div style={{ 
-                                                            fontSize: '0.8rem', 
+                                                        <div style={{
+                                                            fontSize: '0.8rem',
                                                             color: '#6c757d',
                                                             textTransform: 'uppercase',
                                                             letterSpacing: '0.5px'
@@ -560,13 +560,13 @@ export default function ServiceCoveragePage() {
                                                         background: 'rgba(253, 197, 26, 0.2)'
                                                     }}></div>
                                                     <div>
-                                                        <div style={{ 
-                                                            fontSize: '1.5rem', 
-                                                            fontWeight: '700', 
-                                                            color: '#fdc51a' 
+                                                        <div style={{
+                                                            fontSize: '1.5rem',
+                                                            fontWeight: '700',
+                                                            color: '#fdc51a'
                                                         }}>24/7</div>
-                                                        <div style={{ 
-                                                            fontSize: '0.8rem', 
+                                                        <div style={{
+                                                            fontSize: '0.8rem',
                                                             color: '#6c757d',
                                                             textTransform: 'uppercase',
                                                             letterSpacing: '0.5px'
@@ -615,9 +615,9 @@ export default function ServiceCoveragePage() {
                                                     margin: '0 auto 15px',
                                                     boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                                 }}>
-                                                    <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#ffffff', 
-                                                        fontSize: '1.8rem' 
+                                                    <i className="bi bi-geo-alt-fill" style={{
+                                                        color: '#ffffff',
+                                                        fontSize: '1.8rem'
                                                     }}></i>
                                                 </div>
                                                 <h3 style={{
@@ -695,7 +695,7 @@ export default function ServiceCoveragePage() {
                                             </div>
 
                                             {/* Stats Footer */}
-                                            <div className="card-footer mt-4 pt-3" style={{ 
+                                            <div className="card-footer mt-4 pt-3" style={{
                                                 borderTop: '1px solid rgba(30, 34, 71, 0.1)',
                                                 textAlign: 'center'
                                             }}>
@@ -705,13 +705,13 @@ export default function ServiceCoveragePage() {
                                                     alignItems: 'center'
                                                 }}>
                                                     <div>
-                                                        <div style={{ 
-                                                            fontSize: '1.5rem', 
-                                                            fontWeight: '700', 
-                                                            color: '#1e2247' 
+                                                        <div style={{
+                                                            fontSize: '1.5rem',
+                                                            fontWeight: '700',
+                                                            color: '#1e2247'
                                                         }}>28</div>
-                                                        <div style={{ 
-                                                            fontSize: '0.8rem', 
+                                                        <div style={{
+                                                            fontSize: '0.8rem',
                                                             color: '#6c757d',
                                                             textTransform: 'uppercase',
                                                             letterSpacing: '0.5px'
@@ -723,13 +723,13 @@ export default function ServiceCoveragePage() {
                                                         background: 'rgba(30, 34, 71, 0.2)'
                                                     }}></div>
                                                     <div>
-                                                        <div style={{ 
-                                                            fontSize: '1.5rem', 
-                                                            fontWeight: '700', 
-                                                            color: '#1e2247' 
+                                                        <div style={{
+                                                            fontSize: '1.5rem',
+                                                            fontWeight: '700',
+                                                            color: '#1e2247'
                                                         }}>24/7</div>
-                                                        <div style={{ 
-                                                            fontSize: '0.8rem', 
+                                                        <div style={{
+                                                            fontSize: '0.8rem',
                                                             color: '#6c757d',
                                                             textTransform: 'uppercase',
                                                             letterSpacing: '0.5px'
@@ -742,13 +742,13 @@ export default function ServiceCoveragePage() {
                                 </div>
                             </div>
 
-                            
+
                         </div>
                     </div>
 
                     {/*===== Enhanced Additional Areas Section =====*/}
-                    <div className="additional-areas section-padding" style={{ 
-                        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)', 
+                    <div className="additional-areas section-padding" style={{
+                        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
                         borderTop: '1px solid #eceff3',
                         position: 'relative',
                         overflow: 'hidden'
@@ -783,13 +783,13 @@ export default function ServiceCoveragePage() {
                                             marginBottom: '20px',
                                             border: '1px solid rgba(253, 197, 26, 0.2)'
                                         }}>
-                                            <i className="bi bi-geo-alt" style={{ 
-                                                color: '#fdc51a', 
+                                            <i className="bi bi-geo-alt" style={{
+                                                color: '#fdc51a',
                                                 marginRight: '8px',
                                                 fontSize: '1rem'
                                             }}></i>
                                             Extended Coverage
-                                    </div>
+                                        </div>
                                         <h2 style={{
                                             fontSize: 'clamp(2rem, 4vw, 3rem)',
                                             fontWeight: '700',
@@ -808,8 +808,8 @@ export default function ServiceCoveragePage() {
                                         }}>
                                             We provide premium security solutions across extended regions, ensuring comprehensive protection wherever you need it most.
                                         </p>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
 
                             {/* Service Areas Grid */}
@@ -839,9 +839,9 @@ export default function ServiceCoveragePage() {
                                                 margin: '0 auto 15px',
                                                 boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                             }}>
-                                                <i className="bi bi-building" style={{ 
-                                                    color: '#ffffff', 
-                                                    fontSize: '1.8rem' 
+                                                <i className="bi bi-building" style={{
+                                                    color: '#ffffff',
+                                                    fontSize: '1.8rem'
                                                 }}></i>
                                             </div>
                                             <h4 style={{
@@ -871,8 +871,8 @@ export default function ServiceCoveragePage() {
                                                     border: '1px solid rgba(253, 197, 26, 0.1)',
                                                     transition: 'all 0.2s ease'
                                                 }}>
-                                                    <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#fdc51a', 
+                                                    <i className="bi bi-geo-alt-fill" style={{
+                                                        color: '#fdc51a',
                                                         marginRight: '12px',
                                                         fontSize: '0.9rem'
                                                     }}></i>
@@ -881,7 +881,7 @@ export default function ServiceCoveragePage() {
                                                         fontWeight: '500',
                                                         fontSize: '0.95rem'
                                                     }}>{location}</span>
-                                            </li>
+                                                </li>
                                             ))}
                                         </ul>
 
@@ -924,9 +924,9 @@ export default function ServiceCoveragePage() {
                                                 margin: '0 auto 15px',
                                                 boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                             }}>
-                                                <i className="bi bi-buildings" style={{ 
-                                                    color: '#ffffff', 
-                                                    fontSize: '1.8rem' 
+                                                <i className="bi bi-buildings" style={{
+                                                    color: '#ffffff',
+                                                    fontSize: '1.8rem'
                                                 }}></i>
                                             </div>
                                             <h4 style={{
@@ -956,8 +956,8 @@ export default function ServiceCoveragePage() {
                                                     border: '1px solid rgba(30, 34, 71, 0.1)',
                                                     transition: 'all 0.2s ease'
                                                 }}>
-                                                    <i className="bi bi-geo-alt-fill" style={{ 
-                                                        color: '#1e2247', 
+                                                    <i className="bi bi-geo-alt-fill" style={{
+                                                        color: '#1e2247',
                                                         marginRight: '12px',
                                                         fontSize: '0.9rem'
                                                     }}></i>
@@ -966,7 +966,7 @@ export default function ServiceCoveragePage() {
                                                         fontWeight: '500',
                                                         fontSize: '0.95rem'
                                                     }}>{location}</span>
-                                            </li>
+                                                </li>
                                             ))}
                                         </ul>
 
@@ -1009,9 +1009,9 @@ export default function ServiceCoveragePage() {
                                                 margin: '0 auto 15px',
                                                 boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                             }}>
-                                                <i className="bi bi-stars" style={{ 
-                                                    color: '#1e2247', 
-                                                    fontSize: '1.8rem' 
+                                                <i className="bi bi-stars" style={{
+                                                    color: '#1e2247',
+                                                    fontSize: '1.8rem'
                                                 }}></i>
                                             </div>
                                             <h4 style={{
@@ -1029,7 +1029,7 @@ export default function ServiceCoveragePage() {
                                             }}></div>
                                         </div>
 
-                                        
+
 
                                         {/* Services List */}
                                         <ul className="list-unstyled" style={{ position: 'relative', zIndex: '2' }}>
@@ -1043,8 +1043,8 @@ export default function ServiceCoveragePage() {
                                                     border: '1px solid rgba(253, 197, 26, 0.1)',
                                                     transition: 'all 0.2s ease'
                                                 }}>
-                                                    <i className="bi bi-star-fill" style={{ 
-                                                        color: '#fdc51a', 
+                                                    <i className="bi bi-star-fill" style={{
+                                                        color: '#fdc51a',
                                                         marginRight: '12px',
                                                         fontSize: '0.9rem'
                                                     }}></i>
@@ -1053,7 +1053,7 @@ export default function ServiceCoveragePage() {
                                                         fontWeight: '500',
                                                         fontSize: '0.95rem'
                                                     }}>{service}</span>
-                                            </li>
+                                                </li>
                                             ))}
                                         </ul>
 
@@ -1072,12 +1072,12 @@ export default function ServiceCoveragePage() {
                                 </div>
                             </div>
 
-                            
+
                         </div>
                     </div>
 
                     {/*===== Enhanced Contact Form Section =====*/}
-                    <div id="contact-form" className="contact-section section-padding" style={{ 
+                    <div id="contact-form" className="contact-section section-padding" style={{
                         background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.05) 0%, rgba(30, 34, 71, 0.03) 50%, #f8f9fa 100%)',
                         borderTop: '1px solid #eceff3',
                         position: 'relative',
@@ -1113,8 +1113,8 @@ export default function ServiceCoveragePage() {
                                             marginBottom: '20px',
                                             border: '1px solid rgba(253, 197, 26, 0.2)'
                                         }}>
-                                            <i className="bi bi-chat-dots" style={{ 
-                                                color: '#fdc51a', 
+                                            <i className="bi bi-chat-dots" style={{
+                                                color: '#fdc51a',
                                                 marginRight: '8px',
                                                 fontSize: '1rem'
                                             }}></i>
@@ -1141,7 +1141,7 @@ export default function ServiceCoveragePage() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="row justify-content-center">
                                 <div className="col-lg-9">
                                     <div className="contact-form" data-aos="fade-up" data-aos-delay="200" style={{
@@ -1171,9 +1171,9 @@ export default function ServiceCoveragePage() {
                                                 margin: '0 auto 15px',
                                                 boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                             }}>
-                                                <i className="bi bi-envelope" style={{ 
-                                                    color: '#1e2247', 
-                                                    fontSize: '1.5rem' 
+                                                <i className="bi bi-envelope" style={{
+                                                    color: '#1e2247',
+                                                    fontSize: '1.5rem'
                                                 }}></i>
                                             </div>
                                             <h4 style={{
@@ -1189,298 +1189,298 @@ export default function ServiceCoveragePage() {
                                         </div>
                                         <form onSubmit={handleSubmit} noValidate>
                                             <div className="row">
-                                            {/* Name and Email */}
-                                            <div className="col-md-6 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="name" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-person" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Your Name <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
-                                                    </label>
-                                                    <input 
-                                                        type="text" 
-                                                        id="name" 
-                                                        name="name" 
-                                                        className="form-control"
-                                                        placeholder="Enter your full name"
-                                                        required
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa'
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-6 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="email" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-envelope" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Email Address <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
-                                                    </label>
-                                                    <input 
-                                                        type="email" 
-                                                        id="email" 
-                                                        name="email" 
-                                                        className="form-control"
-                                                        placeholder="your.email@example.com"
-                                                        required
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa'
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Phone and Location */}
-                                            <div className="col-md-6 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="phone" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-telephone" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Phone Number <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
-                                                    </label>
-                                                    <input 
-                                                        type="tel" 
-                                                        id="phone" 
-                                                        name="phone" 
-                                                        className="form-control"
-                                                        placeholder="+61 xxx xxx xxx"
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa'
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-6 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="location" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Property Location <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
-                                                    </label>
-                                                    <input 
-                                                        type="text" 
-                                                        id="location" 
-                                                        name="location" 
-                                                        className="form-control"
-                                                        placeholder="Enter property address or suburb"
-                                                        required
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa'
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Service Type */}
-                                            <div className="col-12 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="service" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-shield-check" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Service Type <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
-                                                    </label>
-                                                    <select 
-                                                        id="service" 
-                                                        name="service" 
-                                                        className="form-select"
-                                                        required
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa'
-                                                        }}
-                                                    >
-                                                        <option value="">Please select a service</option>
-                                                        <option value="residential">Residential Security</option>
-                                                        <option value="commercial">Commercial Security</option>
-                                                        <option value="event-security">Event Security</option>
-                                                        <option value="mobile-patrol">Mobile Patrol Security</option>
-                                                        <option value="construction-site">Construction Site Security</option>
-                                                        <option value="k9-response">K9 Security Services</option>
-                                                        <option value="concierge">Concierge Security</option>
-                                                        <option value="alarm-response">Alarm Response Services</option>
-                                                        <option value="consultation">Security Consultation</option>
-                                                        <option value="other">Other Services</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            {/* Message */}
-                                            <div className="col-12 mb-4">
-                                                <div className="form-group">
-                                                    <label htmlFor="message" style={{
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        color: '#1e2247',
-                                                        fontWeight: '500',
-                                                        marginBottom: '8px',
-                                                        fontSize: '0.95rem'
-                                                    }}>
-                                                        <i className="bi bi-chat-dots" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
-                                                        Your Message <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
-                                                    </label>
-                                                    <textarea 
-                                                        id="message" 
-                                                        name="message" 
-                                                        className="form-control"
-                                                        rows="5"
-                                                        placeholder="Please describe your security requirements, property details, expected duration, and any specific concerns you may have..."
-                                                        required
-                                                        style={{
-                                                            border: '2px solid #eceff3',
-                                                            borderRadius: '8px',
-                                                            padding: '12px 15px',
-                                                            fontSize: '0.95rem',
-                                                            backgroundColor: '#fafafa',
-                                                            resize: 'vertical',
-                                                            minHeight: '120px'
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-
-                                            {/* Privacy Notice */}
-                                            <div className="col-12 mb-4">
-                                                <div style={{
-                                                    background: 'rgba(30, 34, 71, 0.05)',
-                                                    borderRadius: '10px',
-                                                    padding: '20px',
-                                                    border: '1px solid rgba(30, 34, 71, 0.1)'
-                                                }}>
-                                                    <div style={{
-                                                        display: 'flex',
-                                                        alignItems: 'flex-start',
-                                                        gap: '15px'
-                                                    }}>
-                                                        <div style={{
-                                                            width: '40px',
-                                                            height: '40px',
-                                                            background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
-                                                            borderRadius: '50%',
+                                                {/* Name and Email */}
+                                                <div className="col-md-6 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="name" style={{
                                                             display: 'flex',
                                                             alignItems: 'center',
-                                                            justifyContent: 'center',
-                                                            flexShrink: '0'
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
                                                         }}>
-                                                            <i className="bi bi-shield-check" style={{ color: '#ffffff', fontSize: '1.1rem' }}></i>
-                                                        </div>
-                                                        <div>
-                                                            <h6 style={{
-                                                                color: '#1e2247',
-                                                                fontWeight: '600',
-                                                                marginBottom: '5px',
-                                                                fontSize: '0.95rem'
-                                                            }}>Your Privacy is Protected</h6>
-                                                            <p style={{
-                                                                color: '#6c757d',
-                                                                margin: '0',
-                                                                fontSize: '0.85rem',
-                                                                lineHeight: '1.5'
+                                                            <i className="bi bi-person" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Your Name <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
+                                                        </label>
+                                                        <input
+                                                            type="text"
+                                                            id="name"
+                                                            name="name"
+                                                            className="form-control"
+                                                            placeholder="Enter your full name"
+                                                            required
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-6 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="email" style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
+                                                        }}>
+                                                            <i className="bi bi-envelope" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Email Address <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
+                                                        </label>
+                                                        <input
+                                                            type="email"
+                                                            id="email"
+                                                            name="email"
+                                                            className="form-control"
+                                                            placeholder="your.email@example.com"
+                                                            required
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                {/* Phone and Location */}
+                                                <div className="col-md-6 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="phone" style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
+                                                        }}>
+                                                            <i className="bi bi-telephone" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Phone Number <span style={{ color: '#6c757d', fontSize: '0.85rem' }}>(Optional)</span>
+                                                        </label>
+                                                        <input
+                                                            type="tel"
+                                                            id="phone"
+                                                            name="phone"
+                                                            className="form-control"
+                                                            placeholder="+61 xxx xxx xxx"
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-md-6 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="location" style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
+                                                        }}>
+                                                            <i className="bi bi-geo-alt" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Property Location <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
+                                                        </label>
+                                                        <input
+                                                            type="text"
+                                                            id="location"
+                                                            name="location"
+                                                            className="form-control"
+                                                            placeholder="Enter property address or suburb"
+                                                            required
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                {/* Service Type */}
+                                                <div className="col-12 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="service" style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
+                                                        }}>
+                                                            <i className="bi bi-shield-check" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Service Type <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
+                                                        </label>
+                                                        <select
+                                                            id="service"
+                                                            name="service"
+                                                            className="form-select"
+                                                            required
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa'
+                                                            }}
+                                                        >
+                                                            <option value="">Please select a service</option>
+                                                            <option value="residential">Residential Security</option>
+                                                            <option value="commercial">Commercial Security</option>
+                                                            <option value="event-security">Event Security</option>
+                                                            <option value="mobile-patrol">Mobile Patrol Security</option>
+                                                            <option value="construction-site">Construction Site Security</option>
+                                                            <option value="k9-response">K9 Security Services</option>
+                                                            <option value="concierge">Concierge Security</option>
+                                                            <option value="alarm-response">Alarm Response Services</option>
+                                                            <option value="consultation">Security Consultation</option>
+                                                            <option value="other">Other Services</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                {/* Message */}
+                                                <div className="col-12 mb-4">
+                                                    <div className="form-group">
+                                                        <label htmlFor="message" style={{
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            color: '#1e2247',
+                                                            fontWeight: '500',
+                                                            marginBottom: '8px',
+                                                            fontSize: '0.95rem'
+                                                        }}>
+                                                            <i className="bi bi-chat-dots" style={{ marginRight: '8px', color: '#fdc51a' }}></i>
+                                                            Your Message <span style={{ color: '#1e2247', marginLeft: '4px' }}>*</span>
+                                                        </label>
+                                                        <textarea
+                                                            id="message"
+                                                            name="message"
+                                                            className="form-control"
+                                                            rows="5"
+                                                            placeholder="Please describe your security requirements, property details, expected duration, and any specific concerns you may have..."
+                                                            required
+                                                            style={{
+                                                                border: '2px solid #eceff3',
+                                                                borderRadius: '8px',
+                                                                padding: '12px 15px',
+                                                                fontSize: '0.95rem',
+                                                                backgroundColor: '#fafafa',
+                                                                resize: 'vertical',
+                                                                minHeight: '120px'
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                {/* Privacy Notice */}
+                                                <div className="col-12 mb-4">
+                                                    <div style={{
+                                                        background: 'rgba(30, 34, 71, 0.05)',
+                                                        borderRadius: '10px',
+                                                        padding: '20px',
+                                                        border: '1px solid rgba(30, 34, 71, 0.1)'
+                                                    }}>
+                                                        <div style={{
+                                                            display: 'flex',
+                                                            alignItems: 'flex-start',
+                                                            gap: '15px'
+                                                        }}>
+                                                            <div style={{
+                                                                width: '40px',
+                                                                height: '40px',
+                                                                background: 'linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%)',
+                                                                borderRadius: '50%',
+                                                                display: 'flex',
+                                                                alignItems: 'center',
+                                                                justifyContent: 'center',
+                                                                flexShrink: '0'
                                                             }}>
-                                                                We respect your privacy and will never share your personal information with third parties. Your data is encrypted and securely stored.
-                                                            </p>
+                                                                <i className="bi bi-shield-check" style={{ color: '#ffffff', fontSize: '1.1rem' }}></i>
+                                                            </div>
+                                                            <div>
+                                                                <h6 style={{
+                                                                    color: '#1e2247',
+                                                                    fontWeight: '600',
+                                                                    marginBottom: '5px',
+                                                                    fontSize: '0.95rem'
+                                                                }}>Your Privacy is Protected</h6>
+                                                                <p style={{
+                                                                    color: '#6c757d',
+                                                                    margin: '0',
+                                                                    fontSize: '0.85rem',
+                                                                    lineHeight: '1.5'
+                                                                }}>
+                                                                    We respect your privacy and will never share your personal information with third parties. Your data is encrypted and securely stored.
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            {/* Submit Button */}
-                                            <div className="col-12 text-center">
-                                                <button
-                                                    type="submit"
-                                                    disabled={loading}
-                                                    className="btn"
-                                                    style={{
-                                                        background: loading ? '#6c757d' : 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
-                                                        color: '#ffffff',
-                                                        border: 'none',
-                                                        borderRadius: '10px',
-                                                        padding: '15px 40px',
-                                                        fontSize: '0.95rem',
-                                                        fontWeight: '600',
-                                                        textTransform: 'uppercase',
-                                                        letterSpacing: '0.5px',
-                                                        boxShadow: loading ? 'none' : '0 8px 25px rgba(30, 34, 71, 0.3)',
-                                                        cursor: loading ? 'not-allowed' : 'pointer',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        justifyContent: 'center',
-                                                        gap: '10px',
-                                                        margin: '0 auto',
-                                                        minWidth: '200px'
-                                                    }}
-                                                >
-                                                    {loading ? (
-                                                        <>
-                                                            <div style={{
-                                                                width: '16px',
-                                                                height: '16px',
-                                                                border: '2px solid transparent',
-                                                                borderTop: '2px solid #ffffff',
-                                                                borderRadius: '50%',
-                                                                animation: 'spin 1s linear infinite'
-                                                            }}></div>
-                                                            Sending Message...
-                                                        </>
-                                                    ) : (
-                                                        <>
-                                                            <i className="bi bi-send"></i>
-                                                            Send Message
-                                                        </>
-                                                    )}
-                                                </button>
-                                            </div>
+                                                {/* Submit Button */}
+                                                <div className="col-12 text-center">
+                                                    <button
+                                                        type="submit"
+                                                        disabled={loading}
+                                                        className="btn"
+                                                        style={{
+                                                            background: loading ? '#6c757d' : 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
+                                                            color: '#ffffff',
+                                                            border: 'none',
+                                                            borderRadius: '10px',
+                                                            padding: '15px 40px',
+                                                            fontSize: '0.95rem',
+                                                            fontWeight: '600',
+                                                            textTransform: 'uppercase',
+                                                            letterSpacing: '0.5px',
+                                                            boxShadow: loading ? 'none' : '0 8px 25px rgba(30, 34, 71, 0.3)',
+                                                            cursor: loading ? 'not-allowed' : 'pointer',
+                                                            display: 'flex',
+                                                            alignItems: 'center',
+                                                            justifyContent: 'center',
+                                                            gap: '10px',
+                                                            margin: '0 auto',
+                                                            minWidth: '200px'
+                                                        }}
+                                                    >
+                                                        {loading ? (
+                                                            <>
+                                                                <div style={{
+                                                                    width: '16px',
+                                                                    height: '16px',
+                                                                    border: '2px solid transparent',
+                                                                    borderTop: '2px solid #ffffff',
+                                                                    borderRadius: '50%',
+                                                                    animation: 'spin 1s linear infinite'
+                                                                }}></div>
+                                                                Sending Message...
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                <i className="bi bi-send"></i>
+                                                                Send Message
+                                                            </>
+                                                        )}
+                                                    </button>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -1490,8 +1490,8 @@ export default function ServiceCoveragePage() {
                     </div>
 
                     {/*===== Enhanced Assurance Section =====*/}
-                    <div className="assurance-section section-padding" style={{ 
-                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)', 
+                    <div className="assurance-section section-padding" style={{
+                        background: 'linear-gradient(135deg, #1e2247 0%, #1e2247 100%)',
                         position: 'relative',
                         overflow: 'hidden'
                     }}>
@@ -1547,13 +1547,13 @@ export default function ServiceCoveragePage() {
                                             marginBottom: '20px',
                                             border: '1px solid rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="bi bi-award" style={{ 
-                                                color: '#fdc51a', 
+                                            <i className="bi bi-award" style={{
+                                                color: '#fdc51a',
                                                 marginRight: '8px',
                                                 fontSize: '1rem'
                                             }}></i>
                                             Our Commitment
-                                    </div>
+                                        </div>
                                         <h2 style={{
                                             fontSize: 'clamp(2rem, 4vw, 3rem)',
                                             fontWeight: '700',
@@ -1572,9 +1572,9 @@ export default function ServiceCoveragePage() {
                                         }}>
                                             Wherever you need protection, we provide professional security services with unmatched reliability and expertise.
                                         </p>
+                                    </div>
                                 </div>
                             </div>
-                                        </div>
 
                             {/* Assurance Cards */}
                             <div className="row">
@@ -1622,8 +1622,8 @@ export default function ServiceCoveragePage() {
                                                         color: '#ffffff',
                                                         fontSize: '2rem'
                                                     }}></i>
-                                    </div>
-                                </div>
+                                                </div>
+                                            </div>
 
                                             {/* Content */}
                                             <h4 style={{
@@ -1633,7 +1633,7 @@ export default function ServiceCoveragePage() {
                                                 fontSize: '1.3rem',
                                                 fontFamily: 'serif'
                                             }}>Rapid Deployment</h4>
-                                            
+
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',
@@ -1664,10 +1664,10 @@ export default function ServiceCoveragePage() {
                                             }}>
                                                 <i className="bi bi-lightning-fill me-1"></i>
                                                 Fast Response
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                        </div>
 
                                 {/* Licensed Professionals Card */}
                                 <div className="col-lg-4 col-md-6 mb-4">
@@ -1724,7 +1724,7 @@ export default function ServiceCoveragePage() {
                                                 fontSize: '1.3rem',
                                                 fontFamily: 'serif'
                                             }}>Licensed Professionals</h4>
-                                            
+
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',
@@ -1815,7 +1815,7 @@ export default function ServiceCoveragePage() {
                                                 fontSize: '1.3rem',
                                                 fontFamily: 'serif'
                                             }}>24/7 Availability</h4>
-                                            
+
                                             <div style={{
                                                 width: '50px',
                                                 height: '3px',

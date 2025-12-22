@@ -5,19 +5,19 @@ export const metadata = {
   description:
     "Metro Guards delivers security officers, mobile patrols, & event protection in West-East Melbourne. Reliable 24/7 security for homes, businesses, and events.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/west-east-melbourne" 
   },
   openGraph: {
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
-    url: "https://metroguards.com.au/educational-institute-security-guards",
+    title: "Comprehensive Security & Patrols | West-East Melbourne | Metro Guards",
+    description: "Metro Guards delivers security officers, mobile patrols, & event protection in West-East Melbourne. Reliable 24/7 security for homes, businesses, and events.",
+    url: "https://metroguards.com.au/west-east-melbourne",
     siteName: "Metro Guards",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
+    title: "Comprehensive Security & Patrols | West-East Melbourne | Metro Guards",
+    description: "Metro Guards delivers security officers, mobile patrols, & event protection in West-East Melbourne. Reliable 24/7 security for homes, businesses, and events.",
   },
   robots: {
     index: true,

@@ -32,7 +32,7 @@ export default function RetailSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -135,17 +135,17 @@ export default function RetailSecurityPage() {
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -156,39 +156,41 @@ export default function RetailSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                           Discipline That Complements   <br />
-                                            <span style={{color: '#fdc51a'}}>Luxury</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            Professional Retail Security Guards Melbourne <br />
+                                            <span style={{ color: '#fdc51a' }}>Near Me</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Retail isn’t just defined by what people buy; it’s defined by how they feel the moment they walk in. The lighting, the silence, the confidence in every interaction, all of it relies on precision working quietly in the background. At Metro Guards, our retail security officers are part of that precision. They’re not there to dominate the space, but to preserve the experience your brand promises every day, calm, composed, and perfectly timed.
-                                            </p>
-                                        
+                                            Metro Guards provides trained retail security guards Melbourne to protect stores, staff, and customers while reducing shrinkage, preventing theft, and ensuring safe shopping environments.
+                                            We support standalone stores, shopping centres, and multi-site retailers across Melbourne CBD, Dandenong, Richmond, South Yarra, Chadstone, Footscray, and surrounding suburbs, available day, night, and 24/7.
+
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -201,15 +203,15 @@ export default function RetailSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -230,16 +232,16 @@ export default function RetailSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -247,9 +249,9 @@ export default function RetailSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0C19E4EB-7066-445A-B768-63EA66062EAA_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -258,9 +260,9 @@ export default function RetailSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -273,7 +275,7 @@ export default function RetailSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -291,18 +293,18 @@ export default function RetailSecurityPage() {
                             </div>
                         </div>
                     </div>
-                    
+
 
                     {/*=====  Section 2 =====*/}
-                    <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0CF93BF8-0B7B-43C2-B2FE-70B0F69C596A_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Retail%20Security%20Guard/0CF93BF8-0B7B-43C2-B2FE-70B0F69C596A_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -313,7 +315,7 @@ export default function RetailSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Evolution Section - Paragraph Style */}
                                         <div className="human-element-section section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
@@ -336,26 +338,25 @@ export default function RetailSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                The Role of Retail Security <span style={{color: '#fdc51a'}}>Has Evolved</span>
+                                                <h2 className="display-6 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                    Retail Security Services Melbourne |<span style={{ color: '#fdc51a' }}>Tailored for Your Store</span>
                                                 </h2>
                                                 <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8'
-                                                }}>
-                                                    Security once meant standing guard, visible, rigid, and reactive. But retail has changed.Today, the best retail security systems aren't seen; they're felt, in the calm of the space, the confidence of your staff, and the comfort of your customers.
+                                                }}>Metro Guards provides customised retail safety and loss-prevention solutions designed to match your store’s layout, stock type and customer flow.
+
                                                 </p>
-                                                
+
                                                 <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.1rem',
                                                     lineHeight: '1.8'
                                                 }}>
-                                                    At Metro Guards, our retail security guard services are built around that invisible assurance.Our officers don't interrupt the shopping experience, they enhance it. With quiet vigilance and composed professionalism, they read the room, anticipate movement, and act before problems take form.That's how retail security services become more than protection, they become <strong style={{color: '#1e2247'}}>part of the experience itself</strong>. It's security that sustains confidence, supports sales, and preserves the energy that makes Melbourne's retail spaces thrive.
                                                 </p>
-                                                
-                                                
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -365,51 +366,51 @@ export default function RetailSecurityPage() {
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     RETAIL EXCELLENCE
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            What We Bring to <span style={{color: '#fdc51a'}}>Every Retail</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                What We Bring to <span style={{ color: '#fdc51a' }}>Every Retail</span>
                                             </h2>
                                         </div>
-                                        
+
                                         {/* Interactive Service Accordion */}
                                         <div className="services-accordion">
                                             {[
                                                 {
                                                     icon: "fas fa-smile",
                                                     title: "Customer-First Security",
-                                                    
+
                                                     details: "Every visitor deserves to feel welcome first, safe second, both matter equally. Our officers greet, guide, and observe with warmth, ensuring protection never overshadows the experience."
                                                 },
                                                 {
                                                     icon: "fas fa-comments",
                                                     title: "Refined Communication",
-                                                    
+
                                                     details: "Security in retail settings is more than vigilance, it's tone, timing, and tact. Each officer is trained to de-escalate discreetly and communicate in a manner that reflects your brand's standards."
                                                 },
                                                 {
                                                     icon: "fas fa-eye",
                                                     title: "Vigilance Without Intrusion",
-                                                   
+
                                                     details: "Every moment on the floor is active observation, reading movement, anticipating potential issues before they become visible. Our officers act quietly, decisively, and without unnecessary display."
                                                 },
                                                 {
                                                     icon: "fas fa-sync",
                                                     title: "Consistency and Reliability",
-                                                    
+
                                                     details: "Across Chadstone, South Yarra, Cremorne, and Melbourne's CBD, our team performs to one rhythm, disciplined, punctual, and predictable. The same quality, the same demeanor, every time."
                                                 },
                                                 {
                                                     icon: "fas fa-clipboard-list",
                                                     title: "Trained in Brand Protocols",
-                                                    
+
                                                     details: "Each officer is briefed on store layout, brand tone, and service standards before assignment. They arrive prepared to represent, not just protect."
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div
                                                         className="accordion-header p-4"
                                                         style={{
                                                             backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -423,7 +424,7 @@ export default function RetailSecurityPage() {
                                                     >
                                                         <div className="d-flex align-items-center justify-content-between">
                                                             <div className="d-flex align-items-center">
-                                                                <div 
+                                                                <div
                                                                     className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '50px',
@@ -437,12 +438,12 @@ export default function RetailSecurityPage() {
                                                                     <i className={service.icon}></i>
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                                                    <p className="mb-0" style={{color: '#6c757d', fontSize: '0.9rem'}}>{service.summary}</p>
+                                                                    <h5 className="mb-1 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
+                                                                    <p className="mb-0" style={{ color: '#6c757d', fontSize: '0.9rem' }}>{service.summary}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="expand-icon">
-                                                                <div 
+                                                                <div
                                                                     className="d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '40px',
@@ -453,16 +454,16 @@ export default function RetailSecurityPage() {
                                                                         transition: 'all 0.3s ease'
                                                                     }}
                                                                 >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                         {activeService === index ? '−' : '+'}
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     {activeService === index && (
-                                                        <div 
+                                                        <div
                                                             className="accordion-content p-4"
                                                             style={{
                                                                 backgroundColor: '#ffffff',
@@ -474,8 +475,8 @@ export default function RetailSecurityPage() {
                                                             }}
                                                         >
                                                             <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
+                                                                color: '#6c757d',
+                                                                lineHeight: '1.7',
                                                                 margin: 0,
                                                                 fontSize: '1rem'
                                                             }}>
@@ -568,7 +569,7 @@ export default function RetailSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Standards That Hold <span style={{color: '#fdc51a'}}>Their Ground</span>
+                                        Standards That Hold <span style={{ color: '#fdc51a' }}>Their Ground</span>
                                     </h2>
 
                                     <p style={{
@@ -578,7 +579,7 @@ export default function RetailSecurityPage() {
                                         maxWidth: '750px',
                                         margin: '0 auto'
                                     }}>
-                                        We know what "high standard" actually means, it's not about appearance; <strong style={{color: '#fdc51a'}}>it's about follow-through</strong>.
+                                        We know what "high standard" actually means, it's not about appearance; <strong style={{ color: '#fdc51a' }}>it's about follow-through</strong>.
                                     </p>
                                 </div>
                             </div>
@@ -597,16 +598,16 @@ export default function RetailSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -618,7 +619,7 @@ export default function RetailSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-clock" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-clock" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -653,16 +654,16 @@ export default function RetailSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -674,7 +675,7 @@ export default function RetailSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-route" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-route" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -709,16 +710,16 @@ export default function RetailSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -730,7 +731,7 @@ export default function RetailSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-laptop" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-laptop" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -765,16 +766,16 @@ export default function RetailSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -786,7 +787,7 @@ export default function RetailSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-user-check" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-user-check" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -821,16 +822,16 @@ export default function RetailSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -842,7 +843,7 @@ export default function RetailSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-certificate" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-certificate" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -904,48 +905,48 @@ export default function RetailSecurityPage() {
                             {/* Section Header */}
                             <div className="row mb-5">
                                 <div className="col-lg-10 mx-auto text-center">
+                                    <div style={{
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        gap: "15px",
+                                        marginBottom: "30px"
+                                    }}>
                                         <div style={{
-                                            display: "inline-flex",
-                                            alignItems: "center",
-                                            gap: "15px",
-                                            marginBottom: "30px"
+                                            width: "50px",
+                                            height: "3px",
+                                            background: "linear-gradient(90deg, #1e2247, #2c3e50)",
+                                            borderRadius: "2px"
+                                        }}></div>
+                                        <span className="badge px-4 py-2" style={{
+                                            background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                            color: "#fdc51a",
+                                            fontWeight: 700,
+                                            fontSize: "0.85rem",
+                                            borderRadius: "30px",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "2px",
+                                            boxShadow: "0 8px 25px rgba(30, 34, 71, 0.3)"
                                         }}>
-                                            <div style={{
-                                                width: "50px",
-                                                height: "3px",
-                                                background: "linear-gradient(90deg, #1e2247, #2c3e50)",
-                                                borderRadius: "2px"
-                                            }}></div>
-                                            <span className="badge px-4 py-2" style={{
-                                                background: "linear-gradient(135deg, #1e2247, #2c3e50)",
-                                                color: "#fdc51a",
-                                                fontWeight: 700,
-                                                fontSize: "0.85rem",
-                                                borderRadius: "30px",
-                                                textTransform: "uppercase",
-                                                letterSpacing: "2px",
-                                                boxShadow: "0 8px 25px rgba(30, 34, 71, 0.3)"
-                                            }}>
                                             <i className="fas fa-chart-line me-2"></i>
                                             Immediate Impact
-                                            </span>
-                                            <div style={{
-                                                width: "50px",
-                                                height: "3px",
-                                                background: "linear-gradient(90deg, #2c3e50, #1e2247)",
-                                                borderRadius: "2px"
-                                            }}></div>
-                                        </div>
+                                        </span>
+                                        <div style={{
+                                            width: "50px",
+                                            height: "3px",
+                                            background: "linear-gradient(90deg, #2c3e50, #1e2247)",
+                                            borderRadius: "2px"
+                                        }}></div>
+                                    </div>
 
-                                        <h2 style={{
-                                            color: '#1e2247',
-                                            fontSize: '3rem',
-                                            fontWeight: '800',
-                                            marginBottom: '30px',
-                                            lineHeight: '1.2'
-                                        }}>
-                                        The Differences You Will Feel <span style={{color: '#fdc51a'}}>Right Away</span>
-                                        </h2>
+                                    <h2 style={{
+                                        color: '#1e2247',
+                                        fontSize: '3rem',
+                                        fontWeight: '800',
+                                        marginBottom: '30px',
+                                        lineHeight: '1.2'
+                                    }}>
+                                        The Differences You Will Feel <span style={{ color: '#fdc51a' }}>Right Away</span>
+                                    </h2>
                                 </div>
                             </div>
 
@@ -953,168 +954,168 @@ export default function RetailSecurityPage() {
                             <div className="row g-4">
                                 {/* Benefit 1 */}
                                 <div className="col-lg-4 col-md-6">
-                                            <div style={{
-                                                background: '#ffffff',
-                                                borderRadius: '20px',
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
                                         padding: '40px 35px',
-                                                height: '100%',
-                                                border: '2px solid rgba(253, 197, 26, 0.2)',
-                                                transition: 'all 0.3s ease',
-                                                textAlign: 'center'
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
-                                                e.currentTarget.style.borderColor = '#fdc51a';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                            }}>
-                                                <div style={{
-                                                    width: '65px',
-                                                    height: '65px',
-                                                    borderRadius: '15px',
-                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    margin: '0 auto 20px',
-                                                    boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
-                                                }}>
-                                            <i className="fas fa-shield-alt" style={{color: '#1e2247', fontSize: '28px'}}></i>
-                                                </div>
-
-                                                <h3 style={{
-                                                    color: '#1e2247',
-                                                    fontSize: '1.4rem',
-                                                    fontWeight: '700',
-                                                    marginBottom: '15px'
-                                                }}>
-                                            Safer Environments
-                                                </h3>
-
-                                                <p style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1rem',
-                                                    lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
-                                            Staff focus on service, not security gaps.
-                                                </p>
-                                            </div>
+                                        height: '100%',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        textAlign: 'center'
+                                    }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            margin: '0 auto 20px',
+                                            boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                        }}>
+                                            <i className="fas fa-shield-alt" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                         </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.4rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Safer Environments
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Staff focus on service, not security gaps.
+                                        </p>
+                                    </div>
+                                </div>
 
                                 {/* Benefit 2 */}
                                 <div className="col-lg-4 col-md-6">
-                                            <div style={{
-                                                background: '#ffffff',
-                                                borderRadius: '20px',
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
                                         padding: '40px 35px',
-                                                height: '100%',
-                                                border: '2px solid rgba(30, 34, 71, 0.2)',
-                                                transition: 'all 0.3s ease',
-                                                textAlign: 'center'
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
-                                                e.currentTarget.style.borderColor = '#1e2247';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                            }}>
-                                                <div style={{
-                                                    width: '65px',
-                                                    height: '65px',
-                                                    borderRadius: '15px',
-                                                    background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    margin: '0 auto 20px',
-                                                    boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
-                                                }}>
-                                            <i className="fas fa-chart-line" style={{color: '#fdc51a', fontSize: '28px'}}></i>
-                                                </div>
-
-                                                <h3 style={{
-                                                    color: '#1e2247',
-                                                    fontSize: '1.4rem',
-                                                    fontWeight: '700',
-                                                    marginBottom: '15px'
-                                                }}>
-                                            Less Shrinkage
-                                                </h3>
-
-                                                <p style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1rem',
-                                                    lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
-                                            Losses drop when attention rises.
-                                                </p>
-                                            </div>
+                                        height: '100%',
+                                        border: '2px solid rgba(30, 34, 71, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        textAlign: 'center'
+                                    }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            margin: '0 auto 20px',
+                                            boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
+                                        }}>
+                                            <i className="fas fa-chart-line" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                         </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.4rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Less Shrinkage
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Losses drop when attention rises.
+                                        </p>
+                                    </div>
+                                </div>
 
                                 {/* Benefit 3 */}
                                 <div className="col-lg-4 col-md-6">
-                                            <div style={{
-                                                background: '#ffffff',
-                                                borderRadius: '20px',
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
                                         padding: '40px 35px',
-                                                height: '100%',
-                                                border: '2px solid rgba(253, 197, 26, 0.2)',
-                                                transition: 'all 0.3s ease',
-                                                textAlign: 'center'
-                                            }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
-                                                e.currentTarget.style.borderColor = '#fdc51a';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                            }}>
-                                                <div style={{
-                                                    width: '65px',
-                                                    height: '65px',
-                                                    borderRadius: '15px',
-                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    margin: '0 auto 20px',
-                                                    boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
-                                                }}>
-                                                    <i className="fas fa-user-shield" style={{color: '#1e2247', fontSize: '28px'}}></i>
-                                                </div>
-
-                                                <h3 style={{
-                                                    color: '#1e2247',
-                                                    fontSize: '1.4rem',
-                                                    fontWeight: '700',
-                                                    marginBottom: '15px'
-                                                }}>
-                                            Reliable Presence
-                                                </h3>
-
-                                                <p style={{
-                                                    color: '#6c757d',
-                                                    fontSize: '1rem',
-                                                    lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
-                                            Guards who arrive on time, stay alert, and follow through.
-                                                </p>
+                                        height: '100%',
+                                        border: '2px solid rgba(253, 197, 26, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        textAlign: 'center'
+                                    }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
+                                        <div style={{
+                                            width: '65px',
+                                            height: '65px',
+                                            borderRadius: '15px',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            margin: '0 auto 20px',
+                                            boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                        }}>
+                                            <i className="fas fa-user-shield" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                         </div>
+
+                                        <h3 style={{
+                                            color: '#1e2247',
+                                            fontSize: '1.4rem',
+                                            fontWeight: '700',
+                                            marginBottom: '15px'
+                                        }}>
+                                            Reliable Presence
+                                        </h3>
+
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1rem',
+                                            lineHeight: '1.7',
+                                            margin: 0
+                                        }}>
+                                            Guards who arrive on time, stay alert, and follow through.
+                                        </p>
                                     </div>
+                                </div>
 
                                 {/* Benefit 4 */}
                                 <div className="col-lg-4 col-md-6">
@@ -1127,16 +1128,16 @@ export default function RetailSecurityPage() {
                                         transition: 'all 0.3s ease',
                                         textAlign: 'center'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '65px',
                                             height: '65px',
@@ -1148,7 +1149,7 @@ export default function RetailSecurityPage() {
                                             margin: '0 auto 20px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-eye" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                            <i className="fas fa-eye" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1168,8 +1169,8 @@ export default function RetailSecurityPage() {
                                         }}>
                                             You can verify every action, live.
                                         </p>
+                                    </div>
                                 </div>
-                            </div>
 
                                 {/* Benefit 5 */}
                                 <div className="col-lg-4 col-md-6">
@@ -1182,29 +1183,29 @@ export default function RetailSecurityPage() {
                                         transition: 'all 0.3s ease',
                                         textAlign: 'center'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '65px',
                                             height: '65px',
                                             borderRadius: '15px',
-                                                    background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
+                                            background: 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
                                             margin: '0 auto 20px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
-                                                }}>
-                                            <i className="fas fa-smile" style={{color: '#1e2247', fontSize: '28px'}}></i>
-                                                </div>
+                                        }}>
+                                            <i className="fas fa-smile" style={{ color: '#1e2247', fontSize: '28px' }}></i>
+                                        </div>
 
                                         <h3 style={{
                                             color: '#1e2247',
@@ -1215,14 +1216,14 @@ export default function RetailSecurityPage() {
                                             Better Customer Experience
                                         </h3>
 
-                                            <p style={{
+                                        <p style={{
                                             color: '#6c757d',
                                             fontSize: '1rem',
                                             lineHeight: '1.7',
-                                                margin: 0
-                                            }}>
+                                            margin: 0
+                                        }}>
                                             Security that supports confidence, not tension.
-                                            </p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1289,10 +1290,10 @@ export default function RetailSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1302,9 +1303,9 @@ export default function RetailSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1322,7 +1323,7 @@ export default function RetailSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1331,9 +1332,9 @@ export default function RetailSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Trusted Across Melbourne's <span style={{color: '#fdc51a'}}>Retail Landscape</span>
+                                                Trusted Across Melbourne's <span style={{ color: '#fdc51a' }}>Retail Landscape</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1342,9 +1343,9 @@ export default function RetailSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                From flagship stores in the CBD to luxury boutiques in Melbourne, our officers maintain a single promise: To <strong style={{color: '#1e2247'}}>protect the brand as carefully as the merchandise</strong>.
+                                                From flagship stores in the CBD to luxury boutiques in Melbourne, our officers maintain a single promise: To <strong style={{ color: '#1e2247' }}>protect the brand as carefully as the merchandise</strong>.
                                             </p>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.2rem',
@@ -1354,7 +1355,7 @@ export default function RetailSecurityPage() {
                                                 margin: '0 auto 40px',
                                                 fontStyle: 'italic'
                                             }}>
-                                                Every client we serve expects discretion, precision, and absolute reliability, and that's exactly what they receive, every shift. Because in retail, protection isn't a service. <strong style={{color: '#fdc51a'}}>It's a performance</strong>. And Metro Guards knows the choreography.
+                                                Every client we serve expects discretion, precision, and absolute reliability, and that's exactly what they receive, every shift. Because in retail, protection isn't a service. <strong style={{ color: '#fdc51a' }}>It's a performance</strong>. And Metro Guards knows the choreography.
                                             </p>
                                         </div>
 
@@ -1376,18 +1377,18 @@ export default function RetailSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get Your Free Quote
                                                     </a>
@@ -1406,18 +1407,18 @@ export default function RetailSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1459,8 +1460,8 @@ export default function RetailSecurityPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <i className="fas fa-shield-alt me-2" style={{color: '#fdc51a'}}></i>
-                                                    Metro Guards – <span style={{color: '#ffffff'}}>Where corporate security meets uncompromising discipline and proven results.</span>
+                                                    <i className="fas fa-shield-alt me-2" style={{ color: '#fdc51a' }}></i>
+                                                    Metro Guards – <span style={{ color: '#ffffff' }}>Where corporate security meets uncompromising discipline and proven results.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1471,13 +1472,14 @@ export default function RetailSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
             </Layout>
-            </> ) }
+        </>)
+}

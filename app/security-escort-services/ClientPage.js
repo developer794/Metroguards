@@ -34,7 +34,7 @@ export default function SecurityEscortPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -132,22 +132,22 @@ export default function SecurityEscortPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="SECURITY ESCORT SERVICES"
-                mainTitle="Security Escort Services Melbourne" 
+                mainTitle="Security Escort Services Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/D5291C45-935B-4A29-96B6-70E5C0EF353A_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -158,40 +158,43 @@ export default function SecurityEscortPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h2 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Professional  Escort Security Guards 
-                                            <span style={{color: '#fdc51a'}}>Melbourne Near Me</span>
+                                            Professional  Escort Security Guards
+                                            <span style={{ color: '#fdc51a' }}>Melbourne Near Me</span>
                                         </h2>
-                                        <p 
-                                            className="lead mb-4" 
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Metro Guards provides trusted security escort services Melbourne designed to protect individuals, staff members, executives, VIPs, and valuable goods during travel or movement through high-risk environments. Whether you require a personal security escort Melbourne, medical staff escort, lone worker escort, or executive escort security Melbourne, our trained officers ensure safe passage, situational awareness and discreet protection at all times.
-                                            We support travel across Melbourne CBD, Southbank, Richmond, Dandenong, Footscray, St Kilda, and all suburbs requiring safe accompaniment, day, night, or 24/7. Our escort security guards Melbourne are trained to protect against aggressive individuals, stalking threats, unsafe neighbourhoods and workplace harassment risks.
-                                            </p>
-                                        
+                                            Metro Guards provides trusted security escort services in Melbourne designed to protect logistics operations, staff members, high-value personnel, and valuable goods during travel or movement through high-risk environments. Whether you require a logistics escort Melbourne, lone worker escort, high-value asset escort, or safe-movement escort security Melbourne, our trained officers ensure secure transit, situational awareness and discreet protection at all times.
+
+
+                                            We support travel across Melbourne CBD, Southbank, Richmond, Dandenong, Footscray, St Kilda, and all suburbs requiring safe accompaniment, day, night, or 24/7. Our escort security guards Melbourne are trained to protect against aggressive individuals, route-based risks, unsafe neighbourhoods and workplace harassment threats.
+
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -204,15 +207,15 @@ export default function SecurityEscortPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -233,16 +236,16 @@ export default function SecurityEscortPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -250,9 +253,9 @@ export default function SecurityEscortPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/DF097D51-727E-4A2C-9D03-027909D6810E_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -261,9 +264,9 @@ export default function SecurityEscortPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -276,7 +279,7 @@ export default function SecurityEscortPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -296,8 +299,8 @@ export default function SecurityEscortPage() {
                     </div>
 
 
-                     {/*=====  Section 2 =====*/}
-                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    {/*=====  Section 2 =====*/}
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-1 order-lg-2">
@@ -305,14 +308,14 @@ export default function SecurityEscortPage() {
                                         {/* Real-Time Proof Section - Accordion Style */}
                                         <div className="human-element-section section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     ESCORT OPERATIONS
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Why Melbourne Relies on Metro Guards for <span style={{color: '#fdc51a'}}>Escort Security</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Why Melbourne Relies on Metro Guards for <span style={{ color: '#fdc51a' }}>Escort Security</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.15rem',
@@ -320,8 +323,8 @@ export default function SecurityEscortPage() {
                                                 marginBottom: '30px'
                                             }}>
                                                 Safety concerns during travel or movement can arise unexpectedly, especially for vulnerable individuals, staff working late, or VIPs navigating high-risk situations. Metro Guards provides reassurance through:
-                                                </p>
-                                            
+                                            </p>
+
                                             <ul style={{
                                                 listStyle: 'none',
                                                 color: '#6c757d',
@@ -330,28 +333,28 @@ export default function SecurityEscortPage() {
                                                 paddingLeft: '0',
                                                 marginBottom: '1.5rem'
                                             }}>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Protective movement for at-risk executives, professionals & staff</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Discreet escorts for lone workers & late-night travellers</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Security for valuable goods or sensitive documents</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Support for medical staff, nurses & healthcare professionals</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Response for stalking threats, domestic risks & aggressive individuals</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Trained escorts for unsafe neighbourhoods and unfamiliar routes</span>
                                                 </li>
                                             </ul>
@@ -365,16 +368,16 @@ export default function SecurityEscortPage() {
                                             }}>
                                                 Our goal is simple: keep you safe from departure to arrival.
                                             </p>
-                            </div>
-                        </div>
-                    </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Staff%20Escort%20Security/CCBD9C71-83AD-44D3-97FA-5FF6418F871C_1_105_c.webp"
-                                                alt="Mobile Patrol Security Guards" 
+                                                alt="Mobile Patrol Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -385,34 +388,34 @@ export default function SecurityEscortPage() {
                                                 }}
                                             />
                                         </div>
-                                        
-                                        
-                                                </div>
-                                            </div>
-                                        </div>
+
+
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    
+
                     {/*===== How Security Escort Operations Work Section =====*/}
                     <div className="escort-operations-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                                            position: 'relative',
+                        position: 'relative',
                         overflow: 'hidden'
-                                        }}>
+                    }}>
                         {/* Background Pattern */}
-                                            <div style={{
-                                                position: 'absolute',
-                                                top: 0,
-                                                left: 0,
-                                                right: 0,
-                                                bottom: 0,
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
                             backgroundImage: `
                                 radial-gradient(circle at 25% 25%, rgba(253, 197, 26, 0.1) 0%, transparent 50%),
                                 radial-gradient(circle at 75% 75%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)
                             `,
-                                                zIndex: 1
-                                            }}></div>
+                            zIndex: 1
+                        }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                             <div className="row">
@@ -425,7 +428,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Route size={24} style={{color: '#fdc51a'}} />
+                                            <Route size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -438,7 +441,7 @@ export default function SecurityEscortPage() {
                                             }}>
                                                 Coordinated Protocol
                                             </span>
-                                            <Route size={24} style={{color: '#fdc51a'}} />
+                                            <Route size={24} style={{ color: '#fdc51a' }} />
                                         </div>
 
                                         <h2 style={{
@@ -448,10 +451,10 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Security Escort Services Melbourne | <span style={{color: '#fdc51a'}}>Tailored to Every Situation</span>
+                                            Security Escort Services Melbourne | <span style={{ color: '#fdc51a' }}>Tailored to Every Situation</span>
                                         </h2>
 
-                                                <p style={{
+                                        <p style={{
                                             color: 'rgba(255, 255, 255, 0.9)',
                                             fontSize: '1.15rem',
                                             maxWidth: '900px',
@@ -497,21 +500,21 @@ export default function SecurityEscortPage() {
                                             backdropFilter: 'blur(10px)',
                                             transition: 'all 0.3s ease'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-10px)';
-                                            e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-                                            e.currentTarget.style.borderColor = '#fdc51a';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                        }}>
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                                e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
+                                                e.currentTarget.style.borderColor = '#fdc51a';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                            }}>
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 display: 'flex',
@@ -519,7 +522,7 @@ export default function SecurityEscortPage() {
                                                 justifyContent: 'center',
                                                 marginBottom: '25px',
                                                 color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
-                                                boxShadow: index % 2 === 0 
+                                                boxShadow: index % 2 === 0
                                                     ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : '0 10px 25px rgba(30, 34, 71, 0.3)'
                                             }}>
@@ -535,16 +538,16 @@ export default function SecurityEscortPage() {
                                                 {item.title}
                                             </h3>
 
-                                                            <p style={{
+                                            <p style={{
                                                 color: 'rgba(255, 255, 255, 0.85)',
                                                 fontSize: '1.05rem',
                                                 lineHeight: '1.7',
-                                                                margin: 0
-                                                            }}>
+                                                margin: 0
+                                            }}>
                                                 {item.description}
-                                                            </p>
-                                                        </div>
-                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
                                 ))}
                             </div>
 
@@ -565,13 +568,13 @@ export default function SecurityEscortPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            Whether it's guiding employees to vehicles after hours or escorting high-value cargo between industrial sites, every escort follows <span style={{color: '#fdc51a'}}>structure, not improvisation</span>.
+                                            Whether it's guiding employees to vehicles after hours or escorting high-value cargo between industrial sites, every escort follows <span style={{ color: '#fdc51a' }}>structure, not improvisation</span>.
                                         </p>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
                     {/*===== Field Discipline and Officer Capability Section =====*/}
                     <div className="field-discipline-section section-padding" style={{
@@ -580,7 +583,7 @@ export default function SecurityEscortPage() {
                         overflow: 'hidden'
                     }}>
                         {/* Background Pattern */}
-                                        <div style={{
+                        <div style={{
                             position: 'absolute',
                             top: 0,
                             left: 0,
@@ -604,7 +607,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Award size={24} style={{color: '#1e2247'}} />
+                                            <Award size={24} style={{ color: '#1e2247' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: '#fdc51a',
                                                 color: '#1e2247',
@@ -616,9 +619,9 @@ export default function SecurityEscortPage() {
                                                 boxShadow: '0 5px 15px rgba(253, 197, 26, 0.3)'
                                             }}>
                                                 Expert Training
-                                                </span>
-                                            <Award size={24} style={{color: '#1e2247'}} />
-                                            </div>
+                                            </span>
+                                            <Award size={24} style={{ color: '#1e2247' }} />
+                                        </div>
 
                                         <h2 style={{
                                             color: '#1e2247',
@@ -627,21 +630,21 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Advanced Escort Guard Training Built for <span style={{color: '#fdc51a'}}>Melbourne’s Real-World Risks</span>
-                                            </h2>
+                                            Advanced Escort Guard Training Built for <span style={{ color: '#fdc51a' }}>Melbourne’s Real-World Risks</span>
+                                        </h2>
 
-                                            <p style={{
-                                                color: '#6c757d',
+                                        <p style={{
+                                            color: '#6c757d',
                                             fontSize: '1.15rem',
                                             maxWidth: '900px',
                                             margin: '0 auto 50px',
                                             lineHeight: '1.8'
                                         }}>
                                             Our security escort officers are drawn from Metro Guards’ elite mobile patrol and close-protection division.
-                                            </p>
+                                        </p>
                                     </div>
-                                        </div>
-                                        </div>
+                                </div>
+                            </div>
 
                             {/* Capability Grid */}
                             <div className="row g-4 mb-5">
@@ -665,29 +668,29 @@ export default function SecurityEscortPage() {
                                         icon: <Shield size={32} />,
                                         title: 'De-escalation and incident containment',
                                         number: '04'
-                                                }
-                                            ].map((item, index) => (
+                                    }
+                                ].map((item, index) => (
                                     <div key={index} className="col-lg-6 col-md-6">
-                                                    <div style={{
-                                                        background: '#ffffff',
+                                        <div style={{
+                                            background: '#ffffff',
                                             borderRadius: '20px',
                                             padding: '35px',
-                                                        border: '2px solid transparent',
+                                            border: '2px solid transparent',
                                             boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
-                                                        transition: 'all 0.3s ease',
+                                            transition: 'all 0.3s ease',
                                             position: 'relative',
                                             overflow: 'hidden'
-                                                    }}
-                                                    onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-8px)';
-                                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                            e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.2)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                                        e.currentTarget.style.borderColor = 'transparent';
-                                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)';
-                                        }}>
+                                        }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-8px)';
+                                                e.currentTarget.style.borderColor = '#fdc51a';
+                                                e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.2)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.borderColor = 'transparent';
+                                                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)';
+                                            }}>
                                             {/* Number Badge */}
                                             <div style={{
                                                 position: 'absolute',
@@ -707,59 +710,59 @@ export default function SecurityEscortPage() {
                                                 {item.number}
                                             </div>
 
-                                            <div style={{display: 'flex', alignItems: 'flex-start', gap: '20px'}}>
-                                                        <div style={{
-                                                            width: '60px',
-                                                            height: '60px',
-                                                            borderRadius: '12px',
-                                                            background: index % 2 === 0 
+                                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                                                <div style={{
+                                                    width: '60px',
+                                                    height: '60px',
+                                                    borderRadius: '12px',
+                                                    background: index % 2 === 0
                                                         ? 'linear-gradient(135deg, #1e2247, #2c3e50)'
                                                         : 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
-                                                            display: 'flex',
-                                                            alignItems: 'center',
-                                                            justifyContent: 'center',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
                                                     color: index % 2 === 0 ? '#fdc51a' : '#1e2247',
-                                                            flexShrink: 0,
+                                                    flexShrink: 0,
                                                     boxShadow: '0 8px 20px rgba(0,0,0,0.1)'
-                                                        }}>
-                                                            {item.icon}
-                                                                </div>
+                                                }}>
+                                                    {item.icon}
+                                                </div>
 
-                                                                <div>
+                                                <div>
                                                     <h3 style={{
-                                                                color: '#1e2247',
-                                                                fontSize: '1.3rem',
-                                                                fontWeight: '700',
+                                                        color: '#1e2247',
+                                                        fontSize: '1.3rem',
+                                                        fontWeight: '700',
                                                         lineHeight: '1.4',
-                                                                margin: 0
-                                                            }}>
+                                                        margin: 0
+                                                    }}>
                                                         {item.title}
                                                     </h3>
                                                 </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ))}
+                                            </div>
                                         </div>
+                                    </div>
+                                ))}
+                            </div>
 
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                                        <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.08))',
                                         borderRadius: '20px',
                                         padding: '35px 45px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
                                         textAlign: 'center'
-                                        }}>
-                                            <p style={{
-                                                color: '#1e2247',
+                                    }}>
+                                        <p style={{
+                                            color: '#1e2247',
                                             fontSize: '1.3rem',
                                             lineHeight: '1.8',
-                                                margin: 0,
+                                            margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            All officers are licensed under <strong style={{color: '#1e2247'}}>Victorian SLRD</strong>, <strong style={{color: '#fdc51a'}}>ASIAL-compliant</strong>, and <strong style={{color: '#1e2247'}}>CM3 prequalified</strong>, ensuring both legal and procedural alignment with client operations.
-                                            </p>
+                                            All officers are licensed under <strong style={{ color: '#1e2247' }}>Victorian SLRD</strong>, <strong style={{ color: '#fdc51a' }}>ASIAL-compliant</strong>, and <strong style={{ color: '#1e2247' }}>CM3 prequalified</strong>, ensuring both legal and procedural alignment with client operations.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -797,7 +800,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Activity size={24} style={{color: '#fdc51a'}} />
+                                            <Activity size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -810,7 +813,7 @@ export default function SecurityEscortPage() {
                                             }}>
                                                 Live Command Network
                                             </span>
-                                            <Activity size={24} style={{color: '#fdc51a'}} />
+                                            <Activity size={24} style={{ color: '#fdc51a' }} />
                                         </div>
 
                                         <h2 style={{
@@ -820,7 +823,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Real-Time Visibility & <span style={{color: '#fdc51a'}}>Safety Monitoring</span>
+                                            Real-Time Visibility & <span style={{ color: '#fdc51a' }}>Safety Monitoring</span>
                                         </h2>
 
                                         <p style={{
@@ -831,21 +834,21 @@ export default function SecurityEscortPage() {
                                             lineHeight: '1.8'
                                         }}>
                                             Metro Guards uses digital tools to ensure you remain safe throughout your journey:
-                                            </p>
+                                        </p>
                                     </div>
                                 </div>
-                                    </div>
+                            </div>
 
                             {/* System Features Grid */}
-                                    <div className="row g-4 mb-5">
-                                        {[
+                            <div className="row g-4 mb-5">
+                                {[
                                     {
                                         icon: <MapPin size={32} />,
                                         title: 'GPS tracking and route replay',
                                         description: 'Real-time location monitoring with full historical playback.'
                                     },
-                                            {
-                                                icon: <Clock size={32} />,
+                                    {
+                                        icon: <Clock size={32} />,
                                         title: 'Time-stamped progress reports',
                                         description: 'Automated updates at every checkpoint and milestone.'
                                     },
@@ -861,86 +864,86 @@ export default function SecurityEscortPage() {
                                     }
                                 ].map((item, index) => (
                                     <div key={index} className="col-lg-6 col-md-6">
-                                            <div style={{
-                                                background: 'rgba(255, 255, 255, 0.05)',
-                                                borderRadius: '20px',
+                                        <div style={{
+                                            background: 'rgba(255, 255, 255, 0.05)',
+                                            borderRadius: '20px',
                                             padding: '35px',
                                             border: '2px solid rgba(253, 197, 26, 0.2)',
-                                                    backdropFilter: 'blur(10px)',
+                                            backdropFilter: 'blur(10px)',
                                             transition: 'all 0.3s ease',
                                             height: '100%'
-                                                }}
-                                                onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-8px)';
-                                                    e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-8px)';
+                                                e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
+                                                e.currentTarget.style.borderColor = '#fdc51a';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
                                             }}>
-                                                <div style={{
-                                                        width: '70px',
-                                                        height: '70px',
-                                                        borderRadius: '15px',
-                                                        background: index % 2 === 0 
-                                                            ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
+                                            <div style={{
+                                                width: '70px',
+                                                height: '70px',
+                                                borderRadius: '15px',
+                                                background: index % 2 === 0
+                                                    ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
                                                 marginBottom: '25px',
-                                                        color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
-                                                        boxShadow: index % 2 === 0 
-                                                            ? '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                                color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
+                                                boxShadow: index % 2 === 0
+                                                    ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : 'none',
                                                 border: index % 2 === 0 ? 'none' : '2px solid rgba(253, 197, 26, 0.3)'
-                                                    }}>
+                                            }}>
                                                 {item.icon}
-                                                </div>
+                                            </div>
 
-                                                <h3 style={{
-                                                    color: '#ffffff',
-                                                        fontSize: '1.4rem',
-                                                    fontWeight: '700',
-                                                        marginBottom: '15px'
-                                                }}>
+                                            <h3 style={{
+                                                color: '#ffffff',
+                                                fontSize: '1.4rem',
+                                                fontWeight: '700',
+                                                marginBottom: '15px'
+                                            }}>
                                                 {item.title}
-                                                </h3>
+                                            </h3>
 
-                                                <p style={{
-                                                        color: 'rgba(255, 255, 255, 0.85)',
-                                                        fontSize: '1.05rem',
-                                                        lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
+                                            <p style={{
+                                                color: 'rgba(255, 255, 255, 0.85)',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.7',
+                                                margin: 0
+                                            }}>
                                                 {item.description}
-                                                </p>
-                                            </div>
-                                            </div>
-                                        ))}
+                                            </p>
                                         </div>
+                                    </div>
+                                ))}
+                            </div>
 
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                                            <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.15), rgba(253, 197, 26, 0.05))',
                                         borderRadius: '25px',
                                         padding: '40px 50px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
                                         backdropFilter: 'blur(10px)',
                                         textAlign: 'center'
-                                            }}>
-                                                <p style={{
+                                    }}>
+                                        <p style={{
                                             color: '#ffffff',
                                             fontSize: '1.3rem',
                                             fontWeight: '600',
-                                                    lineHeight: '1.8',
+                                            lineHeight: '1.8',
                                             margin: 0
-                                                }}>
-                                            Clients receive confirmation reports directly from our system — <span style={{color: '#fdc51a', fontWeight: '800'}}>a record of continuity from departure to destination</span>.
-                                                </p>
+                                        }}>
+                                            Clients receive confirmation reports directly from our system — <span style={{ color: '#fdc51a', fontWeight: '800' }}>a record of continuity from departure to destination</span>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -978,7 +981,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Building size={24} style={{color: '#1e2247'}} />
+                                            <Building size={24} style={{ color: '#1e2247' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: '#fdc51a',
                                                 color: '#1e2247',
@@ -991,7 +994,7 @@ export default function SecurityEscortPage() {
                                             }}>
                                                 Sector Expertise
                                             </span>
-                                            <Building size={24} style={{color: '#1e2247'}} />
+                                            <Building size={24} style={{ color: '#1e2247' }} />
                                         </div>
 
                                         <h2 style={{
@@ -1001,7 +1004,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Multi-Sector Coverage for Our Security <span style={{color: '#fdc51a'}}>Escort Services Across Melbourne</span>
+                                            Multi-Sector Coverage for Our Security <span style={{ color: '#fdc51a' }}>Escort Services Across Melbourne</span>
                                         </h2>
 
                                         <p style={{
@@ -1056,21 +1059,21 @@ export default function SecurityEscortPage() {
                                             boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
                                             transition: 'all 0.3s ease'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-10px)';
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-10px)';
                                                 e.currentTarget.style.borderColor = '#fdc51a';
-                                            e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.2)';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                            e.currentTarget.style.borderColor = 'transparent';
-                                            e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)';
-                                        }}>
+                                                e.currentTarget.style.boxShadow = '0 15px 40px rgba(253, 197, 26, 0.2)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.borderColor = 'transparent';
+                                                e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)';
+                                            }}>
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #1e2247, #2c3e50)'
                                                     : 'linear-gradient(135deg, #fdc51a, #ffdb5c)',
                                                 display: 'flex',
@@ -1122,7 +1125,7 @@ export default function SecurityEscortPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            Our scope extends from <strong style={{color: '#1e2247'}}>Melbourne's CBD to regional Victoria</strong>, anywhere structured movement needs <strong style={{color: '#fdc51a'}}>structured protection</strong>.
+                                            Our scope extends from <strong style={{ color: '#1e2247' }}>Melbourne's CBD to regional Victoria</strong>, anywhere structured movement needs <strong style={{ color: '#fdc51a' }}>structured protection</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1133,23 +1136,23 @@ export default function SecurityEscortPage() {
                     {/*===== Why Clients Trust Metro Guards Section =====*/}
                     <div className="trust-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                                        position: 'relative',
-                                        overflow: 'hidden'
-                                    }}>
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
                         {/* Background Pattern */}
-                                        <div style={{
-                                            position: 'absolute',
-                                            top: 0,
-                                            left: 0,
-                                            right: 0,
-                                            bottom: 0,
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
                             backgroundImage: `
                                 radial-gradient(circle at 20% 30%, rgba(253, 197, 26, 0.1) 0%, transparent 50%),
                                 radial-gradient(circle at 80% 70%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)
                             `,
-                                            zIndex: 1
-                                        }}></div>
-                                        
+                            zIndex: 1
+                        }}></div>
+
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                             <div className="row">
                                 <div className="col-lg-12">
@@ -1161,7 +1164,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Star size={24} style={{color: '#fdc51a'}} />
+                                            <Star size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -1174,7 +1177,7 @@ export default function SecurityEscortPage() {
                                             }}>
                                                 Trusted Excellence
                                             </span>
-                                            <Star size={24} style={{color: '#fdc51a'}} />
+                                            <Star size={24} style={{ color: '#fdc51a' }} />
                                         </div>
 
                                         <h2 style={{
@@ -1184,7 +1187,7 @@ export default function SecurityEscortPage() {
                                             marginBottom: '50px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Why Melbourne Chooses Metro Guards for  <span style={{color: '#fdc51a'}}>Security Escort Protection</span>
+                                            Why Melbourne Chooses Metro Guards for  <span style={{ color: '#fdc51a' }}>Security Escort Protection</span>
                                         </h2>
                                         <p>Melbourne residents, corporate teams and high-profile individuals choose Metro Guards because:
                                         </p>
@@ -1231,21 +1234,21 @@ export default function SecurityEscortPage() {
                                             backdropFilter: 'blur(10px)',
                                             transition: 'all 0.3s ease'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-10px)';
-                                            e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-                                            e.currentTarget.style.borderColor = '#fdc51a';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                        }}>
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                                e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
+                                                e.currentTarget.style.borderColor = '#fdc51a';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                            }}>
                                             <div style={{
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 display: 'flex',
@@ -1253,10 +1256,10 @@ export default function SecurityEscortPage() {
                                                 justifyContent: 'center',
                                                 marginBottom: '25px',
                                                 color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
-                                                boxShadow: index % 2 === 0 
+                                                boxShadow: index % 2 === 0
                                                     ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : '0 10px 25px rgba(30, 34, 71, 0.3)',
-                                                border: index % 2 === 0 
+                                                border: index % 2 === 0
                                                     ? 'none'
                                                     : '2px solid rgba(253, 197, 26, 0.3)'
                                             }}>
@@ -1349,10 +1352,10 @@ export default function SecurityEscortPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1362,9 +1365,9 @@ export default function SecurityEscortPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1372,7 +1375,7 @@ export default function SecurityEscortPage() {
                                                     letterSpacing: "1px",
                                                     boxShadow: "0 6px 20px rgba(30, 34, 71, 0.25)"
                                                 }}>
-                                                    <Shield size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                    <Shield size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                     Get Started Today
                                                 </span>
                                                 <div style={{
@@ -1382,7 +1385,7 @@ export default function SecurityEscortPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1391,9 +1394,9 @@ export default function SecurityEscortPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Security Escort Services Melbourne <span style={{color: '#fdc51a'}}>Clients Trust</span>
+                                                Security Escort Services Melbourne <span style={{ color: '#fdc51a' }}>Clients Trust</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1403,7 +1406,7 @@ export default function SecurityEscortPage() {
                                                 margin: '0 auto 40px'
                                             }}>
                                                 From executives and VIPs to lone workers, nurses, vulnerable individuals and those facing personal safety concerns, Metro Guards ensures every journey is secure,  no matter the distance, location or time of day.
-                                                </p>
+                                            </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1424,18 +1427,18 @@ export default function SecurityEscortPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get a Quote
                                                     </a>
@@ -1454,18 +1457,18 @@ export default function SecurityEscortPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1507,8 +1510,8 @@ export default function SecurityEscortPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <Shield size={20} style={{display: 'inline', marginRight: '8px', color: '#fdc51a'}} />
-                                                    <span style={{color: '#ffffff'}}>The world rests easier when someone's still awake, still moving, still watching over what matters most.</span>
+                                                    <Shield size={20} style={{ display: 'inline', marginRight: '8px', color: '#fdc51a' }} />
+                                                    <span style={{ color: '#ffffff' }}>The world rests easier when someone's still awake, still moving, still watching over what matters most.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1519,15 +1522,15 @@ export default function SecurityEscortPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                <FAQSectionDynamic 
+                <FAQSectionDynamic
                     faqs={[
                         {
                             question: "Who provides security escort services in Melbourne?",
@@ -1552,4 +1555,5 @@ export default function SecurityEscortPage() {
                     ]}
                 />
             </Layout>
-            </> ) }
+        </>)
+}

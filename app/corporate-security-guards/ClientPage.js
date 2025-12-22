@@ -34,7 +34,7 @@ export default function CorporateSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -137,17 +137,17 @@ export default function CorporateSecurityPage() {
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -158,42 +158,42 @@ export default function CorporateSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            On-Site Corporate Guard Services for 
-                                            <span style={{color: '#fdc51a'}}> Events, Offices & Commercial Spaces</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            On-Site Corporate Guard Services for
+                                            <span style={{ color: '#fdc51a' }}> Events, Offices & Commercial Spaces</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           Metro Guards provides highly trained corporate security guards Melbourne businesses rely on to protect offices, corporate events, boardrooms, commercial buildings, and VIP guests. Our officers specialise in corporate event security, corporate crowd control, VIP escorting, and professional access management, ensuring every business function runs safely and without interruption.
+                                            Metro Guards provides highly trained corporate security guards Melbourne businesses rely on to protect offices, corporate events, boardrooms, commercial buildings, and VIP guests. Our officers specialise in corporate event security, corporate crowd control, VIP escorting, and professional access management, ensuring every business function runs safely and without interruption.
                                             <br /><br />Whether you’re hosting a corporate gala in Docklands, a conference in Southbank, a seminar in Hawthorn, or managing a high-rise office in the CBD, Metro Guards delivers corporate event security services Melbourne companies depend on for a refined, professional, and seamless security presence.
                                             <br /><br />
                                             For anyone searching “who provides corporate event security guards in Melbourne?”, Metro Guards is the trusted choice.
-                                            </p>
-                                        
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -206,15 +206,15 @@ export default function CorporateSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -235,16 +235,16 @@ export default function CorporateSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -252,9 +252,9 @@ export default function CorporateSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -263,9 +263,9 @@ export default function CorporateSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -278,7 +278,7 @@ export default function CorporateSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -354,26 +354,26 @@ export default function CorporateSecurityPage() {
                                                 transform: 'perspective(1000px) rotateY(-5deg)',
                                                 transition: 'all 0.4s ease'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/71A872B7-4647-45B4-A0C2-D01F1BF3056C_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                                }}>
+                                                <img
+                                                    src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/71A872B7-4647-45B4-A0C2-D01F1BF3056C_1_105_c.webp"
+                                                    alt="Professional Building Security Guards"
+                                                    className="img-fluid"
+                                                    style={{
+                                                        width: '100%',
                                                         height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
                                                 />
-                                                
+
                                                 {/* Image Overlay */}
                                                 <div style={{
                                                     position: 'absolute',
@@ -384,11 +384,11 @@ export default function CorporateSecurityPage() {
                                                     background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
                                                     zIndex: 1
                                                 }}></div>
-                                </div>
+                                            </div>
 
                                             {/* Floating Stats Cards */}
-                                            
-                                           
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -398,8 +398,8 @@ export default function CorporateSecurityPage() {
                                     <div className="services-content">
                                         {/* Header Section */}
                                         <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
+                                            <h2 style={{
+                                                color: "#1e2247",
                                                 fontSize: "3.2rem",
                                                 fontWeight: "800",
                                                 marginBottom: "25px",
@@ -408,9 +408,9 @@ export default function CorporateSecurityPage() {
                                             }}>
                                                 Why Offices & Corporate Functions Run Safer With Professional Security
                                             </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
+
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1.5rem"
@@ -418,8 +418,8 @@ export default function CorporateSecurityPage() {
                                                 Corporate environments require a higher level of discipline, discretion, and professionalism. Events and workplaces across Melbourne face increasing risks that demand trained security officers who understand business etiquette and stakeholder expectations.
                                             </p>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1rem",
@@ -436,80 +436,80 @@ export default function CorporateSecurityPage() {
                                                 paddingLeft: '0',
                                                 marginBottom: '1.5rem'
                                             }}>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Unauthorised access to offices, meetings, or private events</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Uncontrolled guest movement during functions</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>High-value equipment or asset protection</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>VIP safety & escorting</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Aggressive behaviour, intoxication, or crowd escalation</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Security vulnerabilities at entry points</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Sensitive corporate information exposure risks</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Safety concerns during high-traffic corporate events</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Emergency response readiness</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Theft, vandalism, or disruption during major functions</span>
                                                 </li>
                                             </ul>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8"
                                             }}>
-                                                These challenges require Metro <strong style={{color: '#fdc51a'}}>corporate event security guards Melbourne</strong> trained to maintain safety while preserving the professionalism expected in business environments.
+                                                These challenges require Metro <strong style={{ color: '#fdc51a' }}>corporate event security guards Melbourne</strong> trained to maintain safety while preserving the professionalism expected in business environments.
                                             </p>
-                                            
-                                            
+
+
                                         </div>
 
-                                      
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
+
 
                     {/*=====  Section 2 =====*/}
-                    <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/03549B5D-366A-47E3-BBF3-3C916341AA19_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -520,7 +520,7 @@ export default function CorporateSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Accountability Section - Paragraph Style */}
                                         <div className="human-element-section section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
@@ -543,18 +543,18 @@ export default function CorporateSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                A Professional Security Services for  <span style={{color: '#fdc51a'}}>Melbourne’s Corporate Sector</span>
+                                                <h2 className="display-6 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                    A Professional Security Services for  <span style={{ color: '#fdc51a' }}>Melbourne’s Corporate Sector</span>
                                                 </h2>
-                                                                                               <p className="lead mb-3" style={{
+                                                <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8',
                                                     margin: 0
                                                 }}>
-                                                    Corporate spaces require officers who present well, communicate professionally, and maintain a calm presence. <strong style={{color: '#fdc51a'}}>Metro Guards</strong> provides <strong style={{color: '#1e2247'}}>professional corporate event security in Melbourne</strong> designed to:
+                                                    Corporate spaces require officers who present well, communicate professionally, and maintain a calm presence. <strong style={{ color: '#fdc51a' }}>Metro Guards</strong> provides <strong style={{ color: '#1e2247' }}>professional corporate event security in Melbourne</strong> designed to:
                                                 </p>
-                                                
+
                                                 <ul style={{
                                                     listStyle: 'none',
                                                     color: '#6c757d',
@@ -564,40 +564,40 @@ export default function CorporateSecurityPage() {
                                                     marginTop: '1rem',
                                                     marginBottom: '1rem'
                                                 }}>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Engage respectfully with executives, staff, and guests</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Maintain access control with discretion</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Monitor crowd behaviour at large events</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Protect high-profile speakers & VIPs</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Respond quickly to behavioural issues</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>De-escalate conflicts discreetly</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Support event organisers and venue managers</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Protect sensitive business environments</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Provide security that enhances, not interrupts, the event experience</span>
                                                     </li>
                                                 </ul>
@@ -620,65 +620,65 @@ export default function CorporateSecurityPage() {
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     CORPORATE EXCELLENCE
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Specialised Corporate Security  <span style={{color: '#fdc51a'}}>Guard Services</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Specialised Corporate Security  <span style={{ color: '#fdc51a' }}>Guard Services</span>
                                             </h2>
-                                            <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>Metro Guards provides complete corporate security Melbourne solutions tailored to office buildings, commercial sites, and business events.
+                                            <p className="lead mb-4" style={{ color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7' }}>Metro Guards provides complete corporate security Melbourne solutions tailored to office buildings, commercial sites, and business events.
                                             </p>
                                         </div>
-                                        
+
                                         {/* Interactive Service Accordion */}
                                         <div className="services-accordion">
                                             {[
                                                 {
                                                     icon: "fas fa-clipboard-check",
                                                     title: "Procedural Discipline",
-                                                    
+
                                                     details: "Every Standard Operating Procedure followed to the letter with no deviation."
                                                 },
                                                 {
                                                     icon: "fas fa-door-closed",
                                                     title: "Controlled Access",
-                                                    
+
                                                     details: "Authority at entry points, professionalism in every interaction."
                                                 },
                                                 {
                                                     icon: "fas fa-route",
                                                     title: "Relentless Patrol Coverage",
-                                                   
+
                                                     details: "Full-area sweeps conducted with precision and consistency."
                                                 },
                                                 {
                                                     icon: "fas fa-video",
                                                     title: "System Awareness",
-                                                    
+
                                                     details: "Constant monitoring of alarms, CCTV, and controls — proactive, not reactive."
                                                 },
                                                 {
                                                     icon: "fas fa-exclamation-triangle",
                                                     title: "Emergency Readiness",
-                                                    
+
                                                     details: "Trained for evacuations, lockdowns, and first response under pressure."
                                                 },
                                                 {
                                                     icon: "fas fa-clock",
                                                     title: "Shift Integrity",
-                                                    
+
                                                     details: "Punctual, accountable, and present from start to finish."
                                                 },
                                                 {
                                                     icon: "fas fa-user-tie",
                                                     title: "Professional Presentation",
-                                                    
+
                                                     details: "Uniformed, composed, and aligned with the corporate environments they protect."
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div
                                                         className="accordion-header p-4"
                                                         style={{
                                                             backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -692,7 +692,7 @@ export default function CorporateSecurityPage() {
                                                     >
                                                         <div className="d-flex align-items-center justify-content-between">
                                                             <div className="d-flex align-items-center">
-                                                                <div 
+                                                                <div
                                                                     className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '50px',
@@ -706,12 +706,12 @@ export default function CorporateSecurityPage() {
                                                                     <i className={service.icon}></i>
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                                                    <p className="mb-0" style={{color: '#6c757d', fontSize: '0.9rem'}}>{service.summary}</p>
+                                                                    <h5 className="mb-1 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
+                                                                    <p className="mb-0" style={{ color: '#6c757d', fontSize: '0.9rem' }}>{service.summary}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="expand-icon">
-                                                                <div 
+                                                                <div
                                                                     className="d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '40px',
@@ -722,16 +722,16 @@ export default function CorporateSecurityPage() {
                                                                         transition: 'all 0.3s ease'
                                                                     }}
                                                                 >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                         {activeService === index ? '−' : '+'}
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     {activeService === index && (
-                                                        <div 
+                                                        <div
                                                             className="accordion-content p-4"
                                                             style={{
                                                                 backgroundColor: '#ffffff',
@@ -743,8 +743,8 @@ export default function CorporateSecurityPage() {
                                                             }}
                                                         >
                                                             <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
+                                                                color: '#6c757d',
+                                                                lineHeight: '1.7',
                                                                 margin: 0,
                                                                 fontSize: '1rem'
                                                             }}>
@@ -847,10 +847,10 @@ export default function CorporateSecurityPage() {
                                         marginBottom: '30px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Corporate & Event  <span style={{color: '#fdc51a'}}>Standards</span>
+                                        Corporate & Event  <span style={{ color: '#fdc51a' }}>Standards</span>
                                     </h2>
-                                    <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>Our corporate event security guards are supported by real-time monitoring, professional reporting, and strict compliance procedures.
-                                      <br /><br />We ensure:
+                                    <p className="lead mb-4" style={{ color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7' }}>Our corporate event security guards are supported by real-time monitoring, professional reporting, and strict compliance procedures.
+                                        <br /><br />We ensure:
 
                                     </p>
                                 </div>
@@ -870,16 +870,16 @@ export default function CorporateSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -902,7 +902,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-map-marker-alt" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-map-marker-alt" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -920,7 +920,7 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.7',
                                             margin: 0
                                         }}>
-                                            Each patrol logged and time-stamped for <strong style={{color: '#1e2247'}}>absolute accountability</strong>.
+                                            Each patrol logged and time-stamped for <strong style={{ color: '#1e2247' }}>absolute accountability</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -937,16 +937,16 @@ export default function CorporateSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -969,7 +969,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-user-check" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-user-check" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -987,7 +987,7 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.7',
                                             margin: 0
                                         }}>
-                                            Unannounced inspections that sustain <strong style={{color: '#1e2247'}}>performance and focus</strong>.
+                                            Unannounced inspections that sustain <strong style={{ color: '#1e2247' }}>performance and focus</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1004,16 +1004,16 @@ export default function CorporateSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1036,7 +1036,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-certificate" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-certificate" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1054,7 +1054,7 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.7',
                                             margin: 0
                                         }}>
-                                            Quality, OH&S, and Environmental standards shaping <strong style={{color: '#1e2247'}}>every operation</strong>.
+                                            Quality, OH&S, and Environmental standards shaping <strong style={{ color: '#1e2247' }}>every operation</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1071,16 +1071,16 @@ export default function CorporateSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1103,7 +1103,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-laptop" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-laptop" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1121,7 +1121,7 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.7',
                                             margin: 0
                                         }}>
-                                            Real-time access to <strong style={{color: '#1e2247'}}>activity reports and incident updates</strong>.
+                                            Real-time access to <strong style={{ color: '#1e2247' }}>activity reports and incident updates</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1138,16 +1138,16 @@ export default function CorporateSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1170,7 +1170,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-award" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-award" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1188,7 +1188,7 @@ export default function CorporateSecurityPage() {
                                             lineHeight: '1.7',
                                             margin: 0
                                         }}>
-                                            ASIAL member, CM3 certified, and compliant with all <strong style={{color: '#1e2247'}}>Victorian security and labour hire laws</strong>.
+                                            ASIAL member, CM3 certified, and compliant with all <strong style={{ color: '#1e2247' }}>Victorian security and labour hire laws</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1273,7 +1273,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Corporate Security Guards Melbourne  <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
+                                            Corporate Security Guards Melbourne  <span style={{ color: '#fdc51a' }}>Businesses Rely On</span>
                                         </h2>
                                     </div>
 
@@ -1291,9 +1291,9 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '30px'
                                         }}>
                                             Whether you need office security during operating hours or corporate event security guards for tonight in Melbourne, Metro Guards is ready to deploy trained professionals immediately.
-                                            </p>
+                                        </p>
 
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1309,7 +1309,7 @@ export default function CorporateSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Smarter Security, Powered by  <span style={{color: '#fdc51a'}}>Real-Time Technology</span>
+                                            Smarter Security, Powered by  <span style={{ color: '#fdc51a' }}>Real-Time Technology</span>
                                         </h2>
 
                                         <p style={{
@@ -1336,16 +1336,16 @@ export default function CorporateSecurityPage() {
                                                 transition: 'all 0.3s ease',
                                                 textAlign: 'center'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
-                                                e.currentTarget.style.borderColor = '#fdc51a';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                            }}>
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
+                                                    e.currentTarget.style.borderColor = '#fdc51a';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0)';
+                                                    e.currentTarget.style.boxShadow = 'none';
+                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                                }}>
                                                 <div style={{
                                                     width: '65px',
                                                     height: '65px',
@@ -1357,7 +1357,7 @@ export default function CorporateSecurityPage() {
                                                     margin: '0 auto 20px',
                                                     boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                 }}>
-                                                    <i className="fas fa-map-marked-alt" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                                    <i className="fas fa-map-marked-alt" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                                 </div>
 
                                                 <h3 style={{
@@ -1391,16 +1391,16 @@ export default function CorporateSecurityPage() {
                                                 transition: 'all 0.3s ease',
                                                 textAlign: 'center'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
-                                                e.currentTarget.style.borderColor = '#1e2247';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                            }}>
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.12)';
+                                                    e.currentTarget.style.borderColor = '#1e2247';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0)';
+                                                    e.currentTarget.style.boxShadow = 'none';
+                                                    e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                                }}>
                                                 <div style={{
                                                     width: '65px',
                                                     height: '65px',
@@ -1412,7 +1412,7 @@ export default function CorporateSecurityPage() {
                                                     margin: '0 auto 20px',
                                                     boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                                 }}>
-                                                    <i className="fas fa-desktop" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                                    <i className="fas fa-desktop" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                                 </div>
 
                                                 <h3 style={{
@@ -1446,16 +1446,16 @@ export default function CorporateSecurityPage() {
                                                 transition: 'all 0.3s ease',
                                                 textAlign: 'center'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
-                                                e.currentTarget.style.borderColor = '#fdc51a';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                            }}>
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.15)';
+                                                    e.currentTarget.style.borderColor = '#fdc51a';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0)';
+                                                    e.currentTarget.style.boxShadow = 'none';
+                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                                }}>
                                                 <div style={{
                                                     width: '65px',
                                                     height: '65px',
@@ -1467,7 +1467,7 @@ export default function CorporateSecurityPage() {
                                                     margin: '0 auto 20px',
                                                     boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                 }}>
-                                                    <i className="fas fa-user-shield" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                                    <i className="fas fa-user-shield" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                                 </div>
 
                                                 <h3 style={{
@@ -1505,7 +1505,7 @@ export default function CorporateSecurityPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            These systems remove uncertainty, replacing assumption with <strong style={{color: '#fdc51a'}}>clear, verifiable data</strong>.
+                                            These systems remove uncertainty, replacing assumption with <strong style={{ color: '#fdc51a' }}>clear, verifiable data</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1533,7 +1533,7 @@ export default function CorporateSecurityPage() {
                                             borderRadius: '50%'
                                         }}></div>
 
-                                        <div style={{position: 'relative', zIndex: 2}}>
+                                        <div style={{ position: 'relative', zIndex: 2 }}>
                                             <div style={{
                                                 display: 'inline-flex',
                                                 alignItems: 'center',
@@ -1550,7 +1550,7 @@ export default function CorporateSecurityPage() {
                                                     justifyContent: 'center',
                                                     boxShadow: '0 10px 25px rgba(253, 197, 26, 0.4)'
                                                 }}>
-                                                    <i className="fas fa-building" style={{color: '#1e2247', fontSize: '26px'}}></i>
+                                                    <i className="fas fa-building" style={{ color: '#1e2247', fontSize: '26px' }}></i>
                                                 </div>
                                                 <h2 style={{
                                                     color: '#ffffff',
@@ -1558,7 +1558,7 @@ export default function CorporateSecurityPage() {
                                                     margin: 0,
                                                     fontWeight: '800'
                                                 }}>
-                                                    Trusted for Melbourne’s Most Important <span style={{color: '#fdc51a'}}>Corporate Events & Venues</span>
+                                                    Trusted for Melbourne’s Most Important <span style={{ color: '#fdc51a' }}>Corporate Events & Venues</span>
                                                 </h2>
                                             </div>
 
@@ -1570,7 +1570,7 @@ export default function CorporateSecurityPage() {
                                             }}>
                                                 From high-profile conferences and black-tie galas to business meetings, award nights, seminars, and office celebrations, Metro Guards provides corporate event security Melbourne businesses rely on for seamless protection. Our team delivers trained corporate function security guards, corporate party security guards, and business event security guards who operate with professionalism, discretion, and an understanding of corporate etiquette.
                                                 <br /><br />We secure your venue before, during, and after the event, ensuring assets, guests, staff, and executives remain protected. This consistent performance is why we’re trusted as one of the top-rated corporate event security guards Melbourne and the preferred choice for companies searching for local corporate event security Melbourne or corporate event security guards in my area.
-                                                </p>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1638,10 +1638,10 @@ export default function CorporateSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1651,9 +1651,9 @@ export default function CorporateSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1671,7 +1671,7 @@ export default function CorporateSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1680,9 +1680,9 @@ export default function CorporateSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Strengthen Your Corporate Operations With Security  <span style={{color: '#fdc51a'}}>You Can Rely On</span>
+                                                Strengthen Your Corporate Operations With Security  <span style={{ color: '#fdc51a' }}>You Can Rely On</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1692,7 +1692,7 @@ export default function CorporateSecurityPage() {
                                                 margin: '0 auto 30px'
                                             }}>
                                                 In a corporate world driven by precision and accountability, security isn’t optional, it’s the foundation of trust, continuity, and performance. With Metro Guards, your business operates with the assurance that every asset, every event, and every person is protected with unwavering professionalism.</p>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.2rem',
@@ -1702,7 +1702,7 @@ export default function CorporateSecurityPage() {
                                                 margin: '0 auto 40px',
                                                 fontStyle: 'italic'
                                             }}>
-                                                Because in a world measured by reliability, trust isn't a feeling; <strong style={{color: '#fdc51a'}}>it's an outcome</strong>.
+                                                Because in a world measured by reliability, trust isn't a feeling; <strong style={{ color: '#fdc51a' }}>it's an outcome</strong>.
                                             </p>
                                         </div>
 
@@ -1724,18 +1724,18 @@ export default function CorporateSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get Your Free Quote
                                                     </a>
@@ -1754,18 +1754,18 @@ export default function CorporateSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1807,8 +1807,8 @@ export default function CorporateSecurityPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <i className="fas fa-shield-alt me-2" style={{color: '#fdc51a'}}></i>
-                                                    Metro Guards – <span style={{color: '#ffffff'}}>Where corporate security meets uncompromising discipline and proven results.</span>
+                                                    <i className="fas fa-shield-alt me-2" style={{ color: '#fdc51a' }}></i>
+                                                    Metro Guards – <span style={{ color: '#ffffff' }}>Where corporate security meets uncompromising discipline and proven results.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1819,15 +1819,15 @@ export default function CorporateSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                <FAQSectionDynamic 
+                <FAQSectionDynamic
                     faqs={[
                         {
                             question: "Who provides corporate event security guards in Melbourne?",
@@ -1856,4 +1856,5 @@ export default function CorporateSecurityPage() {
                     ]}
                 />
             </Layout>
-            </> ) }
+        </>)
+}

@@ -5,19 +5,19 @@ export const metadata = {
   description:
     "Metro Guards offers protection across Southeast Melbourne suburbs, including St Kilda, Prahran, Dandenong, Frankston & Sandringham. 24/7 professional coverage.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/south-east-melbourne" 
   },
   openGraph: {
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
-    url: "https://metroguards.com.au/educational-institute-security-guards",
+    title: "Trusted Security & Mobile Patrols in South–East Melbourne | Metro Guards",
+    description: "Metro Guards offers protection across Southeast Melbourne suburbs, including St Kilda, Prahran, Dandenong, Frankston & Sandringham. 24/7 professional coverage.",
+    url: "https://metroguards.com.au/south-east-melbourne",
     siteName: "Metro Guards",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
+    title: "Trusted Security & Mobile Patrols in South–East Melbourne | Metro Guards",
+    description: "Metro Guards offers protection across Southeast Melbourne suburbs, including St Kilda, Prahran, Dandenong, Frankston & Sandringham. 24/7 professional coverage.",
   },
   robots: {
     index: true,

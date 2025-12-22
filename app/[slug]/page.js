@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import DOMPurify from "isomorphic-dompurify";
+import Head from "next/head";
 
 export default function BlogDetails() {
   const { slug } = useParams();        // <- use [slug], not id
@@ -28,7 +29,9 @@ export default function BlogDetails() {
         setPost(data);
         setStatus("done");
       } catch (e) {
-        console.error(e);
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Blog post fetch error:', e);
+        }
         setStatus("error");
       }
     })();

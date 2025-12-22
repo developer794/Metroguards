@@ -28,7 +28,7 @@ export default function UnarmedSecurityPage() {
             details: "Our unarmed security guards provide a strong visual deterrent through their professional presence, significantly reducing the likelihood of theft, vandalism, and other criminal activities on your property."
         },
         {
-            title: "Access Control & Monitoring", 
+            title: "Access Control & Monitoring",
             icon: <Lock size={24} />,
             iconSymbol: <Users size={24} />,
             description: "Comprehensive access control and visitor management",
@@ -70,17 +70,17 @@ export default function UnarmedSecurityPage() {
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="hero-content">
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -91,8 +91,8 @@ export default function UnarmedSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
@@ -100,32 +100,32 @@ export default function UnarmedSecurityPage() {
                                             }}
                                         >
                                             UNARMED SECURITY<br />
-                                            <span style={{color: '#fdc51a'}}>GUARD SERVICES</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            <span style={{ color: '#fdc51a' }}>GUARD SERVICES</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                                At Metro Guards, we understand the importance of providing effective security solutions that maintain a safe and secure environment without the need for armed personnel. Our unarmed security guards are highly trained professionals who focus on preventing crime and ensuring the safety of your property, people, and assets.
+                                            At Metro Guards, we understand the importance of providing effective security solutions that maintain a safe and secure environment without the need for armed personnel. Our unarmed security guards are highly trained professionals who focus on preventing crime and ensuring the safety of your property, people, and assets.
 
                                             Whether it's a retail store, office complex, or residential building, our unarmed security personnel are well-equipped to handle a wide range of duties to ensure your peace of mind. We provide professional, reliable, and cost-effective security solutions tailored to your specific needs.
                                         </p>
-                                        
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -134,15 +134,15 @@ export default function UnarmedSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -150,15 +150,15 @@ export default function UnarmedSecurityPage() {
                                                     borderWidth: '2px'
                                                 }}
                                             >
-                                                <Phone size={16} style={{marginRight: '8px'}} /> 1300731173
-                                                </a>
-                                            </div>
+                                                <Phone size={16} style={{ marginRight: '8px' }} /> 1300731173
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -166,9 +166,9 @@ export default function UnarmedSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
-                                                src="/assets/img/blog/umarmed.avif" 
-                                                alt="Professional Unarmed Security Guards" 
+                                            <img
+                                                src="/assets/img/blog/umarmed.avif"
+                                                alt="Professional Unarmed Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -177,9 +177,9 @@ export default function UnarmedSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -192,7 +192,7 @@ export default function UnarmedSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -212,15 +212,15 @@ export default function UnarmedSecurityPage() {
                     </div>
 
                     {/*===== Our Services Section =====*/}
-                    <div className="services-section section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
-                                                src="/assets/img/blog/umarmed.avif" 
-                                                alt="Professional Unarmed Security Guards" 
+                                            <img
+                                                src="/assets/img/blog/umarmed.avif"
+                                                alt="Professional Unarmed Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -230,15 +230,15 @@ export default function UnarmedSecurityPage() {
                                                     objectFit: 'cover'
                                                 }}
                                             />
-                                    </div>
-                                        
+                                        </div>
+
                                         {/* Additional Features */}
                                         <div className="features-list mt-4">
                                             <div className="align-items-center mb-3">
                                                 <p>Our unarmed security guards provide professional protection with a non-threatening presence that deters crime effectively.</p>
-                                </div>
+                                            </div>
                                             <div className="feature-item d-flex align-items-center mb-3">
-                                                <div 
+                                                <div
                                                     className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                     style={{
                                                         width: '40px',
@@ -250,11 +250,11 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     <Clock size={20} />
-                            </div>
-                                                <span style={{color: '#1e2247', fontWeight: '500'}}>24/7 Available Service</span>
-                                        </div>
+                                                </div>
+                                                <span style={{ color: '#1e2247', fontWeight: '500' }}>24/7 Available Service</span>
+                                            </div>
                                             <div className="feature-item d-flex align-items-center mb-3">
-                                                <div 
+                                                <div
                                                     className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                     style={{
                                                         width: '40px',
@@ -266,11 +266,11 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     <User size={20} />
-                                    </div>
-                                                <span style={{color: '#1e2247', fontWeight: '500'}}>Licensed Professional Guards</span>
-                                </div>
+                                                </div>
+                                                <span style={{ color: '#1e2247', fontWeight: '500' }}>Licensed Professional Guards</span>
+                                            </div>
                                             <div className="feature-item d-flex align-items-center">
-                                                <div 
+                                                <div
                                                     className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                     style={{
                                                         width: '40px',
@@ -282,34 +282,34 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     <Zap size={20} />
+                                                </div>
+                                                <span style={{ color: '#1e2247', fontWeight: '500' }}>Cost-Effective Solutions</span>
+                                            </div>
                                         </div>
-                                                <span style={{color: '#1e2247', fontWeight: '500'}}>Cost-Effective Solutions</span>
                                     </div>
                                 </div>
-                                        </div>
-                                    </div>
-                                
+
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     OUR SERVICES
                                                 </span>
-                                </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                            </div>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                                 Basic Duties and Responsibilities
                                             </h2>
-                                            <p className="lead" style={{color: '#6c757d'}}>
+                                            <p className="lead" style={{ color: '#6c757d' }}>
                                                 The primary role of unarmed security guards is to prevent crime, not necessarily to respond to it. Their mere presence provides a protective layer for premises and occupants.
                                             </p>
                                         </div>
-                                        
+
                                         {/* Expandable Service Cards */}
                                         <div className="services-accordion">
                                             {services.map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div
                                                         className="accordion-header p-4"
                                                         style={{
                                                             backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -323,7 +323,7 @@ export default function UnarmedSecurityPage() {
                                                     >
                                                         <div className="d-flex align-items-center justify-content-between">
                                                             <div className="d-flex align-items-center">
-                                                                <div 
+                                                                <div
                                                                     className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '50px',
@@ -335,13 +335,13 @@ export default function UnarmedSecurityPage() {
                                                                     }}
                                                                 >
                                                                     {service.iconSymbol}
-                                    </div>
+                                                                </div>
                                                                 <div>
-                                                                    <h5 className="mb-0 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                </div>
-                                        </div>
+                                                                    <h5 className="mb-0 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
+                                                                </div>
+                                                            </div>
                                                             <div className="expand-icon">
-                                                                <div 
+                                                                <div
                                                                     className="d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '40px',
@@ -352,16 +352,16 @@ export default function UnarmedSecurityPage() {
                                                                         transition: 'all 0.3s ease'
                                                                     }}
                                                                 >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                         {activeService === index ? '−' : '+'}
                                                                     </span>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                     {activeService === index && (
-                                                        <div 
+                                                        <div
                                                             className="accordion-content p-4"
                                                             style={{
                                                                 backgroundColor: '#ffffff',
@@ -372,46 +372,46 @@ export default function UnarmedSecurityPage() {
                                                                 animation: 'slideDown 0.3s ease'
                                                             }}
                                                         >
-                                                            <p className="mb-3" style={{color: '#6c757d', lineHeight: '1.6', fontSize: '0.95rem'}}>
+                                                            <p className="mb-3" style={{ color: '#6c757d', lineHeight: '1.6', fontSize: '0.95rem' }}>
                                                                 {service.description}
                                                             </p>
                                                             <div className="service-details">
-                                                                <p className="mb-0" style={{color: '#495057', lineHeight: '1.7', fontSize: '0.9rem'}}>
+                                                                <p className="mb-0" style={{ color: '#495057', lineHeight: '1.7', fontSize: '0.9rem' }}>
                                                                     {service.details}
-                                            </p>
-                                        </div>
-                                    </div>
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     )}
-                                </div>
+                                                </div>
                                             ))}
                                         </div>
-</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/*===== Threat Response Section =====*/}
-                    <div className="threat-section section-padding" style={{background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)'}}>
+                    <div className="threat-section section-padding" style={{ background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)' }}>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="threat-content">
                                         <div className="subtitle mb-3">
-                                            <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                            <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                 <i className="bi bi-shield-exclamation me-2"></i>
                                                 PROFESSIONAL HANDLING
                                             </span>
-                                    </div>
+                                        </div>
                                         <h2 className="display-5 fw-bold mb-4 text-white">
                                             Unarmed Guards Role When There Is a Threat
                                         </h2>
-                                        <p className="lead text-white mb-4" style={{opacity: '0.9'}}>
+                                        <p className="lead text-white mb-4" style={{ opacity: '0.9' }}>
                                             While unarmed security officers are not equipped to handle violent confrontations directly, they are trained to manage escalated situations effectively.
                                         </p>
                                         <div className="threat-features">
                                             <div className="feature-item d-flex align-items-start mb-4">
-                                                <div 
+                                                <div
                                                     className="feature-icon me-3 d-flex align-items-center justify-content-center flex-shrink-0"
                                                     style={{
                                                         width: '50px',
@@ -422,16 +422,16 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     <AlertTriangle size={24} />
-                                </div>
+                                                </div>
                                                 <div>
                                                     <h5 className="text-white fw-bold mb-2">Crisis Management</h5>
-                                                    <p className="text-white mb-0" style={{opacity: '0.9', lineHeight: '1.6'}}>
+                                                    <p className="text-white mb-0" style={{ opacity: '0.9', lineHeight: '1.6' }}>
                                                         If a criminal act or violence occurs, unarmed security personnel are trained to temporarily restrain individuals and immediately contact local authorities.
                                                     </p>
-                            </div>
-                                        </div>
+                                                </div>
+                                            </div>
                                             <div className="feature-item d-flex align-items-start">
-                                                <div 
+                                                <div
                                                     className="feature-icon me-3 d-flex align-items-center justify-content-center flex-shrink-0"
                                                     style={{
                                                         width: '50px',
@@ -442,20 +442,20 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     <Phone size={24} />
-                                    </div>
+                                                </div>
                                                 <div>
                                                     <h5 className="text-white fw-bold mb-2">Swift Response</h5>
-                                                    <p className="text-white mb-0" style={{opacity: '0.9', lineHeight: '1.6'}}>
+                                                    <p className="text-white mb-0" style={{ opacity: '0.9', lineHeight: '1.6' }}>
                                                         In cases where criminals are armed or pose a serious threat, our guards will swiftly call for police assistance, knowing that delaying intervention can lead to greater risks.
                                                     </p>
-                                </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                        </div>
                                 <div className="col-lg-6">
                                     <div className="threat-image mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '20px',
@@ -463,9 +463,9 @@ export default function UnarmedSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.3)'
                                             }}
                                         >
-  <img 
-    src="/assets/img/blog/threat.avif" 
-                                                alt="Threat Response Training" 
+                                            <img
+                                                src="/assets/img/blog/threat.avif"
+                                                alt="Threat Response Training"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -473,32 +473,32 @@ export default function UnarmedSecurityPage() {
                                                     objectFit: 'cover'
                                                 }}
                                             />
-                                    </div>
-                                </div>
                                         </div>
                                     </div>
                                 </div>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
 
                     {/*===== Industries Section =====*/}
-                    <div className="industries-section section-padding" style={{background: '#f8f9fa'}}>
+                    <div className="industries-section section-padding" style={{ background: '#f8f9fa' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12 text-center mb-5">
                                     <div className="subtitle mb-3">
-                                        <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                        <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                             <i className="bi bi-building me-2"></i>
                                             VERSATILE PROTECTION
                                         </span>
                                     </div>
-                                    <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                         Where Unarmed Security Guards Are Employed
                                     </h2>
-                                    <p className="lead" style={{color: '#6c757d'}}>
+                                    <p className="lead" style={{ color: '#6c757d' }}>
                                         Unarmed security guards are versatile and can be deployed across various locations, providing professional protection where needed.
                                     </p>
                                 </div>
-                                        </div>
+                            </div>
                             <div className="row g-4 g-md-3 g-lg-4">
                                 {[
                                     { icon: <Building size={32} />, title: "Retail Stores", description: "Preventing shoplifting and ensuring customer safety" },
@@ -512,7 +512,7 @@ export default function UnarmedSecurityPage() {
                                     { icon: <Wrench size={32} />, title: "Construction Sites", description: "Protecting construction equipment and materials from theft or vandalism" }
                                 ].map((industry, index) => (
                                     <div key={index} className="col-lg-4 col-md-6">
-                                        <div 
+                                        <div
                                             className="industry-card h-100 position-relative"
                                             style={{
                                                 backgroundColor: 'transparent',
@@ -527,7 +527,7 @@ export default function UnarmedSecurityPage() {
                                             }}
                                         >
                                             {/* Card container with unique design */}
-                                            <div 
+                                            <div
                                                 className="position-relative h-100"
                                                 style={{
                                                     background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
@@ -541,7 +541,7 @@ export default function UnarmedSecurityPage() {
                                                 }}
                                             >
                                                 {/* Animated background elements */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         top: '-100px',
@@ -554,7 +554,7 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '0'
                                                     }}
                                                 ></div>
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '-80px',
@@ -567,9 +567,9 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '0'
                                                     }}
                                                 ></div>
-                                                
+
                                                 {/* Icon with unique styling */}
-                                                <div 
+                                                <div
                                                     className="industry-icon mb-4 d-flex align-items-center justify-content-center mx-auto position-relative"
                                                     style={{
                                                         width: '100px',
@@ -584,9 +584,9 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     {industry.icon}
-                                                    
+
                                                     {/* Rotating ring around icon */}
-                                                    <div 
+                                                    <div
                                                         className="position-absolute"
                                                         style={{
                                                             width: '120px',
@@ -602,9 +602,9 @@ export default function UnarmedSecurityPage() {
                                                             opacity: '0'
                                                         }}
                                                     ></div>
-                                                    
+
                                                     {/* Inner glow effect */}
-                                                    <div 
+                                                    <div
                                                         className="position-absolute"
                                                         style={{
                                                             width: '100%',
@@ -615,11 +615,11 @@ export default function UnarmedSecurityPage() {
                                                             transition: 'all 0.6s ease'
                                                         }}
                                                     ></div>
-                                    </div>
-                                                
+                                                </div>
+
                                                 {/* Title with unique styling */}
-                                                <h5 
-                                                    className="fw-bold mb-3 position-relative" 
+                                                <h5
+                                                    className="fw-bold mb-3 position-relative"
                                                     style={{
                                                         color: '#1e2247',
                                                         fontSize: '1.3rem',
@@ -633,12 +633,12 @@ export default function UnarmedSecurityPage() {
                                                 >
                                                     {industry.title}
                                                 </h5>
-                                                
+
                                                 {/* Description with enhanced styling */}
-                                                <p 
-                                                    className="mb-0 position-relative" 
+                                                <p
+                                                    className="mb-0 position-relative"
                                                     style={{
-                                                        color: '#6c757d', 
+                                                        color: '#6c757d',
                                                         lineHeight: '1.8',
                                                         fontSize: '1rem',
                                                         transition: 'all 0.5s ease',
@@ -649,9 +649,9 @@ export default function UnarmedSecurityPage() {
                                                 >
                                                     {industry.description}
                                                 </p>
-                                                
+
                                                 {/* Decorative corner elements */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         top: '15px',
@@ -665,7 +665,7 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '15px',
@@ -679,9 +679,9 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                
+
                                                 {/* Bottom wave effect */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '0',
@@ -695,68 +695,68 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}
-                                </div>
+                            </div>
                         </div>
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                    <div className="benefits-section section-padding" style={{background: '#ffffff'}}>
+                    <div className="benefits-section section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12 text-center mb-5">
                                     <div className="subtitle mb-3">
-                                        <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                        <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                             <i className="bi bi-award me-2"></i>
                                             KEY BENEFITS
                                         </span>
                                     </div>
-                                    <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                         Key Benefits of Hiring Unarmed Security Guards
                                     </h2>
-                                    <p className="lead" style={{color: '#6c757d'}}>
+                                    <p className="lead" style={{ color: '#6c757d' }}>
                                         Hiring unarmed security guards offers several advantages that make them an excellent choice for many businesses and properties.
                                     </p>
                                 </div>
                             </div>
                             <div className="row g-4 g-md-3 g-lg-4">
                                 {[
-                                    { 
-                                        icon: <Award size={40} />, 
-                                        title: "Professionalism", 
-                                        description: "Our security guards are extensively trained in conflict resolution, emergency response, crowd control, and customer service. They are adept at handling various situations with diplomacy and professionalism." 
+                                    {
+                                        icon: <Award size={40} />,
+                                        title: "Professionalism",
+                                        description: "Our security guards are extensively trained in conflict resolution, emergency response, crowd control, and customer service. They are adept at handling various situations with diplomacy and professionalism."
                                     },
-                                    { 
-                                        icon: <Users size={40} />, 
-                                        title: "Versatility", 
-                                        description: "Unarmed guards are suitable for a wide range of environments, including retail, residential, and commercial properties, offering security solutions that are adaptable to your specific needs." 
+                                    {
+                                        icon: <Users size={40} />,
+                                        title: "Versatility",
+                                        description: "Unarmed guards are suitable for a wide range of environments, including retail, residential, and commercial properties, offering security solutions that are adaptable to your specific needs."
                                     },
-                                    { 
-                                        icon: <Zap size={40} />, 
-                                        title: "Affordable", 
-                                        description: "Unarmed security services provide a cost-effective alternative to armed guards, offering the necessary protection without the higher costs associated with armed security personnel." 
+                                    {
+                                        icon: <Zap size={40} />,
+                                        title: "Affordable",
+                                        description: "Unarmed security services provide a cost-effective alternative to armed guards, offering the necessary protection without the higher costs associated with armed security personnel."
                                     },
-                                    { 
-                                        icon: <Eye size={40} />, 
-                                        title: "Visible Deterrent", 
-                                        description: "Their presence alone acts as a deterrent to potential criminals, reducing the likelihood of theft, vandalism, and other criminal activities." 
+                                    {
+                                        icon: <Eye size={40} />,
+                                        title: "Visible Deterrent",
+                                        description: "Their presence alone acts as a deterrent to potential criminals, reducing the likelihood of theft, vandalism, and other criminal activities."
                                     },
-                                    { 
-                                        icon: <Shield size={40} />, 
-                                        title: "Non-Threatening Environment", 
-                                        description: "The presence of unarmed security guards promotes a non-threatening environment, making them ideal for spaces where a calm, approachable security presence is needed." 
+                                    {
+                                        icon: <Shield size={40} />,
+                                        title: "Non-Threatening Environment",
+                                        description: "The presence of unarmed security guards promotes a non-threatening environment, making them ideal for spaces where a calm, approachable security presence is needed."
                                     },
-                                    { 
-                                        icon: <CheckCircle size={40} />, 
-                                        title: "Low-Risk Areas", 
-                                        description: "Unarmed security guards are most suitable for low-risk areas, where their primary role is to monitor and deter, rather than to engage in active confrontation." 
+                                    {
+                                        icon: <CheckCircle size={40} />,
+                                        title: "Low-Risk Areas",
+                                        description: "Unarmed security guards are most suitable for low-risk areas, where their primary role is to monitor and deter, rather than to engage in active confrontation."
                                     }
                                 ].map((benefit, index) => (
                                     <div key={index} className="col-lg-4 col-md-6">
-                                        <div 
+                                        <div
                                             className="benefit-card h-100 position-relative"
                                             style={{
                                                 backgroundColor: '#ffffff',
@@ -771,7 +771,7 @@ export default function UnarmedSecurityPage() {
                                             }}
                                         >
                                             {/* Animated background overlay */}
-                                            <div 
+                                            <div
                                                 className="position-absolute w-100 h-100"
                                                 style={{
                                                     background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.05) 0%, rgba(30, 34, 71, 0.05) 100%)',
@@ -782,9 +782,9 @@ export default function UnarmedSecurityPage() {
                                                     zIndex: '1'
                                                 }}
                                             ></div>
-                                            
+
                                             {/* Floating particles effect */}
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     width: '4px',
@@ -798,7 +798,7 @@ export default function UnarmedSecurityPage() {
                                                     zIndex: '2'
                                                 }}
                                             ></div>
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     width: '6px',
@@ -812,7 +812,7 @@ export default function UnarmedSecurityPage() {
                                                     zIndex: '2'
                                                 }}
                                             ></div>
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     width: '3px',
@@ -826,11 +826,11 @@ export default function UnarmedSecurityPage() {
                                                     zIndex: '2'
                                                 }}
                                             ></div>
-                                            
+
                                             {/* Content */}
-                                            <div className="position-relative p-4" style={{zIndex: '3'}}>
+                                            <div className="position-relative p-4" style={{ zIndex: '3' }}>
                                                 {/* Icon with enhanced styling */}
-                                                <div 
+                                                <div
                                                     className="benefit-icon mb-4 d-flex align-items-center justify-content-center mx-auto position-relative"
                                                     style={{
                                                         width: '90px',
@@ -845,7 +845,7 @@ export default function UnarmedSecurityPage() {
                                                 >
                                                     {benefit.icon}
                                                     {/* Icon inner glow */}
-                                                    <div 
+                                                    <div
                                                         className="position-absolute"
                                                         style={{
                                                             width: '100%',
@@ -856,11 +856,11 @@ export default function UnarmedSecurityPage() {
                                                             transition: 'all 0.5s ease'
                                                         }}
                                                     ></div>
-                                        </div>
-                                                
+                                                </div>
+
                                                 {/* Title with enhanced typography */}
-                                                <h4 
-                                                    className="fw-bold mb-3 position-relative" 
+                                                <h4
+                                                    className="fw-bold mb-3 position-relative"
                                                     style={{
                                                         color: '#1e2247',
                                                         fontSize: '1.2rem',
@@ -870,9 +870,9 @@ export default function UnarmedSecurityPage() {
                                                 >
                                                     {benefit.title}
                                                 </h4>
-                                                
+
                                                 {/* Description with dropdown style */}
-                                                <div 
+                                                <div
                                                     className="benefit-description position-relative"
                                                     style={{
                                                         maxHeight: '120px',
@@ -880,10 +880,10 @@ export default function UnarmedSecurityPage() {
                                                         transition: 'all 0.5s ease'
                                                     }}
                                                 >
-                                                    <p 
-                                                        className="mb-0" 
+                                                    <p
+                                                        className="mb-0"
                                                         style={{
-                                                            color: '#6c757d', 
+                                                            color: '#6c757d',
                                                             lineHeight: '1.7',
                                                             fontSize: '0.95rem',
                                                             transition: 'all 0.4s ease',
@@ -892,10 +892,10 @@ export default function UnarmedSecurityPage() {
                                                     >
                                                         {benefit.description}
                                                     </p>
-                                    </div>
-                                                
+                                                </div>
+
                                                 {/* Expand indicator */}
-                                                <div 
+                                                <div
                                                     className="expand-indicator position-absolute"
                                                     style={{
                                                         bottom: '15px',
@@ -909,10 +909,10 @@ export default function UnarmedSecurityPage() {
                                                         transition: 'all 0.4s ease'
                                                     }}
                                                 ></div>
-                                </div>
-                                            
+                                            </div>
+
                                             {/* Corner accent */}
-                                            <div 
+                                            <div
                                                 className="position-absolute"
                                                 style={{
                                                     top: '0',
@@ -928,17 +928,17 @@ export default function UnarmedSecurityPage() {
                                         </div>
                                     </div>
                                 ))}
-                                </div>
+                            </div>
                         </div>
                     </div>
 
                     {/*===== Training Section =====*/}
-                    <div className="training-section section-padding" style={{background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)'}}>
+                    <div className="training-section section-padding" style={{ background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)' }}>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="training-image">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '20px',
@@ -946,9 +946,9 @@ export default function UnarmedSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.3)'
                                             }}
                                         >
-                                            <img 
-                                                src="/assets/img/blog/tranning.jpg" 
-                                                alt="Security Training" 
+                                            <img
+                                                src="/assets/img/blog/tranning.jpg"
+                                                alt="Security Training"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -962,7 +962,7 @@ export default function UnarmedSecurityPage() {
                                 <div className="col-lg-6">
                                     <div className="training-content ps-lg-4">
                                         <div className="subtitle mb-3">
-                                            <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                            <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                 <i className="bi bi-award me-2"></i>
                                                 PROFESSIONAL STANDARDS
                                             </span>
@@ -970,10 +970,10 @@ export default function UnarmedSecurityPage() {
                                         <h2 className="display-5 fw-bold mb-4 text-white">
                                             Training and Certification for Unarmed Security Guards
                                         </h2>
-                                        <p className="lead text-white mb-4" style={{opacity: '0.9'}}>
+                                        <p className="lead text-white mb-4" style={{ opacity: '0.9' }}>
                                             To become a qualified unarmed security guard, personnel must complete the Certificate II in Security Operations, which covers the essential skills needed for the role.
                                         </p>
-                                        <p className="text-white mb-4" style={{opacity: '0.9'}}>
+                                        <p className="text-white mb-4" style={{ opacity: '0.9' }}>
                                             Additionally, guards are trained in emergency response, conflict resolution, and surveillance monitoring to ensure they are equipped to handle a wide range of security situations effectively. At Metro Guards, we ensure that all of our unarmed security personnel undergo continuous training and are well-versed in the latest security procedures and protocols to provide the highest level of service.
                                         </p>
                                         <div className="training-features">
@@ -985,7 +985,7 @@ export default function UnarmedSecurityPage() {
                                                 "Ongoing professional development"
                                             ].map((feature, index) => (
                                                 <div key={index} className="feature-item d-flex align-items-center mb-3">
-                                                    <div 
+                                                    <div
                                                         className="feature-icon me-3 d-flex align-items-center justify-content-center"
                                                         style={{
                                                             width: '30px',
@@ -997,64 +997,64 @@ export default function UnarmedSecurityPage() {
                                                     >
                                                         <CheckCircle size={16} />
                                                     </div>
-                                                    <span className="text-white" style={{fontWeight: '500'}}>{feature}</span>
+                                                    <span className="text-white" style={{ fontWeight: '500' }}>{feature}</span>
                                                 </div>
                                             ))}
-                                                    </div>
-                                                </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/*===== Why Choose Us Section =====*/}
-                    <div className="choose-section section-padding" style={{background: '#f8f9fa'}}>
+                    <div className="choose-section section-padding" style={{ background: '#f8f9fa' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12 text-center mb-5">
                                     <div className="subtitle mb-3">
-                                        <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                        <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                             <i className="bi bi-shield-check me-2"></i>
                                             OUR COMMITMENT
                                         </span>
                                     </div>
-                                    <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                         Why Choose Metro Guards for Unarmed Security Services?
                                     </h2>
-                                    <p className="lead" style={{color: '#6c757d'}}>
+                                    <p className="lead" style={{ color: '#6c757d' }}>
                                         At Metro Guards, we understand that every property has unique security needs. We work with you to create tailored security solutions that ensure your property is protected while remaining cost-effective.
                                     </p>
                                 </div>
                             </div>
                             <div className="row g-4 g-md-3 g-lg-4">
                                 {[
-                                    { 
-                                        icon: <User size={40} />, 
-                                        title: "Experienced and Trained Guards", 
+                                    {
+                                        icon: <User size={40} />,
+                                        title: "Experienced and Trained Guards",
                                         description: "Our unarmed security personnel are highly skilled, trained, and licensed to ensure that your property is in safe hands.",
                                         number: "01"
                                     },
-                                    { 
-                                        icon: <Wrench size={40} />, 
-                                        title: "Flexible Security Solutions", 
+                                    {
+                                        icon: <Wrench size={40} />,
+                                        title: "Flexible Security Solutions",
                                         description: "We offer adaptable security solutions that can be customized to meet the unique needs of your property.",
                                         number: "02"
                                     },
-                                    { 
-                                        icon: <Zap size={40} />, 
-                                        title: "Affordable and Effective", 
+                                    {
+                                        icon: <Zap size={40} />,
+                                        title: "Affordable and Effective",
                                         description: "Our unarmed security services are a cost-effective way to provide robust protection without the higher costs of armed guards.",
                                         number: "03"
                                     },
-                                    { 
-                                        icon: <Award size={40} />, 
-                                        title: "Proven Track Record", 
+                                    {
+                                        icon: <Award size={40} />,
+                                        title: "Proven Track Record",
                                         description: "We have a proven track record of providing reliable and effective security services to clients across Melbourne.",
                                         number: "04"
                                     }
                                 ].map((reason, index) => (
                                     <div key={index} className="col-lg-6">
-                                        <div 
+                                        <div
                                             className="choose-card h-100 position-relative"
                                             style={{
                                                 backgroundColor: 'transparent',
@@ -1066,7 +1066,7 @@ export default function UnarmedSecurityPage() {
                                             }}
                                         >
                                             {/* Main card container */}
-                                            <div 
+                                            <div
                                                 className="position-relative h-100"
                                                 style={{
                                                     background: 'linear-gradient(135deg, #1e2247 0%, #2a2d5a 100%)',
@@ -1080,7 +1080,7 @@ export default function UnarmedSecurityPage() {
                                                 }}
                                             >
                                                 {/* Number badge */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         top: '20px',
@@ -1101,10 +1101,10 @@ export default function UnarmedSecurityPage() {
                                                     }}
                                                 >
                                                     {reason.number}
-                                            </div>
-                                                
+                                                </div>
+
                                                 {/* Animated background pattern */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         top: '-50px',
@@ -1117,7 +1117,7 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '-30px',
@@ -1130,11 +1130,11 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                
+
                                                 {/* Content */}
-                                                <div className="position-relative" style={{zIndex: '2'}}>
+                                                <div className="position-relative" style={{ zIndex: '2' }}>
                                                     {/* Icon with unique styling */}
-                                                    <div 
+                                                    <div
                                                         className="choose-icon mb-4 d-flex align-items-center justify-content-center"
                                                         style={{
                                                             width: '80px',
@@ -1148,9 +1148,9 @@ export default function UnarmedSecurityPage() {
                                                         }}
                                                     >
                                                         {reason.icon}
-                                                        
+
                                                         {/* Icon glow effect */}
-                                                        <div 
+                                                        <div
                                                             className="position-absolute"
                                                             style={{
                                                                 width: '100%',
@@ -1161,11 +1161,11 @@ export default function UnarmedSecurityPage() {
                                                                 transition: 'all 0.6s ease'
                                                             }}
                                                         ></div>
-                                        </div>
-                                                    
+                                                    </div>
+
                                                     {/* Title with enhanced styling */}
-                                                    <h4 
-                                                        className="fw-bold mb-3" 
+                                                    <h4
+                                                        className="fw-bold mb-3"
                                                         style={{
                                                             color: '#ffffff',
                                                             fontSize: '1.4rem',
@@ -1176,12 +1176,12 @@ export default function UnarmedSecurityPage() {
                                                     >
                                                         {reason.title}
                                                     </h4>
-                                                    
+
                                                     {/* Description with enhanced styling */}
-                                                    <p 
-                                                        className="mb-0" 
+                                                    <p
+                                                        className="mb-0"
                                                         style={{
-                                                            color: 'rgba(255, 255, 255, 0.9)', 
+                                                            color: 'rgba(255, 255, 255, 0.9)',
                                                             lineHeight: '1.8',
                                                             fontSize: '1rem',
                                                             transition: 'all 0.5s ease',
@@ -1190,10 +1190,10 @@ export default function UnarmedSecurityPage() {
                                                     >
                                                         {reason.description}
                                                     </p>
-                                    </div>
-                                                
+                                                </div>
+
                                                 {/* Decorative elements */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         top: '15px',
@@ -1207,7 +1207,7 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '15px',
@@ -1221,9 +1221,9 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                                
+
                                                 {/* Bottom accent line */}
-                                                <div 
+                                                <div
                                                     className="position-absolute"
                                                     style={{
                                                         bottom: '0',
@@ -1237,39 +1237,39 @@ export default function UnarmedSecurityPage() {
                                                         zIndex: '1'
                                                     }}
                                                 ></div>
-                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                 ))}
                             </div>
                         </div>
                     </div>
 
                     {/*===== FAQ Section =====*/}
-                    <div className="faq-section section-padding" style={{background: '#ffffff'}}>
+                    <div className="faq-section section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12 text-center mb-5">
                                     <div className="subtitle mb-3">
-                                        <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                        <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                             <i className="bi bi-question-circle me-2"></i>
                                             FREQUENTLY ASKED QUESTIONS
                                         </span>
                                     </div>
-                                    <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
+                                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
                                         Everything You Need to Know About Unarmed Security
                                     </h2>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
 
                             <div className="row g-4 g-md-3 g-lg-4">
                                 <div className="col-lg-12">
                                     <div className="faq-content">
                                         {faqData.map((faq, index) => (
                                             <div key={index} className="faq-item mb-3">
-                                                <div 
+                                                <div
                                                     className="faq-header p-4"
-                                                style={{
+                                                    style={{
                                                         backgroundColor: activeFaq === index ? '#ffffff' : '#f8f9fa',
                                                         borderRadius: activeFaq === index ? '12px 12px 0 0' : '12px',
                                                         border: '1px solid #e9ecef',
@@ -1281,13 +1281,13 @@ export default function UnarmedSecurityPage() {
                                                     onClick={() => toggleFaq(index)}
                                                 >
                                                     <div className="d-flex align-items-center justify-content-between">
-                                                        <h4 className="mb-0 fw-bold" style={{color: '#1e2247', fontSize: '1.2rem'}}>
+                                                        <h4 className="mb-0 fw-bold" style={{ color: '#1e2247', fontSize: '1.2rem' }}>
                                                             {faq.question}
                                                         </h4>
                                                         <div className="expand-icon">
-                                                            <div 
+                                                            <div
                                                                 className="d-flex align-items-center justify-content-center"
-                                                style={{
+                                                                style={{
                                                                     width: '35px',
                                                                     height: '35px',
                                                                     backgroundColor: activeFaq === index ? '#1e2247' : '#e9ecef',
@@ -1296,16 +1296,16 @@ export default function UnarmedSecurityPage() {
                                                                     transition: 'all 0.3s ease'
                                                                 }}
                                                             >
-                                                                <span style={{fontSize: '1.1rem', fontWeight: 'bold'}}>
+                                                                <span style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>
                                                                     {activeFaq === index ? '−' : '+'}
                                                                 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                                 {activeFaq === index && (
-                                                    <div 
+                                                    <div
                                                         className="faq-content p-4"
                                                         style={{
                                                             backgroundColor: '#ffffff',
@@ -1317,21 +1317,21 @@ export default function UnarmedSecurityPage() {
                                                             animation: 'slideDown 0.3s ease'
                                                         }}
                                                     >
-                                                        <p style={{color: '#6c757d', lineHeight: '1.7', margin: 0}}>
+                                                        <p style={{ color: '#6c757d', lineHeight: '1.7', margin: 0 }}>
                                                             {faq.answer}
                                                         </p>
-                        </div>
+                                                    </div>
                                                 )}
-                    </div>
+                                            </div>
                                         ))}
-                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/*===== Final CTA Section =====*/}
-                    
+
 
                     {/* Add custom styles */}
                     <style jsx>{`
@@ -1811,7 +1811,7 @@ export default function UnarmedSecurityPage() {
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                
+
             </Layout>
         </>
     )

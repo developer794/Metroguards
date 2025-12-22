@@ -160,7 +160,9 @@ export default function Page() {
             'callback': window.onRecaptchaSuccess
           });
         } catch (e) {
-          console.error('reCAPTCHA render error:', e);
+          if (process.env.NODE_ENV === 'development') {
+            console.error('reCAPTCHA render error:', e);
+          }
         }
       }
     };
@@ -377,14 +379,14 @@ export default function Page() {
                   </div>
                   
                     {/* Thank You Message */}
-                    <h1 style={{
+                    <h2 style={{
                       color: '#1e2247',
                       fontSize: '2.8rem',
                       fontWeight: '800',
                       marginBottom: '20px',
                       position: 'relative',
                       zIndex: 1
-                    }}>Thank You!</h1>
+                    }}>Thank You!</h2>
 
                     <div style={{
                       width: '80px',

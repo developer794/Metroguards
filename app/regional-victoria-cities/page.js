@@ -5,19 +5,19 @@ export const metadata = {
   description:
     "Metro Guards provides protection across Regional Victoria, including Geelong, Bendigo, Shepparton & Warrnambool for businesses, construction sites, & events.",
   alternates: { 
-    canonical: "https://metroguards.com.au/educational-institute-security-guards" 
+    canonical: "https://metroguards.com.au/regional-victoria-cities" 
   },
   openGraph: {
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
-    url: "https://metroguards.com.au/educational-institute-security-guards",
+    title: "Trusted Security Across Regional Victoria | Metro Guards",
+    description: "Metro Guards provides protection across Regional Victoria, including Geelong, Bendigo, Shepparton & Warrnambool for businesses, construction sites, & events.",
+    url: "https://metroguards.com.au/regional-victoria-cities",
     siteName: "Metro Guards",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Educational Institution Security Guards in Melbourne | Metro Guards",
-    description: "Professional security guards for schools and universities in Melbourne. Student safety, campus protection, emergency response, and 24/7 educational facility security.",
+    title: "Trusted Security Across Regional Victoria | Metro Guards",
+    description: "Metro Guards provides protection across Regional Victoria, including Geelong, Bendigo, Shepparton & Warrnambool for businesses, construction sites, & events.",
   },
   robots: {
     index: true,

@@ -25,11 +25,11 @@ export default function Location() {
       description: "Professional security services across North Melbourne suburbs. Our Security Guards and Mobile Patrols cover North Melbourne, Carlton, Brunswick, Coburg, Preston, and surrounding areas with 24/7 protection.",
       link: "/north-melbourne",
       areas: [
-        "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065", 
-        "Brunswick 3056", "Collingwood 3066", "Coburg 3058", "Preston 3072", 
-        "Reservoir 3073", "Thornbury 3071", "Fawkner 3060", "Broadmeadows 3047", 
-        "Glenroy 3046", "Pascoe Vale 3044", "Craigieburn 3064", "Epping 3076", 
-        "Somerton 3062", "Campbellfield 3061", "Coolaroo 3048", "Tullamarine 3043", 
+        "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065",
+        "Brunswick 3056", "Collingwood 3066", "Coburg 3058", "Preston 3072",
+        "Reservoir 3073", "Thornbury 3071", "Fawkner 3060", "Broadmeadows 3047",
+        "Glenroy 3046", "Pascoe Vale 3044", "Craigieburn 3064", "Epping 3076",
+        "Somerton 3062", "Campbellfield 3061", "Coolaroo 3048", "Tullamarine 3043",
         "Mickleham 3064", "Roxburgh Park 3064"
       ]
     },
@@ -39,10 +39,10 @@ export default function Location() {
       description: "Comprehensive security solutions for East Melbourne suburbs including Richmond, Hawthorn, Kew, Box Hill, and Ringwood. Our security guards provide static guards, mobile patrols, and event security services.",
       link: "/east-melbourne",
       areas: [
-        "East Melbourne 3002", "Richmond 3121", "Abbotsford 3067", "Hawthorn 3122", 
-        "Kew 3101", "Box Hill 3128", "Balwyn 3103", "Doncaster 3108", 
-        "Mont Albert 3127", "Camberwell 3124", "Burwood 3125", "Ringwood 3134", 
-        "Mitcham 3132", "Blackburn 3130", "Nunawading 3131", "Bayswater 3153", 
+        "East Melbourne 3002", "Richmond 3121", "Abbotsford 3067", "Hawthorn 3122",
+        "Kew 3101", "Box Hill 3128", "Balwyn 3103", "Doncaster 3108",
+        "Mont Albert 3127", "Camberwell 3124", "Burwood 3125", "Ringwood 3134",
+        "Mitcham 3132", "Blackburn 3130", "Nunawading 3131", "Bayswater 3153",
         "Croydon 3136", "Lilydale 3140", "Vermont 3133"
       ]
     },
@@ -52,11 +52,11 @@ export default function Location() {
       description: "Expert security guard services for South Melbourne areas including South Melbourne, St Kilda, Prahran, Dandenong, and Frankston. We offer Mobile Security Patrols, Static Guards, and specialized Event Security.",
       link: "/south-melbourne",
       areas: [
-        "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207", 
-        "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181", 
-        "Malvern 3144", "Caulfield 3162", "Carnegie 3163", "Glen Iris 3146", 
-        "Bentleigh 3204", "Dandenong 3175", "Springvale 3171", "Clayton 3168", 
-        "Mulgrave 3170", "Keysborough 3173", "Moorabbin 3189", "Cheltenham 3192", 
+        "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207",
+        "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181",
+        "Malvern 3144", "Caulfield 3162", "Carnegie 3163", "Glen Iris 3146",
+        "Bentleigh 3204", "Dandenong 3175", "Springvale 3171", "Clayton 3168",
+        "Mulgrave 3170", "Keysborough 3173", "Moorabbin 3189", "Cheltenham 3192",
         "Frankston 3199", "Carrum Downs 3201", "Sandringham 3191"
       ]
     },
@@ -66,11 +66,11 @@ export default function Location() {
       description: "Professional security coverage across West Melbourne suburbs including Footscray, Sunshine, Altona, Werribee, Point Cook, and Melton. Our security guards deliver reliable protection for residential and commercial properties.",
       link: "/west-melbourne",
       areas: [
-        "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031", 
-        "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019", 
-        "Maidstone 3012", "Maribyrnong 3032", "Altona 3018", "Williamstown 3016", 
-        "Laverton 3028", "Derrimut 3030", "Truganina 3029", "Tarneit 3029", 
-        "Werribee 3030", "Point Cook 3030", "Hoppers Crossing 3029", "Melton 3337", 
+        "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031",
+        "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019",
+        "Maidstone 3012", "Maribyrnong 3032", "Altona 3018", "Williamstown 3016",
+        "Laverton 3028", "Derrimut 3030", "Truganina 3029", "Tarneit 3029",
+        "Werribee 3030", "Point Cook 3030", "Hoppers Crossing 3029", "Melton 3337",
         "Caroline Springs 3023", "Deer Park 3023"
       ]
     },
@@ -80,11 +80,11 @@ export default function Location() {
       description: "Dedicated security services for Northwest Melbourne including Carlton, Brunswick, Coburg, Broadmeadows, Craigieburn, and Epping. Our security guards provide comprehensive protection with mobile patrols and static guard services.",
       link: "/north-west-melbourne",
       areas: [
-        "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065", 
-        "Brunswick 3056", "Coburg 3058", "Pascoe Vale 3044", "Glenroy 3046", 
-        "Broadmeadows 3047", "Fawkner 3060", "Campbellfield 3061", "Somerton 3062", 
-        "Coolaroo 3048", "Tullamarine 3043", "Craigieburn 3064", "Mickleham 3064", 
-        "Roxburgh Park 3064", "Epping 3076", "Reservoir 3073", "Preston 3072", 
+        "North Melbourne 3051", "Carlton 3053", "Parkville 3052", "Fitzroy 3065",
+        "Brunswick 3056", "Coburg 3058", "Pascoe Vale 3044", "Glenroy 3046",
+        "Broadmeadows 3047", "Fawkner 3060", "Campbellfield 3061", "Somerton 3062",
+        "Coolaroo 3048", "Tullamarine 3043", "Craigieburn 3064", "Mickleham 3064",
+        "Roxburgh Park 3064", "Epping 3076", "Reservoir 3073", "Preston 3072",
         "Thornbury 3071"
       ]
     },
@@ -94,16 +94,16 @@ export default function Location() {
       description: "Extensive security coverage spanning West to East Melbourne suburbs. From Footscray and Werribee to Richmond and Ringwood, our security guards offer comprehensive protection across this diverse region.",
       link: "/west-east-melbourne",
       areas: [
-        "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031", 
-        "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019", 
-        "Maidstone 3012", "Maribyrnong 3032", "Altona 3018", "Williamstown 3016", 
-        "Laverton 3028", "Derrimut 3030", "Truganina 3029", "Tarneit 3029", 
-        "Werribee 3030", "Point Cook 3030", "Hoppers Crossing 3029", "Melton 3337", 
-        "Caroline Springs 3023", "Deer Park 3023", "East Melbourne 3002", "Richmond 3121", 
-        "Abbotsford 3067", "Hawthorn 3122", "Kew 3101", "Box Hill 3128", 
-        "Balwyn 3103", "Doncaster 3108", "Mont Albert 3127", "Camberwell 3124", 
-        "Burwood 3125", "Ringwood 3134", "Mitcham 3132", "Blackburn 3130", 
-        "Nunawading 3131", "Bayswater 3153", "Croydon 3136", "Lilydale 3140", 
+        "West Melbourne 3003", "Docklands 3008", "Footscray 3011", "Kensington 3031",
+        "Yarraville 3013", "Seddon 3011", "Sunshine 3020", "Braybrook 3019",
+        "Maidstone 3012", "Maribyrnong 3032", "Altona 3018", "Williamstown 3016",
+        "Laverton 3028", "Derrimut 3030", "Truganina 3029", "Tarneit 3029",
+        "Werribee 3030", "Point Cook 3030", "Hoppers Crossing 3029", "Melton 3337",
+        "Caroline Springs 3023", "Deer Park 3023", "East Melbourne 3002", "Richmond 3121",
+        "Abbotsford 3067", "Hawthorn 3122", "Kew 3101", "Box Hill 3128",
+        "Balwyn 3103", "Doncaster 3108", "Mont Albert 3127", "Camberwell 3124",
+        "Burwood 3125", "Ringwood 3134", "Mitcham 3132", "Blackburn 3130",
+        "Nunawading 3131", "Bayswater 3153", "Croydon 3136", "Lilydale 3140",
         "Vermont 3133"
       ]
     },
@@ -113,11 +113,11 @@ export default function Location() {
       description: "Specialized security services for South-East Melbourne covering St Kilda, Prahran, Dandenong, Frankston, and surrounding suburbs. Our professional security guards provide mobile patrols, static guards, and event security.",
       link: "/south-east-melbourne",
       areas: [
-        "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207", 
-        "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181", 
-        "Malvern 3144", "Caulfield 3162", "Carnegie 3163", "Glen Iris 3146", 
-        "Bentleigh 3204", "Sandringham 3191", "Moorabbin 3189", "Cheltenham 3192", 
-        "Dandenong 3175", "Springvale 3171", "Clayton 3168", "Mulgrave 3170", 
+        "South Melbourne 3205", "Southbank 3006", "Albert Park 3206", "Port Melbourne 3207",
+        "St Kilda 3182", "Elwood 3184", "Prahran 3181", "Windsor 3181",
+        "Malvern 3144", "Caulfield 3162", "Carnegie 3163", "Glen Iris 3146",
+        "Bentleigh 3204", "Sandringham 3191", "Moorabbin 3189", "Cheltenham 3192",
+        "Dandenong 3175", "Springvale 3171", "Clayton 3168", "Mulgrave 3170",
         "Keysborough 3173", "Frankston 3199", "Carrum Downs 3201"
       ]
     },
@@ -139,9 +139,9 @@ export default function Location() {
       description: "Extended security services across Regional Victoria including Geelong, Ballarat, Bendigo, Shepparton, and other major regional cities. Our security guards travel to provide professional protection beyond Melbourne metro areas.",
       link: "/regional-victoria-cities",
       areas: [
-        "Geelong 3220", "Ballarat 3350", "Bendigo 3550", "Shepparton 3630", 
-        "Warrnambool 3280", "Traralgon 3844", "Morwell 3840", "Sale 3850", 
-        "Bairnsdale 3875", "Colac 3250", "Horsham 3400", "Ararat 3377", 
+        "Geelong 3220", "Ballarat 3350", "Bendigo 3550", "Shepparton 3630",
+        "Warrnambool 3280", "Traralgon 3844", "Morwell 3840", "Sale 3850",
+        "Bairnsdale 3875", "Colac 3250", "Horsham 3400", "Ararat 3377",
         "Echuca 3564", "Torquay 3228"
       ]
     }
@@ -152,7 +152,7 @@ export default function Location() {
       <div className="container">
         <div className="location-header">
           <div className="header-content">
-            <button 
+            <button
               className="see-locations-badge"
               onClick={toggleLocationsVisibility}
               aria-expanded={showLocations}
@@ -169,15 +169,15 @@ export default function Location() {
               <div className="section-title">
                 <span className="section-subtitle">COMPREHENSIVE PROTECTION</span>
                 <h2 className="main-title">
-                Coverage & Local Security Services in Melbourne
+                  Coverage & Local Security Services in Melbourne
                 </h2>
               </div>
               <div className="description-content">
                 <p className="description-text">
-                Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected round the clock.
+                  Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected round the clock.
 
                 </p>
-                
+
               </div>
             </div>
 
@@ -186,7 +186,7 @@ export default function Location() {
                 {locations.map((location) => (
                   <div key={location.id} className="location-item">
                     <div className="location-header-wrapper">
-                      <button 
+                      <button
                         className="location-toggle-icon"
                         onClick={() => toggleExpanded(location.id)}
                         aria-expanded={expandedStates[location.id]}
@@ -238,17 +238,7 @@ export default function Location() {
           padding: 100px 0;
         }
 
-        .location-section::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: url('/assets/img/bg/pattern.png') repeat;
-          opacity: 0.05;
-          pointer-events: none;
-        }
+
 
         .container {
           max-width: 1320px;

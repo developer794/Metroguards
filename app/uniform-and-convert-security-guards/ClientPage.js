@@ -158,7 +158,7 @@ export default function UniformAndConvertSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -168,7 +168,7 @@ export default function UniformAndConvertSecurityPage() {
                                         >
                                             24/7 Uniform & Covert Security Guards 
                                             <span style={{color: '#fdc51a'}}>Service in Melbourne</span>
-                                        </h1>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{

@@ -32,7 +32,7 @@ export default function AssetSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -130,22 +130,22 @@ export default function AssetSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONSTRUCTION PATROL SECURITY GUARDS "
-                mainTitle="ASSET PROTECTION SECURITY GUARDS IN MELBOURNE " 
+                mainTitle="ASSET PROTECTION SECURITY GUARDS IN MELBOURNE "
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/3EC7BE92-76FD-4F5A-849D-C8874BF17CCE_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -153,43 +153,45 @@ export default function AssetSecurityPage() {
                                                     borderRadius: '25px'
                                                 }}
                                             >
-                                                PROFESSIONAL PROTECTION
+                                                Protect Your Assets with Expert
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Securing Assets with Measured  <br />
-                                            <span style={{color: '#fdc51a'}}>Precision</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            24/7 Asset Protection Security Melbourne  <br />
+                                            <span style={{ color: '#fdc51a' }}>Near Me</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                            Asset protection is not an accessory service at Metro Guards, it is a core discipline developed through years of field-tested operations across Melbourne’s commercial, industrial, and logistics sectors.
-                                            <br /><br />Our asset protection security services are designed to maintain the integrity of what you own, buildings, stock, equipment, data, or confidential material, through structured guard deployment, live monitoring, and verified reporting. Every action is procedural. Every patrol has a purpose.
-                                            </p>
-                                        
+                                            Metro Guards provides highly trained asset protection security guards in Melbourne who safeguard high-value goods, prevent unauthorised access, and secure critical inventory areas across warehouses, retail stores, logistics hubs, construction sites, and industrial facilities.
+                                            <br /><br />Whether you're managing goods in Dandenong, operating a warehouse in Tullamarine, or running retail in Melbourne CBD, our 24/7 asset protection security Melbourne team reduces losses, monitors high-risk zones, and protects assets that drive business performance.
+                                            Our officers specialise in preventing inventory shrinkage, internal theft, external theft, unauthorised access to asset rooms, and high-value goods movement risks.
+
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -202,15 +204,15 @@ export default function AssetSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -231,16 +233,16 @@ export default function AssetSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -248,9 +250,9 @@ export default function AssetSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E906AD3-E59A-4B0D-AB5A-9FA58736A309_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -259,9 +261,9 @@ export default function AssetSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -274,7 +276,7 @@ export default function AssetSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -350,26 +352,26 @@ export default function AssetSecurityPage() {
                                                 transform: 'perspective(1000px) rotateY(-5deg)',
                                                 transition: 'all 0.4s ease'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c%20(1).webp"
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                                }}>
+                                                <img
+                                                    src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/7E68B990-A328-4FF2-B123-A332787E94A2_1_105_c%20(1).webp"
+                                                    alt="Professional Building Security Guards"
+                                                    className="img-fluid"
+                                                    style={{
+                                                        width: '100%',
                                                         height: '550px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
                                                 />
-                                                
+
                                                 {/* Image Overlay */}
                                                 <div style={{
                                                     position: 'absolute',
@@ -380,11 +382,11 @@ export default function AssetSecurityPage() {
                                                     background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
                                                     zIndex: 1
                                                 }}></div>
-                                </div>
+                                            </div>
 
                                             {/* Floating Stats Cards */}
-                                            
-                                           
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -394,51 +396,51 @@ export default function AssetSecurityPage() {
                                     <div className="services-content">
                                         {/* Header Section */}
                                         <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
+                                            <h2 style={{
+                                                color: "#1e2247",
                                                 fontSize: "3.2rem",
                                                 fontWeight: "800",
                                                 marginBottom: "25px",
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                                Purpose of Asset Protection
+                                                Asset Protection Security Guards in Melbourne
                                             </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
+
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
-                                               
+
                                             }}>
-                                                Every site contains assets that hold operational or financial weight. When those assets are compromised, disruption follows. Metro Guards’ asset protection security guards are trained to prevent loss through layered deterrence, physical presence, and data-backed supervision.
-                                                <br /><br />The process begins with assessment. We study how assets move, where they are stored, and who interacts with them. We then deploy guards and systems that reduce exposure, enforce access control, and monitor every zone with recorded accountability.
-                                                </p>
-                                            
-                                            
+                                                Melbourne businesses today are dealing with a surge in inventory shrinkage, unauthorised access, staff-related theft, and high-value goods disappearing without trace. Warehouses face break-ins during quiet hours, retail stores struggle with stockroom theft, and logistics hubs lose assets during loading and transfers.
+                                                <br /><br />With rising operational costs and increasing criminal activity across suburbs like Dandenong, Campbellfield, Tullamarine, Derrimut and the CBD, even a single incident can cause major financial damage. That’s why businesses need trained asset protection security guards in Melbourne who can actively stop losses before they escalate.
+                                            </p>
+
+
                                         </div>
 
-                                      
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
 
-                     {/*=====  Section 2 =====*/}
-                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+
+                    {/*=====  Section 2 =====*/}
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Asset%20Protection/5FF0A9F2-0B06-4543-9AC1-2D57F158C07A_1_105_c.webp"
-                                                alt="Professional Asset Protection Security Guards" 
+                                                alt="Professional Asset Protection Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -449,7 +451,7 @@ export default function AssetSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Guard Proficiency Section */}
                                         <div className="human-element-section section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
@@ -472,8 +474,8 @@ export default function AssetSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                <h2 className="display-6 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Guard <span style={{color: '#fdc51a'}}>Proficiency</span>
+                                                <h2 className="display-6 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                    Skilled Asset Protection Officers Trained for High-Risk <span style={{ color: '#fdc51a' }}>Situations</span>
                                                 </h2>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
@@ -481,7 +483,7 @@ export default function AssetSecurityPage() {
                                                     lineHeight: '1.8',
                                                     marginBottom: '20px'
                                                 }}>
-                                                    Every guard assigned to asset protection is <strong style={{color: '#1e2247'}}>licensed, background-checked, and briefed specifically for the site</strong>. Their training covers access control systems, incident containment, risk documentation, and emergency coordination.
+                                                    Every guard assigned to asset protection is <strong style={{ color: '#1e2247' }}>licensed, background-checked, and briefed specifically for the site</strong>. Their training covers access control systems, incident containment, risk documentation, and emergency coordination.
                                                 </p>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
@@ -489,7 +491,7 @@ export default function AssetSecurityPage() {
                                                     lineHeight: '1.8',
                                                     marginBottom: '20px'
                                                 }}>
-                                                    Our guards are not general observers; they are <strong style={{color: '#fdc51a'}}>operational custodians responsible for preserving the physical and reputational security</strong> of the client.
+                                                    Our guards are not general observers; they are <strong style={{ color: '#fdc51a' }}>operational custodians responsible for preserving the physical and reputational security</strong> of the client.
                                                 </p>
                                                 <p className="lead" style={{
                                                     color: '#6c757d',
@@ -508,12 +510,12 @@ export default function AssetSecurityPage() {
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     DIVERSE APPLICATIONS
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Operational <span style={{color: '#fdc51a'}}>Coverage</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Comprehensive Coverage Across Melbourne <span style={{ color: '#fdc51a' }}>Industries</span>
                                             </h2>
                                             <p style={{
                                                 color: '#6c757d',
@@ -521,10 +523,10 @@ export default function AssetSecurityPage() {
                                                 lineHeight: '1.8',
                                                 marginBottom: '30px'
                                             }}>
-                                                Our asset protection security services operate across a wide range of Melbourne industries:
+                                                Our asset protection security guards in Melbourne safeguard warehouses, retail stores, logistics hubs, and construction sites. From high-value goods to sensitive stockrooms, we provide reliable, 24/7 protection tailored to your industry’s unique risks.
                                             </p>
                                         </div>
-                                        
+
                                         {/* Interactive Service Accordion */}
                                         <div className="services-accordion">
                                             {[
@@ -555,7 +557,7 @@ export default function AssetSecurityPage() {
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div
                                                         className="accordion-header p-4"
                                                         style={{
                                                             backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -569,7 +571,7 @@ export default function AssetSecurityPage() {
                                                     >
                                                         <div className="d-flex align-items-center justify-content-between">
                                                             <div className="d-flex align-items-center">
-                                                                <div 
+                                                                <div
                                                                     className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '50px',
@@ -583,11 +585,11 @@ export default function AssetSecurityPage() {
                                                                     <i className={service.icon}></i>
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="mb-0 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
+                                                                    <h5 className="mb-0 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
                                                                 </div>
                                                             </div>
                                                             <div className="expand-icon">
-                                                                <div 
+                                                                <div
                                                                     className="d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '40px',
@@ -598,16 +600,16 @@ export default function AssetSecurityPage() {
                                                                         transition: 'all 0.3s ease'
                                                                     }}
                                                                 >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                         {activeService === index ? '−' : '+'}
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     {activeService === index && (
-                                                        <div 
+                                                        <div
                                                             className="accordion-content p-4"
                                                             style={{
                                                                 backgroundColor: '#ffffff',
@@ -619,8 +621,8 @@ export default function AssetSecurityPage() {
                                                             }}
                                                         >
                                                             <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
+                                                                color: '#6c757d',
+                                                                lineHeight: '1.7',
                                                                 margin: 0,
                                                                 fontSize: '1rem'
                                                             }}>
@@ -648,7 +650,7 @@ export default function AssetSecurityPage() {
                                                 fontWeight: '600',
                                                 fontStyle: 'italic'
                                             }}>
-                                                Each environment is distinct. The deployment model <span style={{color: '#fdc51a'}}>adapts to its risk profile, not to a checklist</span>.
+                                                Each environment is distinct. The deployment model <span style={{ color: '#fdc51a' }}>adapts to its risk profile, not to a checklist</span>.
                                             </p>
                                         </div>
                                     </div>
@@ -704,7 +706,7 @@ export default function AssetSecurityPage() {
                                                 letterSpacing: '2px',
                                                 boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
                                             }}>
-                                                <Users size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                <Users size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                 Operational Framework
                                             </span>
                                             <div style={{
@@ -722,7 +724,7 @@ export default function AssetSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Structure of <span style={{color: '#fdc51a'}}>Deployment</span>
+                                            Structure of <span style={{ color: '#fdc51a' }}>Deployment</span>
                                         </h2>
 
                                         <p style={{
@@ -767,18 +769,18 @@ export default function AssetSecurityPage() {
                                             position: 'relative',
                                             overflow: 'hidden'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-8px)';
-                                            e.currentTarget.style.boxShadow = index % 2 === 0 
-                                                ? '0 20px 40px rgba(253, 197, 26, 0.2)'
-                                                : '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                            e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                            e.currentTarget.style.boxShadow = 'none';
-                                            e.currentTarget.style.borderColor = 'transparent';
-                                        }}>
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-8px)';
+                                                e.currentTarget.style.boxShadow = index % 2 === 0
+                                                    ? '0 20px 40px rgba(253, 197, 26, 0.2)'
+                                                    : '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                                e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                                e.currentTarget.style.borderColor = 'transparent';
+                                            }}>
                                             {/* Corner Accent */}
                                             <div style={{
                                                 position: 'absolute',
@@ -786,7 +788,7 @@ export default function AssetSecurityPage() {
                                                 right: 0,
                                                 width: '100px',
                                                 height: '100px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)'
                                                     : 'linear-gradient(135deg, rgba(30, 34, 71, 0.08), transparent)',
                                                 borderBottomLeftRadius: '100%'
@@ -796,14 +798,14 @@ export default function AssetSecurityPage() {
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 marginBottom: '25px',
-                                                boxShadow: index % 2 === 0 
+                                                boxShadow: index % 2 === 0
                                                     ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : '0 10px 25px rgba(30, 34, 71, 0.3)',
                                                 color: index % 2 === 0 ? '#1e2247' : '#fdc51a'
@@ -850,7 +852,7 @@ export default function AssetSecurityPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            All activities are <strong style={{color: '#fdc51a'}}>digitally logged</strong>. Every scan, photo, and report is timestamped and visible through our client portal. Transparency is a <span style={{color: '#fdc51a'}}>system requirement, not a feature</span>.
+                                            All activities are <strong style={{ color: '#fdc51a' }}>digitally logged</strong>. Every scan, photo, and report is timestamped and visible through our client portal. Transparency is a <span style={{ color: '#fdc51a' }}>system requirement, not a feature</span>.
                                         </p>
                                     </div>
                                 </div>
@@ -874,7 +876,7 @@ export default function AssetSecurityPage() {
                                             gap: '12px',
                                             marginBottom: '25px'
                                         }}>
-                                            <Camera size={24} style={{color: '#fdc51a'}} />
+                                            <Camera size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-3 py-2" style={{
                                                 backgroundColor: '#fdc51a',
                                                 color: '#1e2247',
@@ -895,7 +897,7 @@ export default function AssetSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Technology <span style={{color: '#fdc51a'}}>Integration</span>
+                                            Technology Integration for Asset Protection <span style={{ color: '#fdc51a' }}>Security</span>
                                         </h2>
 
                                         <p style={{
@@ -904,7 +906,7 @@ export default function AssetSecurityPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '25px'
                                         }}>
-                                            Effective asset protection is built on <strong style={{color: '#1e2247'}}>verification</strong>. Our control system integrates GPS-tracked patrol validation, live incident reporting, and instant escalation channels for supervisor response.
+                                            Effective <strong style={{ color: '#1e2247' }}>asset protection security Melbourne</strong> relies on real-time verification and smart monitoring. Our system integrates <strong style={{ color: '#1e2247' }}>GPS-tracked patrol validation</strong>, live incident reporting, and instant escalation channels for supervisor response.
                                         </p>
 
                                         <p style={{
@@ -913,7 +915,7 @@ export default function AssetSecurityPage() {
                                             lineHeight: '1.8',
                                             marginBottom: '30px'
                                         }}>
-                                            This network allows managers to <strong style={{color: '#fdc51a'}}>review patrols in real time</strong>, access image records, and confirm compliance instantly. When events occur, the reporting line is immediate, from guard to control centre to client.
+                                            This network enables managers to monitor patrols in real time, access digital image records, and confirm compliance instantly. When incidents occur, alerts are immediately routed from the guard to the control centre and then to the client, ensuring rapid response and secure asset management.
                                         </p>
 
                                         {/* Feature Points */}
@@ -935,14 +937,14 @@ export default function AssetSecurityPage() {
                                                     border: '2px solid rgba(253, 197, 26, 0.15)',
                                                     transition: 'all 0.3s ease'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateX(8px)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateX(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.15)';
-                                                }}>
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateX(8px)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateX(0)';
+                                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.15)';
+                                                    }}>
                                                     <div style={{
                                                         width: '28px',
                                                         height: '28px',
@@ -953,7 +955,7 @@ export default function AssetSecurityPage() {
                                                         justifyContent: 'center',
                                                         flexShrink: 0
                                                     }}>
-                                                        <CheckCircle size={16} style={{color: '#1e2247'}} />
+                                                        <CheckCircle size={16} style={{ color: '#1e2247' }} />
                                                     </div>
                                                     <span style={{
                                                         color: '#1e2247',
@@ -978,17 +980,17 @@ export default function AssetSecurityPage() {
                                             transform: 'perspective(1000px) rotateY(5deg)',
                                             transition: 'all 0.4s ease'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                            e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'perspective(1000px) rotateY(5deg) scale(1)';
-                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                        }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp" 
-                                                alt="Technology Integration" 
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(5deg) scale(1)';
+                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                            }}>
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Adhoc%20Security%20Services/03BC3547-5A49-4C7C-83F5-9771C8C59059_1_105_c.webp"
+                                                alt="Technology Integration"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -1009,7 +1011,7 @@ export default function AssetSecurityPage() {
                                 </div>
                             </div>
                         </div>
-                                        </div>
+                    </div>
 
                     {/*===== Risk Management Section =====*/}
                     <div className="risk-management-section section-padding" style={{
@@ -1018,8 +1020,8 @@ export default function AssetSecurityPage() {
                         overflow: 'hidden'
                     }}>
                         {/* Background Pattern */}
-                                        <div style={{
-                                            position: 'absolute',
+                        <div style={{
+                            position: 'absolute',
                             top: 0,
                             left: 0,
                             right: 0,
@@ -1029,7 +1031,7 @@ export default function AssetSecurityPage() {
                                 radial-gradient(circle at 80% 70%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)
                             `,
                             zIndex: 1
-                                        }}></div>
+                        }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                             <div className="row justify-content-center">
@@ -1042,7 +1044,7 @@ export default function AssetSecurityPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Award size={28} style={{color: '#fdc51a'}} />
+                                            <Award size={28} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -1055,7 +1057,7 @@ export default function AssetSecurityPage() {
                                             }}>
                                                 Certified Operations
                                             </span>
-                                    </div>
+                                        </div>
 
                                         <h2 style={{
                                             color: '#ffffff',
@@ -1064,7 +1066,7 @@ export default function AssetSecurityPage() {
                                             marginBottom: '30px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Risk Management and <span style={{color: '#fdc51a'}}>Compliance</span>
+                                            Risk Management Built for Melbourne’s  <span style={{ color: '#fdc51a' }}>Asset Security</span>
                                         </h2>
 
                                         <p style={{
@@ -1075,9 +1077,9 @@ export default function AssetSecurityPage() {
                                             maxWidth: '800px',
                                             margin: '0 auto 40px'
                                         }}>
-                                            Asset protection also means <strong style={{color: '#fdc51a'}}>regulatory compliance</strong>. Metro Guards operates under ISO, CM3, and ASIAL certification, ensuring every protection plan aligns with occupational, environmental, and privacy standards.
+                                            Our <strong style={{ color: '#fdc51a' }}>asset protection security guards in Melbourne</strong>.operate under a robust risk‑management framework.
                                         </p>
-                                </div>
+                                    </div>
 
                                     {/* Compliance Grid */}
                                     <div className="row g-4 mb-4">
@@ -1108,14 +1110,14 @@ export default function AssetSecurityPage() {
                                                     backdropFilter: 'blur(10px)',
                                                     transition: 'all 0.3s ease'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-5px)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                                }}>
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(0)';
+                                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                                    }}>
                                                     <div style={{
                                                         width: '60px',
                                                         height: '60px',
@@ -1129,7 +1131,7 @@ export default function AssetSecurityPage() {
                                                         color: '#1e2247'
                                                     }}>
                                                         {item.icon}
-                            </div>
+                                                    </div>
                                                     <h4 style={{
                                                         color: '#ffffff',
                                                         fontSize: '1.2rem',
@@ -1146,10 +1148,10 @@ export default function AssetSecurityPage() {
                                                     }}>
                                                         {item.description}
                                                     </p>
-                        </div>
+                                                </div>
                                             </div>
                                         ))}
-                    </div>
+                                    </div>
 
                                     {/* Closing Statement */}
                                     <div style={{
@@ -1167,7 +1169,7 @@ export default function AssetSecurityPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            Our legal and procedural adherence ensures that each guard operates within <span style={{color: '#fdc51a'}}>legal and ethical boundaries</span>.
+                                            Our legal and procedural adherence ensures that each guard operates within <span style={{ color: '#fdc51a' }}>legal and ethical boundaries</span>.
                                         </p>
                                     </div>
                                 </div>
@@ -1207,7 +1209,7 @@ export default function AssetSecurityPage() {
                                                 letterSpacing: '2px',
                                                 boxShadow: '0 8px 25px rgba(253, 197, 26, 0.3)'
                                             }}>
-                                                <Book size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                <Book size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                 Our Process
                                             </span>
                                             <div style={{
@@ -1225,7 +1227,7 @@ export default function AssetSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Client Integration <span style={{color: '#fdc51a'}}>Process</span>
+                                            Client Integration <span style={{ color: '#fdc51a' }}>Process</span>
                                         </h2>
 
                                         <p style={{
@@ -1235,7 +1237,7 @@ export default function AssetSecurityPage() {
                                             maxWidth: '800px',
                                             margin: '0 auto 50px'
                                         }}>
-                                            Each new engagement begins with a structured sequence:
+                                            Every engagement with Metro Guards begins with a structured <strong style={{ color: '#fdc51a' }}>asset protection security Melbourne</strong> onboarding process.
                                         </p>
                                     </div>
                                 </div>
@@ -1280,18 +1282,18 @@ export default function AssetSecurityPage() {
                                             position: 'relative',
                                             overflow: 'hidden'
                                         }}
-                                        onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-8px)';
-                                            e.currentTarget.style.boxShadow = index % 2 === 0 
-                                                ? '0 20px 40px rgba(253, 197, 26, 0.2)'
-                                                : '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                            e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
-                                        }}
-                                        onMouseLeave={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(0)';
-                                            e.currentTarget.style.boxShadow = 'none';
-                                            e.currentTarget.style.borderColor = 'transparent';
-                                        }}>
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-8px)';
+                                                e.currentTarget.style.boxShadow = index % 2 === 0
+                                                    ? '0 20px 40px rgba(253, 197, 26, 0.2)'
+                                                    : '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                                e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                                e.currentTarget.style.borderColor = 'transparent';
+                                            }}>
                                             {/* Step Number Badge */}
                                             <div style={{
                                                 position: 'absolute',
@@ -1300,7 +1302,7 @@ export default function AssetSecurityPage() {
                                                 width: '50px',
                                                 height: '50px',
                                                 borderRadius: '12px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'rgba(253, 197, 26, 0.1)'
                                                     : 'rgba(30, 34, 71, 0.1)',
                                                 display: 'flex',
@@ -1317,14 +1319,14 @@ export default function AssetSecurityPage() {
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                 display: 'flex',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
                                                 marginBottom: '20px',
-                                                boxShadow: index % 2 === 0 
+                                                boxShadow: index % 2 === 0
                                                     ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : '0 10px 25px rgba(30, 34, 71, 0.3)',
                                                 color: index % 2 === 0 ? '#1e2247' : '#fdc51a'
@@ -1352,14 +1354,14 @@ export default function AssetSecurityPage() {
                                         </div>
                                     </div>
                                 ))}
-                    </div>
+                            </div>
 
                             {/* Framework Statement */}
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                        <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.05), rgba(253, 197, 26, 0.05))',
-                                            borderRadius: '20px',
+                                        borderRadius: '20px',
                                         padding: '40px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
                                         textAlign: 'center'
@@ -1371,9 +1373,9 @@ export default function AssetSecurityPage() {
                                             margin: 0,
                                             fontWeight: '600'
                                         }}>
-                                            This framework ensures <span style={{color: '#fdc51a'}}>consistency, visibility, and measurable results</span>.
+                                            This framework ensures <span style={{ color: '#fdc51a' }}>consistency, visibility, and measurable results</span>.
                                         </p>
-                                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1382,65 +1384,65 @@ export default function AssetSecurityPage() {
                     {/*===== Why Choose Us Section =====*/}
                     <div className="why-choose-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
-                                        position: 'relative',
-                                        overflow: 'hidden'
-                                    }}>
-                                        {/* Background Pattern */}
-                                        <div style={{
-                                            position: 'absolute',
-                                            top: 0,
-                                            left: 0,
-                                            right: 0,
-                                            bottom: 0,
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        {/* Background Pattern */}
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
                             backgroundImage: `
                                 radial-gradient(circle at 15% 25%, rgba(253, 197, 26, 0.05) 0%, transparent 50%),
                                 radial-gradient(circle at 85% 75%, rgba(30, 34, 71, 0.03) 0%, transparent 50%)
                             `,
-                                            zIndex: 1
-                                        }}></div>
+                            zIndex: 1
+                        }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-header text-center mb-5">
-                                                <div style={{
-                                                    display: 'inline-flex',
-                                                    alignItems: 'center',
-                                                    gap: '15px',
+                                        <div style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '15px',
                                             marginBottom: '30px',
                                             justifyContent: 'center'
-                                                }}>
-                                            <Star size={24} style={{color: '#fdc51a'}} />
-                                                    <span className="badge px-4 py-2" style={{
-                                                        background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                        color: '#fdc51a',
-                                                        fontWeight: 700,
-                                                        fontSize: '0.85rem',
-                                                        borderRadius: '30px',
-                                                        textTransform: 'uppercase',
-                                                        letterSpacing: '2px',
-                                                        boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
-                                                    }}>
+                                        }}>
+                                            <Star size={24} style={{ color: '#fdc51a' }} />
+                                            <span className="badge px-4 py-2" style={{
+                                                background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                                color: '#fdc51a',
+                                                fontWeight: 700,
+                                                fontSize: '0.85rem',
+                                                borderRadius: '30px',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '2px',
+                                                boxShadow: '0 8px 25px rgba(30, 34, 71, 0.3)'
+                                            }}>
                                                 Excellence in Protection
-                                                    </span>
-                                            <Star size={24} style={{color: '#fdc51a'}} />
-                                                </div>
+                                            </span>
+                                            <Star size={24} style={{ color: '#fdc51a' }} />
+                                        </div>
 
-                                                <h2 style={{
-                                                    color: '#1e2247',
-                                                    fontSize: '3rem',
-                                                    fontWeight: '800',
+                                        <h2 style={{
+                                            color: '#1e2247',
+                                            fontSize: '3rem',
+                                            fontWeight: '800',
                                             marginBottom: '25px',
-                                                    lineHeight: '1.2'
-                                                }}>
-                                            Why Our Clients Keep <span style={{color: '#fdc51a'}}>Choosing Metro Guards?</span>
-                                                </h2>
-                                            </div>
-                                                </div>
-                                            </div>
+                                            lineHeight: '1.2'
+                                        }}>
+                                            Why Melbourne Businesses Need  <span style={{ color: '#fdc51a' }}>Metro Guards for Asset Protection?</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
 
                             {/* Features Grid */}
-                                            <div className="row g-4 mb-4">
+                            <div className="row g-4 mb-4">
                                 {[
                                     {
                                         icon: <Award size={28} />,
@@ -1469,91 +1471,91 @@ export default function AssetSecurityPage() {
                                     }
                                 ].map((feature, index) => (
                                     <div key={index} className="col-lg-6">
-                                                    <div style={{
-                                                        background: '#ffffff',
+                                        <div style={{
+                                            background: '#ffffff',
                                             borderRadius: '20px',
                                             padding: '35px',
-                                                        height: '100%',
+                                            height: '100%',
                                             border: '2px solid transparent',
                                             transition: 'all 0.3s ease',
                                             position: 'relative',
                                             overflow: 'hidden'
-                                                    }}
-                                                    onMouseEnter={(e) => {
-                                            e.currentTarget.style.transform = 'translateY(-8px)';
-                                            e.currentTarget.style.boxShadow = index % 2 === 0 
-                                                ? '0 20px 40px rgba(253, 197, 26, 0.2)'
-                                                : '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                            e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.currentTarget.style.transform = 'translateY(0)';
-                                                        e.currentTarget.style.boxShadow = 'none';
-                                            e.currentTarget.style.borderColor = 'transparent';
-                                                    }}>
+                                        }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-8px)';
+                                                e.currentTarget.style.boxShadow = index % 2 === 0
+                                                    ? '0 20px 40px rgba(253, 197, 26, 0.2)'
+                                                    : '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                                e.currentTarget.style.borderColor = index % 2 === 0 ? '#fdc51a' : '#1e2247';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                                e.currentTarget.style.borderColor = 'transparent';
+                                            }}>
                                             {/* Corner Accent */}
-                                                        <div style={{
+                                            <div style={{
                                                 position: 'absolute',
                                                 top: 0,
                                                 right: 0,
                                                 width: '100px',
                                                 height: '100px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)'
                                                     : 'linear-gradient(135deg, rgba(30, 34, 71, 0.08), transparent)',
                                                 borderBottomLeftRadius: '100%'
                                             }}></div>
 
-                                                    <div style={{
+                                            <div style={{
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '15px',
-                                                background: index % 2 === 0 
+                                                background: index % 2 === 0
                                                     ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                     : 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                            display: 'flex',
-                                                            alignItems: 'center',
-                                                            justifyContent: 'center',
-                                                            marginBottom: '20px',
-                                                boxShadow: index % 2 === 0 
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                marginBottom: '20px',
+                                                boxShadow: index % 2 === 0
                                                     ? '0 10px 25px rgba(253, 197, 26, 0.3)'
                                                     : '0 10px 25px rgba(30, 34, 71, 0.3)',
                                                 color: index % 2 === 0 ? '#1e2247' : '#fdc51a'
-                                                        }}>
+                                            }}>
                                                 {feature.icon}
-                                                        </div>
+                                            </div>
 
                                             <h3 style={{
-                                                            color: '#1e2247',
+                                                color: '#1e2247',
                                                 fontSize: '1.4rem',
-                                                            fontWeight: '700',
-                                                            marginBottom: '12px'
-                                                        }}>
+                                                fontWeight: '700',
+                                                marginBottom: '12px'
+                                            }}>
                                                 {feature.title}
                                             </h3>
 
-                                                        <p style={{
-                                                            color: '#6c757d',
-                                                            fontSize: '1.05rem',
-                                                            lineHeight: '1.7',
-                                                            margin: 0
-                                                        }}>
+                                            <p style={{
+                                                color: '#6c757d',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.7',
+                                                margin: 0
+                                            }}>
                                                 {feature.description}
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
                                 ))}
-                                            </div>
+                            </div>
 
-                                            {/* Closing Statement */}
+                            {/* Closing Statement */}
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                                            <div style={{
-                                                background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                    <div style={{
+                                        background: 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                         borderRadius: '20px',
                                         padding: '50px 40px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
-                                                textAlign: 'center',
+                                        textAlign: 'center',
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}>
@@ -1568,24 +1570,24 @@ export default function AssetSecurityPage() {
                                             borderRadius: '20px'
                                         }}></div>
 
-                                                <p style={{
-                                                    color: '#ffffff',
+                                        <p style={{
+                                            color: '#ffffff',
                                             fontSize: '1.3rem',
-                                                    lineHeight: '1.8',
-                                                    margin: 0,
+                                            lineHeight: '1.8',
+                                            margin: 0,
                                             fontWeight: '600',
                                             position: 'relative',
                                             zIndex: 2
-                                                }}>
-                                            Our asset protection guards represent an <span style={{color: '#fdc51a'}}>established methodology</span>, tested, documented, and continually refined to meet <strong style={{color: '#fdc51a'}}>modern security expectations</strong>.
-                                                </p>
+                                        }}>
+                                            Our asset protection guards represent an <span style={{ color: '#fdc51a' }}>established methodology</span>, tested, documented, and continually refined to meet <strong style={{ color: '#fdc51a' }}>modern security expectations</strong>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
+
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1646,10 +1648,10 @@ export default function AssetSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1659,9 +1661,9 @@ export default function AssetSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1669,7 +1671,7 @@ export default function AssetSecurityPage() {
                                                     letterSpacing: "1px",
                                                     boxShadow: "0 6px 20px rgba(30, 34, 71, 0.25)"
                                                 }}>
-                                                    <Shield size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                    <Shield size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                     Get Started Today
                                                 </span>
                                                 <div style={{
@@ -1679,7 +1681,7 @@ export default function AssetSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1688,9 +1690,9 @@ export default function AssetSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Secure Your Assets with <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                                Secure Your High-Value Assets Today  <span style={{ color: '#fdc51a' }}>Assets Today</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1699,19 +1701,10 @@ export default function AssetSecurityPage() {
                                                 maxWidth: '800px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                Asset protection is not reactive work; it is a <strong style={{color: '#1e2247'}}>structured, continuous discipline</strong>. When you engage Metro Guards, you engage a system that protects what you've built with the same seriousness it was built.
+                                                Strengthen your business against theft, unauthorised access, and inventory risks. Metro Guards provides <strong style={{ color: '#1e2247' }}>trained asset protection guards</strong>, rapid deployment options, and 24/7 coverage across  <strong style={{ color: '#1e2247' }}>Melbourne</strong>. Contact us for immediate support or scheduled security planning.
                                             </p>
-                                            
-                                            <p style={{
-                                                color: '#6c757d',
-                                                fontSize: '1.2rem',
-                                                lineHeight: '1.8',
-                                                marginBottom: '40px',
-                                                maxWidth: '800px',
-                                                margin: '0 auto 40px'
-                                            }}>
-                                                Whether your assets are <strong style={{color: '#1e2247'}}>tangible, digital, or operational</strong>, our guards enforce one consistent standard: <strong style={{color: '#fdc51a'}}>accountability backed by proof</strong>.
-                                            </p>
+
+
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1732,18 +1725,18 @@ export default function AssetSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get a Quote
                                                     </a>
@@ -1762,18 +1755,18 @@ export default function AssetSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1815,8 +1808,8 @@ export default function AssetSecurityPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <Shield size={20} style={{display: 'inline', marginRight: '8px', color: '#fdc51a'}} />
-                                                    Metro Guards – <span style={{color: '#ffffff'}}>Protecting Melbourne's assets with structured discipline, proven systems, and unwavering accountability.</span>
+                                                    <Shield size={20} style={{ display: 'inline', marginRight: '8px', color: '#fdc51a' }} />
+                                                    Metro Guards – <span style={{ color: '#ffffff' }}>Protecting Melbourne's assets with structured discipline, proven systems, and unwavering accountability.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1827,13 +1820,14 @@ export default function AssetSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
             </Layout>
-            </> ) }
+        </>)
+}

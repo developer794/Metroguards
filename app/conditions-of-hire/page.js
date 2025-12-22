@@ -21,7 +21,7 @@ export default function ConditionsOfHirePage() {
                         <div className="bg-gradient-to-r from-[#1e2247] to-[#2a3458] text-white py-10 px-10 border-b-8 border-[#fdc51a]">
                             <div className="flex items-center justify-between flex-wrap gap-4">
                                 <div style={{padding: '10px'}}>
-                                    <h1 className="text-4xl font-bold mb-2 tracking-tight">CONDITIONS OF AGREEMENT</h1>
+                                    <h2 className="text-4xl font-bold mb-2 tracking-tight">CONDITIONS OF AGREEMENT</h2>
                                     <p className="text-base text-gray-200 font-medium">Metropolitan Guards / Security Services Agreement</p>
                                 </div>
                             </div>

@@ -4,6 +4,9 @@ export const metadata = {
   title: "Contact | Security Guard Services ",
   description:
     "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
+  alternates: {
+    canonical: 'https://metroguards.com.au/contacts',
+  },
   openGraph: {
     title: "Security Guard Services - Security Company in Melbourne",
     description:

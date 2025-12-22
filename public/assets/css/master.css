@@ -8422,6 +8422,7 @@ ul.reviews li {
   bottom: 0;
   margin-bottom: 0;
   -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   border-bottom: 0;
 }
@@ -9427,6 +9428,7 @@ a.up-arrow.up-4:hover {
   height: 20px;
   width: 20px;
   -webkit-appearance: none;
+  appearance: none;
   opacity: 0.5;
 }
 
@@ -10278,4 +10280,11 @@ h2, small {
     .stats-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Remove pattern.png image from homepage - override any reference to the deleted pattern.png image */
+*[style*="pattern.png"],
+*[style*="assets/img/bg/pattern"],
+*[style*="metroguards.com.au/assets/img/bg/pattern"] {
+    background-image: none !important;
 }

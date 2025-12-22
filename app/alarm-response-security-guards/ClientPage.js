@@ -153,7 +153,7 @@ export default function AlarmResponseSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -163,7 +163,7 @@ export default function AlarmResponseSecurityPage() {
                                         >
                                             24/7 Alarm Response Security 
                                             <span style={{color: '#fdc51a'}}>Melbourne Near Me</span>
-                                        </h1>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{

@@ -3,16 +3,19 @@ import Accreditation from "@/components/accrediation10"
 import Subscribe from "@/components/homepages/home1/Subscribe"
 
 export const metadata = {
-  title: 'Privacy Policy - Metropolitan Guards Security Services',
-  description: 'Learn how Metropolitan Guards Security Services collects, uses, and protects your personal information in accordance with Australian privacy laws.',
+    title: 'Privacy Policy - Metropolitan Guards Security Services',
+    description: 'Learn how Metropolitan Guards Security Services collects, uses, and protects your personal information in accordance with Australian privacy laws.',
+    alternates: {
+        canonical: 'https://metroguards.com.au/privacy-policy',
+    },
 }
 
 export default function PrivacyPolicyPage() {
     return (
         <>
-            <Layout 
-                headerStyle={1} 
-                footerStyle={1} 
+            <Layout
+                headerStyle={1}
+                footerStyle={1}
                 headTitle="Privacy Policy - Metropolitan Guards Security Services"
                 breadcrumbTitle="Privacy & Data Protection"
                 mainTitle="Your Privacy is Our <span style='color: #fdc51a; background: linear-gradient(135deg, #fdc51a 0%, #fdc51a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;'>Priority</span>"
@@ -36,7 +39,7 @@ export default function PrivacyPolicyPage() {
                     <div style={{ position: 'absolute', top: '2400px', left: '7%', opacity: '0.03', fontSize: '95px', color: '#1e2247', zIndex: 1 }}>
                         <i className="bi bi-shield-check"></i>
                     </div>
-                    
+
                     {/*===== Introduction Section =====*/}
                     <div className="privacy-intro-section" style={{
                         background: '#ffffff',
@@ -82,13 +85,13 @@ export default function PrivacyPolicyPage() {
                                             lineHeight: '1.7',
                                             marginBottom: '35px'
                                         }}>
-                                            At Metropolitan Guards, we understand that trust is the foundation of our relationship with you. 
-                                            Our comprehensive privacy policy ensures your personal information is protected with the same 
+                                            At Metropolitan Guards, we understand that trust is the foundation of our relationship with you.
+                                            Our comprehensive privacy policy ensures your personal information is protected with the same
                                             level of security we provide to our clients.
                                         </p>
-                                        <div style={{ 
-                                            display: 'grid', 
-                                            gridTemplateColumns: 'repeat(3, 1fr)', 
+                                        <div style={{
+                                            display: 'grid',
+                                            gridTemplateColumns: 'repeat(3, 1fr)',
                                             gap: '20px',
                                             marginTop: '30px'
                                         }}>
@@ -144,9 +147,9 @@ export default function PrivacyPolicyPage() {
                                             borderRadius: '50%',
                                             filter: 'blur(40px)'
                                         }}></div>
-                                        <div className="privacy-icons" style={{ 
-                                            display: 'grid', 
-                                            gridTemplateColumns: 'repeat(2, 1fr)', 
+                                        <div className="privacy-icons" style={{
+                                            display: 'grid',
+                                            gridTemplateColumns: 'repeat(2, 1fr)',
                                             gap: '25px',
                                             position: 'relative',
                                             zIndex: 2
@@ -319,7 +322,7 @@ export default function PrivacyPolicyPage() {
                             {/* Intro Card */}
                             <div className="row g-4 mb-5">
                                 <div className="col-12">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '20px',
                                         padding: '40px',
@@ -339,7 +342,7 @@ export default function PrivacyPolicyPage() {
                                             filter: 'blur(30px)'
                                         }}></div>
                                         <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', position: 'relative', zIndex: 2 }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '70px',
                                                 height: '70px',
                                                 borderRadius: '16px',
@@ -355,13 +358,13 @@ export default function PrivacyPolicyPage() {
                                                 <i className="bi bi-emoji-smile"></i>
                                             </div>
                                             <div style={{ flex: 1 }}>
-                                                <h3 style={{ 
+                                                <h3 style={{
                                                     margin: '0 0 16px 0',
                                                     color: '#1e2247',
                                                     fontWeight: '800',
                                                     fontSize: '1.5rem'
                                                 }}>Our Commitment to Your Privacy</h3>
-                                                <p style={{ 
+                                                <p style={{
                                                     margin: 0,
                                                     color: '#6c757d',
                                                     lineHeight: '1.8',
@@ -369,10 +372,10 @@ export default function PrivacyPolicyPage() {
                                                 }}>
                                                     <i className="bi bi-check-circle-fill" style={{ color: '#fdc51a', marginRight: '8px', fontSize: '0.9rem' }}></i>
                                                     Metropolitan Guard Services respects your privacy at all times. When processing your order or application, we collect personal information about you for the primary purpose of providing you with a high level of customer service.
-                                                    <br/><br/>
+                                                    <br /><br />
                                                     <i className="bi bi-check-circle-fill" style={{ color: '#fdc51a', marginRight: '8px', fontSize: '0.9rem' }}></i>
                                                     We may also use this information to inform you of any changes to the services provided or to notify you of new services that may become available. As we value your privacy, we do not make your personal information available to other organisations, and you have the right to access your information at any time.
-                                                    <br/><br/>
+                                                    <br /><br />
                                                     <i className="bi bi-telephone-fill" style={{ color: '#fdc51a', marginRight: '8px', fontSize: '0.9rem' }}></i>
                                                     Please direct any privacy-related enquiries to our Privacy Officer on <strong style={{ color: '#1e2247' }}>1300 73 11 73</strong> or by email at <strong style={{ color: '#1e2247' }}><i className="bi bi-envelope-fill" style={{ color: '#fdc51a', marginRight: '6px', fontSize: '0.85rem' }}></i>admin@metroguards.com.au</strong>
                                                 </p>
@@ -386,7 +389,7 @@ export default function PrivacyPolicyPage() {
                             <div className="row g-4">
                                 {/* Collection & Use */}
                                 <div className="col-md-6">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -401,7 +404,7 @@ export default function PrivacyPolicyPage() {
                                             <i className="bi bi-collection"></i>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '56px',
                                                 height: '56px',
                                                 borderRadius: '14px',
@@ -423,7 +426,7 @@ export default function PrivacyPolicyPage() {
                                         </p>
                                         <ul className="list-unstyled" style={{ marginBottom: 0 }}>
                                             <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
-                                                <div style={{ 
+                                                <div style={{
                                                     width: '20px',
                                                     height: '20px',
                                                     borderRadius: '50%',
@@ -440,7 +443,7 @@ export default function PrivacyPolicyPage() {
                                                 <span style={{ color: '#6c757d', lineHeight: '1.6' }}>Contact details (name, address, email, phone number)</span>
                                             </li>
                                             <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
-                                                <div style={{ 
+                                                <div style={{
                                                     width: '20px',
                                                     height: '20px',
                                                     borderRadius: '50%',
@@ -457,7 +460,7 @@ export default function PrivacyPolicyPage() {
                                                 <span style={{ color: '#6c757d', lineHeight: '1.6' }}>Identification information for security clearance purposes</span>
                                             </li>
                                             <li style={{ marginBottom: '12px', display: 'flex', alignItems: 'flex-start' }}>
-                                                <div style={{ 
+                                                <div style={{
                                                     width: '20px',
                                                     height: '20px',
                                                     borderRadius: '50%',
@@ -474,7 +477,7 @@ export default function PrivacyPolicyPage() {
                                                 <span style={{ color: '#6c757d', lineHeight: '1.6' }}>Payment and billing information</span>
                                             </li>
                                             <li style={{ display: 'flex', alignItems: 'flex-start' }}>
-                                                <div style={{ 
+                                                <div style={{
                                                     width: '20px',
                                                     height: '20px',
                                                     borderRadius: '50%',
@@ -496,7 +499,7 @@ export default function PrivacyPolicyPage() {
 
                                 {/* Information Disclosure */}
                                 <div className="col-md-6">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -510,7 +513,7 @@ export default function PrivacyPolicyPage() {
                                             <i className="bi bi-shield-lock-fill"></i>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '56px',
                                                 height: '56px',
                                                 borderRadius: '14px',
@@ -535,7 +538,7 @@ export default function PrivacyPolicyPage() {
 
                                 {/* Access to Your Information */}
                                 <div className="col-md-6">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -549,7 +552,7 @@ export default function PrivacyPolicyPage() {
                                             <i className="bi bi-person-check-fill"></i>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '56px',
                                                 height: '56px',
                                                 borderRadius: '14px',
@@ -574,7 +577,7 @@ export default function PrivacyPolicyPage() {
 
                                 {/* Data Security */}
                                 <div className="col-md-6">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -588,7 +591,7 @@ export default function PrivacyPolicyPage() {
                                             <i className="bi bi-lock-fill"></i>
                                         </div>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '56px',
                                                 height: '56px',
                                                 borderRadius: '14px',
@@ -614,7 +617,7 @@ export default function PrivacyPolicyPage() {
                         </div>
                     </section>
 
-                    
+
 
                     {/*===== Modern Compliance Section =====*/}
                     <section id="compliance" className="modern-compliance-section" style={{
@@ -669,7 +672,7 @@ export default function PrivacyPolicyPage() {
                             {/* Compliance Cards */}
                             <div className="row g-4">
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -678,7 +681,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',
@@ -702,7 +705,7 @@ export default function PrivacyPolicyPage() {
                                 </div>
 
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -711,7 +714,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',
@@ -735,7 +738,7 @@ export default function PrivacyPolicyPage() {
                                 </div>
 
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -744,7 +747,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',
@@ -768,7 +771,7 @@ export default function PrivacyPolicyPage() {
                                 </div>
 
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -777,7 +780,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',
@@ -801,7 +804,7 @@ export default function PrivacyPolicyPage() {
                                 </div>
 
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -810,7 +813,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',
@@ -834,7 +837,7 @@ export default function PrivacyPolicyPage() {
                                 </div>
 
                                 <div className="col-md-6 col-lg-4">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#f8f9fa',
                                         borderRadius: '20px',
                                         padding: '32px',
@@ -843,7 +846,7 @@ export default function PrivacyPolicyPage() {
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <div style={{ marginBottom: '20px' }}>
-                                            <div style={{ 
+                                            <div style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '14px',

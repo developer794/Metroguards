@@ -152,7 +152,7 @@ export default function EventSecurityGuardsPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -162,7 +162,7 @@ export default function EventSecurityGuardsPage() {
                                         >
                                             Event Security Melbourne 
                                             <span style={{color: '#fdc51a'}}>Near Me</span>
-                                        </h1>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{

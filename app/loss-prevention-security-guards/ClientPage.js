@@ -34,7 +34,7 @@ export default function LossPreventionSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -134,21 +134,21 @@ export default function LossPreventionSecurityPage() {
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="LOSS PREVENTION SECURITY GUARDS"
                 mainTitle="Loss Prevention Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/51BEE2F0-1C5C-4D14-BE17-7CA4C4DDC7C5_1_105_c.webp"
-                
+
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -159,40 +159,40 @@ export default function LossPreventionSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                            Loss Prevention Security Guards 
-                                            <span style={{color: '#fdc51a'}}>Service in Melbourne 24/7</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            Loss Prevention Security Guards
+                                            <span style={{ color: '#fdc51a' }}>Service in Melbourne 24/7</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           Metro Guards provides trained loss prevention guards Melbourne retailers rely on to reduce theft, protect stock, and maintain safe trading environments. Our highly skilled loss prevention officers Melbourne specialise in preventing shoplifting, monitoring high-risk areas, and identifying suspicious behaviour before losses occur.
-                                           From supermarkets and department stores to fashion retailers, shopping centres, and national retail chains, Metro Guards delivers loss prevention services in Melbourne designed to reduce shrinkage, protect staff, and secure assets. Retailers searching “who provides loss prevention security guards in Melbourne?” rely on Metro Guards for unmatched performance and professionalism.
-                                           </p>
-                                        
+                                            Metro Guards provides trained loss prevention guards Melbourne retailers rely on to reduce theft, protect stock, and maintain safe trading environments. Our highly skilled loss prevention officers Melbourne specialise in preventing shoplifting, monitoring high-risk areas, and identifying suspicious behaviour before losses occur.
+                                            From supermarkets and department stores to fashion retailers, shopping centres, and national retail chains, Metro Guards delivers loss prevention services in Melbourne designed to reduce shrinkage, protect staff, and secure assets. Retailers searching “who provides loss prevention security guards in Melbourne?” rely on Metro Guards for unmatched performance and professionalism.
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -205,15 +205,15 @@ export default function LossPreventionSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -234,16 +234,16 @@ export default function LossPreventionSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -251,9 +251,9 @@ export default function LossPreventionSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7F646248-8CCC-4766-A826-6F8F450DF5AE_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7F646248-8CCC-4766-A826-6F8F450DF5AE_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -262,9 +262,9 @@ export default function LossPreventionSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -277,7 +277,7 @@ export default function LossPreventionSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -353,26 +353,26 @@ export default function LossPreventionSecurityPage() {
                                                 transform: 'perspective(1000px) rotateY(-5deg)',
                                                 transition: 'all 0.4s ease'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                                }}>
+                                                <img
+                                                    src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/7FB1B452-3A31-4313-9AEF-1535B2F450C8_1_105_c.webp"
+                                                    alt="Professional Building Security Guards"
+                                                    className="img-fluid"
+                                                    style={{
+                                                        width: '100%',
                                                         height: '850px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
                                                 />
-                                                
+
                                                 {/* Image Overlay */}
                                                 <div style={{
                                                     position: 'absolute',
@@ -383,11 +383,11 @@ export default function LossPreventionSecurityPage() {
                                                     background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
                                                     zIndex: 1
                                                 }}></div>
-                                </div>
+                                            </div>
 
                                             {/* Floating Stats Cards */}
-                                            
-                                           
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -397,8 +397,8 @@ export default function LossPreventionSecurityPage() {
                                     <div className="services-content">
                                         {/* Header Section */}
                                         <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
+                                            <h2 style={{
+                                                color: "#1e2247",
                                                 fontSize: "3.2rem",
                                                 fontWeight: "800",
                                                 marginBottom: "25px",
@@ -407,18 +407,18 @@ export default function LossPreventionSecurityPage() {
                                             }}>
                                                 Why Loss Prevention Guards Are Essential for Melbourne Retailers
                                             </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
+
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1.5rem"
                                             }}>
-                                                Retail crime across Melbourne continues to rise, impacting profit margins, staff safety, and customer experience. Retailers need <strong style={{color: '#1e2247'}}>LP security guards Melbourne</strong> who understand theft patterns, behavioural detection, and the fast-paced nature of modern retail environments.
+                                                Retail crime across Melbourne continues to rise, impacting profit margins, staff safety, and customer experience. Retailers need <strong style={{ color: '#1e2247' }}>LP security guards Melbourne</strong> who understand theft patterns, behavioural detection, and the fast-paced nature of modern retail environments.
                                             </p>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1rem",
@@ -435,76 +435,76 @@ export default function LossPreventionSecurityPage() {
                                                 paddingLeft: '0',
                                                 marginBottom: '1.5rem'
                                             }}>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Shoplifting incidents (individual & organised)</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Concealment theft in high-risk aisles</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Refund fraud & ticket switching</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Aggressive or repeat offenders</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>After-hours break-ins or stockroom theft</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Crowded store blind spots</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Safety risks for staff confronting offenders</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Loss of high-value or easily concealed items</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Shrinkage from internal or customer theft</span>
                                                 </li>
                                             </ul>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8"
                                             }}>
-                                                These issues demand <strong style={{color: '#fdc51a'}}>retail loss prevention Melbourne</strong> specialists trained to protect stock discreetly, safely, and without interrupting business flow.
+                                                These issues demand <strong style={{ color: '#fdc51a' }}>retail loss prevention Melbourne</strong> specialists trained to protect stock discreetly, safely, and without interrupting business flow.
                                             </p>
-                                            
-                                            
+
+
                                         </div>
 
-                                      
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
+
 
                     {/*=====  Section 2 =====*/}
-                    <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-2 order-lg-2">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Loss%20Prevention%20Secuirty%20Guards/12FB20BE-08E2-483E-B3E9-F025668572B3_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -515,7 +515,7 @@ export default function LossPreventionSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* The Loss Section - Paragraph Style */}
                                         <div className="human-element-section section-header mt-5" style={{
                                             background: 'linear-gradient(135deg, rgba(248, 249, 250, 0.8), rgba(255, 255, 255, 0.9))',
@@ -538,17 +538,17 @@ export default function LossPreventionSecurityPage() {
                                             }}></div>
 
                                             <div style={{ position: 'relative', zIndex: 2 }}>
-                                                <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                A Professional Security for <span style={{color: '#fdc51a'}}>Melbourne’s Retail Sector</span>
+                                                <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                    A Professional Security for <span style={{ color: '#fdc51a' }}>Melbourne’s Retail Sector</span>
                                                 </h2>
                                                 <p className="lead mb-3" style={{
                                                     color: '#6c757d',
                                                     fontSize: '1.15rem',
                                                     lineHeight: '1.8'
                                                 }}>
-                                                    <strong style={{color: '#fdc51a'}}>Metro Guards'</strong> <strong style={{color: '#1e2247'}}>loss prevention officers Melbourne</strong> are trained to:
+                                                    <strong style={{ color: '#fdc51a' }}>Metro Guards'</strong> <strong style={{ color: '#1e2247' }}>loss prevention officers Melbourne</strong> are trained to:
                                                 </p>
-                                                
+
                                                 <ul style={{
                                                     listStyle: 'none',
                                                     color: '#6c757d',
@@ -557,40 +557,40 @@ export default function LossPreventionSecurityPage() {
                                                     paddingLeft: '0',
                                                     marginBottom: '1rem'
                                                 }}>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Identify suspicious behaviour before theft occurs</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Blend into the retail environment discreetly</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Communicate professionally with staff and customers</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Protect high-risk aisles & blind spots</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Support staff during difficult incidents</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>De-escalate conflicts safely</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Work alongside CCTV operators & managers</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Deliver detailed post-incident reporting</span>
                                                     </li>
-                                                    <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                    <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                        <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                         <span>Support bag checks & store policies</span>
                                                     </li>
                                                 </ul>
@@ -602,7 +602,7 @@ export default function LossPreventionSecurityPage() {
                                                     margin: 0,
                                                     marginTop: '0.5rem'
                                                 }}>
-                                                    Whether you need <strong style={{color: '#fdc51a'}}>high-risk store security Melbourne</strong> or discreet <strong style={{color: '#fdc51a'}}>LP security guards Melbourne</strong> for sensitive areas, our team operates with confidence, awareness, and professionalism.
+                                                    Whether you need <strong style={{ color: '#fdc51a' }}>high-risk store security Melbourne</strong> or discreet <strong style={{ color: '#fdc51a' }}>LP security guards Melbourne</strong> for sensitive areas, our team operates with confidence, awareness, and professionalism.
                                                 </p>
                                             </div>
                                         </div>
@@ -613,60 +613,60 @@ export default function LossPreventionSecurityPage() {
                                     <div className="services-content ps-lg-4">
                                         <div className="section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     PRECISION PROTECTION
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                            Specialised Loss Prevention & <span style={{color: '#fdc51a'}}>Retail Security Services</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Specialised Loss Prevention & <span style={{ color: '#fdc51a' }}>Retail Security Services</span>
                                             </h2>
-                                            <p className="lead mb-4" style={{color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7'}}>
-                                            Metro Guards offers a full range of loss prevention security Melbourne solutions tailored to retail environments, including:
+                                            <p className="lead mb-4" style={{ color: '#6c757d', fontSize: '1.1rem', lineHeight: '1.7' }}>
+                                                Metro Guards offers a full range of loss prevention security Melbourne solutions tailored to retail environments, including:
                                             </p>
                                         </div>
-                                        
+
                                         {/* Interactive Service Accordion */}
                                         <div className="services-accordion">
                                             {[
                                                 {
                                                     icon: "fas fa-brain",
                                                     title: "Pattern Recognition",
-                                                    
+
                                                     details: "Detecting shifts in behaviour before they become theft."
                                                 },
                                                 {
                                                     icon: "fas fa-user-secret",
                                                     title: "Covert Intelligence",
-                                                    
+
                                                     details: "Plainclothes professionals blending into your retail floor."
                                                 },
                                                 {
                                                     icon: "fas fa-smile",
                                                     title: "Customer-First Security",
-                                                   
+
                                                     details: "Warmth first, watchfulness second, both essential."
                                                 },
                                                 {
                                                     icon: "fas fa-medkit",
                                                     title: "Emergency-Ready",
-                                                    
+
                                                     details: "Trained in first aid, fire response, and crisis control."
                                                 },
                                                 {
                                                     icon: "fas fa-clipboard-check",
                                                     title: "Active Reporting",
-                                                    
+
                                                     details: "Every action logged live; nothing slips between shifts."
                                                 },
                                                 {
                                                     icon: "fas fa-door-open",
                                                     title: "Common-Area Control",
-                                                    
+
                                                     details: "Entrances, changerooms, registers, storerooms, quietly secured."
                                                 }
                                             ].map((service, index) => (
                                                 <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div
                                                         className="accordion-header p-4"
                                                         style={{
                                                             backgroundColor: activeService === index ? '#ffffff' : '#f8f9fa',
@@ -680,7 +680,7 @@ export default function LossPreventionSecurityPage() {
                                                     >
                                                         <div className="d-flex align-items-center justify-content-between">
                                                             <div className="d-flex align-items-center">
-                                                                <div 
+                                                                <div
                                                                     className="service-icon me-3 d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '50px',
@@ -694,12 +694,12 @@ export default function LossPreventionSecurityPage() {
                                                                     <i className={service.icon}></i>
                                                                 </div>
                                                                 <div>
-                                                                    <h5 className="mb-1 fw-bold" style={{color: '#1e2247'}}>{service.title}</h5>
-                                                                    <p className="mb-0" style={{color: '#6c757d', fontSize: '0.9rem'}}>{service.summary}</p>
+                                                                    <h5 className="mb-1 fw-bold" style={{ color: '#1e2247' }}>{service.title}</h5>
+                                                                    <p className="mb-0" style={{ color: '#6c757d', fontSize: '0.9rem' }}>{service.summary}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="expand-icon">
-                                                                <div 
+                                                                <div
                                                                     className="d-flex align-items-center justify-content-center"
                                                                     style={{
                                                                         width: '40px',
@@ -710,16 +710,16 @@ export default function LossPreventionSecurityPage() {
                                                                         transition: 'all 0.3s ease'
                                                                     }}
                                                                 >
-                                                                    <span style={{fontSize: '1.2rem', fontWeight: 'bold'}}>
+                                                                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>
                                                                         {activeService === index ? '−' : '+'}
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     {activeService === index && (
-                                                        <div 
+                                                        <div
                                                             className="accordion-content p-4"
                                                             style={{
                                                                 backgroundColor: '#ffffff',
@@ -731,8 +731,8 @@ export default function LossPreventionSecurityPage() {
                                                             }}
                                                         >
                                                             <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
+                                                                color: '#6c757d',
+                                                                lineHeight: '1.7',
                                                                 margin: 0,
                                                                 fontSize: '1rem'
                                                             }}>
@@ -743,7 +743,7 @@ export default function LossPreventionSecurityPage() {
                                                 </div>
                                             ))}
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -796,7 +796,7 @@ export default function LossPreventionSecurityPage() {
                             {/* First Content Block - The Real Cost */}
                             <div className="row mb-5">
                                 <div className="col-lg-10 mx-auto">
-                                    <div style={{ 
+                                    <div style={{
                                         background: '#ffffff',
                                         borderRadius: '25px',
                                         padding: '50px 45px',
@@ -846,23 +846,23 @@ export default function LossPreventionSecurityPage() {
                                                 marginBottom: '25px',
                                                 lineHeight: '1.2'
                                             }}>
-                                                The Real Cost of <span style={{color: '#fdc51a'}}>Looking Away</span>
+                                                The Real Cost of <span style={{ color: '#fdc51a' }}>Looking Away</span>
                                             </h2>
 
-                                                        <p style={{
-                                                            color: '#6c757d',
+                                            <p style={{
+                                                color: '#6c757d',
                                                 fontSize: '1.2rem',
                                                 lineHeight: '1.9',
-                                                            margin: 0
-                                                        }}>
-                                                A $20 theft ignored today becomes a $200 habit tomorrow. A quiet internal scheme turns into a cultural rot. And one viral clip of chaos? That's not just theft, that's brand erosion. Money can be replaced. Trust cannot. <strong style={{color: '#1e2247'}}>Metro Guards doesn't just prevent loss, we preserve the reputation behind the glass.</strong>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                margin: 0
+                                            }}>
+                                                A $20 theft ignored today becomes a $200 habit tomorrow. A quiet internal scheme turns into a cultural rot. And one viral clip of chaos? That's not just theft, that's brand erosion. Money can be replaced. Trust cannot. <strong style={{ color: '#1e2247' }}>Metro Guards doesn't just prevent loss, we preserve the reputation behind the glass.</strong>
+                                            </p>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                            
+
                         </div>
                     </div>
 
@@ -912,9 +912,9 @@ export default function LossPreventionSecurityPage() {
                             {/* Section Header */}
                             <div className="row mb-5">
                                 <div className="col-lg-10 mx-auto text-center">
-                                    <span className="badge px-4 py-2 mb-4" style={{ 
-                                        background: "rgba(253, 197, 26, 0.2)", 
-                                        color: "#fdc51a", 
+                                    <span className="badge px-4 py-2 mb-4" style={{
+                                        background: "rgba(253, 197, 26, 0.2)",
+                                        color: "#fdc51a",
                                         fontWeight: 700,
                                         fontSize: "0.85rem",
                                         borderRadius: "30px",
@@ -925,7 +925,7 @@ export default function LossPreventionSecurityPage() {
                                         <i className="fas fa-check-circle me-2"></i>
                                         Verified Systems
                                     </span>
-                                    
+
                                     <h2 style={{
                                         color: '#ffffff',
                                         fontSize: '3rem',
@@ -933,9 +933,9 @@ export default function LossPreventionSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                        Accountability & Security Technology <span style={{color: '#fdc51a'}}>for Retail Protection</span>
+                                        Accountability & Security Technology <span style={{ color: '#fdc51a' }}>for Retail Protection</span>
                                     </h2>
-                                    
+
                                     <p style={{
                                         color: 'rgba(255, 255, 255, 0.9)',
                                         fontSize: '1.2rem',
@@ -961,16 +961,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -993,7 +993,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-clock" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                            <i className="fas fa-clock" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1028,16 +1028,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1060,7 +1060,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-map-marker-alt" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                            <i className="fas fa-map-marker-alt" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1095,16 +1095,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1127,7 +1127,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-camera" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                            <i className="fas fa-camera" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1162,16 +1162,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1194,7 +1194,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-user-check" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                            <i className="fas fa-user-check" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1229,16 +1229,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1261,7 +1261,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-certificate" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                            <i className="fas fa-certificate" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1296,16 +1296,16 @@ export default function LossPreventionSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-5px)';
-                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-5px)';
+                                            e.currentTarget.style.boxShadow = '0 20px 40px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         {/* Corner Accent */}
                                         <div style={{
                                             position: 'absolute',
@@ -1328,7 +1328,7 @@ export default function LossPreventionSecurityPage() {
                                             marginBottom: '20px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-award" style={{color: '#fdc51a', fontSize: '28px'}}></i>
+                                            <i className="fas fa-award" style={{ color: '#fdc51a', fontSize: '28px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -1369,7 +1369,7 @@ export default function LossPreventionSecurityPage() {
                                             margin: 0,
                                             fontWeight: '500'
                                         }}>
-                                            That's <strong style={{color: '#fdc51a'}}>accountability redesigned</strong>.
+                                            That's <strong style={{ color: '#fdc51a' }}>accountability redesigned</strong>.
                                         </p>
                                     </div>
                                 </div>
@@ -1420,22 +1420,22 @@ export default function LossPreventionSecurityPage() {
                         }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                            
+
 
                             {/* Second Content Block - Why Trust Metro Guards */}
                             <div className="row">
                                 <div className="col-lg-10 mx-auto">
-                                            <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
                                         borderRadius: '25px',
                                         padding: '50px 45px',
                                         border: '2px solid rgba(30, 34, 71, 0.3)',
                                         boxShadow: '0 15px 40px rgba(0,0,0,0.1)',
-                                                position: 'relative',
-                                                overflow: 'hidden'
+                                        position: 'relative',
+                                        overflow: 'hidden'
                                     }}>
                                         {/* Background Pattern */}
-                                                <div style={{
+                                        <div style={{
                                             position: 'absolute',
                                             top: 0,
                                             left: 0,
@@ -1446,7 +1446,7 @@ export default function LossPreventionSecurityPage() {
                                         }}></div>
 
                                         {/* Bottom Corner Accent */}
-                                                    <div style={{
+                                        <div style={{
                                             position: 'absolute',
                                             bottom: 0,
                                             right: 0,
@@ -1460,7 +1460,7 @@ export default function LossPreventionSecurityPage() {
                                             {/* Badge */}
                                             <div style={{
                                                 display: 'inline-flex',
-                                                    alignItems: 'center',
+                                                alignItems: 'center',
                                                 gap: '10px',
                                                 marginBottom: '25px'
                                             }}>
@@ -1477,7 +1477,7 @@ export default function LossPreventionSecurityPage() {
                                                     <i className="fas fa-award me-2"></i>
                                                     15+ Years Experience
                                                 </span>
-                                                    </div>
+                                            </div>
 
                                             <h2 style={{
                                                 color: '#ffffff',
@@ -1486,87 +1486,87 @@ export default function LossPreventionSecurityPage() {
                                                 marginBottom: '25px',
                                                 lineHeight: '1.2'
                                             }}>
-                                               Why Melbourne’s Leading Retailers Choose  <span style={{color: '#fdc51a'}}> Metro Guards</span>
+                                                Why Melbourne’s Leading Retailers Choose  <span style={{ color: '#fdc51a' }}> Metro Guards</span>
                                             </h2>
 
-                                                        <p style={{
+                                            <p style={{
                                                 color: 'rgba(255, 255, 255, 0.95)',
                                                 fontSize: '1.2rem',
                                                 lineHeight: '1.9',
                                                 marginBottom: '1.5rem',
                                                 margin: '0 auto 1.5rem'
-                                                        }}>
-                                                From small boutique stores to national chains, retailers choose Metro Guards for our reputation, reliability, and results in <strong style={{color: '#fdc51a'}}>store theft prevention Melbourne</strong>.
-                                                        </p>
+                                            }}>
+                                                From small boutique stores to national chains, retailers choose Metro Guards for our reputation, reliability, and results in <strong style={{ color: '#fdc51a' }}>store theft prevention Melbourne</strong>.
+                                            </p>
 
-                                                <p style={{
+                                            <p style={{
                                                 color: 'rgba(255, 255, 255, 0.9)',
                                                 fontSize: '1.15rem',
                                                 lineHeight: '1.8',
                                                 marginBottom: '1rem'
-                                                        }}>
+                                            }}>
                                                 We are trusted because:
-                                                        </p>
+                                            </p>
 
-                                                <ul style={{
-                                                    listStyle: 'none',
-                                                    color: 'rgba(255, 255, 255, 0.9)',
-                                                    fontSize: '1.1rem',
-                                                    lineHeight: '1.8',
-                                                    paddingLeft: '0',
-                                                    marginBottom: '1.5rem',
-                                                    textAlign: 'left',
-                                                    maxWidth: '800px',
-                                                    margin: '0 auto 1.5rem'
-                                                }}>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>Our LP officers are trained in modern theft-detection techniques</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We provide discreet, customer-friendly security</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We reduce shrinkage across multiple store formats</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We respond quickly to urgent LP staffing needs</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We protect stock, staff, and customers simultaneously</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We understand the unique risks of Melbourne retail locations</span>
-                                                    </li>
-                                                    <li style={{marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                        <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
-                                                        <span>We offer loss prevention security guards Melbourne 24/7</span>
-                                                    </li>
-                                                </ul>
+                                            <ul style={{
+                                                listStyle: 'none',
+                                                color: 'rgba(255, 255, 255, 0.9)',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                paddingLeft: '0',
+                                                marginBottom: '1.5rem',
+                                                textAlign: 'left',
+                                                maxWidth: '800px',
+                                                margin: '0 auto 1.5rem'
+                                            }}>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>Our LP officers are trained in modern theft-detection techniques</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We provide discreet, customer-friendly security</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We reduce shrinkage across multiple store formats</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We respond quickly to urgent LP staffing needs</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We protect stock, staff, and customers simultaneously</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We understand the unique risks of Melbourne retail locations</span>
+                                                </li>
+                                                <li style={{ marginBottom: '0.6rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
+                                                    <span>We offer loss prevention security guards Melbourne 24/7</span>
+                                                </li>
+                                            </ul>
 
-                                                <p style={{
+                                            <p style={{
                                                 color: 'rgba(255, 255, 255, 0.9)',
                                                 fontSize: '1.15rem',
                                                 lineHeight: '1.8',
                                                 margin: '0 auto',
                                                 fontStyle: 'italic',
                                                 marginTop: '1rem'
-                                                        }}>
-                                                Whether you're searching for "loss prevention guards Melbourne near me", "loss prevention security near me open now", or "best loss prevention security guards Melbourne", <strong style={{color: '#fdc51a'}}>Metro Guards</strong> delivers unmatched performance.
-                                                        </p>
+                                            }}>
+                                                Whether you're searching for "loss prevention guards Melbourne near me", "loss prevention security near me open now", or "best loss prevention security guards Melbourne", <strong style={{ color: '#fdc51a' }}>Metro Guards</strong> delivers unmatched performance.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                                                    
-                                                    <Testimonials />
+
+                    <Testimonials />
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -1627,10 +1627,10 @@ export default function LossPreventionSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1640,9 +1640,9 @@ export default function LossPreventionSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1660,7 +1660,7 @@ export default function LossPreventionSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1669,9 +1669,9 @@ export default function LossPreventionSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Loss Prevention Security Guards Melbourne <span style={{color: '#fdc51a'}}>Retailers Rely On</span>
+                                                Loss Prevention Security Guards Melbourne <span style={{ color: '#fdc51a' }}>Retailers Rely On</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.3rem',
@@ -1702,18 +1702,18 @@ export default function LossPreventionSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get Your Free Quote Now
                                                     </a>
@@ -1732,18 +1732,18 @@ export default function LossPreventionSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1785,8 +1785,8 @@ export default function LossPreventionSecurityPage() {
                                                     zIndex: 2,
                                                     textAlign: 'center'
                                                 }}>
-                                                    <i className="fas fa-shield-alt me-2" style={{color: '#fdc51a'}}></i>
-                                                    Metro Guards – <span style={{color: '#ffffff'}}>Protecting those who heal, so they can focus on what matters most.</span>
+                                                    <i className="fas fa-shield-alt me-2" style={{ color: '#fdc51a' }}></i>
+                                                    Metro Guards – <span style={{ color: '#ffffff' }}>Protecting those who heal, so they can focus on what matters most.</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1797,15 +1797,15 @@ export default function LossPreventionSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                <FAQSectionDynamic 
+                <FAQSectionDynamic
                     faqs={[
                         {
                             question: "Who provides loss prevention security guards in Melbourne?",
@@ -1830,4 +1830,5 @@ export default function LossPreventionSecurityPage() {
                     ]}
                 />
             </Layout>
-            </> ) }
+        </>)
+}

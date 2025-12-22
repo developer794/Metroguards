@@ -34,7 +34,7 @@ export default function StaticSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -134,21 +134,21 @@ export default function StaticSecurityPage() {
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="STATIC SECURITY GUARDS"
                 mainTitle="Static Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/AF728EFE-11D1-4965-8948-52919A2FEB8C_1_105_c.webp"
-                
+
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -159,41 +159,41 @@ export default function StaticSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
                                                 fontSize: '3rem'
                                             }}
                                         >
-                                           Local Static Security Guards Service 
-                                            <span style={{color: '#fdc51a'}}>in Melbourne</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            Local Static Security Guards Service
+                                            <span style={{ color: '#fdc51a' }}>in Melbourne</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
-                                           Metro Guards provides reliable static security guards Melbourne businesses depend on to protect buildings, assets, high-risk sites, and sensitive locations. Our guards remain positioned at key entry points, reception areas, gates, warehouses, retail floors, or construction perimeters, ensuring continuous visibility, controlled access, and proactive risk prevention.
+                                            Metro Guards provides reliable static security guards Melbourne businesses depend on to protect buildings, assets, high-risk sites, and sensitive locations. Our guards remain positioned at key entry points, reception areas, gates, warehouses, retail floors, or construction perimeters, ensuring continuous visibility, controlled access, and proactive risk prevention.
                                             From the Melbourne CBD and Docklands to Dandenong South, Laverton North, Tullamarine, and suburban commercial precincts, we deliver static security Melbourne and on-site security guards Melbourne to office towers, distribution centres, retail stores, industrial facilities, construction sites, and residential complexes.
-                                            <br/><br/>For anyone searching “who provides static security guards in Melbourne” or “best static security guards near me”, Metro Guards is the trusted local provider.
-                                            </p>
-                                        
+                                            <br /><br />For anyone searching “who provides static security guards in Melbourne” or “best static security guards near me”, Metro Guards is the trusted local provider.
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -206,15 +206,15 @@ export default function StaticSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -235,16 +235,16 @@ export default function StaticSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -252,9 +252,9 @@ export default function StaticSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
+                                            <img
+                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/FF0D3949-7DA9-4A0F-8B9D-B24F71BAE8D2_1_105_c.webp"
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -263,9 +263,9 @@ export default function StaticSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -278,7 +278,7 @@ export default function StaticSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -296,7 +296,7 @@ export default function StaticSecurityPage() {
                             </div>
                         </div>
                     </div>
-                    
+
                     {/*=====  Services Section =====*/}
                     <div className="services-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
@@ -354,26 +354,26 @@ export default function StaticSecurityPage() {
                                                 transform: 'perspective(1000px) rotateY(-5deg)',
                                                 transition: 'all 0.4s ease'
                                             }}
-                                            onMouseEnter={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
-                                                e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
-                                            }}
-                                            onMouseLeave={(e) => {
-                                                e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
-                                                e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
-                                            }}>
-                                            <img 
-                                                src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/B2A740BC-4957-41CE-9820-9D0F8AD63CC2_1_105_c.webp" 
-                                                alt="Professional Building Security Guards" 
-                                                className="img-fluid"
-                                                style={{
-                                                    width: '100%',
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(0deg) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 35px 70px rgba(0,0,0,0.2)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'perspective(1000px) rotateY(-5deg) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                                                }}>
+                                                <img
+                                                    src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Static%20Secuirty%20Guards/B2A740BC-4957-41CE-9820-9D0F8AD63CC2_1_105_c.webp"
+                                                    alt="Professional Building Security Guards"
+                                                    className="img-fluid"
+                                                    style={{
+                                                        width: '100%',
                                                         height: '750px',
                                                         objectFit: 'cover',
                                                         display: 'block'
                                                     }}
                                                 />
-                                                
+
                                                 {/* Image Overlay */}
                                                 <div style={{
                                                     position: 'absolute',
@@ -384,11 +384,11 @@ export default function StaticSecurityPage() {
                                                     background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1) 0%, transparent 50%, rgba(253, 197, 26, 0.1) 100%)',
                                                     zIndex: 1
                                                 }}></div>
-                                </div>
+                                            </div>
 
                                             {/* Floating Stats Cards */}
-                                            
-                                           
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -398,19 +398,19 @@ export default function StaticSecurityPage() {
                                     <div className="services-content">
                                         {/* Header Section */}
                                         <div className="section-header mb-5">
-                                            <h2 style={{ 
-                                                color: "#1e2247", 
+                                            <h2 style={{
+                                                color: "#1e2247",
                                                 fontSize: "3.2rem",
                                                 fontWeight: "800",
                                                 marginBottom: "25px",
                                                 lineHeight: "1.2",
                                                 textShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                             }}>
-                                               Why Melbourne Businesses Need Static Security Guards
+                                                Why Melbourne Businesses Need Static Security Guards
                                             </h2>
-                                            
-                                            <p style={{ 
-                                                color: "#6c757d", 
+
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.2rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1.5rem"
@@ -418,8 +418,8 @@ export default function StaticSecurityPage() {
                                                 Many Melbourne sites require a fixed guard presence to maintain order, block threats, and deter criminal activity.
                                             </p>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8",
                                                 marginBottom: "1rem",
@@ -436,168 +436,168 @@ export default function StaticSecurityPage() {
                                                 paddingLeft: '0',
                                                 marginBottom: '1.5rem'
                                             }}>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Unauthorised access to static security Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Building access breach protection Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Retail theft prevention static guards</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Construction static guard protection Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Warehouse theft static guard Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Vandalism prevention static security Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Aggressive visitor management security Melbourne</span>
                                                 </li>
-                                                <li style={{marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start'}}>
-                                                    <span style={{color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0}}>✓</span>
+                                                <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'flex-start' }}>
+                                                    <span style={{ color: '#fdc51a', fontWeight: 'bold', fontSize: '1.3rem', marginRight: '0.75rem', lineHeight: '1.5', flexShrink: 0 }}>✓</span>
                                                     <span>Static guard for building entrance Melbourne</span>
                                                 </li>
                                             </ul>
 
-                                            <p style={{ 
-                                                color: "#6c757d", 
+                                            <p style={{
+                                                color: "#6c757d",
                                                 fontSize: "1.15rem",
                                                 lineHeight: "1.8"
                                             }}>
-                                                <strong style={{color: '#fdc51a'}}>Static security</strong> prevents these risks through consistent, visible, and trained on-site protection.
+                                                <strong style={{ color: '#fdc51a' }}>Static security</strong> prevents these risks through consistent, visible, and trained on-site protection.
                                             </p>
 
-                                            
-                                            
+
+
                                         </div>
 
-                                      
 
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
 
-					{/*===== Quiet Strength Section =====*/}
-					<div className="quiet-strength-section section-padding" style={{
-						background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
-						position: 'relative',
-						overflow: 'hidden'
-					}}>
-						{/* Background Pattern */}
-						<div style={{
-							position: 'absolute',
-							top: 0,
-							left: 0,
-							right: 0,
-							bottom: 0,
-							backgroundImage: `
+
+                    {/*===== Quiet Strength Section =====*/}
+                    <div className="quiet-strength-section section-padding" style={{
+                        background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}>
+                        {/* Background Pattern */}
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            backgroundImage: `
 								radial-gradient(circle at 20% 30%, rgba(253, 197, 26, 0.08) 0%, transparent 50%),
 								radial-gradient(circle at 80% 70%, rgba(30, 34, 71, 0.06) 0%, transparent 50%)
 							`,
-							zIndex: 1
-						}}></div>
+                            zIndex: 1
+                        }}></div>
 
-						{/* Decorative Elements */}
-						<div style={{
-							position: 'absolute',
-							top: '10%',
-							right: '6%',
-							width: '110px',
-							height: '110px',
-							background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.12), transparent)',
-							borderRadius: '50%',
-							zIndex: 1
-						}}></div>
-						<div style={{
-							position: 'absolute',
-							bottom: '12%',
-							left: '8%',
-							width: '85px',
-							height: '85px',
-							background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1), transparent)',
-							borderRadius: '50%',
-							zIndex: 1
-						}}></div>
+                        {/* Decorative Elements */}
+                        <div style={{
+                            position: 'absolute',
+                            top: '10%',
+                            right: '6%',
+                            width: '110px',
+                            height: '110px',
+                            background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.12), transparent)',
+                            borderRadius: '50%',
+                            zIndex: 1
+                        }}></div>
+                        <div style={{
+                            position: 'absolute',
+                            bottom: '12%',
+                            left: '8%',
+                            width: '85px',
+                            height: '85px',
+                            background: 'linear-gradient(135deg, rgba(30, 34, 71, 0.1), transparent)',
+                            borderRadius: '50%',
+                            zIndex: 1
+                        }}></div>
 
-						<div className="container" style={{ position: 'relative', zIndex: 2 }}>
-							<div className="row justify-content-center g-4">
-								<div className="col-lg-6">
-									<div style={{
-										background: '#ffffff',
-										borderRadius: '20px',
-										padding: '45px 40px',
-										border: '2px solid rgba(30, 34, 71, 0.1)',
-										boxShadow: '0 20px 45px rgba(30, 34, 71, 0.08)'
-									}}>
-										<h2 style={{
-											color: '#1e2247',
-											fontSize: '3rem',
-											fontWeight: 800,
-											lineHeight: 1.2,
-											marginBottom: '18px'
-										}}>
-											The Reliability of On-Site, <span style={{color: '#fdc51a'}}>Always-Present Protection</span>
-										</h2>
-										<p style={{
-											color: '#6c757d',
-											fontSize: '1.15rem',
-											lineHeight: 1.8,
-											margin: 0
-										}}>
-											Our static security guards Melbourne serve where visibility matters most: building entrances, office receptions, warehouse gates, retail floors, construction perimeters, and high-risk industrial zones.
+                        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+                            <div className="row justify-content-center g-4">
+                                <div className="col-lg-6">
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
+                                        padding: '45px 40px',
+                                        border: '2px solid rgba(30, 34, 71, 0.1)',
+                                        boxShadow: '0 20px 45px rgba(30, 34, 71, 0.08)'
+                                    }}>
+                                        <h2 style={{
+                                            color: '#1e2247',
+                                            fontSize: '3rem',
+                                            fontWeight: 800,
+                                            lineHeight: 1.2,
+                                            marginBottom: '18px'
+                                        }}>
+                                            The Reliability of On-Site, <span style={{ color: '#fdc51a' }}>Always-Present Protection</span>
+                                        </h2>
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.15rem',
+                                            lineHeight: 1.8,
+                                            margin: 0
+                                        }}>
+                                            Our static security guards Melbourne serve where visibility matters most: building entrances, office receptions, warehouse gates, retail floors, construction perimeters, and high-risk industrial zones.
                                             We supply fixed security guards, static site security, property static security, and stationary security guards Melbourne trained to manage access, supervise crowds, oversee CCTV, support loading docks, and maintain order with quiet confidence. Wherever you need an unwavering security presence, Metro Guards provides the discipline, professionalism, and awareness your site demands.
-                                            </p>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div style={{
-										background: '#ffffff',
-										borderRadius: '20px',
-										padding: '45px 40px',
-										border: '2px solid rgba(253, 197, 26, 0.25)',
-										boxShadow: '0 20px 45px rgba(253, 197, 26, 0.12)'
-									}}>
-										<h2 style={{
-											color: '#1e2247',
-											fontSize: '3rem',
-											fontWeight: 800,
-											lineHeight: 1.2,
-											marginBottom: '18px'
-										}}>
-											Tailored Static Guarding for Every <span style={{color: '#fdc51a'}}>Industry & Every Hour</span>
-                                            </h2>
-										<p style={{
-											color: '#6c757d',
-											fontSize: '1.15rem',
-											lineHeight: 1.8,
-											margin: 0
-										}}>
-											Our team delivers static commercial security, industrial static security, retail static security guards, and building static security guards Melbourne aligned with the exact needs of your operation. From gatehouse & entrance guards to reception static guarding, access control officers, and 24/7 on-site security guards Melbourne, every deployment is built around your risk profile and environment.
-                                            We protect assets, equipment, loading bays, parking zones, and high-traffic areas while providing crucial support such as CCTV monitoring, incident logging, visitor verification, and warehouse or construction zone supervision. 
-                                            </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div style={{
+                                        background: '#ffffff',
+                                        borderRadius: '20px',
+                                        padding: '45px 40px',
+                                        border: '2px solid rgba(253, 197, 26, 0.25)',
+                                        boxShadow: '0 20px 45px rgba(253, 197, 26, 0.12)'
+                                    }}>
+                                        <h2 style={{
+                                            color: '#1e2247',
+                                            fontSize: '3rem',
+                                            fontWeight: 800,
+                                            lineHeight: 1.2,
+                                            marginBottom: '18px'
+                                        }}>
+                                            Tailored Static Guarding for Every <span style={{ color: '#fdc51a' }}>Industry & Every Hour</span>
+                                        </h2>
+                                        <p style={{
+                                            color: '#6c757d',
+                                            fontSize: '1.15rem',
+                                            lineHeight: 1.8,
+                                            margin: 0
+                                        }}>
+                                            Our team delivers static commercial security, industrial static security, retail static security guards, and building static security guards Melbourne aligned with the exact needs of your operation. From gatehouse & entrance guards to reception static guarding, access control officers, and 24/7 on-site security guards Melbourne, every deployment is built around your risk profile and environment.
+                                            We protect assets, equipment, loading bays, parking zones, and high-traffic areas while providing crucial support such as CCTV monitoring, incident logging, visitor verification, and warehouse or construction zone supervision.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					{/*===== Standards Section =====*/}
+                    {/*===== Standards Section =====*/}
                     <div className="standards-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
                         position: 'relative',
@@ -673,7 +673,7 @@ export default function StaticSecurityPage() {
                                         marginBottom: '25px',
                                         lineHeight: '1.2'
                                     }}>
-                                       Technology-Backed Static Security  <span style={{color: '#fdc51a'}}>That Raises Site Safety </span>
+                                        Technology-Backed Static Security  <span style={{ color: '#fdc51a' }}>That Raises Site Safety </span>
                                     </h2>
 
                                     <p style={{
@@ -684,7 +684,7 @@ export default function StaticSecurityPage() {
                                         margin: '0 auto'
                                     }}>
                                         Metro Guards enhances all static security Melbourne deployments with digital tracking and reporting, including:
-                                        </p>
+                                    </p>
                                 </div>
                             </div>
 
@@ -702,16 +702,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -723,7 +723,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-route" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-route" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -735,7 +735,7 @@ export default function StaticSecurityPage() {
                                             GPS-tracked patrols
                                         </h3>
 
-                                        
+
                                     </div>
                                 </div>
 
@@ -751,16 +751,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -772,7 +772,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-file-alt" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-file-alt" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -781,10 +781,10 @@ export default function StaticSecurityPage() {
                                             fontWeight: '700',
                                             marginBottom: '15px'
                                         }}>
-                                             Real-time incident reporting
+                                            Real-time incident reporting
                                         </h3>
 
-                                       
+
                                     </div>
                                 </div>
 
@@ -800,16 +800,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -821,7 +821,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-user-tie" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-user-tie" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -830,10 +830,10 @@ export default function StaticSecurityPage() {
                                             fontWeight: '700',
                                             marginBottom: '15px'
                                         }}>
-                                           Supervisor inspections
+                                            Supervisor inspections
                                         </h3>
 
-                                        
+
                                     </div>
                                 </div>
 
@@ -849,16 +849,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
-                                        e.currentTarget.style.borderColor = '#1e2247';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(30, 34, 71, 0.15)';
+                                            e.currentTarget.style.borderColor = '#1e2247';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -870,7 +870,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(30, 34, 71, 0.3)'
                                         }}>
-                                            <i className="fas fa-shield-alt" style={{color: '#fdc51a', fontSize: '32px'}}></i>
+                                            <i className="fas fa-shield-alt" style={{ color: '#fdc51a', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -882,7 +882,7 @@ export default function StaticSecurityPage() {
                                             ISO-certified operations
                                         </h3>
 
-                                        
+
                                     </div>
                                 </div>
 
@@ -898,16 +898,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -919,7 +919,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-certificate" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-certificate" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -931,7 +931,7 @@ export default function StaticSecurityPage() {
                                             CM3 Prequalification
                                         </h3>
 
-                                        
+
                                     </div>
                                 </div>
                                 {/* Feature 6 */}
@@ -946,16 +946,16 @@ export default function StaticSecurityPage() {
                                         position: 'relative',
                                         overflow: 'hidden'
                                     }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-8px)';
-                                        e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
-                                        e.currentTarget.style.borderColor = '#fdc51a';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                        e.currentTarget.style.boxShadow = 'none';
-                                        e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
-                                    }}>
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-8px)';
+                                            e.currentTarget.style.boxShadow = '0 25px 50px rgba(253, 197, 26, 0.2)';
+                                            e.currentTarget.style.borderColor = '#fdc51a';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                            e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                        }}>
                                         <div style={{
                                             width: '70px',
                                             height: '70px',
@@ -967,7 +967,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '25px',
                                             boxShadow: '0 10px 25px rgba(253, 197, 26, 0.3)'
                                         }}>
-                                            <i className="fas fa-award" style={{color: '#1e2247', fontSize: '32px'}}></i>
+                                            <i className="fas fa-award" style={{ color: '#1e2247', fontSize: '32px' }}></i>
                                         </div>
 
                                         <h3 style={{
@@ -979,7 +979,7 @@ export default function StaticSecurityPage() {
                                             ASIAL Membership
                                         </h3>
 
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1091,7 +1091,7 @@ export default function StaticSecurityPage() {
                                                     margin: '0 auto',
                                                     boxShadow: '0 15px 35px rgba(253, 197, 26, 0.4)'
                                                 }}>
-                                                    <i className="fas fa-users" style={{color: '#1e2247', fontSize: '42px'}}></i>
+                                                    <i className="fas fa-users" style={{ color: '#1e2247', fontSize: '42px' }}></i>
                                                 </div>
                                             </div>
                                             <div className="col-lg-10">
@@ -1102,7 +1102,7 @@ export default function StaticSecurityPage() {
                                                     lineHeight: 1.2,
                                                     marginBottom: '20px'
                                                 }}>
-                                                    Trusted Across Melbourne’s Most  <span style={{color: '#fdc51a'}}>Demanding Sites</span>
+                                                    Trusted Across Melbourne’s Most  <span style={{ color: '#fdc51a' }}>Demanding Sites</span>
                                                 </h2>
                                                 <p style={{
                                                     color: 'rgba(255, 255, 255, 0.95)',
@@ -1134,7 +1134,7 @@ export default function StaticSecurityPage() {
                                             marginBottom: '35px',
                                             textAlign: 'center'
                                         }}>
-                                            Why Melbourne’s Businesses Choose  <span style={{color: '#fdc51a'}}>Metro Guards</span>
+                                            Why Melbourne’s Businesses Choose  <span style={{ color: '#fdc51a' }}>Metro Guards</span>
                                         </h2>
                                         <p> Melbourne organisations across retail, commercial, industrial, construction and residential sectors trust Metro Guards because:</p>
                                         <div className="row g-4">
@@ -1148,18 +1148,18 @@ export default function StaticSecurityPage() {
                                                     transition: 'all 0.3s ease',
                                                     border: '2px solid rgba(30, 34, 71, 0.1)'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-8px)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
-                                                    e.currentTarget.style.background = '#ffffff';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
-                                                    e.currentTarget.style.boxShadow = 'none';
-                                                    e.currentTarget.style.background = '#f8f9fa';
-                                                }}>
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(-8px)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
+                                                        e.currentTarget.style.background = '#ffffff';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(0)';
+                                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
+                                                        e.currentTarget.style.boxShadow = 'none';
+                                                        e.currentTarget.style.background = '#f8f9fa';
+                                                    }}>
                                                     <div style={{
                                                         width: '60px',
                                                         height: '60px',
@@ -1171,7 +1171,7 @@ export default function StaticSecurityPage() {
                                                         margin: '0 auto 20px',
                                                         boxShadow: '0 8px 20px rgba(253, 197, 26, 0.3)'
                                                     }}>
-                                                        <i className="fas fa-shield-alt" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                                        <i className="fas fa-shield-alt" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                                     </div>
                                                     <h4 style={{
                                                         color: '#1e2247',
@@ -1202,18 +1202,18 @@ export default function StaticSecurityPage() {
                                                     transition: 'all 0.3s ease',
                                                     border: '2px solid rgba(30, 34, 71, 0.1)'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-8px)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
-                                                    e.currentTarget.style.background = '#ffffff';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
-                                                    e.currentTarget.style.boxShadow = 'none';
-                                                    e.currentTarget.style.background = '#f8f9fa';
-                                                }}>
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(-8px)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
+                                                        e.currentTarget.style.background = '#ffffff';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(0)';
+                                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
+                                                        e.currentTarget.style.boxShadow = 'none';
+                                                        e.currentTarget.style.background = '#f8f9fa';
+                                                    }}>
                                                     <div style={{
                                                         width: '60px',
                                                         height: '60px',
@@ -1225,7 +1225,7 @@ export default function StaticSecurityPage() {
                                                         margin: '0 auto 20px',
                                                         boxShadow: '0 8px 20px rgba(253, 197, 26, 0.3)'
                                                     }}>
-                                                        <i className="fas fa-heart" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                                        <i className="fas fa-heart" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                                     </div>
                                                     <h4 style={{
                                                         color: '#1e2247',
@@ -1256,18 +1256,18 @@ export default function StaticSecurityPage() {
                                                     transition: 'all 0.3s ease',
                                                     border: '2px solid rgba(30, 34, 71, 0.1)'
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-8px)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                    e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
-                                                    e.currentTarget.style.background = '#ffffff';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
-                                                    e.currentTarget.style.boxShadow = 'none';
-                                                    e.currentTarget.style.background = '#f8f9fa';
-                                                }}>
+                                                    onMouseEnter={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(-8px)';
+                                                        e.currentTarget.style.borderColor = '#fdc51a';
+                                                        e.currentTarget.style.boxShadow = '0 20px 40px rgba(253, 197, 26, 0.3)';
+                                                        e.currentTarget.style.background = '#ffffff';
+                                                    }}
+                                                    onMouseLeave={(e) => {
+                                                        e.currentTarget.style.transform = 'translateY(0)';
+                                                        e.currentTarget.style.borderColor = 'rgba(30, 34, 71, 0.1)';
+                                                        e.currentTarget.style.boxShadow = 'none';
+                                                        e.currentTarget.style.background = '#f8f9fa';
+                                                    }}>
                                                     <div style={{
                                                         width: '60px',
                                                         height: '60px',
@@ -1279,7 +1279,7 @@ export default function StaticSecurityPage() {
                                                         margin: '0 auto 20px',
                                                         boxShadow: '0 8px 20px rgba(253, 197, 26, 0.3)'
                                                     }}>
-                                                        <i className="fas fa-star" style={{color: '#1e2247', fontSize: '28px'}}></i>
+                                                        <i className="fas fa-star" style={{ color: '#1e2247', fontSize: '28px' }}></i>
                                                     </div>
                                                     <h4 style={{
                                                         color: '#1e2247',
@@ -1315,7 +1315,7 @@ export default function StaticSecurityPage() {
                                                 margin: 0,
                                                 fontStyle: 'italic'
                                             }}>
-                                                <strong style={{color: '#fdc51a'}}>Professionalism isn't loud. It's consistent.</strong> And that consistency is what makes safety sustainable.
+                                                <strong style={{ color: '#fdc51a' }}>Professionalism isn't loud. It's consistent.</strong> And that consistency is what makes safety sustainable.
                                             </p>
                                         </div>
                                     </div>
@@ -1385,10 +1385,10 @@ export default function StaticSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -1398,9 +1398,9 @@ export default function StaticSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -1418,7 +1418,7 @@ export default function StaticSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -1427,9 +1427,9 @@ export default function StaticSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                Static Security Guards Melbourne <span style={{color: '#fdc51a'}}>Businesses Rely On</span>
+                                                Static Security Guards Melbourne <span style={{ color: '#fdc51a' }}>Businesses Rely On</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.2rem',
@@ -1439,7 +1439,7 @@ export default function StaticSecurityPage() {
                                                 margin: '0 auto 40px'
                                             }}>
                                                 From office buildings to logistics hubs, retail stores, and construction projects, Metro Guards provides dependable fixed security guards Melbourne who protect your site with diligence, integrity, and professionalism.
-                                                </p>
+                                            </p>
                                         </div>
 
                                         {/* CTA Buttons */}
@@ -1460,18 +1460,18 @@ export default function StaticSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get Your Free Quote
                                                     </a>
@@ -1490,18 +1490,18 @@ export default function StaticSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1509,7 +1509,7 @@ export default function StaticSecurityPage() {
                                             </div>
                                         </div>
 
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -1517,15 +1517,15 @@ export default function StaticSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
-                <FAQSectionDynamic 
+                <FAQSectionDynamic
                     faqs={[
                         {
                             question: "Who provides static security guards in Melbourne?",
@@ -1550,4 +1550,5 @@ export default function StaticSecurityPage() {
                     ]}
                 />
             </Layout>
-            </> ) }
+        </>)
+}

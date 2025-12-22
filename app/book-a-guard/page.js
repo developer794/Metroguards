@@ -92,7 +92,7 @@ export default function BookGuardPage() {
                                         Instant Security Booking
                                     </div>
 
-                                    <h1 style={{
+                                    <h2 style={{
                                         fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
                                         fontWeight: '700',
                                         lineHeight: '1.2',
@@ -101,7 +101,7 @@ export default function BookGuardPage() {
                                         fontFamily: 'serif'
                                     }}>
                                         Book Professional <span style={{ color: '#fdc51a' }}>Security Guards</span>
-                                    </h1>
+                                    </h2>
 
                                     <p style={{
                                         fontSize: '1.1rem',

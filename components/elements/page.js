@@ -5,17 +5,17 @@ export const metadata = {
   description:
     "Frequently asked questions about Metroguards.",
   openGraph: {
-    title: "K9 Security Services - Metro Guards Melbourne",
+    title: "FAQ - Metro Guards Melbourne",
     description:
-      "Frequently asked questions about Metroguards.",
-    url: "https://metroguards.vercel.app/FAQ",
+      "Frequently asked questions about Metro Guards security services in Melbourne.",
+    url: "https://metroguards.com.au/faqs",
     siteName: "Metro Guards",
     images: [
       {
-        url: "/assets/img/logo/mg metro gaurds.jpg",
+        url: "https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg",
         width: 1200,
         height: 630,
-        alt: "Metro Guards K9 Security Preview",
+        alt: "Metro Guards FAQ Preview",
       },
     ],
     locale: "en_US",
@@ -25,9 +25,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "FAQ - Metro Guards Melbourne",
     description:
-      "Looking for urgent or short-term security? Metro Guards provides adhoc security services across Melbourne for businesses, events, and emergencies.",
+      "Frequently asked questions about Metro Guards security services in Melbourne.",
     images: [
-      "https://metroguards.vercel.app/assets/img/logo/mg metro gaurds.jpg",
+      "https://metroguards.com.au/assets/img/logo/mg metro gaurds.jpg",
     ],
   },
 };

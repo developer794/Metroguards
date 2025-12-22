@@ -6,50 +6,58 @@ const whyChooseUsData = [
   {
     icon: <Shield size={48} />,
     title: "Adhoc Security Services",
-    description: "Flexible, on-demand security solutions for immediate coverage needs. Our rapid deployment ensures your security requirements are met within hours."
+    description: "Flexible, on-demand security solutions for immediate coverage needs. Our rapid deployment ensures your security requirements are met within hours.",
+    link: "/adhoc-security-services"
   },
   {
     icon: <Building size={48} />,
     title: "Building Security Guards",
-    description: "Professional building security services protecting commercial properties, offices, and residential complexes with 24/7 monitoring and access control."
+    description: "Professional building security services protecting commercial properties, offices, and residential complexes with 24/7 monitoring and access control.",
+    link: "/building-security-guards"
   },
   {
     icon: <Truck size={48} />,
     title: "Mobile Patrol Security",
-    description: "Comprehensive mobile patrol services covering large areas with regular check-ins, incident response, and visible security presence."
+    description: "Comprehensive mobile patrol services covering large areas with regular check-ins, incident response, and visible security presence.",
+    link: "/mobile-patrol-security"
   },
   {
     icon: <Users size={48} />,
     title: "Private Security Guards",
-    description: "Dedicated personal protection and private security services tailored to individual needs, ensuring safety and peace of mind."
+    description: "Dedicated personal protection and private security services tailored to individual needs, ensuring safety and peace of mind.",
+    link: "/private-security-guards"
   },
   {
     icon: <Store size={48} />,
     title: "Retail Security Guards",
-    description: "Specialized retail security services preventing theft, managing crowds, and maintaining a safe shopping environment for customers and staff."
+    description: "Specialized retail security services preventing theft, managing crowds, and maintaining a safe shopping environment for customers and staff.",
+    link: "/retail-security-guard"
   },
   {
     icon: <Calendar size={48} />,
     title: "Event Security Guards",
-    description: "Professional event security services for concerts, festivals, corporate events, and private functions with crowd management expertise."
+    description: "Professional event security services for concerts, festivals, corporate events, and private functions with crowd management expertise.",
+    link: "/event-security-guards"
   },
   {
     icon: <Dog size={48} />,
     title: "K9 Security Services",
-    description: "Advanced canine security services with trained dogs for detection, patrol, and enhanced security coverage in various environments."
+    description: "Advanced canine security services with trained dogs for detection, patrol, and enhanced security coverage in various environments.",
+    link: "/k9-security-guards-in-melbourne"
   },
   {
     icon: <Eye size={48} />,
     title: "Asset Protection",
-    description: "Comprehensive asset protection services safeguarding valuable property, equipment, and inventory with advanced monitoring systems."
+    description: "Comprehensive asset protection services safeguarding valuable property, equipment, and inventory with advanced monitoring systems.",
+    link: "/asset-protection"
   }
 ];
 
 export default function WhyChooseUs() {
   return (
-    <div className="why-choose-us-section" style={{ 
-      padding: '80px 0', 
-      backgroundColor: '#f8f9fa' 
+    <div className="why-choose-us-section" style={{
+      padding: '80px 0',
+      backgroundColor: '#f8f9fa'
     }}>
       <div className="container" style={{ maxWidth: '1320px', margin: '0 auto', padding: '0 40px' }}>
         {/* Main Heading - Top Left */}
@@ -64,7 +72,7 @@ export default function WhyChooseUs() {
                 marginBottom: '0',
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
               }}>
-             Choose Other Metro Guards Security Services
+                Choose Other Metro Guards Security Services
               </h2>
             </div>
           </div>
@@ -79,7 +87,7 @@ export default function WhyChooseUs() {
               gap: '30px'
             }}>
               {whyChooseUsData.map((feature, index) => (
-                <div 
+                <div
                   key={index}
                   className="feature-card"
                   style={{
@@ -103,7 +111,7 @@ export default function WhyChooseUs() {
                   }}
                 >
                   {/* Top sliding line on hover */}
-                  <div 
+                  <div
                     className="hover-line"
                     style={{
                       position: 'absolute',
@@ -132,7 +140,7 @@ export default function WhyChooseUs() {
                   />
 
                   {/* Large background icon shape with icon inside */}
-                  <div 
+                  <div
                     style={{
                       position: 'absolute',
                       bottom: '-20px',
@@ -192,8 +200,8 @@ export default function WhyChooseUs() {
 
                   {/* Read More Button */}
                   <div style={{ position: 'relative', zIndex: '2' }}>
-                    <a 
-                      href="#"
+                    <a
+                      href={feature.link}
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',

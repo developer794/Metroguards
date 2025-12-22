@@ -419,14 +419,14 @@ export default function BookingFormPage() {
                                         </div>
 
                                         {/* Thank You Message */}
-                                        <h1 style={{
+                                        <h2 style={{
                                             color: '#1e2247',
                                             fontSize: '2.8rem',
                                             fontWeight: '800',
                                             marginBottom: '20px',
                                             position: 'relative',
                                             zIndex: 1
-                                        }}>Thank You!</h1>
+                                        }}>Thank You!</h2>
 
                                         <div style={{
                                             width: '80px',
@@ -601,7 +601,7 @@ export default function BookingFormPage() {
                                                 Professional Security Booking
                                             </div>
 
-                                            <h1 style={{
+                                            <h2 style={{
                                                 fontSize: 'clamp(2.2rem, 4vw, 3rem)',
                                                 fontWeight: '700',
                                                 lineHeight: '1.2',
@@ -610,7 +610,7 @@ export default function BookingFormPage() {
                                                 fontFamily: 'serif'
                                             }}>
                                                 Security Services <span style={{ color: '#fdc51a' }}>Booking Form</span>
-                                            </h1>
+                                            </h2>
 
                                             <p style={{
                                                 fontSize: '1.1rem',

@@ -51,7 +51,9 @@ export default function ContractorDeclarationPage() {
             setAgreedToTerms(false);
         } catch (err) {
             toast.error(err.message || "Network error. Please try again.");
-            console.error(err);
+            if (process.env.NODE_ENV === 'development') {
+                console.error('Contractor form submission error:', err);
+            }
         } finally {
             setLoading(false);
         }
@@ -98,7 +100,7 @@ export default function ContractorDeclarationPage() {
                                         Legal Compliance Declaration
                                     </div>
 
-                                    <h1 style={{
+                                    <h2 style={{
                                         fontSize: 'clamp(2.2rem, 4vw, 3rem)',
                                         fontWeight: '700',
                                         lineHeight: '1.2',
@@ -107,7 +109,7 @@ export default function ContractorDeclarationPage() {
                                         fontFamily: 'serif'
                                     }}>
                                         Contractor <span style={{ color: '#fdc51a' }}>Declaration Form</span>
-                                    </h1>
+                                    </h2>
 
                                     <p style={{
                                         fontSize: '1.1rem',
@@ -213,14 +215,14 @@ export default function ContractorDeclarationPage() {
                             </div>
                             
                             {/* Thank You Message */}
-                            <h1 style={{
+                            <h2 style={{
                               color: '#1e2247',
                               fontSize: '2.8rem',
                               fontWeight: '800',
                               marginBottom: '20px',
                               position: 'relative',
                               zIndex: 1
-                            }}>Thank You!</h1>
+                            }}>Thank You!</h2>
 
                             <div style={{
                               width: '80px',

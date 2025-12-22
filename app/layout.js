@@ -17,6 +17,7 @@ import "./dashboard/globals.css"
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import StructuredData from "@/components/StructuredData";
 import ContactWidget from "@/components/contactWidget";
+import RemoveBreadcrumbSchema from "@/components/RemoveBreadcrumbSchema";
 
 
 
@@ -51,7 +52,7 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  
+
   robots: {
     index: true,
     follow: true,
@@ -63,6 +64,9 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://metroguards.com.au',
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -73,9 +77,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assets/img/logo/icon.png" type="image/png" sizes="16x16"></link>
       </head>
       <body className="relative">
+        {/* Remove BreadcrumbList Schema */}
+        <RemoveBreadcrumbSchema />
         {/* Google Analytics - Production Only */}
         <GoogleAnalytics />
-        
+
         {/* Header Strip - fixed at the very top */}
         <div className="fixed top-0 left-0 right-0 z-50">
           {/* <TopBar/> */}
@@ -85,10 +91,10 @@ export default function RootLayout({ children }) {
         <main className="pt-[40px] min-h-screen"> {/* Adjust pt value based on your header strip height */}
           {children}
         </main>
-       
+
         {/* Client-only injection avoids hydration mismatch 
         <TawkLoader />*/}
-        <ContactWidget/>
+        <ContactWidget />
       </body>
     </html>
   )

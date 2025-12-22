@@ -32,7 +32,7 @@ export default function CorporateEventSecurityPage() {
             description: "Securing Melbourne's buildings with consistency and care.",
         },
         {
-            title: "Fully Licensed", 
+            title: "Fully Licensed",
             icon: <Home size={24} />,
             iconSymbol: <Home size={24} />,
             description: "Compliant with all Victorian security and labour hire laws.",
@@ -130,22 +130,22 @@ export default function CorporateEventSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CORPORATE EVENT SECURITY GUARDS "
-                mainTitle="CORPORATE EVENT SECURITY GUARDS IN MELBOURNE" 
+                mainTitle="CORPORATE EVENT SECURITY GUARDS IN MELBOURNE"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
             >
                 <div>
                     {/*===== Modern Hero Section =====*/}
-                    <div className="hero-section position-relative" style={{backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px'}}>
+                    <div className="hero-section position-relative" style={{ backgroundColor: '#ffffff', paddingTop: '80px', paddingBottom: '80px' }}>
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-6">
-                                    <div className="hero-content" style={{textAlign: 'left'}}>
+                                    <div className="hero-content" style={{ textAlign: 'left' }}>
                                         <div className="subtitle mb-4">
-                                            <span 
-                                                className="badge px-4 py-2" 
+                                            <span
+                                                className="badge px-4 py-2"
                                                 style={{
-                                                    backgroundColor: '#fdc51a', 
-                                                    color: '#1e2247', 
+                                                    backgroundColor: '#fdc51a',
+                                                    color: '#1e2247',
                                                     fontWeight: '600',
                                                     fontSize: '0.85rem',
                                                     textTransform: 'uppercase',
@@ -156,8 +156,8 @@ export default function CorporateEventSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
-                                            className="display-3 fw-bold mb-4" 
+                                        <h2
+                                            className="display-3 fw-bold mb-4"
                                             style={{
                                                 color: '#1e2247',
                                                 lineHeight: '1.1',
@@ -165,31 +165,31 @@ export default function CorporateEventSecurityPage() {
                                             }}
                                         >
                                             Professional Presence for Moments  <br />
-                                            <span style={{color: '#fdc51a'}}>That Define Brands</span>
-                                        </h1>
-                                        <p 
-                                            className="lead mb-4" 
+                                            <span style={{ color: '#fdc51a' }}>That Define Brands</span>
+                                        </h2>
+                                        <p
+                                            className="lead mb-4"
                                             style={{
                                                 color: '#6c757d',
-                                                fontSize: '1.2rem', 
+                                                fontSize: '1.2rem',
                                                 lineHeight: '1.6',
                                                 maxWidth: '500px'
                                             }}
                                         >
                                             Corporate events are more than gatherings. They’re statements of trust, reputation, and precision. Every entrance, every guest interaction, every pause carries your brand’s identity. Our corporate event security guards carry that responsibility quietly, ensuring everything unfolds with calm control and understated authority.
-                                            <br/><br/>For over fifteen years, Metro Guards has provided corporate event security services across Melbourne’s most high-profile summits, product launches, board conferences, and executive celebrations. We bring structure, discipline, and human sensitivity to every moment that defines your success.
-</p>
-                                        
+                                            <br /><br />For over fifteen years, Metro Guards has provided corporate event security services across Melbourne’s most high-profile summits, product launches, board conferences, and executive celebrations. We bring structure, discipline, and human sensitivity to every moment that defines your success.
+                                        </p>
+
                                         <div className="hero-buttons d-flex flex-wrap gap-3 flex-column flex-md-row">
-                                                <a 
-                                                    href="/get-quotation" 
+                                            <a
+                                                href="/get-quotation"
                                                 className="btn btn-primary px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     backgroundColor: '#fdc51a',
                                                     color: '#1e2247',
-                                                        border: 'none',
+                                                    border: 'none',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -202,15 +202,15 @@ export default function CorporateEventSecurityPage() {
                                                 }}
                                             >
                                                 GET QUOTATION
-                                                </a>
-                                                <a 
-                                                    href="tel:1300731173" 
+                                            </a>
+                                            <a
+                                                href="tel:1300731173"
                                                 className="btn btn-outline-dark px-5 py-3"
-                                                    style={{
+                                                style={{
                                                     borderColor: '#1e2247',
                                                     color: '#1e2247',
                                                     borderRadius: '10px',
-                                                        textDecoration: 'none',
+                                                    textDecoration: 'none',
                                                     fontWeight: '700',
                                                     textTransform: 'uppercase',
                                                     fontSize: '0.9rem',
@@ -231,16 +231,16 @@ export default function CorporateEventSecurityPage() {
                                                 }}
                                             >
                                                 <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                                    <Phone size={16}/> 1300731173
+                                                    <Phone size={16} /> 1300731173
                                                 </span>
-                                                </a>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <div className="col-lg-6">
                                     <div className="hero-image position-relative mt-5 mt-lg-0">
-                                        <div 
+                                        <div
                                             className="image-container position-relative"
                                             style={{
                                                 borderRadius: '25px',
@@ -248,9 +248,9 @@ export default function CorporateEventSecurityPage() {
                                                 boxShadow: '0 25px 50px rgba(0,0,0,0.15)'
                                             }}
                                         >
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/874BB7DC-8032-478D-9ED5-CF3287E50627_1_105_c.webp"
-                                                alt="Professional Building Security Guards" 
+                                                alt="Professional Building Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     width: '100%',
@@ -259,9 +259,9 @@ export default function CorporateEventSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
+
                                         {/* Decorative Elements */}
-                                        <div 
+                                        <div
                                             className="decoration-circle position-absolute"
                                             style={{
                                                 top: '-20px',
@@ -274,7 +274,7 @@ export default function CorporateEventSecurityPage() {
                                                 zIndex: '-1'
                                             }}
                                         ></div>
-                                        <div 
+                                        <div
                                             className="decoration-square position-absolute"
                                             style={{
                                                 bottom: '-30px',
@@ -293,11 +293,11 @@ export default function CorporateEventSecurityPage() {
                         </div>
                     </div>
 
-                    
 
 
-                     {/*=====  Section 2 =====*/}
-                     <div className="services-section-2 section-padding" style={{background: '#ffffff'}}>
+
+                    {/*=====  Section 2 =====*/}
+                    <div className="services-section-2 section-padding" style={{ background: '#ffffff' }}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 order-1 order-lg-2">
@@ -305,14 +305,14 @@ export default function CorporateEventSecurityPage() {
                                         {/* Why Metro Guards Section - Accordion Style */}
                                         <div className="human-element-section section-header mb-5">
                                             <div className="subtitle mb-3">
-                                                <span className="badge px-3 py-2" style={{backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600'}}>
+                                                <span className="badge px-3 py-2" style={{ backgroundColor: '#fdc51a', color: '#1e2247', fontWeight: '600' }}>
                                                     EXCELLENCE STANDARDS
                                                 </span>
                                             </div>
-                                            <h2 className="display-5 fw-bold mb-4" style={{color: '#1e2247'}}>
-                                                Precision That Honors <span style={{color: '#fdc51a'}}>the Moment</span>
+                                            <h2 className="display-5 fw-bold mb-4" style={{ color: '#1e2247' }}>
+                                                Precision That Honors <span style={{ color: '#fdc51a' }}>the Moment</span>
                                             </h2>
-                                            
+
                                             <div className="features-accordion">
                                                 {[
                                                     {
@@ -346,82 +346,82 @@ export default function CorporateEventSecurityPage() {
                                                         description: 'ASIAL and CM3 prequalification ensuring national governance and compliance at executive-level venues.'
                                                     }
                                                 ].map((feature, index) => (
-                                                <div key={index} className="accordion-item mb-3">
-                                                    <div 
+                                                    <div key={index} className="accordion-item mb-3">
+                                                        <div
                                                             className="accordion-header p-3"
-                                                        style={{
+                                                            style={{
                                                                 backgroundColor: activeFeature === index ? '#ffffff' : '#f8f9fa',
                                                                 borderRadius: activeFeature === index ? '12px 12px 0 0' : '12px',
-                                                            border: '1px solid #e9ecef',
-                                                            borderLeft: '4px solid #fdc51a',
-                                                            cursor: 'pointer',
-                                                            transition: 'all 0.3s ease'
-                                                        }}
+                                                                border: '1px solid #e9ecef',
+                                                                borderLeft: '4px solid #fdc51a',
+                                                                cursor: 'pointer',
+                                                                transition: 'all 0.3s ease'
+                                                            }}
                                                             onClick={() => toggleFeature(index)}
-                                                    >
-                                                        <div className="d-flex align-items-center justify-content-between">
-                                                            <div className="d-flex align-items-center">
-                                                                <div 
+                                                        >
+                                                            <div className="d-flex align-items-center justify-content-between">
+                                                                <div className="d-flex align-items-center">
+                                                                    <div
                                                                         className="feature-icon me-3 d-flex align-items-center justify-content-center"
-                                                                    style={{
+                                                                        style={{
                                                                             width: '45px',
                                                                             height: '45px',
-                                                                        borderRadius: '10px',
-                                                                        backgroundColor: '#1e2247',
+                                                                            borderRadius: '10px',
+                                                                            backgroundColor: '#1e2247',
                                                                             color: '#fdc51a',
                                                                             fontSize: '1.2rem'
-                                                                    }}
-                                                                >
+                                                                        }}
+                                                                    >
                                                                         <i className={feature.icon}></i>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h6 className="mb-0 fw-bold" style={{ color: '#1e2247', fontSize: '1rem' }}>{feature.title}</h6>
+                                                                    </div>
                                                                 </div>
-                                                                <div>
-                                                                        <h6 className="mb-0 fw-bold" style={{color: '#1e2247', fontSize: '1rem'}}>{feature.title}</h6>
-                                                                </div>
-                                                            </div>
-                                                            <div className="expand-icon">
-                                                                <div 
-                                                                    className="d-flex align-items-center justify-content-center"
-                                                                    style={{
+                                                                <div className="expand-icon">
+                                                                    <div
+                                                                        className="d-flex align-items-center justify-content-center"
+                                                                        style={{
                                                                             width: '35px',
                                                                             height: '35px',
                                                                             backgroundColor: activeFeature === index ? '#1e2247' : '#e9ecef',
-                                                                        borderRadius: '50%',
+                                                                            borderRadius: '50%',
                                                                             color: activeFeature === index ? '#fdc51a' : '#1e2247',
-                                                                        transition: 'all 0.3s ease'
-                                                                    }}
-                                                                >
-                                                                        <span style={{fontSize: '1.1rem', fontWeight: 'bold'}}>
+                                                                            transition: 'all 0.3s ease'
+                                                                        }}
+                                                                    >
+                                                                        <span style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>
                                                                             {activeFeature === index ? '−' : '+'}
-                                                                    </span>
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    
+
                                                         {activeFeature === index && (
-                                                        <div 
+                                                            <div
                                                                 className="accordion-content p-3"
-                                                            style={{
-                                                                backgroundColor: '#ffffff',
-                                                                borderRadius: '0 0 12px 12px',
-                                                                border: '1px solid #e9ecef',
-                                                                borderTop: 'none',
-                                                                borderLeft: '4px solid #fdc51a',
-                                                                animation: 'slideDown 0.3s ease'
-                                                            }}
-                                                        >
-                                                            <p style={{
-                                                                color: '#6c757d', 
-                                                                lineHeight: '1.7', 
-                                                                margin: 0,
+                                                                style={{
+                                                                    backgroundColor: '#ffffff',
+                                                                    borderRadius: '0 0 12px 12px',
+                                                                    border: '1px solid #e9ecef',
+                                                                    borderTop: 'none',
+                                                                    borderLeft: '4px solid #fdc51a',
+                                                                    animation: 'slideDown 0.3s ease'
+                                                                }}
+                                                            >
+                                                                <p style={{
+                                                                    color: '#6c757d',
+                                                                    lineHeight: '1.7',
+                                                                    margin: 0,
                                                                     fontSize: '0.95rem'
-                                                            }}>
+                                                                }}>
                                                                     {feature.description}
-                                                            </p>
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            ))}
+                                                                </p>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
@@ -430,9 +430,9 @@ export default function CorporateEventSecurityPage() {
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="services-image-section pe-lg-4">
                                         <div className="image-container position-relative">
-                                            <img 
+                                            <img
                                                 src="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/03549B5D-366A-47E3-BBF3-3C916341AA19_1_105_c.webp"
-                                                alt="Mobile Patrol Security Guards" 
+                                                alt="Mobile Patrol Security Guards"
                                                 className="img-fluid"
                                                 style={{
                                                     borderRadius: '20px',
@@ -443,35 +443,35 @@ export default function CorporateEventSecurityPage() {
                                                 }}
                                             />
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    
+
 
                     {/*===== Situations We Secure Section =====*/}
                     <div className="situations-section section-padding" style={{
                         background: 'linear-gradient(135deg, #1e2247 0%, #2c3e50 100%)',
-                                            position: 'relative',
+                        position: 'relative',
                         overflow: 'hidden'
-                                        }}>
+                    }}>
                         {/* Background Pattern */}
-                                            <div style={{
-                                                position: 'absolute',
-                                                top: 0,
-                                                left: 0,
-                                                right: 0,
-                                                bottom: 0,
+                        <div style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
                             backgroundImage: `
                                 radial-gradient(circle at 20% 30%, rgba(253, 197, 26, 0.1) 0%, transparent 50%),
                                 radial-gradient(circle at 80% 70%, rgba(253, 197, 26, 0.08) 0%, transparent 50%)
                             `,
-                                                zIndex: 1
-                                            }}></div>
+                            zIndex: 1
+                        }}></div>
 
                         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                             <div className="row">
@@ -484,7 +484,7 @@ export default function CorporateEventSecurityPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Shield size={24} style={{color: '#fdc51a'}} />
+                                            <Shield size={24} style={{ color: '#fdc51a' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: 'rgba(253, 197, 26, 0.2)',
                                                 color: '#fdc51a',
@@ -497,7 +497,7 @@ export default function CorporateEventSecurityPage() {
                                             }}>
                                                 Professional Excellence
                                             </span>
-                                            <Shield size={24} style={{color: '#fdc51a'}} />
+                                            <Shield size={24} style={{ color: '#fdc51a' }} />
                                         </div>
 
                                         <h2 style={{
@@ -507,10 +507,10 @@ export default function CorporateEventSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Guards Who Understand the Language of <span style={{color: '#fdc51a'}}>Corporate Events</span>
+                                            Guards Who Understand the Language of <span style={{ color: '#fdc51a' }}>Corporate Events</span>
                                         </h2>
 
-                                                <p style={{
+                                        <p style={{
                                             color: 'rgba(255, 255, 255, 0.9)',
                                             fontSize: '1.15rem',
                                             maxWidth: '900px',
@@ -557,86 +557,86 @@ export default function CorporateEventSecurityPage() {
                                         description: 'Every update flows through a live operational dashboard.'
                                     }
                                 ].map((situation, index) => (
-                                            <div key={index} className="col-lg-4 col-md-6">
-                                            <div style={{
-                                                background: 'rgba(255, 255, 255, 0.05)',
-                                                borderRadius: '20px',
+                                    <div key={index} className="col-lg-4 col-md-6">
+                                        <div style={{
+                                            background: 'rgba(255, 255, 255, 0.05)',
+                                            borderRadius: '20px',
                                             padding: '35px',
-                                                height: '100%',
-                                                border: '1px solid rgba(253, 197, 26, 0.2)',
-                                                    backdropFilter: 'blur(10px)',
-                                                    transition: 'all 0.3s ease'
-                                                }}
-                                                onMouseEnter={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(-10px)';
-                                                    e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
-                                                    e.currentTarget.style.borderColor = '#fdc51a';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    e.currentTarget.style.transform = 'translateY(0)';
-                                                    e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                                                    e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
+                                            height: '100%',
+                                            border: '1px solid rgba(253, 197, 26, 0.2)',
+                                            backdropFilter: 'blur(10px)',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                                e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)';
+                                                e.currentTarget.style.borderColor = '#fdc51a';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                e.currentTarget.style.borderColor = 'rgba(253, 197, 26, 0.2)';
                                             }}>
-                                                <div style={{
-                                                        width: '70px',
-                                                        height: '70px',
-                                                        borderRadius: '15px',
-                                                        background: index % 2 === 0 
-                                                            ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
-                                                            : 'linear-gradient(135deg, #1e2247, #2c3e50)',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
+                                            <div style={{
+                                                width: '70px',
+                                                height: '70px',
+                                                borderRadius: '15px',
+                                                background: index % 2 === 0
+                                                    ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
+                                                    : 'linear-gradient(135deg, #1e2247, #2c3e50)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
                                                 marginBottom: '25px',
-                                                        color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
-                                                        boxShadow: index % 2 === 0 
-                                                            ? '0 10px 25px rgba(253, 197, 26, 0.3)'
-                                                            : '0 10px 25px rgba(30, 34, 71, 0.3)'
-                                                    }}>
+                                                color: index % 2 === 0 ? '#1e2247' : '#fdc51a',
+                                                boxShadow: index % 2 === 0
+                                                    ? '0 10px 25px rgba(253, 197, 26, 0.3)'
+                                                    : '0 10px 25px rgba(30, 34, 71, 0.3)'
+                                            }}>
                                                 {situation.icon}
-                                                </div>
+                                            </div>
 
-                                                <h3 style={{
-                                                    color: '#ffffff',
-                                                        fontSize: '1.4rem',
-                                                    fontWeight: '700',
-                                                        marginBottom: '15px'
-                                                }}>
+                                            <h3 style={{
+                                                color: '#ffffff',
+                                                fontSize: '1.4rem',
+                                                fontWeight: '700',
+                                                marginBottom: '15px'
+                                            }}>
                                                 {situation.title}
-                                                </h3>
+                                            </h3>
 
-                                                <p style={{
-                                                        color: 'rgba(255, 255, 255, 0.85)',
-                                                        fontSize: '1.05rem',
-                                                        lineHeight: '1.7',
-                                                    margin: 0
-                                                }}>
+                                            <p style={{
+                                                color: 'rgba(255, 255, 255, 0.85)',
+                                                fontSize: '1.05rem',
+                                                lineHeight: '1.7',
+                                                margin: 0
+                                            }}>
                                                 {situation.description}
-                                                </p>
-                                            </div>
-                                            </div>
-                                        ))}
+                                            </p>
                                         </div>
+                                    </div>
+                                ))}
+                            </div>
 
                             <div className="row mt-4">
                                 <div className="col-12 text-center">
-                                            <div style={{
+                                    <div style={{
                                         background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.15), rgba(255, 219, 92, 0.1))',
-                                                borderRadius: '20px',
+                                        borderRadius: '20px',
                                         padding: '35px 45px',
                                         border: '2px solid rgba(253, 197, 26, 0.3)',
                                         backdropFilter: 'blur(10px)',
                                         display: 'inline-block'
-                                            }}>
-                                                <p style={{
+                                    }}>
+                                        <p style={{
                                             color: '#ffffff',
                                             fontSize: '1.4rem',
-                                                    lineHeight: '1.8',
+                                            lineHeight: '1.8',
                                             margin: 0,
                                             fontWeight: '600'
-                                                }}>
-                                            They operate not as external contractors, but as <span style={{color: '#fdc51a'}}>part of your event fabric</span>.
-                                                </p>
+                                        }}>
+                                            They operate not as external contractors, but as <span style={{ color: '#fdc51a' }}>part of your event fabric</span>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -674,7 +674,7 @@ export default function CorporateEventSecurityPage() {
                                             marginBottom: '30px',
                                             justifyContent: 'center'
                                         }}>
-                                            <Target size={24} style={{color: '#1e2247'}} />
+                                            <Target size={24} style={{ color: '#1e2247' }} />
                                             <span className="badge px-4 py-2" style={{
                                                 backgroundColor: '#fdc51a',
                                                 color: '#1e2247',
@@ -687,7 +687,7 @@ export default function CorporateEventSecurityPage() {
                                             }}>
                                                 Complete Transparency
                                             </span>
-                                            <Target size={24} style={{color: '#1e2247'}} />
+                                            <Target size={24} style={{ color: '#1e2247' }} />
                                         </div>
 
                                         <h2 style={{
@@ -697,7 +697,7 @@ export default function CorporateEventSecurityPage() {
                                             marginBottom: '25px',
                                             lineHeight: '1.2'
                                         }}>
-                                            Intelligence You Can <span style={{color: '#fdc51a'}}>Audit</span>
+                                            Intelligence You Can <span style={{ color: '#fdc51a' }}>Audit</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -706,9 +706,9 @@ export default function CorporateEventSecurityPage() {
                             {/* Main Content Card */}
                             <div className="row justify-content-center">
                                 <div className="col-lg-10">
-                                            <div style={{
+                                    <div style={{
                                         background: '#ffffff',
-                                            borderRadius: '25px',
+                                        borderRadius: '25px',
                                         padding: '50px 60px',
                                         boxShadow: '0 20px 60px rgba(30, 34, 71, 0.1)',
                                         border: '2px solid rgba(253, 197, 26, 0.2)',
@@ -716,15 +716,15 @@ export default function CorporateEventSecurityPage() {
                                         overflow: 'hidden'
                                     }}>
                                         {/* Decorative Corner Element */}
-                                    <div style={{
-                                                position: 'absolute',
+                                        <div style={{
+                                            position: 'absolute',
                                             top: 0,
                                             right: 0,
                                             width: '150px',
                                             height: '150px',
                                             background: 'linear-gradient(135deg, rgba(253, 197, 26, 0.1), transparent)',
                                             borderBottomLeftRadius: '100%'
-                                            }}></div>
+                                        }}></div>
 
                                         {/* Icon Grid */}
                                         <div style={{
@@ -745,7 +745,7 @@ export default function CorporateEventSecurityPage() {
                                                     width: '65px',
                                                     height: '65px',
                                                     borderRadius: '15px',
-                                                    background: item.color === '#fdc51a' 
+                                                    background: item.color === '#fdc51a'
                                                         ? 'linear-gradient(135deg, #fdc51a, #ffdb5c)'
                                                         : 'linear-gradient(135deg, #1e2247, #2c3e50)',
                                                     display: 'flex',
@@ -758,8 +758,8 @@ export default function CorporateEventSecurityPage() {
                                                     transition: 'transform 0.3s ease',
                                                     cursor: 'default'
                                                 }}
-                                                onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
-                                                onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+                                                    onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
+                                                    onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
                                                     {item.icon}
                                                 </div>
                                             ))}
@@ -789,11 +789,11 @@ export default function CorporateEventSecurityPage() {
                                                 border: '2px solid rgba(253, 197, 26, 0.3)',
                                                 marginTop: '30px'
                                             }}>
-                                            <p style={{
+                                                <p style={{
                                                     color: '#1e2247',
                                                     fontSize: '1.35rem',
                                                     lineHeight: '1.8',
-                                                margin: 0,
+                                                    margin: 0,
                                                     fontWeight: '700'
                                                 }}>
                                                     Accountability isn't a statement for us — it's a <span style={{
@@ -812,7 +812,7 @@ export default function CorporateEventSecurityPage() {
                         </div>
                     </div>
 
-                    
+
                     {/*===== Call to Action Section =====*/}
                     <div className="cta-section section-padding" style={{
                         background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #ffffff 100%)',
@@ -873,10 +873,10 @@ export default function CorporateEventSecurityPage() {
                                     <div className="cta-content text-center">
                                         {/* Header */}
                                         <div className="cta-header mb-5">
-                                            <div style={{ 
-                                                display: "inline-flex", 
-                                                alignItems: "center", 
-                                                gap: "15px", 
+                                            <div style={{
+                                                display: "inline-flex",
+                                                alignItems: "center",
+                                                gap: "15px",
                                                 marginBottom: "30px",
                                                 justifyContent: "center"
                                             }}>
@@ -886,9 +886,9 @@ export default function CorporateEventSecurityPage() {
                                                     background: "linear-gradient(90deg, #1e2247, #2c3e50)",
                                                     borderRadius: "2px"
                                                 }}></div>
-                                                <span className="badge px-4 py-2" style={{ 
-                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)", 
-                                                    color: "#fdc51a", 
+                                                <span className="badge px-4 py-2" style={{
+                                                    background: "linear-gradient(135deg, #1e2247, #2c3e50)",
+                                                    color: "#fdc51a",
                                                     fontWeight: 700,
                                                     fontSize: "0.9rem",
                                                     borderRadius: "25px",
@@ -896,7 +896,7 @@ export default function CorporateEventSecurityPage() {
                                                     letterSpacing: "1px",
                                                     boxShadow: "0 6px 20px rgba(30, 34, 71, 0.25)"
                                                 }}>
-                                                    <Shield size={16} style={{display: 'inline', marginRight: '8px'}} />
+                                                    <Shield size={16} style={{ display: 'inline', marginRight: '8px' }} />
                                                     Get Started Today
                                                 </span>
                                                 <div style={{
@@ -906,7 +906,7 @@ export default function CorporateEventSecurityPage() {
                                                     borderRadius: "2px"
                                                 }}></div>
                                             </div>
-                                            
+
                                             <h2 style={{
                                                 color: '#1e2247',
                                                 fontSize: '3.5rem',
@@ -915,9 +915,9 @@ export default function CorporateEventSecurityPage() {
                                                 lineHeight: '1.2',
                                                 textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                             }}>
-                                                A Partnership Built on <span style={{color: '#fdc51a'}}>Trust</span>
+                                                A Partnership Built on <span style={{ color: '#fdc51a' }}>Trust</span>
                                             </h2>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.25rem',
@@ -926,9 +926,9 @@ export default function CorporateEventSecurityPage() {
                                                 maxWidth: '850px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                We see event security as a live operation, mapped, timed, and monitored to the second. Each interaction, each transition, is part of a controlled system built for <strong style={{color: '#1e2247'}}>clarity</strong> and <strong style={{color: '#fdc51a'}}>accountability</strong>. Through digital oversight, supervisor validation, and instant reporting, we ensure no decision goes unseen, and no risk goes unmanaged.
+                                                We see event security as a live operation, mapped, timed, and monitored to the second. Each interaction, each transition, is part of a controlled system built for <strong style={{ color: '#1e2247' }}>clarity</strong> and <strong style={{ color: '#fdc51a' }}>accountability</strong>. Through digital oversight, supervisor validation, and instant reporting, we ensure no decision goes unseen, and no risk goes unmanaged.
                                             </p>
-                                            
+
                                             <p style={{
                                                 color: '#6c757d',
                                                 fontSize: '1.2rem',
@@ -937,9 +937,9 @@ export default function CorporateEventSecurityPage() {
                                                 maxWidth: '850px',
                                                 margin: '0 auto 30px'
                                             }}>
-                                                What you experience on the surface is <strong style={{color: '#1e2247'}}>simplicity</strong>. Behind it runs a precision network built entirely around your peace of mind.
+                                                What you experience on the surface is <strong style={{ color: '#1e2247' }}>simplicity</strong>. Behind it runs a precision network built entirely around your peace of mind.
                                             </p>
-                                            
+
                                             <p style={{
                                                 color: '#1e2247',
                                                 fontSize: '1.3rem',
@@ -949,7 +949,7 @@ export default function CorporateEventSecurityPage() {
                                                 margin: '0 auto 40px',
                                                 fontWeight: '600'
                                             }}>
-                                                That's how Melbourne's leading names have trusted us to <strong style={{color: '#fdc51a'}}>secure the moments that matter most</strong>.
+                                                That's how Melbourne's leading names have trusted us to <strong style={{ color: '#fdc51a' }}>secure the moments that matter most</strong>.
                                             </p>
                                         </div>
 
@@ -971,18 +971,18 @@ export default function CorporateEventSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
-                                                        e.target.style.color = '#1e2247';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
-                                                        e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
-                                                        e.target.style.color = '#ffffff';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 12px 35px rgba(30, 34, 71, 0.4)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #fdc51a, #ffdb5c)';
+                                                            e.target.style.color = '#1e2247';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.3)';
+                                                            e.target.style.background = 'linear-gradient(135deg, #1e2247, #2c3e50)';
+                                                            e.target.style.color = '#ffffff';
+                                                        }}>
                                                         <i className="fas fa-file-alt"></i>
                                                         Get a Free Quote
                                                     </a>
@@ -1001,18 +1001,18 @@ export default function CorporateEventSecurityPage() {
                                                         alignItems: 'center',
                                                         gap: '10px'
                                                     }}
-                                                    onMouseEnter={(e) => {
-                                                        e.target.style.background = '#1e2247';
-                                                        e.target.style.color = '#ffffff';
-                                                        e.target.style.transform = 'translateY(-3px)';
-                                                        e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        e.target.style.background = 'transparent';
-                                                        e.target.style.color = '#1e2247';
-                                                        e.target.style.transform = 'translateY(0)';
-                                                        e.target.style.boxShadow = 'none';
-                                                    }}>
+                                                        onMouseEnter={(e) => {
+                                                            e.target.style.background = '#1e2247';
+                                                            e.target.style.color = '#ffffff';
+                                                            e.target.style.transform = 'translateY(-3px)';
+                                                            e.target.style.boxShadow = '0 8px 25px rgba(30, 34, 71, 0.25)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.target.style.background = 'transparent';
+                                                            e.target.style.color = '#1e2247';
+                                                            e.target.style.transform = 'translateY(0)';
+                                                            e.target.style.boxShadow = 'none';
+                                                        }}>
                                                         <i className="fas fa-phone"></i>
                                                         Call 1300 73 11 73
                                                     </a>
@@ -1026,13 +1026,14 @@ export default function CorporateEventSecurityPage() {
                     </div>
 
                     {/*===== Benefits Section =====*/}
-                                        
-                    
+
+
                 </div>
-                    
-                
+
+
                 <WhyChooseUs />
                 <Accreditation />
                 <Subscribe />
             </Layout>
-            </> ) }
+        </>)
+}

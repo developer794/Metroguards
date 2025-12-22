@@ -159,7 +159,7 @@ export default function EducationalSecurityPage() {
                                                 PROFESSIONAL PROTECTION
                                             </span>
                                         </div>
-                                        <h1 
+                                        <h2 
                                             className="display-3 fw-bold mb-4" 
                                             style={{
                                                 color: '#1e2247',
@@ -169,7 +169,7 @@ export default function EducationalSecurityPage() {
                                         >
                                            Comprehensive Security for Schools                                            <br />
                                             <span style={{color: '#fdc51a'}}>and Educational Centres</span>
-                                        </h1>
+                                        </h2>
                                         <p 
                                             className="lead mb-4" 
                                             style={{
