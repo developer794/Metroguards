@@ -526,45 +526,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                             </Link>
                         </li>
 
-                        {/* Service Area */}
-                        <li style={{ marginBottom: '15px', borderBottom: '1px solid #eee', paddingBottom: '15px' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingRight: '10px' }}>
-                                <span style={{ color: '#333', fontSize: '16px', fontWeight: '500', flex: 1 }}>Service Area</span>
-                                <span 
-                                    className={isActive.key == 5 ? "submenu-button submenu-opened" : "submenu-button"} 
-                                    onClick={() => handleToggle(5)}
-                                    style={{
-                                        cursor: 'pointer',
-                                        padding: '8px',
-                                        color: '#666',
-                                        fontSize: '14px',
-                                        minWidth: '30px',
-                                        textAlign: 'center'
-                                    }}
-                                >
-                                    <i className={`fa-solid ${isActive.key == 5 ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-                                </span>
-                            </div>
-                            <ul className="sub-menu" style={{ 
-                                display: isActive.key == 5 ? "block" : "none",
-                                listStyle: 'none',
-                                padding: '10px 0 0 20px',
-                                margin: 0
-                            }}>
-                                <li style={{ marginBottom: '8px' }}>
-                                    <Link href="/security-guard-east-melbourne-vic-3002" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '14px' }}>Security Guard East Melbourne</Link>
-                                </li>
-                                <li style={{ marginBottom: '8px' }}>
-                                    <Link href="/security-guard-west-melbourne-vic-3003" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '14px' }}>Security Guard West Melbourne</Link>
-                                </li>
-                                <li style={{ marginBottom: '8px' }}>
-                                    <Link href="/security-guard-north-melbourne-vic-3051" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '14px' }}>Security Guard North Melbourne</Link>
-                                </li>
-                                <li style={{ marginBottom: '8px' }}>
-                                    <Link href="/security-guard-south-melbourne-vic-3205" onClick={handleMobileMenu} style={{ color: '#666', textDecoration: 'none', fontSize: '14px' }}>Security Guard South Melbourne</Link>
-                                </li>
-                            </ul>
-                        </li>
+                        
 
                         {/* Contact */}
                         <li style={{ marginBottom: '15px' }}>
