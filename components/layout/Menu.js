@@ -23,7 +23,7 @@ export default function Menu() {
                 <Link href="/">Home</Link>
             </li>
             <li className="dropdown-parrent">
-                <Link href="">About Us</Link>
+                <Link href="#">About Us</Link>
                 <ul className="theme-dropdown" style={{
                     background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
                     padding: '25px',
