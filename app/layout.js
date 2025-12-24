@@ -36,6 +36,9 @@ export const metadata = {
   },
   themeColor: '#1e2247',
   manifest: '/manifest.json',
+  verification: {
+    google: 'eoWvD1YUdp4IV35yG1go1RvFYsKqeJXJSkPy31Fmvlw',
+  },
   openGraph: {
     title: "Security Guard Services - Security Company in Melbourne",
     description: "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
@@ -73,7 +76,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" id="#top">
       <head>
-        <meta name="google-site-verification" content="eoWvD1YUdp4IV35yG1go1RvFYsKqeJXJSkPy31Fmvlw" />
         <StructuredData />
         <link rel="icon" href="/assets/img/logo/icon.png" type="image/png" sizes="16x16"></link>
       </head>
