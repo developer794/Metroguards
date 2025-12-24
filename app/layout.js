@@ -73,6 +73,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" id="#top">
       <head>
+        <meta name="google-site-verification" content="eoWvD1YUdp4IV35yG1go1RvFYsKqeJXJSkPy31Fmvlw" />
         <StructuredData />
         <link rel="icon" href="/assets/img/logo/icon.png" type="image/png" sizes="16x16"></link>
       </head>
