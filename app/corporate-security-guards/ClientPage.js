@@ -132,7 +132,7 @@ export default function CorporateSecurityPage() {
     return (
         <>
             <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CORPORATE SECURITY GUARDS"
-                mainTitle="CORPORATE SECURITY GUARDS IN MELBOURNECorporate Security Guards in Melbourne"
+                mainTitle="CORPORATE SECURITY GUARDS IN MELBOURNE Corporate Security Guards in Melbourne"
                 backgroundImage="https://dqaghuhkouihcvqvcsco.supabase.co/storage/v1/object/public/MetroGuards-Images/Corporate%20Security%20Guards/81FC094D-5077-4246-9C7B-CF19E9EC602B_1_105_c.webp"
             >
                 <div>
