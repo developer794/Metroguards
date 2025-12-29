@@ -10,7 +10,7 @@ async function main() {
     where: { email: 'admin@example.com' },
     update: {},
     create: {
-      email: 'admin@example.com',
+      email: 'admin@metroguards.com.au',
       password: hashedPassword,
     },
   });

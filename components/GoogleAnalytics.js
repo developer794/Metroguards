@@ -1,58 +1,50 @@
 /**
- * Google Analytics Component for Metro Guards
+ * Google Tag Manager Component for Metro Guards
  * 
- * Usage: Add your Google Analytics Measurement ID in .env.local:
- * NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+ * Usage: Add your GTM Container ID in .env.local:
+ * NEXT_PUBLIC_GTM_ID=GTM-5F54P4MC
  * 
- * This component is ready to use once you have your GA ID.
- * It will only load in production to avoid tracking during development.
+ * This component will load GTM in production only.
+ * GTM manages all tracking tags (GA4, Facebook Pixel, etc.) from one place.
  */
 
 'use client'
 import Script from 'next/script'
-import { useEffect } from 'react'
-import { usePathname, useSearchParams } from 'next/navigation'
 
 export default function GoogleAnalytics() {
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+  const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 
-  // Track page views on route change
-  useEffect(() => {
-    if (GA_MEASUREMENT_ID && typeof window.gtag !== 'undefined') {
-      window.gtag('config', GA_MEASUREMENT_ID, {
-        page_path: pathname + searchParams.toString(),
-      })
-    }
-  }, [pathname, searchParams, GA_MEASUREMENT_ID])
-
-  // Only load in production and if GA ID is set
-  if (process.env.NODE_ENV !== 'production' || !GA_MEASUREMENT_ID) {
+  // Only load in production and if GTM ID is set
+  if (process.env.NODE_ENV !== 'production' || !GTM_ID) {
     return null
   }
 
   return (
     <>
+      {/* Google Tag Manager - Head Script */}
       <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-      />
-      <Script
-        id="google-analytics"
+        id="gtm-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-              send_page_view: true
-            });
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${GTM_ID}');
           `,
         }}
       />
+      
+      {/* Google Tag Manager - NoScript for Body */}
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
+      </noscript>
     </>
   )
 }
