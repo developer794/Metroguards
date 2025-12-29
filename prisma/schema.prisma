@@ -13,9 +13,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  //url      = env("Superbase_POSTGRES_URL")   // pooled (PgBouncer)
-  url = env("Superbase_POSTGRES_PRISMA_URL")  
-  //directUrl = env("Superbase_POSTGRES_PRISMA_URL") // keep commented until your 5432 DNS works
+  url = env("POSTGRES_URL")  
 }
 model User {
   id        Int      @id @default(autoincrement())
