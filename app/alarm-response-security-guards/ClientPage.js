@@ -1609,6 +1609,9 @@ export default function AlarmResponseSecurityPage() {
                                             }}>
                                                 From executives and VIPs to lone workers, nurses, vulnerable individuals and those facing personal safety concerns, Metro Guards ensures every journey is secure, no matter the distance, location or time of day.
                                                 </p>
+
+
+                                                
                                         </div>
 
                                         {/* CTA Buttons */}
