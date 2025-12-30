@@ -102,7 +102,9 @@ export async function POST(request: Request, context: RouteContext) {
         endDate: new Date(endDate || startDate),
         hoursPerDay,
         guards: numberOfGuards,
+        daysPerWeek: workDays.length,
         workDays,
+        customRates: null,
       });
 
       // 4. Create Site record if site details provided

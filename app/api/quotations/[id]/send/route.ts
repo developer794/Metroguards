@@ -58,7 +58,9 @@ export async function POST(request: Request, context: RouteContext) {
         endDate: new Date(endDate),
         hoursPerDay,
         guards: numberOfGuards,
+        daysPerWeek: workDays.length,
         workDays,
+        customRates: null,
       });
       costBreakdown = generateCostSummary(bookingCost);
     }
