@@ -1,10 +1,8 @@
 // app/api/contact-us/route.ts
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getResend } from "@/lib/resend";
 
 export const runtime = "nodejs"; // ensure Node runtime for Resend
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // basic HTML escape to keep your email markup safe
 const esc = (s = "") =>
@@ -81,7 +79,7 @@ Message:
 ${message}
 `;
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from,
       to,
       subject,

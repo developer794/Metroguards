@@ -1,13 +1,15 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
+type RouteContext = {
+  params: Promise<{ id: string }>;
+};
+
 // PATCH - Update inquiry status
-export async function PATCH(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
+export async function PATCH(request: Request, context: RouteContext) {
   try {
-    const id = Number(params.id);
+    const { id: idStr } = await context.params;
+    const id = Number(idStr);
     const body = await request.json();
     const { status } = body;
 
@@ -34,12 +36,10 @@ export async function PATCH(
 }
 
 // DELETE - Delete inquiry
-export async function DELETE(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
+export async function DELETE(request: Request, context: RouteContext) {
   try {
-    const id = Number(params.id);
+    const { id: idStr } = await context.params;
+    const id = Number(idStr);
 
     await prisma.contactInquiry.delete({
       where: { id }
@@ -54,4 +54,3 @@ export async function DELETE(
     );
   }
 }
-

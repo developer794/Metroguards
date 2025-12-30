@@ -1,11 +1,10 @@
 // app/api/incident/route.ts
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getResend } from "@/lib/resend";
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { formLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const esc = (s = "") =>
   s.replace(/&/g, "&amp;")
@@ -769,7 +768,7 @@ export async function POST(req: Request) {
 
     // Send admin email
     console.log("Sending admin notification email to:", to);
-    const adminResult = await resend.emails.send({
+    const adminResult = await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to,
       subject: `🚨 Incident Report — ${firstName} ${lastName} — ${incidentDate} ${incidentTime}`,
@@ -789,7 +788,7 @@ export async function POST(req: Request) {
 
     // Send client confirmation email (only PDF, not the form attachments)
     console.log("Sending client confirmation email to:", email);
-    const clientResult = await resend.emails.send({
+    const clientResult = await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to: email,
       subject: "✅ Incident Report Received - Metro Guards",

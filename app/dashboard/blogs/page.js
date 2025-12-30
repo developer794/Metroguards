@@ -1,6 +1,13 @@
 import prisma from "@/lib/prisma";
 import BlogsClientPage from "./BlogsClientPage";
 
+export const dynamic = "force-dynamic";
+
+export const metadata = {
+  title: "Blogs | Metro Guards Admin",
+  description: "Manage blog posts and content",
+};
+
 export default async function BlogsPage() {
   // user auth is handled in dashboard/layout via redirect
   const posts = await prisma.post.findMany({

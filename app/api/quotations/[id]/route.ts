@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
+type RouteContext = {
+  params: Promise<{ id: string }>;
+};
+
 // Update quotation status
-export async function PATCH(request: Request, { params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export async function PATCH(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const id = Number(idStr);
   const { status } = await request.json();
 
   if (!status) {
@@ -23,8 +28,9 @@ export async function PATCH(request: Request, { params }: { params: { id: string
 }
 
 // Delete quotation
-export async function DELETE(request: Request, { params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export async function DELETE(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const id = Number(idStr);
 
   try {
     await prisma.quotation.delete({
@@ -36,4 +42,3 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
     return NextResponse.json({ error: "Failed to delete quotation" }, { status: 500 });
   }
 }
-

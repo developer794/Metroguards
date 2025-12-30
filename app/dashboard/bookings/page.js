@@ -1,6 +1,13 @@
 import prisma from "@/lib/prisma";
 import BookingsClient from "./BookingsClient";
 
+export const dynamic = "force-dynamic";
+
+export const metadata = {
+  title: "Bookings | Metro Guards Admin",
+  description: "Manage security guard bookings and schedules",
+};
+
 export default async function BookingsPage() {
   // Fetch all bookings with related data
   const bookings = await prisma.booking.findMany({

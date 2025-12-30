@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getResend } from "@/lib/resend";
 import prisma from "@/lib/prisma";
 import { formLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Helper function to create elegant admin notification email
 function createAdminNotificationEmail(
@@ -564,7 +563,7 @@ export async function POST(req: Request) {
     });
 
     // Send elegant notification email to admin
-    const adminEmailResult = await resend.emails.send({
+    const adminEmailResult = await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to: `${process.env.CONTACT_TO_EMAIL}`,
       replyTo: email,
@@ -573,7 +572,7 @@ export async function POST(req: Request) {
     });
 
     // Send elegant confirmation email to client
-    const clientEmailResult = await resend.emails.send({
+    const clientEmailResult = await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL}>`,
       to: email,
       subject: "Thank You for Contacting Metropolitan Guard Services",

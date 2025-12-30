@@ -6,12 +6,17 @@ import {
   SERVICE_RATES,
 } from "@/lib/services/rateCalculator";
 
+type RouteContext = {
+  params: Promise<{ id: string }>;
+};
+
 /**
  * POST /api/quotations/[id]/calculate-cost
  * Calculate detailed cost breakdown for a quotation
  */
-export async function POST(request: Request, { params }: { params: { id: string } }) {
+export async function POST(request: Request, context: RouteContext) {
   try {
+    const { id: idStr } = await context.params;
     const body = await request.json();
     const {
       startDate,
@@ -42,6 +47,7 @@ export async function POST(request: Request, { params }: { params: { id: string 
         endDate: new Date(endDate),
         hoursPerDay,
         guards,
+        daysPerWeek: workDays.length,
         workDays,
       });
 
@@ -53,7 +59,7 @@ export async function POST(request: Request, { params }: { params: { id: string 
 
     return NextResponse.json({
       success: true,
-      quotationId: Number(params.id),
+      quotationId: Number(idStr),
       calculation: costResult,
       rates: SERVICE_RATES,
       gstRate: '10%',
@@ -71,4 +77,3 @@ export async function POST(request: Request, { params }: { params: { id: string 
     );
   }
 }
-

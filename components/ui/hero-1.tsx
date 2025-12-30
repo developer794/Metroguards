@@ -48,9 +48,7 @@ export function Hero({
   return (
     <section
       id="hero"
-      className="relative mx-auto w-full pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-8 sm:pb-12 md:pb-16 px-3 sm:px-5 md:pl-12 md:pr-6 lg:pl-32 lg:pr-20
-      h-[60vh] sm:h-[70vh] md:h-[75vh] lg:h-[80vh] overflow-hidden z-0
-      rounded-b-xl flex flex-col justify-center items-start"
+      className="relative mx-auto w-full pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-8 sm:pb-12 md:pb-16 px-3 sm:px-5 md:pl-12 md:pr-6 lg:pl-32 lg:pr-20 h-[60vh] sm:h-[70vh] md:h-[75vh] lg:h-[80vh] overflow-hidden z-0 rounded-b-xl flex flex-col justify-center items-start"
     >
       {/* Carousel Background Images */}
       {carouselImages.map((image, index) => (
@@ -119,24 +117,13 @@ export function Hero({
 
              {/* Content Container */}
        <div
-         className="ContentContainer flex flex-col space-y-4 sm:space-y-6 max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl relative z-30 
-         ml-3 sm:ml-5 md:ml-6 lg:ml-10 
-         px-4 sm:px-6 md:px-8 lg:px-12 
-         py-8 sm:py-12 md:py-16 lg:py-24"
-         
+         className="ContentContainer flex flex-col space-y-4 sm:space-y-6 max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl relative z-30 ml-3 sm:ml-5 md:ml-6 lg:ml-10 px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16 lg:py-24"
       >
         
 
         {/* Title */}
         <h1
-          className={`text-white font-semibold leading-tight tracking-tighter 
-          text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 
-          transition-all duration-1500 ease-out lg:-ml-44
-          ${
-            isLoaded
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 translate-x-24"
-          }`}
+          className={`text-white font-semibold leading-tight tracking-tighter text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl transition-all duration-1500 ease-out lg:-ml-44 ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-24"}`}
           style={{ 
             textShadow: "1px 1px 2px rgba(0,0,0,0.8)"
           }}
@@ -154,10 +141,7 @@ export function Hero({
 
         {/* Subtitle */}
         <p
-          className={`text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl
-          transition-all duration-1300 ease-out delay-400 ${
-            isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
-          }`}
+          className={`text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl transition-all duration-1300 ease-out delay-400 ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"}`}
           style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
         >
           {subtitle}
@@ -174,11 +158,7 @@ export function Hero({
           >
             <Button
               asChild
-              className="w-full sm:w-auto font-geist tracking-tight text-center text-sm sm:text-base md:text-lg
-              bg-[#fdc51a] text-black border-2 border-[#fdc51a] 
-              hover:bg-transparent hover:border-yellow-400 hover:!text-white
-              transition-all duration-300 ease-in-out transform
-              hover:shadow-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
+              className="w-full sm:w-auto font-geist tracking-tight text-center text-sm sm:text-base md:text-lg bg-[#fdc51a] text-black border-2 border-[#fdc51a] hover:bg-transparent hover:border-yellow-400 hover:!text-white transition-all duration-300 ease-in-out transform hover:shadow-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
               style={{ minHeight: "44px" }}
             >
               <a href={ctaHref} className="flex items-center justify-center gap-2">

@@ -3,8 +3,11 @@ import prisma from "@/lib/prisma";
 import EditBlogForm from "../../EditBlogForm";
 import EditPageHeader from "./_components/EditPageHeader";
 
+export const dynamic = "force-dynamic";
+
 export default async function EditBlogPage({ params }) {
-  const id = Number(params.id);
+  const { id: idStr } = await params;
+  const id = Number(idStr);
   const post = await prisma.post.findUnique({
     where: { id },
     select: { id: true, title: true, content: true, published: true, coverImage: true, updatedAt:true },

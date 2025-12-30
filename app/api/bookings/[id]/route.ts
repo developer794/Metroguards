@@ -1,12 +1,17 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 
+type RouteContext = {
+  params: Promise<{ id: string }>;
+};
+
 /**
  * GET /api/bookings/[id]
  * Get a specific booking with all related data
  */
-export async function GET(request: Request, { params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export async function GET(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const id = Number(idStr);
 
   try {
     const booking = await prisma.booking.findUnique({
@@ -47,8 +52,9 @@ export async function GET(request: Request, { params }: { params: { id: string }
  * PATCH /api/bookings/[id]
  * Update booking status or details
  */
-export async function PATCH(request: Request, { params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export async function PATCH(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const id = Number(idStr);
 
   try {
     const body = await request.json();
@@ -83,8 +89,9 @@ export async function PATCH(request: Request, { params }: { params: { id: string
  * DELETE /api/bookings/[id]
  * Cancel/delete a booking
  */
-export async function DELETE(request: Request, { params }: { params: { id: string } }) {
-  const id = Number(params.id);
+export async function DELETE(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const id = Number(idStr);
 
   try {
     // Soft delete by setting status to cancelled
@@ -105,4 +112,3 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
     );
   }
 }
-

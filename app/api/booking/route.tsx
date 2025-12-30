@@ -1,11 +1,10 @@
 // app/api/booking/route.tsx
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getResend } from "@/lib/resend";
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 import { formLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const esc = (s = "") =>
   s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
@@ -699,7 +698,7 @@ Signature: ${signature1 || "—"}   Date: ${date1 || "—"}
 `;
 
     // EMAIL 1: Admin notification with PDF
-    await resend.emails.send({
+    await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to,
       subject,
@@ -797,7 +796,7 @@ Email: info@metroguard.com.au
 www.metroguard.com.au
     `;
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: `Metro Guards <${process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: clientEmail,
       subject: "Booking Confirmation - Metropolitan Guard Services",

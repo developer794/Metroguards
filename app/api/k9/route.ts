@@ -1,9 +1,8 @@
 // app/api/k9/route.ts
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { getResend } from "@/lib/resend";
 
 export const runtime = "nodejs";
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // basic HTML escape
 const esc = (s = "") =>
@@ -92,7 +91,7 @@ Attendees: ${attendeesNum}
 Requested Service: ${service}
 `;
 
-    await resend.emails.send({
+    await getResend().emails.send({
       from: "Metro Guards <onboarding@resend.dev>", // replace with your verified domain in prod
       to,
       subject,

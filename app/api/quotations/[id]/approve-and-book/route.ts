@@ -8,12 +8,17 @@ import {
   GST_RATE,
 } from "@/lib/services/rateCalculator";
 
+type RouteContext = {
+  params: Promise<{ id: string }>;
+};
+
 /**
  * POST /api/quotations/[id]/approve-and-book
  * Approve a quotation and create a booking with schedules
  */
-export async function POST(request: Request, { params }: { params: { id: string } }) {
-  const quotationId = Number(params.id);
+export async function POST(request: Request, context: RouteContext) {
+  const { id: idStr } = await context.params;
+  const quotationId = Number(idStr);
 
   try {
     const body = await request.json();
@@ -53,6 +58,7 @@ export async function POST(request: Request, { params }: { params: { id: string 
       endDate: new Date(endDate),
       hoursPerDay,
       guards: numberOfGuards,
+      daysPerWeek: workDays.length,
       workDays,
     });
 
@@ -180,4 +186,3 @@ export async function POST(request: Request, { params }: { params: { id: string 
     );
   }
 }
-
