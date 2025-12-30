@@ -20,7 +20,31 @@ import StructuredData from "@/components/StructuredData";
 import ContactWidget from "@/components/contactWidget";
 import RemoveBreadcrumbSchema from "@/components/RemoveBreadcrumbSchema";
 
+// Environment check for production vs non-production
+const isProduction = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
 
+// Dynamic robots configuration based on environment
+const robotsConfig = isProduction
+  ? {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    }
+  : {
+      // Prevent indexing of non-production deployments (preview, development)
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    };
 
 export const metadata = {
   title: 'Security Company in Melbourne | Licensed Security Guards',
@@ -56,21 +80,18 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  // Dynamic robots based on environment - prevents indexing of preview/development deployments
+  robots: robotsConfig,
+  // Canonical URL always points to production domain
   alternates: {
     canonical: 'https://metroguards.com.au',
   },
+  // Additional meta for non-production environments
+  ...(isProduction ? {} : {
+    other: {
+      'X-Robots-Tag': 'noindex, nofollow',
+    },
+  }),
 }
 
 export default function RootLayout({ children }) {

@@ -15,6 +15,33 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
   const [emailMessage, setEmailMessage] = useState('');
   const [sendingEmail, setSendingEmail] = useState(false);
 
+  // New states for Approve & Book workflow
+  const [approveModal, setApproveModal] = useState(null);
+  const [costPreviewModal, setCostPreviewModal] = useState(null);
+  const [costCalculation, setCostCalculation] = useState(null);
+  const [calculatingCost, setCalculatingCost] = useState(false);
+  const [approvingQuote, setApprovingQuote] = useState(false);
+  
+  // Booking form state
+  const [bookingForm, setBookingForm] = useState({
+    startDate: '',
+    endDate: '',
+    hoursPerDay: 8,
+    numberOfGuards: 1,
+    workDays: [1, 2, 3, 4, 5], // Monday to Friday
+    notes: '',
+  });
+
+  // Service rates for display
+  const serviceRates = [
+    { type: 'Weekday Day (6am-6pm)', rate: 40.70 },
+    { type: 'Weekday Night (6pm-6am)', rate: 46.00 },
+    { type: 'Saturday', rate: 59.50 },
+    { type: 'Sunday', rate: 79.50 },
+    { type: 'Public Holiday', rate: 95.00 },
+    { type: "New Year's Eve", rate: 110.00 },
+  ];
+
   // Filter and sort quotations
   const filteredQuotations = useMemo(() => {
     let filtered = quotations;
@@ -60,7 +87,6 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
         const updated = await res.json();
         setQuotations(prev => prev.map(q => q.id === id ? { ...q, status: newStatus, updatedAt: updated.updatedAt } : q));
         
-        // Update selected quotation if it's currently open
         if (selectedQuotation && selectedQuotation.id === id) {
           setSelectedQuotation({ ...selectedQuotation, status: newStatus });
         }
@@ -145,10 +171,111 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
     }
   };
 
+  // Calculate cost preview
+  const handleCalculateCost = async (quotation) => {
+    setCostPreviewModal(quotation);
+    setCalculatingCost(true);
+    
+    try {
+      const res = await fetch(`/api/quotations/${quotation.id}/calculate-cost`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          startDate: bookingForm.startDate || new Date().toISOString().split('T')[0],
+          endDate: bookingForm.endDate || new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+          hoursPerDay: bookingForm.hoursPerDay,
+          guards: bookingForm.numberOfGuards,
+          workDays: bookingForm.workDays,
+          useQuickEstimate: !bookingForm.startDate || !bookingForm.endDate,
+          hoursPerWeek: bookingForm.hoursPerDay * 5,
+          weeks: 4,
+          shiftType: 'day',
+        }),
+      });
+      
+      const data = await res.json();
+      if (data.success) {
+        setCostCalculation(data);
+      } else {
+        alert('Failed to calculate cost');
+      }
+    } catch (error) {
+      console.error('Error calculating cost:', error);
+      alert('Error calculating cost');
+    } finally {
+      setCalculatingCost(false);
+    }
+  };
+
+  // Open approve modal
+  const handleOpenApproveModal = (quotation) => {
+    setApproveModal(quotation);
+    setBookingForm({
+      startDate: '',
+      endDate: '',
+      hoursPerDay: 8,
+      numberOfGuards: quotation.guardsRequired || 1,
+      workDays: [1, 2, 3, 4, 5],
+      notes: '',
+    });
+    setCostCalculation(null);
+  };
+
+  // Approve and create booking
+  const handleApproveAndBook = async () => {
+    if (!bookingForm.startDate) {
+      alert('Please select a start date');
+      return;
+    }
+
+    setApprovingQuote(true);
+    try {
+      const res = await fetch(`/api/quotations/${approveModal.id}/approve-and-book`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...bookingForm,
+          endDate: bookingForm.endDate || bookingForm.startDate,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        alert(`Booking created successfully!\n\nBooking ID: ${data.booking.id}\nSchedules Created: ${data.schedulesCreated}\nTotal Cost: $${data.booking.grandTotal}`);
+        
+        // Update the quotation in the list
+        setQuotations(prev => prev.map(q => 
+          q.id === approveModal.id 
+            ? { ...q, status: 'approved', isApproved: true, bookingId: data.booking.id }
+            : q
+        ));
+        
+        setApproveModal(null);
+        setCostCalculation(null);
+      } else {
+        alert(`Failed to approve: ${data.error}`);
+      }
+    } catch (error) {
+      console.error('Error approving quotation:', error);
+      alert('Error approving quotation');
+    } finally {
+      setApprovingQuote(false);
+    }
+  };
+
   // Format date
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    return date.toLocaleDateString('en-AU', { year: 'numeric', month: 'short', day: 'numeric' });
+  };
+
+  // Format currency
+  const formatCurrency = (amount) => {
+    return new Intl.NumberFormat('en-AU', {
+      style: 'currency',
+      currency: 'AUD',
+    }).format(amount);
   };
 
   // Get status badge color
@@ -157,9 +284,22 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
       case 'new': return { bg: '#10b981', text: '#ffffff' };
       case 'contacted': return { bg: '#3b82f6', text: '#ffffff' };
       case 'resolved': return { bg: '#6b7280', text: '#ffffff' };
+      case 'approved': return { bg: '#8b5cf6', text: '#ffffff' };
       default: return { bg: '#9ca3af', text: '#ffffff' };
     }
   };
+
+  // Toggle work day
+  const toggleWorkDay = (day) => {
+    setBookingForm(prev => ({
+      ...prev,
+      workDays: prev.workDays.includes(day)
+        ? prev.workDays.filter(d => d !== day)
+        : [...prev.workDays, day].sort()
+    }));
+  };
+
+  const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   return (
     <div className="space-y-8">
@@ -219,20 +359,20 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                 Quotation Requests
               </h1>
               <p style={{ color: 'rgba(253, 197, 26, 0.9)', fontSize: '0.95rem', fontWeight: '500', margin: 0 }}>
-                Manage and track all quotation requests
+                Manage, approve, and convert quotations to bookings
               </p>
             </div>
           </div>
 
           {/* Stats Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '16px' }}>
             <div style={{
               background: 'rgba(253, 197, 26, 0.1)',
               padding: '16px',
               borderRadius: '12px',
               border: '1px solid rgba(253, 197, 26, 0.2)'
             }}>
-              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>Total Quotations</div>
+              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>Total</div>
               <div style={{ fontSize: '2rem', fontWeight: '700', color: '#fdc51a' }}>{initialStats.total}</div>
             </div>
             <div style={{
@@ -241,7 +381,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
               borderRadius: '12px',
               border: '1px solid rgba(16, 185, 129, 0.2)'
             }}>
-              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>New Requests</div>
+              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>New</div>
               <div style={{ fontSize: '2rem', fontWeight: '700', color: '#10b981' }}>{initialStats.new}</div>
             </div>
             <div style={{
@@ -254,13 +394,13 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
               <div style={{ fontSize: '2rem', fontWeight: '700', color: '#3b82f6' }}>{initialStats.contacted}</div>
             </div>
             <div style={{
-              background: 'rgba(107, 114, 128, 0.1)',
+              background: 'rgba(139, 92, 246, 0.1)',
               padding: '16px',
               borderRadius: '12px',
-              border: '1px solid rgba(107, 114, 128, 0.2)'
+              border: '1px solid rgba(139, 92, 246, 0.2)'
             }}>
-              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>Resolved</div>
-              <div style={{ fontSize: '2rem', fontWeight: '700', color: '#6b7280' }}>{initialStats.resolved}</div>
+              <div style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '4px' }}>Approved</div>
+              <div style={{ fontSize: '2rem', fontWeight: '700', color: '#8b5cf6' }}>{quotations.filter(q => q.isApproved).length}</div>
             </div>
           </div>
         </div>
@@ -316,6 +456,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             <option value="new">New</option>
             <option value="contacted">Contacted</option>
             <option value="resolved">Resolved</option>
+            <option value="approved">Approved</option>
           </select>
 
           {/* Sort */}
@@ -340,7 +481,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
         </div>
       </div>
 
-      {/* Quotations Table/Cards - Responsive */}
+      {/* Quotations Table */}
       {filteredQuotations.length === 0 ? (
         <div style={{
           background: '#ffffff',
@@ -362,196 +503,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
           </p>
         </div>
       ) : (
-        <>
-          {/* Mobile Card View */}
-          <div className="dashboard-mobile-cards md:hidden" style={{ marginRight: '20px', marginBottom: '20px' }}>
-            {filteredQuotations.map((quotation) => (
-              <div
-                key={quotation.id}
-                style={{
-                  background: 'white',
-                  borderRadius: '12px',
-                  padding: '14px',
-                  marginBottom: '12px',
-                  boxShadow: '0 2px 8px rgba(30, 34, 71, 0.08)',
-                  border: '1px solid rgba(30, 34, 71, 0.12)'
-                }}
-              >
-                {/* Card Header */}
                 <div style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  marginBottom: '10px',
-                  paddingBottom: '10px',
-                  borderBottom: '1px solid #e5e7eb'
-                }}>
-                  <div style={{ flex: 1 }}>
-                    <div style={{
-                      fontSize: '0.85rem',
-                      fontWeight: '700',
-                      color: '#1e2247'
-                    }}>
-                      Id : {quotation.id}
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '6px' }}>
-                    <button
-                      onClick={() => setSelectedQuotation(quotation)}
-                      style={{
-                        width: '32px',
-                        height: '32px',
-                        borderRadius: '6px',
-                        background: '#1e2247',
-                        border: 'none',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                        boxShadow: '0 2px 4px rgba(30, 34, 71, 0.2)'
-                      }}
-                      title="View Details"
-                    >
-                      <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                      </svg>
-                    </button>
-                    <button
-                      onClick={() => setConfirmDelete(quotation)}
-                      style={{
-                        width: '32px',
-                        height: '32px',
-                        borderRadius: '6px',
-                        background: '#ef4444',
-                        border: 'none',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                        boxShadow: '0 2px 4px rgba(239, 68, 68, 0.2)'
-                      }}
-                      title="Delete"
-                    >
-                      <svg style={{ width: '14px', height: '14px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Card Body - Compact Table Layout */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  {/* Customer Name */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                      Buyer Name
-                    </div>
-                    <div style={{ fontSize: '0.875rem', fontWeight: '600', color: '#1e2247' }}>
-                      {quotation.name}
-                    </div>
-                  </div>
-
-                  {/* Email */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                      Email
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: '#374151', wordBreak: 'break-word' }}>
-                      {quotation.email}
-                    </div>
-                  </div>
-
-                  {/* Phone */}
-                  {quotation.phone && (
-                    <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
-                      <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                        Phone
-                      </div>
-                      <div style={{ fontSize: '0.8rem', color: '#374151' }}>
-                        {quotation.phone}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Industry */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'center' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                      Industry
-                    </div>
-                    <div style={{
-                      display: 'inline-block',
-                      padding: '4px 10px',
-                      background: 'rgba(253, 197, 26, 0.1)',
-                      color: '#1e2247',
-                      borderRadius: '5px',
-                      fontSize: '0.75rem',
-                      fontWeight: '500'
-                    }}>
-                      {quotation.industry}
-                    </div>
-                  </div>
-
-                  {/* Service */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'start' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                      Service
-                    </div>
-                    <div style={{ fontSize: '0.8rem', color: '#374151' }}>
-                      {quotation.service}
-                    </div>
-                  </div>
-
-                  {/* Status */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '90px 1fr', gap: '12px', alignItems: 'center' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#6b7280', fontWeight: '600' }}>
-                      Status
-                    </div>
-                    <div style={{
-                      display: 'inline-block',
-                      padding: '4px 10px',
-                      background: getStatusColor(quotation.status).bg,
-                      color: getStatusColor(quotation.status).text,
-                      borderRadius: '12px',
-                      fontSize: '0.7rem',
-                      fontWeight: '600',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.3px'
-                    }}>
-                      {quotation.status}
-                    </div>
-                  </div>
-
-                  {/* Send Button */}
-                  <button
-                    onClick={() => handleOpenEmailModal(quotation)}
-                    style={{
-                      width: '100%',
-                      padding: '8px',
-                      borderRadius: '8px',
-                      background: '#fdc51a',
-                      border: 'none',
-                      color: '#1e2247',
-                      fontSize: '0.85rem',
-                      fontWeight: '600',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: '6px',
-                      marginTop: '4px',
-                      boxShadow: '0 2px 6px rgba(253, 197, 26, 0.3)'
-                    }}
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop Table View */}
-          <div className="dashboard-desktop-table hidden md:block" style={{
             background: '#ffffff',
             borderRadius: '16px',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
@@ -567,13 +519,13 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                   color: '#fdc51a',
                   textAlign: 'left'
                 }}>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>CUSTOMER</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>CONTACT INFO</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>INDUSTRY</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>SERVICE</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>STATUS</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px' }}>DATE</th>
-                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', letterSpacing: '0.5px', textAlign: 'center' }}>ACTIONS</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>CUSTOMER</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>CONTACT</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>INDUSTRY</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>SERVICE</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>STATUS</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem' }}>DATE</th>
+                  <th style={{ padding: '16px', fontWeight: '600', fontSize: '0.875rem', textAlign: 'center' }}>ACTIONS</th>
                 </tr>
               </thead>
               <tbody>
@@ -588,14 +540,15 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     onMouseEnter={(e) => e.currentTarget.style.background = '#f3f4f6'}
                     onMouseLeave={(e) => e.currentTarget.style.background = index % 2 === 0 ? '#ffffff' : '#f9fafb'}
                   >
-                    {/* Customer */}
                     <td style={{ padding: '16px' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                         <div style={{
                           width: '40px',
                           height: '40px',
                           borderRadius: '50%',
-                          background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
+                          background: quotation.isApproved 
+                            ? 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)'
+                            : 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
@@ -611,28 +564,12 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                         </div>
                       </div>
                     </td>
-
-                    {/* Contact Info */}
                     <td style={{ padding: '16px' }}>
                       <div style={{ fontSize: '0.875rem', color: '#374151' }}>
-                        <div style={{ marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                          <svg style={{ width: '14px', height: '14px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                          </svg>
-                          {quotation.email}
-                        </div>
-                        {quotation.phone && (
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <svg style={{ width: '14px', height: '14px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                            </svg>
-                            {quotation.phone}
-                          </div>
-                        )}
+                        <div style={{ marginBottom: '4px' }}>{quotation.email}</div>
+                        {quotation.phone && <div style={{ color: '#6b7280' }}>{quotation.phone}</div>}
                       </div>
                     </td>
-
-                    {/* Industry */}
                     <td style={{ padding: '16px' }}>
                       <div style={{
                         display: 'inline-block',
@@ -646,22 +583,11 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                         {quotation.industry}
                       </div>
                     </td>
-
-                    {/* Service */}
                     <td style={{ padding: '16px' }}>
-                      <div style={{
-                        fontSize: '0.875rem',
-                        color: '#374151',
-                        maxWidth: '200px',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                        whiteSpace: 'nowrap'
-                      }}>
+                      <div style={{ fontSize: '0.875rem', color: '#374151', maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {quotation.service}
                       </div>
                     </td>
-
-                    {/* Status */}
                     <td style={{ padding: '16px' }}>
                       <div style={{
                         display: 'inline-block',
@@ -671,24 +597,71 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                         borderRadius: '20px',
                         fontSize: '0.75rem',
                         fontWeight: '600',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.5px'
+                        textTransform: 'uppercase'
                       }}>
                         {quotation.status}
                       </div>
                     </td>
-
-                    {/* Date */}
                     <td style={{ padding: '16px' }}>
                       <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>
                         {formatDate(quotation.createdAt)}
                       </div>
                     </td>
-
-                    {/* Actions */}
                     <td style={{ padding: '16px' }}>
-                      <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', alignItems: 'center' }}>
-                        {/* Send Email Button */}
+                      <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        {/* Approve & Book Button - Only show for non-approved quotes */}
+                        {!quotation.isApproved && (
+                          <button
+                            onClick={() => handleOpenApproveModal(quotation)}
+                            style={{
+                              padding: '8px 12px',
+                              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                              border: 'none',
+                              borderRadius: '8px',
+                              cursor: 'pointer',
+                              transition: 'all 0.2s',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '6px',
+                              color: 'white',
+                              fontSize: '0.8rem',
+                              fontWeight: '600'
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                            title="Approve & Create Booking"
+                          >
+                            <svg style={{ width: '16px', height: '16px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Approve
+                          </button>
+                        )}
+
+                        {/* Preview Cost Button */}
+                        <button
+                          onClick={() => handleCalculateCost(quotation)}
+                          style={{
+                            padding: '8px',
+                            background: '#8b5cf6',
+                            border: 'none',
+                            borderRadius: '8px',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                          }}
+                          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                          title="Preview Cost"
+                        >
+                          <svg style={{ width: '18px', height: '18px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </button>
+
+                        {/* Email Button */}
                         <button
                           onClick={() => handleOpenEmailModal(quotation)}
                           style={{
@@ -765,7 +738,564 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             </table>
           </div>
         </div>
-        </>
+      )}
+
+      {/* Approve & Book Modal */}
+      {approveModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px',
+            backdropFilter: 'blur(4px)'
+          }}
+          onClick={() => !approvingQuote && setApproveModal(null)}
+        >
+          <div
+            style={{
+              background: '#ffffff',
+              borderRadius: '20px',
+              maxWidth: '800px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflow: 'auto',
+              boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+              border: '3px solid #10b981'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div style={{
+              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+              padding: '24px',
+              borderBottom: '3px solid #10b981',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '12px',
+                  background: 'white',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <svg style={{ width: '28px', height: '28px', color: '#10b981' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: 'white', margin: 0 }}>
+                    Approve & Create Booking
+                  </h2>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.9)', margin: 0 }}>
+                    {approveModal.name} - {approveModal.service}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => !approvingQuote && setApproveModal(null)}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  border: 'none',
+                  color: 'white',
+                  cursor: 'pointer',
+                  padding: '8px',
+                  borderRadius: '8px'
+                }}
+              >
+                <svg style={{ width: '24px', height: '24px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div style={{ padding: '32px' }}>
+              {/* Client Info */}
+              <div style={{
+                background: '#f0fdf4',
+                padding: '16px',
+                borderRadius: '12px',
+                marginBottom: '24px',
+                border: '1px solid #bbf7d0'
+              }}>
+                <h4 style={{ margin: '0 0 12px 0', color: '#166534' }}>Client Information</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '12px' }}>
+                  <div><strong>Name:</strong> {approveModal.name}</div>
+                  <div><strong>Email:</strong> {approveModal.email}</div>
+                  <div><strong>Phone:</strong> {approveModal.phone || 'N/A'}</div>
+                  <div><strong>Industry:</strong> {approveModal.industry}</div>
+                </div>
+              </div>
+
+              {/* Booking Details Form */}
+              <h4 style={{ margin: '0 0 16px 0', color: '#1e2247' }}>Booking Details</h4>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '24px' }}>
+                <div>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#374151' }}>
+                    Start Date <span style={{ color: '#ef4444' }}>*</span>
+                  </label>
+                  <input
+                    type="date"
+                    value={bookingForm.startDate}
+                    onChange={(e) => setBookingForm({ ...bookingForm, startDate: e.target.value })}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      border: '2px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '0.95rem'
+                    }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#374151' }}>
+                    End Date
+                  </label>
+                  <input
+                    type="date"
+                    value={bookingForm.endDate}
+                    onChange={(e) => setBookingForm({ ...bookingForm, endDate: e.target.value })}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      border: '2px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '0.95rem'
+                    }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#374151' }}>
+                    Hours Per Day
+                  </label>
+                  <input
+                    type="number"
+                    min="1"
+                    max="24"
+                    value={bookingForm.hoursPerDay}
+                    onChange={(e) => setBookingForm({ ...bookingForm, hoursPerDay: Number(e.target.value) })}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      border: '2px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '0.95rem'
+                    }}
+                  />
+                </div>
+                <div>
+                  <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#374151' }}>
+                    Number of Guards
+                  </label>
+                  <input
+                    type="number"
+                    min="1"
+                    value={bookingForm.numberOfGuards}
+                    onChange={(e) => setBookingForm({ ...bookingForm, numberOfGuards: Number(e.target.value) })}
+                    style={{
+                      width: '100%',
+                      padding: '12px',
+                      border: '2px solid #e5e7eb',
+                      borderRadius: '8px',
+                      fontSize: '0.95rem'
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Work Days */}
+              <div style={{ marginBottom: '24px' }}>
+                <label style={{ display: 'block', marginBottom: '12px', fontWeight: '600', color: '#374151' }}>
+                  Work Days
+                </label>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {dayNames.map((day, index) => (
+                    <button
+                      key={day}
+                      onClick={() => toggleWorkDay(index)}
+                      style={{
+                        padding: '10px 16px',
+                        borderRadius: '8px',
+                        border: '2px solid',
+                        borderColor: bookingForm.workDays.includes(index) ? '#10b981' : '#e5e7eb',
+                        background: bookingForm.workDays.includes(index) ? '#10b981' : 'white',
+                        color: bookingForm.workDays.includes(index) ? 'white' : '#374151',
+                        cursor: 'pointer',
+                        fontWeight: '600',
+                        fontSize: '0.875rem',
+                        transition: 'all 0.2s'
+                      }}
+                    >
+                      {day}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Notes */}
+              <div style={{ marginBottom: '24px' }}>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600', color: '#374151' }}>
+                  Notes
+                </label>
+                <textarea
+                  value={bookingForm.notes}
+                  onChange={(e) => setBookingForm({ ...bookingForm, notes: e.target.value })}
+                  placeholder="Any special instructions or notes..."
+                  rows={3}
+                  style={{
+                    width: '100%',
+                    padding: '12px',
+                    border: '2px solid #e5e7eb',
+                    borderRadius: '8px',
+                    fontSize: '0.95rem',
+                    resize: 'vertical'
+                  }}
+                />
+              </div>
+
+              {/* Rate Card Preview */}
+              <div style={{
+                background: '#f8fafc',
+                padding: '20px',
+                borderRadius: '12px',
+                marginBottom: '24px',
+                border: '1px solid #e2e8f0'
+              }}>
+                <h4 style={{ margin: '0 0 16px 0', color: '#1e2247' }}>Metro Guards Rate Card</h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
+                  {serviceRates.map((rate) => (
+                    <div key={rate.type} style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      padding: '8px 12px',
+                      background: 'white',
+                      borderRadius: '6px'
+                    }}>
+                      <span style={{ color: '#64748b', fontSize: '0.875rem' }}>{rate.type}</span>
+                      <span style={{ fontWeight: '600', color: '#1e2247' }}>{formatCurrency(rate.rate)}/hr</span>
+                    </div>
+                  ))}
+                </div>
+                <p style={{ margin: '16px 0 0 0', fontSize: '0.85rem', color: '#64748b' }}>
+                  * Overtime: First 2 hours at 1.5x, beyond 2 hours at 2x. GST (10%) added to all totals.
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div style={{ display: 'flex', gap: '12px' }}>
+                <button
+                  onClick={() => setApproveModal(null)}
+                  disabled={approvingQuote}
+                  style={{
+                    flex: 1,
+                    padding: '14px',
+                    background: '#e5e7eb',
+                    border: 'none',
+                    borderRadius: '10px',
+                    fontSize: '1rem',
+                    fontWeight: '600',
+                    color: '#374151',
+                    cursor: approvingQuote ? 'not-allowed' : 'pointer',
+                    opacity: approvingQuote ? 0.5 : 1
+                  }}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleApproveAndBook}
+                  disabled={approvingQuote || !bookingForm.startDate}
+                  style={{
+                    flex: 2,
+                    padding: '14px',
+                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                    border: 'none',
+                    borderRadius: '10px',
+                    fontSize: '1rem',
+                    fontWeight: '700',
+                    color: 'white',
+                    cursor: (approvingQuote || !bookingForm.startDate) ? 'not-allowed' : 'pointer',
+                    opacity: (approvingQuote || !bookingForm.startDate) ? 0.5 : 1,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  {approvingQuote ? (
+                    <>
+                      <div style={{
+                        width: '20px',
+                        height: '20px',
+                        border: '2px solid white',
+                        borderTopColor: 'transparent',
+                        borderRadius: '50%',
+                        animation: 'spin 0.6s linear infinite'
+                      }}></div>
+                      Creating Booking...
+                    </>
+                  ) : (
+                    <>
+                      <svg style={{ width: '20px', height: '20px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Approve & Create Booking
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Cost Preview Modal */}
+      {costPreviewModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px',
+            backdropFilter: 'blur(4px)'
+          }}
+          onClick={() => setCostPreviewModal(null)}
+        >
+          <div
+            style={{
+              background: '#ffffff',
+              borderRadius: '20px',
+              maxWidth: '600px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflow: 'auto',
+              boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+              border: '3px solid #8b5cf6'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div style={{
+              background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+              padding: '24px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '12px',
+                  background: 'white',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <svg style={{ width: '28px', height: '28px', color: '#8b5cf6' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: 'white', margin: 0 }}>
+                    Cost Preview
+                  </h2>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.9)', margin: 0 }}>
+                    {costPreviewModal.name}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setCostPreviewModal(null)}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  border: 'none',
+                  color: 'white',
+                  cursor: 'pointer',
+                  padding: '8px',
+                  borderRadius: '8px'
+                }}
+              >
+                <svg style={{ width: '24px', height: '24px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div style={{ padding: '32px' }}>
+              {calculatingCost ? (
+                <div style={{ textAlign: 'center', padding: '40px' }}>
+                  <div style={{
+                    width: '48px',
+                    height: '48px',
+                    border: '4px solid #e5e7eb',
+                    borderTopColor: '#8b5cf6',
+                    borderRadius: '50%',
+                    animation: 'spin 0.8s linear infinite',
+                    margin: '0 auto 16px'
+                  }}></div>
+                  <p style={{ color: '#6b7280' }}>Calculating cost...</p>
+                </div>
+              ) : costCalculation ? (
+                <>
+                  {/* Quick Estimate Notice */}
+                  {costCalculation.calculation.note && (
+                    <div style={{
+                      background: '#fef3c7',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      marginBottom: '20px',
+                      border: '1px solid #fcd34d'
+                    }}>
+                      <p style={{ margin: 0, color: '#92400e', fontSize: '0.875rem' }}>
+                        ⚡ {costCalculation.calculation.note}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Cost Summary */}
+                  <div style={{
+                    background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
+                    padding: '24px',
+                    borderRadius: '16px',
+                    marginBottom: '24px',
+                    textAlign: 'center'
+                  }}>
+                    <div style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.875rem', marginBottom: '8px' }}>
+                      ESTIMATED TOTAL (inc. GST)
+                    </div>
+                    <div style={{ color: '#fdc51a', fontSize: '2.5rem', fontWeight: '700' }}>
+                      {formatCurrency(costCalculation.calculation.total)}
+                    </div>
+                    <div style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.875rem', marginTop: '8px' }}>
+                      {costCalculation.calculation.totalHours || 'Estimated'} total hours
+                    </div>
+                  </div>
+
+                  {/* Breakdown */}
+                  <div style={{ marginBottom: '24px' }}>
+                    <h4 style={{ margin: '0 0 16px 0', color: '#1e2247' }}>Cost Breakdown</h4>
+                    <div style={{
+                      background: '#f8fafc',
+                      borderRadius: '12px',
+                      overflow: 'hidden'
+                    }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
+                        <span style={{ color: '#64748b' }}>Subtotal (ex. GST)</span>
+                        <span style={{ fontWeight: '600', color: '#1e2247' }}>{formatCurrency(costCalculation.calculation.subtotal)}</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
+                        <span style={{ color: '#64748b' }}>GST (10%)</span>
+                        <span style={{ fontWeight: '600', color: '#1e2247' }}>{formatCurrency(costCalculation.calculation.gst)}</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: '#10b981', color: 'white' }}>
+                        <span style={{ fontWeight: '600' }}>Total</span>
+                        <span style={{ fontWeight: '700', fontSize: '1.25rem' }}>{formatCurrency(costCalculation.calculation.total)}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Rate Card */}
+                  <div>
+                    <h4 style={{ margin: '0 0 16px 0', color: '#1e2247' }}>Applicable Rates</h4>
+                    <div style={{ display: 'grid', gap: '8px' }}>
+                      {serviceRates.map((rate) => (
+                        <div key={rate.type} style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          padding: '10px 14px',
+                          background: '#f1f5f9',
+                          borderRadius: '8px'
+                        }}>
+                          <span style={{ color: '#475569' }}>{rate.type}</span>
+                          <span style={{ fontWeight: '600', color: '#8b5cf6' }}>{formatCurrency(rate.rate)}/hr</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div style={{ textAlign: 'center', padding: '40px', color: '#6b7280' }}>
+                  Unable to calculate cost. Please try again.
+                </div>
+              )}
+            </div>
+
+            {/* Modal Footer */}
+            <div style={{
+              padding: '20px 32px',
+              borderTop: '1px solid #e5e7eb',
+              display: 'flex',
+              gap: '12px'
+            }}>
+              <button
+                onClick={() => setCostPreviewModal(null)}
+                style={{
+                  flex: 1,
+                  padding: '12px',
+                  background: '#e5e7eb',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '0.95rem',
+                  fontWeight: '600',
+                  color: '#374151',
+                  cursor: 'pointer'
+                }}
+              >
+                Close
+              </button>
+              {!costPreviewModal.isApproved && (
+                <button
+                  onClick={() => {
+                    setCostPreviewModal(null);
+                    handleOpenApproveModal(costPreviewModal);
+                  }}
+                  style={{
+                    flex: 2,
+                    padding: '12px',
+                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '0.95rem',
+                    fontWeight: '600',
+                    color: 'white',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  <svg style={{ width: '18px', height: '18px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Proceed to Approve
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
       )}
 
       {/* View Details Modal */}
@@ -829,7 +1359,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     Quotation Details
                   </h2>
                   <p style={{ fontSize: '0.875rem', color: 'rgba(253, 197, 26, 0.8)', margin: 0 }}>
-                    ID: #{selectedQuotation.id}
+                    ID: #{selectedQuotation.id} {selectedQuotation.isApproved && '✓ Approved'}
                   </p>
                 </div>
               </div>
@@ -841,14 +1371,8 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                   color: '#fdc51a',
                   cursor: 'pointer',
                   padding: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderRadius: '8px',
-                  transition: 'background 0.2s'
+                  borderRadius: '8px'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)'}
-                onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
               >
                 <svg style={{ width: '24px', height: '24px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -860,47 +1384,24 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             <div style={{ padding: '32px' }}>
               {/* Customer Information */}
               <div style={{ marginBottom: '32px' }}>
-                <h3 style={{
-                  fontSize: '1.125rem',
-                  fontWeight: '700',
-                  color: '#1e2247',
-                  marginBottom: '16px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <svg style={{ width: '20px', height: '20px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                   Customer Information
                 </h3>
-                <div style={{ display: 'grid', gap: '16px' }}>
-                  <div style={{
-                    padding: '16px',
-                    background: '#f9fafb',
-                    borderRadius: '12px',
-                    border: '1px solid #e5e7eb'
-                  }}>
-                    <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Full Name</div>
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                    <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Full Name</div>
                     <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.name}</div>
                   </div>
-                  <div style={{
-                    padding: '16px',
-                    background: '#f9fafb',
-                    borderRadius: '12px',
-                    border: '1px solid #e5e7eb'
-                  }}>
-                    <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Email Address</div>
+                  <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                    <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Email</div>
                     <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.email}</div>
                   </div>
                   {selectedQuotation.phone && (
-                    <div style={{
-                      padding: '16px',
-                      background: '#f9fafb',
-                      borderRadius: '12px',
-                      border: '1px solid #e5e7eb'
-                    }}>
-                      <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Phone Number</div>
+                    <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Phone</div>
                       <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.phone}</div>
                     </div>
                   )}
@@ -909,75 +1410,40 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
 
               {/* Quotation Details */}
               <div style={{ marginBottom: '32px' }}>
-                <h3 style={{
-                  fontSize: '1.125rem',
-                  fontWeight: '700',
-                  color: '#1e2247',
-                  marginBottom: '16px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
+                <h3 style={{ fontSize: '1.125rem', fontWeight: '700', color: '#1e2247', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <svg style={{ width: '20px', height: '20px', color: '#fdc51a' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                   </svg>
                   Quotation Details
                 </h3>
-                <div style={{ display: 'grid', gap: '16px' }}>
-                  <div style={{
-                    padding: '16px',
-                    background: '#f9fafb',
-                    borderRadius: '12px',
-                    border: '1px solid #e5e7eb'
-                  }}>
-                    <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Industry</div>
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                    <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Industry</div>
                     <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.industry}</div>
                   </div>
-                  <div style={{
-                    padding: '16px',
-                    background: '#f9fafb',
-                    borderRadius: '12px',
-                    border: '1px solid #e5e7eb'
-                  }}>
-                    <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Service Required</div>
+                  <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                    <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Service Required</div>
                     <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.service}</div>
                   </div>
                   {selectedQuotation.location && (
-                    <div style={{
-                      padding: '16px',
-                      background: '#f9fafb',
-                      borderRadius: '12px',
-                      border: '1px solid #e5e7eb'
-                    }}>
-                      <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Service Location</div>
+                    <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Location</div>
                       <div style={{ fontSize: '1rem', fontWeight: '600', color: '#1e2247' }}>{selectedQuotation.location}</div>
                     </div>
                   )}
                   {selectedQuotation.message && (
-                    <div style={{
-                      padding: '16px',
-                      background: '#f9fafb',
-                      borderRadius: '12px',
-                      border: '1px solid #e5e7eb'
-                    }}>
-                      <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '4px' }}>Additional Message</div>
-                      <div style={{ fontSize: '0.95rem', color: '#374151', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>
-                        {selectedQuotation.message}
-                      </div>
+                    <div style={{ padding: '14px', background: '#f9fafb', borderRadius: '10px', border: '1px solid #e5e7eb' }}>
+                      <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '4px' }}>Message</div>
+                      <div style={{ fontSize: '0.95rem', color: '#374151', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>{selectedQuotation.message}</div>
                     </div>
                   )}
                 </div>
               </div>
 
               {/* Status and Actions */}
-              <div style={{
-                padding: '20px',
-                background: '#f9fafb',
-                borderRadius: '12px',
-                border: '1px solid #e5e7eb'
-              }}>
+              <div style={{ padding: '20px', background: '#f9fafb', borderRadius: '12px', border: '1px solid #e5e7eb' }}>
                 <div style={{ marginBottom: '16px' }}>
-                  <div style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '8px' }}>Current Status</div>
+                  <div style={{ fontSize: '0.85rem', color: '#6b7280', marginBottom: '8px' }}>Current Status</div>
                   <select
                     value={selectedQuotation.status}
                     onChange={(e) => handleUpdateStatus(selectedQuotation.id, e.target.value)}
@@ -991,16 +1457,16 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                       color: '#1e2247',
                       background: '#ffffff',
                       cursor: 'pointer',
-                      width: '100%',
-                      outline: 'none'
+                      width: '100%'
                     }}
                   >
                     <option value="new">New</option>
                     <option value="contacted">Contacted</option>
                     <option value="resolved">Resolved</option>
+                    <option value="approved">Approved</option>
                   </select>
                 </div>
-                <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>
+                <div style={{ fontSize: '0.85rem', color: '#6b7280' }}>
                   <div>Submitted: {formatDate(selectedQuotation.createdAt)}</div>
                   <div>Last Updated: {formatDate(selectedQuotation.updatedAt)}</div>
                 </div>
@@ -1008,13 +1474,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             </div>
 
             {/* Modal Footer */}
-            <div style={{
-              padding: '20px 32px',
-              borderTop: '2px solid #e5e7eb',
-              display: 'flex',
-              gap: '12px',
-              justifyContent: 'flex-end'
-            }}>
+            <div style={{ padding: '20px 32px', borderTop: '2px solid #e5e7eb', display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
               <button
                 onClick={() => setSelectedQuotation(null)}
                 style={{
@@ -1025,11 +1485,8 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                   fontSize: '0.95rem',
                   fontWeight: '600',
                   color: '#374151',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s'
+                  cursor: 'pointer'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.background = '#d1d5db'}
-                onMouseLeave={(e) => e.currentTarget.style.background = '#e5e7eb'}
               >
                 Close
               </button>
@@ -1114,11 +1571,8 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     fontWeight: '600',
                     color: '#374151',
                     cursor: deletingId === confirmDelete.id ? 'not-allowed' : 'pointer',
-                    transition: 'all 0.2s',
                     opacity: deletingId === confirmDelete.id ? 0.5 : 1
                   }}
-                  onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.background = '#d1d5db')}
-                  onMouseLeave={(e) => e.currentTarget.style.background = '#e5e7eb'}
                 >
                   Cancel
                 </button>
@@ -1134,14 +1588,11 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     fontWeight: '600',
                     color: 'white',
                     cursor: deletingId === confirmDelete.id ? 'not-allowed' : 'pointer',
-                    transition: 'all 0.2s',
                     opacity: deletingId === confirmDelete.id ? 0.5 : 1,
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px'
                   }}
-                  onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.background = '#dc2626')}
-                  onMouseLeave={(e) => e.currentTarget.style.background = '#ef4444'}
                 >
                   {deletingId === confirmDelete.id ? (
                     <>
@@ -1170,7 +1621,7 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
         </div>
       )}
 
-      {/* Send Email Modal */}
+      {/* Email Modal */}
       {emailModal && (
         <div
           style={{
@@ -1202,7 +1653,6 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Modal Header */}
             <div style={{
               background: 'linear-gradient(135deg, #1e2247 0%, #2a3458 100%)',
               padding: '24px',
@@ -1226,32 +1676,20 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                   </svg>
                 </div>
                 <div>
-                  <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#fdc51a', margin: 0 }}>
-                    Send Email
-                  </h2>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(253, 197, 26, 0.8)', margin: 0 }}>
-                    To: {emailModal.name}
-                  </p>
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#fdc51a', margin: 0 }}>Send Email</h2>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(253, 197, 26, 0.8)', margin: 0 }}>To: {emailModal.name}</p>
                 </div>
               </div>
               <button
                 onClick={() => !sendingEmail && setEmailModal(null)}
-                disabled={sendingEmail}
                 style={{
                   background: 'transparent',
                   border: 'none',
                   color: '#fdc51a',
-                  cursor: sendingEmail ? 'not-allowed' : 'pointer',
+                  cursor: 'pointer',
                   padding: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  borderRadius: '8px',
-                  transition: 'background 0.2s',
-                  opacity: sendingEmail ? 0.5 : 1
+                  borderRadius: '8px'
                 }}
-                onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.background = 'rgba(253, 197, 26, 0.1)')}
-                onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
               >
                 <svg style={{ width: '24px', height: '24px' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -1259,16 +1697,9 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
               </button>
             </div>
 
-            {/* Modal Body */}
             <div style={{ padding: '32px' }}>
               <div style={{ marginBottom: '24px' }}>
-                <label style={{
-                  display: 'block',
-                  fontSize: '0.875rem',
-                  fontWeight: '600',
-                  color: '#1e2247',
-                  marginBottom: '8px'
-                }}>
+                <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: '600', color: '#1e2247', marginBottom: '8px' }}>
                   Subject <span style={{ color: '#ef4444' }}>*</span>
                 </label>
                 <input
@@ -1276,38 +1707,24 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                   value={emailSubject}
                   onChange={(e) => setEmailSubject(e.target.value)}
                   disabled={sendingEmail}
-                  placeholder="Enter email subject"
                   style={{
                     width: '100%',
                     padding: '12px',
                     border: '2px solid #e5e7eb',
                     borderRadius: '8px',
-                    fontSize: '0.95rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s',
-                    background: sendingEmail ? '#f9fafb' : '#ffffff',
-                    cursor: sendingEmail ? 'not-allowed' : 'text'
+                    fontSize: '0.95rem'
                   }}
-                  onFocus={(e) => !sendingEmail && (e.target.style.borderColor = '#1e2247')}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
                 />
               </div>
 
               <div style={{ marginBottom: '24px' }}>
-                <label style={{
-                  display: 'block',
-                  fontSize: '0.875rem',
-                  fontWeight: '600',
-                  color: '#1e2247',
-                  marginBottom: '8px'
-                }}>
+                <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: '600', color: '#1e2247', marginBottom: '8px' }}>
                   Message <span style={{ color: '#ef4444' }}>*</span>
                 </label>
                 <textarea
                   value={emailMessage}
                   onChange={(e) => setEmailMessage(e.target.value)}
                   disabled={sendingEmail}
-                  placeholder="Type your message here..."
                   rows={8}
                   style={{
                     width: '100%',
@@ -1315,16 +1732,8 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     border: '2px solid #e5e7eb',
                     borderRadius: '8px',
                     fontSize: '0.95rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s',
-                    resize: 'vertical',
-                    fontFamily: 'inherit',
-                    lineHeight: '1.6',
-                    background: sendingEmail ? '#f9fafb' : '#ffffff',
-                    cursor: sendingEmail ? 'not-allowed' : 'text'
+                    resize: 'vertical'
                   }}
-                  onFocus={(e) => !sendingEmail && (e.target.style.borderColor = '#1e2247')}
-                  onBlur={(e) => e.target.style.borderColor = '#e5e7eb'}
                 />
               </div>
 
@@ -1338,15 +1747,10 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     background: '#e5e7eb',
                     border: 'none',
                     borderRadius: '8px',
-                    fontSize: '0.95rem',
                     fontWeight: '600',
-                    color: '#374151',
                     cursor: sendingEmail ? 'not-allowed' : 'pointer',
-                    transition: 'all 0.2s',
                     opacity: sendingEmail ? 0.5 : 1
                   }}
-                  onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.background = '#d1d5db')}
-                  onMouseLeave={(e) => e.currentTarget.style.background = '#e5e7eb'}
                 >
                   Cancel
                 </button>
@@ -1359,19 +1763,15 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
                     background: '#fdc51a',
                     border: 'none',
                     borderRadius: '8px',
-                    fontSize: '0.95rem',
                     fontWeight: '600',
                     color: '#1e2247',
                     cursor: sendingEmail ? 'not-allowed' : 'pointer',
-                    transition: 'all 0.2s',
                     opacity: sendingEmail ? 0.7 : 1,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '8px'
                   }}
-                  onMouseEnter={(e) => !e.currentTarget.disabled && (e.currentTarget.style.background = '#e5b116')}
-                  onMouseLeave={(e) => e.currentTarget.style.background = '#fdc51a'}
                 >
                   {sendingEmail ? (
                     <>
@@ -1400,15 +1800,12 @@ export default function QuotationsClient({ initialQuotations, initialStats }) {
         </div>
       )}
 
-      {/* Keyframes for spinner animation */}
+      {/* Spinner keyframes */}
       <style jsx>{`
         @keyframes spin {
-          to {
-            transform: rotate(360deg);
-          }
+          to { transform: rotate(360deg); }
         }
       `}</style>
     </div>
   );
 }
-
