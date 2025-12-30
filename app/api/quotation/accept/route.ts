@@ -94,7 +94,9 @@ export async function POST(request: Request) {
           endDate: new Date(endDate),
           hoursPerDay,
           guards: numberOfGuards,
+          daysPerWeek: 5,
           workDays: [1, 2, 3, 4, 5],
+          customRates: null,
         });
 
         costData = {
