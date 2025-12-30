@@ -47,8 +47,18 @@ export const LEGAL_CLAUSES = {
   },
 };
 
+interface IndustryTemplate {
+  name: string;
+  clientExamples: string[];
+  features: string[];
+  specialRequirements: string[];
+  benefits: string[];
+  introduction: string;
+  valueProposition: string;
+}
+
 // Industry-Specific Templates
-export const INDUSTRY_TEMPLATES = {
+export const INDUSTRY_TEMPLATES: Record<string, IndustryTemplate> = {
   construction: {
     name: 'Construction & Infrastructure',
     clientExamples: ['Qanstruct', 'Ertech', 'John Holland', 'CPB Contractors'],
@@ -207,17 +217,73 @@ export const INDUSTRY_TEMPLATES = {
   },
 };
 
+// Type definitions for function parameters
+export interface GenerateQuotationDocumentParams {
+  clientName: string;
+  companyName?: string;
+  industry: string;
+  service: string;
+  costBreakdown: any;
+  startDate?: string | Date;
+  endDate?: string | Date;
+  quoteNumber: string;
+}
+
+export interface QuotationDocument {
+  header: {
+    company: string;
+    abn: string;
+    phone: string;
+    email: string;
+    website: string;
+    address: string;
+  };
+  quoteDetails: {
+    quoteNumber: string;
+    issueDate: string;
+    validUntil: string;
+    clientName: string;
+    companyName?: string;
+    industry: string;
+    service: string;
+  };
+  servicePeriod: {
+    startDate: string | null;
+    endDate: string | null;
+  };
+  industryContent: {
+    introduction: string;
+    valueProposition: string;
+    features: string[];
+    specialRequirements: string[];
+    benefits: string[];
+  };
+  pricing: any;
+  certifications: Array<{
+    code: string;
+    name: string;
+    description: string;
+  }>;
+  legalTerms: Array<{
+    title: string;
+    content: string;
+  }>;
+  callToAction: {
+    title: string;
+    message: string;
+    phone: string;
+    email: string;
+    acceptanceNote: string;
+  };
+  footer: {
+    certifications: string;
+    license: string;
+    copyright: string;
+  };
+}
+
 /**
  * Generate a complete quotation document
- * @param {Object} params
- * @param {string} params.clientName - Client name
- * @param {string} params.companyName - Company name
- * @param {string} params.industry - Industry key
- * @param {string} params.service - Service type
- * @param {Object} params.costBreakdown - Cost breakdown from rateCalculator
- * @param {Date} params.startDate - Service start date
- * @param {Date} params.endDate - Service end date
- * @returns {Object} Complete quotation document
  */
 export function generateQuotationDocument({
   clientName,
@@ -228,7 +294,7 @@ export function generateQuotationDocument({
   startDate,
   endDate,
   quoteNumber,
-}) {
+}: GenerateQuotationDocumentParams): QuotationDocument {
   const template = INDUSTRY_TEMPLATES[industry] || INDUSTRY_TEMPLATES.corporate;
   const validUntil = new Date();
   validUntil.setDate(validUntil.getDate() + 30); // Quote valid for 30 days
@@ -300,10 +366,8 @@ export function generateQuotationDocument({
 
 /**
  * Generate HTML email template for quotation
- * @param {Object} quotation - Quotation document from generateQuotationDocument
- * @returns {string} HTML email content
  */
-export function generateQuotationEmailHTML(quotation) {
+export function generateQuotationEmailHTML(quotation: QuotationDocument): string {
   const { header, quoteDetails, industryContent, pricing, certifications, legalTerms, callToAction, footer } = quotation;
   
   return `
@@ -380,7 +444,7 @@ export function generateQuotationEmailHTML(quotation) {
           </tr>
         </thead>
         <tbody>
-          ${pricing.rateCard.map(r => `
+          ${pricing.rateCard.map((r: any) => `
             <tr>
               <td>${r.type}</td>
               <td><strong>${r.rate}</strong></td>
@@ -425,5 +489,4 @@ export default {
   generateQuotationDocument,
   generateQuotationEmailHTML,
 };
-
 
