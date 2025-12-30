@@ -6,12 +6,23 @@ import { authLimiter, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 
 function getSecretKey() {
   const secret = process.env.JWT_SECRET;
-  if (!secret) throw new Error("JWT_SECRET is not set");
+  if (!secret) {
+    throw new Error("JWT_SECRET environment variable is not configured");
+  }
   return new TextEncoder().encode(secret);
 }
 
 export async function POST(req) {
   try {
+    // Check JWT_SECRET early to fail fast
+    if (!process.env.JWT_SECRET) {
+      console.error("CRITICAL: JWT_SECRET is not set in environment variables");
+      return NextResponse.json(
+        { error: "Server configuration error: Authentication not configured" }, 
+        { status: 500 }
+      );
+    }
+
     // Apply rate limiting (5 requests per minute)
     const ip = getClientIp(req);
     const rateLimitError = checkRateLimit(authLimiter, ip);
@@ -37,7 +48,18 @@ export async function POST(req) {
       return NextResponse.json({ error: "Email and password are required" }, { status: 400 });
     }
 
-    const user = await prisma.user.findUnique({ where: { email } });
+    // Find user in database
+    let user;
+    try {
+      user = await prisma.user.findUnique({ where: { email } });
+    } catch (dbError) {
+      console.error("Database connection error:", dbError);
+      return NextResponse.json(
+        { error: "Database connection failed. Please try again." }, 
+        { status: 500 }
+      );
+    }
+
     if (!user) {
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     }
@@ -65,7 +87,7 @@ export async function POST(req) {
     });
     return res;
   } catch (err) {
-    console.error("Sign-in error:", err);
+    console.error("Sign-in error:", err.message || err);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
