@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import {
-  calculateBookingCost,
-  calculateQuickEstimate,
+  calculateBookingCostAsync,
+  calculateQuickEstimateAsync,
   generateCostSummary,
-  SERVICE_RATES,
+  fetchDatabaseRates,
 } from "@/lib/services/rateCalculator";
 
 type RouteContext = {
@@ -13,6 +13,7 @@ type RouteContext = {
 /**
  * POST /api/quotations/[id]/calculate-cost
  * Calculate detailed cost breakdown for a quotation
+ * Uses current rates from database for accurate pricing
  */
 export async function POST(request: Request, context: RouteContext) {
   try {
@@ -30,24 +31,25 @@ export async function POST(request: Request, context: RouteContext) {
       weeks,
     } = body;
 
+    // Fetch current rates from database
+    const currentRates = await fetchDatabaseRates();
     let costResult;
 
     if (useQuickEstimate || (!startDate || !endDate)) {
       // Use quick estimate for preliminary quotes
-      costResult = calculateQuickEstimate({
+      costResult = await calculateQuickEstimateAsync({
         hoursPerWeek: hoursPerWeek || hoursPerDay * 5,
         guards,
         weeks: weeks || 4,
         shiftType,
       });
     } else {
-      // Calculate detailed cost with daily breakdown
-      const bookingCost = calculateBookingCost({
+      // Calculate detailed cost with daily breakdown using current rates
+      const bookingCost = await calculateBookingCostAsync({
         startDate: new Date(startDate),
         endDate: new Date(endDate),
         hoursPerDay,
         guards,
-        daysPerWeek: workDays.length,
         workDays,
       });
 
@@ -61,13 +63,14 @@ export async function POST(request: Request, context: RouteContext) {
       success: true,
       quotationId: Number(idStr),
       calculation: costResult,
-      rates: SERVICE_RATES,
+      rates: currentRates,
       gstRate: '10%',
       overtimeRules: {
         first2Hours: '1.5x base rate',
         beyond2Hours: '2x base rate',
         standardHoursPerDay: 8,
       },
+      note: 'Rates are fetched from the database. Update rates via /dashboard/rates.',
     });
   } catch (error) {
     console.error("Error calculating cost:", error);

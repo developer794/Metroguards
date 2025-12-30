@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Page() {
   const [email, setEmail] = useState("");
@@ -11,7 +10,12 @@ export default function Page() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const router = useRouter();
+
+  // Use stable navigation without useRouter to prevent invariant errors
+  const navigateToDashboard = useCallback(() => {
+    // Use window.location for stable navigation that doesn't rely on router state
+    window.location.href = "/dashboard";
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +34,8 @@ export default function Page() {
         setError(data.error || "Something went wrong");
         return;
       }
-      router.push("/dashboard");
+      // Navigate using stable method
+      navigateToDashboard();
     } catch (err) {
       setError("Network error");
     } finally {

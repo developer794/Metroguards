@@ -791,3 +791,4 @@ export default function BookingsClient({ initialBookings, initialStats }) {
   );
 }
 
+

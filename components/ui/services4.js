@@ -92,9 +92,11 @@ const Services4 = ({
                       </div>
                       <div className="services-card-content">
                         <h3 className="services-card-title">{item.title}</h3>
-                        <p className="services-card-description" >{item.description}</p>
-                        <div className="services-read-more">
-                          Read more <ArrowRight className="read-more-arrow" size={16} />
+                        <div className="services-card-hover-content">
+                          <p className="services-card-description">{item.description}</p>
+                          <div className="services-read-more">
+                            Read more <ArrowRight className="read-more-arrow" size={16} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -318,11 +320,25 @@ const Services4 = ({
           padding: 40px 30px 30px 30px;
           color: white;
           z-index: 10;
-          transition: transform 0.3s ease;
+          transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         .services-card-link:hover .services-card-content {
-          transform: translateY(-5px);
+          transform: translateY(0);
+        }
+
+        .services-card-hover-content {
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transform: translateY(20px);
+          transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .services-card-link:hover .services-card-hover-content {
+          max-height: 200px;
+          opacity: 1;
+          transform: translateY(0);
         }
 
         .services-card-icon {
@@ -350,17 +366,22 @@ const Services4 = ({
         }
 
         .services-card-title {
-          margin: 0 0 12px 0;
+          margin: 0;
           font-size: 1.25rem;
           font-weight: 600;
           line-height: 1.3;
           color: white;
           text-shadow: 0 2px 8px rgba(0,0,0,0.8);
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          transition: margin 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .services-card-link:hover .services-card-title {
+          margin-bottom: 0;
         }
 
         .services-card-description {
-          margin: 0 0 20px 0;
+          margin: 12px 0 20px 0;
           font-size: 0.875rem;
           line-height: 1.5;
           color: rgba(255, 255, 255, 0.9);
@@ -468,12 +489,21 @@ const Services4 = ({
 
           .services-card-description {
             font-size: 0.8rem;
-            margin-bottom: 15px;
+            margin: 10px 0 15px 0;
             -webkit-line-clamp: 2;
           }
           
           .services-read-more {
             font-size: 0.8rem;
+          }
+
+          .services-card-hover-content {
+            max-height: 0;
+            opacity: 0;
+          }
+
+          .services-card-link:hover .services-card-hover-content {
+            max-height: 150px;
           }
         }
 
@@ -528,13 +558,22 @@ const Services4 = ({
 
           .services-card-description {
             font-size: 0.75rem;
-            margin-bottom: 12px;
+            margin: 8px 0 12px 0;
             line-height: 1.4;
             -webkit-line-clamp: 2;
           }
           
           .services-read-more {
             font-size: 0.75rem;
+          }
+
+          .services-card-hover-content {
+            max-height: 0;
+            opacity: 0;
+          }
+
+          .services-card-link:hover .services-card-hover-content {
+            max-height: 120px;
           }
         }
       `}</style>

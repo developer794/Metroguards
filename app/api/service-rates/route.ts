@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
-import { SERVICE_RATES, GST_RATE, OVERTIME } from "@/lib/services/rateCalculator";
+import { SERVICE_RATES, GST_RATE, OVERTIME, clearRatesCache, fetchDatabaseRates } from "@/lib/services/rateCalculator";
 
 /**
  * GET /api/service-rates
@@ -97,9 +97,16 @@ export async function POST(request: Request) {
       },
     });
 
+    // Clear the rates cache so new calculations use updated rates
+    clearRatesCache();
+    
+    // Pre-fetch new rates to populate cache
+    await fetchDatabaseRates();
+
     return NextResponse.json({
       success: true,
       rate,
+      message: "Rate updated successfully. All new quotations will use the updated rate.",
     });
   } catch (error) {
     console.error("Error updating service rate:", error);

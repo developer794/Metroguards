@@ -135,3 +135,4 @@ export default function BottomNavigation({ newQuotesCount = 0 }) {
   );
 }
 
+
