@@ -53,9 +53,9 @@ export async function POST(req) {
     try {
       user = await prisma.user.findUnique({ where: { email } });
     } catch (dbError) {
-      console.error("Database connection error:", dbError);
+      console.error("Database error:", dbError.message || dbError);
       return NextResponse.json(
-        { error: "Database connection failed. Please try again." }, 
+        { error: `Database error: ${dbError.message || 'Connection failed'}` }, 
         { status: 500 }
       );
     }
