@@ -561,8 +561,8 @@ export default function BookingFormPage() {
                                         }}>
                                             <p style={{ color: '#6c757d', fontSize: '0.95rem', margin: 0 }}>
                                                 Need immediate assistance? Call us at{' '}
-                                                <a href="tel:1300661378" style={{ color: '#1e2247', fontWeight: '700', textDecoration: 'none' }}>
-                                                    1300 661 378
+                                                <a href="tel:1300731173" style={{ color: '#1e2247', fontWeight: '700', textDecoration: 'none' }}>
+                                                    1300 731 173
                                                 </a>
                                             </p>
                                         </div>

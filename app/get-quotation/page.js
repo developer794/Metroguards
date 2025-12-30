@@ -530,7 +530,7 @@ export default function Page() {
                         margin: 0
                       }}>
                         <i className="bi bi-telephone-fill" style={{ color: '#fdc51a', marginRight: '10px' }}></i>
-                        1300 123 456
+                        1300 731 173
                       </p>
                     </div>
                   </div>
@@ -1382,7 +1382,7 @@ export default function Page() {
                       fontWeight: '800',
                       margin: '8px 0',
                       letterSpacing: '1px'
-                    }}>1300 123 456</p>
+                    }}>1300 731 173</p>
                     <p style={{
                       color: 'rgba(30, 34, 71, 0.8)',
                       fontSize: '0.9rem',

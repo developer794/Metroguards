@@ -215,7 +215,7 @@ async function generateBookingPDF(data: any): Promise<Buffer> {
     color: lightGray,
   });
   
-  page.drawText("Phone: 1300 661 378 | Email: info@metroguard.com.au", {
+  page.drawText("Phone: 1300 731 173 | Email: info@metroguard.com.au", {
     x: width / 2 - 115,
     y: 48,
     size: 8,
@@ -543,7 +543,7 @@ export async function POST(req: Request) {
           </div>
           <div class="footer">
             <p><strong>Metropolitan Guard Services Australia</strong></p>
-            <p>📧 <a href="mailto:info@metroguard.com.au" style="color: #fdc51a;">info@metroguard.com.au</a> | 📞 1300 661 378</p>
+            <p>📧 <a href="mailto:info@metroguard.com.au" style="color: #fdc51a;">info@metroguard.com.au</a> | 📞 1300 731 173</p>
             <p>🌐 <a href="https://www.metroguard.com.au" style="color: #fdc51a;">www.metroguard.com.au</a></p>
           </div>
         </div>

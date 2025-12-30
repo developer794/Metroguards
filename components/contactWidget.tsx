@@ -281,7 +281,7 @@ export default function ContactWidget() {
 
                 {/* 24/7 Emergency - Mini Card */}
                 <motion.a
-                  href="tel:1300733720"
+                  href="tel:1300731173"
                   className="group relative block bg-gradient-to-br from-[#fdc51a]/10 to-white rounded-lg p-2 border border-[#fdc51a]/30 hover:border-[#fdc51a] transition-all duration-300 overflow-hidden"
                   whileHover={{ y: -1, boxShadow: '0 6px 16px rgba(253, 197, 26, 0.15)' }}
                   style={{boxShadow: '0 1px 4px rgba(253, 197, 26, 0.1)'}}
@@ -297,7 +297,7 @@ export default function ContactWidget() {
                     <div>
                       <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wide block">24/7 Live</span>
                       <p className="text-xs font-bold text-[#1e2247] group-hover:text-[#fdc51a] transition-colors duration-300 mt-0.5 leading-tight">
-                        1300 733 720
+                        1300 731 173
                       </p>
                     </div>
                   </div>

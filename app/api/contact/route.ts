@@ -431,7 +431,7 @@ function createClientConfirmationEmail(
                           <tr>
                             <td style="padding: 4px 0; text-align: center;">
                               <p style="margin: 0; color: #1e2247; font-size: 14px; font-family: 'Lato', Arial, sans-serif;">
-                                <strong>Phone:</strong> 1300 132 660
+                                <strong>Phone:</strong> 1300 731 173
                               </p>
                             </td>
                           </tr>

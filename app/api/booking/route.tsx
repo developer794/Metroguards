@@ -232,7 +232,7 @@ async function generateBookingPDF(data: any): Promise<Buffer> {
     color: lightGray,
   });
   
-  page.drawText("Phone: 1300 661 378 | Email: info@metroguard.com.au", {
+  page.drawText("Phone: 1300 731 173 | Email: info@metroguard.com.au", {
     x: width / 2 - 115,
     y: 48,
     size: 8,
@@ -754,12 +754,12 @@ Signature: ${signature1 || "—"}   Date: ${date1 || "—"}
           
           <p style="font-size: 14px; color: #555555; line-height: 1.6;">
             If you have any questions or need immediate assistance, please don't hesitate to contact us at 
-            <a href="tel:1300661378" style="color: #1e2247; text-decoration: none; font-weight: bold;">1300 661 378</a>.
+            <a href="tel:1300731173" style="color: #1e2247; text-decoration: none; font-weight: bold;">1300 731 173</a>.
           </p>
           
           <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #eceff3;">
             <p style="color: #999999; font-size: 12px; margin: 5px 0;">Metropolitan Guard Services Australia</p>
-            <p style="color: #999999; font-size: 12px; margin: 5px 0;">Phone: 1300 661 378 | Email: info@metroguard.com.au</p>
+            <p style="color: #999999; font-size: 12px; margin: 5px 0;">Phone: 1300 731 173 | Email: info@metroguard.com.au</p>
             <p style="color: #999999; font-size: 12px; margin: 5px 0;">www.metroguard.com.au</p>
           </div>
         </div>
@@ -787,11 +787,11 @@ What Happens Next?
 3. Your professional security team will be assigned
 4. Service deployment on your requested date
 
-If you have any questions or need immediate assistance, please contact us at 1300 661 378.
+If you have any questions or need immediate assistance, please contact us at 1300 731 173.
 
 Best regards,
 Metropolitan Guard Services Australia
-Phone: 1300 661 378
+Phone: 1300 731 173
 Email: info@metroguard.com.au
 www.metroguard.com.au
     `;
