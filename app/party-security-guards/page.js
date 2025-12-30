@@ -1,0 +1,30 @@
+import PartySecurityPage from "./ClientPage";
+
+export const metadata = {
+  title: "Party Security Guards in Melbourne Near Me",
+  description:
+    "Hire trained party security guards in Melbourne. Private parties, birthdays, house parties, celebrations & nightclub events. Crowd control, gatecrasher prevention & safety.",
+  alternates: { 
+    canonical: "https://metroguards.com.au/party-security-guards" 
+  },
+  openGraph: {
+    title: "Party Security Guards in Melbourne | Metro Guards",
+    description: "Professional party security guards in Melbourne. Private event security, crowd control, guest safety, and experienced party security services.",
+    url: "https://metroguards.com.au/party-security-guards",
+    siteName: "Metro Guards",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Party Security Guards in Melbourne | Metro Guards",
+    description: "Professional party security guards in Melbourne. Private event security, crowd control, guest safety, and experienced party security services.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+};
+
+export default function Page() {
+  return <PartySecurityPage />;
+}

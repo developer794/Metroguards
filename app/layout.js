@@ -1,0 +1,149 @@
+// app/layout.js
+import Script from 'next/script';
+import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "public/assets/css/plugins/bootstrap.min.css"
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "public/assets/css/plugins/aos.css"
+//import "public/assets/css/plugins/fontawesome.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "public/assets/css/plugins/slick-slider.css"
+import "public/assets/css/plugins/nice-select.css"
+import "public/assets/css/plugins/fonts.css"
+import "public/assets/css/master.css"
+import "public/assets/css/h4-master.css"
+import "./dashboard/globals.css"
+//import TawkLoader from "@/components/TawkLoader";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import StructuredData from "@/components/StructuredData";
+import ContactWidget from "@/components/contactWidget";
+import RemoveBreadcrumbSchema from "@/components/RemoveBreadcrumbSchema";
+
+// Environment check for production vs non-production
+const isProduction = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
+
+// Dynamic robots configuration based on environment
+const robotsConfig = isProduction
+  ? {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    }
+  : {
+      // Prevent indexing of non-production deployments (preview, development)
+      index: false,
+      follow: false,
+      googleBot: {
+        index: false,
+        follow: false,
+      },
+    };
+
+export const metadata = {
+  title: 'Security Company in Melbourne | Licensed Security Guards',
+  description: 'Licensed Security Company in Melbourne CBD & suburbs, protecting homes and businesses 24/7. Call Metro security Guards for instant quotes today.',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  icons: {
+    icon: '/icon.ico',
+    shortcut: '/icon.ico',
+    apple: '/icon.ico',
+  },
+  themeColor: '#1e2247',
+  manifest: '/manifest.json',
+  verification: {
+    google: 'eoWvD1YUdp4IV35yG1go1RvFYsKqeJXJSkPy31Fmvlw',
+  },
+  openGraph: {
+    title: "Security Guard Services - Security Company in Melbourne",
+    description: "Metro Guards is a leading security company in Melbourne. We are providing security guard services for both residential & commercial Buildings. Call us 1300731173",
+    url: "https://metroguards.com.au",
+    siteName: "Metro Guards",
+    images: [
+      {
+        url: "https://metroguards.com.au/icon.ico",
+        width: 600,
+        height: 630,
+        alt: "Metro Guards Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  // Dynamic robots based on environment - prevents indexing of preview/development deployments
+  robots: robotsConfig,
+  // Canonical URL always points to production domain
+  alternates: {
+    canonical: 'https://metroguards.com.au',
+  },
+  // Additional meta for non-production environments
+  ...(isProduction ? {} : {
+    other: {
+      'X-Robots-Tag': 'noindex, nofollow',
+    },
+  }),
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" id="#top">
+      <head>
+        <StructuredData />
+        <link rel="icon" href="/assets/img/logo/icon.png" type="image/png" sizes="16x16"></link>
+      </head>
+      <body className="relative">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5F54P4MC"
+            height="0" 
+            width="0" 
+            style={{display: 'none', visibility: 'hidden'}}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5F54P4MC');
+          `}
+        </Script>
+        {/* End Google Tag Manager */}
+
+        {/* Remove BreadcrumbList Schema */}
+        <RemoveBreadcrumbSchema />
+        {/* Google Analytics - Production Only */}
+        <GoogleAnalytics />
+
+        {/* Header Strip - fixed at the very top */}
+        <div className="fixed top-0 left-0 right-0 z-50">
+          {/* <TopBar/> */}
+        </div>
+
+        {/* Main content with padding to account for header strip height */}
+        <main className="pt-[40px] min-h-screen"> {/* Adjust pt value based on your header strip height */}
+          {children}
+        </main>
+
+        {/* Client-only injection avoids hydration mismatch 
+        <TawkLoader />*/}
+        <ContactWidget />
+      </body>
+    </html>
+  )
+}

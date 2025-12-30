@@ -1,0 +1,554 @@
+"use client";
+
+import { useState } from "react";
+import Link from 'next/link';
+
+export default function Location() {
+  const [expandedStates, setExpandedStates] = useState({});
+  const [showLocations, setShowLocations] = useState(true);
+
+  const toggleExpanded = (state) => {
+    setExpandedStates(prev => ({
+      ...prev,
+      [state]: !prev[state]
+    }));
+  };
+
+  const toggleLocationsVisibility = () => {
+    setShowLocations(prev => !prev);
+  };
+
+  const locations = [
+    {
+      id: "north-melbourne",
+      name: "North Melbourne Suburbs",
+      description: "Professional security services across North Melbourne suburbs. Our Security Guards and Mobile Patrols cover North Melbourne, Carlton, Brunswick, Coburg, Preston, and surrounding areas with 24/7 protection.",
+      link: "/north-melbourne",
+      
+    },
+    {
+      id: "east-melbourne",
+      name: "East Melbourne Suburbs",
+      description: "Comprehensive security solutions for East Melbourne suburbs including Richmond, Hawthorn, Kew, Box Hill, and Ringwood. Our security guards provide static guards, mobile patrols, and event security services.",
+      link: "/east-melbourne",
+      
+    },
+    {
+      id: "south-melbourne",
+      name: "South Melbourne Suburbs",
+      description: "Expert security guard services for South Melbourne areas including South Melbourne, St Kilda, Prahran, Dandenong, and Frankston. We offer Mobile Security Patrols, Static Guards, and specialized Event Security.",
+      link: "/south-melbourne",
+      
+    },
+    {
+      id: "west-melbourne",
+      name: "West Melbourne Suburbs",
+      description: "Professional security coverage across West Melbourne suburbs including Footscray, Sunshine, Altona, Werribee, Point Cook, and Melton. Our security guards deliver reliable protection for residential and commercial properties.",
+      link: "/west-melbourne",
+      
+    },
+    {
+      id: "northwest-melbourne",
+      name: "Northwest Melbourne Suburbs",
+      description: "Dedicated security services for Northwest Melbourne including Carlton, Brunswick, Coburg, Broadmeadows, Craigieburn, and Epping. Our security guards provide comprehensive protection with mobile patrols and static guard services.",
+      link: "/north-west-melbourne",
+      
+    },
+    {
+      id: "west-east-melbourne",
+      name: "West–East Melbourne Suburbs",
+      description: "Extensive security coverage spanning West to East Melbourne suburbs. From Footscray and Werribee to Richmond and Ringwood, our security guards offer comprehensive protection across this diverse region.",
+      link: "/west-east-melbourne",
+      
+    },
+    {
+      id: "south-east-melbourne",
+      name: "South–East Melbourne Suburbs",
+      description: "Specialized security services for South-East Melbourne covering St Kilda, Prahran, Dandenong, Frankston, and surrounding suburbs. Our professional security guards provide mobile patrols, static guards, and event security.",
+      link: "/south-east-melbourne",
+      
+    },
+    {
+      id: "melbourne-cbd",
+      name: "Melbourne CBD",
+      description: "Premium security services for Melbourne's Central Business District, covering CBD, Docklands, Southbank, and surrounding inner-city areas. Our security guards provide corporate building security, retail protection, and event security for Melbourne's busiest commercial zone.",
+      link: "/melbourne-CBD",
+      
+    },
+    {
+      id: "regional-victoria",
+      name: "Regional Victoria Cities",
+      description: "Extended security services across Regional Victoria including Geelong, Ballarat, Bendigo, Shepparton, and other major regional cities. Our security guards travel to provide professional protection beyond Melbourne metro areas.",
+      link: "/regional-victoria-cities",
+      
+    }
+  ];
+
+  return (
+    <section className={`location-section ${showLocations ? 'expanded' : ''}`}>
+      <div className="container">
+        <div className="location-header">
+          <div className="header-content">
+            <button
+              className="see-locations-badge"
+              onClick={toggleLocationsVisibility}
+              aria-expanded={showLocations}
+            >
+              <span className="badge-text">See our locations</span>
+              <span className="plus-icon">{showLocations ? '−' : '+'}</span>
+            </button>
+          </div>
+        </div>
+
+        {showLocations && (
+          <div className="location-content">
+            <div className="left-content">
+              <div className="section-title">
+                <span className="section-subtitle">COMPREHENSIVE PROTECTION</span>
+                <h2 className="main-title">
+                  Coverage & Local Security Services in Melbourne
+                </h2>
+              </div>
+              <div className="description-content">
+                <p className="description-text">
+                  Metro Guards provides professional security services across Melbourne and Victoria. From the heart of Melbourne’s CBD to outer suburbs and industrial zones, we maintain seamless communication, real-time reporting, and dependable 24/7 support, keeping your property protected round the clock.
+
+                </p>
+
+              </div>
+            </div>
+
+            <div className="right-content">
+              <div className="locations-list">
+                {locations.map((location) => (
+                  <div key={location.id} className="location-item">
+                    <div className="location-header-wrapper">
+                      <button
+                        className="location-toggle-icon"
+                        onClick={() => toggleExpanded(location.id)}
+                        aria-expanded={expandedStates[location.id]}
+                        aria-label={`Toggle ${location.name}`}
+                      >
+                        <span className="plus-icon">{expandedStates[location.id] ? '−' : '+'}</span>
+                      </button>
+                      <Link href={location.link} className="location-link">
+                        <span className="location-name">{location.name}</span>
+                      </Link>
+                    </div>
+                    {expandedStates[location.id] && (
+                      <div className="location-areas">
+                        {location.description && (
+                          <div className="location-description">
+                            <p>{location.description}</p>
+                          </div>
+                        )}
+                        
+                      </div>
+                    )}
+                  </div>
+                ))}
+                <div className="coverage-note">
+                  <p><strong>Don't see your area listed?</strong> We likely still cover it! Contact us to confirm availability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <style jsx>{`
+        .location-section {
+          padding: 80px 0;
+          background: linear-gradient(135deg, #FDC51A 0%, #F39C12 100%);
+          position: relative;
+          overflow: hidden;
+          transition: padding 0.3s ease;
+        }
+
+        .location-section.expanded {
+          padding: 100px 0;
+        }
+
+
+
+        .container {
+          max-width: 1320px;
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .location-header {
+          margin-bottom: 0;
+          transition: margin-bottom 0.3s ease;
+        }
+
+        .location-section.expanded .location-header {
+          margin-bottom: 60px;
+        }
+
+        .header-content {
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .see-locations-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          background: rgba(0, 0, 0, 0.15);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 50px;
+          padding: 16px 28px;
+          color: #333;
+          font-weight: 600;
+          font-size: 1.1rem;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          outline: none;
+        }
+
+        .see-locations-badge:hover {
+          background: rgba(0, 0, 0, 0.25);
+          transform: translateY(-2px);
+        }
+
+        .see-locations-badge:focus {
+          background: rgba(0, 0, 0, 0.25);
+          outline: 2px solid rgba(0, 0, 0, 0.5);
+          outline-offset: 2px;
+        }
+
+        .see-locations-badge[aria-expanded="true"] {
+          background: #1e2247;
+          color: white;
+          border-color: rgba(30, 34, 71, 0.5);
+        }
+
+        .see-locations-badge[aria-expanded="true"]:hover {
+          background: rgba(30, 34, 71, 0.8);
+          transform: translateY(-2px);
+        }
+
+        .plus-icon {
+          font-size: 1.4rem;
+          font-weight: 300;
+          line-height: 1;
+        }
+
+        .location-content {
+          display: grid;
+          grid-template-columns: 1fr 600px;
+          gap: 80px;
+          align-items: start;
+          animation: slideDown 0.4s ease-out;
+        }
+
+        .left-content {
+          color: #333;
+        }
+
+        .section-subtitle {
+          display: block;
+          font-size: 0.9rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 0.7);
+          margin-bottom: 20px;
+        }
+
+        .main-title {
+          font-size: 3.5rem;
+          font-weight: 700;
+          line-height: 1.1;
+          margin: 0 0 40px 0;
+          color: #333;
+          letter-spacing: -0.02em;
+        }
+
+        .description-content {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .description-text {
+          font-size: 1.1rem;
+          line-height: 1.7;
+          color: rgba(0, 0, 0, 0.8);
+          margin: 0;
+        }
+
+        .right-content {
+          background: white;
+          border-radius: 20px;
+          padding: 40px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+          animation: slideInRight 0.4s ease-out;
+        }
+
+        @keyframes slideInRight {
+          from {
+            opacity: 0;
+            transform: translateX(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .locations-list {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .location-item {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .location-item:last-child {
+          border-bottom: none;
+        }
+
+        .location-header-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding: 20px 0;
+        }
+
+        .location-toggle-icon {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          transition: all 0.3s ease;
+          flex-shrink: 0;
+        }
+
+        .location-toggle-icon .plus-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          background: #FDC51A;
+          color: #333;
+          border-radius: 50%;
+          font-size: 1.2rem;
+          font-weight: 300;
+          line-height: 1;
+          transition: all 0.3s ease;
+        }
+
+        .location-toggle-icon[aria-expanded="true"] .plus-icon {
+          background: #F39C12;
+          transform: rotate(180deg);
+        }
+
+        .location-link {
+          flex: 1;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+
+        .location-link:hover {
+          color: #F39C12;
+        }
+
+        .location-link:hover .location-name {
+          color: #F39C12;
+        }
+
+        .location-name {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #333;
+        }
+
+        .location-areas {
+          padding: 0 0 20px 44px;
+          animation: slideDown 0.3s ease-out;
+        }
+
+        .location-description {
+          margin-bottom: 16px;
+        }
+
+        .location-description p {
+          font-size: 0.9rem;
+          line-height: 1.6;
+          color: #666;
+          margin: 0;
+          font-style: italic;
+        }
+
+        .coverage-note {
+          margin-top: 20px;
+          padding: 16px;
+          background: rgba(253, 197, 26, 0.1);
+          border-radius: 8px;
+          border-left: 4px solid #FDC51A;
+          text-align: center;
+        }
+
+        .coverage-note p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #333;
+        }
+
+        .areas-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+          gap: 8px;
+        }
+
+        .area-tag {
+          display: inline-block;
+          padding: 6px 12px;
+          background: rgba(253, 197, 26, 0.15);
+          color: #F39C12;
+          border-radius: 6px;
+          font-size: 0.85rem;
+          font-weight: 500;
+          text-align: center;
+          transition: all 0.2s ease;
+        }
+
+        .area-tag:hover {
+          background: rgba(253, 197, 26, 0.25);
+          transform: translateY(-1px);
+        }
+
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+          .location-content {
+            grid-template-columns: 1fr 550px;
+            gap: 60px;
+          }
+
+          .main-title {
+            font-size: 3rem;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .location-content {
+            grid-template-columns: 1fr 500px;
+            gap: 50px;
+          }
+
+          .main-title {
+            font-size: 2.5rem;
+          }
+
+          .right-content {
+            padding: 30px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .location-section {
+            padding: 60px 0;
+          }
+          .location-section.expanded {
+            padding: 80px 0;
+          }
+
+          .location-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+
+          .main-title {
+            font-size: 2.2rem;
+          }
+
+          .description-text {
+            font-size: 1rem;
+          }
+
+          .right-content {
+            padding: 25px;
+          }
+
+          .areas-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+          }
+        }
+
+        @media (max-width: 640px) {
+          .container {
+            padding: 0 16px;
+          }
+
+          .location-section {
+            padding: 40px 0;
+          }
+
+          .location-section.expanded {
+            padding: 60px 0;
+          }
+
+          .location-section.expanded .location-header {
+            margin-bottom: 40px;
+          }
+
+          .see-locations-badge {
+            padding: 12px 20px;
+            font-size: 1rem;
+          }
+
+          .main-title {
+            font-size: 1.8rem;
+          }
+
+          .description-text {
+            font-size: 0.95rem;
+          }
+
+          .right-content {
+            padding: 20px;
+          }
+
+          .location-header-wrapper {
+            padding: 16px 0;
+          }
+
+          .location-name {
+            font-size: 1rem;
+          }
+
+          .areas-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+          }
+
+          .area-tag {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}

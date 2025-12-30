@@ -1,0 +1,18 @@
+# Metro Guards Security Services - Robots.txt
+# Last Updated: 2025-11-30
+# STATUS: LIVE - INDEXING ENABLED
+
+# Allow all search engines to index the site
+User-agent: *
+Allow: /
+
+# Block admin/backend pages from indexing
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /signin
+Disallow: /signup
+Disallow: /forgot
+
+# Sitemap location
+Sitemap: https://metroguards.com.au/sitemap.xml
+

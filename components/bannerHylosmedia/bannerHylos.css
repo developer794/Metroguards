@@ -1,0 +1,110 @@
+/* ===========================
+   Main Slider Styles
+=========================== */
+.main-slider {
+    position: relative;
+    display: block;
+    z-index: 91;
+  }
+  
+  .main-slider__carousel .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .main-slider__slide-1,
+  .main-slider__slide-2,
+  .main-slider__slide-3 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .main-slider__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .main-slider__bg-two-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+  }
+  
+  .main-slider__bg-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main-slider__shape-1,
+  .main-slider__shape-2,
+  .main-slider__shape-3 {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .main-slider__shape-1 { bottom: 0; left: 0; }
+  .main-slider__shape-2 { top: 0; right: 0; }
+  .main-slider__shape-3 { bottom: 0; right: 0; }
+  
+  .main-slider__content {
+    position: relative;
+    text-align: center;
+    padding: 180px 0 140px;
+    z-index: 2;
+  }
+  
+  .main-slider__sub-title {
+    font-size: 18px;
+    color: #f9be17;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .main-slider__title {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .main-slider__btn-box {
+    margin-top: 20px;
+  }
+  
+  .main-slider__btn {
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f9be17;
+    color: #04171a;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .main-slider__btn:hover {
+    background-color: #04171a;
+    color: #fff;
+  }
+  
